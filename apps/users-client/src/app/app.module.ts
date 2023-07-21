@@ -1,15 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
-import { appRoutes } from './app.routes';
+import { RegisterComponent } from './auth/feature/register/register.component';
+import { UsersClientWebShellModule } from '@food-stories/users-client/web-shell'
 
 @NgModule({
-  declarations: [AppComponent],
-  imports: [
-    BrowserModule,
-    RouterModule.forRoot(appRoutes),
-  ],
+  declarations: [AppComponent, RegisterComponent],
+  imports: [BrowserModule, UsersClientWebShellModule],
   providers: [],
   bootstrap: [AppComponent],
 })
