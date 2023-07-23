@@ -3,10 +3,6 @@ import { Route } from '@angular/router';
 export const appRoutes: Route[] = [
   {
     path: '',
-    pathMatch: 'full',
-    redirectTo: 'auth'
+    loadChildren: async () => (await import('@food-stories/users-client/home')).UsersClientHomeModule,
   },
-  {
-    path: 'auth',
-  }
 ];

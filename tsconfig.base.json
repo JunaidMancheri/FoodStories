@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@food-stories/users-client/home": [
+        "libs/users-client/home/src/index.ts"
+      ],
       "@food-stories/users-client/web-shell": [
         "libs/users-client/web-shell/src/index.ts"
       ]
