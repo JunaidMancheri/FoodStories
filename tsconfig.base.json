@@ -15,8 +15,23 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@food-stories/users-client/auth/feature/login": [
+        "libs/users-client/auth/feature/login/src/index.ts"
+      ],
+      "@food-stories/users-client/auth/feature/register": [
+        "libs/users-client/auth/feature/register/src/index.ts"
+      ],
+      "@food-stories/users-client/auth/feature/shell": [
+        "libs/users-client/auth/feature/shell/src/index.ts"
+      ],
       "@food-stories/users-client/home": [
         "libs/users-client/home/src/index.ts"
+      ],
+      "@food-stories/users-client/shared": [
+        "libs/users-client/shared/src/index.ts"
+      ],
+      "@food-stories/users-client/shared/utils": [
+        "libs/users-client/shared/utils/src/index.ts"
       ],
       "@food-stories/users-client/web-shell": [
         "libs/users-client/web-shell/src/index.ts"
