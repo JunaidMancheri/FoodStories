@@ -24,6 +24,9 @@
       "@food-stories/users-client/auth/feature/shell": [
         "libs/users-client/auth/feature/shell/src/index.ts"
       ],
+      "@food-stories/users-client/auth/ui/layout": [
+        "libs/users-client/auth/ui/layout/src/index.ts"
+      ],
       "@food-stories/users-client/home": [
         "libs/users-client/home/src/index.ts"
       ],

@@ -1,15 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AuthLoginModule } from '../../../login/src/lib/login.module';
+import { AuthLoginModule } from '@food-stories/users-client/auth/feature/login';
 import { RouterModule } from '@angular/router';
 import { authRoutes } from './auth.routes';
-import { AuthRegisterModule } from '../../../register/src/lib/auth-register.module';
+import { AuthRegisterModule } from '@food-stories/users-client/auth/feature/register';
+import { AuthLayoutModule } from '@food-stories/users-client/auth/ui/layout';
 
 @NgModule({
   imports: [
     CommonModule,
     AuthLoginModule,
     AuthRegisterModule,
+    AuthLayoutModule,
     RouterModule.forChild(authRoutes)
   ],
 })

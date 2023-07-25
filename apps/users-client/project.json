@@ -17,7 +17,12 @@
         "tsConfig": "apps/users-client/tsconfig.app.json",
         "assets": [
           "apps/users-client/src/favicon.ico",
-          "apps/users-client/src/assets"
+          "apps/users-client/src/assets",
+          {
+            "input": "libs/users-client/shared/assets/",
+            "glob": "**/*",
+            "output": "assets"
+          }
         ],
         "styles": ["apps/users-client/src/styles.css"],
         "scripts": []
