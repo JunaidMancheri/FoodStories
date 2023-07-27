@@ -50,9 +50,9 @@
       <h4>Or register with</h4>
 
       <div class="links justify-center flex gap-3">
-        <fs-google-icon class="hover:cursor-pointer text-center"></fs-google-icon>
-        <fs-fb-icon class="hover:cursor-pointer"></fs-fb-icon>
-        <fs-twitter-icon class="hover:cursor-pointer"></fs-twitter-icon>
+        <fs-google-icon (click)="registerWithGoogle()"  class="hover:cursor-pointer text-center"></fs-google-icon>
+         <fs-fb-icon (click)="registerWithFacebook()" class="hover:cursor-pointer"></fs-fb-icon>
+        <fs-twitter-icon (click)="registerWithTwitter()" class="hover:cursor-pointer"></fs-twitter-icon>
       </div>
 
       <p>Already a member? <a class="text-blue-400" routerLink="/auth/login">Login</a></p>

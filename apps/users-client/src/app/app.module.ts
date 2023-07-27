@@ -6,6 +6,10 @@ import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatProgressBarModule } from '@angular/material/progress-bar' 
 import { HttpClientModule } from '@angular/common/http';
+import { initializeApp,provideFirebaseApp, } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+
 
 @NgModule({
   imports: [
@@ -14,7 +18,9 @@ import { HttpClientModule } from '@angular/common/http';
     RouterModule,
     UsersClientWebShellModule,
     MatProgressBarModule,
-    HttpClientModule
+    HttpClientModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth())
   ],
   declarations: [AppComponent],
   providers: [],
