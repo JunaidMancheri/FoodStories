@@ -1,3 +1,56 @@
-<p class="text-white">Login works!</p>
 
-<a [routerLink]="['/auth/register']" routerLinkActive="router-link-active" >Login</a>
+<div class="h-full">
+
+
+  <div class="px-9 w-[450px] h-7/12 rounded-xl gap-8 flex flex-col  items-center">
+    <div class="head text-center text-2xl  h-2/12">
+      Login
+    </div>
+    <div class="form h-3/6 mt-5 flex justify-center items-center w-[100%]">
+      <form action="" class="flex justify-center flex-col w-[100%] items-center gap-4">
+        <div class="w-full flex flex-col px-5">
+          
+            <label for="username" class="block">Username or email</label>
+          
+
+          <input type="text" id="username" placeholder="Eg: Jacob" class="border mt-1 p-2 rounded-lg w-full h-8" name="username">
+        </div>
+
+
+        <div class="form-field w-[100%] flex flex-col px-5">
+          
+            <label for="password" class="block mb-1">Password</label>
+          
+          <input type="password" id="password" placeholder="******" class="border p-2 rounded-lg w-full h-8" name="password">
+        </div>
+
+
+      <button type="submit" class="w-3/6 h-10  rounded-lg bg-opacity-100 bg-blue-600  text-white">Explore</button>
+
+      </form>
+
+
+    </div>
+
+    <hr class="w-[100%]">
+    <div class="w-full text-center flex flex-col justify-center gap-3">
+      
+      <h4>Or register with</h4>
+
+      <div class="links justify-center flex gap-3">
+        <fs-google-icon class="hover:cursor-pointer text-center"></fs-google-icon>
+        <fs-fb-icon class="hover:cursor-pointer"></fs-fb-icon>
+        <fs-twitter-icon class="hover:cursor-pointer"></fs-twitter-icon>
+      </div>
+
+      <p>Never been here? <a class="text-blue-400" routerLink="/auth/register">Join us</a></p>
+
+
+
+    </div>
+
+    
+    <hr class="w-[100%]">
+  </div>
+
+</div>

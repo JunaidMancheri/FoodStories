@@ -1,5 +1,5 @@
 .img-wrapper {
-  background-image: url('/assets/login-bg.webp');
+  background:  url('/assets/auth.jpg');
   background-size: cover;
   background-position: 30% 40%;
 }

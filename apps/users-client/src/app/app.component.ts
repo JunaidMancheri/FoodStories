@@ -1,9 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'fs-root',
-  template: '<router-outlet></router-outlet>',
+  templateUrl: './app.component.html',
 })
-export class AppComponent {
-  title = 'users-client';
+export class AppComponent implements OnInit {
+
+   title = 'users-client'
+   isInitialLoading = false;
+
+
+   ngOnInit(): void {
+    setTimeout(() => {
+      this.isInitialLoading = false;
+    }, 1000)
+  }
+
 }

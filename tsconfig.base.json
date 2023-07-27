@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@food-stories/shared-icons": [
+        "libs/users-client/shared/icons/src/index.ts"
+      ],
       "@food-stories/users-client/auth/feature/login": [
         "libs/users-client/auth/feature/login/src/index.ts"
       ],

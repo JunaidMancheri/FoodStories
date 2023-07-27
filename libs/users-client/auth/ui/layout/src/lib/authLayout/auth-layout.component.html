@@ -1,23 +1,12 @@
-<div class="w-screen h-screen img-wrapper">
-  <div class="w-full h-full bg-black opacity-90 flex">
-
-    <div class="w-[50%] h-full flex items-center justify-center">
-      <div class="text-white text-center">
-
-        <h2  [@moveLogo] class="text-blue-600 text-8xl font-mono logo">FoodStories</h2>
-
-        <p class="mt-1 text-xl">Where travelers and foodies unite <br> in stories</p>
-
+<div class="w-screen  flex items-center h-screen img-wrapper ">
+  <div class=" flex w-full">
+    <router-outlet></router-outlet>
+    <div class="relative flex-grow">
+      <div class="absolute top-[10rem] left-0 w-full">
+        <h1 class="font-bold text-white text-5xl text-center" >FOOD STORIES</h1>
+        <p class="font-bold text-white text-center">Where travelers and foodies <br> unite in stories</p>
       </div>
-
-
-
     </div>
-    <div class="w-[50%] h-full flex flex-col justify-center items-center">
-      <router-outlet>
-      </router-outlet>
-    </div>
-  
 
   </div>
 </div>
