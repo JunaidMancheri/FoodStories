@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@food-stories/api-gateway/core": ["libs/api-gateway/core/src/index.ts"],
       "@food-stories/shared-icons": [
         "libs/users-client/shared/icons/src/index.ts"
       ],
