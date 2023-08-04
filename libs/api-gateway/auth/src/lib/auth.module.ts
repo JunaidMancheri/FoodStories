@@ -2,7 +2,6 @@ import { Module } from '@nestjs/common';
 import { ApiGatewayAuthController } from './auth.controller';
 import { ApiGatewayAuthService } from './auth.service';
 import { ClientsModule, Transport } from '@nestjs/microservices';
-import { Inject } from '@angular/core';
 import { join } from 'path';
 
 @Module({
