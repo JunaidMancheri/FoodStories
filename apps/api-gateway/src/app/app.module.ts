@@ -1,8 +1,9 @@
 import { Module } from '@nestjs/common';
+import { ApiGatewayAuthModule } from '@food-stories/api-gateway/auth'
 
 
 @Module({
-  imports: [],
+  imports: [ApiGatewayAuthModule],
   controllers: [],
   providers: [],
 })
