@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
-import { ApiGatewayAuthController } from './auth.controller';
-import { ApiGatewayAuthService } from './auth.service';
+import { AuthController } from './auth.controller';
+import { AuthService } from './auth.service';
 import { ClientsModule, Transport } from '@nestjs/microservices';
 import { join } from 'path';
 import { TOKEN } from './token';
@@ -20,8 +20,8 @@ import { TOKEN } from './token';
     ])
 
   ],
-  controllers: [ApiGatewayAuthController],
-  providers: [ApiGatewayAuthService],
-  exports: [ApiGatewayAuthService],
+  controllers: [AuthController],
+  providers: [AuthService],
+  exports: [AuthService],
 })
 export class ApiGatewayAuthModule {}

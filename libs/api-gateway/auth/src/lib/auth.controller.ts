@@ -1,12 +1,7 @@
-import { Controller, Get } from '@nestjs/common';
-import { ApiGatewayAuthService } from './auth.service';
+import { Controller } from '@nestjs/common';
+import { AuthService } from './auth.service';
 
 @Controller()
-export class ApiGatewayAuthController {
-  constructor(private apiGatewayAuthService: ApiGatewayAuthService) {}
-
-  @Get()
-  getAll(): any {
-    return { success: true}
-  }
+export class AuthController {
+  constructor(private AuthService: AuthService) {}
 }
