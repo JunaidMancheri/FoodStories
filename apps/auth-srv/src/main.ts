@@ -1,21 +1,19 @@
-/**
- * This is not a production server yet!
- * This is only a minimal backend to get started.
- */
+import dotenv from 'dotenv';
+import app from '@infrastructure/config/app';
 
-import express from 'express';
-import * as path from 'path';
+dotenv.config();
 
-const app = express();
 
-app.use('/assets', express.static(path.join(__dirname, 'assets')));
+async function bootstrap() {
 
-app.get('/api', (req, res) => {
-  res.send({ message: 'Welcome to auth-srv!' });
-});
+  if (!process.env.PORT) {
+    throw new Error('port must be specified');
+  }
 
-const port = process.env.PORT || 3333;
-const server = app.listen(port, () => {
-  console.log(`Listening at http://localhost:${port}/api`);
-});
-server.on('error', console.error);
+
+ app.listen(process.env['PORT'], () => {
+  console.log('listening on port ' + process.env['PORT']);
+ });
+}
+
+bootstrap();
