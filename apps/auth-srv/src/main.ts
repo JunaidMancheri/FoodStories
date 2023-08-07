@@ -1,6 +1,6 @@
 import dotenv from 'dotenv';
-import app from '@infrastructure/config/app';
-
+import app from './infrastructure/config/app';
+import { Logger } from './infrastructure/config/logger';
 dotenv.config();
 
 
@@ -16,4 +16,5 @@ async function bootstrap() {
  });
 }
 
-bootstrap();
+bootstrap()
+.catch((err) => Logger.log('error', err.message))

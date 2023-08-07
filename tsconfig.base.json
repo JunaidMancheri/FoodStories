@@ -16,7 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@food-stories/api-gateway/auth": ["libs/api-gateway/auth/src/index.ts"],
-      "@food-stories/common": ["libs/common/src/index.ts"],
+      "@food-stories/common/*": ["libs/common/src/lib/*"],
       "@food-stories/shared-icons": [
         "libs/users-client/shared/icons/src/index.ts"
       ],

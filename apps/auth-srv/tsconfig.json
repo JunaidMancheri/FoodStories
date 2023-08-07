@@ -12,11 +12,6 @@
   ],
   "compilerOptions": {
     "esModuleInterop": true,
-    "baseUrl": "src",
-    "paths": {
-      "@common": ["../../../libs/common/src/index.ts"],
-      "@infrastructure/*": ["infrastructure/*"]
-    }
   },
   
 }

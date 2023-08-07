@@ -1,41 +1,56 @@
-import { ILogger } from "./logger.interface";
-import { Logger, createLogger, format, transports } from 'winston';
+import  winston ,{ Logger, createLogger, transports, format } from 'winston';
+import { ILogger } from './logger.interface';
 
 export function makeLogger(serviceName: string) {
   return class implements ILogger {
-    public logger: Logger
+    public logger: Logger;
 
     constructor(componentName: string) {
       this.logger = createLogger({
         level: 'info',
         format: format.combine(
+          format.colorize(),
           format.timestamp(),
-          format.metadata({ fillExcept: ['timestamp', 'level', 'message', 'service', 'component'] }),
+          format.metadata({ fillExcept: ['timestamp', 'level', 'message'] }),
           format.printf(({ timestamp, level, message, metadata }) => {
-            const { service, component, ...restMetadata } = metadata;
+            const { ...restMetadata } = metadata;
             const formattedMetadata = JSON.stringify(restMetadata);
-            return `[${timestamp}] [${level.toUpperCase()}] [${service}] [${component}] ${message} ${formattedMetadata}`;
-          })
+            return `[${timestamp}] [${level}] [${serviceName}] [${componentName}] ${message} ${formattedMetadata}`;
+          }),
         ),
         transports: [
-          new transports.Console()
+          new transports.Console({
+            format: format.combine(
+              format.colorize(),
+              format.timestamp({format: 'HH:mm:ss'}),
+              format.metadata({ fillExcept: ['timestamp', 'level', 'message'] }),
+              format.printf(({ timestamp, level, message }) => {
+                return `[${timestamp}] [${level}] [${serviceName}] [${componentName}] ${message}`;
+              }),
+            ),
+          }),
         ],
-        defaultMeta: { service: serviceName, component: componentName }
       });
     }
 
-    warn(message: string, metadata: unknown): void {
+    static log(level: string, message: string, metadata?: unknown): void {
+      winston.log(level, message, metadata);
+    }
+
+    warn(message: string, metadata?: unknown): void {
       this.logger.warn(message, metadata);
     }
-    error(message: string, metadata: unknown): void {
-      this.logger.error(message, metadata);
+
+    error(message: string, metadata?: unknown): void {
+      this.logger.error(message, metadata)
     }
-    debug(message: string, metadata: unknown): void {
+
+    debug(message: string, metadata?: unknown): void {
       this.logger.debug(message, metadata);
     }
-    info(message: string, metadata: unknown): void {
+
+    info(message: string, metadata?: unknown ): void {
       this.logger.info(message, metadata);
     }
-    
-  }
+  };
 }

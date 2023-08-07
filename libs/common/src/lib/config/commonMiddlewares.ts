@@ -1,6 +1,6 @@
 import { Express, json, urlencoded } from 'express';
-import * as  cors  from 'cors';
-import * as morgan from 'morgan';
+import cors  from 'cors';
+import morgan from 'morgan';
 
 export function setUpCommonMiddlewares(app: Express): Express {
   app.use(cors());
