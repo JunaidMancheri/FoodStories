@@ -1,7 +1,7 @@
 {
-  "name": "auth-srv",
+  "name": "users-srv",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/auth-srv/src",
+  "sourceRoot": "apps/users-srv/src",
   "projectType": "application",
   "targets": {
     "build": {
@@ -11,12 +11,12 @@
       "options": {
         "target": "node",
         "compiler": "tsc",
-        "outputPath": "dist/apps/auth-srv",
-        "main": "apps/auth-srv/src/main.ts",
-        "tsConfig": "apps/auth-srv/tsconfig.app.json",
+        "outputPath": "dist/apps/users-srv",
+        "main": "apps/users-srv/src/main.ts",
+        "tsConfig": "apps/users-srv/tsconfig.app.json",
         "assets": [],
         "isolatedConfig": true,
-        "webpackConfig": "apps/auth-srv/webpack.config.js"
+        "webpackConfig": "apps/users-srv/webpack.config.js"
       },
       "configurations": {
         "development": {},
@@ -27,14 +27,14 @@
       "executor": "@nx/js:node",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "auth-srv:build"
+        "buildTarget": "users-srv:build"
       },
       "configurations": {
         "development": {
-          "buildTarget": "auth-srv:build:development"
+          "buildTarget": "users-srv:build:development"
         },
         "production": {
-          "buildTarget": "auth-srv:build:production"
+          "buildTarget": "users-srv:build:production"
         }
       }
     },
@@ -42,14 +42,14 @@
       "executor": "@nx/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/auth-srv/**/*.ts"]
+        "lintFilePatterns": ["apps/users-srv/**/*.ts"]
       }
     },
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/auth-srv/jest.config.ts",
+        "jestConfig": "apps/users-srv/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {
