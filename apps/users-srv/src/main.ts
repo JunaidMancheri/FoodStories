@@ -10,7 +10,8 @@ async function bootstrap() {
   if (!process.env['PORT'] )  {
     throw new Error('Port must be specified');
   }
-  app.listen(process.env['PORT'], () => logger.info('Port is set to ' + process.env['PORT']));
+  const server = app.listen(process.env['PORT'], () => logger.info('Port is set to ' + process.env['PORT']));
+  server.on('error', (err) => logger.error(err.message, err))
 }
 
 bootstrap().catch((err) => logger.error(err));
