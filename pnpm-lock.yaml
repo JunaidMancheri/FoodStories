@@ -79,6 +79,9 @@ dependencies:
   morgan:
     specifier: ^1.10.0
     version: 1.10.0
+  protobufjs:
+    specifier: ^7.2.4
+    version: 7.2.4
   reflect-metadata:
     specifier: ^0.1.13
     version: 0.1.13

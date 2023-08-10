@@ -14,7 +14,13 @@
         "outputPath": "dist/apps/users-srv",
         "main": "apps/users-srv/src/main.ts",
         "tsConfig": "apps/users-srv/tsconfig.app.json",
-        "assets": [],
+        "assets": [
+          {
+            "input": "libs/common/src/lib/proto/",
+            "glob": "users_service.proto",
+            "output": "proto"
+          }
+        ],
         "isolatedConfig": true,
         "webpackConfig": "apps/users-srv/webpack.config.js"
       },
