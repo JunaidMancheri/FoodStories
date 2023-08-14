@@ -1,14 +1,14 @@
-import { Logger } from "./infrastructure/logger.config";
-import { loadAppConfig } from './infrastructure/app.config';
-import { startGRPCServer } from './infrastructure/grpc.config';
+import { Logger } from "./config/logger.config";
+import { appConfig, loadAppConfig } from './config/app.config';
+import { startGRPCServer } from './config/grpc.config';
 import { Server } from "@grpc/grpc-js";
 
 const logger = new Logger('main');
 
 async function bootstrap() {
   try {
-    loadAppConfig(logger);
-    const grpcServer = await startGRPCServer(logger);
+    await loadAppConfig(logger);
+    const grpcServer = await startGRPCServer(appConfig.GRPC_PORT, logger);
 
     process.on('SIGTERM', async () => {
       logger.info('Received SIGTERM. Initiating graceful shutdown...');
@@ -21,6 +21,7 @@ async function bootstrap() {
     });
 
   } catch (error) {
+    console.log(error)
     logger.error('An error occurred during bootstrap:', error);
     process.exit(1);
   }
