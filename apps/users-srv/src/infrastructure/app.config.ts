@@ -9,11 +9,14 @@ export const appConfig : Partial<IAppConfig> = {};
 
 export function loadAppConfig(logger: ILogger) {
   dotenv.config();
-  if (!process.env['GRPC_PORT']) {
-    throw new Error('GRPC_PORT must be specified');
-  }
-  appConfig['GRPC_PORT'] = process.env['GRPC_PORT'];
+  const keys: string[] = ['GRPC_PORT'];
 
+  for (const key of keys) {
+    if (!process.env[key]) {
+      throw new Error(`${key} must be specified`);
+    }
+    appConfig['GRPC_PORT'] = process.env['GRPC_PORT'];
+  }
   logger.info('Loaded app config values');
 }
 
