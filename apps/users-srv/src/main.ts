@@ -5,6 +5,7 @@ import { Server } from "@grpc/grpc-js";
 
 const logger = new Logger('main');
 
+
 async function bootstrap() {
   try {
     await loadAppConfig(logger);

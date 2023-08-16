@@ -1,7 +1,7 @@
-  import { handleUnaryCall } from '@grpc/grpc-js';
+  import {  Metadata, handleUnaryCall } from '@grpc/grpc-js';
 
   export interface IUsersServiceClient {
-    CreateUser(request: ICreateUserRequest): ICreateUserResponse;
+    CreateUser(request: ICreateUserRequest, metadata?: Metadata): ICreateUserResponse;
   }
 
   export interface IUsersServiceServer {
