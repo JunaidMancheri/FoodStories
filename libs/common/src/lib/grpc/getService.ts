@@ -1,6 +1,6 @@
 import { loadSync } from "@grpc/proto-loader";
 import { loadPackageDefinition,  GrpcObject, ServiceClientConstructor, ServiceDefinition, UntypedServiceImplementation } from "@grpc/grpc-js";
-import { GRPCServiceOptions } from "../typings/grpc/options";
+import { GRPCServiceOptions } from "./options.interface";
 
 
 export function getGrpcServiceDefinition(options: GRPCServiceOptions): ServiceDefinition<UntypedServiceImplementation> {

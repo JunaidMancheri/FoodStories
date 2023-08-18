@@ -1,10 +1,9 @@
 import { IUsersServiceServer } from '@food-stories/common/typings/proto/usersService';
+import  { makeUnaryCallHandler} from '@food-stories/common/grpc/makeUnaryCallHandler.adapter';
+import { makeCreateUserHandler } from '@food-stories/users-srv/user'
 
 
 
 export const UsersServiceImpl : IUsersServiceServer = {
-  CreateUser: (call, callback) => {
-    const request = call.request;
-    callback(null, {id: request.id, name: 'jithib'});
-  }
+  CreateUser: makeUnaryCallHandler(makeCreateUserHandler(), 'user.created')
 }

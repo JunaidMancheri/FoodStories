@@ -1,6 +1,7 @@
-export type Action<EntityName extends string,  ActionName extends string> = `${EntityName}.${ActionName}`; 
+export type Action = `${string}.${string}`; 
 
 export enum HandlerType {
   RPC = 'rpc',
   EVENT = 'event'
 }
+

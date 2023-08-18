@@ -46,7 +46,8 @@
       ],
       "@food-stories/users-client/web-shell": [
         "libs/users-client/web-shell/src/index.ts"
-      ]
+      ],
+      "@food-stories/users-srv/user": ["libs/users-srv/user/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

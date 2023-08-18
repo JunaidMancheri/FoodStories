@@ -1,6 +1,6 @@
 import { ILogger } from "../logger";
 import { RequestPayload } from "./Request.interface";
-import { ResponsePayload, errorResponse } from "./Response.interface";
+import { ResponsePayload, ErrorResponse } from "./Response.interface";
 
 export abstract class BaseHandler {
   constructor(private readonly logger: ILogger) {}
@@ -17,7 +17,7 @@ export abstract class BaseHandler {
   }
 
 
-  function createError(error: Error): errorResponse {
+  function createError(error: Error): ErrorResponse {
     return  {
       status: 'error',
       error: {
