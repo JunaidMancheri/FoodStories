@@ -1,1 +1,1 @@
-export * from './lib/interface/rpc/handlers';
+export * from './lib/factory';
