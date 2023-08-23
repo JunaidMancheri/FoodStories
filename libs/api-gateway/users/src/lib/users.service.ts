@@ -16,7 +16,7 @@ export class ApiGatewayUsersService implements OnModuleInit {
   }
 
   createUser() {
-    return this.usersService.CreateUser({id: 8});
+    return this.usersService.CreateUser({email: 'junaidofficialnow@gmail.com', name: 'junaid', userName: 'jithu_jamshed'});
   }
 
 

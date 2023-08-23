@@ -4,9 +4,9 @@
 export type ResponsePayload<ResponseData = any> = SuccessResponse<ResponseData> | ErrorResponse
 
 
-export type SuccessResponse<ResponseData> = {
+export type SuccessResponse<ResponseData = undefined> = {
   status: 'success',
-  data: ResponseData extends object ? ResponseData : undefined;
+  data: ResponseData;
 }
 
 export type ErrorResponse  = {

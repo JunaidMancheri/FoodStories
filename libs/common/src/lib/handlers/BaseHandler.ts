@@ -3,7 +3,7 @@ import { RequestPayload } from "./Request.interface";
 import { ResponsePayload, ErrorResponse } from "./Response.interface";
 
 export abstract class BaseHandler {
-  constructor(private readonly logger: ILogger) {}
+  constructor(protected readonly logger: ILogger) {}
   abstract execute(request: RequestPayload) : Promise<ResponsePayload>
 
   async handle(request: RequestPayload): Promise<ResponsePayload> {

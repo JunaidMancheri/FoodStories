@@ -25,8 +25,4 @@ import { UsersAppConfig } from './config';
   providers: [ApiGatewayUsersService],
   exports: [ApiGatewayUsersService],
 })
-export class ApiGatewayUsersModule {
-  constructor() {
-    console.log(process.env['USERS_SERVICE_URI']);
-  }
-}
+export class ApiGatewayUsersModule {}

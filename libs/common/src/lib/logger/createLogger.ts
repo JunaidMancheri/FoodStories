@@ -1,7 +1,13 @@
 import  winston ,{ Logger, createLogger, transports, format } from 'winston';
 import { ILogger } from './logger.interface';
 
-export function makeLogger(serviceName: string) {
+
+
+export interface LoggerClass {
+  new (componentName: string): ILogger
+}
+
+export function makeLogger(serviceName: string): LoggerClass  {
   return class implements ILogger {
     public logger: Logger;
 

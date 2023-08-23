@@ -7,10 +7,31 @@ service UsersService {
 }
 
 message CreateUserRequest {
-  int32 id = 1;
+  string name = 1;
+  string userName = 2;
+  string email = 3;
+  string DPURL = 4;
+}
+
+enum Gender {
+  MALE = 0;
+  FEMALE = 1;
+}
+
+message Profile {
+  string  bio = 1;
+  Gender gender = 2;
+  repeated string links = 3;
 }
 
 message CreateUserResponse {
-  int32 id = 1;
+  string id = 1;
   string name = 2;
+  string userName = 3;
+  string email = 4;
+  bool isPrivate = 5;
+  int32 createdAt = 6;
+  string DPURL = 7;
+  Profile profile = 8;
+
 }

@@ -9,12 +9,27 @@
   }
   
   export interface ICreateUserRequest {
-     id: number;
+     name: string;
+     userName: string;
+     email: string;
+     DPURL?: string
+  }
+
+  interface Profile {
+    bio?: string;
+    gender?: 'male' | 'female' ,
+    links?: string[];
   }
   
   export interface ICreateUserResponse {
-    id: number;
+    id: string;
     name: string;
+    userName: string;
+    email: string;
+    isPrivate: boolean;
+    createdAt: number;
+    DPURL: string;
+    profile: Profile;
   }
 
 

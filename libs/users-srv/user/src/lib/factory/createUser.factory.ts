@@ -1,9 +1,9 @@
 import { BaseHandler } from "@food-stories/common/handlers";
 import { CreateUserHandler } from "../interface/rpc/handlers";
-import { makeLogger } from "@food-stories/common/logger";
+import { CreateUserUseCase } from "../application/usecases/CreateUser.usecase";
+import { LoggerClass } from "@food-stories/common/logger";
 
-const Logger  = makeLogger('user');
-
-export function makeCreateUserHandler() : BaseHandler {
-  return  new CreateUserHandler(new Logger('create-user'));
+export function makeCreateUserHandler(Logger: LoggerClass) : BaseHandler {
+  const usecase = new CreateUserUseCase(new Logger('UseCase:Create'));
+  return  new CreateUserHandler( usecase, new Logger('Handler:Create'));
 }

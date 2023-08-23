@@ -6,7 +6,7 @@ export class ApiGatewayUsersController {
   constructor(private apiGatewayUsersService: ApiGatewayUsersService) {}
 
   @Get() 
-  async getUser() {
+  async createUser() {
     return this.apiGatewayUsersService.createUser();;
   }
 }
