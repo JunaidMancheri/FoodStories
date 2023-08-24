@@ -4,12 +4,13 @@ import { RegisterComponent } from './register/register.component';
 import { RouterModule } from '@angular/router'
 import { IconsModule } from '@food-stories/shared-icons'
 import { FacebookAuthProvider, GoogleAuthProvider, TwitterAuthProvider, createUserWithEmailAndPassword } from '@angular/fire/auth';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
 
 @NgModule({
-  imports: [CommonModule, RouterModule, IconsModule],
+  imports: [CommonModule, RouterModule, IconsModule, HttpClientModule],
   providers: [GoogleAuthProvider, FacebookAuthProvider, TwitterAuthProvider],
   declarations: [RegisterComponent],
   exports: [RegisterComponent],
