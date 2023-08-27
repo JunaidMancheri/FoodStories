@@ -1,43 +1,44 @@
 
 <div class="h-full">
 
-
   <div class="px-9 w-[450px] h-7/12 rounded-xl gap-8 flex flex-col  items-center">
     <div class="head text-center text-2xl  h-2/12">
       Register
     </div>
     <div class="form h-3/6 mt-5 flex justify-center items-center w-[100%]">
-      <form action="" class="flex justify-center flex-col w-[100%] items-center gap-4">
+
+      <form action="" (ngSubmit)="handleSubmit(registerForm)"  #registerForm="ngForm"  class="flex justify-center flex-col w-[100%] items-center gap-4">
         <div class="w-full flex flex-col px-5">
           
             <label for="username" class="block">Username</label>
  
-          <input type="text" id="username" placeholder="Eg: john_joseph" class="border text-sm mt-1 p-2 rounded-lg w-full h-8" name="username">
+          <input required minlength="4"   ngModel  type="text"  id="username" placeholder="Eg: john_joseph" class="border text-sm mt-1 p-2 rounded-lg w-full h-8" name="username">
+
         </div>
 
         <div class="form-field w-full flex flex-col px-5">
           
             <label for="email" class="block mb-1">Email</label>
           
-          <input type="text" id="email" placeholder="Eg: joseph@gmail.com" class="border p-2 rounded-lg w-full h-8" name="email">
+          <input ngModel email sample required type="email" id="email" placeholder="Eg: joseph@gmail.com" class="border p-2 rounded-lg w-full h-8" name="email">
         </div>
 
         <div class="form-field w-[100%] flex flex-col px-5">
           
             <label for="password" class="block mb-1">Password</label>
           
-          <input type="text" id="password" placeholder="*********" class="border p-2 rounded-lg w-full h-8" name="password">
+          <input ngModel required type="password" id="password" placeholder="*********" class="border p-2 rounded-lg w-full h-8" name="password">
         </div>
 
         <div class="form-field w-[100%] flex flex-col px-5">
           
             <label for="confirmPassword" class="block mb-1">Confirm password</label>
           
-          <input type="text" id="confirmPassword" placeholder="********" class="border p-2 rounded-lg w-full h-8" name="confirmPassword">
+          <input ngModel required type="password" id="confirmPassword" placeholder="********" class="border p-2 rounded-lg w-full h-8" name="confirmPassword">
         </div>
 
 
-      <button type="submit" class="w-3/6 h-10  rounded-lg bg-opacity-100 bg-blue-600  text-white">Join the community</button>
+      <button type="submit"  class="w-3/6 h-10  rounded-lg bg-opacity-100 bg-blue-600  text-white">Join the community</button>
 
       </form>
 

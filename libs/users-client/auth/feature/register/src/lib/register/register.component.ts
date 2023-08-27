@@ -3,6 +3,7 @@ import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
 import { Auth, GoogleAuthProvider, signInWithPopup, FacebookAuthProvider, TwitterAuthProvider, signInWithEmailAndPassword, createUserWithEmailAndPassword} from '@angular/fire/auth'
 import { HttpClient } from '@angular/common/http';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'fs-register',
@@ -20,6 +21,12 @@ export class RegisterComponent {
     private httpClient: HttpClient
   ) {
     this.matIconRegistry.addSvgIcon('google', this.domSanitizer.bypassSecurityTrustResourceUrl('assets/google.svg'));
+  }
+
+  handleSubmit(form: NgForm) {
+    console.log(form);
+    console.log(form.valid)
+    console.log(form.errors);
   }
 
   registerWithEmailAndPassword() {
