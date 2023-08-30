@@ -7,6 +7,7 @@ import { FacebookAuthProvider, GoogleAuthProvider, TwitterAuthProvider, createUs
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { SampleDirective } from './register/sample.validator';
+import { MatchPasswordDirective } from './register/passwordMatch.validator';
 
 
 
@@ -16,7 +17,7 @@ import { SampleDirective } from './register/sample.validator';
 @NgModule({
   imports: [CommonModule, RouterModule, IconsModule, HttpClientModule, FormsModule],
   providers: [GoogleAuthProvider, FacebookAuthProvider, TwitterAuthProvider],
-  declarations: [RegisterComponent, SampleDirective],
+  declarations: [RegisterComponent, SampleDirective, MatchPasswordDirective],
   exports: [RegisterComponent],
 })
 export class AuthRegisterModule {}

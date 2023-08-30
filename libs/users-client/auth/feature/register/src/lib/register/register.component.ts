@@ -11,6 +11,8 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./register.component.css'],
 })
 export class RegisterComponent {
+  errorMessage: string | null = null;
+
   constructor(
     private matIconRegistry: MatIconRegistry,
     private domSanitizer: DomSanitizer,
@@ -23,11 +25,35 @@ export class RegisterComponent {
     this.matIconRegistry.addSvgIcon('google', this.domSanitizer.bypassSecurityTrustResourceUrl('assets/google.svg'));
   }
 
+
+
   handleSubmit(form: NgForm) {
-    console.log(form);
-    console.log(form.valid)
-    console.log(form.errors);
+    if (form.valid) {
+      alert('yeh');
+    }
+    else {
+       
+      if (form.controls['username'].errors) {
+        this.errorMessage = 'username error'
+        return;
+
+      }
+
+      if (form.controls['email'].errors) {
+        this.errorMessage = 'email error';
+        return;
+
+      }
+
+      if (form.errors && form.errors['isPasswordsDoNotMatch']) {
+        this.errorMessage = 'passwords do not match';
+        return;
+
+      }
+
   }
+
+}
 
   registerWithEmailAndPassword() {
 

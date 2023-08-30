@@ -7,12 +7,20 @@
     </div>
     <div class="form h-3/6 mt-5 flex justify-center items-center w-[100%]">
 
-      <form action="" (ngSubmit)="handleSubmit(registerForm)"  #registerForm="ngForm"  class="flex justify-center flex-col w-[100%] items-center gap-4">
+
+
+      <form action="" matchPassword (ngSubmit)="handleSubmit(registerForm)"  #registerForm="ngForm"  class="flex justify-center flex-col w-[100%] items-center gap-4">
+
+        <div *ngIf="errorMessage" class="w-full h-10 flex items-center justify-center text-center px-5 border border-red-600 bg-red-500/30 ">
+          {{ errorMessage }}      
+    
+        </div>
         <div class="w-full flex flex-col px-5">
           
             <label for="username" class="block">Username</label>
  
-          <input required minlength="4"   ngModel  type="text"  id="username" placeholder="Eg: john_joseph" class="border text-sm mt-1 p-2 rounded-lg w-full h-8" name="username">
+          <input required minlength="4" [ngModelOptions]="{updateOn: 'blur'}" sample  ngModel #userName="ngModel"  type="text"  id="username" placeholder="Eg: john_joseph" class="border text-sm mt-1 p-2 rounded-lg w-full h-8" name="username">
+          <small class="text-red-700 ml-1" *ngIf="userName.control.errors && userName.dirty">{{userName.control.errors | json}}</small>
 
         </div>
 
@@ -20,7 +28,8 @@
           
             <label for="email" class="block mb-1">Email</label>
           
-          <input ngModel email sample required type="email" id="email" placeholder="Eg: joseph@gmail.com" class="border p-2 rounded-lg w-full h-8" name="email">
+          <input ngModel email  required type="email" id="email" placeholder="Eg: joseph@gmail.com" class="border p-2 rounded-lg w-full h-8" name="email">
+          <small class="text-red-700 ml-1" *ngIf="userName.control.errors && userName.dirty">{{userName.control.errors | json}}</small>
         </div>
 
         <div class="form-field w-[100%] flex flex-col px-5">
@@ -28,6 +37,7 @@
             <label for="password" class="block mb-1">Password</label>
           
           <input ngModel required type="password" id="password" placeholder="*********" class="border p-2 rounded-lg w-full h-8" name="password">
+          <small class="text-red-700 ml-1" *ngIf="userName.control.errors && userName.dirty">{{userName.control.errors | json}}</small>
         </div>
 
         <div class="form-field w-[100%] flex flex-col px-5">
@@ -35,6 +45,7 @@
             <label for="confirmPassword" class="block mb-1">Confirm password</label>
           
           <input ngModel required type="password" id="confirmPassword" placeholder="********" class="border p-2 rounded-lg w-full h-8" name="confirmPassword">
+          <small class="text-red-700 ml-1" *ngIf="userName.control.errors && userName.dirty">{{userName.control.errors | json}}</small>
         </div>
 
 
