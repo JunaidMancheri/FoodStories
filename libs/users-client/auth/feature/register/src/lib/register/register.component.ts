@@ -4,6 +4,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 import { Auth, GoogleAuthProvider, signInWithPopup, FacebookAuthProvider, TwitterAuthProvider, signInWithEmailAndPassword, createUserWithEmailAndPassword} from '@angular/fire/auth'
 import { HttpClient } from '@angular/common/http';
 import { NgForm } from '@angular/forms';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'fs-register',
@@ -20,7 +21,8 @@ export class RegisterComponent {
     private facebookAuthProvider: FacebookAuthProvider,
     private twitterAuthProvider: TwitterAuthProvider,
     private auth: Auth,
-    private httpClient: HttpClient
+    private httpClient: HttpClient,
+    private _snackBar: MatSnackBar
   ) {
     this.matIconRegistry.addSvgIcon('google', this.domSanitizer.bypassSecurityTrustResourceUrl('assets/google.svg'));
   }
@@ -32,28 +34,51 @@ export class RegisterComponent {
       alert('yeh');
     }
     else {
-       
-      if (form.controls['username'].errors) {
-        this.errorMessage = 'username error'
+        
+      const usernameErrors = form.controls['username'].errors;
+      if (usernameErrors && usernameErrors['required']) {
+        this.openSnackBar('username is required');
+        return;
+      }
+      
+
+      const emailErrors = form.controls['email'].errors;
+      if (emailErrors && emailErrors['required']) {
+        this.openSnackBar('email is required');
         return;
 
       }
 
-      if (form.controls['email'].errors) {
-        this.errorMessage = 'email error';
+
+      const passwordErrors = form.controls['password'].errors;
+
+      if (passwordErrors && passwordErrors['required']) {
+        this.openSnackBar('password is required');
         return;
 
       }
 
-      if (form.errors && form.errors['isPasswordsDoNotMatch']) {
-        this.errorMessage = 'passwords do not match';
-        return;
 
+      const formErrors = form.errors;
+      if (formErrors && formErrors['isPasswordsDoNotMatch']) {
+        this.openSnackBar('Passwords do not match');
+        return;
       }
+
+      this.openSnackBar('Invalid form inputs');
 
   }
 
 }
+
+   openSnackBar(message: string) {
+    (new Audio()).play();
+    this._snackBar.open(message, 'close', {
+      verticalPosition: 'top',
+      horizontalPosition: 'center',
+      duration: 5000,
+    })
+   }
 
   registerWithEmailAndPassword() {
 
