@@ -10,8 +10,12 @@ export class CreateUserHandler extends BaseHandler {
     super(logger);
   }
   async execute(request: Request): Promise<Response> {
+    console.log('working handler');
     const newUser = await this.CreateUserUC.execute(request.data)
-    return  respondSuccess(newUser)
+
+    const response =  respondSuccess(newUser)
+    console.log(response)
+    return  response;
 
   }
 

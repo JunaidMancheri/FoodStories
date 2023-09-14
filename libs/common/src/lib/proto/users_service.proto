@@ -7,9 +7,9 @@ service UsersService {
 }
 
 message CreateUserRequest {
-  string name = 1;
-  string userName = 2;
-  string email = 3;
+  string userName = 1;
+  string email = 2;
+  bool emailVerified = 3;
   string DPURL = 4;
 }
 
@@ -29,9 +29,10 @@ message CreateUserResponse {
   string name = 2;
   string userName = 3;
   string email = 4;
-  bool isPrivate = 5;
-  int32 createdAt = 6;
-  string DPURL = 7;
-  Profile profile = 8;
+  bool emailVerified = 5;
+  bool isPrivate = 6;
+  string createdAt = 7;
+  string DPURL = 8;
+  Profile profile = 9;
 
 }

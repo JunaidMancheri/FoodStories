@@ -1,8 +1,15 @@
 import { Component } from "@angular/core";
+import { Auth } from '@angular/fire/auth'
 
 @Component({
   selector: 'fs-home',
-  template: '<p>Home</p>'
+  templateUrl: './home.component.html',
 })
 
-export class HomeComponent {}
+export class HomeComponent {
+  constructor(private auth: Auth) {}
+
+  logoutUser() {
+    this.auth.signOut()
+  }
+}

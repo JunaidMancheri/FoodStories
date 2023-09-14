@@ -2,6 +2,7 @@ import { Logger } from "./config/logger.config";
 import { appConfig, loadAppConfig } from './config/app.config';
 import { startGRPCServer } from './config/grpc.config';
 import { Server } from "@grpc/grpc-js";
+import { connectDB } from "./config/mongodb.config";
 
 const logger = new Logger('main');
 
@@ -9,6 +10,7 @@ const logger = new Logger('main');
 async function bootstrap() {
   try {
     await loadAppConfig(logger);
+    await connectDB();
     const grpcServer = await startGRPCServer(appConfig.GRPC_PORT, logger);
 
     process.on('SIGTERM', async () => {

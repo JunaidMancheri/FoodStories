@@ -1,10 +1,10 @@
 import { User, UserProps } from "../../../entities/User.entity";
 
 export interface ICreateUserUseCase {
-  execute(userDto: NSCreateUser.Request): Promise<NSCreateUser.Response>;
+  execute(userDto: CreateUserNS.Request): Promise<CreateUserNS.Response>;
 }
 
-export namespace NSCreateUser {
+export namespace CreateUserNS {
   export type CreateUserDTO = UserProps
   export type Request = CreateUserDTO
   export type Response = User

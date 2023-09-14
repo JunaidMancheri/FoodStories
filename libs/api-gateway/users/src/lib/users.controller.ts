@@ -7,8 +7,8 @@ export class ApiGatewayUsersController {
   constructor(private apiGatewayUsersService: ApiGatewayUsersService) {}
 
   @Post() 
-  async createUser(@Body() createUserDto: CreateUserDTO) {
+   createUser(@Body() createUserDto: CreateUserDTO) {
     Logger.log(createUserDto, 'controller');    
-    return this.apiGatewayUsersService.createUser(createUserDto);;
+    return this.apiGatewayUsersService.createUser(createUserDto);
   }
 }

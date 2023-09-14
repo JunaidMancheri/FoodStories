@@ -7,13 +7,20 @@
       Login
     </div>
     <div class="form h-3/6 mt-5 flex justify-center items-center w-[100%]">
-      <form action="" class="flex justify-center flex-col w-[100%] items-center gap-4">
+      <form
+      (ngSubmit)="handleSubmit(loginForm)"
+       #loginForm="ngForm"
+       class="flex justify-center flex-col w-[100%] items-center gap-4">
         <div class="w-full flex flex-col px-5">
           
-            <label for="username" class="block">Username or email</label>
+            <label for="email" class="block">Username or email</label>
           
 
-          <input type="text" id="username" placeholder="Eg: Jacob" class="border mt-1 p-2 rounded-lg w-full h-8" name="username">
+          <input
+           ngModel
+           email
+           required
+           type="text" id="email" placeholder="Eg: Jacob" class="border mt-1 p-2 rounded-lg w-full h-8" name="email">
         </div>
 
 
@@ -21,7 +28,11 @@
           
             <label for="password" class="block mb-1">Password</label>
           
-          <input type="password" id="password" placeholder="******" class="border p-2 rounded-lg w-full h-8" name="password">
+          <input
+          required
+          ngModel
+          minlength="6"
+           type="password" id="password" placeholder="******" class="border p-2 rounded-lg w-full h-8" name="password">
         </div>
 
 

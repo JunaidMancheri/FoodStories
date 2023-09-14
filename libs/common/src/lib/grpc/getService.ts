@@ -5,7 +5,7 @@ import { GRPCServiceOptions } from "./options.interface";
 
 export function getGrpcServiceDefinition(options: GRPCServiceOptions): ServiceDefinition<UntypedServiceImplementation> {
 
-  const protoOptions = options.protoOptions || { keepCase: true ,arrays: true }
+  const protoOptions = options.protoOptions || { keepCase: true ,arrays: true,  }
   const packageVersion = options.packageVersion || 'v1'
 
   const packageDefinition = loadSync(options.protoPath, protoOptions);

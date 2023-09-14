@@ -16,16 +16,19 @@
  
           <input 
            required 
-            minlength="4" 
-             [ngModelOptions]="{updateOn: 'blur'}" 
+            minlength="4"
               ngModel
-               #userName="ngModel" 
+               #userName="ngModel"
                type="text" 
                 id="username"
                  placeholder="Eg: john_joseph"
                   class="border text-sm mt-1 p-2 rounded-lg w-full h-8"
                    name="username">
-          <small class="text-red-700 ml-1 absolute top-14" *ngIf="userName.control.errors && userName.control.errors['minlength'] &&  userName.dirty">Username must be atleast 4 letters long</small>
+          <small
+           class="text-red-700 ml-1 absolute top-14"
+            *ngIf="userName.control.errors  && userName.control.errors['minlength'] &&  userName.dirty">
+            Username must be atleast 4 letters long
+          </small>
 
         </div>
 
@@ -79,7 +82,14 @@
         </div>
 
 
-      <button type="submit"  class="w-3/6 h-10  rounded-lg bg-opacity-100 bg-blue-600  text-white">Join the community</button>
+      <button
+       type="submit"
+         class="w-3/6 h-10  rounded-lg bg-opacity-100 bg-blue-600 flex justify-center items-center  text-white">
+         <span *ngIf="!isLoading"> Join the community</span>
+         <mat-spinner
+          *ngIf="isLoading"
+          style="width: 10%;height: 100%; stroke: white !important;"></mat-spinner>
+        </button>
 
       </form>
 
@@ -92,10 +102,9 @@
       <h4>Or register with</h4>
 
       <div class="links justify-center flex gap-3">
-        <fs-google-icon (click)="registerWithGoogle()"  class="hover:cursor-pointer text-center"></fs-google-icon>
+        <!-- <fs-google-icon (click)="registerWithGoogle()"  class="hover:cursor-pointer text-center"></fs-google-icon>
          <fs-fb-icon (click)="registerWithFacebook()" class="hover:cursor-pointer"></fs-fb-icon>
-        <fs-twitter-icon (click)="registerWithTwitter()" class="hover:cursor-pointer"></fs-twitter-icon>
-        <button (click)="registerWithEmailAndPassword()">but</button>
+        <fs-twitter-icon (click)="registerWithTwitter()" class="hover:cursor-pointer"></fs-twitter-icon> -->
       </div>
 
       <p>Already a member? <a class="text-blue-400" routerLink="/auth/login">Login</a></p>

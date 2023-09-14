@@ -4,6 +4,7 @@ import { ClientGrpc } from '@nestjs/microservices';
 import { IUsersServiceClient } from '@food-stories/common/typings/proto/usersService';
 import { UsersAppConfig } from './config';
 import { CreateUserDTO } from './CreateUser.dto';
+import { Observable } from 'rxjs';
 
 
 @Injectable()
@@ -16,7 +17,7 @@ export class ApiGatewayUsersService implements OnModuleInit {
     this.usersService = this.usersServiceClient.getService<IUsersServiceClient>(UsersAppConfig.service_name);
   }
 
-  createUser(createUserDto: CreateUserDTO) {
+   createUser(createUserDto: CreateUserDTO) {
     return this.usersService.CreateUser(createUserDto);
   }
 

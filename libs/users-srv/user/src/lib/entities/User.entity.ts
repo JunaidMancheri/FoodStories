@@ -1,10 +1,11 @@
 import { v4 as  uuidV4 } from 'uuid';
 
 export interface UserProps {
-  name: string;
+  name?: string;
   userName: string;
   email: string;
   DPURL?: string;
+  emailVerified: boolean;
 }
 
 
@@ -16,9 +17,10 @@ interface Profile {
 
 export class User {
   public id: string;
-  public name: string;
+  public name?: string;
   public userName: string;
   public email: string;
+  public emailVerified: boolean;
   public isPrivate: boolean;
   public createdAt: number;
   public DPURL: string;
@@ -29,6 +31,7 @@ export class User {
     this.name = props.name;
     this.userName = props.userName;
     this.email = props.email;
+    this.emailVerified = props.emailVerified || false;
     
     this.isPrivate = false;
     this.createdAt = Date.now()

@@ -3,7 +3,12 @@
 @tailwind utilities;
 
 /* styles.css or styles.scss */
-@import '@angular/material/prebuilt-themes/pink-bluegrey.css'; /* Use a different pre-built theme if desired */
+@import '@angular/material/prebuilt-themes/indigo-pink.css'; /* Use a different pre-built theme if desired */
 
 
 /* You can add global styles to this file, and also import other style files */
+
+.md-dialog {
+  outline: 2px solid rgb(98, 102, 103);
+
+}
