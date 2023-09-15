@@ -13,7 +13,6 @@
      userName: string;
      email: string;
      DPURL?: string
-     emailVerified: boolean;
   }
 
   interface Profile {
@@ -27,7 +26,6 @@
     name?: string;
     userName: string;
     email: string;
-    emailVerified: boolean;
     isPrivate: boolean;
     createdAt: number;
     DPURL: string;

@@ -6,7 +6,6 @@ export interface IUser extends Document  {
   name: string;
   userName: string;
   email: string;
-  emailVerified: boolean;
   isPrivate: boolean;
   createdAt: number;
   DPURL: string;
@@ -43,10 +42,6 @@ const userSchema = new Schema<IUser, Model<IUser>>({
   email: {
     type: String,
     required: true,
-  },
-  emailVerified: {
-    type: Boolean,
-    default: false,
   },
   isPrivate: {
     type: Boolean, 

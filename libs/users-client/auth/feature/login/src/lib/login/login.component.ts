@@ -52,7 +52,7 @@ export class LoginComponent {
         if (!user.user.emailVerified) {
           this.openDialog('Your email hasn\'t been verified yet. Please verify your email to continue. We have sent a verification link to your email');
           if (this.auth.currentUser) {
-            sendEmailVerification(this.auth.currentUser).then(() => {
+            sendEmailVerification(this.auth.currentUser, {url: 'http://localhost:4200/'}).then(() => {
               this.openSnackBar('Verification email has been sent');
             }).catch(() => {
               this.openSnackBar('There is trouble sending the mail now. Please try again later');

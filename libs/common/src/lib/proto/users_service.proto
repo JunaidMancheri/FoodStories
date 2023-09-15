@@ -9,8 +9,7 @@ service UsersService {
 message CreateUserRequest {
   string userName = 1;
   string email = 2;
-  bool emailVerified = 3;
-  string DPURL = 4;
+  string DPURL = 3;
 }
 
 enum Gender {
@@ -29,10 +28,9 @@ message CreateUserResponse {
   string name = 2;
   string userName = 3;
   string email = 4;
-  bool emailVerified = 5;
-  bool isPrivate = 6;
-  string createdAt = 7;
-  string DPURL = 8;
-  Profile profile = 9;
+  bool isPrivate = 5;
+  string createdAt = 6;
+  string DPURL = 7;
+  Profile profile = 8;
 
 }

@@ -20,7 +20,6 @@ interface userData {
   email: string;
   password: string;
   userName: string;
-  emailVerified?: boolean;
   DPURL?: string | null;
 }
 
@@ -116,12 +115,11 @@ export class RegisterComponent {
       .then(async (user) => {
         if (this.auth.currentUser) {
           sendEmailVerification(this.auth.currentUser, {
-            url: 'http://localhost:4200/auth/login?emailVerified=true',
+            url: 'http://localhost:4200/',
           }).then(() => {
             this.openDialogBox();
           });
           userData.DPURL = user.user.photoURL;
-          userData.emailVerified = user.user.emailVerified;
           this.callBackendCreateUserEndPoint(userData);
           const token = await user.user.getIdToken();
           this.persistAuthState(token, user.user.refreshToken);
@@ -147,7 +145,6 @@ export class RegisterComponent {
         userName: userData.userName,
         DPURL: 'hlo how are you',
         email: userData.email,
-        emailVerified: userData.emailVerified,
       })
       .subscribe((data: any) => console.log(data, 5));
   }
