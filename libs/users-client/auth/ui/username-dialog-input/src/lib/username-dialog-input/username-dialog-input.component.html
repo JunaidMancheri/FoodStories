@@ -1,0 +1,14 @@
+<h1 mat-dialog-title>Before you start</h1>
+<div mat-dialog-content>
+  <p>How would you like to be called?</p>
+  <mat-form-field>
+    <mat-label>Username</mat-label>
+    <input ngModel matInput #input="ngModel" required [minlength]="4">
+  
+    <mat-error *ngIf="input.touched && input.control.errors">Username should have atleast 4 letters</mat-error>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Not now</button>
+  <button mat-button [disabled]="input.invalid" [mat-dialog-close]="input.value" cdkFocusInitial>Ok</button>
+</div>

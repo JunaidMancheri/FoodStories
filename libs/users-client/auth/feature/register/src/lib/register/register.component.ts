@@ -1,20 +1,11 @@
-import { Component, OnInit } from '@angular/core';
-import { MatIconRegistry } from '@angular/material/icon';
-import { DomSanitizer } from '@angular/platform-browser';
-import {
-  Auth,
-  GoogleAuthProvider,
-  FacebookAuthProvider,
-  TwitterAuthProvider,
-  createUserWithEmailAndPassword,
-  sendEmailVerification,
-} from '@angular/fire/auth';
-import { HttpClient } from '@angular/common/http';
+import { Component, OnDestroy } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { CookieService } from 'ngx-cookie-service';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogBoxComponent } from '@food-stories/users-client/auth/ui/dialog-box';
+import { UsernameDialogInputComponent } from '@food-stories/users-client/auth/ui/username-dialog-input';
+import { AuthService } from '@food-stories/users-client/auth/data-access'
+import { Subscription } from 'rxjs';
 
 interface userData {
   email: string;
@@ -23,48 +14,59 @@ interface userData {
   DPURL?: string | null;
 }
 
+type CallbackFunction = () => void;
+
 @Component({
   selector: 'fs-register',
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.css'],
 })
-export class RegisterComponent {
+export class RegisterComponent implements OnDestroy {
   isLoading = false;
+  username: string | null = null;
+  subscription: Subscription | undefined;
+
 
   constructor(
-    private matIconRegistry: MatIconRegistry,
-    private domSanitizer: DomSanitizer,
-    private googleAuthProvider: GoogleAuthProvider,
-    private facebookAuthProvider: FacebookAuthProvider,
-    private twitterAuthProvider: TwitterAuthProvider,
-    private auth: Auth,
-    private httpClient: HttpClient,
     private _snackBar: MatSnackBar,
-    private cookieService: CookieService,
-    private _dialog: MatDialog
+    private _dialog: MatDialog,
+    private authService: AuthService
   ) {
-    this.matIconRegistry.addSvgIcon(
-      'google',
-      this.domSanitizer.bypassSecurityTrustResourceUrl('assets/google.svg')
-    );
+  }
+  ngOnDestroy(): void {
+    if (this.subscription) {
+      this.subscription.unsubscribe();
+    }
   }
 
   async handleSubmit(form: NgForm) {
     this.isLoading = true;
+    setTimeout(() => (this.isLoading = false), 1000);
     if (form.valid) {
       const userData = {
         email: form.controls['email'].value as string,
         password: form.controls['password'].value as string,
         userName: form.controls['username'].value as string,
       };
-      await this.registerWithEmailAndPassword(userData);
+      this.registerWithEmailAndPassword(userData);
+      
     } else {
-      const usernameErrors = form.controls['username'].errors;
-      if (usernameErrors && usernameErrors['required']) {
-        this.openSnackBar('username is required');
-        return;
-      }
 
+      const usernameErrors = form.controls['username'].errors;
+      if (usernameErrors) {
+        
+        if (usernameErrors['required']) {
+          this.openSnackBar('username is required');
+          return;
+        }
+
+        if (usernameErrors['usernameTaken']) {
+          this.openSnackBar('The username is already taken. Please find a new one');
+          return;
+        }
+
+     
+      }
       const emailErrors = form.controls['email'].errors;
       if (emailErrors && emailErrors['required']) {
         this.openSnackBar('email is required');
@@ -87,7 +89,7 @@ export class RegisterComponent {
       this.openSnackBar('Invalid form inputs');
     }
 
-    setTimeout(() => (this.isLoading = false), 1000);
+    
   }
 
   openSnackBar(message: string) {
@@ -99,53 +101,97 @@ export class RegisterComponent {
     });
   }
 
-  openDialogBox() {
+  openDialogBox(content: string) {
     this._dialog.open(DialogBoxComponent, {
       panelClass: 'md-dialog',
       data: {
         title: 'Email Verification',
-        content:
-          ' A Verification link has been sent to your email. Please verify your email to continue.',
+        content,
       },
     });
   }
 
-  async registerWithEmailAndPassword(userData: userData) {
-    createUserWithEmailAndPassword(this.auth, userData.email, userData.password)
-      .then(async (user) => {
-        if (this.auth.currentUser) {
-          sendEmailVerification(this.auth.currentUser, {
-            url: 'http://localhost:4200/',
-          }).then(() => {
-            this.openDialogBox();
-          });
-          userData.DPURL = user.user.photoURL;
-          this.callBackendCreateUserEndPoint(userData);
-          const token = await user.user.getIdToken();
-          this.persistAuthState(token, user.user.refreshToken);
-        } else {
-          this.openSnackBar('Something went wrong, Please try again later');
+  openUsernameInputDialogBox(callback: CallbackFunction) {
+    const dialogRef =this._dialog.open(UsernameDialogInputComponent);
+
+    dialogRef.afterClosed()
+    .subscribe((username) => {
+      if (username) {
+        this.subscription = this.authService.isUsernameAvailable(username).subscribe((isAvailable) => {
+          if (isAvailable) {
+            this.username = username;
+            callback()
+          } else {
+            this.openSnackBar('Oops.. That username is already taken');
+          }
+        })
+      }
+    });
+  }
+
+  registerWithFacebook() {
+    const callback: CallbackFunction = () => {
+      this.authService.registerWithFacebook()
+      .then((infos) => {
+        if (infos) {
+          this.openDialogBox(infos);
         }
       })
       .catch((error) => {
-        if (error.code == 'auth/email-already-in-use') {
-          this.openSnackBar('Email already in use');
+        switch(error.code) {
+          case 'auth/account-exists-with-different-credential':
+            this.openSnackBar('Account exists with different credentials')
         }
-      });
-  }
-
-  persistAuthState(accessToken: string, refreshToken: string) {
-    this.cookieService.set('access_token', accessToken);
-    this.cookieService.set('refresh_token', refreshToken);
-  }
-
-  callBackendCreateUserEndPoint(userData: userData) {
-    this.httpClient
-      .post('http://localhost:3000/api/v1/users', {
-        userName: userData.userName,
-        DPURL: 'hlo how are you',
-        email: userData.email,
       })
-      .subscribe((data: any) => console.log(data, 5));
+    }
+    this.openUsernameInputDialogBox(callback);
+  }
+
+  async registerWithTwitter() {
+    const callback: CallbackFunction = () => {
+      this.authService.registerWithTwitter()
+      .then((infos) => {
+        if (infos) {
+          this.openDialogBox(infos);
+        }
+      })
+      .catch((error) => {
+        switch(error.code) {
+          case 'auth/account-exists-with-different-credential':
+            this.openSnackBar('Account exists with different credentials')
+        }
+      })
+    }
+    this.openUsernameInputDialogBox(callback);
+  }
+
+
+
+  registerWithGoogle() {
+    const callback: CallbackFunction = () => {
+      this.authService.registerWithGoogle()
+      .catch((error) => {
+        this.openDialogBox(error)
+      })
+    }
+    this.openUsernameInputDialogBox(callback);
+  }
+
+
+
+  async registerWithEmailAndPassword(userData: userData) {
+    this.authService.registerWithEmailAndPassword(userData)
+    .then(() => {
+      this.openDialogBox(' A Verification link has been sent to your email. Please verify your email to continue.');
+    })
+    .catch((error) => {
+      if (error.code == 'auth/email-already-in-use') {
+        this.openSnackBar('Email already in use');
+      } else if(error.code == 'auth/invalid-email') {
+        this.openSnackBar('Please provide a valid email address');
+      } else {
+        this.openSnackBar('Something went wrong ... Please try again later');
+      }
+    })
   }
 }

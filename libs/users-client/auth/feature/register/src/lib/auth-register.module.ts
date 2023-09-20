@@ -3,18 +3,15 @@ import { CommonModule } from '@angular/common';
 import { RegisterComponent } from './register/register.component';
 import { RouterModule } from '@angular/router';
 import { IconsModule } from '@food-stories/shared-icons';
-import {
-  FacebookAuthProvider,
-  GoogleAuthProvider,
-  TwitterAuthProvider,
-} from '@angular/fire/auth';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { MatchPasswordDirective } from './register/passwordMatch.validator';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
-import { CookieService } from 'ngx-cookie-service';
 import { MatDialogModule } from '@angular/material/dialog';
+import { AuthService } from '@food-stories/users-client/auth/data-access';
+import { AuthHttpService } from '@food-stories/users-client/auth/data-access';
+import { UsernameAvailableValidator } from './register/usernameAvailable.validator';
 
 @NgModule({
   imports: [
@@ -27,8 +24,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatProgressSpinnerModule,
     MatDialogModule,
   ],
-  providers: [GoogleAuthProvider, FacebookAuthProvider, TwitterAuthProvider, CookieService],
-  declarations: [RegisterComponent, MatchPasswordDirective],
+  providers: [AuthService, AuthHttpService],
+  declarations: [RegisterComponent, MatchPasswordDirective, UsernameAvailableValidator],
   exports: [RegisterComponent],
 })
 export class AuthRegisterModule {}
