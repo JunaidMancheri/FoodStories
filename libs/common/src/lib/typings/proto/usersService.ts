@@ -2,15 +2,25 @@
   import { Observable } from 'rxjs';
 
   export interface IUsersServiceClient {
-    CreateUser(request: ICreateUserRequest, metadata?: Metadata):  Observable<ICreateUserResponse> ;
+    createUser(request: ICreateUserRequest, metadata?: Metadata):  Observable<ICreateUserResponse>;
+    isUsernameAvailable(request: IisUsernameAvailableRequest, metadata?: Metadata): Observable<IisUsernameAvailableResponse>;
   }
 
   export interface IUsersServiceServer {
-    CreateUser: handleUnaryCall<ICreateUserRequest, ICreateUserResponse>;
+    createUser: handleUnaryCall<ICreateUserRequest, ICreateUserResponse>;
+    isUsernameAvailable: handleUnaryCall<IisUsernameAvailableRequest, IisUsernameAvailableResponse>;
+  }
+
+  export interface IisUsernameAvailableRequest {
+    username: string;
   }
   
+  export interface IisUsernameAvailableResponse {
+    available: boolean;
+  }
+
   export interface ICreateUserRequest {
-     userName: string;
+     username: string;
      email: string;
      DPURL?: string
   }
@@ -24,7 +34,7 @@
   export interface ICreateUserResponse {
     id: string;
     name?: string;
-    userName: string;
+    username: string;
     email: string;
     isPrivate: boolean;
     createdAt: number;

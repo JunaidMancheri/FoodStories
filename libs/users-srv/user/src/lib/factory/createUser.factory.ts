@@ -5,7 +5,7 @@ import { LoggerClass } from "@food-stories/common/logger";
 import { UserRepository } from "../interface/db/mongodb/repository/users.repository";
 import { userModel } from "../interface/db/mongodb/models/user.model";
 
-const userRepo = new UserRepository(userModel);
+export const userRepo = new UserRepository(userModel);
 
 export function makeCreateUserHandler(Logger: LoggerClass) : BaseHandler {
   const usecase = new CreateUserUseCase(new Logger('UseCase:Create'), userRepo);

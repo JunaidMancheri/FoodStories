@@ -2,7 +2,7 @@ import { v4 as  uuidV4 } from 'uuid';
 
 export interface UserProps {
   name?: string;
-  userName: string;
+  username: string;
   email: string;
   DPURL?: string;
 }
@@ -17,7 +17,7 @@ interface Profile {
 export class User {
   public id: string;
   public name?: string;
-  public userName: string;
+  public username: string;
   public email: string;
   public isPrivate: boolean;
   public createdAt: number;
@@ -27,7 +27,7 @@ export class User {
   constructor(props : UserProps) {
     this.id = uuidV4();
     this.name = props.name;
-    this.userName = props.userName;
+    this.username = props.username;
     this.email = props.email;
     
     this.isPrivate = false;

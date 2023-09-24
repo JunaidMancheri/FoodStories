@@ -1,4 +1,3 @@
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router'
 import {
@@ -16,7 +15,7 @@ import { map } from 'rxjs';
 interface UserData {
   email: string;
   password: string;
-  userName: string;
+  username: string;
   DPURL?: string | null;
 }
 
@@ -30,7 +29,7 @@ export class AuthService {
 
     isUsernameAvailable(username: string) {
       return this.httpService.checkUserNameAvailability(username)
-      .pipe(map(response => response.success))
+      .pipe(map(response => response.available))
     }
 
   async registerWithEmailAndPassword(userData: UserData) {

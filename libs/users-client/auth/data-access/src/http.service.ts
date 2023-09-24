@@ -6,7 +6,7 @@ import { API_ENDPOINTS } from '@food-stories/users-client/shared/config'
 interface UserData {
   email: string;
   password: string;
-  userName: string;
+  username: string;
   DPURL?: string | null;
 }
 
@@ -18,7 +18,7 @@ export class AuthHttpService {
   createUser(userData: UserData): Observable<any> {
     return this.httpClient
     .post(API_ENDPOINTS.CREATE_USER, {
-      userName: userData.userName,
+      username: userData.username,
       DPURL: userData.DPURL,
       email: userData.email,
     });
@@ -26,6 +26,6 @@ export class AuthHttpService {
 
 
   checkUserNameAvailability(username: string) {
-    return this.httpClient.get<{success: boolean}>(API_ENDPOINTS.USERNAME_AVAILABILITY + username); 
+    return this.httpClient.get<{available: boolean}>(API_ENDPOINTS.USERNAME_AVAILABILITY + username); 
   }
 }

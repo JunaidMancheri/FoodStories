@@ -3,11 +3,20 @@ syntax = "proto3";
 package users_service.v1;
 
 service UsersService {
-  rpc CreateUser (CreateUserRequest) returns (CreateUserResponse) {}
+  rpc createUser (CreateUserRequest) returns (CreateUserResponse) {}
+  rpc isUsernameAvailable(isUsernameAvailableRequest) returns (isUsernameAvailableResponse) {}
+}
+
+message isUsernameAvailableResponse {
+  bool available = 1;
+}
+
+message isUsernameAvailableRequest {
+  string username = 1;
 }
 
 message CreateUserRequest {
-  string userName = 1;
+  string username = 1;
   string email = 2;
   string DPURL = 3;
 }
@@ -26,7 +35,7 @@ message Profile {
 message CreateUserResponse {
   string id = 1;
   string name = 2;
-  string userName = 3;
+  string username = 3;
   string email = 4;
   bool isPrivate = 5;
   string createdAt = 6;

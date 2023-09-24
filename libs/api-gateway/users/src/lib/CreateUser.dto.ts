@@ -1,6 +1,6 @@
 export class CreateUserDTO {
   email!: string;
-  userName!: string;
+  username!: string;
   DPURL?: string
   emailVerified!: boolean;
 }

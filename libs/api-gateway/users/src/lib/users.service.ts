@@ -18,7 +18,11 @@ export class ApiGatewayUsersService implements OnModuleInit {
   }
 
    createUser(createUserDto: CreateUserDTO) {
-    return this.usersService.CreateUser(createUserDto);
+    return this.usersService.createUser(createUserDto);
+  }
+
+  isUsernameAvailable(data: {username : string}) {
+    return this.usersService.isUsernameAvailable(data);
   }
 
 

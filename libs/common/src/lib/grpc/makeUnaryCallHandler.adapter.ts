@@ -10,7 +10,6 @@ export function makeUnaryCallHandler(handler: BaseHandler, action: Action):  han
        data: call.request,
        metadata: call.metadata,
     }
-    console.log('adapter request');
     const response = await handler.handle(request);
     if (response.status == 'error') {
       const error: ServerErrorResponse = {
@@ -19,7 +18,6 @@ export function makeUnaryCallHandler(handler: BaseHandler, action: Action):  han
       }
       callback(error);
     } else {
-      console.log('adapter response');
       callback(null, response.data);
     }
   }

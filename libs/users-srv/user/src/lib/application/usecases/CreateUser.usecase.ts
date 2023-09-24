@@ -8,8 +8,7 @@ export class CreateUserUseCase implements ICreateUserUseCase {
   async execute(userDto: UserProps): Promise<User> {
     const newUser  = new User(userDto);
     await  this.createUserRepo.createUser(newUser);
-    console.log('working usercase')
-    this.logger.info('new  user registered', newUser);
+    this.logger.info('new  user registered', { username: newUser.username, email: newUser.email});
     return newUser;
   }
   

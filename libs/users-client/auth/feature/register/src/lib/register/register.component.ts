@@ -10,7 +10,7 @@ import { Subscription } from 'rxjs';
 interface userData {
   email: string;
   password: string;
-  userName: string;
+  username: string;
   DPURL?: string | null;
 }
 
@@ -46,7 +46,7 @@ export class RegisterComponent implements OnDestroy {
       const userData = {
         email: form.controls['email'].value as string,
         password: form.controls['password'].value as string,
-        userName: form.controls['username'].value as string,
+        username: form.controls['username'].value as string,
       };
       this.registerWithEmailAndPassword(userData);
       
@@ -118,6 +118,7 @@ export class RegisterComponent implements OnDestroy {
     .subscribe((username) => {
       if (username) {
         this.subscription = this.authService.isUsernameAvailable(username).subscribe((isAvailable) => {
+          console.log(isAvailable);
           if (isAvailable) {
             this.username = username;
             callback()

@@ -30,8 +30,15 @@ export function makeLogger(serviceName: string): LoggerClass  {
               format.colorize(),
               format.timestamp({format: 'HH:mm:ss'}),
               format.metadata({ fillExcept: ['timestamp', 'level', 'message'] }),
-              format.printf(({ timestamp, level, message }) => {
-                return `[${timestamp}] [${level}] [${serviceName}] [${componentName}] ${message}`;
+              format.printf(({ timestamp, level, message, metadata }) => {
+                if (Object.keys(metadata.metadata).length > 0) {
+                  const formattedMetadata = Object.entries(metadata.metadata)
+                  .map(([key, value]) => `${key}: '${value}'`)
+                  .join(', ');
+                return `[${timestamp}] [${level}] [${serviceName}] [${componentName}] ${message} {${formattedMetadata}}`;
+                }
+                return `[${timestamp}] [${level}] [${serviceName}] [${componentName}] ${message}`
+                ;
               }),
             ),
           }),
