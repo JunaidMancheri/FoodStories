@@ -7,7 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatProgressBarModule } from '@angular/material/progress-bar' 
 import { HttpClientModule } from '@angular/common/http';
 import { initializeApp,provideFirebaseApp, } from '@angular/fire/app';
-import { environment } from '../environments/environment';
+import { environment } from '@food-stories/users-client/shared/config';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 
 

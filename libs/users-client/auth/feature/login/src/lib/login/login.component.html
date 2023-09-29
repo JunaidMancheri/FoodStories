@@ -46,12 +46,12 @@
     <hr class="w-[100%]">
     <div class="w-full text-center flex flex-col justify-center gap-3">
       
-      <h4>Or register with</h4>
+      <h4>Or Login with</h4>
 
       <div class="links justify-center flex gap-3">
-        <fs-google-icon class="hover:cursor-pointer text-center"></fs-google-icon>
-        <fs-fb-icon class="hover:cursor-pointer"></fs-fb-icon>
-        <fs-twitter-icon class="hover:cursor-pointer"></fs-twitter-icon>
+        <fs-google-icon (click)="loginWithGoogle()" class="hover:cursor-pointer text-center"></fs-google-icon>
+        <fs-fb-icon (click)="loginWithFacebook()" class="hover:cursor-pointer"></fs-fb-icon>
+        <fs-twitter-icon (click)="loginWithTwitter()" class="hover:cursor-pointer"></fs-twitter-icon>
       </div>
 
       <p>Never been here? <a class="text-blue-400" routerLink="/auth/register">Join us</a></p>

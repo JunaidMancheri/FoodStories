@@ -4,11 +4,22 @@
   export interface IUsersServiceClient {
     createUser(request: ICreateUserRequest, metadata?: Metadata):  Observable<ICreateUserResponse>;
     isUsernameAvailable(request: IisUsernameAvailableRequest, metadata?: Metadata): Observable<IisUsernameAvailableResponse>;
+    isRegisteredUser(request: IisRegisteredUserRequest, metadata?: Metadata): Observable<IisRegisteredUserResponse>
   }
 
   export interface IUsersServiceServer {
     createUser: handleUnaryCall<ICreateUserRequest, ICreateUserResponse>;
     isUsernameAvailable: handleUnaryCall<IisUsernameAvailableRequest, IisUsernameAvailableResponse>;
+    isRegisteredUser: handleUnaryCall<IisRegisteredUserRequest, IisRegisteredUserResponse>;
+  }
+
+
+  export interface IisRegisteredUserRequest {
+    email: string;
+  }
+
+  export interface IisRegisteredUserResponse {
+    registered: boolean;
   }
 
   export interface IisUsernameAvailableRequest {

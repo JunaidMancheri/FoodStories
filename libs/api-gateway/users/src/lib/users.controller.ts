@@ -9,8 +9,15 @@ export class ApiGatewayUsersController {
 
   @Get(':username')
   checkUser(@Param() params: {username: string}) {
+    
     const response = this.apiGatewayUsersService.isUsernameAvailable({username: params.username});
     return response;
+  }
+  
+  @Get('email/:email')
+  isRegisteredUser(@Param() params: { email: string}) {
+    console.log(params);
+    return this.apiGatewayUsersService.isRegisteredUser({ email: params.email });
   }
 
   @Post() 

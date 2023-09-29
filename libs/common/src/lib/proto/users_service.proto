@@ -5,6 +5,15 @@ package users_service.v1;
 service UsersService {
   rpc createUser (CreateUserRequest) returns (CreateUserResponse) {}
   rpc isUsernameAvailable(isUsernameAvailableRequest) returns (isUsernameAvailableResponse) {}
+  rpc isRegisteredUser(isRegisteredUserRequest) returns (isRegisteredUserResponse) {}
+}
+
+message isRegisteredUserRequest {
+  string email = 1;
+}
+
+message isRegisteredUserResponse {
+  bool registered = 1;
 }
 
 message isUsernameAvailableResponse {

@@ -1,11 +1,10 @@
 import { Component, OnDestroy } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { MatSnackBar } from '@angular/material/snack-bar';
 import { MatDialog } from '@angular/material/dialog';
-import { DialogBoxComponent } from '@food-stories/users-client/auth/ui/dialog-box';
 import { UsernameDialogInputComponent } from '@food-stories/users-client/auth/ui/username-dialog-input';
 import { AuthService } from '@food-stories/users-client/auth/data-access'
 import { Subscription } from 'rxjs';
+import { NotificationService } from '@food-stories/users-client/auth/ui/services';
 
 interface userData {
   email: string;
@@ -14,7 +13,7 @@ interface userData {
   DPURL?: string | null;
 }
 
-type CallbackFunction = () => void;
+type CallbackFunction = (username: string) => void;
 
 @Component({
   selector: 'fs-register',
@@ -23,14 +22,13 @@ type CallbackFunction = () => void;
 })
 export class RegisterComponent implements OnDestroy {
   isLoading = false;
-  username: string | null = null;
   subscription: Subscription | undefined;
 
 
   constructor(
-    private _snackBar: MatSnackBar,
-    private _dialog: MatDialog,
-    private authService: AuthService
+    private dialog: MatDialog,
+    private authService: AuthService,
+    private notificationService: NotificationService
   ) {
   }
   ngOnDestroy(): void {
@@ -56,12 +54,12 @@ export class RegisterComponent implements OnDestroy {
       if (usernameErrors) {
         
         if (usernameErrors['required']) {
-          this.openSnackBar('username is required');
+          this.notificationService.openSnackBar('username is required');
           return;
         }
 
         if (usernameErrors['usernameTaken']) {
-          this.openSnackBar('The username is already taken. Please find a new one');
+          this.notificationService.openSnackBar('The username is already taken. Please find a new one');
           return;
         }
 
@@ -69,50 +67,31 @@ export class RegisterComponent implements OnDestroy {
       }
       const emailErrors = form.controls['email'].errors;
       if (emailErrors && emailErrors['required']) {
-        this.openSnackBar('email is required');
+        this.notificationService.openSnackBar('email is required');
         return;
       }
 
       const passwordErrors = form.controls['password'].errors;
 
       if (passwordErrors && passwordErrors['required']) {
-        this.openSnackBar('password is required');
+        this.notificationService.openSnackBar('password is required');
         return;
       }
 
       const formErrors = form.errors;
       if (formErrors && formErrors['isPasswordsDoNotMatch']) {
-        this.openSnackBar('Passwords do not match');
+        this.notificationService.openSnackBar('Passwords do not match');
         return;
       }
 
-      this.openSnackBar('Invalid form inputs');
+      this.notificationService.openSnackBar('Invalid form inputs');
     }
 
     
   }
 
-  openSnackBar(message: string) {
-    new Audio().play();
-    this._snackBar.open(message, 'close', {
-      verticalPosition: 'top',
-      horizontalPosition: 'center',
-      duration: 5000,
-    });
-  }
-
-  openDialogBox(content: string) {
-    this._dialog.open(DialogBoxComponent, {
-      panelClass: 'md-dialog',
-      data: {
-        title: 'Email Verification',
-        content,
-      },
-    });
-  }
-
   openUsernameInputDialogBox(callback: CallbackFunction) {
-    const dialogRef =this._dialog.open(UsernameDialogInputComponent);
+    const dialogRef =this.dialog.open(UsernameDialogInputComponent);
 
     dialogRef.afterClosed()
     .subscribe((username) => {
@@ -120,10 +99,9 @@ export class RegisterComponent implements OnDestroy {
         this.subscription = this.authService.isUsernameAvailable(username).subscribe((isAvailable) => {
           console.log(isAvailable);
           if (isAvailable) {
-            this.username = username;
-            callback()
+            callback(username)
           } else {
-            this.openSnackBar('Oops.. That username is already taken');
+            this.notificationService.openSnackBar('Oops.. That username is already taken');
           }
         })
       }
@@ -131,17 +109,12 @@ export class RegisterComponent implements OnDestroy {
   }
 
   registerWithFacebook() {
-    const callback: CallbackFunction = () => {
-      this.authService.registerWithFacebook()
-      .then((infos) => {
-        if (infos) {
-          this.openDialogBox(infos);
-        }
-      })
+    const callback: CallbackFunction = (username: string) => {
+      this.authService.registerWithFacebook(username)
       .catch((error) => {
         switch(error.code) {
           case 'auth/account-exists-with-different-credential':
-            this.openSnackBar('Account exists with different credentials')
+            this.notificationService.openSnackBar('Account exists with different credentials')
         }
       })
     }
@@ -149,17 +122,12 @@ export class RegisterComponent implements OnDestroy {
   }
 
   async registerWithTwitter() {
-    const callback: CallbackFunction = () => {
-      this.authService.registerWithTwitter()
-      .then((infos) => {
-        if (infos) {
-          this.openDialogBox(infos);
-        }
-      })
+    const callback: CallbackFunction = (username: string) => {
+      this.authService.registerWithTwitter(username)
       .catch((error) => {
         switch(error.code) {
           case 'auth/account-exists-with-different-credential':
-            this.openSnackBar('Account exists with different credentials')
+            this.notificationService.openSnackBar('Account exists with different credentials')
         }
       })
     }
@@ -169,10 +137,10 @@ export class RegisterComponent implements OnDestroy {
 
 
   registerWithGoogle() {
-    const callback: CallbackFunction = () => {
-      this.authService.registerWithGoogle()
+    const callback: CallbackFunction = (username: string) => {
+      this.authService.registerWithGoogle(username)
       .catch((error) => {
-        this.openDialogBox(error)
+        this.notificationService.openDialog(error)
       })
     }
     this.openUsernameInputDialogBox(callback);
@@ -183,15 +151,15 @@ export class RegisterComponent implements OnDestroy {
   async registerWithEmailAndPassword(userData: userData) {
     this.authService.registerWithEmailAndPassword(userData)
     .then(() => {
-      this.openDialogBox(' A Verification link has been sent to your email. Please verify your email to continue.');
+      this.notificationService.openDialog(' A Verification link has been sent to your email. Please verify your email to continue.');
     })
     .catch((error) => {
       if (error.code == 'auth/email-already-in-use') {
-        this.openSnackBar('Email already in use');
+        this.notificationService.openSnackBar('Email already in use');
       } else if(error.code == 'auth/invalid-email') {
-        this.openSnackBar('Please provide a valid email address');
+        this.notificationService.openSnackBar('Please provide a valid email address');
       } else {
-        this.openSnackBar('Something went wrong ... Please try again later');
+        this.notificationService.showSomethingWentWrong();
       }
     })
   }

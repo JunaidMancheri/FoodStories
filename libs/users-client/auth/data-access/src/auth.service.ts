@@ -1,16 +1,20 @@
 import { Injectable } from '@angular/core';
-import { Router } from '@angular/router'
+import { Router } from '@angular/router';
 import {
   Auth,
   FacebookAuthProvider,
   GoogleAuthProvider,
   TwitterAuthProvider,
   createUserWithEmailAndPassword,
+  deleteUser,
   sendEmailVerification,
+  signInWithEmailAndPassword,
   signInWithPopup,
 } from '@angular/fire/auth';
 import { AuthHttpService } from './http.service';
 import { map } from 'rxjs';
+import { NotificationService } from '@food-stories/users-client/auth/ui/services';
+import { environment } from '@food-stories/users-client/shared/config';
 
 interface UserData {
   email: string;
@@ -23,14 +27,18 @@ interface UserData {
   providedIn: 'root',
 })
 export class AuthService {
-  constructor(private firebaseAuth: Auth, private router: Router,
-    private httpService: AuthHttpService) {}
+  constructor(
+    private firebaseAuth: Auth,
+    private router: Router,
+    private httpService: AuthHttpService,
+    private notificiationService: NotificationService,
+  ) {}
 
-
-    isUsernameAvailable(username: string) {
-      return this.httpService.checkUserNameAvailability(username)
-      .pipe(map(response => response.available))
-    }
+  isUsernameAvailable(username: string) {
+    return this.httpService
+      .checkUserNameAvailability(username)
+      .pipe(map((response) => response.available));
+  }
 
   async registerWithEmailAndPassword(userData: UserData) {
     const user = await createUserWithEmailAndPassword(
@@ -45,47 +53,177 @@ export class AuthService {
     this.callBackendCreateUserEndPoint(userData);
   }
 
-  async registerWithGoogle() {
-    await signInWithPopup(this.firebaseAuth, new GoogleAuthProvider());
+  async registerWithGoogle(username: string) {
+    const user = await signInWithPopup(
+      this.firebaseAuth,
+      new GoogleAuthProvider()
+    );
+    const userData: createUserDto = {
+      email: user.user.email,
+      DPURL: user.user.photoURL,
+      username,
+    };
+    this.callBackendCreateUserEndPoint(userData);
     this.router.navigateByUrl('/');
   }
 
-  async registerWithTwitter(): Promise<string |  undefined> {
-    await signInWithPopup(this.firebaseAuth, new TwitterAuthProvider());
-    if (this.firebaseAuth.currentUser && !this.firebaseAuth.currentUser.emailVerified) {
+  async registerWithTwitter(username: string) {
+    const user = await signInWithPopup(
+      this.firebaseAuth,
+      new TwitterAuthProvider()
+    );
+    const userData: createUserDto = {
+      username,
+      email: user.user.email,
+      DPURL: user.user.photoURL,
+    };
+    this.callBackendCreateUserEndPoint(userData);
+    if (
+      this.firebaseAuth.currentUser &&
+      !this.firebaseAuth.currentUser.emailVerified
+    ) {
       await this.sendEmailVerification();
-      return 'An email verification link has been sent to your email. Please verify your email to continue';
+      this.notificiationService.openDialog('An email verification link has been sent to your email. Please verify your email to continue')
     } else {
       this.router.navigateByUrl('/');
     }
-    return;
   }
 
-  async registerWithFacebook() {
-    await signInWithPopup(this.firebaseAuth, new FacebookAuthProvider());
-    if (this.firebaseAuth.currentUser && !this.firebaseAuth.currentUser.emailVerified) {
+  async registerWithFacebook(username: string) {
+    const user = await signInWithPopup(
+      this.firebaseAuth,
+      new FacebookAuthProvider()
+    );
+    const userData: createUserDto = {
+      username,
+      email: user.user.email,
+      DPURL: user.user.photoURL,
+    };
+    this.callBackendCreateUserEndPoint(userData);
+    if (
+      this.firebaseAuth.currentUser &&
+      !this.firebaseAuth.currentUser.emailVerified
+    ) {
       await this.sendEmailVerification();
-      return 'An email verification link has been sent to your email. Please verify your email to continue';
+      this.notificiationService.openDialog('An email verification link has been sent to your email. Please verify your email to continue')
     } else {
       this.router.navigateByUrl('/');
     }
-    return;
   }
-
 
   async sendEmailVerification() {
     if (this.firebaseAuth.currentUser) {
       await sendEmailVerification(this.firebaseAuth.currentUser, {
-        url: 'http://localhost:4200/',
+        url: environment.homeUrl,
       });
     } else {
-      throw new Error('Email verification mail failed');
+      this.notificiationService.openDialog('There was a error sending the email now. Please try again later');
     }
   }
 
-  callBackendCreateUserEndPoint(userData: UserData) {
-   this.httpService.createUser(userData)
-   .subscribe(data => console.log(data));
+  callBackendCreateUserEndPoint(userData: createUserDto) {
+    this.httpService
+      .createUser(userData)
+      .subscribe();
   }
+
+  
+  loginUser(email: string, password: string) {
+    signInWithEmailAndPassword(this.firebaseAuth, email, password)
+      .then(async (user) => {
+        if (!user.user.emailVerified) {
+          this.notificiationService.openDialog(
+            "Your email hasn't been verified yet. Please verify your email to continue. We have sent a verification link to your email"
+          );
+          await this.sendEmailVerification();
+          this.notificiationService.openSnackBar('Verification email has been sent');
+        } else {
+          this.router.navigate(['/']);
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+        if (error.code == 'auth/user-not-found') {
+          this.notificiationService.openSnackBar('No user found with this email');
+        } else if (error.code == 'auth/wrong-password') {
+          this.notificiationService.openSnackBar('Wrong password or email');
+        } else if (error.code == 'auth/too-many-requests') {
+          this.notificiationService.openSnackBar(
+            'Your account has been  temporarily disabled due to too many attempts with wrong password. Either reset your  password or try again later ;)'
+          );
+        } else {
+          this.notificiationService.openSnackBar('Something went wrong. Please try again later');
+        }
+      });
+  }
+
+  async loginWithGoogle() {
+    const userCredential = await  signInWithPopup(this.firebaseAuth, new GoogleAuthProvider());
+    if (!userCredential.user.email) {
+      return this.notificiationService.openSnackBar('Something went wrong. Please try again later');
+    }
+    this.httpService.isRegisteredUser(userCredential.user.email).subscribe((registered) => {
+       if (registered) {
+        this.router.navigateByUrl('/');
+       } else {
+        if (this.firebaseAuth.currentUser) {
+           deleteUser(this.firebaseAuth.currentUser);
+        }
+        this.notificiationService.openSnackBar('Please register before login');
+       }
+    })
+  
+  }
+
+  async loginWithFacebook() {
+      const userCredential = await signInWithPopup(this.firebaseAuth, new FacebookAuthProvider());
+
+      if (!userCredential.user.email) {
+        return this.notificiationService.showSomethingWentWrong();
+      }
+      this.httpService.isRegisteredUser(userCredential.user.email).subscribe((registered) => {
+         if (registered) {
+          if (!this.firebaseAuth.currentUser?.emailVerified) {
+            this.notificiationService.openDialog('This email is not yet verified. Please verify to continue. We have sent a verification link to your mail');
+          } else {
+            this.router.navigateByUrl('/');
+          }
+         } else {
+          if (this.firebaseAuth.currentUser) {
+             deleteUser(this.firebaseAuth.currentUser);
+          }
+          this.notificiationService.openSnackBar('Please register before login');
+         }
+      })
+    }
+
+
+
+    async loginWithTwitter() {
+      const userCredential = await signInWithPopup(this.firebaseAuth, new TwitterAuthProvider());
+
+      if (!userCredential.user.email) {
+        return this.notificiationService.showSomethingWentWrong();
+      }
+      this.httpService.isRegisteredUser(userCredential.user.email).subscribe((registered) => {
+         if (registered) {
+          if (!this.firebaseAuth.currentUser?.emailVerified) {
+            this.notificiationService.openDialog('This email is not yet verified. Please verify to continue. We have sent a verification link to your mail');
+          } else {
+            this.router.navigateByUrl('/');
+          }
+         } else {
+          if (this.firebaseAuth.currentUser) {
+             deleteUser(this.firebaseAuth.currentUser);
+          }
+          this.notificiationService.openSnackBar('Please register before login');
+         }
+      })
+    }
 }
 
+export interface createUserDto {
+  email: string | null;
+  DPURL?: string | null;
+  username: string;
+}

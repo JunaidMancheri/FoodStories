@@ -7,7 +7,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { FormsModule } from '@angular/forms';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatDialogModule } from '@angular/material/dialog';
-import { CookieService } from 'ngx-cookie-service';
+import { AuthService } from '@food-stories/users-client/auth/data-access'
 
 @NgModule({
   imports: [
@@ -19,7 +19,7 @@ import { CookieService } from 'ngx-cookie-service';
     MatSnackBarModule,
     MatDialogModule
   ],
-  providers: [CookieService],
+  providers: [AuthService],
   declarations: [LoginComponent],
   exports: [LoginComponent],
 })

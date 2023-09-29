@@ -24,6 +24,9 @@ export class ApiGatewayUsersService implements OnModuleInit {
   isUsernameAvailable(data: {username : string}) {
     return this.usersService.isUsernameAvailable(data);
   }
-
+ 
+  isRegisteredUser(data: { email: string }) {
+    return this.usersService.isRegisteredUser(data);
+  }
 
 }
