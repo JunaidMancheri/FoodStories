@@ -1,0 +1,79 @@
+
+
+<div class="sidebar fixed left-0 z-10  hidden w-56 md:block h-screen border-r-2 px-4">
+
+
+  <div class="logo mt-8">
+   <span class="text-2xl  font-mono font-bold ">FoodStories</span>
+  </div>
+
+  <div class="tabs w-full h-screen mt-8 flex space-y-6 flex-col ">
+   <div class="home flex items-center h-8 space-x-3">
+     <mat-icon class="active">home</mat-icon>
+     <span class="text-lg">Home</span>
+   </div>
+
+   <div class="home flex items-center h-8 space-x-3">
+     <mat-icon class="material-symbols-outlined">search</mat-icon>
+     <span class="text-lg">Search</span>
+   </div>
+
+   <div class="home flex items-center h-8 space-x-3">
+     <mat-icon class="material-symbols-outlined">explore_border</mat-icon>
+     <span class="text-lg">Explore</span>
+   </div>
+
+   <div class="home flex items-center h-8 space-x-3">
+    <mat-icon class="material-symbols-outlined">chat</mat-icon>
+    <span class="text-lg">Messages</span>
+  </div>
+
+
+   <div class="home flex items-center h-8 space-x-3">
+     <mat-icon class="material-symbols-outlined">favorite</mat-icon>
+     <span class="text-lg">Notification</span>
+   </div>
+
+   <div class="home flex items-center h-8 space-x-3">
+     <mat-icon class="material-symbols-outlined">add</mat-icon>
+     <span class="text-lg">Create</span>
+   </div>
+
+   <div class="home flex items-center h-8 space-x-3">
+     <mat-icon class="material-symbols-outlined">person</mat-icon>
+     <span class="text-lg">Profile</span>
+   </div>
+
+   <div class="home flex items-center h-8 space-x-3">
+    <mat-icon class="material-symbols-outlined">more_vert</mat-icon>
+    <span class="text-lg">More</span>
+  </div>
+  </div>
+       
+
+ </div>
+
+
+
+ <router-outlet></router-outlet>
+
+
+
+
+
+
+ <div
+  class="bottom-navbar md:hidden w-screen fixed bottom-0 flex justify-around items-center bg-white border-t-2 border-gray-200 z-10 h-16">
+  <mat-icon>home</mat-icon>
+  <mat-icon>search</mat-icon>
+  <mat-icon>add</mat-icon>
+  <mat-icon>favorite_outlined</mat-icon>
+
+  <div class="bg-gradient-to-tr h-10 w-10 rounded-full p-1">
+    <a class="block w-full h-full bg-white  rounded-full transform transition hover:-rotate-12 duration-300"
+      routerLink="/profile">
+      <img class=" w-full h-full rounded-full" src="https://i.ibb.co/yhh0Ljy/profile.jpg" alt="image">
+    </a>
+  </div>
+
+</div>

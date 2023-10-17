@@ -12,6 +12,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { AuthService } from '@food-stories/users-client/auth/data-access';
 import { AuthHttpService } from '@food-stories/users-client/auth/data-access';
 import { UsernameAvailableValidator } from './register/usernameAvailable.validator';
+import { NotificationService } from '@food-stories/users-client/auth/ui/services';
 
 @NgModule({
   imports: [
@@ -24,7 +25,7 @@ import { UsernameAvailableValidator } from './register/usernameAvailable.validat
     MatProgressSpinnerModule,
     MatDialogModule,
   ],
-  providers: [AuthService, AuthHttpService],
+  providers: [AuthService, AuthHttpService, NotificationService],
   declarations: [RegisterComponent, MatchPasswordDirective, UsernameAvailableValidator],
   exports: [RegisterComponent],
 })

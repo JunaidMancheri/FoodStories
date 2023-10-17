@@ -11,10 +11,14 @@ export class UserRepository implements ICreateUserRepo, IisUsernameAvailableRepo
     const user = await this.userModel.findOne({ email });
     return user ? true : false;
   }
+
+
   async isUsernameAvailable(username: string): Promise<boolean> {
     const user = await this.userModel.findOne({ username }, 'username');
     return user ? false : true;
   }
+
+  
   async createUser(user: User): Promise<void> {
     await this.userModel.create(user);
   }

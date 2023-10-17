@@ -12,7 +12,7 @@ import {
   signInWithPopup,
 } from '@angular/fire/auth';
 import { AuthHttpService } from './http.service';
-import { map } from 'rxjs';
+import { map, firstValueFrom } from 'rxjs';
 import { NotificationService } from '@food-stories/users-client/auth/ui/services';
 import { environment } from '@food-stories/users-client/shared/config';
 
@@ -53,11 +53,34 @@ export class AuthService {
     this.callBackendCreateUserEndPoint(userData);
   }
 
+ isEmailUsed(email: string) {
+    return this.httpService.isRegisteredUser(email).pipe(
+      map((registered) => {
+        if (registered) {
+          throw new Error('The Email is already in use');
+        }
+      })
+    );
+  }
+
   async registerWithGoogle(username: string) {
     const user = await signInWithPopup(
       this.firebaseAuth,
       new GoogleAuthProvider()
     );
+    if (!user.user.email){
+      return this.notificiationService.showSomethingWentWrong();
+    }
+    try {
+      (await firstValueFrom(this.isEmailUsed(user.user.email)))
+
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    } catch (error: any) {
+      this.firebaseAuth.signOut();
+      this.notificiationService.openDialog(error.message)
+      return;
+    }
+    
     const userData: createUserDto = {
       email: user.user.email,
       DPURL: user.user.photoURL,
@@ -72,6 +95,18 @@ export class AuthService {
       this.firebaseAuth,
       new TwitterAuthProvider()
     );
+    if (!user.user.email){
+      return this.notificiationService.showSomethingWentWrong();
+    }
+    try {
+      (await firstValueFrom(this.isEmailUsed(user.user.email)))
+
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    } catch (error: any) {
+      this.firebaseAuth.signOut();
+      this.notificiationService.openDialog(error.message)
+      return;
+    }
     const userData: createUserDto = {
       username,
       email: user.user.email,
@@ -94,6 +129,19 @@ export class AuthService {
       this.firebaseAuth,
       new FacebookAuthProvider()
     );
+
+    if (!user.user.email){
+      return this.notificiationService.showSomethingWentWrong();
+    }
+    try {
+      (await firstValueFrom(this.isEmailUsed(user.user.email)))
+
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    } catch (error: any) {
+      this.firebaseAuth.signOut();
+      this.notificiationService.openDialog(error.message)
+      return;
+    }
     const userData: createUserDto = {
       username,
       email: user.user.email,

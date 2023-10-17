@@ -4,6 +4,7 @@ import { ClientGrpc } from '@nestjs/microservices';
 import { IUsersServiceClient } from '@food-stories/common/typings/proto/usersService';
 import { UsersAppConfig } from './config';
 import { CreateUserDTO } from './CreateUser.dto';
+import { catchError, map } from 'rxjs';
 
 
 
@@ -22,7 +23,14 @@ export class ApiGatewayUsersService implements OnModuleInit {
   }
 
   isUsernameAvailable(data: {username : string}) {
-    return this.usersService.isUsernameAvailable(data);
+    return this.usersService.isUsernameAvailable(data).pipe(map((value) => {
+      return value;
+    }),
+    catchError((error) => {
+      console.log('helo werror')
+      return error;
+    })
+    )
   }
  
   isRegisteredUser(data: { email: string }) {

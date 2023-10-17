@@ -6,7 +6,7 @@ import { Logger } from '../config/logger.config';
 
 
 export const UsersServiceImpl : IUsersServiceServer = {
-  createUser: makeUnaryCallHandler(makeCreateUserHandler(Logger), 'user.created'),
-  isUsernameAvailable: makeUnaryCallHandler(makeIsUsernameAvailableHandler(Logger), 'user.isUsernameAvailable'),
-  isRegisteredUser: makeUnaryCallHandler(makeIsRegisteredUser(Logger), 'user.isRegisteredUser'),
+  createUser: makeUnaryCallHandler(makeCreateUserHandler(Logger)),
+  isUsernameAvailable: makeUnaryCallHandler(makeIsUsernameAvailableHandler(Logger)),
+  isRegisteredUser: makeUnaryCallHandler(makeIsRegisteredUser(Logger)),
 }

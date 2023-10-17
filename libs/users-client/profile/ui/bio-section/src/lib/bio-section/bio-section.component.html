@@ -1,0 +1,115 @@
+
+<div class="dp-and-bio">
+  <div class="username-label flex justify-between md:justify-end   items-center px-2 w-full h-12">
+
+    <span class="font-bold md:hidden  text-xl">jithu_jamshed</span>
+    <div class="md:hidden"><mat-icon>menu</mat-icon></div>
+
+  </div>
+
+  <div class="dp-part w-full  h-auto mb-6 px-2 flex items-center">
+
+
+    <div class="md:w-[18rem] md:pl-8">
+      <div class="bg-gradient-to-tr h-28 w-28 md:h-40 md:w-40 rounded-full p-1">
+        <a class="block w-full h-full bg-white  rounded-full transform transition hover:-rotate-12 duration-300" routerLink="/profile">
+            <img class=" w-full h-full rounded-full" src="https://i.ibb.co/yhh0Ljy/profile.jpg" alt="image">
+        </a>
+    </div>
+
+    </div>
+
+
+  <div class="md-view items-start space-y-6 hidden md:flex-grow md:flex md:flex-col h-full ">
+
+    <div class="username flex space-x-6 ">
+      <span class="text-lg">jithu_jamshed</span>
+
+      <div class="flex space-x-2">
+        <button mat-raised-button>Edit profile</button>
+        <button mat-raised-button>Logout</button>
+
+      </div>
+
+    </div>
+
+
+    <div class="counts flex space-x-4">
+
+      <div class="posts flex space-x-2 ">
+        <span class="font-semibold">79</span>
+        <span>posts</span>
+
+      </div>
+
+
+      <div class="posts flex space-x-2 ">
+        <span class="font-semibold">379</span>
+        <span>followers</span>
+
+      </div>
+
+      <div class="posts flex space-x-2 ">
+        <span class="font-semibold">779</span>
+        <span>following</span>
+
+      </div>
+
+    </div>
+
+
+    
+
+    <div class="bio flex flex-col">
+      <span class="name" class="font-semibold text-sm mb-1">Junaid</span>
+      <span>Everything  is honoured, but nothing matters</span>
+      <span>Moving with the rhythm inside</span>
+    </div>
+
+  </div>
+
+
+  <div class="counts b flex md:hidden justify-evenly flex-grow h-full">
+
+    <div class="posts_counts flex flex-col items-center justify-center">
+
+      <span class="font-bold">77</span>
+      Posts
+      
+    </div>
+
+    <div class="posts_counts flex flex-col items-center justify-center  ">
+      <span class="font-bold">373</span>
+      Followers
+      
+    </div>
+
+
+    <div class="posts_counts flex flex-col items-center justify-center  ">
+
+      <span class="font-bold">759</span>
+      Following
+      
+    </div>
+    
+  </div>
+
+
+
+  </div>
+
+  <div class="bio w-full  h-auto px-2 md:hidden flex mb-1 flex-col">
+
+    <span class="font-semibold">Junaid</span>
+    <span>Moving with the rhythm inside</span>
+    <span>Everything is honoured, but nothing mattters</span>
+
+  </div>
+
+  <div class="options md:hidden w-full h-12 flex justify-evenly">
+    <button class="w-48" mat-stroked-button>Edit profile</button>
+    <button class="w-48" (click)="logoutUser()" mat-stroked-button>Logout</button>
+  </div>
+
+
+ </div>

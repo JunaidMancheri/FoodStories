@@ -47,14 +47,41 @@
       "@food-stories/users-client/auth/ui/username-dialog-input": [
         "libs/users-client/auth/ui/username-dialog-input/src/index.ts"
       ],
+      "@food-stories/users-client/feed/feature": [
+        "libs/users-client/feed/feature/src/index.ts"
+      ],
+      "@food-stories/users-client/feed/ui/feeds": [
+        "libs/users-client/feed/ui/feeds/src/index.ts"
+      ],
+      "@food-stories/users-client/feed/ui/mini-notifications": [
+        "libs/users-client/feed/ui/mini-notifications/src/index.ts"
+      ],
+      "@food-stories/users-client/feed/ui/stories": [
+        "libs/users-client/feed/ui/stories/src/index.ts"
+      ],
       "@food-stories/users-client/home": [
         "libs/users-client/home/src/index.ts"
+      ],
+      "@food-stories/users-client/profile/feature": [
+        "libs/users-client/profile/feature/src/index.ts"
+      ],
+      "@food-stories/users-client/profile/ui/bio-section": [
+        "libs/users-client/profile/ui/bio-section/src/index.ts"
+      ],
+      "@food-stories/users-client/profile/ui/highlights": [
+        "libs/users-client/profile/ui/highlights/src/index.ts"
+      ],
+      "@food-stories/users-client/profile/ui/posts": [
+        "libs/users-client/profile/ui/posts/src/index.ts"
       ],
       "@food-stories/users-client/shared": [
         "libs/users-client/shared/src/index.ts"
       ],
       "@food-stories/users-client/shared/config": [
         "libs/users-client/shared/config/src/index.ts"
+      ],
+      "@food-stories/users-client/shared/ui/sidebar-layout": [
+        "libs/users-client/shared/ui/sidebar-layout/src/index.ts"
       ],
       "@food-stories/users-client/shared/utils": [
         "libs/users-client/shared/utils/src/index.ts"

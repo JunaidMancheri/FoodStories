@@ -18,6 +18,7 @@ export abstract class BaseHandler {
 
 
   function createError(error: Error): ErrorResponse {
+    console.log(error.name, 'error name');
     return  {
       status: 'error',
       error: {

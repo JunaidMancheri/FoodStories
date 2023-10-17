@@ -41,6 +41,7 @@ const userSchema = new Schema<IUser, Model<IUser>>({
   },
   email: {
     type: String,
+    unique: true,
     required: true,
   },
   isPrivate: {
@@ -57,7 +58,7 @@ const userSchema = new Schema<IUser, Model<IUser>>({
   profile: profile
 })
 
-const userModel = model<IUser>('users-srv/users', userSchema);
+const userModel = model<IUser>('users', userSchema);
 
 
 export { userModel }

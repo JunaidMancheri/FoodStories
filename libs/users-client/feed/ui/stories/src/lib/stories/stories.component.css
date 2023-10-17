@@ -1,0 +1,11 @@
+.custom-p {
+  padding: 0.1rem;
+} 
+
+.custom-p-2 {
+  padding: 0.15rem;
+}
+
+.scrollbar::-webkit-scrollbar {
+  display: none;
+}

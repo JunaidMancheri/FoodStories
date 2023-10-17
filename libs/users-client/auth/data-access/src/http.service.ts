@@ -1,6 +1,6 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
-import { Observable, map } from "rxjs";
+import { map } from "rxjs";
 import { API_ENDPOINTS } from '@food-stories/users-client/shared/config'
 
 interface UserData {
