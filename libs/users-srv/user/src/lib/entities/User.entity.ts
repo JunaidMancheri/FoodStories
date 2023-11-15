@@ -1,4 +1,4 @@
-import { ValidationError } from '@food-stories/common/errors/application-errors/Vallidation.error';
+import { ValidationError } from '@food-stories/common/errors';
 import { ILogger } from '@food-stories/common/logger';
 import { v4 as uuidV4 } from 'uuid';
 

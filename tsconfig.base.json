@@ -22,7 +22,11 @@
       "@food-stories/api-gateway/users": [
         "libs/api-gateway/users/src/index.ts"
       ],
-      "@food-stories/common/*": ["libs/common/src/lib/*"],
+      "@food-stories/common/errors": ["libs/common/errors/src/index.ts"],
+      "@food-stories/common/grpc": ["libs/common/grpc/src/index.ts"],
+      "@food-stories/common/handlers": ["libs/common/handlers/src/index.ts"],
+      "@food-stories/common/logger": ["libs/common/logger/src/index.ts"],
+      "@food-stories/common/typings": ["libs/common/typings/src/index.ts"],
       "@food-stories/shared-icons": [
         "libs/users-client/shared/icons/src/index.ts"
       ],

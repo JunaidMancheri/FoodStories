@@ -5,7 +5,7 @@ import {
   IgetUserDataUseCase,
   getUserDataNS,
 } from '../interfaces/usecases/getUserData.interface';
-import { NotFoundError } from '@food-stories/common/errors/application-errors/NotFound.error';
+import { NotFoundError } from '@food-stories/common/errors';
 
 export class GetUserDataUC implements IgetUserDataUseCase {
   constructor(private userRepo: IgetUserDataRepo, private logger: ILogger) {}

@@ -2,8 +2,8 @@ import { ILogger } from "@food-stories/common/logger";
 import { IUser, User, UserProps } from "../../entities";
 import { ICreateUserUseCase } from "../interfaces/usecases/CreateUser.interface";
 import { ICreateUserRepo } from "../interfaces/repository/createUser.interface";
-import { REPO_ERRORS, RepositoryError } from "@food-stories/common/errors/repository-errors/repository.error";
-import { AlreadyExistsError } from '@food-stories/common/errors/application-errors/AlreadyExists.error';
+import { REPO_ERRORS, RepositoryError } from "@food-stories/common/errors";
+import { AlreadyExistsError } from '@food-stories/common/errors';
 
 export class CreateUserUseCase implements ICreateUserUseCase {
   constructor(private logger: ILogger,private createUserRepo: ICreateUserRepo) {}

@@ -5,7 +5,7 @@ import { IisUsernameAvailableRepo } from '../../../../application/interfaces/rep
 import { IisRegisteredUserRepo } from '../../../../application/interfaces/repository/isRegisteredUser.interface';
 import { IgetUserDataRepo } from '../../../../application/interfaces/repository/getUserData.interface';
 import { mapDocumentToUserEntity } from '../mapper.helper';
-import { REPO_ERRORS, RepositoryError } from '@food-stories/common/errors/repository-errors/repository.error';
+import { REPO_ERRORS, RepositoryError } from '@food-stories/common/errors';
 import { IUser } from '../../../../entities/User.entity';
 
 export class UserRepository

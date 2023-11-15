@@ -1,6 +1,6 @@
 import { BaseHandler, RequestPayload, ResponsePayload, respondSuccess } from "@food-stories/common/handlers";
 import { IisRegisteredUserUseCase } from "../../../application/interfaces/usecases/isRegisteredUser.interface";
-import { IisRegisteredUserRequest, IisRegisteredUserResponse } from "@food-stories/common/typings/proto/usersService";
+import { IisRegisteredUserRequest, IisRegisteredUserResponse } from "@food-stories/common/typings";
 
 export class IsRegisteredUserHandler extends BaseHandler {
 

@@ -1,5 +1,5 @@
 import { BaseHandler, RequestPayload, ResponsePayload, respondSuccess } from "@food-stories/common/handlers";
-import { IisUsernameAvailableRequest, IisUsernameAvailableResponse } from "@food-stories/common/typings/proto/usersService";
+import { IisUsernameAvailableRequest, IisUsernameAvailableResponse } from "@food-stories/common/typings";
 import { IisUsernameAvailableUseCase } from "../../../application/interfaces/usecases/isUsernameAvailable.interface";
 
 

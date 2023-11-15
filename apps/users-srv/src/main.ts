@@ -1,4 +1,4 @@
-import { logger } from "./config/logger.config";
+import { logger } from "@food-stories/users-srv/core";
 import { appConfig, loadAppConfig } from './config/app.config';
 import { startGRPCServer } from './config/grpc.config';
 import { Server } from "@grpc/grpc-js";

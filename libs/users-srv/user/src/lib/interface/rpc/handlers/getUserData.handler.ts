@@ -1,6 +1,6 @@
 import { BaseHandler, RequestPayload, ResponsePayload, respondSuccess } from "@food-stories/common/handlers";
 import { IgetUserDataUseCase } from "../../../application/interfaces/usecases/getUserData.interface";
-import { IgetUserDataRequest, IgetUserDataResponse } from "@food-stories/common/typings/proto/usersService";
+import { IgetUserDataRequest, IgetUserDataResponse } from "@food-stories/common/typings";
 
 export class GetUserDataHandler extends BaseHandler {
 

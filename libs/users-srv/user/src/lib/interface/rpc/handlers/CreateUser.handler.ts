@@ -1,6 +1,6 @@
 import { BaseHandler, RequestPayload, ResponsePayload, respondSuccess,  } from '@food-stories/common/handlers'
 import { ICreateUserUseCase } from '../../../application/interfaces/usecases/CreateUser.interface';
-import { ICreateUserRequest, ICreateUserResponse } from '@food-stories/common/typings/proto/usersService'
+import { ICreateUserRequest, ICreateUserResponse } from '@food-stories/common/typings'
 
 
 export class CreateUserHandler extends BaseHandler {
