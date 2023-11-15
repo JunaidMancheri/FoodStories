@@ -12,7 +12,8 @@ export type SuccessResponse<ResponseData = undefined> = {
 export type ErrorResponse  = {
   status: 'error',
   error: {
-    code: string,
+    name: string,
     message: string,
+    code: number,
   }
 }

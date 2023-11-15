@@ -1,6 +1,7 @@
-import { Body, Controller, Get, Logger, Param, Post } from '@nestjs/common';
+import { Body, Controller, Get, Param, Post } from '@nestjs/common';
 import { ApiGatewayUsersService } from './users.service';
 import { CreateUserDTO } from './CreateUser.dto';
+
 
 @Controller()
 export class ApiGatewayUsersController {
@@ -13,15 +14,19 @@ export class ApiGatewayUsersController {
       return response;
   }
   
+  @Get('registered/:email')
+  isRegisteredUser(@Param('email') email: string) {
+    return this.apiGatewayUsersService.isRegisteredUser({ email });
+  }
+
   @Get('email/:email')
-  isRegisteredUser(@Param() params: { email: string}) {
-    console.log(params);
-    return this.apiGatewayUsersService.isRegisteredUser({ email: params.email });
+  getUserData(@Param('email') email: string) {
+    return this.apiGatewayUsersService.getUserData({ email });
+
   }
 
   @Post() 
    createUser(@Body() createUserDto: CreateUserDTO) {
-    Logger.log(createUserDto, 'controller');    
     return this.apiGatewayUsersService.createUser(createUserDto);
   }
 }

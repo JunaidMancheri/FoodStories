@@ -1,12 +1,19 @@
 import { IUsersServiceServer } from '@food-stories/common/typings/proto/usersService';
 import  { makeUnaryCallHandler} from '@food-stories/common/grpc/makeUnaryCallHandler.adapter';
-import { makeCreateUserHandler, makeIsRegisteredUser, makeIsUsernameAvailableHandler } from '@food-stories/users-srv/user'
-import { Logger } from '../config/logger.config';
+import { makeCreateUserHandler, makeGetUserDataHandler, makeIsRegisteredUser, makeIsUsernameAvailableHandler } from '@food-stories/users-srv/user'
+import { Logger, logger } from '@food-stories/users-srv/core';
 
 
 
 export const UsersServiceImpl : IUsersServiceServer = {
-  createUser: makeUnaryCallHandler(makeCreateUserHandler(Logger)),
-  isUsernameAvailable: makeUnaryCallHandler(makeIsUsernameAvailableHandler(Logger)),
-  isRegisteredUser: makeUnaryCallHandler(makeIsRegisteredUser(Logger)),
+  createUser: wrapHandler(makeCreateUserHandler),
+  isUsernameAvailable: wrapHandler(makeIsUsernameAvailableHandler),
+  isRegisteredUser: wrapHandler(makeIsRegisteredUser),
+  getUserData: wrapHandler(makeGetUserDataHandler),
+}
+
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function wrapHandler(handlerFactory: any) {
+  return makeUnaryCallHandler(handlerFactory(Logger), logger) 
 }

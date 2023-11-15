@@ -1,10 +1,10 @@
-import { Logger } from "./config/logger.config";
+import { logger } from "./config/logger.config";
 import { appConfig, loadAppConfig } from './config/app.config';
 import { startGRPCServer } from './config/grpc.config';
 import { Server } from "@grpc/grpc-js";
 import { connectDB } from "./config/mongodb.config";
 
-const logger = new Logger('main');
+
 
 
 async function bootstrap() {
@@ -12,6 +12,8 @@ async function bootstrap() {
     await loadAppConfig(logger);
     await connectDB();
     const grpcServer = await startGRPCServer(appConfig.GRPC_PORT, logger);
+
+  
 
     process.on('SIGTERM', async () => {
       logger.info('Received SIGTERM. Initiating graceful shutdown...');

@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { Auth } from '@angular/fire/auth';
 import { Router } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button'
 
 @Component({
   selector: 'fs-bio-section',
   standalone: true,
-  imports: [CommonModule, MatIconModule],
+  imports: [CommonModule, MatIconModule, MatButtonModule],
   templateUrl: './bio-section.component.html',
   styleUrls: ['./bio-section.component.css'],
 })

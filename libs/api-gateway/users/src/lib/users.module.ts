@@ -17,7 +17,7 @@ import { UsersAppConfig } from './config';
           protoPath: join(__dirname, 'proto', 'users_service.proto'),
           url:  process.env['USERS_SERVICE_URI'],
           channelOptions: {
-            
+                       
           }
         }
 

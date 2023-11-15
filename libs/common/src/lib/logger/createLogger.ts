@@ -15,7 +15,7 @@ export function makeLogger(serviceName: string): LoggerClass  {
       this.logger = createLogger({
         level: 'info',
         format: format.combine(
-          format.colorize(),
+          format.colorize({all: true}),
           format.timestamp(),
           format.metadata({ fillExcept: ['timestamp', 'level', 'message'] }),
           format.printf(({ timestamp, level, message, metadata }) => {

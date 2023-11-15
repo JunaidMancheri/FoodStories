@@ -5,14 +5,34 @@
     createUser(request: ICreateUserRequest, metadata?: Metadata):  Observable<ICreateUserResponse>;
     isUsernameAvailable(request: IisUsernameAvailableRequest, metadata?: Metadata): Observable<IisUsernameAvailableResponse>;
     isRegisteredUser(request: IisRegisteredUserRequest, metadata?: Metadata): Observable<IisRegisteredUserResponse>
+    getUserData(request: IgetUserDataRequest, metadata?: Metadata): Observable<IgetUserDataResponse>;
   }
 
   export interface IUsersServiceServer {
     createUser: handleUnaryCall<ICreateUserRequest, ICreateUserResponse>;
     isUsernameAvailable: handleUnaryCall<IisUsernameAvailableRequest, IisUsernameAvailableResponse>;
     isRegisteredUser: handleUnaryCall<IisRegisteredUserRequest, IisRegisteredUserResponse>;
+    getUserData: handleUnaryCall<IgetUserDataRequest, IgetUserDataResponse>;
   }
 
+
+  export interface IgetUserDataRequest {
+    email: string;
+  }
+  
+  export interface IgetUserDataResponse {
+    id: string;
+    name: string | null;
+    username: string;
+    email: string;
+    isPrivate: boolean;
+    createdAt: number;
+    DPURL: string | null;
+    profile: Profile;
+    postsCount: number;
+    followersCount: number;
+    followingsCount: number;
+  }
 
   export interface IisRegisteredUserRequest {
     email: string;
@@ -44,13 +64,16 @@
   
   export interface ICreateUserResponse {
     id: string;
-    name?: string;
+    name: string | null;
     username: string;
     email: string;
     isPrivate: boolean;
     createdAt: number;
-    DPURL: string;
+    DPURL: string | null;
     profile: Profile;
+    postsCount: number;
+    followersCount: number;
+    followingsCount: number;
   }
 
 

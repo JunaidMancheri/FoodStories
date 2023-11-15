@@ -13,7 +13,6 @@ const usersService = getGrpcServiceDefinition({
 
 const grpcServer = new Server();
 
-
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 grpcServer.addService(usersService, UsersServiceImpl as any);
 

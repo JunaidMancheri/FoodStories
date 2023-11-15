@@ -1,5 +1,5 @@
-import { User } from "../../../entities/User.entity";
+import { IUser } from "../../../entities";
 
 export interface ICreateUserRepo {
-  createUser(user: User): Promise<void>;
+  createUser(user: IUser): Promise<void>;
 }

@@ -6,7 +6,27 @@ service UsersService {
   rpc createUser (CreateUserRequest) returns (CreateUserResponse) {}
   rpc isUsernameAvailable(isUsernameAvailableRequest) returns (isUsernameAvailableResponse) {}
   rpc isRegisteredUser(isRegisteredUserRequest) returns (isRegisteredUserResponse) {}
+  rpc getUserData(getUserDataRequest) returns (getUserDataResponse) {}
 }
+
+message getUserDataRequest {
+  string email = 1;
+}
+
+message getUserDataResponse {
+  string id = 1;
+  string name = 2;
+  string username = 3;
+  string email = 4;
+  bool isPrivate = 5;
+  string createdAt = 6;
+  string DPURL = 7;
+  Profile profile = 8;
+  int32 postsCount = 9;
+  int32 followersCount = 10;
+  int32 followingsCount = 11;
+}
+
 
 message isRegisteredUserRequest {
   string email = 1;
@@ -50,5 +70,7 @@ message CreateUserResponse {
   string createdAt = 6;
   string DPURL = 7;
   Profile profile = 8;
-
+  int32 postsCount = 9;
+  int32 followersCount = 10;
+  int32 followingsCount = 11;
 }

@@ -16,6 +16,9 @@
     "baseUrl": ".",
     "paths": {
       "@food-stories/api-gateway/auth": ["libs/api-gateway/auth/src/index.ts"],
+      "@food-stories/api-gateway/common": [
+        "libs/api-gateway/common/src/index.ts"
+      ],
       "@food-stories/api-gateway/users": [
         "libs/api-gateway/users/src/index.ts"
       ],
@@ -59,9 +62,6 @@
       "@food-stories/users-client/feed/ui/stories": [
         "libs/users-client/feed/ui/stories/src/index.ts"
       ],
-      "@food-stories/users-client/home": [
-        "libs/users-client/home/src/index.ts"
-      ],
       "@food-stories/users-client/profile/feature": [
         "libs/users-client/profile/feature/src/index.ts"
       ],
@@ -86,9 +86,7 @@
       "@food-stories/users-client/shared/utils": [
         "libs/users-client/shared/utils/src/index.ts"
       ],
-      "@food-stories/users-client/web-shell": [
-        "libs/users-client/web-shell/src/index.ts"
-      ],
+      "@food-stories/users-srv/core": ["libs/users-srv/core/src/index.ts"],
       "@food-stories/users-srv/user": ["libs/users-srv/user/src/index.ts"]
     }
   },
