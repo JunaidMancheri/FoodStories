@@ -27,6 +27,7 @@
       "@food-stories/common/handlers": ["libs/common/handlers/src/index.ts"],
       "@food-stories/common/logger": ["libs/common/logger/src/index.ts"],
       "@food-stories/common/typings": ["libs/common/typings/src/index.ts"],
+      "@food-stories/common/utils": ["libs/common/utils/src/index.ts"],
       "@food-stories/shared-icons": [
         "libs/users-client/shared/icons/src/index.ts"
       ],

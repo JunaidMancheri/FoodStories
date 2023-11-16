@@ -33,9 +33,9 @@ export function makeLogger(serviceName: string): LoggerClass  {
               format.printf(({ timestamp, level, message, metadata }) => {
                 if (Object.keys(metadata.metadata).length > 0) {
                   const formattedMetadata = Object.entries(metadata.metadata)
-                  .map(([key, value]) => `${key}: '${value}'`)
+                  .map(([key, value]) => `\n ${key}: '${value}'`)
                   .join(', ');
-                return `[${timestamp}] [${level}] [${serviceName}] [${componentName}] ${message} {${formattedMetadata}}`;
+                return `[${timestamp}] [${level}] [${serviceName}] [${componentName}] ${message} \n{${formattedMetadata}\n}`;
                 }
                 return `[${timestamp}] [${level}] [${serviceName}] [${componentName}] ${message}`
                 ;
