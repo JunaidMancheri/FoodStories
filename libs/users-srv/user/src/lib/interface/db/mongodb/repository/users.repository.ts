@@ -3,21 +3,27 @@ import { ICreateUserRepo } from '../../../../application/interfaces/repository/c
 import { IUserDoc, userModel } from '../models/user.model';
 import { IisUsernameAvailableRepo } from '../../../../application/interfaces/repository/isUsernameAvailable.interface';
 import { IisRegisteredUserRepo } from '../../../../application/interfaces/repository/isRegisteredUser.interface';
-import { IgetUserDataRepo } from '../../../../application/interfaces/repository/getUserData.interface';
+import { IgetUserDataByEmail } from '../../../../application/interfaces/repository/getUserDataByEmail.interface';
 import { mapDocumentToUserEntity } from '../mapper.helper';
 import { REPO_ERRORS, RepositoryError } from '@food-stories/common/errors';
-import { IUser } from '../../../../entities/User.entity';
+import { IUser } from '../../../../entities';
+import { IgetUserDataByUsername } from '../../../../application/interfaces/repository/getUserDataByUsername.interface';
 
 export class UserRepository
   implements
     ICreateUserRepo,
     IisUsernameAvailableRepo,
     IisRegisteredUserRepo,
-    IgetUserDataRepo
+    IgetUserDataByEmail,
+    IgetUserDataByUsername
 {
   constructor(private userModel: Model<IUserDoc>) {}
+  async getUserDataByUsername(username: string): Promise<IUser | null> {
+    const user = await this.userModel.findOne( { username });
+    return mapDocumentToUserEntity(user);
+  }
 
-  async getUserData(email: string): Promise<IUser | null> {
+  async getUserDataByEmail(email: string): Promise<IUser | null> {
     const user = await this.userModel.findOne({ email });
     return mapDocumentToUserEntity(user);
   }

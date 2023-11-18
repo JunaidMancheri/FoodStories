@@ -28,6 +28,7 @@
     "@ngrx/entity": "~16.0.0",
     "@ngrx/router-store": "~16.0.0",
     "@ngrx/store": "~16.0.0",
+    "@ngrx/store-devtools": "^16.3.0",
     "@nx/angular": "16.5.3",
     "@nx/nest": "^16.5.5",
     "@types/cors": "^2.8.13",

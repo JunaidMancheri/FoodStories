@@ -1,16 +1,15 @@
-import { BaseHandler, RequestPayload, ResponsePayload, respondSuccess } from "@food-stories/common/handlers";
-import { IgetUserDataUseCase } from "../../../application/interfaces/usecases/getUserData.interface";
-import { IgetUserDataRequest, IgetUserDataResponse } from "@food-stories/common/typings";
+import { BaseHandler, RequestPayload, ResponsePayload, respondSuccess } from "@food-stories/common/handlers"
+import { IUser, IgetUserDataRequest } from "@food-stories/common/typings";
+import { IGetUserDataUseCase } from "../../../application/interfaces/usecases/getUserData.interface";
 
 export class GetUserDataHandler extends BaseHandler {
-
-  constructor(private getUserDataUC: IgetUserDataUseCase) {
+  
+  constructor(private uc: IGetUserDataUseCase) {
     super();
   }
-
-  async execute(request: RequestPayload<IgetUserDataRequest>): Promise<ResponsePayload<IgetUserDataResponse>> {
-    const  user = await this.getUserDataUC.execute({ email: request.data.email});
-    return respondSuccess(user)
+ async execute(request: RequestPayload<IgetUserDataRequest>): Promise<ResponsePayload<IUser>> {
+    const response = await this.uc.execute(request.data);
+    return respondSuccess(response);
   }
 
 }

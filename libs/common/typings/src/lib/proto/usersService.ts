@@ -1,39 +1,32 @@
   import {  Metadata, handleUnaryCall } from '@grpc/grpc-js';
   import { Observable } from 'rxjs';
+import { IUser } from '../interfaces/IUser.interface';
 
   export interface IUsersServiceClient {
-    createUser(request: ICreateUserRequest, metadata?: Metadata):  Observable<ICreateUserResponse>;
+    createUser(request: ICreateUserRequest, metadata?: Metadata):  Observable<IUser>;
     isUsernameAvailable(request: IisUsernameAvailableRequest, metadata?: Metadata): Observable<IisUsernameAvailableResponse>;
     isRegisteredUser(request: IisRegisteredUserRequest, metadata?: Metadata): Observable<IisRegisteredUserResponse>
-    getUserData(request: IgetUserDataRequest, metadata?: Metadata): Observable<IgetUserDataResponse>;
+    getCurrentUserData(request: IgetCurrentUserDataRequest, metadata?: Metadata): Observable<IUser>;
+    getUserData(request: IgetUserDataRequest, metadata?: Metadata) : Observable<IUser>
   }
 
   export interface IUsersServiceServer {
-    createUser: handleUnaryCall<ICreateUserRequest, ICreateUserResponse>;
+    createUser: handleUnaryCall<ICreateUserRequest, IUser>;
     isUsernameAvailable: handleUnaryCall<IisUsernameAvailableRequest, IisUsernameAvailableResponse>;
     isRegisteredUser: handleUnaryCall<IisRegisteredUserRequest, IisRegisteredUserResponse>;
-    getUserData: handleUnaryCall<IgetUserDataRequest, IgetUserDataResponse>;
+    getCurrentUserData: handleUnaryCall<IgetCurrentUserDataRequest, IUser>;
+    getUserData: handleUnaryCall<IgetUserDataRequest, IUser>;
   }
 
 
   export interface IgetUserDataRequest {
+    username: string;
+  }
+
+  export interface IgetCurrentUserDataRequest {
     email: string;
   }
   
-  export interface IgetUserDataResponse {
-    id: string;
-    name: string | null;
-    username: string;
-    email: string;
-    isPrivate: boolean;
-    createdAt: number;
-    DPURL: string | null;
-    profile: Profile;
-    postsCount: number;
-    followersCount: number;
-    followingsCount: number;
-  }
-
   export interface IisRegisteredUserRequest {
     email: string;
   }
@@ -56,24 +49,5 @@
      DPURL?: string
   }
 
-  interface Profile {
-    bio?: string;
-    gender?: 'male' | 'female' ,
-    links?: string[];
-  }
-  
-  export interface ICreateUserResponse {
-    id: string;
-    name: string | null;
-    username: string;
-    email: string;
-    isPrivate: boolean;
-    createdAt: number;
-    DPURL: string | null;
-    profile: Profile;
-    postsCount: number;
-    followersCount: number;
-    followingsCount: number;
-  }
 
 

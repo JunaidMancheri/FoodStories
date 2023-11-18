@@ -8,10 +8,15 @@ export class ApiGatewayUsersController {
   constructor(private apiGatewayUsersService: ApiGatewayUsersService) {}
 
 
-  @Get(':username')
-  checkUser(@Param() params: {username: string}) {
+  @Get('username/:username')
+  checkUsername(@Param() params: {username: string}) {
       const response = this.apiGatewayUsersService.isUsernameAvailable({username: params.username});
       return response;
+  }
+
+  @Get(':username')
+  getUserDetails(@Param() params: {username: string}) {
+    return this.apiGatewayUsersService.getUserData({username: params.username});
   }
   
   @Get('registered/:email')
@@ -20,8 +25,8 @@ export class ApiGatewayUsersController {
   }
 
   @Get('email/:email')
-  getUserData(@Param('email') email: string) {
-    return this.apiGatewayUsersService.getUserData({ email });
+  getCurrentUserData(@Param('email') email: string) {
+    return this.apiGatewayUsersService.getCurrentUserData({ email });
 
   }
 

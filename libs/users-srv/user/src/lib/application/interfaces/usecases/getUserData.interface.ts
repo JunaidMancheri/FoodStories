@@ -1,10 +1,5 @@
 import { IUser } from "../../../entities";
 
-export interface IgetUserDataUseCase {
-  execute(request: getUserDataNS.Request): Promise<getUserDataNS.Response>;
-}
-
-export namespace getUserDataNS {
-  export type Request = { email: string };
-  export type Response = IUser;
+export interface IGetUserDataUseCase {
+  execute(data: {username: string}): Promise<IUser>
 }

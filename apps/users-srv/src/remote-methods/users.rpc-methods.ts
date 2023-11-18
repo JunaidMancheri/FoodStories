@@ -1,6 +1,6 @@
 import { IUsersServiceServer } from '@food-stories/common/typings';
 import  { makeUnaryCallHandler} from '@food-stories/common/grpc';
-import { makeCreateUserHandler, makeGetUserDataHandler, makeIsRegisteredUser, makeIsUsernameAvailableHandler } from '@food-stories/users-srv/user'
+import { makeCreateUserHandler, makeGetUserDataHandler ,makeGetCurrentUserDataHandler, makeIsRegisteredUser, makeIsUsernameAvailableHandler } from '@food-stories/users-srv/user'
 import { Logger, logger } from '@food-stories/users-srv/core';
 
 
@@ -9,7 +9,8 @@ export const UsersServiceImpl : IUsersServiceServer = {
   createUser: wrapHandler(makeCreateUserHandler),
   isUsernameAvailable: wrapHandler(makeIsUsernameAvailableHandler),
   isRegisteredUser: wrapHandler(makeIsRegisteredUser),
-  getUserData: wrapHandler(makeGetUserDataHandler),
+  getCurrentUserData: wrapHandler(makeGetCurrentUserDataHandler),
+  getUserData: wrapHandler(makeGetUserDataHandler)
 }
 
 

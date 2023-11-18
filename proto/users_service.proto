@@ -3,17 +3,14 @@ syntax = "proto3";
 package users_service.v1;
 
 service UsersService {
-  rpc createUser (CreateUserRequest) returns (CreateUserResponse) {}
+  rpc createUser (CreateUserRequest) returns (UserEntity) {}
   rpc isUsernameAvailable(isUsernameAvailableRequest) returns (isUsernameAvailableResponse) {}
   rpc isRegisteredUser(isRegisteredUserRequest) returns (isRegisteredUserResponse) {}
-  rpc getUserData(getUserDataRequest) returns (getUserDataResponse) {}
+  rpc getCurrentUserData(getCurrentUserDataRequest) returns (UserEntity) {}
+  rpc getUserData(getUserDataRequest) returns (UserEntity) {}
 }
 
-message getUserDataRequest {
-  string email = 1;
-}
-
-message getUserDataResponse {
+message UserEntity {
   string id = 1;
   string name = 2;
   string username = 3;
@@ -25,6 +22,14 @@ message getUserDataResponse {
   int32 postsCount = 9;
   int32 followersCount = 10;
   int32 followingsCount = 11;
+}
+
+message getUserDataRequest {
+  string username = 1;
+}
+
+message getCurrentUserDataRequest {
+  string email = 1;
 }
 
 
@@ -61,16 +66,3 @@ message Profile {
   repeated string links = 3;
 }
 
-message CreateUserResponse {
-  string id = 1;
-  string name = 2;
-  string username = 3;
-  string email = 4;
-  bool isPrivate = 5;
-  string createdAt = 6;
-  string DPURL = 7;
-  Profile profile = 8;
-  int32 postsCount = 9;
-  int32 followersCount = 10;
-  int32 followingsCount = 11;
-}
