@@ -1,5 +1,6 @@
 export const environment = {
   homeUrl: 'http://localhost:4200/',
+  production: false,
   firebase: {
     projectId: 'foodstories-35dfd',
     appId: '1:843205065840:web:131a2143226d7f2026c8b5',

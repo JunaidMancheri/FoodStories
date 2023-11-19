@@ -36,7 +36,7 @@ export const appRoutes: Route[] = [
         loadChildren: async () => (await import('@food-stories/users-client/feed/feature')).FeedModule,
       },
       {
-        path: ':profile',
+        path: ':username',
         loadChildren: async () => (await import('@food-stories/users-client/profile/feature')).ProfileModule,
       }
 

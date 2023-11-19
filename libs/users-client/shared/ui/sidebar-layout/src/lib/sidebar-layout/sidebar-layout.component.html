@@ -8,10 +8,13 @@
   </div>
 
   <div class="tabs w-full h-screen mt-8 flex space-y-6 flex-col ">
-   <div class="home flex items-center h-8 space-x-3">
-     <mat-icon class="active">home</mat-icon>
-     <span class="text-lg">Home</span>
-   </div>
+    <a href="" routerLink="/">
+      <div class="home flex items-center h-8 space-x-3">
+        <mat-icon class="active">home</mat-icon>
+        <span class="text-lg">Home</span>
+      </div>
+    </a>
+
 
    <div class="home flex items-center h-8 space-x-3">
      <mat-icon class="material-symbols-outlined">search</mat-icon>
@@ -38,11 +41,13 @@
      <mat-icon class="material-symbols-outlined">add</mat-icon>
      <span class="text-lg">Create</span>
    </div>
-
-   <div class="home flex items-center h-8 space-x-3">
-     <mat-icon class="material-symbols-outlined">person</mat-icon>
-     <span class="text-lg">Profile</span>
-   </div>
+  
+   <a routerLink="/jithu_jamshed">
+    <div class="home flex items-center h-8 space-x-3">
+      <mat-icon class="material-symbols-outlined">person</mat-icon>
+      <span class="text-lg">Profile</span>
+    </div>
+   </a>
 
    <div class="home flex items-center h-8 space-x-3">
     <mat-icon class="material-symbols-outlined">more_vert</mat-icon>

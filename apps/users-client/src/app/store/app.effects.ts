@@ -2,19 +2,19 @@ import { Actions, createEffect, ofType } from "@ngrx/effects";
 import { loadUserDetails, loadUserDetailsSuccess } from "./app.actions";
 import { EMPTY, catchError, exhaustMap, map } from "rxjs";
 import { Injectable } from "@angular/core";
-import { HttpService } from "../http.service";
+import { ProfileHttpService } from "@food-stories/users-client/shared/data-access";
 
 @Injectable()
 export class AppInitEffects {
-  constructor(private actions$: Actions, private httpService: HttpService) {}
+  constructor(private actions$: Actions, private httpService: ProfileHttpService) {}
 
   loadUsers$ = createEffect(() => {
     return this.actions$.pipe(
       ofType(loadUserDetails),
       exhaustMap((action) => {
-         return this.httpService.getUserData(action.email)
+         return this.httpService.getCurrentUserData(action.email)
          .pipe(
-          map(userData => {console.log(userData); return loadUserDetailsSuccess()}),
+          map(userData => loadUserDetailsSuccess(userData)),
           catchError(() => EMPTY)
 
          )

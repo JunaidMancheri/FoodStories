@@ -10,12 +10,11 @@ import { environment } from '@food-stories/users-client/shared/config';
 import { provideAuth, getAuth } from '@angular/fire/auth';
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
-import { StoreRouterConnectingModule } from '@ngrx/router-store';
+import { StoreRouterConnectingModule, routerReducer } from '@ngrx/router-store';
 import { appRoutes } from './app.routes';
 import { AppInitEffects } from './store/app.effects';
 import { appReducer } from './store/app.reducers';
-import { HttpService } from './http.service';
-
+import { StoreDevtoolsModule } from '@ngrx/store-devtools'
 @NgModule({
   imports: [
     BrowserModule,
@@ -26,7 +25,7 @@ import { HttpService } from './http.service';
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
     StoreModule.forRoot(
-      {user: appReducer},
+      {user: appReducer, router: routerReducer},
       {
         runtimeChecks: {
           strictActionImmutability: true,
@@ -34,11 +33,12 @@ import { HttpService } from './http.service';
         },
       }
     ),
+    !environment.production ? StoreDevtoolsModule.instrument(): [],
     EffectsModule.forRoot([AppInitEffects]),
-    StoreRouterConnectingModule.forRoot(),
+    StoreRouterConnectingModule.forRoot({stateKey: 'router'}),
   ],
   declarations: [AppComponent],
-  providers: [HttpService],
+  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

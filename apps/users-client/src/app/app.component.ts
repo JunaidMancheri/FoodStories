@@ -27,9 +27,7 @@ export class AppComponent implements OnInit {
         else {
           this.store.dispatch(loadUserDetails({email: user.email}));
       }
-      } else {
-        console.log('notFetching')
-      }
+      };
     })
   }
 

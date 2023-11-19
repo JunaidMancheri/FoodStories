@@ -67,6 +67,9 @@
       "@food-stories/users-client/feed/ui/stories": [
         "libs/users-client/feed/ui/stories/src/index.ts"
       ],
+      "@food-stories/users-client/profile/data-access": [
+        "libs/users-client/profile/data-access/src/index.ts"
+      ],
       "@food-stories/users-client/profile/feature": [
         "libs/users-client/profile/feature/src/index.ts"
       ],
@@ -84,6 +87,9 @@
       ],
       "@food-stories/users-client/shared/config": [
         "libs/users-client/shared/config/src/index.ts"
+      ],
+      "@food-stories/users-client/shared/data-access": [
+        "libs/users-client/shared/data-access/src/index.ts"
       ],
       "@food-stories/users-client/shared/ui/sidebar-layout": [
         "libs/users-client/shared/ui/sidebar-layout/src/index.ts"

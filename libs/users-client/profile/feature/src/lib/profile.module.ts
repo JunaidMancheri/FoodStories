@@ -6,6 +6,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { BioSectionComponent } from '@food-stories/users-client/profile/ui/bio-section';
 import { HighlightsComponent } from '@food-stories/users-client/profile/ui/highlights';
 import { PostsComponent } from '@food-stories/users-client/profile/ui/posts';
+import { ProfileStore } from '@food-stories/users-client/profile/data-access';
+import { ProfileHttpService } from '@food-stories/users-client/shared/data-access';
+import { ProfileService } from './profile.service';
 
 @NgModule({
   imports: [
@@ -16,6 +19,7 @@ import { PostsComponent } from '@food-stories/users-client/profile/ui/posts';
     HighlightsComponent,
     PostsComponent,
   ],
+  providers: [ProfileHttpService, ProfileStore, ProfileService],
   declarations: [ProfileComponent],
 })
 export class ProfileModule {}

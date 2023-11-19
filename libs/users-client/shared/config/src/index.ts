@@ -1,2 +1,2 @@
-export *  from './api-endpoints';
-export * from './environment';
+export *  from './lib/api-endpoints';
+export * from './lib/environment';
