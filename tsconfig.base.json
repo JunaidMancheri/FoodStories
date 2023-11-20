@@ -85,6 +85,9 @@
       "@food-stories/users-client/shared": [
         "libs/users-client/shared/src/index.ts"
       ],
+      "@food-stories/users-client/shared/app-init": [
+        "libs/users-client/shared/app-init/src/index.ts"
+      ],
       "@food-stories/users-client/shared/config": [
         "libs/users-client/shared/config/src/index.ts"
       ],

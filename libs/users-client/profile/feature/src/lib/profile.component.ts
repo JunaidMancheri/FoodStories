@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ProfileStore } from '@food-stories/users-client/profile/data-access';
 import { ProfileService } from './profile.service';
 import { ActivatedRoute } from '@angular/router';

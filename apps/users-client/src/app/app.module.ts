@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { APP_INITIALIZER, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
@@ -12,9 +12,13 @@ import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreRouterConnectingModule, routerReducer } from '@ngrx/router-store';
 import { appRoutes } from './app.routes';
-import { AppInitEffects } from './store/app.effects';
-import { appReducer } from './store/app.reducers';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools'
+import { Auth } from '@angular/fire/auth';
+import { Store } from '@ngrx/store';
+import { ProfileHttpService } from '@food-stories/users-client/shared/data-access';
+import { AppEffects, appInitFactory, appReducer } from '@food-stories/users-client/shared/app-init';
+
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -25,7 +29,7 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools'
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
     StoreModule.forRoot(
-      {user: appReducer, router: routerReducer},
+      {app: appReducer, router: routerReducer},
       {
         runtimeChecks: {
           strictActionImmutability: true,
@@ -34,11 +38,19 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools'
       }
     ),
     !environment.production ? StoreDevtoolsModule.instrument(): [],
-    EffectsModule.forRoot([AppInitEffects]),
+    EffectsModule.forRoot([AppEffects]),
     StoreRouterConnectingModule.forRoot({stateKey: 'router'}),
   ],
   declarations: [AppComponent],
-  providers: [],
+  providers: [
+    {
+      provide: APP_INITIALIZER,
+      useFactory: appInitFactory,
+      multi: true,
+      deps: [Auth, Store]
+    },
+    ProfileHttpService
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
