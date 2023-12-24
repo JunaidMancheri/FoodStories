@@ -5,17 +5,16 @@ const {getStorage} = require("firebase-admin/storage");
 const logger = require("firebase-functions/logger");
 const path = require("path");
 
-// library for image resizing
 const sharp = require("sharp");
 
 initializeApp();
 exports.generateThumbnailOh = onObjectFinalized({cpu: 2, region: 'asia-northeast3'}, async (event) => {
 
-  const fileBucket = event.data.bucket; // Storage bucket containing the file.
-  const filePath = event.data.name; // File path in the bucket.
-  const contentType = event.data.contentType; // File content type.
+  const fileBucket = event.data.bucket; 
+  const filePath = event.data.name;
+  const contentType = event.data.contentType;
 
-  // Exit if this is triggered on a file that is not an image.
+
   if (!contentType.startsWith("image/")) {
     return logger.log("This is not an image.");
   }
@@ -30,21 +29,25 @@ exports.generateThumbnailOh = onObjectFinalized({cpu: 2, region: 'asia-northeast
   const imageBuffer = downloadResponse[0];
   logger.log("Image downloaded!");
 
-  // Generate a thumbnail using sharp.
-  const thumbnailBuffer = await sharp(imageBuffer).resize({
+  const thumbnailBuffer = await sharp(imageBuffer).rotate()
+  .resize({
     width: 200,
     height: 200,
     withoutEnlargement: true,
-  }).toBuffer();
+  })
+  .jpeg({quality: 85})
+  .toBuffer();
   logger.log("Thumbnail created");
 
   const thumbFileName = `thumb_${fileName}`;
   const thumbFilePath = path.join(path.dirname(filePath), thumbFileName);
 
-  const metadata = {contentType: contentType};
-  await bucket.file(thumbFilePath).save(thumbnailBuffer, {
-    metadata: metadata,
-  });
-  return logger.log("Thumbnail uploaded!");
+  const metadata = {contentType};
+  await bucket.file(thumbFilePath).save(thumbnailBuffer, {metadata});
+  logger.log("Thumbnail uploaded!");
+
+  await bucket.file(filePath).delete();
+
+  return logger.log('Original image deleted!');
 });
 
