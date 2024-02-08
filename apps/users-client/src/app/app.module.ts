@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '@food-stories/users-client/shared/config';
 import { provideAuth, getAuth } from '@angular/fire/auth';
+import { provideStorage, getStorage} from '@angular/fire/storage'
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreRouterConnectingModule, routerReducer } from '@ngrx/router-store';
@@ -28,6 +29,7 @@ import { AppEffects, appInitFactory, appReducer } from '@food-stories/users-clie
     HttpClientModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
+    provideStorage(() => getStorage()),
     StoreModule.forRoot(
       {app: appReducer, router: routerReducer},
       {

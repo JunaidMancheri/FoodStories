@@ -1,7 +1,7 @@
 import { Directive } from "@angular/core";
 import { AbstractControl, AsyncValidator, NG_ASYNC_VALIDATORS, ValidationErrors } from "@angular/forms";
 import { AuthService } from "@food-stories/users-client/auth/data-access";
-import { Observable, map} from "rxjs";
+import { Observable, debounceTime, distinctUntilChanged, map, of, switchMap} from "rxjs";
 
 
 
@@ -18,8 +18,12 @@ import { Observable, map} from "rxjs";
 export class UsernameAvailableValidator implements AsyncValidator {
   constructor(private authService: AuthService) {}
   validate(control: AbstractControl): Promise<ValidationErrors | null> | Observable<ValidationErrors | null> {
-    return this.authService.isUsernameAvailable(control.value).pipe(
-      map((isAvailable) => (isAvailable ? null : { usernameTaken: true}))
+    return of(control.value).pipe(
+      debounceTime(300),
+      distinctUntilChanged(),
+      switchMap((username: string) => this.authService.isUsernameAvailable(username).pipe(
+        map((isAvailable) => (isAvailable ? null: { usernameTaken: true}))
+      ))
     )
   }
 

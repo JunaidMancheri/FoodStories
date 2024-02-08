@@ -76,6 +76,9 @@
       "@food-stories/users-client/profile/ui/bio-section": [
         "libs/users-client/profile/ui/bio-section/src/index.ts"
       ],
+      "@food-stories/users-client/profile/ui/edit-profile-dialog": [
+        "libs/users-client/profile/ui/edit-profile-dialog/src/index.ts"
+      ],
       "@food-stories/users-client/profile/ui/highlights": [
         "libs/users-client/profile/ui/highlights/src/index.ts"
       ],
@@ -93,6 +96,9 @@
       ],
       "@food-stories/users-client/shared/data-access": [
         "libs/users-client/shared/data-access/src/index.ts"
+      ],
+      "@food-stories/users-client/shared/ui/confirm-dialog": [
+        "libs/users-client/shared/ui/confirm-dialog/src/index.ts"
       ],
       "@food-stories/users-client/shared/ui/sidebar-layout": [
         "libs/users-client/shared/ui/sidebar-layout/src/index.ts"

@@ -1,13 +1,15 @@
 import { Model } from 'mongoose';
-import { ICreateUserRepo } from '../../../../application/interfaces/repository/createUser.interface';
-import { IUserDoc, userModel } from '../models/user.model';
-import { IisUsernameAvailableRepo } from '../../../../application/interfaces/repository/isUsernameAvailable.interface';
-import { IisRegisteredUserRepo } from '../../../../application/interfaces/repository/isRegisteredUser.interface';
-import { IgetUserDataByEmail } from '../../../../application/interfaces/repository/getUserDataByEmail.interface';
-import { mapDocumentToUserEntity } from '../mapper.helper';
+import { ICreateUserRepo } from '../../../application/interfaces/repository/createUser.interface';
+import { IUserDoc, userModel } from './models/user.model';
+import { IisUsernameAvailableRepo } from '../../../application/interfaces/repository/isUsernameAvailable.interface';
+import { IisRegisteredUserRepo } from '../../../application/interfaces/repository/isRegisteredUser.interface';
+import { IgetUserDataByEmail } from '../../../application/interfaces/repository/getUserDataByEmail.interface';
+import { mapDocumentToUserEntity } from './mapper.helper';
 import { REPO_ERRORS, RepositoryError } from '@food-stories/common/errors';
-import { IUser } from '../../../../entities';
-import { IgetUserDataByUsername } from '../../../../application/interfaces/repository/getUserDataByUsername.interface';
+import { IUser } from '../../../entities';
+import { IgetUserDataByUsername } from '../../../application/interfaces/repository/getUserDataByUsername.interface';
+import { IUpdateUserProfileRepo } from '../../../application/interfaces/repository/updateUserProfile.interface';
+import { EditProfileData } from '@food-stories/common/typings';
 
 export class UserRepository
   implements
@@ -15,9 +17,23 @@ export class UserRepository
     IisUsernameAvailableRepo,
     IisRegisteredUserRepo,
     IgetUserDataByEmail,
-    IgetUserDataByUsername
+    IgetUserDataByUsername,
+    IUpdateUserProfileRepo
 {
   constructor(private userModel: Model<IUserDoc>) {}
+  async updateUserProfile(updates: EditProfileData): Promise<IUser | null> {
+    const q = {
+      username: updates.username,
+      name: updates.name,
+      DPURL  : updates.DPURL,
+      profile: {
+        bio: updates.bio,
+        gender: updates.gender
+      }
+    }
+    const user = await this.userModel.findByIdAndUpdate(updates.id, q, {new : true});
+    return mapDocumentToUserEntity(user);
+  }
   async getUserDataByUsername(username: string): Promise<IUser | null> {
     const user = await this.userModel.findOne( { username });
     return mapDocumentToUserEntity(user);

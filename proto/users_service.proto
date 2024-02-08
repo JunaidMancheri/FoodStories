@@ -8,6 +8,16 @@ service UsersService {
   rpc isRegisteredUser(isRegisteredUserRequest) returns (isRegisteredUserResponse) {}
   rpc getCurrentUserData(getCurrentUserDataRequest) returns (UserEntity) {}
   rpc getUserData(getUserDataRequest) returns (UserEntity) {}
+  rpc updateUserProfile(EditProfileData) returns (UserEntity) {}
+}
+
+message EditProfileData {
+  string username = 1;
+  string name = 2;
+  string DPURL = 3;
+  string gender = 4;
+  string bio = 5;
+  string id = 6;
 }
 
 message UserEntity {
@@ -55,14 +65,9 @@ message CreateUserRequest {
   string DPURL = 3;
 }
 
-enum Gender {
-  MALE = 0;
-  FEMALE = 1;
-}
-
 message Profile {
   string  bio = 1;
-  Gender gender = 2;
+  string gender = 2;
   repeated string links = 3;
 }
 

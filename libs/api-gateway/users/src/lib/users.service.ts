@@ -1,7 +1,7 @@
 import { Inject, Injectable, OnModuleInit } from '@nestjs/common';
 import { TOKEN } from './token';
 import { ClientGrpc } from '@nestjs/microservices';
-import { IUsersServiceClient, IgetCurrentUserDataRequest, IgetUserDataRequest } from '@food-stories/common/typings';
+import { EditProfileData, IUsersServiceClient, IgetCurrentUserDataRequest, IgetUserDataRequest } from '@food-stories/common/typings';
 import { UsersAppConfig } from './config';
 import { CreateUserDTO } from './CreateUser.dto';
 import { handleGrpcError } from '@food-stories/api-gateway/common';
@@ -32,12 +32,16 @@ export class ApiGatewayUsersService implements OnModuleInit {
     return handleGrpcError(this.usersService.isRegisteredUser(data));
   }
 
-  async getCurrentUserData(data: IgetCurrentUserDataRequest) {
+  getCurrentUserData(data: IgetCurrentUserDataRequest) {
     return handleGrpcError(this.usersService.getCurrentUserData(data));
   }
 
-  async getUserData(data: IgetUserDataRequest) {
+   getUserData(data: IgetUserDataRequest) {
     return handleGrpcError(this.usersService.getUserData(data));
+  }
+
+  udpateUserProfile(data: EditProfileData) {
+    return handleGrpcError(this.usersService.updateUserProfile(data));
   }
 }
 

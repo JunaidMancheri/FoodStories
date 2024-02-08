@@ -1,6 +1,7 @@
   import {  Metadata, handleUnaryCall } from '@grpc/grpc-js';
   import { Observable } from 'rxjs';
 import { IUser } from '../interfaces/IUser.interface';
+import { EditProfileData } from '../dto/editProfileData.dto';
 
   export interface IUsersServiceClient {
     createUser(request: ICreateUserRequest, metadata?: Metadata):  Observable<IUser>;
@@ -8,6 +9,7 @@ import { IUser } from '../interfaces/IUser.interface';
     isRegisteredUser(request: IisRegisteredUserRequest, metadata?: Metadata): Observable<IisRegisteredUserResponse>
     getCurrentUserData(request: IgetCurrentUserDataRequest, metadata?: Metadata): Observable<IUser>;
     getUserData(request: IgetUserDataRequest, metadata?: Metadata) : Observable<IUser>
+    updateUserProfile(request: EditProfileData, metadata?: Metadata) : Observable<IUser>
   }
 
   export interface IUsersServiceServer {
@@ -16,6 +18,7 @@ import { IUser } from '../interfaces/IUser.interface';
     isRegisteredUser: handleUnaryCall<IisRegisteredUserRequest, IisRegisteredUserResponse>;
     getCurrentUserData: handleUnaryCall<IgetCurrentUserDataRequest, IUser>;
     getUserData: handleUnaryCall<IgetUserDataRequest, IUser>;
+    updateUserProfile: handleUnaryCall<EditProfileData, IUser>;
   }
 
 

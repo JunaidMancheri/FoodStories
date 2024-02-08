@@ -17,7 +17,7 @@ export function makeLogger(serviceName: string): LoggerClass  {
         format: format.combine(
           format.colorize({all: true}),
           format.timestamp(),
-          format.metadata({ fillExcept: ['timestamp', 'level', 'message'] }),
+          format.metadata({fillExcept: ['timestamp', 'level', 'message'] }),
           format.printf(({ timestamp, level, message, metadata }) => {
             const { ...restMetadata } = metadata;
             const formattedMetadata = JSON.stringify(restMetadata);

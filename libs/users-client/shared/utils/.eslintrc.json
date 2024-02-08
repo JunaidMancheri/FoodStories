@@ -9,7 +9,7 @@
           "error",
           {
             "type": "attribute",
-            "prefix": "foodStories",
+            "prefix": "fs",
             "style": "camelCase"
           }
         ],

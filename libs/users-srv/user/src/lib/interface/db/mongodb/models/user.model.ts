@@ -18,15 +18,15 @@ export interface IUserDoc extends Document  {
 interface IProfile {
   bio: string;
   gender: 'female' | 'male';
-  links: string[];
 }
 
 const profile = new Schema({
   bio: String,
   gender: {
-    enum: ['male', 'female'],
+    enum: ['male', 'female', 'preferNotToSay', 'notMentioned'],
+    type: String,
+    default: 'notMentioned',
   },
-  links: [String],
 }, { _id: false})
 
 const userSchema = new Schema<IUserDoc, Model<IUserDoc>>({

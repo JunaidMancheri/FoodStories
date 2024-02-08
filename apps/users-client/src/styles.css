@@ -7,3 +7,20 @@
 
 
 /* You can add global styles to this file, and also import other style files */
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.small-message {
+  margin-left: 1rem;
+  position: relative;
+  animation: slideInFromTop 0.4s ease-in-out;
+}

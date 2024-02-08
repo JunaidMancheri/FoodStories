@@ -9,6 +9,7 @@ import { PostsComponent } from '@food-stories/users-client/profile/ui/posts';
 import { ProfileStore } from '@food-stories/users-client/profile/data-access';
 import { ProfileHttpService } from '@food-stories/users-client/shared/data-access';
 import { ProfileService } from './profile.service';
+import { EditProfileDialogComponent } from '@food-stories/users-client/profile/ui/edit-profile-dialog'
 
 @NgModule({
   imports: [
@@ -18,6 +19,7 @@ import { ProfileService } from './profile.service';
     BioSectionComponent,
     HighlightsComponent,
     PostsComponent,
+    EditProfileDialogComponent
   ],
   providers: [ProfileHttpService, ProfileStore, ProfileService],
   declarations: [ProfileComponent],

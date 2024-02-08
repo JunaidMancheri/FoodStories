@@ -14,7 +14,6 @@ export interface IUser {
 
 
 export interface Profile {
-  bio?: string;
-  gender?: 'male' | 'female';
-  links?: string[];
+  bio: string | null;
+  gender: 'male' | 'female' | 'preferNotToSay' | 'notMentioned';
 }

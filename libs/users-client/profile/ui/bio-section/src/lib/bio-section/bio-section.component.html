@@ -7,7 +7,6 @@
 
   </div>
 
-  {{isOwnProfile}}
 
   <div class="dp-part w-full  h-auto mb-6 px-2 flex items-center">
 
@@ -15,7 +14,7 @@
     <div class="md:w-[18rem] md:pl-8">
       <div class="bg-gradient-to-tr h-28 w-28 md:h-40 md:w-40 rounded-full p-1">
         <a class="block w-full h-full bg-white  rounded-full transform transition" routerLink="/profile">
-            <img class=" w-full h-full rounded-full" src="{{currentUser?.DPURL}}" alt="image">
+            <img class=" w-full h-full rounded-full" (error)="onError($event)" [src]="DPURL" alt="image">
         </a>
     </div>
 
@@ -32,7 +31,7 @@
       </div>
       
       <div *ngIf="isOwnProfile" class="flex space-x-2">
-        <button mat-raised-button>Edit profile</button>
+        <button mat-raised-button (click)="openEditDialog()">Edit profile</button>
         <button mat-raised-button (click)="logoutUser()">Logout</button>
 
       </div>
@@ -68,7 +67,7 @@
 
     <div class="bio flex flex-col">
       <span class="name" class="font-semibold text-sm mb-1">{{currentUser?.name}}</span>
-      <span>{{currentUser?.profile?.bio}}</span>
+      <div [innerHTML]="currentUser?.profile?.bio | formatedBio"></div>
     </div>
 
   </div>
@@ -109,14 +108,13 @@
     <span>{{currentUser?.profile?.bio}}</span>
 
   </div>
-  {{isOwnProfile}}
   
   <div *ngIf="!isOwnProfile"  class="options  md:hidden w-full h-12 flex justify-evenly">
     <button class="w-48" mat-stroked-button>Follow</button>
   </div>
 
   <div *ngIf="isOwnProfile"  class="options  md:hidden w-full h-12 flex justify-evenly">
-    <button class="w-48" mat-stroked-button>Edit profile</button>
+    <button class="w-48" mat-stroked-button (click)="openEditDialog()">Edit profile</button>
     <button class="w-48" (click)="logoutUser()" mat-stroked-button>Logout</button>
   </div>
 

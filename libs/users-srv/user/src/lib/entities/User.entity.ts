@@ -24,12 +24,12 @@ export interface UserClass {
 export function makeUserEntity(logger: ILogger): UserClass {
   return class implements IUser {
     public id: string;
-    public name: string | null;
+    public name: string;
     public username: string;
     public email: string;
     public isPrivate: boolean;
     public createdAt: number;
-    public DPURL: string | null;
+    public DPURL: string ;
     public profile: Profile;
     public postsCount: number;
     public followersCount: number;
@@ -39,7 +39,7 @@ export function makeUserEntity(logger: ILogger): UserClass {
       this.id = props.id || uuidV4();
       this.isPrivate = props.isPrivate || false;
       this.createdAt = props.createdAt || Date.now();
-      this.profile = props.profile || {};
+      this.profile = props.profile || { bio: null, gender: 'notMentioned'};
       this.postsCount = props.postsCount || 0;
       this.followersCount = props.followersCount || 0;
       this.followingsCount = props.followingsCount || 0;
@@ -50,8 +50,8 @@ export function makeUserEntity(logger: ILogger): UserClass {
       this.username = props.username;
       this.email = props.email;
 
-      this.name = props.name || null;
-      this.DPURL = props.DPURL || null;
+      this.name = props.name || '';
+      this.DPURL = props.DPURL || '';
     }
   };
 }
