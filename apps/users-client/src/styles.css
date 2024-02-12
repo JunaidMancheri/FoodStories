@@ -19,8 +19,16 @@
   }
 }
 
+
+
+
 .small-message {
   margin-left: 1rem;
   position: relative;
   animation: slideInFromTop 0.4s ease-in-out;
+}
+
+.rounded-edges {
+  border-radius: 50%;
+  
 }

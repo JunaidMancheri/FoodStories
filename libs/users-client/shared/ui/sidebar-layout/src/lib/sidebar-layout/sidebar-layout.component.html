@@ -1,6 +1,6 @@
 
 
-<div class="sidebar fixed left-0 z-10  hidden w-56 md:block h-screen border-r-2 px-4">
+<div class="sidebar fixed left-0 z-10  hidden w-56 md:block h-screen border-r-2 px-4" style="font-family: Robot Mono, monospace;">
 
 
   <div class="logo mt-8">
@@ -36,11 +36,15 @@
      <mat-icon class="material-symbols-outlined">favorite</mat-icon>
      <span class="text-lg">Notification</span>
    </div>
+   
 
-   <div class="home flex items-center h-8 space-x-3">
-     <mat-icon class="material-symbols-outlined">add</mat-icon>
-     <span class="text-lg">Create</span>
-   </div>
+   <button (click)="openCreateNewPostDialogBox()">
+    <div class="home flex items-center h-8 space-x-3">
+      <mat-icon class="material-symbols-outlined">add</mat-icon>
+      <span class="text-lg">Create</span>
+    </div>
+   </button>
+
   
    <a routerLink="/jithu_jamshed">
     <div class="home flex items-center h-8 space-x-3">

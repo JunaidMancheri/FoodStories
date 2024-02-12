@@ -4,23 +4,33 @@
       <fs-bio-section [isOwnProfile]="isOwnProfile$ | async"  [currentUser]="currUser$ | async"></fs-bio-section>
       <fs-highlights></fs-highlights>
     </div>
-    <div class="posts-section mb-16 h-2/5  w-full mt-2 md:px-10">
-      <div class="post-icons w-full flex justify-evenly h-12">
-        <div class="h-full flex justify-center items-center border-b-2 w-auto space-x-2 border-black">
-          <mat-icon>grid_view</mat-icon>
-          <span class="hidden md:inline-block">Posts</span>
-        </div>
 
-        <div class="h-full flex justify-center w-auto space-x-2 items-center">
-          <mat-icon>menu_book</mat-icon>
-          <span class="hidden md:inline-block">Travelougue</span>
-        </div>
-        <div class="h-full flex justify-center items-center w-auto space-x-2">
-          <mat-icon>sell</mat-icon>
-          <span class="hidden md:inline-block">Tagged</span>
-        </div>
+      <div class="post-sections w-full flex justify-evenly " >
+        <mat-tab-group  class="w-full md:px-10">
+          <mat-tab>
+            <ng-template mat-tab-label>
+              <mat-icon class="example-tab-icon">grid_view</mat-icon>
+            </ng-template>
+            <div class="posts-section mb-16 md:mb-0  ">
+              <fs-posts></fs-posts>
+            </div>
+          </mat-tab>
+        
+          <mat-tab>
+            <ng-template mat-tab-label>
+              <mat-icon class="example-tab-icon">menu_book</mat-icon>
+            </ng-template>
+            Content 2
+          </mat-tab>
+        
+          <mat-tab>
+            <ng-template mat-tab-label>
+              <mat-icon class="example-tab-icon">sell</mat-icon>
+            </ng-template>
+        
+            Content 3
+          </mat-tab>
+        </mat-tab-group>
       </div>
-      <fs-posts></fs-posts>
-    </div>
   </div>
 </div>

@@ -10,6 +10,7 @@ import { ProfileStore } from '@food-stories/users-client/profile/data-access';
 import { ProfileHttpService } from '@food-stories/users-client/shared/data-access';
 import { ProfileService } from './profile.service';
 import { EditProfileDialogComponent } from '@food-stories/users-client/profile/ui/edit-profile-dialog'
+import { MatTabsModule } from '@angular/material/tabs';
 
 @NgModule({
   imports: [
@@ -19,7 +20,8 @@ import { EditProfileDialogComponent } from '@food-stories/users-client/profile/u
     BioSectionComponent,
     HighlightsComponent,
     PostsComponent,
-    EditProfileDialogComponent
+    EditProfileDialogComponent,
+    MatTabsModule,
   ],
   providers: [ProfileHttpService, ProfileStore, ProfileService],
   declarations: [ProfileComponent],

@@ -67,6 +67,12 @@
       "@food-stories/users-client/feed/ui/stories": [
         "libs/users-client/feed/ui/stories/src/index.ts"
       ],
+      "@food-stories/users-client/post/feature/create-post": [
+        "libs/users-client/post/feature/create-post/src/index.ts"
+      ],
+      "@food-stories/users-client/post/ui/create-post-stepper": [
+        "libs/users-client/post/ui/create-post-stepper/src/index.ts"
+      ],
       "@food-stories/users-client/profile/data-access": [
         "libs/users-client/profile/data-access/src/index.ts"
       ],
