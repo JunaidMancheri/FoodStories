@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import { Component, OnDestroy, OnInit, ViewChild, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
@@ -8,6 +8,8 @@ import { CdkStepper, CdkStepperModule } from '@angular/cdk/stepper';
 import { getImageUrlFromFile } from '@food-stories/users-client/shared/utils';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input'
+import { FormControl, ReactiveFormsModule } from '@angular/forms';
+import { CreatePostService } from './create-post.service';
 @Component({
   selector: 'fs-create-post',
   standalone: true,
@@ -19,6 +21,7 @@ import { MatInputModule } from '@angular/material/input'
     CreatePostStepperComponent,
     CdkStepperModule,
     MatFormFieldModule,
+    ReactiveFormsModule,
     MatInputModule,
   ],
   templateUrl: './create-post.component.html',
@@ -27,9 +30,13 @@ import { MatInputModule } from '@angular/material/input'
 export class CreatePostDialogComponent {
   @ViewChild(CreatePostStepperComponent) stepper!: CdkStepper;
 
+  createPostService = inject(CreatePostService);
+
 
   files!: FileList;
   imageUrls : string[] = [];
+
+  description = new FormControl();
 
 
   async onFileAdd(event: Event) {
@@ -46,6 +53,11 @@ export class CreatePostDialogComponent {
 
   trackByFn(index: number, item: string): string {
     return item
+  }
+
+
+  sharePost() {
+     this.createPostService.createPost(this.description.value).subscribe();
   }
 
 

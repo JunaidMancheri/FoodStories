@@ -9,8 +9,9 @@ export class CreateUserUseCase implements ICreateUserUseCase {
   constructor(private logger: ILogger,private createUserRepo: ICreateUserRepo) {}
   async execute(userDto: UserProps): Promise<IUser> {
    
-    const  newUser = new User(userDto)
+    let  newUser
     try {
+      newUser = new User(userDto);
       await  this.createUserRepo.createUser(newUser);
     } catch (error) {
       if (error instanceof RepositoryError && error.code == REPO_ERRORS.DUPLICATE_RECORD) {

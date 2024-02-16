@@ -7,4 +7,7 @@ export const API_ENDPOINTS = {
   GET_CURRENT_USER_DATA: `${BASE_URL}/users/email/`,
   GET_USER_DATA: `${BASE_URL}/users/`,
   UPDATE_USER_PROFILE: `${BASE_URL}/users/profile`,
+
+  // Posts
+  CREATE_POST: `${BASE_URL}/posts/`
 }

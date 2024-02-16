@@ -27,7 +27,7 @@
     </cdk-step>
     <cdk-step>
       <div class="wrapper flex flex-col items-center justify-center gap-1">
-        <div class="image-preview-section mt-3flex gap-1 justify-center items-center">
+        <div class="image-preview-section mt-3 flex gap-1 justify-center items-center">
 
           <div class="img w-24 h-24"  *ngFor="let imgUrl of imageUrls;trackBy : trackByFn">
             <img  class="w-full h-full object-contain" [src]="imgUrl" alt="image">
@@ -45,10 +45,10 @@
             <div class="description w-full">
               <mat-form-field appearance="outline" class="w-full">
                 <mat-label>Caption</mat-label>
-                <textarea matInput  placeholder="Write a  caption"></textarea>
+                <textarea [formControl]="description" form matInput name="description"  placeholder="Write a  caption"></textarea>
               </mat-form-field>
 
-              <button mat-raised-button class="w-full" color="primary">Share</button>
+              <button (click)="sharePost()"mat-raised-button class="w-full" color="primary">Share</button>
             </div>
 
     

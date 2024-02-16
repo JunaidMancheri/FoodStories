@@ -3,7 +3,21 @@ syntax = "proto3";
 package posts_service.v1;
 
 service PostsService {
-  rpc ample(s) returns (s) {}
+  rpc createPost(CreatePostRequest) returns (PostEntity) {}
 }
 
-message s {}
+message PostEntity {
+  string id = 0;
+  string userId = 1;
+  string caption = 2;
+  repeated string mediaUrls = 3;
+  sint64 createdAt = 4;
+  int64 likesCount = 5;
+  int64 commentsCount = 6;
+}
+
+
+message CreatePostRequest {
+  string userId = 0;
+  string caption = 1;
+}
