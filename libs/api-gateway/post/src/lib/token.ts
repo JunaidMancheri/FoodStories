@@ -1,0 +1,3 @@
+export enum TOKEN {
+  POSTS_PACKAGE ='POSTS_PACKAGE'
+}

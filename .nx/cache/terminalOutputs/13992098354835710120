@@ -2,3 +2,1069 @@ chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.8 KiB [1m[33m[entry
 webpack compiled [1m[32msuccessfully[39m[22m (d82c331d2c1db631)
 [1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
 [1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.7 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (3828687587dc271d)
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.7 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (425079844effde5e)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.7 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (1ba1fd0d938dcbbe)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.7 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (99795248e5bd811e)
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.7 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (c7c23538ac847bee)
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.7 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (e06ce490afc5a174)
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.7 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (e06ce490afc5a174)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.6 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (3b6db9f07a76992d)
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.6 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (4639cd03e7ce547f)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 1.05 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./src/main.ts[39m[22m [1m[32m20:38[39m[22m
+[1mModule parse [1m[31mfailed[39m[22m[1m: [1m[31mUnexpected[39m[22m[1m token (20:38)
+File was processed with these loaders:
+ * ../../node_modules/.pnpm/ts-loader@9.4.4_typescript@5.1.3_webpack@5.88.2/node_modules/ts-loader/index.js
+You may need an additional loader to handle the result of these loaders.
+|     }));
+|     app.enableVersioning({
+>         type: common_1.VersioningType.,
+|         defaultVersion: '1',
+|     });[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\main.ts[39m[22m
+[1m./src/main.ts[39m[22m [1m[32m25:25-26[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\main.ts(25,26)[39m[22m
+[1m[31m      TS1003: Identifier expected.[39m[22m
+
+webpack compiled with [1m[31m2 errors[39m[22m (fdeef0099f16d03f)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\dist\apps\api-gateway\main.js:6[39m[22m
+[1m[31mthrow new Error("Module parse failed: Unexpected token (20:38)\nFile was processed with these loaders:\n * ../../node_modules/.pnpm/ts-loader@9.4.4_typescript@5.1.3_webpack@5.88.2/node_modules/ts-loader/index.js\nYou may need an additional loader to handle the result of these loaders.\n|     }));\n|     app.enableVersioning({\n>         type: common_1.VersioningType.,\n|         defaultVersion: '1',\n|     });");[39m[22m
+[1m[31m      ^[39m[22m
+[1m[31mError: Module parse failed: Unexpected token (20:38)[39m[22m
+[1m[31mFile was processed with these loaders:[39m[22m
+[1m[31m * ../../node_modules/.pnpm/ts-loader@9.4.4_typescript@5.1.3_webpack@5.88.2/node_modules/ts-loader/index.js[39m[22m
+[1m[31mYou may need an additional loader to handle the result of these loaders.[39m[22m
+[1m[31m|     }));[39m[22m
+[1m[31m|     app.enableVersioning({[39m[22m
+[1m[31m>         type: common_1.VersioningType.,[39m[22m
+[1m[31m|         defaultVersion: '1',[39m[22m
+[1m[31m|     });[39m[22m
+[1m[31m    at Array.__webpack_modules__ (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\dist\apps\api-gateway\main.js:6:7)[39m[22m
+[1m[31m    at C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\dist\apps\api-gateway\webpack:\webpack\startup:5:1[39m[22m
+[1m[31m    at Object.<anonymous> (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\dist\apps\api-gateway\main.js:21:12)[39m[22m
+[1m[31m    at Module._compile (node:internal/modules/cjs/loader:1356:14)[39m[22m
+[1m[31m    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1414:10)[39m[22m
+[1m[31m    at Module.load (node:internal/modules/cjs/loader:1197:32)[39m[22m
+[1m[31m    at Function.Module._load (node:internal/modules/cjs/loader:1013:12)[39m[22m
+[1m[31m    at Function.Module._load (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\@nx+js@16.5.5_nx@16.5.3_typescript@5.1.3\node_modules\@nx\js\src\executors\node\node-with-require-overrides.js:10:31)[39m[22m
+[1m[31m    at ModuleWrap.<anonymous> (node:internal/modules/esm/translators:202:29)[39m[22m
+[1m[31m    at ModuleJob.run (node:internal/modules/esm/module_job:195:25)[39m[22m
+[1m[31m[39m[22m
+
+[36m>[39m [7m[1m[36m NX [39m[22m[27m [1mProcess exited with code 1, waiting for changes to restart...[22m
+
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.6 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (fc172e7cbc367e23)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.6 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (74b5bc7b08046630)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.6 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts[39m[22m
+[1m./src/app/app.module.ts[39m[22m [1m[32m13:26-27[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts(13,27)[39m[22m
+[1m[31m      TS1136: Property assignment expected.[39m[22m
+
+webpack compiled with [1m[31m1 error[39m[22m (1d2d91ca5afa83ce)
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.6 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (dc679373dae15efc)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.6 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (ad58d72f6b0cb308)
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.6 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (ad58d72f6b0cb308)
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.6 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts[39m[22m
+[1m./src/app/app.module.ts[39m[22m [1m[32m14:4-16[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts(14,5)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m13:5[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'a'.
+  [0m [90m 11 |[39m     [90m// ApiGatewayAuthModule,[39m[0m
+  [0m [90m 12 |[39m     [33mApiGatewayUsersModule[39m[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 13 |[39m     aP[0m
+  [0m [90m    |[39m     [31m[1m^[22m[39m[0m
+  [0m [90m 14 |[39m     [33mConfigModule[39m[33m.[39mforRoot()[33m,[39m[0m
+  [0m [90m 15 |[39m     [33mRouterModule[39m[33m.[39mregister(appRoutes)[0m
+  [0m [90m 16 |[39m ][33m,[39m[0m
+
+webpack compiled with [1m[31m2 errors[39m[22m (2a64f4ec934895ce)
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.6 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts[39m[22m
+[1m./src/app/app.module.ts[39m[22m [1m[32m14:4-16[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts(14,5)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m13:5[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'aP'.
+  [0m [90m 11 |[39m     [90m// ApiGatewayAuthModule,[39m[0m
+  [0m [90m 12 |[39m     [33mApiGatewayUsersModule[39m[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 13 |[39m     aP[0m
+  [0m [90m    |[39m     [31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 14 |[39m     [33mConfigModule[39m[33m.[39mforRoot()[33m,[39m[0m
+  [0m [90m 15 |[39m     [33mRouterModule[39m[33m.[39mregister(appRoutes)[0m
+  [0m [90m 16 |[39m ][33m,[39m[0m
+
+webpack compiled with [1m[31m2 errors[39m[22m (bae766e18e83549a)
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.6 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts[39m[22m
+[1m./src/app/app.module.ts[39m[22m [1m[32m14:4-16[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts(14,5)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m13:5[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'a'.
+  [0m [90m 11 |[39m     [90m// ApiGatewayAuthModule,[39m[0m
+  [0m [90m 12 |[39m     [33mApiGatewayUsersModule[39m[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 13 |[39m     [0m
+  [0m [90m    |[39m     [31m[1m^[22m[39m[0m
+  [0m [90m 14 |[39m     [33mConfigModule[39m[33m.[39mforRoot()[33m,[39m[0m
+  [0m [90m 15 |[39m     [33mRouterModule[39m[33m.[39mregister(appRoutes)[0m
+  [0m [90m 16 |[39m ][33m,[39m[0m
+
+webpack compiled with [1m[31m2 errors[39m[22m (97c3f9c189fd75bb)
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.6 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (ff252b34db2011c3)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.6 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts[39m[22m
+[1m./src/app/app.module.ts[39m[22m [1m[32m14:4-16[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts(14,5)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m13:5[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'A'.
+  [0m [90m 11 |[39m     [90m// ApiGatewayAuthModule,[39m[0m
+  [0m [90m 12 |[39m     [33mApiGatewayUsersModule[39m[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 13 |[39m     [33mA[39m[0m
+  [0m [90m    |[39m     [31m[1m^[22m[39m[0m
+  [0m [90m 14 |[39m     [33mConfigModule[39m[33m.[39mforRoot()[33m,[39m[0m
+  [0m [90m 15 |[39m     [33mRouterModule[39m[33m.[39mregister(appRoutes)[0m
+  [0m [90m 16 |[39m ][33m,[39m[0m
+
+webpack compiled with [1m[31m2 errors[39m[22m (0472192dd1136cb3)
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.6 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts[39m[22m
+[1m./src/app/app.module.ts[39m[22m [1m[32m14:4-16[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts(14,5)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m13:5[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'Ap'.
+  [0m [90m 11 |[39m     [90m// ApiGatewayAuthModule,[39m[0m
+  [0m [90m 12 |[39m     [33mApiGatewayUsersModule[39m[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 13 |[39m     [33mApi[39m[0m
+  [0m [90m    |[39m     [31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 14 |[39m     [33mConfigModule[39m[33m.[39mforRoot()[33m,[39m[0m
+  [0m [90m 15 |[39m     [33mRouterModule[39m[33m.[39mregister(appRoutes)[0m
+  [0m [90m 16 |[39m ][33m,[39m[0m
+
+webpack compiled with [1m[31m2 errors[39m[22m (ebb5060305135155)
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.6 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts[39m[22m
+[1m./src/app/app.module.ts[39m[22m [1m[32m14:4-16[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts(14,5)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m13:5[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'Api'.
+  [0m [90m 11 |[39m     [90m// ApiGatewayAuthModule,[39m[0m
+  [0m [90m 12 |[39m     [33mApiGatewayUsersModule[39m[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 13 |[39m     [33mApi[39m[0m
+  [0m [90m    |[39m     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 14 |[39m     [33mConfigModule[39m[33m.[39mforRoot()[33m,[39m[0m
+  [0m [90m 15 |[39m     [33mRouterModule[39m[33m.[39mregister(appRoutes)[0m
+  [0m [90m 16 |[39m ][33m,[39m[0m
+
+webpack compiled with [1m[31m2 errors[39m[22m (496f1f68af3a023e)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.6 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts[39m[22m
+[1m./src/app/app.module.ts[39m[22m [1m[32m15:4-16[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts(15,5)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m14:5[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'Api'.
+  [0m [90m 12 |[39m     [90m// ApiGatewayAuthModule,[39m[0m
+  [0m [90m 13 |[39m     [33mApiGatewayUsersModule[39m[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 14 |[39m     [33mApi[39m[0m
+  [0m [90m    |[39m     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 15 |[39m     [33mConfigModule[39m[33m.[39mforRoot()[33m,[39m[0m
+  [0m [90m 16 |[39m     [33mRouterModule[39m[33m.[39mregister(appRoutes)[0m
+  [0m [90m 17 |[39m ][33m,[39m[0m
+
+webpack compiled with [1m[31m2 errors[39m[22m (ad13488ebe2a08fc)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.6 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts[39m[22m
+[1m./src/app/app.module.ts[39m[22m [1m[32m15:4-16[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts(15,5)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m4:1[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'i'.
+  [0m [90m 2 |[39m [36mimport[39m { [33mApiGatewayAuthModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/auth'[39m[0m
+  [0m [90m 3 |[39m [36mimport[39m { [33mApiGatewayUsersModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/users'[39m[0m
+  [0m[31m[1m>[22m[39m[90m 4 |[39m i[0m
+  [0m [90m   |[39m [31m[1m^[22m[39m[0m
+  [0m [90m 5 |[39m [36mimport[39m { [33mConfigModule[39m } [36mfrom[39m [32m'@nestjs/config'[39m[0m
+  [0m [90m 6 |[39m [36mimport[39m { [33mRouterModule[39m } [36mfrom[39m [32m'@nestjs/core'[39m[33m;[39m[0m
+  [0m [90m 7 |[39m [36mimport[39m { appRoutes } [36mfrom[39m [32m'./app.routes'[39m[33m;[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m14:5[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'Api'.
+  [0m [90m 12 |[39m     [90m// ApiGatewayAuthModule,[39m[0m
+  [0m [90m 13 |[39m     [33mApiGatewayUsersModule[39m[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 14 |[39m     [33mApi[39m[0m
+  [0m [90m    |[39m     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 15 |[39m     [33mConfigModule[39m[33m.[39mforRoot()[33m,[39m[0m
+  [0m [90m 16 |[39m     [33mRouterModule[39m[33m.[39mregister(appRoutes)[0m
+  [0m [90m 17 |[39m ][33m,[39m[0m
+
+webpack compiled with [1m[31m3 errors[39m[22m (e30c7b879db98fc4)
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.6 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts[39m[22m
+[1m./src/app/app.module.ts[39m[22m [1m[32m15:4-16[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts(15,5)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m4:1[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'imp'.
+  [0m [90m 2 |[39m [36mimport[39m { [33mApiGatewayAuthModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/auth'[39m[0m
+  [0m [90m 3 |[39m [36mimport[39m { [33mApiGatewayUsersModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/users'[39m[0m
+  [0m[31m[1m>[22m[39m[90m 4 |[39m impor[0m
+  [0m [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 5 |[39m [36mimport[39m { [33mConfigModule[39m } [36mfrom[39m [32m'@nestjs/config'[39m[0m
+  [0m [90m 6 |[39m [36mimport[39m { [33mRouterModule[39m } [36mfrom[39m [32m'@nestjs/core'[39m[33m;[39m[0m
+  [0m [90m 7 |[39m [36mimport[39m { appRoutes } [36mfrom[39m [32m'./app.routes'[39m[33m;[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m14:5[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'Api'.
+  [0m [90m 12 |[39m     [90m// ApiGatewayAuthModule,[39m[0m
+  [0m [90m 13 |[39m     [33mApiGatewayUsersModule[39m[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 14 |[39m     [33mApi[39m[0m
+  [0m [90m    |[39m     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 15 |[39m     [33mConfigModule[39m[33m.[39mforRoot()[33m,[39m[0m
+  [0m [90m 16 |[39m     [33mRouterModule[39m[33m.[39mregister(appRoutes)[0m
+  [0m [90m 17 |[39m ][33m,[39m[0m
+
+webpack compiled with [1m[31m3 errors[39m[22m (f246b9f6085e5349)
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.8 KiB (javascript) 88 bytes (runtime) [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[33mWARNING[39m[22m in [1m./src/app/app.module.ts[39m[22m [1m[32m7:0-7[39m[22m
+[1mCritical dependency: require function is used in a way in which dependencies cannot be statically extracted[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts[39m[22m
+[1m./src/app/app.module.ts[39m[22m [1m[32m5:0-6[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts(5,1)[39m[22m
+[1m[31m      TS1109: Expression expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts[39m[22m
+[1m./src/app/app.module.ts[39m[22m [1m[32m15:4-16[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts(15,5)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m14:5[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'Api'.
+  [0m [90m 12 |[39m     [90m// ApiGatewayAuthModule,[39m[0m
+  [0m [90m 13 |[39m     [33mApiGatewayUsersModule[39m[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 14 |[39m     [33mApi[39m[0m
+  [0m [90m    |[39m     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 15 |[39m     [33mConfigModule[39m[33m.[39mforRoot()[33m,[39m[0m
+  [0m [90m 16 |[39m     [33mRouterModule[39m[33m.[39mregister(appRoutes)[0m
+  [0m [90m 17 |[39m ][33m,[39m[0m
+
+webpack compiled with [1m[31m3 errors[39m[22m and [1m[33m1 warning[39m[22m (a91d2a5df495ac89)
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.8 KiB (javascript) 88 bytes (runtime) [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[33mWARNING[39m[22m in [1m./src/app/app.module.ts[39m[22m [1m[32m7:0-7[39m[22m
+[1mCritical dependency: require function is used in a way in which dependencies cannot be statically extracted[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts[39m[22m
+[1m./src/app/app.module.ts[39m[22m [1m[32m5:0-6[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts(5,1)[39m[22m
+[1m[31m      TS1109: Expression expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts[39m[22m
+[1m./src/app/app.module.ts[39m[22m [1m[32m15:4-16[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts(15,5)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m14:5[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'Api'.
+  [0m [90m 12 |[39m     [90m// ApiGatewayAuthModule,[39m[0m
+  [0m [90m 13 |[39m     [33mApiGatewayUsersModule[39m[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 14 |[39m     [33mApi[39m[0m
+  [0m [90m    |[39m     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 15 |[39m     [33mConfigModule[39m[33m.[39mforRoot()[33m,[39m[0m
+  [0m [90m 16 |[39m     [33mRouterModule[39m[33m.[39mregister(appRoutes)[0m
+  [0m [90m 17 |[39m ][33m,[39m[0m
+
+webpack compiled with [1m[31m3 errors[39m[22m and [1m[33m1 warning[39m[22m (5c4cfdbef582f980)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.6 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts[39m[22m
+[1m./src/app/app.module.ts[39m[22m [1m[32m5:0-6[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts(5,1)[39m[22m
+[1m[31m      TS1109: Expression expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts[39m[22m
+[1m./src/app/app.module.ts[39m[22m [1m[32m15:4-16[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts(15,5)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m4:11[22m[39m[1m[39m[22m
+[90mTS1141: [39mString literal expected.
+  [0m [90m 2 |[39m [36mimport[39m { [33mApiGatewayAuthModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/auth'[39m[0m
+  [0m [90m 3 |[39m [36mimport[39m { [33mApiGatewayUsersModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/users'[39m[0m
+  [0m[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {} [36mfrom[39m [32m''[39m[0m
+  [0m [90m   |[39m           [31m[1m^[22m[39m[0m
+  [0m [90m 5 |[39m [36mimport[39m { [33mConfigModule[39m } [36mfrom[39m [32m'@nestjs/config'[39m[0m
+  [0m [90m 6 |[39m [36mimport[39m { [33mRouterModule[39m } [36mfrom[39m [32m'@nestjs/core'[39m[33m;[39m[0m
+  [0m [90m 7 |[39m [36mimport[39m { appRoutes } [36mfrom[39m [32m'./app.routes'[39m[33m;[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m14:5[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'Api'.
+  [0m [90m 12 |[39m     [90m// ApiGatewayAuthModule,[39m[0m
+  [0m [90m 13 |[39m     [33mApiGatewayUsersModule[39m[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 14 |[39m     [33mApi[39m[0m
+  [0m [90m    |[39m     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 15 |[39m     [33mConfigModule[39m[33m.[39mforRoot()[33m,[39m[0m
+  [0m [90m 16 |[39m     [33mRouterModule[39m[33m.[39mregister(appRoutes)[0m
+  [0m [90m 17 |[39m ][33m,[39m[0m
+
+webpack compiled with [1m[31m4 errors[39m[22m (87ecd4fca73fa057)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.6 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts[39m[22m
+[1m./src/app/app.module.ts[39m[22m [1m[32m15:4-16[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts(15,5)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m4:16[22m[39m[1m[39m[22m
+[90mTS2307: [39mCannot find module '@an' or its corresponding type declarations.
+  [0m [90m 2 |[39m [36mimport[39m { [33mApiGatewayAuthModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/auth'[39m[0m
+  [0m [90m 3 |[39m [36mimport[39m { [33mApiGatewayUsersModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/users'[39m[0m
+  [0m[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {} [36mfrom[39m [32m'@an'[39m[0m
+  [0m [90m   |[39m                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 5 |[39m [36mimport[39m { [33mConfigModule[39m } [36mfrom[39m [32m'@nestjs/config'[39m[0m
+  [0m [90m 6 |[39m [36mimport[39m { [33mRouterModule[39m } [36mfrom[39m [32m'@nestjs/core'[39m[33m;[39m[0m
+  [0m [90m 7 |[39m [36mimport[39m { appRoutes } [36mfrom[39m [32m'./app.routes'[39m[33m;[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m14:5[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'Api'.
+  [0m [90m 12 |[39m     [90m// ApiGatewayAuthModule,[39m[0m
+  [0m [90m 13 |[39m     [33mApiGatewayUsersModule[39m[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 14 |[39m     [33mApi[39m[0m
+  [0m [90m    |[39m     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 15 |[39m     [33mConfigModule[39m[33m.[39mforRoot()[33m,[39m[0m
+  [0m [90m 16 |[39m     [33mRouterModule[39m[33m.[39mregister(appRoutes)[0m
+  [0m [90m 17 |[39m ][33m,[39m[0m
+
+webpack compiled with [1m[31m3 errors[39m[22m (10fd1f46b70b24cc)
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.6 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts[39m[22m
+[1m./src/app/app.module.ts[39m[22m [1m[32m15:4-16[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts(15,5)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m4:16[22m[39m[1m[39m[22m
+[90mTS2307: [39mCannot find module '@' or its corresponding type declarations.
+  [0m [90m 2 |[39m [36mimport[39m { [33mApiGatewayAuthModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/auth'[39m[0m
+  [0m [90m 3 |[39m [36mimport[39m { [33mApiGatewayUsersModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/users'[39m[0m
+  [0m[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {} [36mfrom[39m [32m'@fo'[39m[0m
+  [0m [90m   |[39m                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 5 |[39m [36mimport[39m { [33mConfigModule[39m } [36mfrom[39m [32m'@nestjs/config'[39m[0m
+  [0m [90m 6 |[39m [36mimport[39m { [33mRouterModule[39m } [36mfrom[39m [32m'@nestjs/core'[39m[33m;[39m[0m
+  [0m [90m 7 |[39m [36mimport[39m { appRoutes } [36mfrom[39m [32m'./app.routes'[39m[33m;[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m14:5[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'Api'.
+  [0m [90m 12 |[39m     [90m// ApiGatewayAuthModule,[39m[0m
+  [0m [90m 13 |[39m     [33mApiGatewayUsersModule[39m[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 14 |[39m     [33mApi[39m[0m
+  [0m [90m    |[39m     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 15 |[39m     [33mConfigModule[39m[33m.[39mforRoot()[33m,[39m[0m
+  [0m [90m 16 |[39m     [33mRouterModule[39m[33m.[39mregister(appRoutes)[0m
+  [0m [90m 17 |[39m ][33m,[39m[0m
+
+webpack compiled with [1m[31m3 errors[39m[22m (c5640d63dcc7c92b)
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.6 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts[39m[22m
+[1m./src/app/app.module.ts[39m[22m [1m[32m15:4-16[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts(15,5)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m4:16[22m[39m[1m[39m[22m
+[90mTS2307: [39mCannot find module '@foo' or its corresponding type declarations.
+  [0m [90m 2 |[39m [36mimport[39m { [33mApiGatewayAuthModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/auth'[39m[0m
+  [0m [90m 3 |[39m [36mimport[39m { [33mApiGatewayUsersModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/users'[39m[0m
+  [0m[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {} [36mfrom[39m [32m'@food'[39m[0m
+  [0m [90m   |[39m                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 5 |[39m [36mimport[39m { [33mConfigModule[39m } [36mfrom[39m [32m'@nestjs/config'[39m[0m
+  [0m [90m 6 |[39m [36mimport[39m { [33mRouterModule[39m } [36mfrom[39m [32m'@nestjs/core'[39m[33m;[39m[0m
+  [0m [90m 7 |[39m [36mimport[39m { appRoutes } [36mfrom[39m [32m'./app.routes'[39m[33m;[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m14:5[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'Api'.
+  [0m [90m 12 |[39m     [90m// ApiGatewayAuthModule,[39m[0m
+  [0m [90m 13 |[39m     [33mApiGatewayUsersModule[39m[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 14 |[39m     [33mApi[39m[0m
+  [0m [90m    |[39m     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 15 |[39m     [33mConfigModule[39m[33m.[39mforRoot()[33m,[39m[0m
+  [0m [90m 16 |[39m     [33mRouterModule[39m[33m.[39mregister(appRoutes)[0m
+  [0m [90m 17 |[39m ][33m,[39m[0m
+
+webpack compiled with [1m[31m3 errors[39m[22m (8185a60f22f23ea3)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.6 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts[39m[22m
+[1m./src/app/app.module.ts[39m[22m [1m[32m15:4-16[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts(15,5)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m4:16[22m[39m[1m[39m[22m
+[90mTS2307: [39mCannot find module '@food' or its corresponding type declarations.
+  [0m [90m 2 |[39m [36mimport[39m { [33mApiGatewayAuthModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/auth'[39m[0m
+  [0m [90m 3 |[39m [36mimport[39m { [33mApiGatewayUsersModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/users'[39m[0m
+  [0m[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {} [36mfrom[39m [32m'@food'[39m[0m
+  [0m [90m   |[39m                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 5 |[39m [36mimport[39m { [33mConfigModule[39m } [36mfrom[39m [32m'@nestjs/config'[39m[0m
+  [0m [90m 6 |[39m [36mimport[39m { [33mRouterModule[39m } [36mfrom[39m [32m'@nestjs/core'[39m[33m;[39m[0m
+  [0m [90m 7 |[39m [36mimport[39m { appRoutes } [36mfrom[39m [32m'./app.routes'[39m[33m;[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m14:5[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'Api'.
+  [0m [90m 12 |[39m     [90m// ApiGatewayAuthModule,[39m[0m
+  [0m [90m 13 |[39m     [33mApiGatewayUsersModule[39m[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 14 |[39m     [33mApi[39m[0m
+  [0m [90m    |[39m     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 15 |[39m     [33mConfigModule[39m[33m.[39mforRoot()[33m,[39m[0m
+  [0m [90m 16 |[39m     [33mRouterModule[39m[33m.[39mregister(appRoutes)[0m
+  [0m [90m 17 |[39m ][33m,[39m[0m
+
+webpack compiled with [1m[31m3 errors[39m[22m (064b67c657b81c30)
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.6 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts[39m[22m
+[1m./src/app/app.module.ts[39m[22m [1m[32m15:4-16[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts(15,5)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m4:16[22m[39m[1m[39m[22m
+[90mTS2307: [39mCannot find module '@foodu' or its corresponding type declarations.
+  [0m [90m 2 |[39m [36mimport[39m { [33mApiGatewayAuthModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/auth'[39m[0m
+  [0m [90m 3 |[39m [36mimport[39m { [33mApiGatewayUsersModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/users'[39m[0m
+  [0m[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {} [36mfrom[39m [32m'@fooduser'[39m[0m
+  [0m [90m   |[39m                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 5 |[39m [36mimport[39m { [33mConfigModule[39m } [36mfrom[39m [32m'@nestjs/config'[39m[0m
+  [0m [90m 6 |[39m [36mimport[39m { [33mRouterModule[39m } [36mfrom[39m [32m'@nestjs/core'[39m[33m;[39m[0m
+  [0m [90m 7 |[39m [36mimport[39m { appRoutes } [36mfrom[39m [32m'./app.routes'[39m[33m;[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m14:5[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'Api'.
+  [0m [90m 12 |[39m     [90m// ApiGatewayAuthModule,[39m[0m
+  [0m [90m 13 |[39m     [33mApiGatewayUsersModule[39m[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 14 |[39m     [33mApi[39m[0m
+  [0m [90m    |[39m     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 15 |[39m     [33mConfigModule[39m[33m.[39mforRoot()[33m,[39m[0m
+  [0m [90m 16 |[39m     [33mRouterModule[39m[33m.[39mregister(appRoutes)[0m
+  [0m [90m 17 |[39m ][33m,[39m[0m
+
+webpack compiled with [1m[31m3 errors[39m[22m (b691a083263fd414)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.6 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts[39m[22m
+[1m./src/app/app.module.ts[39m[22m [1m[32m15:4-16[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts(15,5)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m4:16[22m[39m[1m[39m[22m
+[90mTS2307: [39mCannot find module '@fooduser' or its corresponding type declarations.
+  [0m [90m 2 |[39m [36mimport[39m { [33mApiGatewayAuthModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/auth'[39m[0m
+  [0m [90m 3 |[39m [36mimport[39m { [33mApiGatewayUsersModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/users'[39m[0m
+  [0m[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {} [36mfrom[39m [32m'@fooduser'[39m[0m
+  [0m [90m   |[39m                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 5 |[39m [36mimport[39m { [33mConfigModule[39m } [36mfrom[39m [32m'@nestjs/config'[39m[0m
+  [0m [90m 6 |[39m [36mimport[39m { [33mRouterModule[39m } [36mfrom[39m [32m'@nestjs/core'[39m[33m;[39m[0m
+  [0m [90m 7 |[39m [36mimport[39m { appRoutes } [36mfrom[39m [32m'./app.routes'[39m[33m;[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m14:5[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'Api'.
+  [0m [90m 12 |[39m     [90m// ApiGatewayAuthModule,[39m[0m
+  [0m [90m 13 |[39m     [33mApiGatewayUsersModule[39m[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 14 |[39m     [33mApi[39m[0m
+  [0m [90m    |[39m     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 15 |[39m     [33mConfigModule[39m[33m.[39mforRoot()[33m,[39m[0m
+  [0m [90m 16 |[39m     [33mRouterModule[39m[33m.[39mregister(appRoutes)[0m
+  [0m [90m 17 |[39m ][33m,[39m[0m
+
+webpack compiled with [1m[31m3 errors[39m[22m (65e444b76ae67832)
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.6 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts[39m[22m
+[1m./src/app/app.module.ts[39m[22m [1m[32m15:4-16[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts(15,5)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m4:16[22m[39m[1m[39m[22m
+[90mTS2307: [39mCannot find module '@fooduse' or its corresponding type declarations.
+  [0m [90m 2 |[39m [36mimport[39m { [33mApiGatewayAuthModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/auth'[39m[0m
+  [0m [90m 3 |[39m [36mimport[39m { [33mApiGatewayUsersModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/users'[39m[0m
+  [0m[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {} [36mfrom[39m [32m'@foodus'[39m[0m
+  [0m [90m   |[39m                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 5 |[39m [36mimport[39m { [33mConfigModule[39m } [36mfrom[39m [32m'@nestjs/config'[39m[0m
+  [0m [90m 6 |[39m [36mimport[39m { [33mRouterModule[39m } [36mfrom[39m [32m'@nestjs/core'[39m[33m;[39m[0m
+  [0m [90m 7 |[39m [36mimport[39m { appRoutes } [36mfrom[39m [32m'./app.routes'[39m[33m;[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m14:5[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'Api'.
+  [0m [90m 12 |[39m     [90m// ApiGatewayAuthModule,[39m[0m
+  [0m [90m 13 |[39m     [33mApiGatewayUsersModule[39m[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 14 |[39m     [33mApi[39m[0m
+  [0m [90m    |[39m     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 15 |[39m     [33mConfigModule[39m[33m.[39mforRoot()[33m,[39m[0m
+  [0m [90m 16 |[39m     [33mRouterModule[39m[33m.[39mregister(appRoutes)[0m
+  [0m [90m 17 |[39m ][33m,[39m[0m
+
+webpack compiled with [1m[31m3 errors[39m[22m (5edfe458be3fef86)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.6 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts[39m[22m
+[1m./src/app/app.module.ts[39m[22m [1m[32m15:4-16[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts(15,5)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m4:16[22m[39m[1m[39m[22m
+[90mTS2307: [39mCannot find module '@foodus' or its corresponding type declarations.
+  [0m [90m 2 |[39m [36mimport[39m { [33mApiGatewayAuthModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/auth'[39m[0m
+  [0m [90m 3 |[39m [36mimport[39m { [33mApiGatewayUsersModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/users'[39m[0m
+  [0m[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {} [36mfrom[39m [32m'@foodu'[39m[0m
+  [0m [90m   |[39m                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 5 |[39m [36mimport[39m { [33mConfigModule[39m } [36mfrom[39m [32m'@nestjs/config'[39m[0m
+  [0m [90m 6 |[39m [36mimport[39m { [33mRouterModule[39m } [36mfrom[39m [32m'@nestjs/core'[39m[33m;[39m[0m
+  [0m [90m 7 |[39m [36mimport[39m { appRoutes } [36mfrom[39m [32m'./app.routes'[39m[33m;[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m14:5[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'Api'.
+  [0m [90m 12 |[39m     [90m// ApiGatewayAuthModule,[39m[0m
+  [0m [90m 13 |[39m     [33mApiGatewayUsersModule[39m[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 14 |[39m     [33mApi[39m[0m
+  [0m [90m    |[39m     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 15 |[39m     [33mConfigModule[39m[33m.[39mforRoot()[33m,[39m[0m
+  [0m [90m 16 |[39m     [33mRouterModule[39m[33m.[39mregister(appRoutes)[0m
+  [0m [90m 17 |[39m ][33m,[39m[0m
+
+webpack compiled with [1m[31m3 errors[39m[22m (cca41cf61ec98fc8)
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.6 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts[39m[22m
+[1m./src/app/app.module.ts[39m[22m [1m[32m15:4-16[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts(15,5)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m4:16[22m[39m[1m[39m[22m
+[90mTS2307: [39mCannot find module '@food' or its corresponding type declarations.
+  [0m [90m 2 |[39m [36mimport[39m { [33mApiGatewayAuthModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/auth'[39m[0m
+  [0m [90m 3 |[39m [36mimport[39m { [33mApiGatewayUsersModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/users'[39m[0m
+  [0m[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {} [36mfrom[39m [32m'@food'[39m[0m
+  [0m [90m   |[39m                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 5 |[39m [36mimport[39m { [33mConfigModule[39m } [36mfrom[39m [32m'@nestjs/config'[39m[0m
+  [0m [90m 6 |[39m [36mimport[39m { [33mRouterModule[39m } [36mfrom[39m [32m'@nestjs/core'[39m[33m;[39m[0m
+  [0m [90m 7 |[39m [36mimport[39m { appRoutes } [36mfrom[39m [32m'./app.routes'[39m[33m;[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m14:5[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'Api'.
+  [0m [90m 12 |[39m     [90m// ApiGatewayAuthModule,[39m[0m
+  [0m [90m 13 |[39m     [33mApiGatewayUsersModule[39m[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 14 |[39m     [33mApi[39m[0m
+  [0m [90m    |[39m     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 15 |[39m     [33mConfigModule[39m[33m.[39mforRoot()[33m,[39m[0m
+  [0m [90m 16 |[39m     [33mRouterModule[39m[33m.[39mregister(appRoutes)[0m
+  [0m [90m 17 |[39m ][33m,[39m[0m
+
+webpack compiled with [1m[31m3 errors[39m[22m (7b900baeec4e84e8)
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.6 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts[39m[22m
+[1m./src/app/app.module.ts[39m[22m [1m[32m15:4-16[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts(15,5)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m4:16[22m[39m[1m[39m[22m
+[90mTS2307: [39mCannot find module '@food' or its corresponding type declarations.
+  [0m [90m 2 |[39m [36mimport[39m { [33mApiGatewayAuthModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/auth'[39m[0m
+  [0m [90m 3 |[39m [36mimport[39m { [33mApiGatewayUsersModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/users'[39m[0m
+  [0m[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {} [36mfrom[39m [32m'@food'[39m[0m
+  [0m [90m   |[39m                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 5 |[39m [36mimport[39m { [33mConfigModule[39m } [36mfrom[39m [32m'@nestjs/config'[39m[0m
+  [0m [90m 6 |[39m [36mimport[39m { [33mRouterModule[39m } [36mfrom[39m [32m'@nestjs/core'[39m[33m;[39m[0m
+  [0m [90m 7 |[39m [36mimport[39m { appRoutes } [36mfrom[39m [32m'./app.routes'[39m[33m;[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m14:5[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'Api'.
+  [0m [90m 12 |[39m     [90m// ApiGatewayAuthModule,[39m[0m
+  [0m [90m 13 |[39m     [33mApiGatewayUsersModule[39m[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 14 |[39m     [33mApi[39m[0m
+  [0m [90m    |[39m     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 15 |[39m     [33mConfigModule[39m[33m.[39mforRoot()[33m,[39m[0m
+  [0m [90m 16 |[39m     [33mRouterModule[39m[33m.[39mregister(appRoutes)[0m
+  [0m [90m 17 |[39m ][33m,[39m[0m
+
+webpack compiled with [1m[31m3 errors[39m[22m (7b900baeec4e84e8)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.6 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts[39m[22m
+[1m./src/app/app.module.ts[39m[22m [1m[32m15:4-16[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts(15,5)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m4:16[22m[39m[1m[39m[22m
+[90mTS2307: [39mCannot find module '@food-stories/api-gateway/post' or its corresponding type declarations.
+  [0m [90m 2 |[39m [36mimport[39m { [33mApiGatewayAuthModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/auth'[39m[0m
+  [0m [90m 3 |[39m [36mimport[39m { [33mApiGatewayUsersModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/users'[39m[0m
+  [0m[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {} [36mfrom[39m [32m'@food-stories/api-gateway/post'[39m[0m
+  [0m [90m   |[39m                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 5 |[39m [36mimport[39m { [33mConfigModule[39m } [36mfrom[39m [32m'@nestjs/config'[39m[0m
+  [0m [90m 6 |[39m [36mimport[39m { [33mRouterModule[39m } [36mfrom[39m [32m'@nestjs/core'[39m[33m;[39m[0m
+  [0m [90m 7 |[39m [36mimport[39m { appRoutes } [36mfrom[39m [32m'./app.routes'[39m[33m;[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m14:5[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'Api'.
+  [0m [90m 12 |[39m     [90m// ApiGatewayAuthModule,[39m[0m
+  [0m [90m 13 |[39m     [33mApiGatewayUsersModule[39m[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 14 |[39m     [33mApi[39m[0m
+  [0m [90m    |[39m     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 15 |[39m     [33mConfigModule[39m[33m.[39mforRoot()[33m,[39m[0m
+  [0m [90m 16 |[39m     [33mRouterModule[39m[33m.[39mregister(appRoutes)[0m
+  [0m [90m 17 |[39m ][33m,[39m[0m
+
+webpack compiled with [1m[31m3 errors[39m[22m (a22c451208353f8e)
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.6 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts[39m[22m
+[1m./src/app/app.module.ts[39m[22m [1m[32m15:4-16[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts(15,5)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m4:16[22m[39m[1m[39m[22m
+[90mTS2307: [39mCannot find module '@food-stories/api-gateway/post;' or its corresponding type declarations.
+  [0m [90m 2 |[39m [36mimport[39m { [33mApiGatewayAuthModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/auth'[39m[0m
+  [0m [90m 3 |[39m [36mimport[39m { [33mApiGatewayUsersModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/users'[39m[0m
+  [0m[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {} [36mfrom[39m [32m'@food-stories/api-gateway/post;'[39m[0m
+  [0m [90m   |[39m                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 5 |[39m [36mimport[39m { [33mConfigModule[39m } [36mfrom[39m [32m'@nestjs/config'[39m[0m
+  [0m [90m 6 |[39m [36mimport[39m { [33mRouterModule[39m } [36mfrom[39m [32m'@nestjs/core'[39m[33m;[39m[0m
+  [0m [90m 7 |[39m [36mimport[39m { appRoutes } [36mfrom[39m [32m'./app.routes'[39m[33m;[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m14:5[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'Api'.
+  [0m [90m 12 |[39m     [90m// ApiGatewayAuthModule,[39m[0m
+  [0m [90m 13 |[39m     [33mApiGatewayUsersModule[39m[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 14 |[39m     [33mApi[39m[0m
+  [0m [90m    |[39m     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 15 |[39m     [33mConfigModule[39m[33m.[39mforRoot()[33m,[39m[0m
+  [0m [90m 16 |[39m     [33mRouterModule[39m[33m.[39mregister(appRoutes)[0m
+  [0m [90m 17 |[39m ][33m,[39m[0m
+
+webpack compiled with [1m[31m3 errors[39m[22m (0741650b2aebff8b)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.6 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts[39m[22m
+[1m./src/app/app.module.ts[39m[22m [1m[32m15:4-16[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts(15,5)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m4:16[22m[39m[1m[39m[22m
+[90mTS2307: [39mCannot find module '@food-stories/api-gateway/post' or its corresponding type declarations.
+  [0m [90m 2 |[39m [36mimport[39m { [33mApiGatewayAuthModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/auth'[39m[0m
+  [0m [90m 3 |[39m [36mimport[39m { [33mApiGatewayUsersModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/users'[39m[0m
+  [0m[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {} [36mfrom[39m [32m'@food-stories/api-gateway/post'[39m[0m
+  [0m [90m   |[39m                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 5 |[39m [36mimport[39m { [33mConfigModule[39m } [36mfrom[39m [32m'@nestjs/config'[39m[0m
+  [0m [90m 6 |[39m [36mimport[39m { [33mRouterModule[39m } [36mfrom[39m [32m'@nestjs/core'[39m[33m;[39m[0m
+  [0m [90m 7 |[39m [36mimport[39m { appRoutes } [36mfrom[39m [32m'./app.routes'[39m[33m;[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m14:5[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'Api'.
+  [0m [90m 12 |[39m     [90m// ApiGatewayAuthModule,[39m[0m
+  [0m [90m 13 |[39m     [33mApiGatewayUsersModule[39m[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 14 |[39m     [33mApi[39m[0m
+  [0m [90m    |[39m     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 15 |[39m     [33mConfigModule[39m[33m.[39mforRoot()[33m,[39m[0m
+  [0m [90m 16 |[39m     [33mRouterModule[39m[33m.[39mregister(appRoutes)[0m
+  [0m [90m 17 |[39m ][33m,[39m[0m
+
+webpack compiled with [1m[31m3 errors[39m[22m (6ec1659b22306405)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.6 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts[39m[22m
+[1m./src/app/app.module.ts[39m[22m [1m[32m15:4-16[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts(15,5)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m4:16[22m[39m[1m[39m[22m
+[90mTS2307: [39mCannot find module '@food-stories/api-gateway/post' or its corresponding type declarations.
+  [0m [90m 2 |[39m [36mimport[39m { [33mApiGatewayAuthModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/auth'[39m[0m
+  [0m [90m 3 |[39m [36mimport[39m { [33mApiGatewayUsersModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/users'[39m[0m
+  [0m[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {} [36mfrom[39m [32m'@food-stories/api-gateway/post'[39m[33m;[39m[0m
+  [0m [90m   |[39m                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 5 |[39m [36mimport[39m { [33mConfigModule[39m } [36mfrom[39m [32m'@nestjs/config'[39m[0m
+  [0m [90m 6 |[39m [36mimport[39m { [33mRouterModule[39m } [36mfrom[39m [32m'@nestjs/core'[39m[33m;[39m[0m
+  [0m [90m 7 |[39m [36mimport[39m { appRoutes } [36mfrom[39m [32m'./app.routes'[39m[33m;[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m14:5[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'Api'.
+  [0m [90m 12 |[39m     [90m// ApiGatewayAuthModule,[39m[0m
+  [0m [90m 13 |[39m     [33mApiGatewayUsersModule[39m[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 14 |[39m     [33mApi[39m[0m
+  [0m [90m    |[39m     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 15 |[39m     [33mConfigModule[39m[33m.[39mforRoot()[33m,[39m[0m
+  [0m [90m 16 |[39m     [33mRouterModule[39m[33m.[39mregister(appRoutes)[0m
+  [0m [90m 17 |[39m ][33m,[39m[0m
+
+webpack compiled with [1m[31m3 errors[39m[22m (228745b528fdaf38)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.6 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts[39m[22m
+[1m./src/app/app.module.ts[39m[22m [1m[32m15:4-16[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts(15,5)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m4:16[22m[39m[1m[39m[22m
+[90mTS2307: [39mCannot find module '@food-stories/api-gateway/post' or its corresponding type declarations.
+  [0m [90m 2 |[39m [36mimport[39m { [33mApiGatewayAuthModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/auth'[39m[0m
+  [0m [90m 3 |[39m [36mimport[39m { [33mApiGatewayUsersModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/users'[39m[0m
+  [0m[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {} [36mfrom[39m [32m'@food-stories/api-gateway/post'[39m[33m;[39m[0m
+  [0m [90m   |[39m                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 5 |[39m [36mimport[39m { [33mConfigModule[39m } [36mfrom[39m [32m'@nestjs/config'[39m[0m
+  [0m [90m 6 |[39m [36mimport[39m { [33mRouterModule[39m } [36mfrom[39m [32m'@nestjs/core'[39m[33m;[39m[0m
+  [0m [90m 7 |[39m [36mimport[39m { appRoutes } [36mfrom[39m [32m'./app.routes'[39m[33m;[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m14:5[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'ApiG'.
+  [0m [90m 12 |[39m     [90m// ApiGatewayAuthModule,[39m[0m
+  [0m [90m 13 |[39m     [33mApiGatewayUsersModule[39m[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 14 |[39m     [33mApiGa[39m[0m
+  [0m [90m    |[39m     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 15 |[39m     [33mConfigModule[39m[33m.[39mforRoot()[33m,[39m[0m
+  [0m [90m 16 |[39m     [33mRouterModule[39m[33m.[39mregister(appRoutes)[0m
+  [0m [90m 17 |[39m ][33m,[39m[0m
+
+webpack compiled with [1m[31m3 errors[39m[22m (116d798a62a36819)
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.6 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts[39m[22m
+[1m./src/app/app.module.ts[39m[22m [1m[32m15:4-16[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts(15,5)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m4:16[22m[39m[1m[39m[22m
+[90mTS2307: [39mCannot find module '@food-stories/api-gateway/post' or its corresponding type declarations.
+  [0m [90m 2 |[39m [36mimport[39m { [33mApiGatewayAuthModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/auth'[39m[0m
+  [0m [90m 3 |[39m [36mimport[39m { [33mApiGatewayUsersModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/users'[39m[0m
+  [0m[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {} [36mfrom[39m [32m'@food-stories/api-gateway/post'[39m[33m;[39m[0m
+  [0m [90m   |[39m                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 5 |[39m [36mimport[39m { [33mConfigModule[39m } [36mfrom[39m [32m'@nestjs/config'[39m[0m
+  [0m [90m 6 |[39m [36mimport[39m { [33mRouterModule[39m } [36mfrom[39m [32m'@nestjs/core'[39m[33m;[39m[0m
+  [0m [90m 7 |[39m [36mimport[39m { appRoutes } [36mfrom[39m [32m'./app.routes'[39m[33m;[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m14:5[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'ApiGa'.
+  [0m [90m 12 |[39m     [90m// ApiGatewayAuthModule,[39m[0m
+  [0m [90m 13 |[39m     [33mApiGatewayUsersModule[39m[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 14 |[39m     [33mApiGate[39m[0m
+  [0m [90m    |[39m     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 15 |[39m     [33mConfigModule[39m[33m.[39mforRoot()[33m,[39m[0m
+  [0m [90m 16 |[39m     [33mRouterModule[39m[33m.[39mregister(appRoutes)[0m
+  [0m [90m 17 |[39m ][33m,[39m[0m
+
+webpack compiled with [1m[31m3 errors[39m[22m (52fe490eba48cfbb)
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.6 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts[39m[22m
+[1m./src/app/app.module.ts[39m[22m [1m[32m15:4-16[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts(15,5)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m4:16[22m[39m[1m[39m[22m
+[90mTS2307: [39mCannot find module '@food-stories/api-gateway/post' or its corresponding type declarations.
+  [0m [90m 2 |[39m [36mimport[39m { [33mApiGatewayAuthModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/auth'[39m[0m
+  [0m [90m 3 |[39m [36mimport[39m { [33mApiGatewayUsersModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/users'[39m[0m
+  [0m[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {} [36mfrom[39m [32m'@food-stories/api-gateway/post'[39m[33m;[39m[0m
+  [0m [90m   |[39m                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 5 |[39m [36mimport[39m { [33mConfigModule[39m } [36mfrom[39m [32m'@nestjs/config'[39m[0m
+  [0m [90m 6 |[39m [36mimport[39m { [33mRouterModule[39m } [36mfrom[39m [32m'@nestjs/core'[39m[33m;[39m[0m
+  [0m [90m 7 |[39m [36mimport[39m { appRoutes } [36mfrom[39m [32m'./app.routes'[39m[33m;[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m14:5[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'ApiGate'.
+  [0m [90m 12 |[39m     [90m// ApiGatewayAuthModule,[39m[0m
+  [0m [90m 13 |[39m     [33mApiGatewayUsersModule[39m[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 14 |[39m     [33mApiGate[39m[0m
+  [0m [90m    |[39m     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 15 |[39m     [33mConfigModule[39m[33m.[39mforRoot()[33m,[39m[0m
+  [0m [90m 16 |[39m     [33mRouterModule[39m[33m.[39mregister(appRoutes)[0m
+  [0m [90m 17 |[39m ][33m,[39m[0m
+
+webpack compiled with [1m[31m3 errors[39m[22m (52fe490eba48cfbb)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.6 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts[39m[22m
+[1m./src/app/app.module.ts[39m[22m [1m[32m15:4-16[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts(15,5)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m4:16[22m[39m[1m[39m[22m
+[90mTS2307: [39mCannot find module '@food-stories/api-gateway/post' or its corresponding type declarations.
+  [0m [90m 2 |[39m [36mimport[39m { [33mApiGatewayAuthModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/auth'[39m[0m
+  [0m [90m 3 |[39m [36mimport[39m { [33mApiGatewayUsersModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/users'[39m[0m
+  [0m[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {} [36mfrom[39m [32m'@food-stories/api-gateway/post'[39m[33m;[39m[0m
+  [0m [90m   |[39m                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 5 |[39m [36mimport[39m { [33mConfigModule[39m } [36mfrom[39m [32m'@nestjs/config'[39m[0m
+  [0m [90m 6 |[39m [36mimport[39m { [33mRouterModule[39m } [36mfrom[39m [32m'@nestjs/core'[39m[33m;[39m[0m
+  [0m [90m 7 |[39m [36mimport[39m { appRoutes } [36mfrom[39m [32m'./app.routes'[39m[33m;[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m14:5[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'ApiGatep'.
+  [0m [90m 12 |[39m     [90m// ApiGatewayAuthModule,[39m[0m
+  [0m [90m 13 |[39m     [33mApiGatewayUsersModule[39m[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 14 |[39m     [33mApiGatep[39m[0m
+  [0m [90m    |[39m     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 15 |[39m     [33mConfigModule[39m[33m.[39mforRoot()[33m,[39m[0m
+  [0m [90m 16 |[39m     [33mRouterModule[39m[33m.[39mregister(appRoutes)[0m
+  [0m [90m 17 |[39m ][33m,[39m[0m
+
+webpack compiled with [1m[31m3 errors[39m[22m (3fbdfeefcc281679)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.6 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts[39m[22m
+[1m./src/app/app.module.ts[39m[22m [1m[32m15:4-16[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts(15,5)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m4:16[22m[39m[1m[39m[22m
+[90mTS2307: [39mCannot find module '@food-stories/api-gateway/post' or its corresponding type declarations.
+  [0m [90m 2 |[39m [36mimport[39m { [33mApiGatewayAuthModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/auth'[39m[0m
+  [0m [90m 3 |[39m [36mimport[39m { [33mApiGatewayUsersModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/users'[39m[0m
+  [0m[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {} [36mfrom[39m [32m'@food-stories/api-gateway/post'[39m[33m;[39m[0m
+  [0m [90m   |[39m                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 5 |[39m [36mimport[39m { [33mConfigModule[39m } [36mfrom[39m [32m'@nestjs/config'[39m[0m
+  [0m [90m 6 |[39m [36mimport[39m { [33mRouterModule[39m } [36mfrom[39m [32m'@nestjs/core'[39m[33m;[39m[0m
+  [0m [90m 7 |[39m [36mimport[39m { appRoutes } [36mfrom[39m [32m'./app.routes'[39m[33m;[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m14:5[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'ApiGateps'.
+  [0m [90m 12 |[39m     [90m// ApiGatewayAuthModule,[39m[0m
+  [0m [90m 13 |[39m     [33mApiGatewayUsersModule[39m[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 14 |[39m     [33mApiGateps[39m[0m
+  [0m [90m    |[39m     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 15 |[39m     [33mConfigModule[39m[33m.[39mforRoot()[33m,[39m[0m
+  [0m [90m 16 |[39m     [33mRouterModule[39m[33m.[39mregister(appRoutes)[0m
+  [0m [90m 17 |[39m ][33m,[39m[0m
+
+webpack compiled with [1m[31m3 errors[39m[22m (49454345388a7dc6)
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.6 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts[39m[22m
+[1m./src/app/app.module.ts[39m[22m [1m[32m15:4-16[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts(15,5)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m4:16[22m[39m[1m[39m[22m
+[90mTS2307: [39mCannot find module '@food-stories/api-gateway/post' or its corresponding type declarations.
+  [0m [90m 2 |[39m [36mimport[39m { [33mApiGatewayAuthModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/auth'[39m[0m
+  [0m [90m 3 |[39m [36mimport[39m { [33mApiGatewayUsersModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/users'[39m[0m
+  [0m[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {} [36mfrom[39m [32m'@food-stories/api-gateway/post'[39m[33m;[39m[0m
+  [0m [90m   |[39m                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 5 |[39m [36mimport[39m { [33mConfigModule[39m } [36mfrom[39m [32m'@nestjs/config'[39m[0m
+  [0m [90m 6 |[39m [36mimport[39m { [33mRouterModule[39m } [36mfrom[39m [32m'@nestjs/core'[39m[33m;[39m[0m
+  [0m [90m 7 |[39m [36mimport[39m { appRoutes } [36mfrom[39m [32m'./app.routes'[39m[33m;[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m14:5[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'ApiGatepst'.
+  [0m [90m 12 |[39m     [90m// ApiGatewayAuthModule,[39m[0m
+  [0m [90m 13 |[39m     [33mApiGatewayUsersModule[39m[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 14 |[39m     [33mApiGatepst[39m[0m
+  [0m [90m    |[39m     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 15 |[39m     [33mConfigModule[39m[33m.[39mforRoot()[33m,[39m[0m
+  [0m [90m 16 |[39m     [33mRouterModule[39m[33m.[39mregister(appRoutes)[0m
+  [0m [90m 17 |[39m ][33m,[39m[0m
+
+webpack compiled with [1m[31m3 errors[39m[22m (0d2608c5ee76ea96)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.6 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts[39m[22m
+[1m./src/app/app.module.ts[39m[22m [1m[32m15:4-16[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts(15,5)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m4:16[22m[39m[1m[39m[22m
+[90mTS2307: [39mCannot find module '@food-stories/api-gateway/post' or its corresponding type declarations.
+  [0m [90m 2 |[39m [36mimport[39m { [33mApiGatewayAuthModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/auth'[39m[0m
+  [0m [90m 3 |[39m [36mimport[39m { [33mApiGatewayUsersModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/users'[39m[0m
+  [0m[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {} [36mfrom[39m [32m'@food-stories/api-gateway/post'[39m[33m;[39m[0m
+  [0m [90m   |[39m                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 5 |[39m [36mimport[39m { [33mConfigModule[39m } [36mfrom[39m [32m'@nestjs/config'[39m[0m
+  [0m [90m 6 |[39m [36mimport[39m { [33mRouterModule[39m } [36mfrom[39m [32m'@nestjs/core'[39m[33m;[39m[0m
+  [0m [90m 7 |[39m [36mimport[39m { appRoutes } [36mfrom[39m [32m'./app.routes'[39m[33m;[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m14:5[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'ApiGatepstm'.
+  [0m [90m 12 |[39m     [90m// ApiGatewayAuthModule,[39m[0m
+  [0m [90m 13 |[39m     [33mApiGatewayUsersModule[39m[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 14 |[39m     [33mApiGatepstm[39m[0m
+  [0m [90m    |[39m     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 15 |[39m     [33mConfigModule[39m[33m.[39mforRoot()[33m,[39m[0m
+  [0m [90m 16 |[39m     [33mRouterModule[39m[33m.[39mregister(appRoutes)[0m
+  [0m [90m 17 |[39m ][33m,[39m[0m
+
+webpack compiled with [1m[31m3 errors[39m[22m (cfd42057c3f1f5a7)
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.6 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts[39m[22m
+[1m./src/app/app.module.ts[39m[22m [1m[32m15:4-16[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts(15,5)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m4:16[22m[39m[1m[39m[22m
+[90mTS2307: [39mCannot find module '@food-stories/api-gateway/post' or its corresponding type declarations.
+  [0m [90m 2 |[39m [36mimport[39m { [33mApiGatewayAuthModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/auth'[39m[0m
+  [0m [90m 3 |[39m [36mimport[39m { [33mApiGatewayUsersModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/users'[39m[0m
+  [0m[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m {} [36mfrom[39m [32m'@food-stories/api-gateway/post'[39m[33m;[39m[0m
+  [0m [90m   |[39m                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 5 |[39m [36mimport[39m { [33mConfigModule[39m } [36mfrom[39m [32m'@nestjs/config'[39m[0m
+  [0m [90m 6 |[39m [36mimport[39m { [33mRouterModule[39m } [36mfrom[39m [32m'@nestjs/core'[39m[33m;[39m[0m
+  [0m [90m 7 |[39m [36mimport[39m { appRoutes } [36mfrom[39m [32m'./app.routes'[39m[33m;[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m14:5[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'ApiGatepstmo'.
+  [0m [90m 12 |[39m     [90m// ApiGatewayAuthModule,[39m[0m
+  [0m [90m 13 |[39m     [33mApiGatewayUsersModule[39m[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 14 |[39m     [33mApiGatepstmo[39m[0m
+  [0m [90m    |[39m     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 15 |[39m     [33mConfigModule[39m[33m.[39mforRoot()[33m,[39m[0m
+  [0m [90m 16 |[39m     [33mRouterModule[39m[33m.[39mregister(appRoutes)[0m
+  [0m [90m 17 |[39m ][33m,[39m[0m
+
+webpack compiled with [1m[31m3 errors[39m[22m (c3dd01648ac52ae7)
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.7 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./src/app/app.module.ts[39m[22m [1m[32m7:15-56[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: Can't resolve '@food-stories/api-gateway/post' in 'C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app'[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts[39m[22m
+[1m./src/app/app.module.ts[39m[22m [1m[32m15:4-16[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts(15,5)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m4:38[22m[39m[1m[39m[22m
+[90mTS2307: [39mCannot find module '@food-stories/api-gateway/post' or its corresponding type declarations.
+  [0m [90m 2 |[39m [36mimport[39m { [33mApiGatewayAuthModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/auth'[39m[0m
+  [0m [90m 3 |[39m [36mimport[39m { [33mApiGatewayUsersModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/users'[39m[0m
+  [0m[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m { [33mApiGatewayPostModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/post'[39m[33m;[39m[0m
+  [0m [90m   |[39m                                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 5 |[39m [36mimport[39m { [33mConfigModule[39m } [36mfrom[39m [32m'@nestjs/config'[39m[0m
+  [0m [90m 6 |[39m [36mimport[39m { [33mRouterModule[39m } [36mfrom[39m [32m'@nestjs/core'[39m[33m;[39m[0m
+  [0m [90m 7 |[39m [36mimport[39m { appRoutes } [36mfrom[39m [32m'./app.routes'[39m[33m;[39m[0m
+
+webpack compiled with [1m[31m3 errors[39m[22m (b0412df6d2d27775)
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.7 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./src/app/app.module.ts[39m[22m [1m[32m7:15-56[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: Can't resolve '@food-stories/api-gateway/post' in 'C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app'[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts[39m[22m
+[1m./src/app/app.module.ts[39m[22m [1m[32m15:4-16[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app\app.module.ts(15,5)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m4:38[22m[39m[1m[39m[22m
+[90mTS2307: [39mCannot find module '@food-stories/api-gateway/post' or its corresponding type declarations.
+  [0m [90m 2 |[39m [36mimport[39m { [33mApiGatewayAuthModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/auth'[39m[0m
+  [0m [90m 3 |[39m [36mimport[39m { [33mApiGatewayUsersModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/users'[39m[0m
+  [0m[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m { [33mApiGatewayPostModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/post'[39m[33m;[39m[0m
+  [0m [90m   |[39m                                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 5 |[39m [36mimport[39m { [33mConfigModule[39m } [36mfrom[39m [32m'@nestjs/config'[39m[0m
+  [0m [90m 6 |[39m [36mimport[39m { [33mRouterModule[39m } [36mfrom[39m [32m'@nestjs/core'[39m[33m;[39m[0m
+  [0m [90m 7 |[39m [36mimport[39m { appRoutes } [36mfrom[39m [32m'./app.routes'[39m[33m;[39m[0m
+
+webpack compiled with [1m[31m3 errors[39m[22m (b0412df6d2d27775)
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 13.7 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./src/app/app.module.ts[39m[22m [1m[32m7:15-56[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: Can't resolve '@food-stories/api-gateway/post' in 'C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\api-gateway\src\app'[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/api-gateway/src/app/app.module.ts:[32m[1m4:38[22m[39m[1m[39m[22m
+[90mTS2307: [39mCannot find module '@food-stories/api-gateway/post' or its corresponding type declarations.
+  [0m [90m 2 |[39m [36mimport[39m { [33mApiGatewayAuthModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/auth'[39m[0m
+  [0m [90m 3 |[39m [36mimport[39m { [33mApiGatewayUsersModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/users'[39m[0m
+  [0m[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m { [33mApiGatewayPostModule[39m } [36mfrom[39m [32m'@food-stories/api-gateway/post'[39m[33m;[39m[0m
+  [0m [90m   |[39m                                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 5 |[39m [36mimport[39m { [33mConfigModule[39m } [36mfrom[39m [32m'@nestjs/config'[39m[0m
+  [0m [90m 6 |[39m [36mimport[39m { [33mRouterModule[39m } [36mfrom[39m [32m'@nestjs/core'[39m[33m;[39m[0m
+  [0m [90m 7 |[39m [36mimport[39m { appRoutes } [36mfrom[39m [32m'./app.routes'[39m[33m;[39m[0m
+
+webpack compiled with [1m[31m2 errors[39m[22m (7b303dfd7e89f572)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
