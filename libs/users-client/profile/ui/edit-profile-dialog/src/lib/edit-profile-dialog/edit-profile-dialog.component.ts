@@ -58,7 +58,7 @@ export class EditProfileDialogComponent implements OnInit {
     private editProfileService: EditProfileService,
     private snackBarService: SnackBarService
   ) {}
-
+  
   selectedFile: File | null = null;
   imgSrc = this.data.DPURL || REF_PATHS.NO_DP_PATH
   canSubmit = false;
@@ -120,7 +120,7 @@ export class EditProfileDialogComponent implements OnInit {
               dpFile: this.selectedFile,
               formData: {
                 id: this.form.value.id!,
-                name: this.form.controls.name.value,
+                name: this.form.controls.name.value!,
                 bio: this.form.controls.bio.value || null,
                 gender: this.form.value.gender || 'notMentioned',
                 DPURL: this.form.value.DPURL || '',

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package posts_service.v1;
+
+service PostsService {
+  rpc ample(s) returns (s) {}
+}
+
+message s {}

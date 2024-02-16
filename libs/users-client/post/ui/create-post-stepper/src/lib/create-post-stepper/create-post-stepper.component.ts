@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CdkStepper, CdkStepperModule } from '@angular/cdk/stepper' 
 @Component({
@@ -10,6 +10,9 @@ import { CdkStepper, CdkStepperModule } from '@angular/cdk/stepper'
   providers: [{provide: CdkStepper, useExisting: CreatePostStepperComponent}]
 })
 export class CreatePostStepperComponent extends CdkStepper  {
+ 
+  @Input() value!: string
+
   onClick(index: number): void {
     this.selectedIndex = index;
   } 

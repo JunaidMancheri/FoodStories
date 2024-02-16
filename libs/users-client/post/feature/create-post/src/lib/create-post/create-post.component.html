@@ -3,7 +3,7 @@
 <mat-divider></mat-divider>
 
 
-<fs-create-post-stepper>
+<fs-create-post-stepper [value]="'something'">
     <cdk-step >
        
         <div class="drop-zone wrapper flex flex-col justify-center items-center gap-4" (drop)="onFileDrop($event)" (dragover)="$event.preventDefault()" >

@@ -2,10 +2,10 @@ export interface IUser {
   id: string;
   username: string;
   email: string;
-  name: string | null;
+  name: string ;
   isPrivate: boolean;
   createdAt: number;
-  DPURL: string | null;
+  DPURL: string ;
   profile: Profile;
   postsCount: number;
   followersCount: number;
