@@ -4,16 +4,6 @@
   "sourceRoot": "libs/api-gateway/common/src",
   "projectType": "library",
   "targets": {
-    "build": {
-      "executor": "@nx/js:tsc",
-      "outputs": ["{options.outputPath}"],
-      "options": {
-        "outputPath": "dist/libs/api-gateway/common",
-        "main": "libs/api-gateway/common/src/index.ts",
-        "tsConfig": "libs/api-gateway/common/tsconfig.lib.json",
-        "assets": ["libs/api-gateway/common/*.md"]
-      }
-    },
     "lint": {
       "executor": "@nx/linter:eslint",
       "outputs": ["{options.outputFile}"],

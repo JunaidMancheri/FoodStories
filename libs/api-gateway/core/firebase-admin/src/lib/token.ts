@@ -1,1 +1,1 @@
-export const FIREBASE_ADMIN = 'FirebaseAdmin'
+export const FIREBASE_ADMIN = 'FIREBASE_ADMIN';

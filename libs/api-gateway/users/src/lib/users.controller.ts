@@ -1,10 +1,12 @@
-import { Body, Controller, Get, Param, Post, Put } from '@nestjs/common';
+import { Body, Controller, Get, Param, Post, Put, UseGuards } from '@nestjs/common';
 import { ApiGatewayUsersService } from './users.service';
 import { CreateUserDTO } from './CreateUser.dto';
 import { EditProfileData } from '@food-stories/common/typings';
+import { AuthGuard } from '@food-stories/api-gateway/common';
 
 
 @Controller()
+@UseGuards(AuthGuard)
 export class ApiGatewayUsersController {
   constructor(private apiGatewayUsersService: ApiGatewayUsersService) {}
 

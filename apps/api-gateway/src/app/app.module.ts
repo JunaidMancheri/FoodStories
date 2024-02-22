@@ -1,4 +1,4 @@
-import { Module } from '@nestjs/common';
+import { Global, Module } from '@nestjs/common';
 // import { ApiGatewayAuthModule } from '@food-stories/api-gateway/auth'
 import { ApiGatewayUsersModule } from '@food-stories/api-gateway/users'
 import { ApiGatewayPostModule } from '@food-stories/api-gateway/post';
@@ -13,14 +13,12 @@ import { FirebaseAdminModule } from '@food-stories/api-gateway/core/firebase-adm
     // ApiGatewayAuthModule,
     ApiGatewayUsersModule,
     ApiGatewayPostModule,
-
-    // Core modules
     FirebaseAdminModule,
-
     ConfigModule.forRoot(),
     RouterModule.register(appRoutes)
 ],
   controllers: [],
-  providers: [],
+  providers: [  ],
+  exports: []
 })
 export class AppModule {}

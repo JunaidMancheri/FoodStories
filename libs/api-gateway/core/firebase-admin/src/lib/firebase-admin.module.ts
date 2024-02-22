@@ -1,8 +1,8 @@
-import { Module } from '@nestjs/common';
+import { Module, Global } from '@nestjs/common';
 import * as admin from 'firebase-admin';
 import { FIREBASE_ADMIN } from './token';
 
-
+@Global()
 @Module({
   controllers: [],
   providers: [
@@ -10,11 +10,13 @@ import { FIREBASE_ADMIN } from './token';
       provide: FIREBASE_ADMIN,
       useFactory: () => {
         admin.initializeApp({
-          credential: admin.credential.cert('./service-accounts/firebaseServiceAccount.json')
-        })
-        return admin
-      }
-    }
+          credential: admin.credential.cert(
+            './service-accounts/firebaseServiceAccount.json'
+          ),
+        });
+        return admin;
+      },
+    },
   ],
   exports: [FIREBASE_ADMIN],
 })

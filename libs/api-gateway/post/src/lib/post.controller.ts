@@ -1,6 +1,7 @@
-import { Body, Controller, Param, Post, Put } from '@nestjs/common';
+import { Body, Controller, Param, Post, Put, UseGuards } from '@nestjs/common';
 import { ApiGatewayPostService } from './post.service';
 import { IsNotEmpty} from 'class-validator'
+import { AuthGuard } from '@food-stories/api-gateway/common';
 
 
 export class CreatePostDto {
@@ -10,6 +11,7 @@ export class CreatePostDto {
 }
 
 @Controller()
+@UseGuards(AuthGuard)
 export class ApiGatewayPostController {
   constructor(private apiGatewayPostService: ApiGatewayPostService) {}
   
