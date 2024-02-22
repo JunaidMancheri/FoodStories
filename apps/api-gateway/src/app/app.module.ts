@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { ApiGatewayAuthModule } from '@food-stories/api-gateway/auth'
+// import { ApiGatewayAuthModule } from '@food-stories/api-gateway/auth'
 import { ApiGatewayUsersModule } from '@food-stories/api-gateway/users'
 import { ApiGatewayPostModule } from '@food-stories/api-gateway/post';
 import { ConfigModule } from '@nestjs/config'
@@ -16,7 +16,7 @@ import { FirebaseAdminModule } from '@food-stories/api-gateway/core/firebase-adm
 
     // Core modules
     FirebaseAdminModule,
-    
+
     ConfigModule.forRoot(),
     RouterModule.register(appRoutes)
 ],
