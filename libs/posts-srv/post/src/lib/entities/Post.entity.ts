@@ -6,7 +6,7 @@ import { v4 as uuidV4 } from 'uuid';
 export interface PostProps {
   id?: string;
   userId: string;
-  caption: string;
+  caption?: string;
   mediaUrls?: string[];
   createdAt?: number;
   likesCount?: number;

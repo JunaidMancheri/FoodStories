@@ -4,6 +4,7 @@ package posts_service.v1;
 
 service PostsService {
   rpc createPost(CreatePostRequest) returns (PostEntity) {}
+  rpc updatePostMediaUrls(UpdatePostMediaUrlsRequest)returns (EMPTY) {}
 }
 
 message PostEntity {
@@ -11,13 +12,19 @@ message PostEntity {
   string userId = 1;
   string caption = 2;
   repeated string mediaUrls = 3;
-  sint64 createdAt = 4;
-  int64 likesCount = 5;
-  int64 commentsCount = 6;
+  string createdAt = 4;
+  int32 likesCount = 5;
+  int32 commentsCount = 6;
 }
 
+message EMPTY {}
 
 message CreatePostRequest {
   string userId = 0;
   string caption = 1;
+}
+
+message UpdatePostMediaUrlsRequest {
+  string postId = 0;
+  repeated string mediaUrls = 1;
 }

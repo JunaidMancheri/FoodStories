@@ -9,5 +9,6 @@ export const API_ENDPOINTS = {
   UPDATE_USER_PROFILE: `${BASE_URL}/users/profile`,
 
   // Posts
-  CREATE_POST: `${BASE_URL}/posts/`
+  CREATE_POST: `${BASE_URL}/posts/`,
+  UPDATE_MEDIA_URLS: `${BASE_URL}/posts/mediaUrls/`,
 }

@@ -4,14 +4,21 @@ import { IPost } from "../interfaces/IPost.interface";
 
 export interface IPostsServiceClient {
   createPost(request: ICreatePostRequest, metadata? : Metadata ) : Observable<IPost>;
+  updatePostMediaUrls(request: IUpdatePostMediaUrlsRequest, metadata?: Metadata) :  Observable<void>
 }
 
 export interface IPostsServiceServer {
-   createUser: handleUnaryCall<ICreatePostRequest, IPost>;
+   createPost: handleUnaryCall<ICreatePostRequest, IPost>;
+   updatePostMediaUrls: handleUnaryCall<IUpdatePostMediaUrlsRequest, void>
 }
 
 
 export interface ICreatePostRequest {
   userId: string;
-  caption: string;
+  caption?: string;
+}
+
+export interface IUpdatePostMediaUrlsRequest {
+  postId: string
+  mediaUrls: string[]
 }

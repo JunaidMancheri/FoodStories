@@ -13,7 +13,11 @@ exports.generateThumbnailOh = onObjectFinalized({cpu: 2, region: 'asia-northeast
   const fileBucket = event.data.bucket; 
   const filePath = event.data.name;
   const contentType = event.data.contentType;
+  
 
+  if (!filePath.startsWith("dp/")) {
+    return logger.log("This is not a dp file");
+  }
 
   if (!contentType.startsWith("image/")) {
     return logger.log("This is not an image.");

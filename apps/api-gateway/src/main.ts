@@ -1,4 +1,4 @@
-import { Logger, VersioningType } from '@nestjs/common';
+import { Logger, ValidationPipe, VersioningType } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app/app.module';
 import { GrpcExceptionFilter } from '@food-stories/api-gateway/common';
@@ -21,10 +21,13 @@ async function bootstrap() {
     })
   );
 
+
   app.enableVersioning({
     type: VersioningType.URI,
     defaultVersion: '1',
   });
+
+  app.useGlobalPipes(new ValidationPipe({forbidNonWhitelisted: true}))
 
   app.useGlobalFilters(new GrpcExceptionFilter());
 

@@ -1693,6 +1693,15 @@
         "hash": "sha512-XXrH9Uarn0stsyldqDYq8r++mROmWRI1xKMXa640Bb//SY1+ECYX6VzT6Lcx5frD0V30XieqJ0oX9I2Xj5aoMA=="
       }
     },
+    "npm:@fastify/busboy": {
+      "type": "npm",
+      "name": "npm:@fastify/busboy",
+      "data": {
+        "version": "1.2.1",
+        "packageName": "@fastify/busboy",
+        "hash": "sha512-7PQA7EH43S0CxcOa9OeAnaeA0oQ+e/DHNPZwSQM9CQHW76jle5+OvLdibRp/Aafs9KXbLhxyjOTkRjWUbQEd3Q=="
+      }
+    },
     "npm:@firebase/analytics-compat": {
       "type": "npm",
       "name": "npm:@firebase/analytics-compat",
@@ -1819,40 +1828,76 @@
         "hash": "sha512-dM9iJ0R6tI1JczuGSxXmQbXAgtYie0K4WvKcuyuSTCu9V8eEDiz4tfa1sO3txsfvwg7nOY3AjoCyMYEdqZ8hdg=="
       }
     },
-    "npm:@firebase/component": {
+    "npm:@firebase/component@0.6.4": {
       "type": "npm",
-      "name": "npm:@firebase/component",
+      "name": "npm:@firebase/component@0.6.4",
       "data": {
         "version": "0.6.4",
         "packageName": "@firebase/component",
         "hash": "sha512-rLMyrXuO9jcAUCaQXCMjCMUsWrba5fzHlNK24xz5j2W6A/SRmK8mZJ/hn7V0fViLbxC0lPMtrK1eYzk6Fg03jA=="
       }
     },
-    "npm:@firebase/database-compat": {
+    "npm:@firebase/component": {
       "type": "npm",
-      "name": "npm:@firebase/database-compat",
+      "name": "npm:@firebase/component",
+      "data": {
+        "version": "0.6.5",
+        "packageName": "@firebase/component",
+        "hash": "sha512-2tVDk1ixi12sbDmmfITK8lxSjmcb73BMF6Qwc3U44hN/J1Fi1QY/Hnnb6klFlbB9/G16a3J3d4nXykye2EADTw=="
+      }
+    },
+    "npm:@firebase/database-compat@0.3.4": {
+      "type": "npm",
+      "name": "npm:@firebase/database-compat@0.3.4",
       "data": {
         "version": "0.3.4",
         "packageName": "@firebase/database-compat",
         "hash": "sha512-kuAW+l+sLMUKBThnvxvUZ+Q1ZrF/vFJ58iUY9kAcbX48U03nVzIF6Tmkf0p3WVQwMqiXguSgtOPIB6ZCeF+5Gg=="
       }
     },
-    "npm:@firebase/database-types": {
+    "npm:@firebase/database-compat": {
       "type": "npm",
-      "name": "npm:@firebase/database-types",
+      "name": "npm:@firebase/database-compat",
+      "data": {
+        "version": "1.0.3",
+        "packageName": "@firebase/database-compat",
+        "hash": "sha512-7tHEOcMbK5jJzHWyphPux4osogH/adWwncxdMxdBpB9g1DNIyY4dcz1oJdlkXGM/i/AjUBesZsd5CuwTRTBNTw=="
+      }
+    },
+    "npm:@firebase/database-types@0.10.4": {
+      "type": "npm",
+      "name": "npm:@firebase/database-types@0.10.4",
       "data": {
         "version": "0.10.4",
         "packageName": "@firebase/database-types",
         "hash": "sha512-dPySn0vJ/89ZeBac70T+2tWWPiJXWbmRygYv0smT5TfE3hDrQ09eKMF3Y+vMlTdrMWq7mUdYW5REWPSGH4kAZQ=="
       }
     },
-    "npm:@firebase/database": {
+    "npm:@firebase/database-types": {
       "type": "npm",
-      "name": "npm:@firebase/database",
+      "name": "npm:@firebase/database-types",
+      "data": {
+        "version": "1.0.1",
+        "packageName": "@firebase/database-types",
+        "hash": "sha512-Tmcmx5XgiI7UVF/4oGg2P3AOTfq3WKEPsm2yf+uXtN7uG/a4WTWhVMrXGYRY2ZUL1xPxv9V33wQRJ+CcrUhVXw=="
+      }
+    },
+    "npm:@firebase/database@0.14.4": {
+      "type": "npm",
+      "name": "npm:@firebase/database@0.14.4",
       "data": {
         "version": "0.14.4",
         "packageName": "@firebase/database",
         "hash": "sha512-+Ea/IKGwh42jwdjCyzTmeZeLM3oy1h0mFPsTy6OqCWzcu/KFqRAr5Tt1HRCOBlNOdbh84JPZC47WLU18n2VbxQ=="
+      }
+    },
+    "npm:@firebase/database": {
+      "type": "npm",
+      "name": "npm:@firebase/database",
+      "data": {
+        "version": "1.0.3",
+        "packageName": "@firebase/database",
+        "hash": "sha512-9fjqLt9JzL46gw9+NRqsgQEMjgRwfd8XtzcKqG+UYyhVeFCdVRQ0Wp6Dw/dvYHnbH5vNEKzNv36dcB4p+PIAAA=="
       }
     },
     "npm:@firebase/firestore-compat": {
@@ -2053,13 +2098,22 @@
         "hash": "sha512-CtvoFaBI4hGXlXbaCHf8humajkbXhs39Nbh6MbNxtwJiCqxPy9iH3D3CCfXAvP0QvAAwmJUTK3+z9a++Kc4nkA=="
       }
     },
-    "npm:@firebase/util": {
+    "npm:@firebase/util@1.9.3": {
       "type": "npm",
-      "name": "npm:@firebase/util",
+      "name": "npm:@firebase/util@1.9.3",
       "data": {
         "version": "1.9.3",
         "packageName": "@firebase/util",
         "hash": "sha512-DY02CRhOZwpzO36fHpuVysz6JZrscPiBXD0fXp6qSrL9oNOx5KWICKdR95C0lSITzxp0TZosVyHqzatE8JbcjA=="
+      }
+    },
+    "npm:@firebase/util": {
+      "type": "npm",
+      "name": "npm:@firebase/util",
+      "data": {
+        "version": "1.9.4",
+        "packageName": "@firebase/util",
+        "hash": "sha512-WLonYmS1FGHT97TsUmRN3qnTh5TeeoJp1Gg5fithzuAgdZOUtsYECfy7/noQ3llaguios8r5BuXSEiK82+UrxQ=="
       }
     },
     "npm:@firebase/webchannel-wrapper": {
@@ -2069,6 +2123,60 @@
         "version": "0.10.1",
         "packageName": "@firebase/webchannel-wrapper",
         "hash": "sha512-Dq5rYfEpdeel0bLVN+nfD1VWmzCkK+pJbSjIawGE+RY4+NIJqhbUDDQjvV0NUK84fMfwxvtFoCtEe70HfZjFcw=="
+      }
+    },
+    "npm:@google-cloud/firestore": {
+      "type": "npm",
+      "name": "npm:@google-cloud/firestore",
+      "data": {
+        "version": "7.3.0",
+        "packageName": "@google-cloud/firestore",
+        "hash": "sha512-2IftQLAbCuVp0nTd3neeu+d3OYIegJpV/V9R4USQj51LzJcXPe8h8jZ7j3+svSNhJVGy6JsN0T1QqlJdMDhTwg=="
+      }
+    },
+    "npm:@google-cloud/paginator": {
+      "type": "npm",
+      "name": "npm:@google-cloud/paginator",
+      "data": {
+        "version": "5.0.0",
+        "packageName": "@google-cloud/paginator",
+        "hash": "sha512-87aeg6QQcEPxGCOthnpUjvw4xAZ57G7pL8FS0C4e/81fr3FjkpUpibf1s2v5XGyGhUVGF4Jfg7yEcxqn2iUw1w=="
+      }
+    },
+    "npm:@google-cloud/projectify": {
+      "type": "npm",
+      "name": "npm:@google-cloud/projectify",
+      "data": {
+        "version": "4.0.0",
+        "packageName": "@google-cloud/projectify",
+        "hash": "sha512-MmaX6HeSvyPbWGwFq7mXdo0uQZLGBYCwziiLIGq5JVX+/bdI3SAq6bP98trV5eTWfLuvsMcIC1YJOF2vfteLFA=="
+      }
+    },
+    "npm:@google-cloud/promisify": {
+      "type": "npm",
+      "name": "npm:@google-cloud/promisify",
+      "data": {
+        "version": "4.0.0",
+        "packageName": "@google-cloud/promisify",
+        "hash": "sha512-Orxzlfb9c67A15cq2JQEyVc7wEsmFBmHjZWZYQMUyJ1qivXyMwdyNOs9odi79hze+2zqdTtu1E19IM/FtqZ10g=="
+      }
+    },
+    "npm:@google-cloud/storage": {
+      "type": "npm",
+      "name": "npm:@google-cloud/storage",
+      "data": {
+        "version": "7.7.0",
+        "packageName": "@google-cloud/storage",
+        "hash": "sha512-EMCEY+6JiIkx7Dt8NXVGGjy1vRdSGdHkoqZoqjJw7cEBkT7ZkX0c7puedfn1MamnzW5SX4xoa2jVq5u7OWBmkQ=="
+      }
+    },
+    "npm:@grpc/grpc-js@1.10.1": {
+      "type": "npm",
+      "name": "npm:@grpc/grpc-js@1.10.1",
+      "data": {
+        "version": "1.10.1",
+        "packageName": "@grpc/grpc-js",
+        "hash": "sha512-55ONqFytZExfOIjF1RjXPcVmT/jJqFzbbDqxK9jmRV4nxiYWtL9hENSW1Jfx0SdZfrvoqd44YJ/GJTqfRrawSQ=="
       }
     },
     "npm:@grpc/grpc-js@1.7.3": {
@@ -3961,6 +4069,15 @@
         "hash": "sha512-p7ienRMiS41Nu2/igbJxxLDWrSZ0WxM8UQgCeO9KhoVF7cOVFkrKsiDr1EsJIla8vV3oEEjGcz11jc5yimhzZw=="
       }
     },
+    "npm:@types/caseless": {
+      "type": "npm",
+      "name": "npm:@types/caseless",
+      "data": {
+        "version": "0.12.5",
+        "packageName": "@types/caseless",
+        "hash": "sha512-hWtVTC2q7hc7xZ/RLbxapMvDMgUnDvKvMOpKal4DrMyfGBUfB1oKaZlIRr6mJL+If3bAP6sV/QneGzF6tJjZDg=="
+      }
+    },
     "npm:@types/connect-history-api-fallback": {
       "type": "npm",
       "name": "npm:@types/connect-history-api-fallback",
@@ -4031,6 +4148,15 @@
         "version": "4.17.13",
         "packageName": "@types/express",
         "hash": "sha512-6bSZTPaTIACxn48l50SR+axgrqm6qXFIxrdAKaG6PaJk3+zuUr35hBlgT7vOmJcum+OEaIBLtHV/qloEAFITeA=="
+      }
+    },
+    "npm:@types/express@4.17.21": {
+      "type": "npm",
+      "name": "npm:@types/express@4.17.21",
+      "data": {
+        "version": "4.17.21",
+        "packageName": "@types/express",
+        "hash": "sha512-ejlPM315qwLpaQlQDTjPdsUFSc6ZsP4AN6AlWnogPjQ7CVi7PYF3YVz+CY3jE2pwYf7E/7HlDAN0rV2GxTG0HQ=="
       }
     },
     "npm:@types/graceful-fs": {
@@ -4114,6 +4240,15 @@
         "hash": "sha512-Hr5Jfhc9eYOQNPYO5WLDq/n4jqijdHNlDXjuAQkkt+mWdQR+XJToOHrsD4cPaMXpn6KO7y2+wM8AZEs8VpBLVA=="
       }
     },
+    "npm:@types/jsonwebtoken": {
+      "type": "npm",
+      "name": "npm:@types/jsonwebtoken",
+      "data": {
+        "version": "9.0.5",
+        "packageName": "@types/jsonwebtoken",
+        "hash": "sha512-VRLSGzik+Unrup6BsouBeHsf4d1hOEgYWTm/7Nmw1sXoN1+tRly/Gy/po3yeahnP4jfnQWWAhQAqcNfH7ngOkA=="
+      }
+    },
     "npm:@types/long": {
       "type": "npm",
       "name": "npm:@types/long",
@@ -4177,6 +4312,15 @@
         "hash": "sha512-GKX1Qnqxo4S+Z/+Z8KKPLpH282LD7jLHWJcVryOflnsnH+BtSDfieR6ObwBMwpnNws0bUK8GI7z0unQf9bARNQ=="
       }
     },
+    "npm:@types/node@20.11.19": {
+      "type": "npm",
+      "name": "npm:@types/node@20.11.19",
+      "data": {
+        "version": "20.11.19",
+        "packageName": "@types/node",
+        "hash": "sha512-7xMnVEcZFu0DikYjWOlRq7NTPETrm7teqUT2WkQjrTIkEgUyyGdWsj/Zg8bEJt5TNklzbPD1X3fqfsHw3SpapQ=="
+      }
+    },
     "npm:@types/parse-json": {
       "type": "npm",
       "name": "npm:@types/parse-json",
@@ -4211,6 +4355,15 @@
         "version": "1.2.4",
         "packageName": "@types/range-parser",
         "hash": "sha512-EEhsLsD6UsDM1yFhAvy0Cjr6VwmpMWqFBCb9w07wVugF7w9nfajxLuVmngTIpgS6svCnm6Vaw+MZhoDCKnOfsw=="
+      }
+    },
+    "npm:@types/request": {
+      "type": "npm",
+      "name": "npm:@types/request",
+      "data": {
+        "version": "2.48.12",
+        "packageName": "@types/request",
+        "hash": "sha512-G3sY+NpsA9jnwm0ixhAFQSJ3Q9JkpLZpJbI3GMv0mIAT0y3mRabYeINzal5WOChIiaTEGQYlHOKgkaM9EisWHw=="
       }
     },
     "npm:@types/retry": {
@@ -4780,6 +4933,15 @@
         "hash": "sha512-nne9/IiQ/hzIhY6pdDnbBtz7DjPTKrY00P/zvPSm5pOFkl6xuGrGnXn/VtTNNfNtAfZ9/1RtehkszU9qcTii0Q=="
       }
     },
+    "npm:abort-controller": {
+      "type": "npm",
+      "name": "npm:abort-controller",
+      "data": {
+        "version": "3.0.0",
+        "packageName": "abort-controller",
+        "hash": "sha512-h8lQ8tacZYnR3vNQTgibj+tODHI5/+l06Au2Pcriv/Gmet0eaj4TwWH41sO9wnHDiQsEj19q0drzdWdeAHtweg=="
+      }
+    },
     "npm:accepts": {
       "type": "npm",
       "name": "npm:accepts",
@@ -4886,6 +5048,15 @@
         "version": "6.0.2",
         "packageName": "agent-base",
         "hash": "sha512-RZNwNclF7+MS/8bDg70amg32dyeZGZxiDuQmZxKLAlQjr3jGyLx+4Kkk58UO7D2QdgFIQCovuSuZESne6RG6XQ=="
+      }
+    },
+    "npm:agent-base@7.1.0": {
+      "type": "npm",
+      "name": "npm:agent-base@7.1.0",
+      "data": {
+        "version": "7.1.0",
+        "packageName": "agent-base",
+        "hash": "sha512-o/zjMZRhJxny7OyEF+Op8X+efiELC7k7yOjMzgfzVqOzXqkBkWI79YoTdOtsuWd5BWhAGAuOY/Xa6xpiaWXiNg=="
       }
     },
     "npm:agentkeepalive": {
@@ -5176,6 +5347,15 @@
         "hash": "sha512-1OvF9IbWwaeiM9VhzYXVQacMibxpXOMYVNIvMtKRyX9SImBXpKcFr8XvFDeEslCyuH/t6KRt7HEO94AlP8Iatw=="
       }
     },
+    "npm:arrify": {
+      "type": "npm",
+      "name": "npm:arrify",
+      "data": {
+        "version": "2.0.1",
+        "packageName": "arrify",
+        "hash": "sha512-3duEwti880xqi4eAMN8AyR4a0ByT90zoYdLlevfrvU43vb0YZwZVfxOgxWrLXXXpyugL0hNZc9G6BiB5B3nUug=="
+      }
+    },
     "npm:asn1": {
       "type": "npm",
       "name": "npm:asn1",
@@ -5201,6 +5381,15 @@
         "version": "2.0.0",
         "packageName": "astral-regex",
         "hash": "sha512-Z7tMw1ytTXt5jqMcOP+OQteU1VuNK9Y02uuJtKQ1Sv69jXQKKg5cibLwGJow8yzZP+eAc18EmLGPal0bp36rvQ=="
+      }
+    },
+    "npm:async-retry": {
+      "type": "npm",
+      "name": "npm:async-retry",
+      "data": {
+        "version": "1.3.3",
+        "packageName": "async-retry",
+        "hash": "sha512-wfr/jstw9xNi/0teMHrRW7dsz3Lt5ARhYNZ2ewpadnhaIp5mbALhOAP+EAdsC7t4Z6wqsDVv9+W6gm1Dk9mEyw=="
       }
     },
     "npm:async@2.6.4": {
@@ -5473,6 +5662,15 @@
         "hash": "sha512-vyL2OymJxmarO8gxMr0mhChsO9QGwhynfuu4+MHTAW6czfq9humCB7rKpUjDd9YUiDPU4mzpyupFSvOClAwbmQ=="
       }
     },
+    "npm:bignumber.js": {
+      "type": "npm",
+      "name": "npm:bignumber.js",
+      "data": {
+        "version": "9.1.2",
+        "packageName": "bignumber.js",
+        "hash": "sha512-2/mKyZH9K85bzOEfhXDBFZTGd1CTs+5IHpeFQo9luiBG7hghdC851Pj2WAhb6E3R6b9tZj/XKhbg4fum+Kepug=="
+      }
+    },
     "npm:binary-extensions": {
       "type": "npm",
       "name": "npm:binary-extensions",
@@ -5615,6 +5813,15 @@
         "version": "0.2.13",
         "packageName": "buffer-crc32",
         "hash": "sha512-VO9Ht/+p3SN7SKWqcrgEzjGbRSJYTx+Q1pTQC0wrWqHx0vpJraQ6GtHx8tvcg1rlK1byhU5gccxgOgj7B0TDkQ=="
+      }
+    },
+    "npm:buffer-equal-constant-time": {
+      "type": "npm",
+      "name": "npm:buffer-equal-constant-time",
+      "data": {
+        "version": "1.0.1",
+        "packageName": "buffer-equal-constant-time",
+        "hash": "sha512-zRpUiDwd/xk6ADqPMATG8vc9VPrkck7T07OIx0gnjmJAnHnTVXNQG3vfvWNuiZIkwu9KrKdA1iJKfsfTVxE6NA=="
       }
     },
     "npm:buffer-from": {
@@ -5858,6 +6065,15 @@
         "version": "1.2.3",
         "packageName": "cjs-module-lexer",
         "hash": "sha512-0TNiGstbQmCFwt4akjjBg5pLRTSyj/PkWQ1ZoO2zntmg9yLqSRxwEa4iCfQLGjqhiqBfOJa7W/E8wfGrTDmlZQ=="
+      }
+    },
+    "npm:class-transformer": {
+      "type": "npm",
+      "name": "npm:class-transformer",
+      "data": {
+        "version": "0.5.1",
+        "packageName": "class-transformer",
+        "hash": "sha512-SQa1Ws6hUbfC98vKGxZH3KFY0Y1lm5Zm0SY8XX9zbK7FJCyVEac3ATW0RIpwzW+oOfmHE5PMPufDG9hCfoEOMw=="
       }
     },
     "npm:class-validator": {
@@ -6949,6 +7165,15 @@
         "hash": "sha512-jtD6YG370ZCIi/9GTaJKQxWTZD045+4R4hTk/x1UyoqadyJ9x9CgSi1RlVDQF8U2sxLLSnFkCaMihqljHIWgMg=="
       }
     },
+    "npm:duplexify": {
+      "type": "npm",
+      "name": "npm:duplexify",
+      "data": {
+        "version": "4.1.2",
+        "packageName": "duplexify",
+        "hash": "sha512-fz3OjcNCHmRP12MJoZMPglx8m4rrFP8rovnk4vT8Fs+aonZoCwGg10dSsQsfP/E62eZcPTMSMP6686fu9Qlqtw=="
+      }
+    },
     "npm:eastasianwidth": {
       "type": "npm",
       "name": "npm:eastasianwidth",
@@ -6965,6 +7190,15 @@
         "version": "0.1.2",
         "packageName": "ecc-jsbn",
         "hash": "sha512-eh9O+hwRHNbG4BLTjEl3nw044CkGm5X6LoaCf7LPp7UU8Qrt47JYNi6nPX8xjW97TKGKm1ouctg0QSpZe9qrnw=="
+      }
+    },
+    "npm:ecdsa-sig-formatter": {
+      "type": "npm",
+      "name": "npm:ecdsa-sig-formatter",
+      "data": {
+        "version": "1.0.11",
+        "packageName": "ecdsa-sig-formatter",
+        "hash": "sha512-nagl3RYrbNv6kQkeJIpt6NJZy8twLB/2vtz6yN9Z4vRKHN4/QZJIEbqohALSgwKdnksuY3k5Addp5lg8sVoVcQ=="
       }
     },
     "npm:ee-first": {
@@ -7082,6 +7316,15 @@
         "version": "2.3.6",
         "packageName": "enquirer",
         "hash": "sha512-yjNnPr315/FjS4zIsUxYguYUPP2e1NK4d7E7ZOLiyYCcbFBiTMyID+2wvm2w6+pZ/odMA7cRkjhsPbltwBOrLg=="
+      }
+    },
+    "npm:ent": {
+      "type": "npm",
+      "name": "npm:ent",
+      "data": {
+        "version": "2.2.0",
+        "packageName": "ent",
+        "hash": "sha512-GHrMyVZQWvTIdDtpiEXdHZnFQKzeO09apj8Cbl4pKWy4i0Oprcq17usfDt5aO63swf0JOeMWjWQE/LzgSRuWpA=="
       }
     },
     "npm:entities": {
@@ -7363,6 +7606,15 @@
         "hash": "sha512-aIL5Fx7mawVa300al2BnEE4iNvo1qETxLrPI/o05L7z6go7fCw1J6EQmbK4FmJ2AS7kgVF/KEZWufBfdClMcPg=="
       }
     },
+    "npm:event-target-shim": {
+      "type": "npm",
+      "name": "npm:event-target-shim",
+      "data": {
+        "version": "5.0.1",
+        "packageName": "event-target-shim",
+        "hash": "sha512-i/2XbnSz/uxRCU6+NdVJgKWDTM427+MqYbkQzD321DuCQJUqOuJKIA0IM2+W2xtYHdKOmZ4dR6fExsd4SXL+WQ=="
+      }
+    },
     "npm:eventemitter-asyncresource": {
       "type": "npm",
       "name": "npm:eventemitter-asyncresource",
@@ -7561,6 +7813,15 @@
         "hash": "sha512-W+KJc2dmILlPplD/H4K9l9LcAHAfPtP6BY84uVLXQ6Evcz9Lcg33Y2z1IVblT6xdY54PXYVHEv+0Wpq8Io6zkA=="
       }
     },
+    "npm:fast-xml-parser": {
+      "type": "npm",
+      "name": "npm:fast-xml-parser",
+      "data": {
+        "version": "4.3.4",
+        "packageName": "fast-xml-parser",
+        "hash": "sha512-utnwm92SyozgA3hhH2I8qldf2lBqm6qHOICawRNRFu1qMe3+oqr+GcXjGqTmXTMGE5T4eC03kr/rlh5C1IRdZA=="
+      }
+    },
     "npm:fastq": {
       "type": "npm",
       "name": "npm:fastq",
@@ -7687,6 +7948,15 @@
         "hash": "sha512-v2ZsoEuVHYy8ZIlYqwPe/39Cy+cFDzp4dXPaxNvkEuouymu+2Jbz0PxpKarJHYJTmv2HWT3O382qY8l4jMWthw=="
       }
     },
+    "npm:firebase-admin": {
+      "type": "npm",
+      "name": "npm:firebase-admin",
+      "data": {
+        "version": "12.0.0",
+        "packageName": "firebase-admin",
+        "hash": "sha512-wBrrSSsKV++/+O8E7O/C7/wL0nbG/x4Xv4yatz/+sohaZ+LsnWtYUcrd3gZutO86hLpDex7xgyrkKbgulmtVyQ=="
+      }
+    },
     "npm:firebase": {
       "type": "npm",
       "name": "npm:firebase",
@@ -7784,6 +8054,15 @@
         "version": "2.3.3",
         "packageName": "form-data",
         "hash": "sha512-1lLKB2Mu3aGP1Q/2eCOx0fNbRMe7XdwktwOruhfqqd0rIJWwN4Dh+E3hrPSlDCXnSR7UtZ1N38rVXm+6+MEhJQ=="
+      }
+    },
+    "npm:form-data@2.5.1": {
+      "type": "npm",
+      "name": "npm:form-data@2.5.1",
+      "data": {
+        "version": "2.5.1",
+        "packageName": "form-data",
+        "hash": "sha512-m21N3WOmEEURgk6B9GLOE4RuWOFf28Lhh9qGYeNlGq4VDXUlJy2th2slBNU8Gp8EzloYZOibZJ7t5ecIrFSjVA=="
       }
     },
     "npm:form-data": {
@@ -7955,6 +8234,24 @@
         "version": "4.0.4",
         "packageName": "gauge",
         "hash": "sha512-f9m+BEN5jkg6a0fZjleidjN51VE1X+mPFQ2DJ0uv1V39oCLCbsGe6yjbBnp7eK7z/+GAon99a3nHuqbuuthyPg=="
+      }
+    },
+    "npm:gaxios": {
+      "type": "npm",
+      "name": "npm:gaxios",
+      "data": {
+        "version": "6.2.0",
+        "packageName": "gaxios",
+        "hash": "sha512-H6+bHeoEAU5D6XNc6mPKeN5dLZqEDs9Gpk6I+SZBEzK5So58JVrHPmevNi35fRl1J9Y5TaeLW0kYx3pCJ1U2mQ=="
+      }
+    },
+    "npm:gcp-metadata": {
+      "type": "npm",
+      "name": "npm:gcp-metadata",
+      "data": {
+        "version": "6.1.0",
+        "packageName": "gcp-metadata",
+        "hash": "sha512-Jh/AIwwgaxan+7ZUUmRLCjtchyDiqh4KjBJ5tW3plBZb5iL/BPcso8A5DlzeD9qlw0duCamnNdpFjxwaT0KyKg=="
       }
     },
     "npm:gensync": {
@@ -8137,6 +8434,24 @@
         "hash": "sha512-Y1zNGV+pzQdh7H39l9zgB4PJqjRNqydvdYCDG4HFXM4XuvSaQQlEc91IU1yALL8gUTDomgBAfz3XJdmUS+oo0w=="
       }
     },
+    "npm:google-auth-library": {
+      "type": "npm",
+      "name": "npm:google-auth-library",
+      "data": {
+        "version": "9.6.3",
+        "packageName": "google-auth-library",
+        "hash": "sha512-4CacM29MLC2eT9Cey5GDVK4Q8t+MMp8+OEdOaqD9MG6b0dOyLORaaeJMPQ7EESVgm/+z5EKYyFLxgzBJlJgyHQ=="
+      }
+    },
+    "npm:google-gax": {
+      "type": "npm",
+      "name": "npm:google-gax",
+      "data": {
+        "version": "4.3.1",
+        "packageName": "google-gax",
+        "hash": "sha512-qpSfslpwqToIgQ+Tf3MjWIDjYK4UFIZ0uz6nLtttlW9N1NQA4PhGf9tlGo6KDYJ4rgL2w4CjXVd0z5yeNpN/Iw=="
+      }
+    },
     "npm:gopd": {
       "type": "npm",
       "name": "npm:gopd",
@@ -8162,6 +8477,15 @@
         "version": "1.0.4",
         "packageName": "grapheme-splitter",
         "hash": "sha512-bzh50DW9kTPM00T8y4o8vQg89Di9oLJVLW/KaOGIXJWP/iqCN6WKYkbNOF04vFLJhwcpYUh9ydh/+5vpOqV4YQ=="
+      }
+    },
+    "npm:gtoken": {
+      "type": "npm",
+      "name": "npm:gtoken",
+      "data": {
+        "version": "7.1.0",
+        "packageName": "gtoken",
+        "hash": "sha512-pCcEwRi+TKpMlxAQObHDQ56KawURgyAf6jtIY046fJ5tIv3zDe/LEIubckAO8fj6JnAxLdmWkUfNyulQ2iKdEw=="
       }
     },
     "npm:hammerjs": {
@@ -8459,6 +8783,15 @@
         "version": "5.0.1",
         "packageName": "https-proxy-agent",
         "hash": "sha512-dFcAjpTQFgoLMzC2VwU+C/CbS7uRL0lWmxDITmqm7C+7F0Odmj6s9l6alZc6AELXhrnggM2CeWSXHGOdX2YtwA=="
+      }
+    },
+    "npm:https-proxy-agent@7.0.4": {
+      "type": "npm",
+      "name": "npm:https-proxy-agent@7.0.4",
+      "data": {
+        "version": "7.0.4",
+        "packageName": "https-proxy-agent",
+        "hash": "sha512-wlwpilI7YdjSkWaQ/7omYBMTliDcmCN8OLihO6I9B86g06lMyAoqgoDpV0XqoaPOKj+0DIdAvnsWfyAAhmimcg=="
       }
     },
     "npm:human-signals": {
@@ -9469,6 +9802,15 @@
         "hash": "sha512-oVhqoRDaBXf7sjkll95LHVS6Myyyb1zaunVwk4Z0+WPSW4gjS0pl01zYKHScTuyEhQsFxV5L4DR5r+YqSyqyyg=="
       }
     },
+    "npm:jose": {
+      "type": "npm",
+      "name": "npm:jose",
+      "data": {
+        "version": "4.15.4",
+        "packageName": "jose",
+        "hash": "sha512-W+oqK4H+r5sITxfxpSU+MMdr/YSWGvgZMQDIsNoBDGGy4i7GBPTtvFKibQzW06n3U3TqHjhvBJsirShsEJ6eeQ=="
+      }
+    },
     "npm:js-tokens": {
       "type": "npm",
       "name": "npm:js-tokens",
@@ -9530,6 +9872,15 @@
         "version": "2.5.2",
         "packageName": "jsesc",
         "hash": "sha512-OYu7XEzjkCQ3C5Ps3QIZsQfNpqoJyZZA99wd9aWd05NCtC5pWOkShK2mkL6HXQR6/Cy2lbNdPlZBpuQHXE63gA=="
+      }
+    },
+    "npm:json-bigint": {
+      "type": "npm",
+      "name": "npm:json-bigint",
+      "data": {
+        "version": "1.0.0",
+        "packageName": "json-bigint",
+        "hash": "sha512-SiPv/8VpZuWbvLSMtTDU8hEfrZWg/mH/nV/b4o0CYbSxu1UIQPLdwKOCIyLQX+VIPO5vrLX3i8qtqFyhdPSUSQ=="
       }
     },
     "npm:json-parse-even-better-errors": {
@@ -9649,6 +10000,15 @@
         "hash": "sha512-POQXvpdL69+CluYsillJ7SUhKvytYjW9vG/GKpnf+xP8UWgYEM/RaMzHHofbALDiKbbP1W8UEYmgGl39WkPZsg=="
       }
     },
+    "npm:jsonwebtoken": {
+      "type": "npm",
+      "name": "npm:jsonwebtoken",
+      "data": {
+        "version": "9.0.2",
+        "packageName": "jsonwebtoken",
+        "hash": "sha512-PRp66vJ865SSqOlgqS8hujT5U4AOgMfhrwYIuIhfKaoSCZcirrmASQr8CX7cUg+RMih+hgznrjp99o+W4pJLHQ=="
+      }
+    },
     "npm:jsprim": {
       "type": "npm",
       "name": "npm:jsprim",
@@ -9656,6 +10016,51 @@
         "version": "2.0.2",
         "packageName": "jsprim",
         "hash": "sha512-gqXddjPqQ6G40VdnI6T6yObEC+pDNvyP95wdQhkWkg7crHH3km5qP1FsOXEkzEQwnz6gz5qGTn1c2Y52wP3OyQ=="
+      }
+    },
+    "npm:jwa": {
+      "type": "npm",
+      "name": "npm:jwa",
+      "data": {
+        "version": "1.4.1",
+        "packageName": "jwa",
+        "hash": "sha512-qiLX/xhEEFKUAJ6FiBMbes3w9ATzyk5W7Hvzpa/SLYdxNtng+gcurvrI7TbACjIXlsJyr05/S1oUhZrc63evQA=="
+      }
+    },
+    "npm:jwa@2.0.0": {
+      "type": "npm",
+      "name": "npm:jwa@2.0.0",
+      "data": {
+        "version": "2.0.0",
+        "packageName": "jwa",
+        "hash": "sha512-jrZ2Qx916EA+fq9cEAeCROWPTfCwi1IVHqT2tapuqLEVVDKFDENFw1oL+MwrTvH6msKxsd1YTDVw6uKEcsrLEA=="
+      }
+    },
+    "npm:jwks-rsa": {
+      "type": "npm",
+      "name": "npm:jwks-rsa",
+      "data": {
+        "version": "3.1.0",
+        "packageName": "jwks-rsa",
+        "hash": "sha512-v7nqlfezb9YfHHzYII3ef2a2j1XnGeSE/bK3WfumaYCqONAIstJbrEGapz4kadScZzEt7zYCN7bucj8C0Mv/Rg=="
+      }
+    },
+    "npm:jws": {
+      "type": "npm",
+      "name": "npm:jws",
+      "data": {
+        "version": "3.2.2",
+        "packageName": "jws",
+        "hash": "sha512-YHlZCB6lMTllWDtSPHz/ZXTsi8S00usEV6v1tjq8tOUZzw7DpSDWVXjXDre6ed1w/pd495ODpHZYSdkRTsa0HA=="
+      }
+    },
+    "npm:jws@4.0.0": {
+      "type": "npm",
+      "name": "npm:jws@4.0.0",
+      "data": {
+        "version": "4.0.0",
+        "packageName": "jws",
+        "hash": "sha512-KDncfTmOZoOMTFG4mBlG0qUIOlc03fmzH+ru6RgYVZhPkyiy/92Owlt/8UEN+a4TXR1FQetfIpJE8ApdvdVxTg=="
       }
     },
     "npm:kareem": {
@@ -9793,6 +10198,15 @@
         "hash": "sha512-utWOt/GHzuUxnLKxB6dk81RoOeoNeHgbrXiuGk4yyF5qlRz+iIVWu56E2fqGHFrXz0QNUhLB/8nKqvRH66JKGQ=="
       }
     },
+    "npm:limiter": {
+      "type": "npm",
+      "name": "npm:limiter",
+      "data": {
+        "version": "1.1.5",
+        "packageName": "limiter",
+        "hash": "sha512-FWWMIEOxz3GwUI4Ts/IvgVy6LPvoMPgjMdQ185nN6psJyBJ4yOpzqm695/h5umdLJg2vW3GR5iG11MAkR2AzJA=="
+      }
+    },
     "npm:lines-and-columns@1.2.4": {
       "type": "npm",
       "name": "npm:lines-and-columns@1.2.4",
@@ -9874,6 +10288,15 @@
         "hash": "sha512-TwuEnCnxbc3rAvhf/LbG7tJUDzhqXyFnv3dtzLOPgCG/hODL7WFnsbwktkD7yUV0RrreP/l1PALq/YSg6VvjlA=="
       }
     },
+    "npm:lodash.clonedeep": {
+      "type": "npm",
+      "name": "npm:lodash.clonedeep",
+      "data": {
+        "version": "4.5.0",
+        "packageName": "lodash.clonedeep",
+        "hash": "sha512-H5ZhCF25riFd9uB5UCkVKo61m3S/xZk1x4wA6yp/L3RFP6Z/eHH1ymQcGLo7J3GMPfm0V/7m1tryHuGVxpqEBQ=="
+      }
+    },
     "npm:lodash.debounce": {
       "type": "npm",
       "name": "npm:lodash.debounce",
@@ -9881,6 +10304,60 @@
         "version": "4.0.8",
         "packageName": "lodash.debounce",
         "hash": "sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow=="
+      }
+    },
+    "npm:lodash.includes": {
+      "type": "npm",
+      "name": "npm:lodash.includes",
+      "data": {
+        "version": "4.3.0",
+        "packageName": "lodash.includes",
+        "hash": "sha512-W3Bx6mdkRTGtlJISOvVD/lbqjTlPPUDTMnlXZFnVwi9NKJ6tiAk6LVdlhZMm17VZisqhKcgzpO5Wz91PCt5b0w=="
+      }
+    },
+    "npm:lodash.isboolean": {
+      "type": "npm",
+      "name": "npm:lodash.isboolean",
+      "data": {
+        "version": "3.0.3",
+        "packageName": "lodash.isboolean",
+        "hash": "sha512-Bz5mupy2SVbPHURB98VAcw+aHh4vRV5IPNhILUCsOzRmsTmSQ17jIuqopAentWoehktxGd9e/hbIXq980/1QJg=="
+      }
+    },
+    "npm:lodash.isinteger": {
+      "type": "npm",
+      "name": "npm:lodash.isinteger",
+      "data": {
+        "version": "4.0.4",
+        "packageName": "lodash.isinteger",
+        "hash": "sha512-DBwtEWN2caHQ9/imiNeEA5ys1JoRtRfY3d7V9wkqtbycnAmTvRRmbHKDV4a0EYc678/dia0jrte4tjYwVBaZUA=="
+      }
+    },
+    "npm:lodash.isnumber": {
+      "type": "npm",
+      "name": "npm:lodash.isnumber",
+      "data": {
+        "version": "3.0.3",
+        "packageName": "lodash.isnumber",
+        "hash": "sha512-QYqzpfwO3/CWf3XP+Z+tkQsfaLL/EnUlXWVkIk5FUPc4sBdTehEqZONuyRt2P67PXAk+NXmTBcc97zw9t1FQrw=="
+      }
+    },
+    "npm:lodash.isplainobject": {
+      "type": "npm",
+      "name": "npm:lodash.isplainobject",
+      "data": {
+        "version": "4.0.6",
+        "packageName": "lodash.isplainobject",
+        "hash": "sha512-oSXzaWypCMHkPC3NvBEaPHf0KsA5mvPrOPgQWDsbg8n7orZ290M0BmC/jgRZ4vcJ6DTAhjrsSYgdsW/F+MFOBA=="
+      }
+    },
+    "npm:lodash.isstring": {
+      "type": "npm",
+      "name": "npm:lodash.isstring",
+      "data": {
+        "version": "4.0.1",
+        "packageName": "lodash.isstring",
+        "hash": "sha512-0wJxfxH1wgO3GrbuP+dTTk7op+6L41QCXbGINEmD+ny/G/eCqGzxyCsh7159S+mgDDcoarnBw6PC1PS5+wUGgw=="
       }
     },
     "npm:lodash.memoize": {
@@ -9982,6 +10459,15 @@
         "hash": "sha512-svTf/fzsKHffP42sujkO/Rjs37BCIsQVRCeNYIm9WN8rgT7ffoUnRtZCqU+6BqcSBdv8gwJeTz8knJpgACeQMw=="
       }
     },
+    "npm:lru-cache@4.0.2": {
+      "type": "npm",
+      "name": "npm:lru-cache@4.0.2",
+      "data": {
+        "version": "4.0.2",
+        "packageName": "lru-cache",
+        "hash": "sha512-uQw9OqphAGiZhkuPlpFGmdTU2tEuhxTourM/19qGJrxBPHAr/f8BT1a0i/lOclESnGatdJG/UCkP9kZB/Lh1iw=="
+      }
+    },
     "npm:lru-cache@5.1.1": {
       "type": "npm",
       "name": "npm:lru-cache@5.1.1",
@@ -10007,6 +10493,15 @@
         "version": "7.18.3",
         "packageName": "lru-cache",
         "hash": "sha512-jumlc0BIUrS3qJGgIkWZsyfAM7NCWiBcCDhnd+3NNM5KbBmLTgHVfWBcg6W+rLUsIpzpERPsvwUP7CckAQSOoA=="
+      }
+    },
+    "npm:lru-memoizer": {
+      "type": "npm",
+      "name": "npm:lru-memoizer",
+      "data": {
+        "version": "2.2.0",
+        "packageName": "lru-memoizer",
+        "hash": "sha512-QfOZ6jNkxCcM/BkIPnFsqDhtrazLRsghi9mBwFAzol5GCvj4EkFT899Za3+QwikCg5sRX8JstioBDwOxEyzaNw=="
       }
     },
     "npm:magic-string@0.26.7": {
@@ -10180,13 +10675,22 @@
         "hash": "sha512-ZDY+bPm5zTTF+YpCrAU9nK0UgICYPT0QtT1NZWFv4s++TNkcgVaT0g6+4R2uI4MjQjzysHB1zxuWL50hzaeXiw=="
       }
     },
-    "npm:mime": {
+    "npm:mime@1.6.0": {
       "type": "npm",
-      "name": "npm:mime",
+      "name": "npm:mime@1.6.0",
       "data": {
         "version": "1.6.0",
         "packageName": "mime",
         "hash": "sha512-x0Vn8spI+wuJ1O6S7gnbaQg8Pxh4NNHb7KSINmEWKiPE4RKOplvijn+NkmYmmRgP68mc70j2EbeTFRsrswaQeg=="
+      }
+    },
+    "npm:mime": {
+      "type": "npm",
+      "name": "npm:mime",
+      "data": {
+        "version": "3.0.0",
+        "packageName": "mime",
+        "hash": "sha512-jSCU7/VB1loIWBZe14aEYHU/+1UMEHoaO7qxCOVJOw9GgH72VAWppxNcjU+x9a2k3GSIBXNKxXQFqRvvZ7vr3A=="
       }
     },
     "npm:mimic-fn": {
@@ -10826,6 +11330,15 @@
         "version": "2.2.0",
         "packageName": "object-hash",
         "hash": "sha512-gScRMn0bS5fH+IuwyIFgnh9zBdo4DV+6GhygmWM9HyNJSgS0hScp1f5vjtm7oIIOiT9trXrShAkLFSc2IqKNgw=="
+      }
+    },
+    "npm:object-hash@3.0.0": {
+      "type": "npm",
+      "name": "npm:object-hash@3.0.0",
+      "data": {
+        "version": "3.0.0",
+        "packageName": "object-hash",
+        "hash": "sha512-RSn9F68PjH9HqtltsSnqYC1XXoWe9Bju5+213R98cNGttag9q9yAOTzdbsqvIa7aNm5WffBZFpWYr2aWrklWAw=="
       }
     },
     "npm:object-inspect": {
@@ -11782,6 +12295,15 @@
         "hash": "sha512-NxNv/kLguCA7p3jE8oL2aEBsrJWgAakBpgmgK6lpPWV+WuOmY6r2/zbAVnP+T8bQlA0nzHXSJSJW0Hq7ylaD2Q=="
       }
     },
+    "npm:proto3-json-serializer": {
+      "type": "npm",
+      "name": "npm:proto3-json-serializer",
+      "data": {
+        "version": "2.0.1",
+        "packageName": "proto3-json-serializer",
+        "hash": "sha512-8awBvjO+FwkMd6gNoGFZyqkHZXCFd54CIYTb6De7dPaufGJ2XNW+QUNqbMr8MaAocMdb+KpsD4rxEOaTBDCffA=="
+      }
+    },
     "npm:protobufjs@6.11.3": {
       "type": "npm",
       "name": "npm:protobufjs@6.11.3",
@@ -11798,6 +12320,15 @@
         "version": "7.2.4",
         "packageName": "protobufjs",
         "hash": "sha512-AT+RJgD2sH8phPmCf7OUZR8xGdcJRga4+1cOaXJ64hvcSkVhNcRHOwIxUatPH15+nj59WAGTDv3LSGZPEQbJaQ=="
+      }
+    },
+    "npm:protobufjs@7.2.6": {
+      "type": "npm",
+      "name": "npm:protobufjs@7.2.6",
+      "data": {
+        "version": "7.2.6",
+        "packageName": "protobufjs",
+        "hash": "sha512-dgJaEDDL6x8ASUZ1YqWciTRrdOuYNzoOf27oHNfdyvKqHr5i0FV7FSLU+aIeFjyFgVxrpTOtQUi0BLLBymZaBw=="
       }
     },
     "npm:proxy-addr": {
@@ -11834,6 +12365,15 @@
         "version": "1.0.1",
         "packageName": "prr",
         "hash": "sha512-yPw4Sng1gWghHQWj0B3ZggWUm4qVbPwPFcRG8KyxiU7J2OHFSoEHKS+EZ3fv5l1t9CyCiop6l/ZYeWbrgoQejw=="
+      }
+    },
+    "npm:pseudomap": {
+      "type": "npm",
+      "name": "npm:pseudomap",
+      "data": {
+        "version": "1.0.2",
+        "packageName": "pseudomap",
+        "hash": "sha512-b/YwNhb8lk1Zz2+bXXpS/LK9OisiZZ1SNsSLxN1x2OXVEhW2Ckr/7mWE5vrC1ZTiJlD9g19jWszTmJsB+oEpFQ=="
       }
     },
     "npm:psl": {
@@ -12230,6 +12770,15 @@
         "version": "3.1.0",
         "packageName": "restore-cursor",
         "hash": "sha512-l+sSefzHpj5qimhFSE5a8nufZYAM3sBSVMAPtYkmC+4EH2anSGaEMXSD0izRQbu9nfyQ9y5JrVmp7E8oZrUjvA=="
+      }
+    },
+    "npm:retry-request": {
+      "type": "npm",
+      "name": "npm:retry-request",
+      "data": {
+        "version": "7.0.2",
+        "packageName": "retry-request",
+        "hash": "sha512-dUOvLMJ0/JJYEn8NrpOaGNE7X3vpI5XlZS/u0ANjqtcZVKnIxP7IgCFwrKTxENw29emmwug53awKtaMm4i9g5w=="
       }
     },
     "npm:retry@0.12.0": {
@@ -12970,6 +13519,24 @@
         "hash": "sha512-iCGQj+0l0HOdZ2AEeBADlsRC+vsnDsZsbdSiH1yNSjcfKM7fdpCMfqAL/dwF5BLiw/XhRft/Wax6zQbhq2BcjQ=="
       }
     },
+    "npm:stream-events": {
+      "type": "npm",
+      "name": "npm:stream-events",
+      "data": {
+        "version": "1.0.5",
+        "packageName": "stream-events",
+        "hash": "sha512-E1GUzBSgvct8Jsb3v2X15pjzN1tYebtbLaMg+eBOUOAxgbLoSbT2NS91ckc5lJD1KfLjId+jXJRgo0qnV5Nerg=="
+      }
+    },
+    "npm:stream-shift": {
+      "type": "npm",
+      "name": "npm:stream-shift",
+      "data": {
+        "version": "1.0.3",
+        "packageName": "stream-shift",
+        "hash": "sha512-76ORR0DO1o1hlKwTbi/DM3EXWGf3ZJYO8cXX5RJwnul2DEg2oyoZyjLNoQM8WsvZiFKCRfC1O0J7iCvie3RZmQ=="
+      }
+    },
     "npm:streamsearch": {
       "type": "npm",
       "name": "npm:streamsearch",
@@ -13096,6 +13663,15 @@
         "hash": "sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig=="
       }
     },
+    "npm:strnum": {
+      "type": "npm",
+      "name": "npm:strnum",
+      "data": {
+        "version": "1.0.5",
+        "packageName": "strnum",
+        "hash": "sha512-J8bbNyKKXl5qYcR36TIO8W3mVGVHrmmxsd5PAItGkmyzwJvybiw2IVq5nqd0i4LSNSkB/sx9VHllbfFdr9k1JA=="
+      }
+    },
     "npm:strong-log-transformer": {
       "type": "npm",
       "name": "npm:strong-log-transformer",
@@ -13103,6 +13679,15 @@
         "version": "2.1.0",
         "packageName": "strong-log-transformer",
         "hash": "sha512-B3Hgul+z0L9a236FAUC9iZsL+nVHgoCJnqCbN588DjYxvGXaXaaFbfmQ/JhvKjZwsOukuR72XbHv71Qkug0HxA=="
+      }
+    },
+    "npm:stubs": {
+      "type": "npm",
+      "name": "npm:stubs",
+      "data": {
+        "version": "3.0.0",
+        "packageName": "stubs",
+        "hash": "sha512-PdHt7hHUJKxvTCgbKX9C1V/ftOcjJQgz8BZwNfV5c4B6dcGqlpelTbJ999jBGZ2jYiPAwcX5dP6oBwVlBlUbxw=="
       }
     },
     "npm:style-loader": {
@@ -13249,6 +13834,15 @@
         "hash": "sha512-/zKt9UyngnxIT/EAGYuxaMYgOIJiP81ab9ZfkILq4oNLPFX50qyYmu7jRj9qeXoxmJHjGlbH0+cm2uy1WCs10A=="
       }
     },
+    "npm:teeny-request": {
+      "type": "npm",
+      "name": "npm:teeny-request",
+      "data": {
+        "version": "9.0.0",
+        "packageName": "teeny-request",
+        "hash": "sha512-resvxdc6Mgb7YEThw6G6bExlXKkv6+YbuzGg9xuXxSgxJF7Ozs+o8Y9+2R3sArdWdW8nOokoQb1yrpFB0pQK2g=="
+      }
+    },
     "npm:terser-webpack-plugin": {
       "type": "npm",
       "name": "npm:terser-webpack-plugin",
@@ -13283,6 +13877,15 @@
         "version": "6.0.0",
         "packageName": "test-exclude",
         "hash": "sha512-cAGWPIyOHU6zlmg88jwm7VRyXnMN7iV68OGAbYDk/Mh/xC/pzVPlQtY6ngoIH/5/tciuhGfvESU8GrHrcxD56w=="
+      }
+    },
+    "npm:text-decoding": {
+      "type": "npm",
+      "name": "npm:text-decoding",
+      "data": {
+        "version": "1.0.0",
+        "packageName": "text-decoding",
+        "hash": "sha512-/0TJD42KDnVwKmDK6jj3xP7E2MG7SHAOG4tyTgyUCRPdHwvkquYNLEQltmdMa3owq3TkddCVcTsoctJI8VQNKA=="
       }
     },
     "npm:text-hex": {
@@ -13663,6 +14266,15 @@
         "hash": "sha512-u3xV3X7uzvi5b1MncmZo3i2Aw222Zk1keqLA1YkHldREkAhAqi65wuPfe7lHx8H/Wzy+8CE7S7uS3jekIM5s8g=="
       }
     },
+    "npm:undici-types": {
+      "type": "npm",
+      "name": "npm:undici-types",
+      "data": {
+        "version": "5.26.5",
+        "packageName": "undici-types",
+        "hash": "sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA=="
+      }
+    },
     "npm:unicode-canonical-property-names-ecmascript": {
       "type": "npm",
       "name": "npm:unicode-canonical-property-names-ecmascript",
@@ -13841,6 +14453,15 @@
         "version": "9.0.0",
         "packageName": "uuid",
         "hash": "sha512-MXcSTerfPa4uqyzStbRoTgt5XIe3x5+42+q1sDuy3R5MDk66URdLMOZe5aPX/SQd+kuYAh0FdP/pO28IkQyTeg=="
+      }
+    },
+    "npm:uuid@9.0.1": {
+      "type": "npm",
+      "name": "npm:uuid@9.0.1",
+      "data": {
+        "version": "9.0.1",
+        "packageName": "uuid",
+        "hash": "sha512-b+1eJOlsR9K8HJpow9Ok3fiWOWSIcIzXodvv0rQjVoOVNpWMpxf1wZNpt4y9h10odCNrqnYp1OBzRktckBe3sA=="
       }
     },
     "npm:v8-compile-cache-lib": {
@@ -14318,6 +14939,15 @@
         "version": "5.0.8",
         "packageName": "y18n",
         "hash": "sha512-0pfFzegeDWJHJIAmTLRP2DwHjdF5s7jo9tuztdQxAhINCdvS+3nGINqPd00AphqJR/0LhANUS6/+7SCb98YOfA=="
+      }
+    },
+    "npm:yallist@2.1.2": {
+      "type": "npm",
+      "name": "npm:yallist@2.1.2",
+      "data": {
+        "version": "2.1.2",
+        "packageName": "yallist",
+        "hash": "sha512-ncTzHV7NvsQZkYe1DW7cbDLm0YpzHmZF5r/iyP3ZnQtMiJ+pjzisCiMNI+Sj+xQF5pXhSHxSB3uDbsBTzY/c2A=="
       }
     },
     "npm:yallist@3.1.1": {
@@ -19285,6 +19915,13 @@
         "type": "static"
       }
     ],
+    "npm:@fastify/busboy": [
+      {
+        "source": "npm:@fastify/busboy",
+        "target": "npm:text-decoding",
+        "type": "static"
+      }
+    ],
     "npm:@firebase/analytics-compat": [
       {
         "source": "npm:@firebase/analytics-compat",
@@ -19303,12 +19940,12 @@
       },
       {
         "source": "npm:@firebase/analytics-compat",
-        "target": "npm:@firebase/component",
+        "target": "npm:@firebase/component@0.6.4",
         "type": "static"
       },
       {
         "source": "npm:@firebase/analytics-compat",
-        "target": "npm:@firebase/util",
+        "target": "npm:@firebase/util@1.9.3",
         "type": "static"
       },
       {
@@ -19325,7 +19962,7 @@
       },
       {
         "source": "npm:@firebase/analytics",
-        "target": "npm:@firebase/component",
+        "target": "npm:@firebase/component@0.6.4",
         "type": "static"
       },
       {
@@ -19340,7 +19977,7 @@
       },
       {
         "source": "npm:@firebase/analytics",
-        "target": "npm:@firebase/util",
+        "target": "npm:@firebase/util@1.9.3",
         "type": "static"
       },
       {
@@ -19367,7 +20004,7 @@
       },
       {
         "source": "npm:@firebase/app-check-compat",
-        "target": "npm:@firebase/component",
+        "target": "npm:@firebase/component@0.6.4",
         "type": "static"
       },
       {
@@ -19377,7 +20014,7 @@
       },
       {
         "source": "npm:@firebase/app-check-compat",
-        "target": "npm:@firebase/util",
+        "target": "npm:@firebase/util@1.9.3",
         "type": "static"
       },
       {
@@ -19394,7 +20031,7 @@
       },
       {
         "source": "npm:@firebase/app-check",
-        "target": "npm:@firebase/component",
+        "target": "npm:@firebase/component@0.6.4",
         "type": "static"
       },
       {
@@ -19404,7 +20041,7 @@
       },
       {
         "source": "npm:@firebase/app-check",
-        "target": "npm:@firebase/util",
+        "target": "npm:@firebase/util@1.9.3",
         "type": "static"
       },
       {
@@ -19421,7 +20058,7 @@
       },
       {
         "source": "npm:@firebase/app-compat",
-        "target": "npm:@firebase/component",
+        "target": "npm:@firebase/component@0.6.4",
         "type": "static"
       },
       {
@@ -19431,7 +20068,7 @@
       },
       {
         "source": "npm:@firebase/app-compat",
-        "target": "npm:@firebase/util",
+        "target": "npm:@firebase/util@1.9.3",
         "type": "static"
       },
       {
@@ -19443,7 +20080,7 @@
     "npm:@firebase/app": [
       {
         "source": "npm:@firebase/app",
-        "target": "npm:@firebase/component",
+        "target": "npm:@firebase/component@0.6.4",
         "type": "static"
       },
       {
@@ -19453,7 +20090,7 @@
       },
       {
         "source": "npm:@firebase/app",
-        "target": "npm:@firebase/util",
+        "target": "npm:@firebase/util@1.9.3",
         "type": "static"
       },
       {
@@ -19485,12 +20122,12 @@
       },
       {
         "source": "npm:@firebase/auth-compat",
-        "target": "npm:@firebase/component",
+        "target": "npm:@firebase/component@0.6.4",
         "type": "static"
       },
       {
         "source": "npm:@firebase/auth-compat",
-        "target": "npm:@firebase/util",
+        "target": "npm:@firebase/util@1.9.3",
         "type": "static"
       },
       {
@@ -19512,7 +20149,7 @@
       },
       {
         "source": "npm:@firebase/auth-types",
-        "target": "npm:@firebase/util",
+        "target": "npm:@firebase/util@1.9.3",
         "type": "static"
       }
     ],
@@ -19524,7 +20161,7 @@
       },
       {
         "source": "npm:@firebase/auth",
-        "target": "npm:@firebase/component",
+        "target": "npm:@firebase/component@0.6.4",
         "type": "static"
       },
       {
@@ -19534,7 +20171,7 @@
       },
       {
         "source": "npm:@firebase/auth",
-        "target": "npm:@firebase/util",
+        "target": "npm:@firebase/util@1.9.3",
         "type": "static"
       },
       {
@@ -19548,6 +20185,18 @@
         "type": "static"
       }
     ],
+    "npm:@firebase/component@0.6.4": [
+      {
+        "source": "npm:@firebase/component@0.6.4",
+        "target": "npm:@firebase/util@1.9.3",
+        "type": "static"
+      },
+      {
+        "source": "npm:@firebase/component@0.6.4",
+        "target": "npm:tslib@2.6.1",
+        "type": "static"
+      }
+    ],
     "npm:@firebase/component": [
       {
         "source": "npm:@firebase/component",
@@ -19556,6 +20205,38 @@
       },
       {
         "source": "npm:@firebase/component",
+        "target": "npm:tslib@2.6.1",
+        "type": "static"
+      }
+    ],
+    "npm:@firebase/database-compat@0.3.4": [
+      {
+        "source": "npm:@firebase/database-compat@0.3.4",
+        "target": "npm:@firebase/component@0.6.4",
+        "type": "static"
+      },
+      {
+        "source": "npm:@firebase/database-compat@0.3.4",
+        "target": "npm:@firebase/database@0.14.4",
+        "type": "static"
+      },
+      {
+        "source": "npm:@firebase/database-compat@0.3.4",
+        "target": "npm:@firebase/database-types@0.10.4",
+        "type": "static"
+      },
+      {
+        "source": "npm:@firebase/database-compat@0.3.4",
+        "target": "npm:@firebase/logger",
+        "type": "static"
+      },
+      {
+        "source": "npm:@firebase/database-compat@0.3.4",
+        "target": "npm:@firebase/util@1.9.3",
+        "type": "static"
+      },
+      {
+        "source": "npm:@firebase/database-compat@0.3.4",
         "target": "npm:tslib@2.6.1",
         "type": "static"
       }
@@ -19592,6 +20273,18 @@
         "type": "static"
       }
     ],
+    "npm:@firebase/database-types@0.10.4": [
+      {
+        "source": "npm:@firebase/database-types@0.10.4",
+        "target": "npm:@firebase/app-types",
+        "type": "static"
+      },
+      {
+        "source": "npm:@firebase/database-types@0.10.4",
+        "target": "npm:@firebase/util@1.9.3",
+        "type": "static"
+      }
+    ],
     "npm:@firebase/database-types": [
       {
         "source": "npm:@firebase/database-types",
@@ -19604,7 +20297,44 @@
         "type": "static"
       }
     ],
+    "npm:@firebase/database@0.14.4": [
+      {
+        "source": "npm:@firebase/database@0.14.4",
+        "target": "npm:@firebase/auth-interop-types",
+        "type": "static"
+      },
+      {
+        "source": "npm:@firebase/database@0.14.4",
+        "target": "npm:@firebase/component@0.6.4",
+        "type": "static"
+      },
+      {
+        "source": "npm:@firebase/database@0.14.4",
+        "target": "npm:@firebase/logger",
+        "type": "static"
+      },
+      {
+        "source": "npm:@firebase/database@0.14.4",
+        "target": "npm:@firebase/util@1.9.3",
+        "type": "static"
+      },
+      {
+        "source": "npm:@firebase/database@0.14.4",
+        "target": "npm:faye-websocket",
+        "type": "static"
+      },
+      {
+        "source": "npm:@firebase/database@0.14.4",
+        "target": "npm:tslib@2.6.1",
+        "type": "static"
+      }
+    ],
     "npm:@firebase/database": [
+      {
+        "source": "npm:@firebase/database",
+        "target": "npm:@firebase/app-check-interop-types",
+        "type": "static"
+      },
       {
         "source": "npm:@firebase/database",
         "target": "npm:@firebase/auth-interop-types",
@@ -19644,7 +20374,7 @@
       },
       {
         "source": "npm:@firebase/firestore-compat",
-        "target": "npm:@firebase/component",
+        "target": "npm:@firebase/component@0.6.4",
         "type": "static"
       },
       {
@@ -19659,7 +20389,7 @@
       },
       {
         "source": "npm:@firebase/firestore-compat",
-        "target": "npm:@firebase/util",
+        "target": "npm:@firebase/util@1.9.3",
         "type": "static"
       },
       {
@@ -19676,7 +20406,7 @@
       },
       {
         "source": "npm:@firebase/firestore-types",
-        "target": "npm:@firebase/util",
+        "target": "npm:@firebase/util@1.9.3",
         "type": "static"
       }
     ],
@@ -19688,7 +20418,7 @@
       },
       {
         "source": "npm:@firebase/firestore",
-        "target": "npm:@firebase/component",
+        "target": "npm:@firebase/component@0.6.4",
         "type": "static"
       },
       {
@@ -19698,7 +20428,7 @@
       },
       {
         "source": "npm:@firebase/firestore",
-        "target": "npm:@firebase/util",
+        "target": "npm:@firebase/util@1.9.3",
         "type": "static"
       },
       {
@@ -19735,7 +20465,7 @@
       },
       {
         "source": "npm:@firebase/functions-compat",
-        "target": "npm:@firebase/component",
+        "target": "npm:@firebase/component@0.6.4",
         "type": "static"
       },
       {
@@ -19750,7 +20480,7 @@
       },
       {
         "source": "npm:@firebase/functions-compat",
-        "target": "npm:@firebase/util",
+        "target": "npm:@firebase/util@1.9.3",
         "type": "static"
       },
       {
@@ -19777,7 +20507,7 @@
       },
       {
         "source": "npm:@firebase/functions",
-        "target": "npm:@firebase/component",
+        "target": "npm:@firebase/component@0.6.4",
         "type": "static"
       },
       {
@@ -19787,7 +20517,7 @@
       },
       {
         "source": "npm:@firebase/functions",
-        "target": "npm:@firebase/util",
+        "target": "npm:@firebase/util@1.9.3",
         "type": "static"
       },
       {
@@ -19809,7 +20539,7 @@
       },
       {
         "source": "npm:@firebase/installations-compat",
-        "target": "npm:@firebase/component",
+        "target": "npm:@firebase/component@0.6.4",
         "type": "static"
       },
       {
@@ -19824,7 +20554,7 @@
       },
       {
         "source": "npm:@firebase/installations-compat",
-        "target": "npm:@firebase/util",
+        "target": "npm:@firebase/util@1.9.3",
         "type": "static"
       },
       {
@@ -19848,12 +20578,12 @@
       },
       {
         "source": "npm:@firebase/installations",
-        "target": "npm:@firebase/component",
+        "target": "npm:@firebase/component@0.6.4",
         "type": "static"
       },
       {
         "source": "npm:@firebase/installations",
-        "target": "npm:@firebase/util",
+        "target": "npm:@firebase/util@1.9.3",
         "type": "static"
       },
       {
@@ -19882,7 +20612,7 @@
       },
       {
         "source": "npm:@firebase/messaging-compat",
-        "target": "npm:@firebase/component",
+        "target": "npm:@firebase/component@0.6.4",
         "type": "static"
       },
       {
@@ -19892,7 +20622,7 @@
       },
       {
         "source": "npm:@firebase/messaging-compat",
-        "target": "npm:@firebase/util",
+        "target": "npm:@firebase/util@1.9.3",
         "type": "static"
       },
       {
@@ -19909,7 +20639,7 @@
       },
       {
         "source": "npm:@firebase/messaging",
-        "target": "npm:@firebase/component",
+        "target": "npm:@firebase/component@0.6.4",
         "type": "static"
       },
       {
@@ -19924,7 +20654,7 @@
       },
       {
         "source": "npm:@firebase/messaging",
-        "target": "npm:@firebase/util",
+        "target": "npm:@firebase/util@1.9.3",
         "type": "static"
       },
       {
@@ -19946,7 +20676,7 @@
       },
       {
         "source": "npm:@firebase/performance-compat",
-        "target": "npm:@firebase/component",
+        "target": "npm:@firebase/component@0.6.4",
         "type": "static"
       },
       {
@@ -19966,7 +20696,7 @@
       },
       {
         "source": "npm:@firebase/performance-compat",
-        "target": "npm:@firebase/util",
+        "target": "npm:@firebase/util@1.9.3",
         "type": "static"
       },
       {
@@ -19983,7 +20713,7 @@
       },
       {
         "source": "npm:@firebase/performance",
-        "target": "npm:@firebase/component",
+        "target": "npm:@firebase/component@0.6.4",
         "type": "static"
       },
       {
@@ -19998,7 +20728,7 @@
       },
       {
         "source": "npm:@firebase/performance",
-        "target": "npm:@firebase/util",
+        "target": "npm:@firebase/util@1.9.3",
         "type": "static"
       },
       {
@@ -20015,7 +20745,7 @@
       },
       {
         "source": "npm:@firebase/remote-config-compat",
-        "target": "npm:@firebase/component",
+        "target": "npm:@firebase/component@0.6.4",
         "type": "static"
       },
       {
@@ -20035,7 +20765,7 @@
       },
       {
         "source": "npm:@firebase/remote-config-compat",
-        "target": "npm:@firebase/util",
+        "target": "npm:@firebase/util@1.9.3",
         "type": "static"
       },
       {
@@ -20052,7 +20782,7 @@
       },
       {
         "source": "npm:@firebase/remote-config",
-        "target": "npm:@firebase/component",
+        "target": "npm:@firebase/component@0.6.4",
         "type": "static"
       },
       {
@@ -20067,7 +20797,7 @@
       },
       {
         "source": "npm:@firebase/remote-config",
-        "target": "npm:@firebase/util",
+        "target": "npm:@firebase/util@1.9.3",
         "type": "static"
       },
       {
@@ -20084,7 +20814,7 @@
       },
       {
         "source": "npm:@firebase/storage-compat",
-        "target": "npm:@firebase/component",
+        "target": "npm:@firebase/component@0.6.4",
         "type": "static"
       },
       {
@@ -20099,7 +20829,7 @@
       },
       {
         "source": "npm:@firebase/storage-compat",
-        "target": "npm:@firebase/util",
+        "target": "npm:@firebase/util@1.9.3",
         "type": "static"
       },
       {
@@ -20116,7 +20846,7 @@
       },
       {
         "source": "npm:@firebase/storage-types",
-        "target": "npm:@firebase/util",
+        "target": "npm:@firebase/util@1.9.3",
         "type": "static"
       }
     ],
@@ -20128,12 +20858,12 @@
       },
       {
         "source": "npm:@firebase/storage",
-        "target": "npm:@firebase/component",
+        "target": "npm:@firebase/component@0.6.4",
         "type": "static"
       },
       {
         "source": "npm:@firebase/storage",
-        "target": "npm:@firebase/util",
+        "target": "npm:@firebase/util@1.9.3",
         "type": "static"
       },
       {
@@ -20147,10 +20877,150 @@
         "type": "static"
       }
     ],
+    "npm:@firebase/util@1.9.3": [
+      {
+        "source": "npm:@firebase/util@1.9.3",
+        "target": "npm:tslib@2.6.1",
+        "type": "static"
+      }
+    ],
     "npm:@firebase/util": [
       {
         "source": "npm:@firebase/util",
         "target": "npm:tslib@2.6.1",
+        "type": "static"
+      }
+    ],
+    "npm:@google-cloud/firestore": [
+      {
+        "source": "npm:@google-cloud/firestore",
+        "target": "npm:fast-deep-equal",
+        "type": "static"
+      },
+      {
+        "source": "npm:@google-cloud/firestore",
+        "target": "npm:functional-red-black-tree",
+        "type": "static"
+      },
+      {
+        "source": "npm:@google-cloud/firestore",
+        "target": "npm:google-gax",
+        "type": "static"
+      },
+      {
+        "source": "npm:@google-cloud/firestore",
+        "target": "npm:protobufjs@7.2.6",
+        "type": "static"
+      }
+    ],
+    "npm:@google-cloud/paginator": [
+      {
+        "source": "npm:@google-cloud/paginator",
+        "target": "npm:arrify",
+        "type": "static"
+      },
+      {
+        "source": "npm:@google-cloud/paginator",
+        "target": "npm:extend",
+        "type": "static"
+      }
+    ],
+    "npm:@google-cloud/storage": [
+      {
+        "source": "npm:@google-cloud/storage",
+        "target": "npm:@google-cloud/paginator",
+        "type": "static"
+      },
+      {
+        "source": "npm:@google-cloud/storage",
+        "target": "npm:@google-cloud/projectify",
+        "type": "static"
+      },
+      {
+        "source": "npm:@google-cloud/storage",
+        "target": "npm:@google-cloud/promisify",
+        "type": "static"
+      },
+      {
+        "source": "npm:@google-cloud/storage",
+        "target": "npm:abort-controller",
+        "type": "static"
+      },
+      {
+        "source": "npm:@google-cloud/storage",
+        "target": "npm:async-retry",
+        "type": "static"
+      },
+      {
+        "source": "npm:@google-cloud/storage",
+        "target": "npm:compressible",
+        "type": "static"
+      },
+      {
+        "source": "npm:@google-cloud/storage",
+        "target": "npm:duplexify",
+        "type": "static"
+      },
+      {
+        "source": "npm:@google-cloud/storage",
+        "target": "npm:ent",
+        "type": "static"
+      },
+      {
+        "source": "npm:@google-cloud/storage",
+        "target": "npm:fast-xml-parser",
+        "type": "static"
+      },
+      {
+        "source": "npm:@google-cloud/storage",
+        "target": "npm:gaxios",
+        "type": "static"
+      },
+      {
+        "source": "npm:@google-cloud/storage",
+        "target": "npm:google-auth-library",
+        "type": "static"
+      },
+      {
+        "source": "npm:@google-cloud/storage",
+        "target": "npm:mime",
+        "type": "static"
+      },
+      {
+        "source": "npm:@google-cloud/storage",
+        "target": "npm:mime-types",
+        "type": "static"
+      },
+      {
+        "source": "npm:@google-cloud/storage",
+        "target": "npm:p-limit",
+        "type": "static"
+      },
+      {
+        "source": "npm:@google-cloud/storage",
+        "target": "npm:retry-request",
+        "type": "static"
+      },
+      {
+        "source": "npm:@google-cloud/storage",
+        "target": "npm:teeny-request",
+        "type": "static"
+      },
+      {
+        "source": "npm:@google-cloud/storage",
+        "target": "npm:uuid@8.3.2",
+        "type": "static"
+      }
+    ],
+    "npm:@grpc/grpc-js@1.10.1": [
+      {
+        "source": "npm:@grpc/grpc-js@1.10.1",
+        "target": "npm:@grpc/proto-loader",
+        "type": "static"
+      },
+      {
+        "source": "npm:@grpc/grpc-js@1.10.1",
+        "target": "npm:@types/node",
         "type": "static"
       }
     ],
@@ -23049,6 +23919,11 @@
     "npm:@nestjs/common": [
       {
         "source": "npm:@nestjs/common",
+        "target": "npm:class-transformer",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nestjs/common",
         "target": "npm:class-validator",
         "type": "static"
       },
@@ -25664,6 +26539,28 @@
         "type": "static"
       }
     ],
+    "npm:@types/express@4.17.21": [
+      {
+        "source": "npm:@types/express@4.17.21",
+        "target": "npm:@types/body-parser",
+        "type": "static"
+      },
+      {
+        "source": "npm:@types/express@4.17.21",
+        "target": "npm:@types/express-serve-static-core",
+        "type": "static"
+      },
+      {
+        "source": "npm:@types/express@4.17.21",
+        "target": "npm:@types/qs",
+        "type": "static"
+      },
+      {
+        "source": "npm:@types/express@4.17.21",
+        "target": "npm:@types/serve-static",
+        "type": "static"
+      }
+    ],
     "npm:@types/graceful-fs": [
       {
         "source": "npm:@types/graceful-fs",
@@ -25721,6 +26618,13 @@
         "type": "static"
       }
     ],
+    "npm:@types/jsonwebtoken": [
+      {
+        "source": "npm:@types/jsonwebtoken",
+        "target": "npm:@types/node",
+        "type": "static"
+      }
+    ],
     "npm:@types/mongoose": [
       {
         "source": "npm:@types/mongoose",
@@ -25732,6 +26636,35 @@
       {
         "source": "npm:@types/morgan",
         "target": "npm:@types/node",
+        "type": "static"
+      }
+    ],
+    "npm:@types/node@20.11.19": [
+      {
+        "source": "npm:@types/node@20.11.19",
+        "target": "npm:undici-types",
+        "type": "static"
+      }
+    ],
+    "npm:@types/request": [
+      {
+        "source": "npm:@types/request",
+        "target": "npm:@types/caseless",
+        "type": "static"
+      },
+      {
+        "source": "npm:@types/request",
+        "target": "npm:@types/node",
+        "type": "static"
+      },
+      {
+        "source": "npm:@types/request",
+        "target": "npm:@types/tough-cookie",
+        "type": "static"
+      },
+      {
+        "source": "npm:@types/request",
+        "target": "npm:form-data@2.5.1",
         "type": "static"
       }
     ],
@@ -26578,6 +27511,13 @@
         "type": "static"
       }
     ],
+    "npm:abort-controller": [
+      {
+        "source": "npm:abort-controller",
+        "target": "npm:event-target-shim",
+        "type": "static"
+      }
+    ],
     "npm:accepts": [
       {
         "source": "npm:accepts",
@@ -26648,6 +27588,13 @@
     "npm:agent-base": [
       {
         "source": "npm:agent-base",
+        "target": "npm:debug",
+        "type": "static"
+      }
+    ],
+    "npm:agent-base@7.1.0": [
+      {
+        "source": "npm:agent-base@7.1.0",
         "target": "npm:debug",
         "type": "static"
       }
@@ -26826,6 +27773,13 @@
       {
         "source": "npm:asn1",
         "target": "npm:safer-buffer",
+        "type": "static"
+      }
+    ],
+    "npm:async-retry": [
+      {
+        "source": "npm:async-retry",
+        "target": "npm:retry",
         "type": "static"
       }
     ],
@@ -29005,6 +29959,28 @@
         "type": "static"
       }
     ],
+    "npm:duplexify": [
+      {
+        "source": "npm:duplexify",
+        "target": "npm:end-of-stream",
+        "type": "static"
+      },
+      {
+        "source": "npm:duplexify",
+        "target": "npm:inherits",
+        "type": "static"
+      },
+      {
+        "source": "npm:duplexify",
+        "target": "npm:readable-stream",
+        "type": "static"
+      },
+      {
+        "source": "npm:duplexify",
+        "target": "npm:stream-shift",
+        "type": "static"
+      }
+    ],
     "npm:ecc-jsbn": [
       {
         "source": "npm:ecc-jsbn",
@@ -29014,6 +29990,13 @@
       {
         "source": "npm:ecc-jsbn",
         "target": "npm:safer-buffer",
+        "type": "static"
+      }
+    ],
+    "npm:ecdsa-sig-formatter": [
+      {
+        "source": "npm:ecdsa-sig-formatter",
+        "target": "npm:safe-buffer",
         "type": "static"
       }
     ],
@@ -29925,6 +30908,13 @@
         "type": "static"
       }
     ],
+    "npm:fast-xml-parser": [
+      {
+        "source": "npm:fast-xml-parser",
+        "target": "npm:strnum",
+        "type": "static"
+      }
+    ],
     "npm:fastq": [
       {
         "source": "npm:fastq",
@@ -30071,6 +31061,58 @@
         "type": "static"
       }
     ],
+    "npm:firebase-admin": [
+      {
+        "source": "npm:firebase-admin",
+        "target": "npm:@fastify/busboy",
+        "type": "static"
+      },
+      {
+        "source": "npm:firebase-admin",
+        "target": "npm:@firebase/database-compat",
+        "type": "static"
+      },
+      {
+        "source": "npm:firebase-admin",
+        "target": "npm:@firebase/database-types",
+        "type": "static"
+      },
+      {
+        "source": "npm:firebase-admin",
+        "target": "npm:@types/node@20.11.19",
+        "type": "static"
+      },
+      {
+        "source": "npm:firebase-admin",
+        "target": "npm:jsonwebtoken",
+        "type": "static"
+      },
+      {
+        "source": "npm:firebase-admin",
+        "target": "npm:jwks-rsa",
+        "type": "static"
+      },
+      {
+        "source": "npm:firebase-admin",
+        "target": "npm:node-forge",
+        "type": "static"
+      },
+      {
+        "source": "npm:firebase-admin",
+        "target": "npm:uuid",
+        "type": "static"
+      },
+      {
+        "source": "npm:firebase-admin",
+        "target": "npm:@google-cloud/firestore",
+        "type": "static"
+      },
+      {
+        "source": "npm:firebase-admin",
+        "target": "npm:@google-cloud/storage",
+        "type": "static"
+      }
+    ],
     "npm:firebase": [
       {
         "source": "npm:firebase",
@@ -30119,12 +31161,12 @@
       },
       {
         "source": "npm:firebase",
-        "target": "npm:@firebase/database",
+        "target": "npm:@firebase/database@0.14.4",
         "type": "static"
       },
       {
         "source": "npm:firebase",
-        "target": "npm:@firebase/database-compat",
+        "target": "npm:@firebase/database-compat@0.3.4",
         "type": "static"
       },
       {
@@ -30199,7 +31241,7 @@
       },
       {
         "source": "npm:firebase",
-        "target": "npm:@firebase/util",
+        "target": "npm:@firebase/util@1.9.3",
         "type": "static"
       }
     ],
@@ -30319,6 +31361,23 @@
       },
       {
         "source": "npm:form-data@2.3.3",
+        "target": "npm:mime-types",
+        "type": "static"
+      }
+    ],
+    "npm:form-data@2.5.1": [
+      {
+        "source": "npm:form-data@2.5.1",
+        "target": "npm:asynckit",
+        "type": "static"
+      },
+      {
+        "source": "npm:form-data@2.5.1",
+        "target": "npm:combined-stream",
+        "type": "static"
+      },
+      {
+        "source": "npm:form-data@2.5.1",
         "target": "npm:mime-types",
         "type": "static"
       }
@@ -30466,6 +31525,40 @@
       {
         "source": "npm:gauge",
         "target": "npm:wide-align",
+        "type": "static"
+      }
+    ],
+    "npm:gaxios": [
+      {
+        "source": "npm:gaxios",
+        "target": "npm:extend",
+        "type": "static"
+      },
+      {
+        "source": "npm:gaxios",
+        "target": "npm:https-proxy-agent@7.0.4",
+        "type": "static"
+      },
+      {
+        "source": "npm:gaxios",
+        "target": "npm:is-stream",
+        "type": "static"
+      },
+      {
+        "source": "npm:gaxios",
+        "target": "npm:node-fetch",
+        "type": "static"
+      }
+    ],
+    "npm:gcp-metadata": [
+      {
+        "source": "npm:gcp-metadata",
+        "target": "npm:gaxios",
+        "type": "static"
+      },
+      {
+        "source": "npm:gcp-metadata",
+        "target": "npm:json-bigint",
         "type": "static"
       }
     ],
@@ -30722,10 +31815,116 @@
         "type": "static"
       }
     ],
+    "npm:google-auth-library": [
+      {
+        "source": "npm:google-auth-library",
+        "target": "npm:base64-js",
+        "type": "static"
+      },
+      {
+        "source": "npm:google-auth-library",
+        "target": "npm:ecdsa-sig-formatter",
+        "type": "static"
+      },
+      {
+        "source": "npm:google-auth-library",
+        "target": "npm:gaxios",
+        "type": "static"
+      },
+      {
+        "source": "npm:google-auth-library",
+        "target": "npm:gcp-metadata",
+        "type": "static"
+      },
+      {
+        "source": "npm:google-auth-library",
+        "target": "npm:gtoken",
+        "type": "static"
+      },
+      {
+        "source": "npm:google-auth-library",
+        "target": "npm:jws@4.0.0",
+        "type": "static"
+      }
+    ],
+    "npm:google-gax": [
+      {
+        "source": "npm:google-gax",
+        "target": "npm:@grpc/grpc-js@1.10.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:google-gax",
+        "target": "npm:@grpc/proto-loader",
+        "type": "static"
+      },
+      {
+        "source": "npm:google-gax",
+        "target": "npm:@types/long",
+        "type": "static"
+      },
+      {
+        "source": "npm:google-gax",
+        "target": "npm:abort-controller",
+        "type": "static"
+      },
+      {
+        "source": "npm:google-gax",
+        "target": "npm:duplexify",
+        "type": "static"
+      },
+      {
+        "source": "npm:google-gax",
+        "target": "npm:google-auth-library",
+        "type": "static"
+      },
+      {
+        "source": "npm:google-gax",
+        "target": "npm:node-fetch",
+        "type": "static"
+      },
+      {
+        "source": "npm:google-gax",
+        "target": "npm:object-hash@3.0.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:google-gax",
+        "target": "npm:proto3-json-serializer",
+        "type": "static"
+      },
+      {
+        "source": "npm:google-gax",
+        "target": "npm:protobufjs@7.2.6",
+        "type": "static"
+      },
+      {
+        "source": "npm:google-gax",
+        "target": "npm:retry-request",
+        "type": "static"
+      },
+      {
+        "source": "npm:google-gax",
+        "target": "npm:uuid@9.0.1",
+        "type": "static"
+      }
+    ],
     "npm:gopd": [
       {
         "source": "npm:gopd",
         "target": "npm:get-intrinsic",
+        "type": "static"
+      }
+    ],
+    "npm:gtoken": [
+      {
+        "source": "npm:gtoken",
+        "target": "npm:gaxios",
+        "type": "static"
+      },
+      {
+        "source": "npm:gtoken",
+        "target": "npm:jws@4.0.0",
         "type": "static"
       }
     ],
@@ -30973,7 +32172,7 @@
       },
       {
         "source": "npm:http-server",
-        "target": "npm:mime",
+        "target": "npm:mime@1.6.0",
         "type": "static"
       },
       {
@@ -31032,6 +32231,18 @@
       },
       {
         "source": "npm:https-proxy-agent",
+        "target": "npm:debug",
+        "type": "static"
+      }
+    ],
+    "npm:https-proxy-agent@7.0.4": [
+      {
+        "source": "npm:https-proxy-agent@7.0.4",
+        "target": "npm:agent-base@7.1.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:https-proxy-agent@7.0.4",
         "target": "npm:debug",
         "type": "static"
       }
@@ -32892,6 +34103,13 @@
         "type": "static"
       }
     ],
+    "npm:json-bigint": [
+      {
+        "source": "npm:json-bigint",
+        "target": "npm:bignumber.js",
+        "type": "static"
+      }
+    ],
     "npm:jsonc-eslint-parser": [
       {
         "source": "npm:jsonc-eslint-parser",
@@ -32933,6 +34151,58 @@
         "type": "static"
       }
     ],
+    "npm:jsonwebtoken": [
+      {
+        "source": "npm:jsonwebtoken",
+        "target": "npm:jws",
+        "type": "static"
+      },
+      {
+        "source": "npm:jsonwebtoken",
+        "target": "npm:lodash.includes",
+        "type": "static"
+      },
+      {
+        "source": "npm:jsonwebtoken",
+        "target": "npm:lodash.isboolean",
+        "type": "static"
+      },
+      {
+        "source": "npm:jsonwebtoken",
+        "target": "npm:lodash.isinteger",
+        "type": "static"
+      },
+      {
+        "source": "npm:jsonwebtoken",
+        "target": "npm:lodash.isnumber",
+        "type": "static"
+      },
+      {
+        "source": "npm:jsonwebtoken",
+        "target": "npm:lodash.isplainobject",
+        "type": "static"
+      },
+      {
+        "source": "npm:jsonwebtoken",
+        "target": "npm:lodash.isstring",
+        "type": "static"
+      },
+      {
+        "source": "npm:jsonwebtoken",
+        "target": "npm:lodash.once",
+        "type": "static"
+      },
+      {
+        "source": "npm:jsonwebtoken",
+        "target": "npm:ms",
+        "type": "static"
+      },
+      {
+        "source": "npm:jsonwebtoken",
+        "target": "npm:semver@7.5.4",
+        "type": "static"
+      }
+    ],
     "npm:jsprim": [
       {
         "source": "npm:jsprim",
@@ -32952,6 +34222,96 @@
       {
         "source": "npm:jsprim",
         "target": "npm:verror",
+        "type": "static"
+      }
+    ],
+    "npm:jwa": [
+      {
+        "source": "npm:jwa",
+        "target": "npm:buffer-equal-constant-time",
+        "type": "static"
+      },
+      {
+        "source": "npm:jwa",
+        "target": "npm:ecdsa-sig-formatter",
+        "type": "static"
+      },
+      {
+        "source": "npm:jwa",
+        "target": "npm:safe-buffer",
+        "type": "static"
+      }
+    ],
+    "npm:jwa@2.0.0": [
+      {
+        "source": "npm:jwa@2.0.0",
+        "target": "npm:buffer-equal-constant-time",
+        "type": "static"
+      },
+      {
+        "source": "npm:jwa@2.0.0",
+        "target": "npm:ecdsa-sig-formatter",
+        "type": "static"
+      },
+      {
+        "source": "npm:jwa@2.0.0",
+        "target": "npm:safe-buffer",
+        "type": "static"
+      }
+    ],
+    "npm:jwks-rsa": [
+      {
+        "source": "npm:jwks-rsa",
+        "target": "npm:@types/express@4.17.21",
+        "type": "static"
+      },
+      {
+        "source": "npm:jwks-rsa",
+        "target": "npm:@types/jsonwebtoken",
+        "type": "static"
+      },
+      {
+        "source": "npm:jwks-rsa",
+        "target": "npm:debug",
+        "type": "static"
+      },
+      {
+        "source": "npm:jwks-rsa",
+        "target": "npm:jose",
+        "type": "static"
+      },
+      {
+        "source": "npm:jwks-rsa",
+        "target": "npm:limiter",
+        "type": "static"
+      },
+      {
+        "source": "npm:jwks-rsa",
+        "target": "npm:lru-memoizer",
+        "type": "static"
+      }
+    ],
+    "npm:jws": [
+      {
+        "source": "npm:jws",
+        "target": "npm:jwa",
+        "type": "static"
+      },
+      {
+        "source": "npm:jws",
+        "target": "npm:safe-buffer",
+        "type": "static"
+      }
+    ],
+    "npm:jws@4.0.0": [
+      {
+        "source": "npm:jws@4.0.0",
+        "target": "npm:jwa@2.0.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:jws@4.0.0",
+        "target": "npm:safe-buffer",
         "type": "static"
       }
     ],
@@ -33034,7 +34394,7 @@
       },
       {
         "source": "npm:less",
-        "target": "npm:mime",
+        "target": "npm:mime@1.6.0",
         "type": "static"
       },
       {
@@ -33221,6 +34581,18 @@
         "type": "static"
       }
     ],
+    "npm:lru-cache@4.0.2": [
+      {
+        "source": "npm:lru-cache@4.0.2",
+        "target": "npm:pseudomap",
+        "type": "static"
+      },
+      {
+        "source": "npm:lru-cache@4.0.2",
+        "target": "npm:yallist@2.1.2",
+        "type": "static"
+      }
+    ],
     "npm:lru-cache@5.1.1": [
       {
         "source": "npm:lru-cache@5.1.1",
@@ -33232,6 +34604,18 @@
       {
         "source": "npm:lru-cache@6.0.0",
         "target": "npm:yallist",
+        "type": "static"
+      }
+    ],
+    "npm:lru-memoizer": [
+      {
+        "source": "npm:lru-memoizer",
+        "target": "npm:lodash.clonedeep",
+        "type": "static"
+      },
+      {
+        "source": "npm:lru-memoizer",
+        "target": "npm:lru-cache@4.0.2",
         "type": "static"
       }
     ],
@@ -35539,6 +36923,13 @@
         "type": "static"
       }
     ],
+    "npm:proto3-json-serializer": [
+      {
+        "source": "npm:proto3-json-serializer",
+        "target": "npm:protobufjs@7.2.6",
+        "type": "static"
+      }
+    ],
     "npm:protobufjs@6.11.3": [
       {
         "source": "npm:protobufjs@6.11.3",
@@ -35664,6 +37055,68 @@
       },
       {
         "source": "npm:protobufjs",
+        "target": "npm:long@5.2.3",
+        "type": "static"
+      }
+    ],
+    "npm:protobufjs@7.2.6": [
+      {
+        "source": "npm:protobufjs@7.2.6",
+        "target": "npm:@protobufjs/aspromise",
+        "type": "static"
+      },
+      {
+        "source": "npm:protobufjs@7.2.6",
+        "target": "npm:@protobufjs/base64",
+        "type": "static"
+      },
+      {
+        "source": "npm:protobufjs@7.2.6",
+        "target": "npm:@protobufjs/codegen",
+        "type": "static"
+      },
+      {
+        "source": "npm:protobufjs@7.2.6",
+        "target": "npm:@protobufjs/eventemitter",
+        "type": "static"
+      },
+      {
+        "source": "npm:protobufjs@7.2.6",
+        "target": "npm:@protobufjs/fetch",
+        "type": "static"
+      },
+      {
+        "source": "npm:protobufjs@7.2.6",
+        "target": "npm:@protobufjs/float",
+        "type": "static"
+      },
+      {
+        "source": "npm:protobufjs@7.2.6",
+        "target": "npm:@protobufjs/inquire",
+        "type": "static"
+      },
+      {
+        "source": "npm:protobufjs@7.2.6",
+        "target": "npm:@protobufjs/path",
+        "type": "static"
+      },
+      {
+        "source": "npm:protobufjs@7.2.6",
+        "target": "npm:@protobufjs/pool",
+        "type": "static"
+      },
+      {
+        "source": "npm:protobufjs@7.2.6",
+        "target": "npm:@protobufjs/utf8",
+        "type": "static"
+      },
+      {
+        "source": "npm:protobufjs@7.2.6",
+        "target": "npm:@types/node",
+        "type": "static"
+      },
+      {
+        "source": "npm:protobufjs@7.2.6",
         "target": "npm:long@5.2.3",
         "type": "static"
       }
@@ -36006,6 +37459,23 @@
         "type": "static"
       }
     ],
+    "npm:retry-request": [
+      {
+        "source": "npm:retry-request",
+        "target": "npm:@types/request",
+        "type": "static"
+      },
+      {
+        "source": "npm:retry-request",
+        "target": "npm:extend",
+        "type": "static"
+      },
+      {
+        "source": "npm:retry-request",
+        "target": "npm:teeny-request",
+        "type": "static"
+      }
+    ],
     "npm:rimraf": [
       {
         "source": "npm:rimraf",
@@ -36253,7 +37723,7 @@
       },
       {
         "source": "npm:send",
-        "target": "npm:mime",
+        "target": "npm:mime@1.6.0",
         "type": "static"
       },
       {
@@ -36721,6 +38191,13 @@
         "type": "static"
       }
     ],
+    "npm:stream-events": [
+      {
+        "source": "npm:stream-events",
+        "target": "npm:stubs",
+        "type": "static"
+      }
+    ],
     "npm:string-length": [
       {
         "source": "npm:string-length",
@@ -37143,6 +38620,33 @@
       {
         "source": "npm:tar@6.1.15",
         "target": "npm:yallist",
+        "type": "static"
+      }
+    ],
+    "npm:teeny-request": [
+      {
+        "source": "npm:teeny-request",
+        "target": "npm:http-proxy-agent",
+        "type": "static"
+      },
+      {
+        "source": "npm:teeny-request",
+        "target": "npm:https-proxy-agent",
+        "type": "static"
+      },
+      {
+        "source": "npm:teeny-request",
+        "target": "npm:node-fetch",
+        "type": "static"
+      },
+      {
+        "source": "npm:teeny-request",
+        "target": "npm:stream-events",
+        "type": "static"
+      },
+      {
+        "source": "npm:teeny-request",
+        "target": "npm:uuid",
         "type": "static"
       }
     ],
