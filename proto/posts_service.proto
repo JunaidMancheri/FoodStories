@@ -27,4 +27,5 @@ message CreatePostRequest {
 message UpdatePostMediaUrlsRequest {
   string postId = 0;
   repeated string mediaUrls = 1;
+  string thumbnailUrl = 2;
 }

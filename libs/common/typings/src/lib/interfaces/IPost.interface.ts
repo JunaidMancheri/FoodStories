@@ -4,6 +4,7 @@ export interface IPost {
   caption: string;
   mediaUrls: string[];
   createdAt: number;
+  thumbnailUrl: string;
   likesCount: number;
   commentsCount: number;
 }

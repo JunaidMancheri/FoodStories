@@ -14,13 +14,17 @@ import { Store } from '@ngrx/store';
 import { selectCurrentUserIdOrUsername } from '@food-stories/users-client/shared/app-init';
 import {
   Storage,
+  StorageReference,
   UploadMetadata,
+  UploadResult,
+  UploadTask,
   getDownloadURL,
   ref,
   uploadBytes,
 } from '@angular/fire/storage';
 import { Auth } from '@angular/fire/auth';
 import { REF_PATHS } from '@food-stories/users-client/shared/config';
+import { forkJoin, from, zip } from 'rxjs';
 @Component({
   selector: 'fs-create-post',
   standalone: true,
@@ -78,22 +82,27 @@ export class CreatePostDialogComponent implements OnInit {
     return item;
   }
 
-  sharePost() {
+    sharePost() {
 
-    const fileUploadPromises: Promise<string>[] = [];
+    const fileUploadPromises: Promise<UploadResult>[] = [];
+    const refPaths: StorageReference[] = [];
     this.createPostService
       .createPost(this.caption.value, this.userId)
-      .subscribe((res) => {
+      .subscribe( async (res) => {
         for (let i = 0; i < this.files.length; i++) {
           const refPath = ref(this.storage, REF_PATHS.getOriginalPostPath(res.id, res.userId, i));
-          const uploadTask = uploadBytes(refPath, this.files[i]);
-          uploadTask.then(() => fileUploadPromises.push(getDownloadURL(refPath)));
+          fileUploadPromises.push(uploadBytes(refPath, this.files[i]));
+          refPaths.push(refPath);
         }
 
-        Promise.all(fileUploadPromises).then((mediaUrls) => {
-            this.createPostService.updatePostMediaUrls(res.id, mediaUrls).subscribe(
-             () => this.dialogRef.close()
-            );
+        Promise.all(fileUploadPromises).then(() => {
+          zip(
+            from(Promise.all(refPaths.map(refs => getDownloadURL(refs)))), 
+            this.createPostService.getDownloadURLWithRetry(res.id, res.userId))
+            .subscribe(([mediaUrls, thumbnailUrl]) => {
+            this.createPostService.updatePostMediaUrls(res.id, mediaUrls, thumbnailUrl)
+            .subscribe(() => this.dialogRef.close());
+          })
         })
       });
 

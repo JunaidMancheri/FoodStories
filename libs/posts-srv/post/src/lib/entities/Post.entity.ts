@@ -7,6 +7,7 @@ export interface PostProps {
   id?: string;
   userId: string;
   caption?: string;
+  thumbnailUrl?: string;
   mediaUrls?: string[];
   createdAt?: number;
   likesCount?: number;
@@ -26,12 +27,14 @@ export function makePostEntity(logger: ILogger): PostClass {
     public likesCount: number;
     public commentsCount: number;
     public createdAt: number;
+    public thumbnailUrl: string;
     
 
     constructor(props: PostProps) {
       this.id = props.id || uuidV4()
       this.caption = props.caption || '';
       this.mediaUrls = props.mediaUrls || [];
+      this.thumbnailUrl = props.thumbnailUrl || '';
       this.likesCount = props.likesCount || 0;
       this.commentsCount = props.commentsCount || 0;
       this.createdAt = props.createdAt || Date.now();

@@ -20,5 +20,6 @@ export interface ICreatePostRequest {
 
 export interface IUpdatePostMediaUrlsRequest {
   postId: string
+  thumbnailUrl: string
   mediaUrls: string[]
 }

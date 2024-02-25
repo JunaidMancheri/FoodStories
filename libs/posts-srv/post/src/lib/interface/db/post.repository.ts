@@ -14,7 +14,7 @@ implements ICreatePostRepo, IUpdateMediaUrlsRepo {
   }
 
    async updateMediaUrls(data: IUpdatePostMediaUrlsRequest): Promise<void> {
-      await this.postModel.findByIdAndUpdate(data.postId, { mediaUrls: data.mediaUrls});
+      await this.postModel.findByIdAndUpdate(data.postId, { mediaUrls: data.mediaUrls, thumbnailUrl: data.thumbnailUrl});
   }
 }
 

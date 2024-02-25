@@ -7,6 +7,7 @@ export interface IPostDoc extends Document {
   likesCount: number;
   commentsCount: number;
   createdAt: number;
+  thumbnailUrl: string;
   mediaUrls: string[];
 }
 
@@ -19,6 +20,7 @@ const postSchema = new Schema<IPostDoc, Model<IPostDoc>>({
   userId: {
     type: String,
   },
+  thumbnailUrl: String,
   caption: String,
   likesCount: Number,
   commentsCount: Number,
