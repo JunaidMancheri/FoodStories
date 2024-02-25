@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit, ViewChild, inject } from '@angular/core';
+import { Component, OnInit, ViewChild, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
@@ -14,12 +14,13 @@ import { Store } from '@ngrx/store';
 import { selectCurrentUserIdOrUsername } from '@food-stories/users-client/shared/app-init';
 import {
   Storage,
+  UploadMetadata,
   getDownloadURL,
   ref,
   uploadBytes,
-  uploadBytesResumable,
 } from '@angular/fire/storage';
 import { Auth } from '@angular/fire/auth';
+import { REF_PATHS } from '@food-stories/users-client/shared/config';
 @Component({
   selector: 'fs-create-post',
   standalone: true,
@@ -83,21 +84,16 @@ export class CreatePostDialogComponent implements OnInit {
     this.createPostService
       .createPost(this.caption.value, this.userId)
       .subscribe((res) => {
-        console.log(res);
-        this.postId = res.id;
         for (let i = 0; i < this.files.length; i++) {
-          const refPath = ref(this.storage, 'posts/' + res.id);
+          const refPath = ref(this.storage, REF_PATHS.getOriginalPostPath(res.id, res.userId, i));
           const uploadTask = uploadBytes(refPath, this.files[i]);
           uploadTask.then(() => fileUploadPromises.push(getDownloadURL(refPath)));
         }
 
-        Promise.all(fileUploadPromises).then((res) => {
-          res.forEach((url) => this.mediaUrls.push(url));
-          if (this.postId) {
-            this.createPostService.updatePostMediaUrls(this.postId, this.mediaUrls).subscribe(
+        Promise.all(fileUploadPromises).then((mediaUrls) => {
+            this.createPostService.updatePostMediaUrls(res.id, mediaUrls).subscribe(
              () => this.dialogRef.close()
             );
-          }
         })
       });
 
