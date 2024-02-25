@@ -13,17 +13,15 @@ export class AuthGuard implements CanActivate {
 
   async canActivate(context: ExecutionContext): Promise<boolean> {
     const request = context.switchToHttp().getRequest<Request>();
-    const authToken = request.headers.authorization;
-    console.log(authToken, 'authToken');
+    const authToken = request.headers.authorization?.split(' ')[1];
     if (!authToken) {
       return false;
     }
 
     try {
-      const decodedToken = await this.firebaseAdmin
+      await this.firebaseAdmin
         .auth()
         .verifyIdToken(authToken);
-      console.log(decodedToken);
       return true;
     } catch (error) {
       return false;

@@ -61,6 +61,9 @@
       "@food-stories/users-client/auth/ui/username-dialog-input": [
         "libs/users-client/auth/ui/username-dialog-input/src/index.ts"
       ],
+      "@food-stories/users-client/auth/utils": [
+        "libs/users-client/auth/utils/src/index.ts"
+      ],
       "@food-stories/users-client/feed/feature": [
         "libs/users-client/feed/feature/src/index.ts"
       ],

@@ -18,6 +18,7 @@ import { Auth } from '@angular/fire/auth';
 import { Store } from '@ngrx/store';
 import { ProfileHttpService } from '@food-stories/users-client/shared/data-access';
 import { AppEffects, appInitFactory, appReducer } from '@food-stories/users-client/shared/app-init';
+import { authInterceptorProvider } from '@food-stories/users-client/auth/utils';
 
 
 @NgModule({
@@ -51,6 +52,7 @@ import { AppEffects, appInitFactory, appReducer } from '@food-stories/users-clie
       multi: true,
       deps: [Auth, Store]
     },
+    authInterceptorProvider,
     ProfileHttpService
   ],
   bootstrap: [AppComponent],

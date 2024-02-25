@@ -29,6 +29,7 @@ export class ApiGatewayUsersController {
   }
 
   @Get('email/:email')
+  
   getCurrentUserData(@Param('email') email: string) {
     return  this.apiGatewayUsersService.getCurrentUserData({ email });    
   }
