@@ -5,3 +5,6 @@ export * from './lib/dto/editProfileData.dto';
 
 
 export * from './lib/interfaces/IPost.interface';
+
+export *  from './lib/interfaces/ILike.interface';
+export *  from './lib/proto/likesService';

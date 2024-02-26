@@ -34,6 +34,7 @@
       "@food-stories/common/utils": ["libs/common/utils/src/index.ts"],
       "@food-stories/posts-srv//post": ["libs/posts-srv/post/src/index.ts"],
       "@food-stories/posts-srv/core": ["libs/posts-srv/core/src/index.ts"],
+      "@food-stories/posts-srv/like": ["libs/posts-srv/like/src/index.ts"],
       "@food-stories/shared-icons": [
         "libs/users-client/shared/icons/src/index.ts"
       ],

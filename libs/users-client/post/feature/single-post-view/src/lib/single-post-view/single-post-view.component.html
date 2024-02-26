@@ -114,7 +114,8 @@
 
     <div class="Actions flex  h-12">
       <div class="like w-10  flex items-center justify-center">
-        <mat-icon class="material-symbols-outlined">favorite</mat-icon>
+
+        <mat-icon (click)="toggleLike(iconEl)" #iconEl class="icon" [color]="isLiked ? 'warn': ''" [ngClass]="{'material-symbols-outlined': !isLiked}">favorite</mat-icon>
 
       </div>
 

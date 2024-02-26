@@ -2,7 +2,7 @@ import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MAT_DIALOG_DATA, MatDialogModule } from '@angular/material/dialog';
 import { MatDividerModule } from '@angular/material/divider';
-import { MatIconModule } from '@angular/material/icon'
+import { MatIcon, MatIconModule } from '@angular/material/icon'
 import { MatFormFieldModule } from '@angular/material/form-field'
 import { MatInputModule } from '@angular/material/input'
 import { IPost } from '@food-stories/common/typings';
@@ -16,4 +16,14 @@ import { IPost } from '@food-stories/common/typings';
 })
 export class SinglePostViewComponent {
   data: {post: IPost, postUser: {DPURL: string, username: string}} = inject(MAT_DIALOG_DATA);
+  isLiked = false;
+
+  toggleLike(matIcon: MatIcon) {
+    this.isLiked = !this.isLiked;
+    const icon = matIcon._elementRef.nativeElement as HTMLElement;
+    icon.classList.add('animate-icon-click')
+    setTimeout(() => {
+      icon.classList.remove('animate-icon-click');
+    }, 500)
+  }
 }

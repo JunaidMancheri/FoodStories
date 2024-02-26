@@ -19,6 +19,11 @@
             "input": "proto/",
             "glob": "posts_service.proto",
             "output": "proto"
+          },
+          {
+            "input": "proto/",
+            "glob": "likes_service.proto",
+            "output": "proto"
           }
         ],
         "isolatedConfig": true,
