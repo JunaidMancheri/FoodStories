@@ -1,10 +1,10 @@
 /* eslint-disable */
 export default {
-  displayName: 'users-client-profile-ui-posts',
+  displayName: 'users-client-post-ui-posts-grid',
   preset: '../../../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   coverageDirectory:
-    '../../../../../coverage/libs/users-client/profile/ui/posts',
+    '../../../../../coverage/libs/users-client/post/ui/posts-grid',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',

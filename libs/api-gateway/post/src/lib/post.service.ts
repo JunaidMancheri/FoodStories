@@ -1,5 +1,5 @@
 import { Inject, Injectable, OnModuleInit } from '@nestjs/common';
-import { ICreatePostRequest, IPostsServiceClient, IUpdatePostMediaUrlsRequest } from '@food-stories/common/typings';
+import { ICreatePostRequest, IGetUsersPostsRequest, IPostsServiceClient, IUpdatePostMediaUrlsRequest } from '@food-stories/common/typings';
 import { TOKEN } from './token';
 import { ClientGrpc } from '@nestjs/microservices';
 import { PostsAppConfig } from './config';
@@ -21,5 +21,9 @@ export class ApiGatewayPostService implements OnModuleInit {
 
   updatPostMediaUrls(data: IUpdatePostMediaUrlsRequest) {
     return  handleGrpcError(this.postsService.updatePostMediaUrls(data));
+  }
+
+  getUsersPosts(data: IGetUsersPostsRequest) {
+    return handleGrpcError(this.postsService.getUsersPosts(data));
   }
 }

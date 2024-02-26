@@ -4,6 +4,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { RouterModule } from '@angular/router';
 import { MatDialog, MatDialogModule} from '@angular/material/dialog';
 import { CreatePostDialogComponent } from '@food-stories/users-client/post/feature/create-post'
+import { Store } from '@ngrx/store';
+import { selectCurrentUserIdOrUsername } from '@food-stories/users-client/shared/app-init';
+import { map } from 'rxjs';
 @Component({
   selector: 'fs-sidebar-layout',
   standalone: true,
@@ -13,7 +16,13 @@ import { CreatePostDialogComponent } from '@food-stories/users-client/post/featu
 })
 export class SidebarLayoutComponent {
 
-  constructor(private matDialog: MatDialog) {}
+  constructor(private matDialog: MatDialog, private store: Store) {}
+  
+  idOrUsername$ = this.store.select(selectCurrentUserIdOrUsername);
+  
+  get profilePageLink() {
+    return this.idOrUsername$.pipe(map(idOrUsername => `/${idOrUsername.username}`))
+  }
 
   openCreateNewPostDialogBox() {
     this.matDialog.open(CreatePostDialogComponent, {panelClass: ''})

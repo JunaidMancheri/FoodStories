@@ -11,4 +11,7 @@ export const API_ENDPOINTS = {
   // Posts
   CREATE_POST: `${BASE_URL}/posts/`,
   UPDATE_MEDIA_URLS: `${BASE_URL}/posts/mediaUrls/`,
+  Posts: {
+    getUsersPosts: (userId: string) => `${BASE_URL}/posts/user/${userId}`,
+  }
 }

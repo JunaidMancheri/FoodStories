@@ -15,6 +15,8 @@ import {
 import { REF_PATHS } from '@food-stories/users-client/shared/config';
 import { BioSectionService } from '../bio-section.service';
 import { FormatedBioModule } from '@food-stories/users-client/shared/utils';
+import { Store } from '@ngrx/store';
+import { AppActions } from '@food-stories/users-client/shared/app-init';
 
 @Component({
   selector: 'fs-bio-section',
@@ -31,7 +33,8 @@ export class BioSectionComponent implements OnChanges {
     private dialog: MatDialog,
     private confirmDialogService: ConfirmDialogService,
     private bioSectionService: BioSectionService,
-    private profileStore: ProfileStore
+    private profileStore: ProfileStore,
+    private store: Store
   ) {}
 
   ngOnChanges(changes: SimpleChanges): void {
@@ -104,6 +107,7 @@ export class BioSectionComponent implements OnChanges {
       .subscribe((confirmed) => {
         if (confirmed) {
           this.auth.signOut();
+          this.store.dispatch(AppActions.logoutUser());
           this.router.navigateByUrl('/auth');
         }
       });

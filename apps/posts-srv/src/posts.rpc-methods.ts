@@ -1,7 +1,7 @@
 import { IPostsServiceServer } from '@food-stories/common/typings';
 import  { makeUnaryCallHandler} from '@food-stories/common/grpc';
 import { Logger, logger } from '@food-stories/posts-srv/core';
-import { makeCreatePostHandler, makeUpdateMediaUrlsHandler} from '@food-stories/posts-srv//post'
+import { makeCreatePostHandler, makeGetUsersPostsHandler, makeUpdateMediaUrlsHandler} from '@food-stories/posts-srv//post'
 
 
 
@@ -9,6 +9,7 @@ import { makeCreatePostHandler, makeUpdateMediaUrlsHandler} from '@food-stories/
 export const PostsServiceImpl : IPostsServiceServer = {
   createPost: wrapHandler(makeCreatePostHandler),
   updatePostMediaUrls: wrapHandler(makeUpdateMediaUrlsHandler),
+  getUsersPosts: wrapHandler(makeGetUsersPostsHandler)
 }
 
 

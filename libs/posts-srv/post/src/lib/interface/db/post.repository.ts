@@ -4,11 +4,17 @@ import { IPost } from "../../entities";
 import { IPostDoc, postModel } from "./post.model";
 import { IUpdateMediaUrlsRepo } from "../../application/interfaces/repository/updateMediaUrls.interface";
 import { IUpdatePostMediaUrlsRequest } from "@food-stories/common/typings";
+import { IGetPostsByUserIdRepo } from "../../application/interfaces/repository/getPostsByUserId.interface";
+import { mapDocumentsToArrayOfPostEntities } from "./mapper.helper";
 
 export class PostRepository 
-implements ICreatePostRepo, IUpdateMediaUrlsRepo {
+implements ICreatePostRepo, IUpdateMediaUrlsRepo, IGetPostsByUserIdRepo {
 
   constructor(private postModel: Model<IPostDoc>){}
+  async getPostsByUserId(userId: string): Promise<IPost[]> {
+    const postDocs = await this.postModel.find({userId}).sort({createdAt: -1});
+    return mapDocumentsToArrayOfPostEntities(postDocs);
+  }
   async createPost(postDto: IPost): Promise<void> {
       await this.postModel.create(postDto);
   }

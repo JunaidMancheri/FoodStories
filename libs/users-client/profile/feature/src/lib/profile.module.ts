@@ -5,11 +5,11 @@ import { ProfileComponent } from './profile.component';
 import { MatIconModule } from '@angular/material/icon';
 import { BioSectionComponent } from '@food-stories/users-client/profile/ui/bio-section';
 import { HighlightsComponent } from '@food-stories/users-client/profile/ui/highlights';
-import { PostsComponent } from '@food-stories/users-client/profile/ui/posts';
+import { PostsComponent } from '@food-stories/users-client/post/ui/posts-grid';
 import { ProfileStore } from '@food-stories/users-client/profile/data-access';
 import { ProfileHttpService } from '@food-stories/users-client/shared/data-access';
 import { ProfileService } from './profile.service';
-import { EditProfileDialogComponent } from '@food-stories/users-client/profile/ui/edit-profile-dialog'
+import { EditProfileDialogComponent } from '@food-stories/users-client/profile/ui/edit-profile-dialog';
 import { MatTabsModule } from '@angular/material/tabs';
 
 @NgModule({

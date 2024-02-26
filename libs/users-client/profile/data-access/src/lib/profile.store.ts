@@ -1,4 +1,4 @@
-import { EditProfileData, IUser } from '@food-stories/common/typings';
+import { EditProfileData, IPost, IUser } from '@food-stories/common/typings';
 import { ComponentStore } from '@ngrx/component-store';
 import { EMPTY, Observable, catchError, map, switchMap } from 'rxjs';
 import { ProfileHttpService } from '@food-stories/users-client/shared/data-access';
@@ -6,24 +6,28 @@ import { Injectable } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { AppActions } from '@food-stories/users-client/shared/app-init';
 import { Location } from '@angular/common';
+import { ProfileStoreService } from './profile-store.service';
 
 export interface ProfileState {
   user: IUser;
+  posts: IPost[];
 }
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ProfileStore extends ComponentStore<ProfileState> {
   constructor(
     private http: ProfileHttpService,
     private store: Store,
     private location: Location,
+    private profileStoreService: ProfileStoreService
   ) {
-    super({ user: {} as IUser });
+    super({ user: {} as IUser, posts: [] as IPost[] });
   }
 
   readonly user$ = this.select((state) => state.user);
+  readonly posts$ = this.select((state) => state.posts);
 
   readonly fetchUserDetails = this.effect((username$: Observable<string>) => {
     return username$.pipe(
@@ -68,8 +72,29 @@ export class ProfileStore extends ComponentStore<ProfileState> {
     })
   );
 
-  readonly loadUser = this.updater((state, user: IUser) => ({
+  readonly fetchUsersPosts = this.effect((userId$: Observable<string>) => {
+    return userId$.pipe(
+      switchMap((userId) =>
+        this.profileStoreService.getUsersPosts(userId).pipe(
+          map((posts) => this.loadPosts(posts)),
+          catchError(() => EMPTY)
+        )
+      )
+    );
+  });
+
+  readonly loadPosts = this.updater((state, posts: IPost[]) => ({
     ...state,
-    user,
+    posts,
   }));
+
+  readonly loadUser = this.updater(
+    (state, user: IUser) => (
+      this.fetchUsersPosts(user.id),
+      {
+        ...state,
+        user,
+      }
+    )
+  );
 }

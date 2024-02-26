@@ -15,16 +15,14 @@ import { selectCurrentUserIdOrUsername } from '@food-stories/users-client/shared
 import {
   Storage,
   StorageReference,
-  UploadMetadata,
   UploadResult,
-  UploadTask,
   getDownloadURL,
   ref,
   uploadBytes,
 } from '@angular/fire/storage';
 import { Auth } from '@angular/fire/auth';
 import { REF_PATHS } from '@food-stories/users-client/shared/config';
-import { forkJoin, from, zip } from 'rxjs';
+import { from, zip } from 'rxjs';
 @Component({
   selector: 'fs-create-post',
   standalone: true,

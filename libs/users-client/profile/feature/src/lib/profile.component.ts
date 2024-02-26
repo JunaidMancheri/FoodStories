@@ -10,6 +10,7 @@ import { ActivatedRoute } from '@angular/router';
 export class ProfileComponent implements OnInit {
   currUser$ = this.profileStore.user$;
   isOwnProfile$ = this.profileService.isOwnProfile$;
+  posts$ = this.profileStore.posts$;
 
   constructor(
     private profileStore: ProfileStore,

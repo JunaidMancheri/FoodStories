@@ -15,5 +15,6 @@ export const initialState:  AppState = {
 export const appReducer = createReducer(
   initialState,
   on(AppActions.loadUserDetails, (state) => {return state}),
-  on(AppActions.loadUserDetailsSuccess,( state, props) =>  ({...state,currentUser: props}))
+  on(AppActions.loadUserDetailsSuccess,( state, props) =>  ({...state,currentUser: props})),
+  on(AppActions.logoutUser, () => ({currentUser: {} as IUser} ) )
 )

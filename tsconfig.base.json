@@ -82,6 +82,12 @@
       "@food-stories/users-client/post/ui/create-post-stepper": [
         "libs/users-client/post/ui/create-post-stepper/src/index.ts"
       ],
+      "@food-stories/users-client/post/ui/posts-grid": [
+        "libs/users-client/post/ui/posts-grid/src/index.ts"
+      ],
+      "@food-stories/users-client/post/ui/posts-grid-item": [
+        "libs/users-client/post/ui/posts-grid-item/src/index.ts"
+      ],
       "@food-stories/users-client/profile/data-access": [
         "libs/users-client/profile/data-access/src/index.ts"
       ],
@@ -96,9 +102,6 @@
       ],
       "@food-stories/users-client/profile/ui/highlights": [
         "libs/users-client/profile/ui/highlights/src/index.ts"
-      ],
-      "@food-stories/users-client/profile/ui/posts": [
-        "libs/users-client/profile/ui/posts/src/index.ts"
       ],
       "@food-stories/users-client/shared": [
         "libs/users-client/shared/src/index.ts"

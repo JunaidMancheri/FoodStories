@@ -1,7 +1,8 @@
-import { Body, Controller, Param, Post, Put, UseGuards } from '@nestjs/common';
+import { Body, Controller, Get, Param, ParseUUIDPipe, Post, Put, UseGuards } from '@nestjs/common';
 import { ApiGatewayPostService } from './post.service';
 import { IsNotEmpty } from 'class-validator';
 import { AuthGuard } from '@food-stories/api-gateway/common';
+import { map } from 'rxjs';
 
 export class CreatePostDto {
   @IsNotEmpty()
@@ -13,6 +14,13 @@ export class CreatePostDto {
 @UseGuards(AuthGuard)
 export class ApiGatewayPostController {
   constructor(private apiGatewayPostService: ApiGatewayPostService) {}
+
+
+
+  @Get('/user/:userId')
+  getUsersPosts(@Param('userId', ParseUUIDPipe) userId: string) {
+    return this.apiGatewayPostService.getUsersPosts({userId}).pipe(map(data => data.posts))
+  }
 
   @Post()
   createPost(@Body() createPostDto: CreatePostDto) {

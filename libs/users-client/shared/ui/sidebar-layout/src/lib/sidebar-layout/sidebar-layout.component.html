@@ -46,7 +46,7 @@
    </button>
 
   
-   <a routerLink="/jithu_jamshed">
+   <a [routerLink]="profilePageLink | async">
     <div class="home flex items-center h-8 space-x-3">
       <mat-icon class="material-symbols-outlined">person</mat-icon>
       <span class="text-lg">Profile</span>
