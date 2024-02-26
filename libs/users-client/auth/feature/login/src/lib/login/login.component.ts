@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { AuthService } from '@food-stories/users-client/auth/data-access';
 import { NotificationService } from '@food-stories/users-client/auth/ui/services';
-import { sendPasswordResetEmail } from '@angular/fire/auth';
 
 @Component({
   selector: 'fs-login',

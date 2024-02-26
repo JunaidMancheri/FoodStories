@@ -79,6 +79,9 @@
       "@food-stories/users-client/post/feature/create-post": [
         "libs/users-client/post/feature/create-post/src/index.ts"
       ],
+      "@food-stories/users-client/post/feature/single-post-view": [
+        "libs/users-client/post/feature/single-post-view/src/index.ts"
+      ],
       "@food-stories/users-client/post/ui/create-post-stepper": [
         "libs/users-client/post/ui/create-post-stepper/src/index.ts"
       ],

@@ -12,7 +12,7 @@
               <mat-icon class="example-tab-icon">grid_view</mat-icon>
             </ng-template>
             <div class="posts-section mb-16 md:mb-0  ">
-              <fs-posts [posts]="(posts$ | async) || []"></fs-posts>
+              <fs-posts-grid [currUser]="currUser$ | async" [posts]="(posts$ | async) || []"></fs-posts-grid>
             </div>
           </mat-tab>
         

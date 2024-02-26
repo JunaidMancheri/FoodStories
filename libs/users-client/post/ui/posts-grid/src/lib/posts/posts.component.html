@@ -3,7 +3,7 @@
 
   <div *ngFor="let chunk of slicedPosts" class="row flex h-36 md:h-[20rem] w-full">
     <ng-container *ngFor="let post of chunk">
-       <fs-posts-grid-item class="p-1 w-2/6" [post]="post"></fs-posts-grid-item>
+       <fs-posts-grid-item (click)="openPostSingleView(post)" class="p-1 w-2/6 hover:cursor-pointer" [post]="post"></fs-posts-grid-item>
     </ng-container>
   </div>
 
