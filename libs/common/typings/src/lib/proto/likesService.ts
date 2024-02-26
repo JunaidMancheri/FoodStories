@@ -3,9 +3,9 @@ import { Observable } from "rxjs";
 import { ILike } from "../interfaces/ILike.interface";
 
 export interface ILikesServiceClient {
-  likeAPost(request: ILikeOrUnlikeAPostRequest, metadata: Metadata): Observable<void>;
-  unlikeAPost(request:ILikeOrUnlikeAPostRequest , metadata: Metadata): Observable<void>;
-  isPostLiked(request: ILikeOrUnlikeAPostRequest, metadata: Metadata): Observable<IIsPostLikedResponse>;
+  likeAPost(request: ILikeOrUnlikeAPostRequest, metadata?: Metadata): Observable<void>;
+  unlikeAPost(request:ILikeOrUnlikeAPostRequest , metadata?: Metadata): Observable<void>;
+  isPostLiked(request: ILikeOrUnlikeAPostRequest, metadata?: Metadata): Observable<IIsPostLikedResponse>;
 
 
 }

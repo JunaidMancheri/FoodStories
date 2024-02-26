@@ -1,0 +1,3 @@
+export enum TOKEN {
+  LIKES_PACKAGE ='LIKES_PACKAGE'
+}

@@ -22,6 +22,7 @@
       "@food-stories/api-gateway/core/firebase-admin": [
         "libs/api-gateway/core/firebase-admin/src/index.ts"
       ],
+      "@food-stories/api-gateway/like": ["libs/api-gateway/like/src/index.ts"],
       "@food-stories/api-gateway/post": ["libs/api-gateway/post/src/index.ts"],
       "@food-stories/api-gateway/users": [
         "libs/api-gateway/users/src/index.ts"
