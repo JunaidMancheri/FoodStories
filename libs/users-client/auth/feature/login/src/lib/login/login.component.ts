@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { AuthService } from '@food-stories/users-client/auth/data-access';
 import { NotificationService } from '@food-stories/users-client/auth/ui/services';
+import { sendPasswordResetEmail } from '@angular/fire/auth';
 
 @Component({
   selector: 'fs-login',
@@ -61,5 +62,17 @@ export class LoginComponent {
         this.notificationService.openSnackBar('This account is not linked with this provider');
     }
     })
+  }
+
+  startForgotPassword(form: NgForm) {
+    const emailErrors = form.controls['email'].errors;
+    if (emailErrors) {
+      if (emailErrors['required']) {
+        return this.notificationService.openSnackBar('Email is required');
+      } else {
+        return this.notificationService.openSnackBar('Please enter a valid email');
+      }
+    }
+    this.authService.sendPasswordResetMail(form.controls['email'].value);
   }
 }

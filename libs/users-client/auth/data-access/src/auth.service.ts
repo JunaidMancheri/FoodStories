@@ -8,6 +8,7 @@ import {
   createUserWithEmailAndPassword,
   deleteUser,
   sendEmailVerification,
+  sendPasswordResetEmail,
   signInWithEmailAndPassword,
   signInWithPopup,
 } from '@angular/fire/auth';
@@ -38,6 +39,12 @@ export class AuthService {
     return this.httpService
       .checkUserNameAvailability(username)
       .pipe(map((response) => response.available));
+  }
+
+  sendPasswordResetMail(email: string) {
+    sendPasswordResetEmail(this.firebaseAuth, email).then(() => {
+      this.notificiationService.openDialog('A password reset email has been sent, You can change your password from there!')
+    })
   }
 
   async registerWithEmailAndPassword(userData: UserData) {

@@ -34,6 +34,9 @@
           minlength="6"
            type="password" id="password" placeholder="******" class="border p-2 rounded-lg w-full h-8" name="password">
         </div>
+        <div class=" w-full pr-5 forgot-password flex justify-end">
+          <p><button type="button" (click)="startForgotPassword(loginForm)" class="text-blue-500">Forgot password?</button></p>
+        </div>
 
 
       <button type="submit" class="w-3/6 h-10  rounded-lg bg-opacity-100 bg-blue-600  text-white">Explore</button>
@@ -55,6 +58,7 @@
       </div>
 
       <p>Never been here? <a class="text-blue-400" routerLink="/auth/register">Join us</a></p>
+      
 
 
 
