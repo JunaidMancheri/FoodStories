@@ -5,7 +5,7 @@ package likes_service.v1;
 service LikesService {
   rpc likeAPost(LikeOrUnlikeAPostRequest) returns (EMPTY) {}
   rpc unlikeAPost(LikeOrUnlikeAPostRequest) returns (EMPTY) {}
-  rpc isPostLiked(LikeOrUnlikeAPostRequest) returns (EMPTY) {}
+  rpc isPostLiked(LikeOrUnlikeAPostRequest) returns (IsPostLikedResponse) {}
 }
 
 
