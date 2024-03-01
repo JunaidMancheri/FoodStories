@@ -1,6 +1,6 @@
 import { Metadata, handleUnaryCall } from "@grpc/grpc-js";
 import { Observable } from "rxjs";
-import { ILike } from "../interfaces/ILike.interface";
+
 
 export interface ILikesServiceClient {
   likeAPost(request: ILikeOrUnlikeAPostRequest, metadata?: Metadata): Observable<void>;
@@ -16,6 +16,8 @@ export interface ILikesServiceServer {
   isPostLiked: handleUnaryCall<ILikeOrUnlikeAPostRequest,IIsPostLikedResponse>
 }
 
+
+
 export  interface IIsPostLikedResponse {
   isLiked: boolean;
 }
@@ -23,5 +25,5 @@ export  interface IIsPostLikedResponse {
 
 export interface ILikeOrUnlikeAPostRequest {
   userId: string
-  likedOnId: string
+  postId: string
 }

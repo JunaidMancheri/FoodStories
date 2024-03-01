@@ -6,18 +6,20 @@ import { tap } from 'rxjs';
 export class ApiGatewayLikeController {
 
   constructor(private likesService: ApiGatewayLikeService) {}
-  @Post('/:EntityId')
-  likeAnEntity(@Param('EntityId') postId: string, @Body() body: {userId: string}) {
-    return  this.likesService.likeAPost({likedOnId: postId, userId:  body.userId})
+  @Post('/:postId')
+  likeAPost(@Param('postId') postId: string, @Body() body: {userId: string}) {
+    return  this.likesService.likeAPost({ postId, userId:  body.userId})
   }
 
-  @Delete('/:EntityId')
-  unlikeAnEntity(@Param('EntityId') postId: string, @Body() body: {userId: string}) {
-    return  this.likesService.unLikeAPost({likedOnId: postId, userId:  body.userId})
+  @Delete('/:postId')
+  unlikeAPost(@Param('postId') postId: string, @Body() body: {userId: string}) {
+    return  this.likesService.unLikeAPost({ postId, userId:  body.userId})
   }
 
-  @Get('/liked/:EntityId')
-  isLiked(@Query() query: {userId: string}, @Param('EntityId') likedOnId: string) {
-    return this.likesService.isPostLiked({userId: query.userId, likedOnId}).pipe(tap(res => console.log(res)));
+  @Get('/liked/:postId')
+  isPostLiked(@Query() query: {userId: string}, @Param('EntityId') postId: string) {
+    return this.likesService.isPostLiked({userId: query.userId, postId}).pipe(tap(res => console.log(res)));
   }
+
+
 }

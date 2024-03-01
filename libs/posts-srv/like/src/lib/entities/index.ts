@@ -1,6 +1,10 @@
-import { Logger } from "@food-stories/posts-srv/core";
-import { makeLikeEntity, LikeProps } from "./Like.entity";
-import { ILike } from "@food-stories/common/typings";
+import { LikesLogger } from "@food-stories/posts-srv/core";
+import { makePostLikeEntity, PostLikeProps } from "./PostLike.entity";
+import { makeCommentLikeEntity, CommentLIkeProps } from "./CommentLike.entity";
 
-const Like  = makeLikeEntity(new Logger('Entity: Like'));
-export { Like, LikeProps, ILike}
+const PostLike  = makePostLikeEntity(new LikesLogger('Entity: PostLike'));
+
+const CommentLike = makeCommentLikeEntity(new LikesLogger('Entity: CommentLike'));
+
+export { PostLike, PostLikeProps, CommentLike, CommentLIkeProps}
+

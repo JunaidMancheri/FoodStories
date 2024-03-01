@@ -8,3 +8,5 @@ export * from './lib/interfaces/IPost.interface';
 
 export *  from './lib/interfaces/ILike.interface';
 export *  from './lib/proto/likesService';
+
+export * from './lib/interfaces/IComment.interface';

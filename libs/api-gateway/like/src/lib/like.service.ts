@@ -1,4 +1,4 @@
-import { ILikeOrUnlikeAPostRequest, ILikesServiceClient } from "@food-stories/common/typings";
+import { IAddCommentRequest, IGetAllCommentsOnAPost, ILikeOrUnlikeAPostRequest, ILikesServiceClient } from "@food-stories/common/typings";
 import { Inject, Injectable, OnModuleInit } from "@nestjs/common";
 import { TOKEN } from "./token";
 import { ClientGrpc } from "@nestjs/microservices";
@@ -25,5 +25,13 @@ export class ApiGatewayLikeService  implements OnModuleInit {
 
   isPostLiked(data: ILikeOrUnlikeAPostRequest) {
     return handleGrpcError(this.likesService.isPostLiked(data));
+  }
+
+  addAComment(data: IAddCommentRequest) {
+    return handleGrpcError(this.likesService.addComment(data));
+  }
+
+  getAllComments(data: IGetAllCommentsOnAPost) {
+    return  handleGrpcError(this.likesService.getAllCommentsOnAPost(data));
   }
 }

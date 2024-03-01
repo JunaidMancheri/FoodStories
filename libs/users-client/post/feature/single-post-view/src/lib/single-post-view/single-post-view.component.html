@@ -55,7 +55,7 @@
       </div>
 
 
-      <div class="caption max-w-full flex gap-1  min-h-16 ">
+      <div *ngFor="let comment of comments" class="caption max-w-full flex gap-1  min-h-16 ">
 
         <div class="dp flex pt-2 items-center justify-center  h-full w-10">
           <div class="bg-gradient-to-tr h-8 w-8 rounded-full p-1">
@@ -71,7 +71,7 @@
         <div class="caption pt-2 h-full flex-grow">
           <span class="font-semibold">super.tramp.__</span>
           <p class="inline whitespace-normal">
-            lakdjfladsjflajdflkajdf <br>lajfdlkajdfla
+            {{comment.comment}}
 
           </p>
           <p><span class="font-light  text-xs">15w</span></p>
@@ -81,32 +81,6 @@
 
       </div>
 
-
-      <div class="caption max-w-full flex gap-1  min-h-16 ">
-
-        <div class="dp flex pt-2 items-center justify-center  h-full w-10">
-          <div class="bg-gradient-to-tr h-8 w-8 rounded-full p-1">
-            <a class="block w-full h-full bg-white  rounded-full transform transition" routerLink="/profile">
-              <img class=" w-full h-full rounded-full"
-                src="data:image/jpeg;base64,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"
-                alt="image">
-            </a>
-          </div>
-
-        </div>
-
-        <div class="caption pt-2 h-full flex-grow">
-          <span class="font-semibold">super.tramp.__</span>
-          <p class="inline whitespace-normal">
-            lakdjfladsjflajdflkajdf <br>lajfdlkajdfla
-
-          </p>
-          <p><span class="font-light  text-xs">15w</span></p>
-
-        </div>
-
-
-      </div>
 
     </div>
 
@@ -134,12 +108,13 @@
     <mat-divider></mat-divider>
     <div class="commentInput bg-slate-800 h-12">
       <div class="input h-full w-full relative">
-        <input type="text" class="border-none h-full w-full pl-8" placeholder="Add Comment">
+        <input [formControl]="commentInput" type="text" class="border-none h-full w-full pl-8" placeholder="Add Comment">
         <mat-icon class="absolute top-3 left-1 material-symbols-outlined">sentiment_very_satisfied</mat-icon>
-        <span class="absolute top-3 right-2 text-blue-500 hover:cursor-pointer hover:text-blue-600">Post</span>
+        <span (click)="onCommentAdd()" class="absolute top-3 right-2 text-blue-500 hover:cursor-pointer hover:text-blue-600">Post</span>
       </div>
     </div>
 
   </div>
 
 </div>
+

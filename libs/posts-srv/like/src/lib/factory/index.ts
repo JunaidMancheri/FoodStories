@@ -1,7 +1,8 @@
 import { BaseHandler, RequestPayload, ResponsePayload, respondSuccess } from "@food-stories/common/handlers";
-import { IIsPostLikedResponse, ILikeOrUnlikeAPostRequest, LikedEntity } from "@food-stories/common/typings";
-import { likeModel } from "../interface/db/like.model";
-import { Like } from "../entities";
+import { IIsPostLikedResponse, ILikeOrUnlikeAPostRequest } from "@food-stories/common/typings";
+import { PostLikeModel } from "../interface/db/like.model";
+import { PostLike } from "../entities";
+
 
 
 
@@ -17,12 +18,15 @@ export  function makeUnLikeAPostHandler() {
 export  function makeIsPostLikedHandler() {
   return new IsPostLikedHandler();
 }
+
+
+
+
 export class  LikeAPostHandler extends BaseHandler {
 
-
  async  execute(request: RequestPayload<ILikeOrUnlikeAPostRequest>): Promise<ResponsePayload<void>> {
-     const like = new Like({likedBy: request.data.userId, likedOnId: request.data.likedOnId, LikedEntity: LikedEntity.POST})
-     await likeModel.create(like);
+     const like = new PostLike({userId: request.data.userId, postId: request.data.postId})
+     await PostLikeModel.create(like);
      return respondSuccess(null);
   }
 
@@ -31,7 +35,7 @@ export class  LikeAPostHandler extends BaseHandler {
 
 export  class UnLikeAPostHandler extends BaseHandler {
   async  execute(request: RequestPayload<ILikeOrUnlikeAPostRequest>): Promise<ResponsePayload<void>> {
-    await likeModel.findOneAndDelete({likedBy:  request.data.userId, likedOnId: request.data.likedOnId});
+    await PostLikeModel.findOneAndDelete({userId:  request.data.userId, postId: request.data.postId});
     return respondSuccess(null);
 
   }
@@ -40,17 +44,11 @@ export  class UnLikeAPostHandler extends BaseHandler {
 
 export class IsPostLikedHandler extends BaseHandler {
   async  execute(request: RequestPayload<ILikeOrUnlikeAPostRequest>): Promise<ResponsePayload<IIsPostLikedResponse>> {
-    console.log(request);
-      const response = await likeModel.findOne({likedBy: request.data.userId, likedOnId: request.data.likedOnId});
-      console.log(response)
+      const response = await PostLikeModel.findOne({userId: request.data.userId, postId: request.data.postId});
       if (response) {
-        console.log('f')
         return respondSuccess({isLiked: true})
       }
-      console.log('t')
       return respondSuccess({isLiked: false})
-
-    
   }
 
 }

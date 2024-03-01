@@ -1,24 +1,23 @@
-import { Model, Schema, model } from "mongoose";
-import { ILike } from "../../entities";
+import { Document, Model, Schema, model } from "mongoose";
 
-export interface ILikeDoc extends Document , ILike {
+export interface IPostLikeDoc extends Document {
   _id: string;
+  postId: string;
+  userId: string;
+  createdAt: number;
 }
 
-const likeSchema = new Schema<ILikeDoc, Model<ILikeDoc>>({
+const PostLikeSchema = new Schema<IPostLikeDoc, Model<IPostLikeDoc>>({
   _id: {
     type: String,
     required: true,
   },
-  likedBy: String,
-  likedEntity: {
-    enum : ['POST', "COMMENT", "STORY"],
-  },
-  likedOnId: String,
+  userId: String,
+  postId: String,
   createdAt: Number,
 })
 
 
-const likeModel = model<ILikeDoc>('likes', likeSchema);
+const PostLikeModel = model<IPostLikeDoc>('post-likes', PostLikeSchema);
 
-export { likeModel };
+export { PostLikeModel };

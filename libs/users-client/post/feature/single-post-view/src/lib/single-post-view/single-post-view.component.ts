@@ -1,25 +1,41 @@
-import { Component, Inject, OnInit, inject } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MAT_DIALOG_DATA, MatDialogModule } from '@angular/material/dialog';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatIcon, MatIconModule } from '@angular/material/icon'
 import { MatFormFieldModule } from '@angular/material/form-field'
 import { MatInputModule } from '@angular/material/input'
-import { IPost } from '@food-stories/common/typings';
+import { IComment, IPost } from '@food-stories/common/typings';
 import { HttpClient } from '@angular/common/http';
 import { Store } from '@ngrx/store'
 import { selectCurrentUserIdOrUsername } from '@food-stories/users-client/shared/app-init'
+import { FormControl, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'fs-single-post-view',
   standalone: true,
-  imports: [CommonModule, MatDialogModule, MatDividerModule, MatIconModule, MatFormFieldModule, MatInputModule],
+  imports: [CommonModule, MatDialogModule, MatDividerModule, MatIconModule, MatFormFieldModule, MatInputModule, ReactiveFormsModule],
   templateUrl: './single-post-view.component.html',
   styleUrls: ['./single-post-view.component.css'],
 })
 export class SinglePostViewComponent implements OnInit {
   http = inject(HttpClient);
   store = inject(Store)
+
+
+  commentInput = new FormControl('');
+
+  onCommentAdd() {
+    this.http.post<IComment>('http://localhost:3000/api/v1/likes/comments/add', {
+      comment: this.commentInput.value,
+      commentOn: this.data.post.id,
+      commentedBy:  this.userId,
+    }).subscribe((response) => {
+     this.comments.push(response)
+    })
+  }
+
+  comments: IComment[] = [];
 
 
   ngOnInit(): void {
@@ -30,6 +46,11 @@ export class SinglePostViewComponent implements OnInit {
         console.log(response);
         this.isLiked = response.isLiked;
        })
+     })
+
+     this.http.get<{comments: IComment[]}>('http://localhost:3000/api/v1/likes/comments/' + this.data.post.id).subscribe((res) => {
+      console.log(res);
+      this.comments = res.comments;
      })
  
   }

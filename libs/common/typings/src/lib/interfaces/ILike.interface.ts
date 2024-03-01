@@ -1,13 +1,13 @@
-export  interface ILike {
+export  interface IPostLike {
   id: string;
-  likedEntity: LikedEntity
-  likedOnId: string;
-  likedBy: string;
+  postId: string;
+  userId: string;
   createdAt: number;
 }
 
-export enum LikedEntity  {
-   POST = "POST",
-   COMMENT = "COMMENT",
-   STORY = "STORY"
+export interface ICommentLike {
+  id: string;
+  commentId: string;
+  userId: string;
+  createdAt: number;
 }

@@ -9,26 +9,23 @@ service LikesService {
 }
 
 
-message LikeEntity {
+
+
+
+message PostLikeEntity {
  string id = 0;
- LikedEntity likedEntity = 1;
- string likedBy = 2;
+ string userId = 2;
  int32 createdAt = 3;
- string likedOnId = 4;
+ string postId = 4;
 }
 
-enum LikedEntity {
-  POST  = 0;
-  COMMENT = 1;
-  STORY = 2;
-}
 
 message EMPTY {}
 
 
 message LikeOrUnlikeAPostRequest {
   string userId = 0;
-  string likedOnId = 1;
+  string postId = 1;
 }
 
 message IsPostLikedResponse {
