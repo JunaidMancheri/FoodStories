@@ -55,7 +55,7 @@
       </div>
 
 
-      <div *ngFor="let comment of comments" class="caption max-w-full flex gap-1  min-h-16 ">
+      <div *ngFor="let comment of []" class="caption max-w-full flex gap-1  min-h-16 ">
 
         <div class="dp flex pt-2 items-center justify-center  h-full w-10">
           <div class="bg-gradient-to-tr h-8 w-8 rounded-full p-1">
@@ -71,7 +71,7 @@
         <div class="caption pt-2 h-full flex-grow">
           <span class="font-semibold">super.tramp.__</span>
           <p class="inline whitespace-normal">
-            {{comment.comment}}
+            {{comment}}
 
           </p>
           <p><span class="font-light  text-xs">15w</span></p>
@@ -89,7 +89,7 @@
     <div class="Actions flex  h-12">
       <div class="like w-10  flex items-center justify-center">
 
-        <mat-icon (click)="toggleLike(iconEl)" #iconEl class="icon" [color]="isLiked ? 'warn': ''" [ngClass]="{'material-symbols-outlined': !isLiked}">favorite</mat-icon>
+        <mat-icon (click)="toggleLike()"  class="icon" [color]="isLiked ? 'warn': ''" [ngClass]="{'material-symbols-outlined': !isLiked}">favorite</mat-icon>
 
       </div>
 
@@ -108,9 +108,9 @@
     <mat-divider></mat-divider>
     <div class="commentInput bg-slate-800 h-12">
       <div class="input h-full w-full relative">
-        <input [formControl]="commentInput" type="text" class="border-none h-full w-full pl-8" placeholder="Add Comment">
+        <input type="text" class="border-none h-full w-full pl-8" placeholder="Add Comment">
         <mat-icon class="absolute top-3 left-1 material-symbols-outlined">sentiment_very_satisfied</mat-icon>
-        <span (click)="onCommentAdd()" class="absolute top-3 right-2 text-blue-500 hover:cursor-pointer hover:text-blue-600">Post</span>
+        <span class="absolute top-3 right-2 text-blue-500 hover:cursor-pointer hover:text-blue-600">Post</span>
       </div>
     </div>
 

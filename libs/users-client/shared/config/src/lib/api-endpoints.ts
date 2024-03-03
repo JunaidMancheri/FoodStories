@@ -13,5 +13,12 @@ export const API_ENDPOINTS = {
   UPDATE_MEDIA_URLS: `${BASE_URL}/posts/mediaUrls/`,
   Posts: {
     getUsersPosts: (userId: string) => `${BASE_URL}/posts/user/${userId}`,
+  },
+
+  Likes: {
+    isPostLiked: (postId: string) => `${BASE_URL}/likes/liked/${postId}`,
+    unlikeAPost: (postId: string) => `${BASE_URL}/likes/${postId}`,
+    likeAPost: (postId: string) => `${BASE_URL}/likes/${postId}`,
   }
+
 }
