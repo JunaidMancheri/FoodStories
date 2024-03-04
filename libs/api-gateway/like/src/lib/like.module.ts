@@ -18,7 +18,7 @@ import { join } from 'path';
         options: {
           package: likesAppConfig.likes_package_name,
           protoPath: join(__dirname, 'proto', 'likes_service.proto'),
-          url: process.env['POSTS_SERVICE_URI'],
+          url: process.env['LIKES_SERVICE_URI'],
         }
       }
     ])

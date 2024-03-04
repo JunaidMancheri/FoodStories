@@ -19,17 +19,18 @@ import { SinglePostViewComponent } from '@food-stories/users-client/post/feature
   styleUrls: ['./posts.component.css'],
 })
 export class PostsComponent implements OnChanges {
-  private matDialog = inject(MatDialog);
   @Input({ required: true }) currUser!: IUser | null
+  @Input({ required: true }) posts: IPost[] = [];
+  private matDialog = inject(MatDialog);
+  
+  slicedPosts: IPost[][] = [[]];
 
   ngOnChanges(changes: SimpleChanges): void {
     if ('posts' in changes) {
       this.slicedPosts = this.convertTo2DArray();
     }
   }
-  @Input({ required: true }) posts: IPost[] = [];
 
-  slicedPosts: IPost[][] = [[]];
 
   convertTo2DArray() {
     const result = [];
@@ -44,7 +45,7 @@ export class PostsComponent implements OnChanges {
       panelClass: ['w-[65vw]', 'h-[95vh]'],
       data: {
         post,
-        postUser: { username: this.currUser?.username, DPURL: this.currUser?.DPURL },
+        postedUser: { username: this.currUser?.username, DPURL: this.currUser?.DPURL },
       },
     });
   }

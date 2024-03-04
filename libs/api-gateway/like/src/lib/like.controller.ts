@@ -17,7 +17,7 @@ export class ApiGatewayLikeController {
   }
 
   @Get('/liked/:postId')
-  isPostLiked(@Query() query: {userId: string}, @Param('EntityId') postId: string) {
+  isPostLiked(@Query() query: {userId: string}, @Param('postId') postId: string) {
     return this.likesService.isPostLiked({userId: query.userId, postId}).pipe(tap(res => console.log(res)));
   }
 

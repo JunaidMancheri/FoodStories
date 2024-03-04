@@ -45,6 +45,7 @@ export  class UnLikeAPostHandler extends BaseHandler {
 export class IsPostLikedHandler extends BaseHandler {
   async  execute(request: RequestPayload<ILikeOrUnlikeAPostRequest>): Promise<ResponsePayload<IIsPostLikedResponse>> {
       const response = await PostLikeModel.findOne({userId: request.data.userId, postId: request.data.postId});
+      console.log(request);
       if (response) {
         return respondSuccess({isLiked: true})
       }

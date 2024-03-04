@@ -16,6 +16,9 @@
     "baseUrl": ".",
     "paths": {
       "@food-stories/api-gateway/auth": ["libs/api-gateway/auth/src/index.ts"],
+      "@food-stories/api-gateway/comment": [
+        "libs/api-gateway/comment/src/index.ts"
+      ],
       "@food-stories/api-gateway/common": [
         "libs/api-gateway/common/src/index.ts"
       ],
@@ -34,6 +37,9 @@
       "@food-stories/common/typings": ["libs/common/typings/src/index.ts"],
       "@food-stories/common/utils": ["libs/common/utils/src/index.ts"],
       "@food-stories/posts-srv//post": ["libs/posts-srv/post/src/index.ts"],
+      "@food-stories/posts-srv/comment": [
+        "libs/posts-srv/comment/src/index.ts"
+      ],
       "@food-stories/posts-srv/core": ["libs/posts-srv/core/src/index.ts"],
       "@food-stories/posts-srv/like": ["libs/posts-srv/like/src/index.ts"],
       "@food-stories/shared-icons": [

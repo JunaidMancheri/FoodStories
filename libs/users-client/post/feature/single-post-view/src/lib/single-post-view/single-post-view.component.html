@@ -9,7 +9,7 @@
         <div class="bg-gradient-to-tr h-8 w-8 rounded-full p-1">
           <a class="block w-full h-full bg-white  rounded-full transform transition" routerLink="/profile">
             <img class=" w-full h-full rounded-full"
-            [src]="data.postUser.DPURL"
+            [src]="data.postedUser.DPURL"
               alt="image">
           </a>
         </div>
@@ -17,7 +17,7 @@
       </div>
 
       <div class="username flex-grow flex justify-start items-center">
-        <span class="">{{data.postUser.username}}</span>
+        <span class="">{{data.postedUser.username}}</span>
       </div>
 
     </div>
@@ -33,7 +33,7 @@
             <div class="bg-gradient-to-tr h-8 w-8 rounded-full p-1">
               <a class="block w-full h-full bg-white  rounded-full transform transition" routerLink="/profile">
                 <img class=" w-full h-full rounded-full"
-                [src]="data.postUser.DPURL"
+                [src]="data.postedUser.DPURL"
                   alt="image">
               </a>
             </div>
@@ -43,7 +43,7 @@
         </div>
 
         <div class="caption pt-2 h-full flex-grow">
-          <span class="font-semibold">{{data.postUser.username}}</span>
+          <span class="font-semibold">{{data.postedUser.username}}</span>
           <p class="inline whitespace-normal">
             {{data.post.caption}}
           </p>

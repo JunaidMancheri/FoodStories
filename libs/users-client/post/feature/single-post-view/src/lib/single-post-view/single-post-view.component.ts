@@ -6,11 +6,18 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { IPost } from '@food-stories/common/typings';
-import { HttpClient } from '@angular/common/http';
 import { Store } from '@ngrx/store';
 import { selectCurrentUserIdOrUsername } from '@food-stories/users-client/shared/app-init';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LikesService } from '@food-stories/users-client/post/data-access';
+
+interface DialogData {
+  post: IPost;
+  postedUser: {
+    DPURL: string;
+    username: string;
+  };
+}
 
 @Component({
   selector: 'fs-single-post-view',
@@ -28,13 +35,11 @@ import { LikesService } from '@food-stories/users-client/post/data-access';
   styleUrls: ['./single-post-view.component.css'],
 })
 export class SinglePostViewComponent implements OnInit {
-  http = inject(HttpClient);
   store = inject(Store);
   likesService = inject(LikesService);
+  data: DialogData = inject(MAT_DIALOG_DATA);
 
   userId = '';
-  data: { post: IPost; postUser: { DPURL: string; username: string } } =
-    inject(MAT_DIALOG_DATA);
   isLiked = false;
 
   ngOnInit(): void {
