@@ -6,4 +6,4 @@ export const logger = new Logger('main');
 
 export const LikesLogger = makeLogger('LIKES-SRV');
 
-export const CommentsLogger = makeLogger('COMMENTs-SRV');
+export const CommentsLogger = makeLogger('COMMENTS-SRV');

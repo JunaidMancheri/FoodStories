@@ -10,3 +10,4 @@ export *  from './lib/interfaces/ILike.interface';
 export *  from './lib/proto/likesService';
 
 export * from './lib/interfaces/IComment.interface';
+export * from './lib/proto/commentsService';

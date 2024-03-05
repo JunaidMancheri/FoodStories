@@ -1,14 +1,21 @@
 {
   "extends": ["../../../.eslintrc.json"],
   "ignorePatterns": ["!**/*"],
+  "rules": {
+    "typescript-eslint/no-empty-interface": "off"
+  },
   "overrides": [
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
-      "rules": {}
+      "rules": {
+        "typescript-eslint/no-empty-interface": "off"
+      }
     },
     {
       "files": ["*.ts", "*.tsx"],
-      "rules": {}
+      "rules": {
+        "typescript-eslint/no-empty-interface": "off"
+      }
     },
     {
       "files": ["*.js", "*.jsx"],
