@@ -13,6 +13,7 @@ export interface PostLikeClass {
 }
 
 export function makePostLikeEntity(logger: ILogger): PostLikeClass {
+  logger.info('kana  kuna')
   return class implements IPostLike {
     id: string;
     userId: string;

@@ -3,14 +3,15 @@ import  { makeUnaryCallHandler} from '@food-stories/common/grpc';
 import { Logger, logger } from '@food-stories/posts-srv/core';
 import { makeCreatePostHandler, makeGetUsersPostsHandler, makeUpdateMediaUrlsHandler} from '@food-stories/posts-srv//post'
 import { ILikesServiceServer } from '@food-stories/common/typings';
-import { makeLikeAPostHandler, makeUnLikeAPostHandler, makeIsPostLikedHandler } from '@food-stories/posts-srv/like'
+import { makeLikeAPostHandler, makeUnLikeAPostHandler, makeIsPostLikedHandler, initiateLikesModule } from '@food-stories/posts-srv/like'
 
 
+const likesModule = initiateLikesModule(Logger);
 
 export const LikesServiceImpl: ILikesServiceServer = {
-  isPostLiked: wrapHandler(makeIsPostLikedHandler),
-  likeAPost: wrapHandler(makeLikeAPostHandler),
-  unlikeAPost: wrapHandler(makeUnLikeAPostHandler),
+  isPostLiked: wrapHandler(likesModule.makeIsPostLikedHandler),
+  likeAPost: wrapHandler(likesModule.makeLikeAPostHandler),
+  unlikeAPost: wrapHandler(likesModule.makeUnLikeAPostHandler),
 
 }
 

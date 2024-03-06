@@ -1,21 +1,37 @@
 import { BaseHandler, RequestPayload, ResponsePayload, respondSuccess } from "@food-stories/common/handlers";
 import { IIsPostLikedResponse, ILikeOrUnlikeAPostRequest } from "@food-stories/common/typings";
 import { PostLikeModel } from "../interface/db/like.model";
-import { PostLike } from "../entities";
+// import { PostLike } from "../entities";
+import { LoggerClass } from "@food-stories/common/logger";
+import { CommentLIkeClass, makeCommentLikeEntity } from "../entities/CommentLike.entity";
+import { PostLikeClass, makePostLikeEntity } from "../entities/PostLike.entity";
+
+export  let CommentLike : CommentLIkeClass
+export  let PostLike : PostLikeClass ;
+
+export function initiateLikesModule(Logger: LoggerClass) {
+  CommentLike = makeCommentLikeEntity(new Logger('aha'));
+  PostLike = makePostLikeEntity(new Logger('liked'));
+
+  return {
+    makeIsPostLikedHandler,
+    makeLikeAPostHandler,
+    makeUnLikeAPostHandler,
+  }
 
 
-
+}
 
 export function makeLikeAPostHandler() {
   return new LikeAPostHandler();
 }
 
-export  function makeUnLikeAPostHandler() {
+export function makeUnLikeAPostHandler() {
   return new UnLikeAPostHandler();
 }
 
 
-export  function makeIsPostLikedHandler() {
+export function makeIsPostLikedHandler() {
   return new IsPostLikedHandler();
 }
 
