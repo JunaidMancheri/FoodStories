@@ -1,71 +1,86 @@
-import { BaseHandler, RequestPayload, ResponsePayload, respondSuccess } from "@food-stories/common/handlers";
-import { IIsPostLikedResponse, ILikeOrUnlikeAPostRequest } from "@food-stories/common/typings";
-import { PostLikeModel } from "../interface/db/like.model";
-// import { PostLike } from "../entities";
-import { LoggerClass } from "@food-stories/common/logger";
-import { CommentLIkeClass, makeCommentLikeEntity } from "../entities/CommentLike.entity";
-import { PostLikeClass, makePostLikeEntity } from "../entities/PostLike.entity";
-
-export  let CommentLike : CommentLIkeClass
-export  let PostLike : PostLikeClass ;
-
-export function initiateLikesModule(Logger: LoggerClass) {
-  CommentLike = makeCommentLikeEntity(new Logger('aha'));
-  PostLike = makePostLikeEntity(new Logger('liked'));
-
-  return {
-    makeIsPostLikedHandler,
-    makeLikeAPostHandler,
-    makeUnLikeAPostHandler,
-  }
+import {
+  BaseHandler,
+  RequestPayload,
+  ResponsePayload,
+  respondSuccess,
+} from '@food-stories/common/handlers';
+import {
+  IIsPostLikedResponse,
+  ILikeOrUnlikeAPostRequest,
+} from '@food-stories/common/typings';
+import { PostLikeModel } from '../interface/db/like.model';
+import { LoggerClass } from '@food-stories/common/logger';
+// import { makeCommentLikeEntity } from "../entities/CommentLike.entity";
+import { PostLike, makePostLikeEntity } from '../entities/PostLike.entity';
 
 
+export function initialize(Logger: LoggerClass) {
+  // const CommentLike = makeCommentLikeEntity(new Logger('Entity: CommentLike'));
+  const PostLike = makePostLikeEntity(new Logger('Entity: PostLike'));
+
+  function getRpcHandlers() {
+    return {
+      isPostLikedHandler: makeIsPostLikedHandler(),
+      likeAPostHandler: makeLikeAPostHandler(PostLike),
+      unLikeAPostHandler: makeUnLikeAPostHandler(),
+    };
+  };
+
+  return {getRpcHandlers}
 }
 
-export function makeLikeAPostHandler() {
-  return new LikeAPostHandler();
+function makeLikeAPostHandler(PostLike: PostLike) {
+  return new LikeAPostHandler(PostLike);
 }
 
-export function makeUnLikeAPostHandler() {
+function makeUnLikeAPostHandler() {
   return new UnLikeAPostHandler();
 }
 
-
-export function makeIsPostLikedHandler() {
+function makeIsPostLikedHandler() {
   return new IsPostLikedHandler();
 }
 
-
-
-
-export class  LikeAPostHandler extends BaseHandler {
-
- async  execute(request: RequestPayload<ILikeOrUnlikeAPostRequest>): Promise<ResponsePayload<void>> {
-     const like = new PostLike({userId: request.data.userId, postId: request.data.postId})
-     await PostLikeModel.create(like);
-     return respondSuccess(null);
+class LikeAPostHandler extends BaseHandler {
+  constructor(private PostLike: PostLike) {
+    super();
   }
 
-}
-
-
-export  class UnLikeAPostHandler extends BaseHandler {
-  async  execute(request: RequestPayload<ILikeOrUnlikeAPostRequest>): Promise<ResponsePayload<void>> {
-    await PostLikeModel.findOneAndDelete({userId:  request.data.userId, postId: request.data.postId});
+  async execute(
+    request: RequestPayload<ILikeOrUnlikeAPostRequest>
+  ): Promise<ResponsePayload<void>> {
+    const like = new this.PostLike({
+      userId: request.data.userId,
+      postId: request.data.postId,
+    });
+    await PostLikeModel.create(like);
     return respondSuccess(null);
-
   }
-  
 }
 
-export class IsPostLikedHandler extends BaseHandler {
-  async  execute(request: RequestPayload<ILikeOrUnlikeAPostRequest>): Promise<ResponsePayload<IIsPostLikedResponse>> {
-      const response = await PostLikeModel.findOne({userId: request.data.userId, postId: request.data.postId});
-      console.log(request);
-      if (response) {
-        return respondSuccess({isLiked: true})
-      }
-      return respondSuccess({isLiked: false})
+class UnLikeAPostHandler extends BaseHandler {
+  async execute(
+    request: RequestPayload<ILikeOrUnlikeAPostRequest>
+  ): Promise<ResponsePayload<void>> {
+    await PostLikeModel.findOneAndDelete({
+      userId: request.data.userId,
+      postId: request.data.postId,
+    });
+    return respondSuccess(null);
   }
-
+}
+class IsPostLikedHandler extends BaseHandler {
+  async execute(
+    request: RequestPayload<ILikeOrUnlikeAPostRequest>
+  ): Promise<ResponsePayload<IIsPostLikedResponse>> {
+    const response = await PostLikeModel.findOne({
+      userId: request.data.userId,
+      postId: request.data.postId,
+    });
+    console.log(request);
+    if (response) {
+      return respondSuccess({ isLiked: true });
+    }
+    return respondSuccess({ isLiked: false });
+  }
 }

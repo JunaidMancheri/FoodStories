@@ -8,11 +8,11 @@ export interface PostLikeProps extends Partial<IPostLike> {
   postId: string;
 }
 
-export interface PostLikeClass {
+export interface PostLike {
   new (postLikeProps: PostLikeProps): IPostLike;
 }
 
-export function makePostLikeEntity(logger: ILogger): PostLikeClass {
+export function makePostLikeEntity(logger: ILogger): PostLike {
   logger.info('kana  kuna')
   return class implements IPostLike {
     id: string;

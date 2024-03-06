@@ -8,12 +8,12 @@ export interface CommentLIkeProps extends Partial<ICommentLike> {
   userId: string;
 }
 
-export interface CommentLIkeClass {
+export interface CommentLIke {
   new (commentLikeProps: CommentLIkeProps) : ICommentLike;
 }
 
 
-export  function makeCommentLikeEntity(logger: ILogger) : CommentLIkeClass {
+export  function makeCommentLikeEntity(logger: ILogger) : CommentLIke {
   return class implements ICommentLike {
     id: string;
     userId: string;

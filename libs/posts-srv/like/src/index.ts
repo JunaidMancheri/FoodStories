@@ -1,1 +1,7 @@
-export *  from './lib/factory';
+import { initialize } from "./lib/factory";
+
+const LikeModule = {
+ initialize
+}
+
+export {LikeModule};
