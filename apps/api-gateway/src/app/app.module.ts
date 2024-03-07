@@ -3,9 +3,8 @@ import { ApiGatewayUsersModule } from '@food-stories/api-gateway/users'
 import { ApiGatewayPostModule } from '@food-stories/api-gateway/post';
 import { ApiGatewayLikeModule } from '@food-stories/api-gateway/like';
 import { ConfigModule } from '@nestjs/config'
-import { RouterModule } from '@nestjs/core';
-import { appRoutes } from './app.routes';
 import { FirebaseAdminModule } from '@food-stories/api-gateway/core/firebase-admin';
+import { ApiGatewayCommentModule } from '@food-stories/api-gateway/comment';
 
 
 @Module({
@@ -14,8 +13,8 @@ import { FirebaseAdminModule } from '@food-stories/api-gateway/core/firebase-adm
     ApiGatewayPostModule,
     ApiGatewayLikeModule,
     FirebaseAdminModule,
-    ConfigModule.forRoot(),
-    RouterModule.register(appRoutes)
+    ApiGatewayCommentModule,
+    ConfigModule.forRoot({isGlobal: true}),
 ],
   controllers: [],
   providers: [  ],

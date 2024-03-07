@@ -10,7 +10,7 @@ export class CreatePostDto {
   caption?: string;
 }
 
-@Controller()
+@Controller('posts')
 @UseGuards(AuthGuard)
 export class ApiGatewayPostController {
   constructor(private apiGatewayPostService: ApiGatewayPostService) {}

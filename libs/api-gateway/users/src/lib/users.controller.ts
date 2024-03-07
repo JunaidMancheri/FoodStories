@@ -5,7 +5,7 @@ import { EditProfileData } from '@food-stories/common/typings';
 import { AuthGuard } from '@food-stories/api-gateway/common';
 
 
-@Controller()
+@Controller('users')
 @UseGuards(AuthGuard)
 export class ApiGatewayUsersController {
   constructor(private apiGatewayUsersService: ApiGatewayUsersService) {}
