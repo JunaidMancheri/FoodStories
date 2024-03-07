@@ -1,14 +1,8 @@
+import { IPost } from '@food-stories/common/typings';
 import {Document, Model, Schema, model} from 'mongoose';
 
-export interface IPostDoc extends Document {
+export interface IPostDoc extends Document, Omit<IPost, 'id'> {
   _id: string;
-  userId: string;
-  caption: string;
-  likesCount: number;
-  commentsCount: number;
-  createdAt: number;
-  thumbnailUrl: string;
-  mediaUrls: string[];
 }
 
 
@@ -23,7 +17,8 @@ const postSchema = new Schema<IPostDoc, Model<IPostDoc>>({
   thumbnailUrl: String,
   caption: String,
   likesCount: Number,
-  commentsCount: Number,
+  totalCommentsCount: Number,
+  topLevelCommentsCount: Number,
   createdAt: Number,
   mediaUrls: [String]
 })

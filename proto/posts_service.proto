@@ -16,8 +16,9 @@ message PostEntity {
   repeated string mediaUrls = 3;
   string createdAt = 4;
   int32 likesCount = 5;
-  int32 commentsCount = 6;
+  int32 totalCommentsCount = 6;
   string thumbnailUrl = 7;
+  int32 topLevelCommentsCount = 8;
 }
 
 

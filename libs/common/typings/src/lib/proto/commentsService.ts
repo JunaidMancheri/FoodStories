@@ -5,11 +5,21 @@ import { handleUnaryCall } from "@grpc/grpc-js";
 
 export interface ICommentsServiceClient {
   addComment(request: IAddCommentRequest): Observable<IComment>;
-  // get comments form the  post;
+  getCommentsForAPost(request: )
 }
 
 export interface ICommentsServiceServer {
   addComment: handleUnaryCall<IAddCommentRequest, IComment>;
+}
+
+export interface IGetCommentsForAPostRequest {
+  postId: string;
+  page: number;
+}
+
+export  interface IGetCommentsForAPostResponse {
+  comments: IComment[],
+  
 }
 
 

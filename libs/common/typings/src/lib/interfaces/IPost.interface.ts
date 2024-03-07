@@ -6,5 +6,6 @@ export interface IPost {
   createdAt: number;
   thumbnailUrl: string;
   likesCount: number;
-  commentsCount: number;
+  topLevelCommentsCount: number;
+  totalCommentsCount: number;
 }

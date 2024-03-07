@@ -3,15 +3,8 @@ import { ILogger } from "@food-stories/common/logger";
 import { IPost } from "@food-stories/common/typings";
 import { v4 as uuidV4 } from 'uuid';
 
-export interface PostProps {
-  id?: string;
+export interface PostProps extends Partial<IPost> {
   userId: string;
-  caption?: string;
-  thumbnailUrl?: string;
-  mediaUrls?: string[];
-  createdAt?: number;
-  likesCount?: number;
-  commentsCount?: number;
 }
 
 export interface PostClass {
@@ -25,7 +18,8 @@ export function makePostEntity(logger: ILogger): PostClass {
     public caption: string;
     public mediaUrls: string[];
     public likesCount: number;
-    public commentsCount: number;
+    public totalCommentsCount: number;
+    public topLevelCommentsCount: number;
     public createdAt: number;
     public thumbnailUrl: string;
     
@@ -36,7 +30,8 @@ export function makePostEntity(logger: ILogger): PostClass {
       this.mediaUrls = props.mediaUrls || [];
       this.thumbnailUrl = props.thumbnailUrl || '';
       this.likesCount = props.likesCount || 0;
-      this.commentsCount = props.commentsCount || 0;
+      this.totalCommentsCount = props.totalCommentsCount || 0;
+      this.topLevelCommentsCount = props.topLevelCommentsCount || 0;
       this.createdAt = props.createdAt || Date.now();
 
       if (!props.userId) throw new ValidationError('User id must be provided', logger)
