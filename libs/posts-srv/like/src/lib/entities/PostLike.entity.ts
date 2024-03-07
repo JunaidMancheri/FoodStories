@@ -13,7 +13,6 @@ export interface PostLike {
 }
 
 export function makePostLikeEntity(logger: ILogger): PostLike {
-  logger.info('kana  kuna')
   return class implements IPostLike {
     id: string;
     userId: string;
@@ -21,16 +20,21 @@ export function makePostLikeEntity(logger: ILogger): PostLike {
     createdAt: number;
 
     constructor(props: PostLikeProps) {
+
+      this.validate(props);
+
       this.id = props.id || uuidV4();
       this.createdAt = props.createdAt || Date.now();
+      this.userId = props.userId;
+      this.postId = props.postId;
+    }
 
+    private validate(props: PostLikeProps) {
       if (!props.userId)
         throw new ValidationError('userId must be specified', logger);
-      this.userId = props.userId;
 
       if (!props.postId)
         throw new ValidationError('postId must be specified', logger);
-      this.postId = props.postId;
     }
   };
 }

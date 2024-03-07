@@ -77,7 +77,6 @@ class IsPostLikedHandler extends BaseHandler {
       userId: request.data.userId,
       postId: request.data.postId,
     });
-    console.log(request);
     if (response) {
       return respondSuccess({ isLiked: true });
     }
