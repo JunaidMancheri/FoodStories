@@ -1,34 +1,53 @@
-import { IPostsServiceServer } from '@food-stories/common/typings';
-import  { makeUnaryCallHandler} from '@food-stories/common/grpc';
-import { Logger, logger, LikesLogger } from '@food-stories/posts-srv/core';
-import { makeCreatePostHandler, makeGetUsersPostsHandler, makeUpdateMediaUrlsHandler} from '@food-stories/posts-srv//post'
+import {
+  ICommentsServiceServer,
+  IPostsServiceServer,
+} from '@food-stories/common/typings';
+import { makeUnaryCallHandler } from '@food-stories/common/grpc';
+import {
+  Logger,
+  logger,
+  LikesLogger,
+  CommentsLogger,
+} from '@food-stories/posts-srv/core';
+import {
+  makeCreatePostHandler,
+  makeGetUsersPostsHandler,
+  makeUpdateMediaUrlsHandler,
+} from '@food-stories/posts-srv//post';
 import { ILikesServiceServer } from '@food-stories/common/typings';
-import { LikeModule } from '@food-stories/posts-srv/like'
+import { LikeModule } from '@food-stories/posts-srv/like';
+import { CommentsModule } from '@food-stories/posts-srv/comment';
 
+const commentsModuleMethods =
+  CommentsModule.initialize(CommentsLogger).getRpcHanlders();
+
+export const CommentsServiceImpl: ICommentsServiceServer = {
+  addComment: wrapModuleHandler(commentsModuleMethods.addComment),
+  getCommentsForAPost: wrapModuleHandler(
+    commentsModuleMethods.getCommentsForAPost
+  ),
+};
 
 const likesModuleMethods = LikeModule.initialize(LikesLogger).getRpcHandlers();
 
 export const LikesServiceImpl: ILikesServiceServer = {
-  isPostLiked: wrapLikesHandler(likesModuleMethods.isPostLikedHandler),
-  likeAPost: wrapLikesHandler(likesModuleMethods.likeAPostHandler),
-  unlikeAPost: wrapLikesHandler(likesModuleMethods.unLikeAPostHandler),
-
-}
+  isPostLiked: wrapModuleHandler(likesModuleMethods.isPostLikedHandler),
+  likeAPost: wrapModuleHandler(likesModuleMethods.likeAPostHandler),
+  unlikeAPost: wrapModuleHandler(likesModuleMethods.unLikeAPostHandler),
+};
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-function wrapLikesHandler(handleFn: any) {
+function wrapModuleHandler(handleFn: any) {
   return makeUnaryCallHandler(handleFn, logger);
 }
 
-
-export const PostsServiceImpl : IPostsServiceServer = {
+export const PostsServiceImpl: IPostsServiceServer = {
   createPost: wrapHandler(makeCreatePostHandler),
   updatePostMediaUrls: wrapHandler(makeUpdateMediaUrlsHandler),
-  getUsersPosts: wrapHandler(makeGetUsersPostsHandler)
-}
-
+  getUsersPosts: wrapHandler(makeGetUsersPostsHandler),
+};
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function wrapHandler(handlerFactory: any) {
-  return makeUnaryCallHandler(handlerFactory(Logger), logger) 
+  return makeUnaryCallHandler(handlerFactory(Logger), logger);
 }

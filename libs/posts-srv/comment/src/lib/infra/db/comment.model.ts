@@ -18,9 +18,6 @@ const commentSchema = new Schema<ICommentDoc, Model<ICommentDoc>>({
     type: String,
     required: true,
   },
-  parentCommentId: String,
-  rootCommentId: String,
-  repliedToUserId: String,
   repliesCount: Number,
   likesCount: {
     type: Number,

@@ -1,1 +1,7 @@
-export * from './lib/posts-srv-comment';
+import { initialize } from "./lib/factory";
+
+const CommentsModule = {
+  initialize,
+}
+
+export { CommentsModule };

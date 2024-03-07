@@ -24,7 +24,13 @@
             "input": "proto/",
             "glob": "likes_service.proto",
             "output": "proto"
+          },
+          {
+            "input": "proto/",
+            "glob": "comments_service.proto",
+            "output": "proto"
           }
+
         ],
         "isolatedConfig": true,
         "webpackConfig": "apps/posts-srv/webpack.config.js"
