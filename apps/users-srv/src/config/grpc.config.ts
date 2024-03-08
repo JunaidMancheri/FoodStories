@@ -1,7 +1,8 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import {  Server } from '@grpc/grpc-js';
 import { join } from 'path';
 import { createStartGRPCServer, getGrpcServiceDefinition } from '@food-stories/common/grpc'
-import { UsersServiceImpl } from '../remote-methods/users.rpc-methods';
+import { SocialNetworkServiceImpl, UsersServiceImpl } from '../remote-methods/users.rpc-methods';
 
 const PROTO_PATH = join(__dirname, 'proto', 'users_service.proto')
 
@@ -11,10 +12,16 @@ const usersService = getGrpcServiceDefinition({
   serviceName: 'UsersService',
 })
 
+const socialNetworkService = getGrpcServiceDefinition({
+  packageName: 'social_networks_service.proto',
+  protoPath: join(__dirname, 'proto', 'social_networks_service.proto'),
+  serviceName: 'SocialNetworksService',
+})
+
 const grpcServer = new Server();
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 grpcServer.addService(usersService, UsersServiceImpl as any);
+grpcServer.addService(socialNetworkService, SocialNetworkServiceImpl as any);
 
 const startGRPCServer = createStartGRPCServer(grpcServer);
 

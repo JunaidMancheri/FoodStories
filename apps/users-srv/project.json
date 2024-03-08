@@ -19,6 +19,11 @@
             "input": "proto/",
             "glob": "users_service.proto",
             "output": "proto"
+          },
+          {
+            "input": "proto/",
+            "glob": "social_networks_service.proto",
+            "output": "proto"
           }
         ],
         "isolatedConfig": true,

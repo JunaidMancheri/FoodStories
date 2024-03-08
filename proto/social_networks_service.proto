@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package social_networks_service.v1;
+
+service SocialNetworksService {
+ rpc followAUser (followOrUnfollowAUserRequest) returns (EMPTY) {};
+ rpc unfollowAUser (followOrUnfollowAUserRequest) returns (EMPTY) {};
+}
+
+message RelationshipEntity {
+  string followerId = 0;
+  string followeeId = 1;
+}
+
+message EMPTY {}
+
+message followOrUnfollowAUserRequest {
+   string followerId = 0;
+   string followeeId = 1;
+}

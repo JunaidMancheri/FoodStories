@@ -142,6 +142,9 @@
         "libs/users-client/shared/utils/src/index.ts"
       ],
       "@food-stories/users-srv/core": ["libs/users-srv/core/src/index.ts"],
+      "@food-stories/users-srv/social-network": [
+        "libs/users-srv/social-network/src/index.ts"
+      ],
       "@food-stories/users-srv/user": ["libs/users-srv/user/src/index.ts"]
     }
   },
