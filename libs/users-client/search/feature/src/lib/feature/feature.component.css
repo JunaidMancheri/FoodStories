@@ -1,0 +1,14 @@
+.wrapper {
+  width: 35vw;
+  padding: 2rem;
+}
+
+input {
+  background-color: rgb(229, 221, 221);
+  color: black;
+}
+
+.close-icon {
+  font-size: 1rem;
+}
+

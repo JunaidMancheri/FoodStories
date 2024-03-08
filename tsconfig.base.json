@@ -117,6 +117,9 @@
       "@food-stories/users-client/profile/ui/highlights": [
         "libs/users-client/profile/ui/highlights/src/index.ts"
       ],
+      "@food-stories/users-client/search/feature": [
+        "libs/users-client/search/feature/src/index.ts"
+      ],
       "@food-stories/users-client/shared": [
         "libs/users-client/shared/src/index.ts"
       ],

@@ -7,10 +7,12 @@ import { CreatePostDialogComponent } from '@food-stories/users-client/post/featu
 import { Store } from '@ngrx/store';
 import { selectCurrentUserIdOrUsername } from '@food-stories/users-client/shared/app-init';
 import { map } from 'rxjs';
+import { SearchBoxComponent } from '@food-stories/users-client/search/feature';
+import { MatSidenavModule  } from '@angular/material/sidenav';
 @Component({
   selector: 'fs-sidebar-layout',
   standalone: true,
-  imports: [CommonModule, MatIconModule, RouterModule, MatDialogModule],
+  imports: [CommonModule, MatIconModule, RouterModule, MatDialogModule, MatSidenavModule, SearchBoxComponent],
   templateUrl: './sidebar-layout.component.html',
   styleUrls: ['./sidebar-layout.component.css'],
 })

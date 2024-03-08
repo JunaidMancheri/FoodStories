@@ -9,7 +9,8 @@ import { EditProfileData } from '../dto/editProfileData.dto';
     isRegisteredUser(request: IisRegisteredUserRequest, metadata?: Metadata): Observable<IisRegisteredUserResponse>
     getCurrentUserData(request: IgetCurrentUserDataRequest, metadata?: Metadata): Observable<IUser>;
     getUserData(request: IgetUserDataRequest, metadata?: Metadata) : Observable<IUser>
-    updateUserProfile(request: EditProfileData, metadata?: Metadata) : Observable<IUser>
+    updateUserProfile(request: EditProfileData, metadata?: Metadata) : Observable<IUser>;
+    searchUsers(request: ISearchUserRequest): Observable<ISearchUserResponse>;
   }
 
   export interface IUsersServiceServer {
@@ -19,8 +20,17 @@ import { EditProfileData } from '../dto/editProfileData.dto';
     getCurrentUserData: handleUnaryCall<IgetCurrentUserDataRequest, IUser>;
     getUserData: handleUnaryCall<IgetUserDataRequest, IUser>;
     updateUserProfile: handleUnaryCall<EditProfileData, IUser>;
+    searchUsers: handleUnaryCall<ISearchUserRequest, ISearchUserResponse>;
   }
 
+
+  export interface ISearchUserRequest  {
+    query: string;
+  }
+  
+  export interface ISearchUserResponse {
+    results: {username: string, DPURL:  string, name: string}[]
+  }
 
   export interface IgetUserDataRequest {
     username: string;
