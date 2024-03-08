@@ -16,8 +16,13 @@
         "tsConfig": "apps/users-srv/tsconfig.app.json",
         "assets": [
           {
-            "input": "libs/common/src/lib/proto/",
+            "input": "proto/",
             "glob": "users_service.proto",
+            "output": "proto"
+          },
+          {
+            "input": "proto/",
+            "glob": "social_networks_service.proto",
             "output": "proto"
           }
         ],

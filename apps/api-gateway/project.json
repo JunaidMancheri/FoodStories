@@ -17,9 +17,14 @@
         "assets": [
           "apps/api-gateway/src/assets",
           {
-            "input": "libs/common/src/lib/proto",
+            "input": "proto/",
             "glob": "**/*.proto",
             "output": "proto"
+          },
+          {
+            "input": "service-accounts/",
+            "glob": "**/*.json",
+            "output": "service-accounts"
           }
         ],
         "isolatedConfig": true,

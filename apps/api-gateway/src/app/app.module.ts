@@ -1,19 +1,25 @@
 import { Module } from '@nestjs/common';
-import { ApiGatewayAuthModule } from '@food-stories/api-gateway/auth'
 import { ApiGatewayUsersModule } from '@food-stories/api-gateway/users'
+import { ApiGatewayPostModule } from '@food-stories/api-gateway/post';
+import { ApiGatewayLikeModule } from '@food-stories/api-gateway/like';
 import { ConfigModule } from '@nestjs/config'
-import { RouterModule } from '@nestjs/core';
-import { appRoutes } from './app.routes';
+import { FirebaseAdminModule } from '@food-stories/api-gateway/core/firebase-admin';
+import { ApiGatewayCommentModule } from '@food-stories/api-gateway/comment';
+import { ApiGatewaySocialNetworkModule } from '@food-stories/api-gateway/social-network';
 
 
 @Module({
   imports: [
-    // ApiGatewayAuthModule,
     ApiGatewayUsersModule,
-    ConfigModule.forRoot(),
-    RouterModule.register(appRoutes)
+    ApiGatewayPostModule,
+    ApiGatewayLikeModule,
+    FirebaseAdminModule,
+    ApiGatewayCommentModule,
+    ApiGatewaySocialNetworkModule,
+    ConfigModule.forRoot({isGlobal: true}),
 ],
   controllers: [],
-  providers: [],
+  providers: [  ],
+  exports: []
 })
 export class AppModule {}

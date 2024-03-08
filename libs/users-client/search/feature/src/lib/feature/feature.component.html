@@ -1,0 +1,44 @@
+<div class="wrapper flex flex-col justify-center gap-4">
+
+  <div  class="head text-2xl ">
+    Search
+  </div>
+
+  <div class="input  relative">
+    <input [formControl]="searchControl"  type="text" placeholder="search" class="p-2 w-full h-10 border rounded-lg border-black ">
+
+    <button  class="absolute top-3 right-0 "><mat-icon class="close-icon" >close</mat-icon></button>
+  </div>
+</div>
+
+<mat-divider></mat-divider>
+
+<div class="results-wrapper min-h-64 px-8 py-4 flex flex-col">
+
+  <div class="list flex flex-col gap-2 flex-grow justify-center">
+    <span *ngIf="results.length === 0" class="text-gray-400 font-thin italic">Search for users</span>
+    <div (click)="onResultClick(user.username)" *ngFor="let user of results" class="result w-full flex gap-2 hover:cursor-pointer hover:bg-gray-700/30 p-2 rounded-lg">
+      <div class="dp">
+        <div class="bg-gradient-to-tr h-14 w-14 rounded-full p-1">
+          <a class="block w-full h-full bg-white  rounded-full transform transition" routerLink="/profile">
+            <img class=" w-full h-full rounded-full"
+            [src]="user.DPURL"
+              alt="image">
+          </a>
+        </div>
+      </div>
+      <div class="usernameAndname flex flex-col justify-start gap-1">
+       <span class="font-semibold">{{user.username}}</span>
+       <span>{{user.name}}</span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+</div>

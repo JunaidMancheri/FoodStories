@@ -1,0 +1,42 @@
+syntax = "proto3";
+
+package comments_service.v1;
+
+service CommentsService {
+  rpc addComment(AddCommentRequest) returns (CommentEntity) {};
+  rpc getCommentsForAPost(GetCommentsForAPostRequest) returns (GetCommentsForAPostResponse) {};
+}
+
+message CommentEntity {
+  string id = 0;
+  string comment = 1;
+  string userId = 2;
+  string postId = 3;
+  int32  likesCount = 4;
+  string createdAt = 5;
+  string rootCommentId = 6;
+  string parentCommentId = 7;
+  int32 repliesCount = 8;
+  string repliedToUserId = 9;
+}
+
+message EMPTY {}
+
+message GetCommentsForAPostRequest {
+  string postId = 0;
+  int32 pageNumber = 1;
+  int32 pageSize = 2;
+}
+
+message GetCommentsForAPostResponse {
+  repeated CommentEntity comments = 0;
+}
+
+message AddCommentRequest {
+  string comment = 0;
+  string userId = 1;
+  string postId = 2;
+  string rootCommentId = 3;
+  string parentCommentId = 4;
+  string repliedToUserId = 5;
+}

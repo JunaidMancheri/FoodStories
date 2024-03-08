@@ -1,0 +1,44 @@
+syntax = "proto3";
+
+package posts_service.v1;
+
+service PostsService {
+  rpc createPost(CreatePostRequest) returns (PostEntity) {}
+  rpc updatePostMediaUrls(UpdatePostMediaUrlsRequest)returns (EMPTY) {}
+  rpc getUsersPosts(GetUsersPostsRequest) returns(GetUserPostsResponse) {}
+}
+
+
+message PostEntity {
+  string id = 0;
+  string userId = 1;
+  string caption = 2;
+  repeated string mediaUrls = 3;
+  string createdAt = 4;
+  int32 likesCount = 5;
+  int32 totalCommentsCount = 6;
+  string thumbnailUrl = 7;
+  int32 topLevelCommentsCount = 8;
+}
+
+
+message EMPTY {}
+
+message GetUserPostsResponse {
+  repeated PostEntity posts = 0;
+}
+
+message GetUsersPostsRequest {
+  string userId = 0;
+}
+
+message CreatePostRequest {
+  string userId = 0;
+  string caption = 1;
+}
+
+message UpdatePostMediaUrlsRequest {
+  string postId = 0;
+  repeated string mediaUrls = 1;
+  string thumbnailUrl = 2;
+}

@@ -1,0 +1,123 @@
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 14.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (5ae7bcd531e3cdea)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 14.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (4c2271c7fba8bbb2)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 14.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (ae15dc1f6d48a568)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 14.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (bb2d891683a816bd)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 14.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (bd698afde2740a81)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 14.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (fded49027c02232e)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 14.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (281130cb45b9d5d3)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 14.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (d7f2b9861dc0ff15)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 14.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (d7f2b9861dc0ff15)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\protobufjs@7.2.4\node_modules\protobufjs\src\namespace.js:382[39m[22m
+[1m[31m        throw Error("no such type: " + path);[39m[22m
+[1m[31m              ^[39m[22m
+[1m[31mError: no such type: s[39m[22m
+[1m[31m    at Service.lookupType (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\protobufjs@7.2.4\node_modules\protobufjs\src\namespace.js:382:15)[39m[22m
+[1m[31m    at Method.resolve (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\protobufjs@7.2.4\node_modules\protobufjs\src\method.js:156:44)[39m[22m
+[1m[31m    at Service.resolveAll (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\protobufjs@7.2.4\node_modules\protobufjs\src\service.js:111:20)[39m[22m
+[1m[31m    at Namespace.resolveAll (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\protobufjs@7.2.4\node_modules\protobufjs\src\namespace.js:307:25)[39m[22m
+[1m[31m    at Namespace.resolveAll (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\protobufjs@7.2.4\node_modules\protobufjs\src\namespace.js:307:25)[39m[22m
+[1m[31m    at Root.resolveAll (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\protobufjs@7.2.4\node_modules\protobufjs\src\namespace.js:307:25)[39m[22m
+[1m[31m    at Root.resolveAll (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\protobufjs@7.2.4\node_modules\protobufjs\src\root.js:259:43)[39m[22m
+[1m[31m    at loadProtosWithOptionsSync (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\@grpc+proto-loader@0.7.8\node_modules\@grpc\proto-loader\src\util.ts:80:14)[39m[22m
+[1m[31m    at loadSync (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\@grpc+proto-loader@0.7.8\node_modules\@grpc\proto-loader\src\index.ts:391:47)[39m[22m
+[1m[31m    at getGrpcServiceDefinition (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\dist\apps\posts-srv\webpack:\libs\common\grpc\src\lib\getService.ts:11:37)[39m[22m
+[1m[31m[39m[22m
+
+[36m>[39m [7m[1m[36m NX [39m[22m[27m [1mProcess exited with code 1, waiting for changes to restart...[22m
+
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 14.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (d7f2b9861dc0ff15)
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 14.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (d7f2b9861dc0ff15)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/44068b56-ca84-4101-96ab-2a9403a5f9b0[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 14.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (d7f2b9861dc0ff15)
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\protobufjs@7.2.4\node_modules\protobufjs\src\tokenize.js:121[39m[22m
+[1m[31m        return Error("illegal " + subject + " (line " + line + ")");[39m[22m
+[1m[31m               ^[39m[22m
+[1m[31mError: illegal token 'null', ';' expected (line 10)[39m[22m
+[1m[31m    at illegal (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\protobufjs@7.2.4\node_modules\protobufjs\src\tokenize.js:121:16)[39m[22m
+[1m[31m    at skip (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\protobufjs@7.2.4\node_modules\protobufjs\src\tokenize.js:375:19)[39m[22m
+[1m[31m    at ifBlock (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\protobufjs@7.2.4\node_modules\protobufjs\src\parse.js:295:13)[39m[22m
+[1m[31m    at parseType (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\protobufjs@7.2.4\node_modules\protobufjs\src\parse.js:308:9)[39m[22m
+[1m[31m    at parseCommon (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\protobufjs@7.2.4\node_modules\protobufjs\src\parse.js:261:17)[39m[22m
+[1m[31m    at parse (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\protobufjs@7.2.4\node_modules\protobufjs\src\parse.js:839:21)[39m[22m
+[1m[31m    at process (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\protobufjs@7.2.4\node_modules\protobufjs\src\root.js:127:30)[39m[22m
+[1m[31m    at fetch (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\protobufjs@7.2.4\node_modules\protobufjs\src\root.js:179:13)[39m[22m
+[1m[31m    at Root.load (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\protobufjs@7.2.4\node_modules\protobufjs\src\root.js:207:13)[39m[22m
+[1m[31m    at Root.loadSync (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\protobufjs@7.2.4\node_modules\protobufjs\src\root.js:248:17)[39m[22m
+[1m[31m[39m[22m
+
+[36m>[39m [7m[1m[36m NX [39m[22m[27m [1mProcess exited with code 1, waiting for changes to restart...[22m
+
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 14.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (d7f2b9861dc0ff15)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 14.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (d7f2b9861dc0ff15)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\protobufjs@7.2.4\node_modules\protobufjs\src\namespace.js:382[39m[22m
+[1m[31m        throw Error("no such type: " + path);[39m[22m
+[1m[31m              ^[39m[22m
+[1m[31mError: no such type: s[39m[22m
+[1m[31m    at Service.lookupType (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\protobufjs@7.2.4\node_modules\protobufjs\src\namespace.js:382:15)[39m[22m
+[1m[31m    at Method.resolve (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\protobufjs@7.2.4\node_modules\protobufjs\src\method.js:156:44)[39m[22m
+[1m[31m    at Service.resolveAll (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\protobufjs@7.2.4\node_modules\protobufjs\src\service.js:111:20)[39m[22m
+[1m[31m    at Namespace.resolveAll (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\protobufjs@7.2.4\node_modules\protobufjs\src\namespace.js:307:25)[39m[22m
+[1m[31m    at Namespace.resolveAll (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\protobufjs@7.2.4\node_modules\protobufjs\src\namespace.js:307:25)[39m[22m
+[1m[31m    at Root.resolveAll (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\protobufjs@7.2.4\node_modules\protobufjs\src\namespace.js:307:25)[39m[22m
+[1m[31m    at Root.resolveAll (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\protobufjs@7.2.4\node_modules\protobufjs\src\root.js:259:43)[39m[22m
+[1m[31m    at loadProtosWithOptionsSync (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\@grpc+proto-loader@0.7.8\node_modules\@grpc\proto-loader\src\util.ts:80:14)[39m[22m
+[1m[31m    at loadSync (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\@grpc+proto-loader@0.7.8\node_modules\@grpc\proto-loader\src\index.ts:391:47)[39m[22m
+[1m[31m    at getGrpcServiceDefinition (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\dist\apps\posts-srv\webpack:\libs\common\grpc\src\lib\getService.ts:11:37)[39m[22m
+[1m[31m[39m[22m
+
+[36m>[39m [7m[1m[36m NX [39m[22m[27m [1mProcess exited with code 1, waiting for changes to restart...[22m
+
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 14.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (d7f2b9861dc0ff15)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/ef77f6c5-ce13-40dd-9cc4-ea0ee5faedff[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 14.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (d7f2b9861dc0ff15)

@@ -16,10 +16,35 @@
     "baseUrl": ".",
     "paths": {
       "@food-stories/api-gateway/auth": ["libs/api-gateway/auth/src/index.ts"],
+      "@food-stories/api-gateway/comment": [
+        "libs/api-gateway/comment/src/index.ts"
+      ],
+      "@food-stories/api-gateway/common": [
+        "libs/api-gateway/common/src/index.ts"
+      ],
+      "@food-stories/api-gateway/core/firebase-admin": [
+        "libs/api-gateway/core/firebase-admin/src/index.ts"
+      ],
+      "@food-stories/api-gateway/like": ["libs/api-gateway/like/src/index.ts"],
+      "@food-stories/api-gateway/post": ["libs/api-gateway/post/src/index.ts"],
+      "@food-stories/api-gateway/social-network": [
+        "libs/api-gateway/social-network/src/index.ts"
+      ],
       "@food-stories/api-gateway/users": [
         "libs/api-gateway/users/src/index.ts"
       ],
-      "@food-stories/common/*": ["libs/common/src/lib/*"],
+      "@food-stories/common/errors": ["libs/common/errors/src/index.ts"],
+      "@food-stories/common/grpc": ["libs/common/grpc/src/index.ts"],
+      "@food-stories/common/handlers": ["libs/common/handlers/src/index.ts"],
+      "@food-stories/common/logger": ["libs/common/logger/src/index.ts"],
+      "@food-stories/common/typings": ["libs/common/typings/src/index.ts"],
+      "@food-stories/common/utils": ["libs/common/utils/src/index.ts"],
+      "@food-stories/posts-srv//post": ["libs/posts-srv/post/src/index.ts"],
+      "@food-stories/posts-srv/comment": [
+        "libs/posts-srv/comment/src/index.ts"
+      ],
+      "@food-stories/posts-srv/core": ["libs/posts-srv/core/src/index.ts"],
+      "@food-stories/posts-srv/like": ["libs/posts-srv/like/src/index.ts"],
       "@food-stories/shared-icons": [
         "libs/users-client/shared/icons/src/index.ts"
       ],
@@ -47,6 +72,9 @@
       "@food-stories/users-client/auth/ui/username-dialog-input": [
         "libs/users-client/auth/ui/username-dialog-input/src/index.ts"
       ],
+      "@food-stories/users-client/auth/utils": [
+        "libs/users-client/auth/utils/src/index.ts"
+      ],
       "@food-stories/users-client/feed/feature": [
         "libs/users-client/feed/feature/src/index.ts"
       ],
@@ -59,8 +87,26 @@
       "@food-stories/users-client/feed/ui/stories": [
         "libs/users-client/feed/ui/stories/src/index.ts"
       ],
-      "@food-stories/users-client/home": [
-        "libs/users-client/home/src/index.ts"
+      "@food-stories/users-client/post/data-access": [
+        "libs/users-client/post/data-access/src/index.ts"
+      ],
+      "@food-stories/users-client/post/feature/create-post": [
+        "libs/users-client/post/feature/create-post/src/index.ts"
+      ],
+      "@food-stories/users-client/post/feature/single-post-view": [
+        "libs/users-client/post/feature/single-post-view/src/index.ts"
+      ],
+      "@food-stories/users-client/post/ui/create-post-stepper": [
+        "libs/users-client/post/ui/create-post-stepper/src/index.ts"
+      ],
+      "@food-stories/users-client/post/ui/posts-grid": [
+        "libs/users-client/post/ui/posts-grid/src/index.ts"
+      ],
+      "@food-stories/users-client/post/ui/posts-grid-item": [
+        "libs/users-client/post/ui/posts-grid-item/src/index.ts"
+      ],
+      "@food-stories/users-client/profile/data-access": [
+        "libs/users-client/profile/data-access/src/index.ts"
       ],
       "@food-stories/users-client/profile/feature": [
         "libs/users-client/profile/feature/src/index.ts"
@@ -68,17 +114,29 @@
       "@food-stories/users-client/profile/ui/bio-section": [
         "libs/users-client/profile/ui/bio-section/src/index.ts"
       ],
+      "@food-stories/users-client/profile/ui/edit-profile-dialog": [
+        "libs/users-client/profile/ui/edit-profile-dialog/src/index.ts"
+      ],
       "@food-stories/users-client/profile/ui/highlights": [
         "libs/users-client/profile/ui/highlights/src/index.ts"
       ],
-      "@food-stories/users-client/profile/ui/posts": [
-        "libs/users-client/profile/ui/posts/src/index.ts"
+      "@food-stories/users-client/search/feature": [
+        "libs/users-client/search/feature/src/index.ts"
       ],
       "@food-stories/users-client/shared": [
         "libs/users-client/shared/src/index.ts"
       ],
+      "@food-stories/users-client/shared/app-init": [
+        "libs/users-client/shared/app-init/src/index.ts"
+      ],
       "@food-stories/users-client/shared/config": [
         "libs/users-client/shared/config/src/index.ts"
+      ],
+      "@food-stories/users-client/shared/data-access": [
+        "libs/users-client/shared/data-access/src/index.ts"
+      ],
+      "@food-stories/users-client/shared/ui/confirm-dialog": [
+        "libs/users-client/shared/ui/confirm-dialog/src/index.ts"
       ],
       "@food-stories/users-client/shared/ui/sidebar-layout": [
         "libs/users-client/shared/ui/sidebar-layout/src/index.ts"
@@ -86,8 +144,9 @@
       "@food-stories/users-client/shared/utils": [
         "libs/users-client/shared/utils/src/index.ts"
       ],
-      "@food-stories/users-client/web-shell": [
-        "libs/users-client/web-shell/src/index.ts"
+      "@food-stories/users-srv/core": ["libs/users-srv/core/src/index.ts"],
+      "@food-stories/users-srv/social-network": [
+        "libs/users-srv/social-network/src/index.ts"
       ],
       "@food-stories/users-srv/user": ["libs/users-srv/user/src/index.ts"]
     }

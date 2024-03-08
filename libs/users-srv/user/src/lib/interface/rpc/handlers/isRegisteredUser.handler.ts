@@ -1,16 +1,18 @@
 import { BaseHandler, RequestPayload, ResponsePayload, respondSuccess } from "@food-stories/common/handlers";
 import { IisRegisteredUserUseCase } from "../../../application/interfaces/usecases/isRegisteredUser.interface";
-import { ILogger } from "@food-stories/common/logger";
-import { IisRegisteredUserRequest, IisRegisteredUserResponse } from "@food-stories/common/typings/proto/usersService";
+import { IisRegisteredUserRequest, IisRegisteredUserResponse } from "@food-stories/common/typings";
 
 export class IsRegisteredUserHandler extends BaseHandler {
+
+  constructor(private usecase: IisRegisteredUserUseCase) {
+    super();
+  }
+
   async execute(request: Request): Promise<Response> {
     const response = await this.usecase.execute(request.data);
     return respondSuccess(response);
   }
-  constructor(private usecase: IisRegisteredUserUseCase, logger: ILogger) {
-    super(logger);
-  }
+
 
 }
 

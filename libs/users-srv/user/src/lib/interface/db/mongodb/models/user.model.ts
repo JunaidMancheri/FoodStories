@@ -1,7 +1,7 @@
 import { Document, Model, Schema, model} from 'mongoose';
 
 
-export interface IUser extends Document  {
+export interface IUserDoc extends Document  {
   _id: string;
   name: string;
   username: string;
@@ -9,24 +9,27 @@ export interface IUser extends Document  {
   isPrivate: boolean;
   createdAt: number;
   DPURL: string;
-  profile: IProfile
+  profile: IProfile;
+  postsCount: number;
+  followersCount: number;
+  followingsCount: number;
 }
 
 interface IProfile {
   bio: string;
   gender: 'female' | 'male';
-  links: string[];
 }
 
 const profile = new Schema({
   bio: String,
   gender: {
-    enum: ['male', 'female'],
+    enum: ['male', 'female', 'preferNotToSay', 'notMentioned'],
+    type: String,
+    default: 'notMentioned',
   },
-  links: [String],
 }, { _id: false})
 
-const userSchema = new Schema<IUser, Model<IUser>>({
+const userSchema = new Schema<IUserDoc, Model<IUserDoc>>({
   _id: {
     type: String,
     required: true,
@@ -55,10 +58,22 @@ const userSchema = new Schema<IUser, Model<IUser>>({
   DPURL: {
     type: String,
   },
+  postsCount: {
+    type: Number,
+    default: 0,
+  },
+  followersCount: {
+    type: Number,
+    default: 0,
+  },
+  followingsCount: {
+    type: Number,
+    default: 0,
+  },
   profile: profile
 })
 
-const userModel = model<IUser>('users', userSchema);
+const userModel = model<IUserDoc>('users', userSchema);
 
 
 export { userModel }

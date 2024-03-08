@@ -1,16 +1,32 @@
-import { Component } from "@angular/core";
-import { Auth 
-} from '@angular/fire/auth'
-import { Router } from "@angular/router";
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { ProfileStore } from '@food-stories/users-client/profile/data-access';
+import { ProfileService } from './profile.service';
+import { ActivatedRoute,  } from '@angular/router';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'fs-profile',
   templateUrl: './profile.component.html',
 })
-export class ProfileComponent {
+export class ProfileComponent implements OnInit, OnDestroy {
+  currUser$ = this.profileStore.user$;
+  isOwnProfile$ = this.profileService.isOwnProfile$;
+  posts$ = this.profileStore.posts$;
 
-  constructor(private auth: Auth, private router: Router) {}
-  
+  routeSub!: Subscription;
 
+  constructor(
+    private profileStore: ProfileStore,
+    private profileService: ProfileService,
+    private route: ActivatedRoute
 
+  ) {}
+
+  ngOnInit(): void {
+    this.routeSub = this.route.params.subscribe((params) => this.profileService.loadUserDetails(params['username']));
+  }
+
+  ngOnDestroy(): void {
+    this.routeSub.unsubscribe();
+  }
 }

@@ -62,4 +62,16 @@ export class LoginComponent {
     }
     })
   }
+
+  startForgotPassword(form: NgForm) {
+    const emailErrors = form.controls['email'].errors;
+    if (emailErrors) {
+      if (emailErrors['required']) {
+        return this.notificationService.openSnackBar('Email is required');
+      } else {
+        return this.notificationService.openSnackBar('Please enter a valid email');
+      }
+    }
+    this.authService.sendPasswordResetMail(form.controls['email'].value);
+  }
 }

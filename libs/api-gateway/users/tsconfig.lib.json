@@ -11,6 +11,6 @@
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src/**/*.ts"],
+  "include": ["src/**/*.ts", "../common/src/lib/grpc/grpc-exception.filter.ts", "../../../apps/api-gateway/src/app/grpc.exception.ts"],
   "exclude": ["jest.config.ts", "src/**/*.spec.ts", "src/**/*.test.ts"]
 }

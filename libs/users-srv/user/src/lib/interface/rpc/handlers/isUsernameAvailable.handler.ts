@@ -1,12 +1,12 @@
 import { BaseHandler, RequestPayload, ResponsePayload, respondSuccess } from "@food-stories/common/handlers";
-import { IisUsernameAvailableRequest, IisUsernameAvailableResponse } from "@food-stories/common/typings/proto/usersService";
+import { IisUsernameAvailableRequest, IisUsernameAvailableResponse } from "@food-stories/common/typings";
 import { IisUsernameAvailableUseCase } from "../../../application/interfaces/usecases/isUsernameAvailable.interface";
-import { ILogger } from "@food-stories/common/logger";
+
 
 export class isUsernameAvailableHandler extends BaseHandler {
 
-  constructor(private isUsernameAvailableUC: IisUsernameAvailableUseCase, logger: ILogger) {
-    super(logger)
+  constructor(private isUsernameAvailableUC: IisUsernameAvailableUseCase) {
+    super()
   }
 
   async execute(request: Request): Promise<Response> {

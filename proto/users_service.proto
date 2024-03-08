@@ -1,0 +1,82 @@
+syntax = "proto3";
+
+package users_service.v1;
+
+service UsersService {
+  rpc createUser (CreateUserRequest) returns (UserEntity) {}
+  rpc isUsernameAvailable(isUsernameAvailableRequest) returns (isUsernameAvailableResponse) {}
+  rpc isRegisteredUser(isRegisteredUserRequest) returns (isRegisteredUserResponse) {}
+  rpc getCurrentUserData(getCurrentUserDataRequest) returns (UserEntity) {}
+  rpc getUserData(getUserDataRequest) returns (UserEntity) {}
+  rpc updateUserProfile(EditProfileData) returns (UserEntity) {}
+  rpc searchUsers(SearchUserRequest) returns (SearchUserResponse) {}
+}
+
+message EditProfileData {
+  string username = 1;
+  string name = 2;
+  string DPURL = 3;
+  string gender = 4;
+  string bio = 5;
+  string id = 6;
+}
+
+message UserEntity {
+  string id = 1;
+  string name = 2;
+  string username = 3;
+  string email = 4;
+  bool isPrivate = 5;
+  string createdAt = 6;
+  string DPURL = 7;
+  Profile profile = 8;
+  int32 postsCount = 9;
+  int32 followersCount = 10;
+  int32 followingsCount = 11;
+}
+
+message  SearchUserRequest {
+  string query = 0;
+}
+
+message SearchUserResponse {
+  repeated EditProfileData results = 0;
+}
+
+message getUserDataRequest {
+  string username = 1;
+}
+
+message getCurrentUserDataRequest {
+  string email = 1;
+}
+
+
+message isRegisteredUserRequest {
+  string email = 1;
+}
+
+message isRegisteredUserResponse {
+  bool registered = 1;
+}
+
+message isUsernameAvailableResponse {
+  bool available = 1;
+}
+
+message isUsernameAvailableRequest {
+  string username = 1;
+}
+
+message CreateUserRequest {
+  string username = 1;
+  string email = 2;
+  string DPURL = 3;
+}
+
+message Profile {
+  string  bio = 1;
+  string gender = 2;
+  repeated string links = 3;
+}
+

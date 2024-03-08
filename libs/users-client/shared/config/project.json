@@ -2,10 +2,25 @@
   "name": "users-client-shared-config",
   "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/users-client/shared/config/src",
-  "prefix": "fs",
-  "tags": [],
   "projectType": "library",
   "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/users-client/shared/config",
+        "main": "libs/users-client/shared/config/src/index.ts",
+        "tsConfig": "libs/users-client/shared/config/tsconfig.lib.json",
+        "assets": []
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/users-client/shared/config/**/*.ts"]
+      }
+    },
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
@@ -19,16 +34,7 @@
           "codeCoverage": true
         }
       }
-    },
-    "lint": {
-      "executor": "@nx/linter:eslint",
-      "outputs": ["{options.outputFile}"],
-      "options": {
-        "lintFilePatterns": [
-          "libs/users-client/shared/config/**/*.ts",
-          "libs/users-client/shared/config/**/*.html"
-        ]
-      }
     }
-  }
+  },
+  "tags": []
 }

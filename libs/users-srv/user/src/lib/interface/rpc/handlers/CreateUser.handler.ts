@@ -1,12 +1,11 @@
 import { BaseHandler, RequestPayload, ResponsePayload, respondSuccess,  } from '@food-stories/common/handlers'
 import { ICreateUserUseCase } from '../../../application/interfaces/usecases/CreateUser.interface';
-import { ILogger } from '@food-stories/common/logger';
-import { ICreateUserRequest, ICreateUserResponse } from '@food-stories/common/typings/proto/usersService'
+import { ICreateUserRequest, IUser } from '@food-stories/common/typings'
 
 
 export class CreateUserHandler extends BaseHandler {
-  constructor(private CreateUserUC: ICreateUserUseCase, logger: ILogger) {
-    super(logger);
+  constructor(private CreateUserUC: ICreateUserUseCase) {
+    super();
   }
   async execute(request: Request): Promise<Response> {
     const newUser = await this.CreateUserUC.execute(request.data)
@@ -16,4 +15,4 @@ export class CreateUserHandler extends BaseHandler {
 }
 
 type Request = RequestPayload<ICreateUserRequest>;
-type Response = ResponsePayload<ICreateUserResponse>;
+type Response = ResponsePayload<IUser>;

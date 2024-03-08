@@ -1,40 +1,57 @@
-import { v4 as  uuidV4 } from 'uuid';
+import { ValidationError } from '@food-stories/common/errors';
+import { ILogger } from '@food-stories/common/logger';
+import { IUser, Profile } from '@food-stories/common/typings';
+import { v4 as uuidV4 } from 'uuid';
 
 export interface UserProps {
-  name?: string;
   username: string;
   email: string;
+  id?: string;
+  name?: string;
   DPURL?: string;
+  isPrivate?: boolean;
+  createdAt?: number;
+  profile?: Profile;
+  postsCount?: number;
+  followersCount?: number;
+  followingsCount?: number;
 }
 
-
-interface Profile {
-  bio?: string;
-  gender?: 'male' | 'female' ,
-  links?: string[];
+export interface UserClass {
+  new (userprops: UserProps): IUser;
 }
 
-export class User {
-  public id: string;
-  public name?: string;
-  public username: string;
-  public email: string;
-  public isPrivate: boolean;
-  public createdAt: number;
-  public DPURL: string;
-  public profile: Profile
+export function makeUserEntity(logger: ILogger): UserClass {
+  return class implements IUser {
+    public id: string;
+    public name: string;
+    public username: string;
+    public email: string;
+    public isPrivate: boolean;
+    public createdAt: number;
+    public DPURL: string ;
+    public profile: Profile;
+    public postsCount: number;
+    public followersCount: number;
+    public followingsCount: number;
 
-  constructor(props : UserProps) {
-    this.id = uuidV4();
-    this.name = props.name;
-    this.username = props.username;
-    this.email = props.email;
-    
-    this.isPrivate = false;
-    this.createdAt = Date.now()
-    this.DPURL = props.DPURL || '';
-    this.profile = {};
+    constructor(props: UserProps) {
+      this.id = props.id || uuidV4();
+      this.isPrivate = props.isPrivate || false;
+      this.createdAt = props.createdAt || Date.now();
+      this.profile = props.profile || { bio: null, gender: 'notMentioned'};
+      this.postsCount = props.postsCount || 0;
+      this.followersCount = props.followersCount || 0;
+      this.followingsCount = props.followingsCount || 0;
 
-  }
+      if (!props.username) throw new ValidationError('Username must be provided', logger);
+      if (!props.email) throw new ValidationError('Email must be provided', logger);
 
+      this.username = props.username;
+      this.email = props.email;
+
+      this.name = props.name || '';
+      this.DPURL = props.DPURL || '';
+    }
+  };
 }
