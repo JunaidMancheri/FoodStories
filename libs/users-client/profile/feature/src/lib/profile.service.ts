@@ -28,8 +28,8 @@ export class ProfileService {
         const currentUserUsername = user.username;
         if (currentUserUsername !== routeUsername) {
           this.profileStore.fetchUserDetails(routeUsername);
+          this.isOwnPropertySubject$.next(false);
         } else {
-          
           this.isOwnPropertySubject$.next(true);
           this.profileStore.loadUser(user);
         }

@@ -2,7 +2,7 @@
 
 <mat-drawer-container class="example-container">
   <mat-drawer #drawer>
-    <fs-search-box></fs-search-box>
+    <fs-search-box (closeDrawer)="drawer.close()"></fs-search-box>
   </mat-drawer>
   <mat-drawer-content>
 

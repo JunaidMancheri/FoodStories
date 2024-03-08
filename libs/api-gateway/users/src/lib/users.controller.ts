@@ -12,7 +12,7 @@ import { ApiGatewayUsersService } from './users.service';
 import { CreateUserDTO } from './CreateUser.dto';
 import { EditProfileData } from '@food-stories/common/typings';
 import { AuthGuard } from '@food-stories/api-gateway/common';
-import { map } from 'rxjs';
+import { map, tap } from 'rxjs';
 
 @Controller('users')
 @UseGuards(AuthGuard)
@@ -26,6 +26,15 @@ export class ApiGatewayUsersController {
     });
     return response;
   }
+
+  
+  @Get('/search')
+  searchUsers(@Query('query') query: string) {
+    return this.apiGatewayUsersService
+      .searchUsers({ query })
+      .pipe(map((results) => (results.results ? results : { results: [] })), tap(val => console.log(val)));
+  }
+
 
   @Get(':username')
   getUserDetails(@Param() params: { username: string }) {
@@ -47,13 +56,6 @@ export class ApiGatewayUsersController {
   @Post()
   createUser(@Body() createUserDto: CreateUserDTO) {
     return this.apiGatewayUsersService.createUser(createUserDto);
-  }
-
-  @Get('/search')
-  searchUsers(@Query('query') query: string) {
-    this.apiGatewayUsersService
-      .searchUsers({ query })
-      .pipe(map((results) => (results.results ? results : { results: [] })));
   }
 
   @Put('profile')

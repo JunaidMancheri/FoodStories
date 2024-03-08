@@ -14,10 +14,10 @@ class SearchUsersHandler  extends BaseHandler {
   async execute(request: RequestPayload<ISearchUserRequest>): Promise<ResponsePayload<ISearchUserResponse>> {
     const results = await  userModel.find({ $or : [
       {
-        username: { $regex:new RegExp(`^${request.data.query})}`, 'i')}
+        username: { $regex:new RegExp(`^${request.data.query}`, 'i')}
       }, 
       {
-        name: { $regex:new RegExp(`^${request.data.query})}`, 'i')}
+        name: { $regex:new RegExp(`^${request.data.query}`, 'i')}
       }
     ]})
 
