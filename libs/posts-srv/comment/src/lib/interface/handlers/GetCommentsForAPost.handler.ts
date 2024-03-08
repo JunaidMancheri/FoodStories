@@ -16,7 +16,7 @@ export class GetCommentsForAPostHandler extends BaseHandler {
     request: RequestPayload<IGetCommentsForAPostRequest>
   ): Promise<ResponsePayload<IGetCommentsForAPostResponse>> {
     const pageSize = request.data.pageSize;
-    const skipValue = request.data.pageNumber * pageSize;
+    const skipValue = (request.data.pageNumber -1) * pageSize;
     const commentDocs = await commentsModel
       .find({ postId: request.data.postId })
       .skip(skipValue)

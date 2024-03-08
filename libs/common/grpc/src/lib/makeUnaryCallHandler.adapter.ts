@@ -12,6 +12,7 @@ export function makeUnaryCallHandler(
   handler: BaseHandler,
   logger: ILogger
 ): handleUnaryCall<any, any> {
+  const production = process.env['production'];
   return async (call, callback) => {
     const request: RequestPayload = {
       type: HandlerType.RPC,
@@ -23,6 +24,10 @@ export function makeUnaryCallHandler(
     const method = path.substring(path.lastIndexOf('/') + 1);
 
     logger.info(`method called: ${method}`);
+    
+    if (!production) {
+       logger.info('request: ', call.request)
+    }
 
     const response = await handler.handle(request);
 
@@ -37,6 +42,10 @@ export function makeUnaryCallHandler(
 
       callback(error);
     } else {
+
+      if (!production) {
+        logger.info('response: ', response)
+     }
       callback(null, response.data);
     }
 

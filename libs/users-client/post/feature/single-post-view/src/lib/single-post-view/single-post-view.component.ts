@@ -5,11 +5,12 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import { IPost } from '@food-stories/common/typings';
+import { IComment, IPost } from '@food-stories/common/typings';
 import { Store } from '@ngrx/store';
 import { selectCurrentUserIdOrUsername } from '@food-stories/users-client/shared/app-init';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { LikesService } from '@food-stories/users-client/post/data-access';
+import { RelativePipeModule } from '@food-stories/users-client/shared/utils';
 
 interface DialogData {
   post: IPost;
@@ -30,6 +31,7 @@ interface DialogData {
     MatFormFieldModule,
     MatInputModule,
     ReactiveFormsModule,
+    RelativePipeModule
   ],
   templateUrl: './single-post-view.component.html',
   styleUrls: ['./single-post-view.component.css'],
@@ -39,8 +41,11 @@ export class SinglePostViewComponent implements OnInit {
   likesService = inject(LikesService);
   data: DialogData = inject(MAT_DIALOG_DATA);
 
+  commentInput = new FormControl('');
+
   userId = '';
   isLiked = false;
+  comments: IComment[] = [];
 
   ngOnInit(): void {
     this.store.select(selectCurrentUserIdOrUsername).subscribe((data) => {
@@ -50,7 +55,24 @@ export class SinglePostViewComponent implements OnInit {
         .subscribe((response) => {
           this.isLiked = response.isLiked;
         });
+      this.likesService.getComments(this.data.post.id).subscribe((res) => {
+        this.comments = res.comments;
+      });
     });
+  }
+
+  addComment() {
+    if (this.commentInput.value)
+      this.likesService
+        .addComment({
+          postId: this.data.post.id,
+          userId: this.userId,
+          comment: this.commentInput.value,
+        })
+        .subscribe((comment) => {
+          this.commentInput.setValue('')
+          this.comments.push(comment);
+        });
   }
 
   toggleLike() {
