@@ -15,7 +15,7 @@ import { AuthGuard } from '@food-stories/api-gateway/common';
 import { map, tap } from 'rxjs';
 
 @Controller('users')
-@UseGuards(AuthGuard)
+// @UseGuards(AuthGuard)
 export class ApiGatewayUsersController {
   constructor(private apiGatewayUsersService: ApiGatewayUsersService) {}
 

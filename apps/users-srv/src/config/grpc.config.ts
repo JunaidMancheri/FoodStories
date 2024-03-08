@@ -13,7 +13,7 @@ const usersService = getGrpcServiceDefinition({
 })
 
 const socialNetworkService = getGrpcServiceDefinition({
-  packageName: 'social_networks_service.proto',
+  packageName: 'social_networks_service',
   protoPath: join(__dirname, 'proto', 'social_networks_service.proto'),
   serviceName: 'SocialNetworksService',
 })

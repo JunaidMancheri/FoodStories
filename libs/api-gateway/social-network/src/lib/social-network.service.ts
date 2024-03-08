@@ -20,7 +20,7 @@ export class ApiGatewaySocialNetworkService implements OnModuleInit {
 
   onModuleInit() {
     this.socialNetworksService = this.client.getService(
-      'social_networks_service.v1'
+      'SocialNetworksService',
     );
   }
 
