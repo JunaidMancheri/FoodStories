@@ -54,16 +54,16 @@
     
            </div>
         </div>
-
-
-        
-
-
       
       </div>
 
 
     </cdk-step>
-    <cdk-step>hl3</cdk-step>
+    <cdk-step>
+      <div class="wrapper flex justify-center flex-col items-center px-12">
+        <mat-progress-bar mode="determinate" [value]="fileUploadProgress"></mat-progress-bar>
+        <span>{{progressCaption}}</span>
+      </div>
+    </cdk-step>
   </fs-create-post-stepper>
   
