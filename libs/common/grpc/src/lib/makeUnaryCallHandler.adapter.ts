@@ -7,10 +7,10 @@ import {
 import { Status } from '@grpc/grpc-js/build/src/constants';
 import { ILogger } from '@food-stories/common/logger';
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function makeUnaryCallHandler(
   handler: BaseHandler,
   logger: ILogger
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 ): handleUnaryCall<any, any> {
   const production = process.env['production'];
   return async (call, callback) => {
