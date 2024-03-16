@@ -3,11 +3,12 @@ import  { makeUnaryCallHandler} from '@food-stories/common/grpc';
 import { makeCreateUserHandler, makeGetUserDataHandler ,makeGetCurrentUserDataHandler, makeIsRegisteredUser, makeIsUsernameAvailableHandler, makeUpdateUserProfileHandler, makeSearchUsersHanlder } from '@food-stories/users-srv/user'
 import { Logger, logger } from '@food-stories/users-srv/core';
 import { makeFollowAUser, makeUnfollowAUser } from '@food-stories/users-srv/social-network';
+import { createProducer, kafkaClient } from '../config/kafka.config';
 
 
 
 export const UsersServiceImpl : IUsersServiceServer = {
-  createUser: wrapHandler(makeCreateUserHandler),
+  createUser: makeUnaryCallHandler(makeCreateUserHandler(Logger, createProducer(kafkaClient) ), logger),
   isUsernameAvailable: wrapHandler(makeIsUsernameAvailableHandler),
   isRegisteredUser: wrapHandler(makeIsRegisteredUser),
   getCurrentUserData: wrapHandler(makeGetCurrentUserDataHandler),
@@ -17,6 +18,7 @@ export const UsersServiceImpl : IUsersServiceServer = {
 }
 
 
+
 export const  SocialNetworkServiceImpl : ISocialNetworkServiceServer = {
   followAUser: wrapHandler(makeFollowAUser),
   unfollowAUser: wrapHandler(makeUnfollowAUser),
@@ -24,5 +26,5 @@ export const  SocialNetworkServiceImpl : ISocialNetworkServiceServer = {
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function wrapHandler(handlerFactory: any) {
-  return makeUnaryCallHandler(handlerFactory(Logger), logger) 
+  return makeUnaryCallHandler(handlerFactory(Logger, kakfaClient), logger) 
 }
