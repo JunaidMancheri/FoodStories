@@ -10,7 +10,7 @@ import { Producer } from "kafkajs";
 
 
 export function makeCreateUserHandler(Logger: LoggerClass, producer: Producer) : BaseHandler {
-  const  publisher = new UserCreatedEventPublisher(producer)
+  const  publisher = new UserCreatedEventPublisher(producer, new Logger('Publisher: UserCreated'))
   const usecase = new CreateUserUseCase(new Logger('UseCase:Create'), userRepo, publisher);
-  return  new CreateUserHandler( usecase);
+  return  new CreateUserHandler(usecase);
 }
