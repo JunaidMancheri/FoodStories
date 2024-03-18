@@ -10090,6 +10090,15 @@
         "hash": "sha512-KDncfTmOZoOMTFG4mBlG0qUIOlc03fmzH+ru6RgYVZhPkyiy/92Owlt/8UEN+a4TXR1FQetfIpJE8ApdvdVxTg=="
       }
     },
+    "npm:kafkajs": {
+      "type": "npm",
+      "name": "npm:kafkajs",
+      "data": {
+        "version": "2.2.4",
+        "packageName": "kafkajs",
+        "hash": "sha512-j/YeapB1vfPT2iOIUn/vxdyKEuhuY2PxMBvf5JWux6iSaukAccrMtXEY/Lb7OvavDhOWME589bpLrEdnVHjfjA=="
+      }
+    },
     "npm:kareem": {
       "type": "npm",
       "name": "npm:kareem",
@@ -24119,6 +24128,11 @@
       {
         "source": "npm:@nestjs/microservices",
         "target": "npm:iterare",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nestjs/microservices",
+        "target": "npm:kafkajs",
         "type": "static"
       },
       {

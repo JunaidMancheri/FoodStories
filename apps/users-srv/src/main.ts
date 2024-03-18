@@ -1,15 +1,17 @@
 import { logger } from "@food-stories/users-srv/core";
-import { appConfig, envKeys } from './config/app.config';
+import { appConfig } from './config/app.config';
 import { startGRPCServer } from './config/grpc.config';
-import { connectToMongoDB, doTerminationCleanup, loadAppConfig } from '@food-stories/common/utils'
+import { connectToMongoDB, doTerminationCleanup } from '@food-stories/common/utils';
+import { bootstrapKafka } from '@food-stories/common/kafka';
+import { kafkaClient, topicsNeeded } from "./config/kafka.config";
 
 
 
 
 async function bootstrap() {
   try {
-    await loadAppConfig(envKeys, appConfig, logger);
-    await connectToMongoDB(appConfig.MONGODB_URI);
+    await connectToMongoDB(appConfig.MONGODB_URI, logger);
+    await  bootstrapKafka(kafkaClient, topicsNeeded, logger)
     const grpcServer = await startGRPCServer(appConfig.GRPC_PORT, logger);
 
   

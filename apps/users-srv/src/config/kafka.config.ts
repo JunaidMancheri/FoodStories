@@ -1,30 +1,11 @@
-import {Kafka} from 'kafkajs';
+import { appConfig } from './app.config';
+import { EVENTS } from '@food-stories/common/events';
+import { Logger } from '@food-stories/users-srv/core';
+import { createKafkaClient } from '@food-stories/common/kafka';
 
-export const kafkaClient = new Kafka({
-  brokers: ['localhost:9092'],
-  clientId: 'kafka-client',
-})
+export const kafkaClient = createKafkaClient(
+  { clientId: 'users-srv', hostUrl: appConfig.KAFKA_URI },
+  new Logger('KAFKA')
+);
 
-export function createProducer(kafkaClient: Kafka) {
-  const producer = kafkaClient.producer({allowAutoTopicCreation: false});
-  producer.connect();
-  process.on('SIGINT', async  () => await producer.disconnect());
-  process.on('SIGTERM', async () => await producer.disconnect())
-  return producer;
-}
-
-
-
-
-// export function kafkaConsumerAdapter(subscriber: at=n==) {
-//   const consumer = kakfaClient.consumer({groupId: 'some-group', allowAutoTopicCreation: false});
-//   consumer.connect();
-//   consumer.subscribe({topic: 'some-topic', fromBeginning: true});
-//   consumer.run({
-//     autoCommit:  false,
-//     eachMessage: async (payload) =>{
-
-//        subscriber.handleEvent(payload.message.value.toJSON())
-//     }
-//   })
-// }
+export const topicsNeeded = [EVENTS.User.Created.v1];

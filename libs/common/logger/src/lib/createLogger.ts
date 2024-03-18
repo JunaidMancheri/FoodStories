@@ -46,8 +46,8 @@ export function makeLogger(serviceName: string): LoggerClass  {
       });
     }
 
-    static log(level: string, message: string, metadata?: unknown): void {
-      winston.log(level, message, metadata);
+    log(level: string, message: string, metadata?: unknown): void {
+      this.logger.log(level, message, metadata);
     }
 
     warn(message: string, metadata?: unknown): void {

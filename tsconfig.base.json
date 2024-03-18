@@ -34,8 +34,10 @@
         "libs/api-gateway/users/src/index.ts"
       ],
       "@food-stories/common/errors": ["libs/common/errors/src/index.ts"],
+      "@food-stories/common/events": ["libs/common/events/src/index.ts"],
       "@food-stories/common/grpc": ["libs/common/grpc/src/index.ts"],
       "@food-stories/common/handlers": ["libs/common/handlers/src/index.ts"],
+      "@food-stories/common/kafka": ["libs/common/kafka/src/index.ts"],
       "@food-stories/common/logger": ["libs/common/logger/src/index.ts"],
       "@food-stories/common/typings": ["libs/common/typings/src/index.ts"],
       "@food-stories/common/utils": ["libs/common/utils/src/index.ts"],
