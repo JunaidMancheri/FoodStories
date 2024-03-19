@@ -44,7 +44,7 @@ export function makeUnaryCallHandler(
     } else {
 
       if (!production) {
-        logger.info('response: ', response)
+        logger.info('response: ', response.data)
      }
       callback(null, response.data);
     }

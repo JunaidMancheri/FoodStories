@@ -10,7 +10,7 @@ export class CreateUserUseCase implements ICreateUserUseCase {
   constructor(
     private logger: ILogger,
     private createUserRepo: ICreateUserRepo,
-    private pubisher : IUserCreatedEventPublisher,
+    private pubisher: IUserCreatedEventPublisher
   ) {}
   async execute(userDto: UserProps): Promise<IUser> {
     let newUser;
@@ -26,8 +26,8 @@ export class CreateUserUseCase implements ICreateUserUseCase {
       }
       throw error;
     }
-    
-    await this.pubisher.publish(newUser);
+
+    await this.pubisher.publish({ id: newUser.id, username: newUser.username });
 
     this.logger.info('new  user registered', {
       username: newUser.username,

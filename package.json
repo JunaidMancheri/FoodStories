@@ -44,6 +44,7 @@
     "kafkajs": "^2.2.4",
     "mongoose": "^7.5.0",
     "morgan": "^1.10.0",
+    "neo4j-driver": "^5.18.0",
     "ngx-image-cropper": "^7.2.1",
     "protobufjs": "^7.2.4",
     "reflect-metadata": "^0.1.13",

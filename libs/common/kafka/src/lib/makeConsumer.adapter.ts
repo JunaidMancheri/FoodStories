@@ -8,23 +8,29 @@ export function makeConsumerAdapter(
   consumer: Consumer,
   logger: ILogger
 ) {
-  consumer.subscribe({ topic: subscriber.event });
+  consumer.subscribe({ topic: subscriber.event, fromBeginning: true });
   consumer.run({
     autoCommit: false,
     eachMessage: async ({ message, topic, partition }) => {
       logger.info('Event received ' + subscriber.event);
 
       // potential break; if normal string is passed app breaks;
-      const payload = JSON.parse(message.value.toString());
 
-      if (isDevelopmentMode()) {
-        logger.info('Event payload', payload);
+      try {
+        const payload = JSON.parse(message.value.toString());
+
+        if (isDevelopmentMode()) {
+          logger.info('Event payload', payload);
+        }
+        await subscriber.handle(payload);
+      } catch (error) {
+        // TODO: dlq
+        logger.error(error.message);
       }
-      await subscriber.handle(payload);
       await consumer.commitOffsets([
-        { offset: message.offset, topic, partition },
+        { offset: (Number(message.offset) + 1).toString(), topic, partition },
       ]);
-      logger.info('Processed event ' + subscriber.event);
+      logger.info('Processed event' + subscriber.event);
     },
   });
 }

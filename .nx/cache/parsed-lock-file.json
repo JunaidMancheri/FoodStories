@@ -5869,6 +5869,15 @@
         "hash": "sha512-EHcyIPBQ4BSGlvjB16k5KgAJ27CIsHY/2JBmCRReo48y9rQ3MaUzWX3KVlBa4U7MyX02HdVj0K7C3WaB3ju7FQ=="
       }
     },
+    "npm:buffer@6.0.3": {
+      "type": "npm",
+      "name": "npm:buffer@6.0.3",
+      "data": {
+        "version": "6.0.3",
+        "packageName": "buffer",
+        "hash": "sha512-FTiCpNxtwiZZHEZbcbTIcZjERVICn9yq/pDFkTl95/AxzD1naBctN7YO68riM/gLSDY7sdrMby8hofADYuuqOA=="
+      }
+    },
     "npm:builtins": {
       "type": "npm",
       "name": "npm:builtins",
@@ -11078,6 +11087,33 @@
         "version": "2.6.2",
         "packageName": "neo-async",
         "hash": "sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw=="
+      }
+    },
+    "npm:neo4j-driver-bolt-connection": {
+      "type": "npm",
+      "name": "npm:neo4j-driver-bolt-connection",
+      "data": {
+        "version": "5.18.0",
+        "packageName": "neo4j-driver-bolt-connection",
+        "hash": "sha512-Oc0w4V1sFzy6b1Mvsojz2mcDI0Caqv/jsb61DY7s9i0BHMglkNfMR1GJHjRzC6HaeDU85EFw1RLNF0NJmCSzpg=="
+      }
+    },
+    "npm:neo4j-driver-core": {
+      "type": "npm",
+      "name": "npm:neo4j-driver-core",
+      "data": {
+        "version": "5.18.0",
+        "packageName": "neo4j-driver-core",
+        "hash": "sha512-naq5zT5tYazh81CO28L5YrcL/Wy4NoppqawkE5zyfFFVEs3bhmGn7G170FL0Fs8h7Dab1aZ5hlOBwlXXVWSDng=="
+      }
+    },
+    "npm:neo4j-driver": {
+      "type": "npm",
+      "name": "npm:neo4j-driver",
+      "data": {
+        "version": "5.18.0",
+        "packageName": "neo4j-driver",
+        "hash": "sha512-lDDoj45SN/FNZIYa9cTesHTAVMrcPeWmgkrYiYGTVBfJ3yKk2m2G7+lpmfip6NN8H+A0C4NIqfmMHtcC4eflyw=="
       }
     },
     "npm:ngx-image-cropper": {
@@ -28589,6 +28625,18 @@
         "type": "static"
       }
     ],
+    "npm:buffer@6.0.3": [
+      {
+        "source": "npm:buffer@6.0.3",
+        "target": "npm:base64-js",
+        "type": "static"
+      },
+      {
+        "source": "npm:buffer@6.0.3",
+        "target": "npm:ieee754",
+        "type": "static"
+      }
+    ],
     "npm:builtins": [
       {
         "source": "npm:builtins",
@@ -35199,6 +35247,40 @@
       {
         "source": "npm:needle",
         "target": "npm:sax",
+        "type": "static"
+      }
+    ],
+    "npm:neo4j-driver-bolt-connection": [
+      {
+        "source": "npm:neo4j-driver-bolt-connection",
+        "target": "npm:buffer@6.0.3",
+        "type": "static"
+      },
+      {
+        "source": "npm:neo4j-driver-bolt-connection",
+        "target": "npm:neo4j-driver-core",
+        "type": "static"
+      },
+      {
+        "source": "npm:neo4j-driver-bolt-connection",
+        "target": "npm:string_decoder",
+        "type": "static"
+      }
+    ],
+    "npm:neo4j-driver": [
+      {
+        "source": "npm:neo4j-driver",
+        "target": "npm:neo4j-driver-bolt-connection",
+        "type": "static"
+      },
+      {
+        "source": "npm:neo4j-driver",
+        "target": "npm:neo4j-driver-core",
+        "type": "static"
+      },
+      {
+        "source": "npm:neo4j-driver",
+        "target": "npm:rxjs",
         "type": "static"
       }
     ],

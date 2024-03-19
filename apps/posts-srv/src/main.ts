@@ -7,7 +7,7 @@ import { connectToMongoDB, doTerminationCleanup, loadAppConfig } from '@food-sto
 async function bootstrap() {
   try {
     await loadAppConfig(envKeys, appConfig, logger);
-    await connectToMongoDB(appConfig.MONGODB_URI);
+    await connectToMongoDB(appConfig.MONGODB_URI, logger);
     const grpcServer = await startGRPCServer(appConfig.GRPC_PORT, logger);
   
 

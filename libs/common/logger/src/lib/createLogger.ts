@@ -19,8 +19,8 @@ export function makeLogger(serviceName: string): LoggerClass {
             format.timestamp({ format: 'HH:mm:ss' }),
             format.metadata({ fillExcept: ['timestamp', 'level', 'message'] }),
             format.printf(({ timestamp, level, message, metadata }) => {
-              if (metadata.metadata && Object.keys(metadata.metadata).length > 0) {
-                const formattedMetadata = Object.entries(metadata.metadata)
+              if (metadata && Object.keys(metadata).length > 0) {
+                const formattedMetadata = Object.entries(metadata)
                   .map(([key, value]) => `\n ${key}: '${value}'`)
                   .join(', ');
                 return `[${timestamp}] [${level}] [${serviceName}] [${componentName}] ${message} \n{${formattedMetadata}\n}`;
