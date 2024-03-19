@@ -12,14 +12,14 @@ export function makeLogger(serviceName: string): LoggerClass {
     });
 
     constructor(componentName: string) {
-      this.logger.transports = [
+      this.logger.configure({transports: [
         new transports.Console({
           format: format.combine(
             format.colorize(),
             format.timestamp({ format: 'HH:mm:ss' }),
             format.metadata({ fillExcept: ['timestamp', 'level', 'message'] }),
             format.printf(({ timestamp, level, message, metadata }) => {
-              if (Object.keys(metadata.metadata).length > 0) {
+              if (metadata.metadata && Object.keys(metadata.metadata).length > 0) {
                 const formattedMetadata = Object.entries(metadata.metadata)
                   .map(([key, value]) => `\n ${key}: '${value}'`)
                   .join(', ');
@@ -29,7 +29,7 @@ export function makeLogger(serviceName: string): LoggerClass {
             })
           ),
         }),
-      ];
+      ]})
     }
 
     log(level: string, message: string, metadata?: unknown): void {
