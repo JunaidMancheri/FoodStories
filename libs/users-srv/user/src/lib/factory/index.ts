@@ -10,6 +10,14 @@ export * from './getCurrentUserData.factory';
 export * from './getUserData.factory';
 export * from './udpateUserProfile.factory';
 
+export class PostCreatedHandler extends BaseSubscriber {
+  override event = 'Post.Created';
+ async execute(payload: any): Promise<void> {
+    await userModel.findByIdAndUpdate(payload.userId, {$inc: {postsCount: 1}});
+  }
+
+}
+
 
 export class FollowedAUserEventSubscriber extends BaseSubscriber  {
   override event = 'User.Followed';

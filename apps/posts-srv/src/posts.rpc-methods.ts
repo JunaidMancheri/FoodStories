@@ -17,6 +17,8 @@ import {
 import { ILikesServiceServer } from '@food-stories/common/typings';
 import { LikeModule } from '@food-stories/posts-srv/like';
 import { CommentsModule } from '@food-stories/posts-srv/comment';
+import { createProducer } from '@food-stories/common/kafka';
+import { kafkaClientForPosts } from './config/kafka.config';
 
 const commentsModuleMethods =
   CommentsModule.initialize(CommentsLogger).getRpcHanlders();
@@ -49,5 +51,5 @@ export const PostsServiceImpl: IPostsServiceServer = {
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function wrapHandler(handlerFactory: any) {
-  return makeUnaryCallHandler(handlerFactory(Logger), logger);
+  return makeUnaryCallHandler(handlerFactory(Logger, createProducer(kafkaClientForPosts)), logger);
 }

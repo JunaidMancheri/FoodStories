@@ -5,7 +5,7 @@ import { createKafkaClient } from '@food-stories/common/kafka';
 import { makeConsumerAdapter, createConsumer } from '@food-stories/common/kafka';
 import { makeUserCreatedSubscriber } from '@food-stories/users-srv/social-network';
 import { neo4jDriver } from './neo4j.config';
-import { FollowedAUserEventSubscriber, UnFollowedAUserEventSubscriber } from '@food-stories/users-srv/user';
+import { FollowedAUserEventSubscriber, PostCreatedHandler, UnFollowedAUserEventSubscriber } from '@food-stories/users-srv/user';
 
 export const kafkaClient = createKafkaClient(
   { clientId: 'social-networks-srv', hostUrl: appConfig.KAFKA_URI },
@@ -44,3 +44,9 @@ makeConsumerAdapter(
 )
 
 
+
+makeConsumerAdapter(
+  new PostCreatedHandler(),
+  createConsumer(kafkaClient2, 'users-srv-post-created'),
+  logger,
+)
