@@ -16,7 +16,8 @@ import { REF_PATHS } from '@food-stories/users-client/shared/config';
 import { BioSectionService } from '../bio-section.service';
 import { FormatedBioModule } from '@food-stories/users-client/shared/utils';
 import { Store } from '@ngrx/store';
-import { AppActions } from '@food-stories/users-client/shared/app-init';
+import { AppActions, selectCurrentUserIdOrUsername } from '@food-stories/users-client/shared/app-init';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'fs-bio-section',
@@ -34,7 +35,8 @@ export class BioSectionComponent implements OnChanges {
     private confirmDialogService: ConfirmDialogService,
     private bioSectionService: BioSectionService,
     private profileStore: ProfileStore,
-    private store: Store
+    private store: Store,
+    private http: HttpClient
   ) {}
 
   ngOnChanges(changes: SimpleChanges): void {
@@ -47,10 +49,29 @@ export class BioSectionComponent implements OnChanges {
     }
   }
 
+  
   @Input({ required: true }) currentUser!: IUser | null;
   @Input({ required: true }) isOwnProfile!: boolean | null;
+  @Input({ required: true }) isFollowing: boolean | null = false;
   DPURL!: string;
+  
+  followUser(){
+    this.store.select(selectCurrentUserIdOrUsername).subscribe((idOrusername) => {
+      if (this.currentUser && this.currentUser.id) 
+      this.http.post('http://localhost:3000/api/v1/social-networks/' + this.currentUser.id, {followerId: idOrusername.id }).subscribe(() => {
+    this.isFollowing = true;})
+    })
+  }
 
+
+  unfollowUser() {
+    this.store.select(selectCurrentUserIdOrUsername).subscribe((idOrusername) => {
+      if (this.currentUser && this.currentUser.id) 
+      this.http.delete('http://localhost:3000/api/v1/social-networks/' + this.currentUser.id, {body: {followerId: idOrusername.id }}).subscribe(() => {
+    this.isFollowing = false})
+    })
+
+  }
   onError(event: Event) {
     const target = event.target as HTMLImageElement;
     target.src = REF_PATHS.NO_DP_PATH;

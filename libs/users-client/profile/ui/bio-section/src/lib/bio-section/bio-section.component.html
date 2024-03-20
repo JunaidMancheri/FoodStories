@@ -27,7 +27,8 @@
       <span class="text-lg">{{currentUser?.username}}</span>
 
       <div *ngIf="!isOwnProfile" class="flex space-x-2">
-        <button mat-raised-button>Following</button>
+        <button mat-raised-button *ngIf="!isFollowing" color="primary" (click)="followUser()">Follow</button>
+        <button mat-raised-button *ngIf="isFollowing" (click)="unfollowUser()">Following</button>
       </div>
       
       <div *ngIf="isOwnProfile" class="flex space-x-2">

@@ -32,4 +32,8 @@ export class ApiGatewaySocialNetworkService implements OnModuleInit {
     return handleGrpcError(this.socialNetworksService.unfollowAUser(data));
   }
 
+  isFollowing(data: FollowOrUnollowAUserRequest) {
+    return handleGrpcError(this.socialNetworksService.isFollowing(data));
+  }
+
 }

@@ -275,61 +275,6 @@
         "implicitDependencies": []
       }
     },
-    "users-client-shared-ui-confirm-dialog": {
-      "name": "users-client-shared-ui-confirm-dialog",
-      "type": "lib",
-      "data": {
-        "name": "users-client-shared-ui-confirm-dialog",
-        "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
-        "sourceRoot": "libs/users-client/shared/ui/confirm-dialog/src",
-        "prefix": "fs",
-        "tags": [],
-        "projectType": "library",
-        "targets": {
-          "test": {
-            "inputs": [
-              "default",
-              "^production",
-              "{workspaceRoot}/jest.preset.js"
-            ],
-            "executor": "@nx/jest:jest",
-            "outputs": [
-              "{workspaceRoot}/coverage/{projectRoot}"
-            ],
-            "options": {
-              "jestConfig": "libs/users-client/shared/ui/confirm-dialog/jest.config.ts",
-              "passWithNoTests": true
-            },
-            "configurations": {
-              "ci": {
-                "ci": true,
-                "codeCoverage": true
-              }
-            }
-          },
-          "lint": {
-            "inputs": [
-              "default",
-              "{workspaceRoot}/.eslintrc.json",
-              "{workspaceRoot}/.eslintignore"
-            ],
-            "executor": "@nx/linter:eslint",
-            "outputs": [
-              "{options.outputFile}"
-            ],
-            "options": {
-              "lintFilePatterns": [
-                "libs/users-client/shared/ui/confirm-dialog/**/*.ts",
-                "libs/users-client/shared/ui/confirm-dialog/**/*.html"
-              ]
-            },
-            "configurations": {}
-          }
-        },
-        "root": "libs/users-client/shared/ui/confirm-dialog",
-        "implicitDependencies": []
-      }
-    },
     "users-client-post-feature-create-post": {
       "name": "users-client-post-feature-create-post",
       "type": "lib",
@@ -382,6 +327,61 @@
           }
         },
         "root": "libs/users-client/post/feature/create-post",
+        "implicitDependencies": []
+      }
+    },
+    "users-client-shared-ui-confirm-dialog": {
+      "name": "users-client-shared-ui-confirm-dialog",
+      "type": "lib",
+      "data": {
+        "name": "users-client-shared-ui-confirm-dialog",
+        "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "libs/users-client/shared/ui/confirm-dialog/src",
+        "prefix": "fs",
+        "tags": [],
+        "projectType": "library",
+        "targets": {
+          "test": {
+            "inputs": [
+              "default",
+              "^production",
+              "{workspaceRoot}/jest.preset.js"
+            ],
+            "executor": "@nx/jest:jest",
+            "outputs": [
+              "{workspaceRoot}/coverage/{projectRoot}"
+            ],
+            "options": {
+              "jestConfig": "libs/users-client/shared/ui/confirm-dialog/jest.config.ts",
+              "passWithNoTests": true
+            },
+            "configurations": {
+              "ci": {
+                "ci": true,
+                "codeCoverage": true
+              }
+            }
+          },
+          "lint": {
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore"
+            ],
+            "executor": "@nx/linter:eslint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {
+              "lintFilePatterns": [
+                "libs/users-client/shared/ui/confirm-dialog/**/*.ts",
+                "libs/users-client/shared/ui/confirm-dialog/**/*.html"
+              ]
+            },
+            "configurations": {}
+          }
+        },
+        "root": "libs/users-client/shared/ui/confirm-dialog",
         "implicitDependencies": []
       }
     },
@@ -550,61 +550,6 @@
         "implicitDependencies": []
       }
     },
-    "auth-register": {
-      "name": "auth-register",
-      "type": "lib",
-      "data": {
-        "name": "auth-register",
-        "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
-        "sourceRoot": "libs/users-client/auth/feature/register/src",
-        "prefix": "food-stories",
-        "tags": [],
-        "projectType": "library",
-        "targets": {
-          "test": {
-            "inputs": [
-              "default",
-              "^production",
-              "{workspaceRoot}/jest.preset.js"
-            ],
-            "executor": "@nx/jest:jest",
-            "outputs": [
-              "{workspaceRoot}/coverage/{projectRoot}"
-            ],
-            "options": {
-              "jestConfig": "libs/users-client/auth/feature/register/jest.config.ts",
-              "passWithNoTests": true
-            },
-            "configurations": {
-              "ci": {
-                "ci": true,
-                "codeCoverage": true
-              }
-            }
-          },
-          "lint": {
-            "inputs": [
-              "default",
-              "{workspaceRoot}/.eslintrc.json",
-              "{workspaceRoot}/.eslintignore"
-            ],
-            "executor": "@nx/linter:eslint",
-            "outputs": [
-              "{options.outputFile}"
-            ],
-            "options": {
-              "lintFilePatterns": [
-                "libs/users-client/auth/feature/register/**/*.ts",
-                "libs/users-client/auth/feature/register/**/*.html"
-              ]
-            },
-            "configurations": {}
-          }
-        },
-        "root": "libs/users-client/auth/feature/register",
-        "implicitDependencies": []
-      }
-    },
     "users-client-profile-ui-highlights": {
       "name": "users-client-profile-ui-highlights",
       "type": "lib",
@@ -657,6 +602,61 @@
           }
         },
         "root": "libs/users-client/profile/ui/highlights",
+        "implicitDependencies": []
+      }
+    },
+    "auth-register": {
+      "name": "auth-register",
+      "type": "lib",
+      "data": {
+        "name": "auth-register",
+        "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "libs/users-client/auth/feature/register/src",
+        "prefix": "food-stories",
+        "tags": [],
+        "projectType": "library",
+        "targets": {
+          "test": {
+            "inputs": [
+              "default",
+              "^production",
+              "{workspaceRoot}/jest.preset.js"
+            ],
+            "executor": "@nx/jest:jest",
+            "outputs": [
+              "{workspaceRoot}/coverage/{projectRoot}"
+            ],
+            "options": {
+              "jestConfig": "libs/users-client/auth/feature/register/jest.config.ts",
+              "passWithNoTests": true
+            },
+            "configurations": {
+              "ci": {
+                "ci": true,
+                "codeCoverage": true
+              }
+            }
+          },
+          "lint": {
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore"
+            ],
+            "executor": "@nx/linter:eslint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {
+              "lintFilePatterns": [
+                "libs/users-client/auth/feature/register/**/*.ts",
+                "libs/users-client/auth/feature/register/**/*.html"
+              ]
+            },
+            "configurations": {}
+          }
+        },
+        "root": "libs/users-client/auth/feature/register",
         "implicitDependencies": []
       }
     },
@@ -733,6 +733,116 @@
         "implicitDependencies": []
       }
     },
+    "users-client-post-ui-posts-grid": {
+      "name": "users-client-post-ui-posts-grid",
+      "type": "lib",
+      "data": {
+        "name": "users-client-post-ui-posts-grid",
+        "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "libs/users-client/post/ui/posts-grid/src",
+        "prefix": "fs",
+        "tags": [],
+        "projectType": "library",
+        "targets": {
+          "test": {
+            "inputs": [
+              "default",
+              "^production",
+              "{workspaceRoot}/jest.preset.js"
+            ],
+            "executor": "@nx/jest:jest",
+            "outputs": [
+              "{workspaceRoot}/coverage/{projectRoot}"
+            ],
+            "options": {
+              "jestConfig": "libs/users-client/post/ui/posts-grid/jest.config.ts",
+              "passWithNoTests": true
+            },
+            "configurations": {
+              "ci": {
+                "ci": true,
+                "codeCoverage": true
+              }
+            }
+          },
+          "lint": {
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore"
+            ],
+            "executor": "@nx/linter:eslint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {
+              "lintFilePatterns": [
+                "libs/users-client/post/ui/posts-grid/**/*.ts",
+                "libs/users-client/post/ui/posts-grid/**/*.html"
+              ]
+            },
+            "configurations": {}
+          }
+        },
+        "root": "libs/users-client/post/ui/posts-grid",
+        "implicitDependencies": []
+      }
+    },
+    "auth-login": {
+      "name": "auth-login",
+      "type": "lib",
+      "data": {
+        "name": "auth-login",
+        "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "libs/users-client/auth/feature/login/src",
+        "prefix": "food-stories",
+        "tags": [],
+        "projectType": "library",
+        "targets": {
+          "test": {
+            "inputs": [
+              "default",
+              "^production",
+              "{workspaceRoot}/jest.preset.js"
+            ],
+            "executor": "@nx/jest:jest",
+            "outputs": [
+              "{workspaceRoot}/coverage/{projectRoot}"
+            ],
+            "options": {
+              "jestConfig": "libs/users-client/auth/feature/login/jest.config.ts",
+              "passWithNoTests": true
+            },
+            "configurations": {
+              "ci": {
+                "ci": true,
+                "codeCoverage": true
+              }
+            }
+          },
+          "lint": {
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore"
+            ],
+            "executor": "@nx/linter:eslint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {
+              "lintFilePatterns": [
+                "libs/users-client/auth/feature/login/**/*.ts",
+                "libs/users-client/auth/feature/login/**/*.html"
+              ]
+            },
+            "configurations": {}
+          }
+        },
+        "root": "libs/users-client/auth/feature/login",
+        "implicitDependencies": []
+      }
+    },
     "users-client-shared-data-access": {
       "name": "users-client-shared-data-access",
       "type": "lib",
@@ -803,6 +913,61 @@
         },
         "tags": [],
         "root": "libs/users-client/shared/data-access",
+        "implicitDependencies": []
+      }
+    },
+    "auth-shell": {
+      "name": "auth-shell",
+      "type": "lib",
+      "data": {
+        "name": "auth-shell",
+        "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "libs/users-client/auth/feature/shell/src",
+        "prefix": "food-stories",
+        "tags": [],
+        "projectType": "library",
+        "targets": {
+          "test": {
+            "inputs": [
+              "default",
+              "^production",
+              "{workspaceRoot}/jest.preset.js"
+            ],
+            "executor": "@nx/jest:jest",
+            "outputs": [
+              "{workspaceRoot}/coverage/{projectRoot}"
+            ],
+            "options": {
+              "jestConfig": "libs/users-client/auth/feature/shell/jest.config.ts",
+              "passWithNoTests": true
+            },
+            "configurations": {
+              "ci": {
+                "ci": true,
+                "codeCoverage": true
+              }
+            }
+          },
+          "lint": {
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore"
+            ],
+            "executor": "@nx/linter:eslint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {
+              "lintFilePatterns": [
+                "libs/users-client/auth/feature/shell/**/*.ts",
+                "libs/users-client/auth/feature/shell/**/*.html"
+              ]
+            },
+            "configurations": {}
+          }
+        },
+        "root": "libs/users-client/auth/feature/shell",
         "implicitDependencies": []
       }
     },
@@ -911,226 +1076,6 @@
         },
         "tags": [],
         "root": "libs/api-gateway/core/firebase-admin",
-        "implicitDependencies": []
-      }
-    },
-    "users-client-post-ui-posts-grid": {
-      "name": "users-client-post-ui-posts-grid",
-      "type": "lib",
-      "data": {
-        "name": "users-client-post-ui-posts-grid",
-        "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
-        "sourceRoot": "libs/users-client/post/ui/posts-grid/src",
-        "prefix": "fs",
-        "tags": [],
-        "projectType": "library",
-        "targets": {
-          "test": {
-            "inputs": [
-              "default",
-              "^production",
-              "{workspaceRoot}/jest.preset.js"
-            ],
-            "executor": "@nx/jest:jest",
-            "outputs": [
-              "{workspaceRoot}/coverage/{projectRoot}"
-            ],
-            "options": {
-              "jestConfig": "libs/users-client/post/ui/posts-grid/jest.config.ts",
-              "passWithNoTests": true
-            },
-            "configurations": {
-              "ci": {
-                "ci": true,
-                "codeCoverage": true
-              }
-            }
-          },
-          "lint": {
-            "inputs": [
-              "default",
-              "{workspaceRoot}/.eslintrc.json",
-              "{workspaceRoot}/.eslintignore"
-            ],
-            "executor": "@nx/linter:eslint",
-            "outputs": [
-              "{options.outputFile}"
-            ],
-            "options": {
-              "lintFilePatterns": [
-                "libs/users-client/post/ui/posts-grid/**/*.ts",
-                "libs/users-client/post/ui/posts-grid/**/*.html"
-              ]
-            },
-            "configurations": {}
-          }
-        },
-        "root": "libs/users-client/post/ui/posts-grid",
-        "implicitDependencies": []
-      }
-    },
-    "auth-shell": {
-      "name": "auth-shell",
-      "type": "lib",
-      "data": {
-        "name": "auth-shell",
-        "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
-        "sourceRoot": "libs/users-client/auth/feature/shell/src",
-        "prefix": "food-stories",
-        "tags": [],
-        "projectType": "library",
-        "targets": {
-          "test": {
-            "inputs": [
-              "default",
-              "^production",
-              "{workspaceRoot}/jest.preset.js"
-            ],
-            "executor": "@nx/jest:jest",
-            "outputs": [
-              "{workspaceRoot}/coverage/{projectRoot}"
-            ],
-            "options": {
-              "jestConfig": "libs/users-client/auth/feature/shell/jest.config.ts",
-              "passWithNoTests": true
-            },
-            "configurations": {
-              "ci": {
-                "ci": true,
-                "codeCoverage": true
-              }
-            }
-          },
-          "lint": {
-            "inputs": [
-              "default",
-              "{workspaceRoot}/.eslintrc.json",
-              "{workspaceRoot}/.eslintignore"
-            ],
-            "executor": "@nx/linter:eslint",
-            "outputs": [
-              "{options.outputFile}"
-            ],
-            "options": {
-              "lintFilePatterns": [
-                "libs/users-client/auth/feature/shell/**/*.ts",
-                "libs/users-client/auth/feature/shell/**/*.html"
-              ]
-            },
-            "configurations": {}
-          }
-        },
-        "root": "libs/users-client/auth/feature/shell",
-        "implicitDependencies": []
-      }
-    },
-    "auth-login": {
-      "name": "auth-login",
-      "type": "lib",
-      "data": {
-        "name": "auth-login",
-        "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
-        "sourceRoot": "libs/users-client/auth/feature/login/src",
-        "prefix": "food-stories",
-        "tags": [],
-        "projectType": "library",
-        "targets": {
-          "test": {
-            "inputs": [
-              "default",
-              "^production",
-              "{workspaceRoot}/jest.preset.js"
-            ],
-            "executor": "@nx/jest:jest",
-            "outputs": [
-              "{workspaceRoot}/coverage/{projectRoot}"
-            ],
-            "options": {
-              "jestConfig": "libs/users-client/auth/feature/login/jest.config.ts",
-              "passWithNoTests": true
-            },
-            "configurations": {
-              "ci": {
-                "ci": true,
-                "codeCoverage": true
-              }
-            }
-          },
-          "lint": {
-            "inputs": [
-              "default",
-              "{workspaceRoot}/.eslintrc.json",
-              "{workspaceRoot}/.eslintignore"
-            ],
-            "executor": "@nx/linter:eslint",
-            "outputs": [
-              "{options.outputFile}"
-            ],
-            "options": {
-              "lintFilePatterns": [
-                "libs/users-client/auth/feature/login/**/*.ts",
-                "libs/users-client/auth/feature/login/**/*.html"
-              ]
-            },
-            "configurations": {}
-          }
-        },
-        "root": "libs/users-client/auth/feature/login",
-        "implicitDependencies": []
-      }
-    },
-    "users-client-post-data-access": {
-      "name": "users-client-post-data-access",
-      "type": "lib",
-      "data": {
-        "name": "users-client-post-data-access",
-        "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
-        "sourceRoot": "libs/users-client/post/data-access/src",
-        "prefix": "fs",
-        "tags": [],
-        "projectType": "library",
-        "targets": {
-          "test": {
-            "inputs": [
-              "default",
-              "^production",
-              "{workspaceRoot}/jest.preset.js"
-            ],
-            "executor": "@nx/jest:jest",
-            "outputs": [
-              "{workspaceRoot}/coverage/{projectRoot}"
-            ],
-            "options": {
-              "jestConfig": "libs/users-client/post/data-access/jest.config.ts",
-              "passWithNoTests": true
-            },
-            "configurations": {
-              "ci": {
-                "ci": true,
-                "codeCoverage": true
-              }
-            }
-          },
-          "lint": {
-            "inputs": [
-              "default",
-              "{workspaceRoot}/.eslintrc.json",
-              "{workspaceRoot}/.eslintignore"
-            ],
-            "executor": "@nx/linter:eslint",
-            "outputs": [
-              "{options.outputFile}"
-            ],
-            "options": {
-              "lintFilePatterns": [
-                "libs/users-client/post/data-access/**/*.ts",
-                "libs/users-client/post/data-access/**/*.html"
-              ]
-            },
-            "configurations": {}
-          }
-        },
-        "root": "libs/users-client/post/data-access",
         "implicitDependencies": []
       }
     },
@@ -1244,68 +1189,13 @@
         "implicitDependencies": []
       }
     },
-    "users-client-feed-ui-stories": {
-      "name": "users-client-feed-ui-stories",
+    "users-client-post-data-access": {
+      "name": "users-client-post-data-access",
       "type": "lib",
       "data": {
-        "name": "users-client-feed-ui-stories",
-        "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
-        "sourceRoot": "libs/users-client/feed/ui/stories/src",
-        "prefix": "fs",
-        "tags": [],
-        "projectType": "library",
-        "targets": {
-          "test": {
-            "inputs": [
-              "default",
-              "^production",
-              "{workspaceRoot}/jest.preset.js"
-            ],
-            "executor": "@nx/jest:jest",
-            "outputs": [
-              "{workspaceRoot}/coverage/{projectRoot}"
-            ],
-            "options": {
-              "jestConfig": "libs/users-client/feed/ui/stories/jest.config.ts",
-              "passWithNoTests": true
-            },
-            "configurations": {
-              "ci": {
-                "ci": true,
-                "codeCoverage": true
-              }
-            }
-          },
-          "lint": {
-            "inputs": [
-              "default",
-              "{workspaceRoot}/.eslintrc.json",
-              "{workspaceRoot}/.eslintignore"
-            ],
-            "executor": "@nx/linter:eslint",
-            "outputs": [
-              "{options.outputFile}"
-            ],
-            "options": {
-              "lintFilePatterns": [
-                "libs/users-client/feed/ui/stories/**/*.ts",
-                "libs/users-client/feed/ui/stories/**/*.html"
-              ]
-            },
-            "configurations": {}
-          }
-        },
-        "root": "libs/users-client/feed/ui/stories",
-        "implicitDependencies": []
-      }
-    },
-    "users-client-profile-feature": {
-      "name": "users-client-profile-feature",
-      "type": "lib",
-      "data": {
-        "name": "users-client-profile-feature",
+        "name": "users-client-post-data-access",
         "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
-        "sourceRoot": "libs/users-client/profile/feature/src",
+        "sourceRoot": "libs/users-client/post/data-access/src",
         "prefix": "fs",
         "tags": [],
         "projectType": "library",
@@ -1321,7 +1211,7 @@
               "{workspaceRoot}/coverage/{projectRoot}"
             ],
             "options": {
-              "jestConfig": "libs/users-client/profile/feature/jest.config.ts",
+              "jestConfig": "libs/users-client/post/data-access/jest.config.ts",
               "passWithNoTests": true
             },
             "configurations": {
@@ -1343,14 +1233,14 @@
             ],
             "options": {
               "lintFilePatterns": [
-                "libs/users-client/profile/feature/**/*.ts",
-                "libs/users-client/profile/feature/**/*.html"
+                "libs/users-client/post/data-access/**/*.ts",
+                "libs/users-client/post/data-access/**/*.html"
               ]
             },
             "configurations": {}
           }
         },
-        "root": "libs/users-client/profile/feature",
+        "root": "libs/users-client/post/data-access",
         "implicitDependencies": []
       }
     },
@@ -1427,13 +1317,13 @@
         "implicitDependencies": []
       }
     },
-    "users-client-auth-ui-layout": {
-      "name": "users-client-auth-ui-layout",
+    "users-client-profile-feature": {
+      "name": "users-client-profile-feature",
       "type": "lib",
       "data": {
-        "name": "users-client-auth-ui-layout",
-        "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
-        "sourceRoot": "libs/users-client/auth/ui/layout/src",
+        "name": "users-client-profile-feature",
+        "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "libs/users-client/profile/feature/src",
         "prefix": "fs",
         "tags": [],
         "projectType": "library",
@@ -1449,7 +1339,7 @@
               "{workspaceRoot}/coverage/{projectRoot}"
             ],
             "options": {
-              "jestConfig": "libs/users-client/auth/ui/layout/jest.config.ts",
+              "jestConfig": "libs/users-client/profile/feature/jest.config.ts",
               "passWithNoTests": true
             },
             "configurations": {
@@ -1471,14 +1361,69 @@
             ],
             "options": {
               "lintFilePatterns": [
-                "libs/users-client/auth/ui/layout/**/*.ts",
-                "libs/users-client/auth/ui/layout/**/*.html"
+                "libs/users-client/profile/feature/**/*.ts",
+                "libs/users-client/profile/feature/**/*.html"
               ]
             },
             "configurations": {}
           }
         },
-        "root": "libs/users-client/auth/ui/layout",
+        "root": "libs/users-client/profile/feature",
+        "implicitDependencies": []
+      }
+    },
+    "users-client-feed-ui-stories": {
+      "name": "users-client-feed-ui-stories",
+      "type": "lib",
+      "data": {
+        "name": "users-client-feed-ui-stories",
+        "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "libs/users-client/feed/ui/stories/src",
+        "prefix": "fs",
+        "tags": [],
+        "projectType": "library",
+        "targets": {
+          "test": {
+            "inputs": [
+              "default",
+              "^production",
+              "{workspaceRoot}/jest.preset.js"
+            ],
+            "executor": "@nx/jest:jest",
+            "outputs": [
+              "{workspaceRoot}/coverage/{projectRoot}"
+            ],
+            "options": {
+              "jestConfig": "libs/users-client/feed/ui/stories/jest.config.ts",
+              "passWithNoTests": true
+            },
+            "configurations": {
+              "ci": {
+                "ci": true,
+                "codeCoverage": true
+              }
+            }
+          },
+          "lint": {
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore"
+            ],
+            "executor": "@nx/linter:eslint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {
+              "lintFilePatterns": [
+                "libs/users-client/feed/ui/stories/**/*.ts",
+                "libs/users-client/feed/ui/stories/**/*.html"
+              ]
+            },
+            "configurations": {}
+          }
+        },
+        "root": "libs/users-client/feed/ui/stories",
         "implicitDependencies": []
       }
     },
@@ -1537,15 +1482,38 @@
         "implicitDependencies": []
       }
     },
-    "api-gateway-social-network": {
-      "name": "api-gateway-social-network",
+    "users-client-auth-ui-layout": {
+      "name": "users-client-auth-ui-layout",
       "type": "lib",
       "data": {
-        "name": "api-gateway-social-network",
-        "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-        "sourceRoot": "libs/api-gateway/social-network/src",
+        "name": "users-client-auth-ui-layout",
+        "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "libs/users-client/auth/ui/layout/src",
+        "prefix": "fs",
+        "tags": [],
         "projectType": "library",
         "targets": {
+          "test": {
+            "inputs": [
+              "default",
+              "^production",
+              "{workspaceRoot}/jest.preset.js"
+            ],
+            "executor": "@nx/jest:jest",
+            "outputs": [
+              "{workspaceRoot}/coverage/{projectRoot}"
+            ],
+            "options": {
+              "jestConfig": "libs/users-client/auth/ui/layout/jest.config.ts",
+              "passWithNoTests": true
+            },
+            "configurations": {
+              "ci": {
+                "ci": true,
+                "codeCoverage": true
+              }
+            }
+          },
           "lint": {
             "inputs": [
               "default",
@@ -1558,35 +1526,14 @@
             ],
             "options": {
               "lintFilePatterns": [
-                "libs/api-gateway/social-network/**/*.ts"
+                "libs/users-client/auth/ui/layout/**/*.ts",
+                "libs/users-client/auth/ui/layout/**/*.html"
               ]
             },
             "configurations": {}
-          },
-          "test": {
-            "inputs": [
-              "default",
-              "^production",
-              "{workspaceRoot}/jest.preset.js"
-            ],
-            "executor": "@nx/jest:jest",
-            "outputs": [
-              "{workspaceRoot}/coverage/{projectRoot}"
-            ],
-            "options": {
-              "jestConfig": "libs/api-gateway/social-network/jest.config.ts",
-              "passWithNoTests": true
-            },
-            "configurations": {
-              "ci": {
-                "ci": true,
-                "codeCoverage": true
-              }
-            }
           }
         },
-        "tags": [],
-        "root": "libs/api-gateway/social-network",
+        "root": "libs/users-client/auth/ui/layout",
         "implicitDependencies": []
       }
     },
@@ -1718,13 +1665,66 @@
         "implicitDependencies": []
       }
     },
-    "users-client-feed-feature": {
-      "name": "users-client-feed-feature",
+    "api-gateway-social-network": {
+      "name": "api-gateway-social-network",
       "type": "lib",
       "data": {
-        "name": "users-client-feed-feature",
+        "name": "api-gateway-social-network",
+        "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "libs/api-gateway/social-network/src",
+        "projectType": "library",
+        "targets": {
+          "lint": {
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore"
+            ],
+            "executor": "@nx/linter:eslint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {
+              "lintFilePatterns": [
+                "libs/api-gateway/social-network/**/*.ts"
+              ]
+            },
+            "configurations": {}
+          },
+          "test": {
+            "inputs": [
+              "default",
+              "^production",
+              "{workspaceRoot}/jest.preset.js"
+            ],
+            "executor": "@nx/jest:jest",
+            "outputs": [
+              "{workspaceRoot}/coverage/{projectRoot}"
+            ],
+            "options": {
+              "jestConfig": "libs/api-gateway/social-network/jest.config.ts",
+              "passWithNoTests": true
+            },
+            "configurations": {
+              "ci": {
+                "ci": true,
+                "codeCoverage": true
+              }
+            }
+          }
+        },
+        "tags": [],
+        "root": "libs/api-gateway/social-network",
+        "implicitDependencies": []
+      }
+    },
+    "users-client-shared-icons": {
+      "name": "users-client-shared-icons",
+      "type": "lib",
+      "data": {
+        "name": "users-client-shared-icons",
         "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
-        "sourceRoot": "libs/users-client/feed/feature/src",
+        "sourceRoot": "libs/users-client/shared/icons/src",
         "prefix": "fs",
         "tags": [],
         "projectType": "library",
@@ -1740,7 +1740,7 @@
               "{workspaceRoot}/coverage/{projectRoot}"
             ],
             "options": {
-              "jestConfig": "libs/users-client/feed/feature/jest.config.ts",
+              "jestConfig": "libs/users-client/shared/icons/jest.config.ts",
               "passWithNoTests": true
             },
             "configurations": {
@@ -1762,14 +1762,14 @@
             ],
             "options": {
               "lintFilePatterns": [
-                "libs/users-client/feed/feature/**/*.ts",
-                "libs/users-client/feed/feature/**/*.html"
+                "libs/users-client/shared/icons/**/*.ts",
+                "libs/users-client/shared/icons/**/*.html"
               ]
             },
             "configurations": {}
           }
         },
-        "root": "libs/users-client/feed/feature",
+        "root": "libs/users-client/shared/icons",
         "implicitDependencies": []
       }
     },
@@ -1828,13 +1828,13 @@
         "implicitDependencies": []
       }
     },
-    "users-client-shared-icons": {
-      "name": "users-client-shared-icons",
+    "users-client-feed-feature": {
+      "name": "users-client-feed-feature",
       "type": "lib",
       "data": {
-        "name": "users-client-shared-icons",
+        "name": "users-client-feed-feature",
         "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
-        "sourceRoot": "libs/users-client/shared/icons/src",
+        "sourceRoot": "libs/users-client/feed/feature/src",
         "prefix": "fs",
         "tags": [],
         "projectType": "library",
@@ -1850,7 +1850,7 @@
               "{workspaceRoot}/coverage/{projectRoot}"
             ],
             "options": {
-              "jestConfig": "libs/users-client/shared/icons/jest.config.ts",
+              "jestConfig": "libs/users-client/feed/feature/jest.config.ts",
               "passWithNoTests": true
             },
             "configurations": {
@@ -1872,14 +1872,14 @@
             ],
             "options": {
               "lintFilePatterns": [
-                "libs/users-client/shared/icons/**/*.ts",
-                "libs/users-client/shared/icons/**/*.html"
+                "libs/users-client/feed/feature/**/*.ts",
+                "libs/users-client/feed/feature/**/*.html"
               ]
             },
             "configurations": {}
           }
         },
-        "root": "libs/users-client/shared/icons",
+        "root": "libs/users-client/feed/feature",
         "implicitDependencies": []
       }
     },
@@ -2256,59 +2256,6 @@
         "implicitDependencies": []
       }
     },
-    "api-gateway-like": {
-      "name": "api-gateway-like",
-      "type": "lib",
-      "data": {
-        "name": "api-gateway-like",
-        "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-        "sourceRoot": "libs/api-gateway/like/src",
-        "projectType": "library",
-        "targets": {
-          "lint": {
-            "inputs": [
-              "default",
-              "{workspaceRoot}/.eslintrc.json",
-              "{workspaceRoot}/.eslintignore"
-            ],
-            "executor": "@nx/linter:eslint",
-            "outputs": [
-              "{options.outputFile}"
-            ],
-            "options": {
-              "lintFilePatterns": [
-                "libs/api-gateway/like/**/*.ts"
-              ]
-            },
-            "configurations": {}
-          },
-          "test": {
-            "inputs": [
-              "default",
-              "^production",
-              "{workspaceRoot}/jest.preset.js"
-            ],
-            "executor": "@nx/jest:jest",
-            "outputs": [
-              "{workspaceRoot}/coverage/{projectRoot}"
-            ],
-            "options": {
-              "jestConfig": "libs/api-gateway/like/jest.config.ts",
-              "passWithNoTests": true
-            },
-            "configurations": {
-              "ci": {
-                "ci": true,
-                "codeCoverage": true
-              }
-            }
-          }
-        },
-        "tags": [],
-        "root": "libs/api-gateway/like",
-        "implicitDependencies": []
-      }
-    },
     "api-gateway-auth": {
       "name": "api-gateway-auth",
       "type": "lib",
@@ -2414,6 +2361,59 @@
           "users-client"
         ],
         "root": "apps/users-client-e2e"
+      }
+    },
+    "api-gateway-like": {
+      "name": "api-gateway-like",
+      "type": "lib",
+      "data": {
+        "name": "api-gateway-like",
+        "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "libs/api-gateway/like/src",
+        "projectType": "library",
+        "targets": {
+          "lint": {
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore"
+            ],
+            "executor": "@nx/linter:eslint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {
+              "lintFilePatterns": [
+                "libs/api-gateway/like/**/*.ts"
+              ]
+            },
+            "configurations": {}
+          },
+          "test": {
+            "inputs": [
+              "default",
+              "^production",
+              "{workspaceRoot}/jest.preset.js"
+            ],
+            "executor": "@nx/jest:jest",
+            "outputs": [
+              "{workspaceRoot}/coverage/{projectRoot}"
+            ],
+            "options": {
+              "jestConfig": "libs/api-gateway/like/jest.config.ts",
+              "passWithNoTests": true
+            },
+            "configurations": {
+              "ci": {
+                "ci": true,
+                "codeCoverage": true
+              }
+            }
+          }
+        },
+        "tags": [],
+        "root": "libs/api-gateway/like",
+        "implicitDependencies": []
       }
     },
     "api-gateway-e2e": {
@@ -2533,208 +2533,6 @@
         },
         "tags": [],
         "root": "libs/common/handlers",
-        "implicitDependencies": []
-      }
-    },
-    "common-typings": {
-      "name": "common-typings",
-      "type": "lib",
-      "data": {
-        "name": "common-typings",
-        "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-        "sourceRoot": "libs/common/typings/src",
-        "projectType": "library",
-        "targets": {
-          "build": {
-            "dependsOn": [
-              "^build"
-            ],
-            "inputs": [
-              "production",
-              "^production"
-            ],
-            "executor": "@nx/js:tsc",
-            "outputs": [
-              "{options.outputPath}"
-            ],
-            "options": {
-              "outputPath": "dist/libs/common/typings",
-              "main": "libs/common/typings/src/index.ts",
-              "tsConfig": "libs/common/typings/tsconfig.lib.json",
-              "assets": []
-            },
-            "configurations": {}
-          },
-          "lint": {
-            "inputs": [
-              "default",
-              "{workspaceRoot}/.eslintrc.json",
-              "{workspaceRoot}/.eslintignore"
-            ],
-            "executor": "@nx/linter:eslint",
-            "outputs": [
-              "{options.outputFile}"
-            ],
-            "options": {
-              "lintFilePatterns": [
-                "libs/common/typings/**/*.ts"
-              ]
-            },
-            "configurations": {}
-          },
-          "test": {
-            "inputs": [
-              "default",
-              "^production",
-              "{workspaceRoot}/jest.preset.js"
-            ],
-            "executor": "@nx/jest:jest",
-            "outputs": [
-              "{workspaceRoot}/coverage/{projectRoot}"
-            ],
-            "options": {
-              "jestConfig": "libs/common/typings/jest.config.ts",
-              "passWithNoTests": true
-            },
-            "configurations": {
-              "ci": {
-                "ci": true,
-                "codeCoverage": true
-              }
-            }
-          }
-        },
-        "tags": [],
-        "root": "libs/common/typings",
-        "implicitDependencies": []
-      }
-    },
-    "posts-srv-core": {
-      "name": "posts-srv-core",
-      "type": "lib",
-      "data": {
-        "name": "posts-srv-core",
-        "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-        "sourceRoot": "libs/posts-srv/core/src",
-        "projectType": "library",
-        "targets": {
-          "build": {
-            "dependsOn": [
-              "^build"
-            ],
-            "inputs": [
-              "production",
-              "^production"
-            ],
-            "executor": "@nx/js:tsc",
-            "outputs": [
-              "{options.outputPath}"
-            ],
-            "options": {
-              "outputPath": "dist/libs/posts-srv/core",
-              "tsConfig": "libs/posts-srv/core/tsconfig.lib.json",
-              "packageJson": "libs/posts-srv/core/package.json",
-              "main": "libs/posts-srv/core/src/index.ts",
-              "assets": [
-                "libs/posts-srv/core/*.md"
-              ]
-            },
-            "configurations": {}
-          },
-          "lint": {
-            "inputs": [
-              "default",
-              "{workspaceRoot}/.eslintrc.json",
-              "{workspaceRoot}/.eslintignore"
-            ],
-            "executor": "@nx/linter:eslint",
-            "outputs": [
-              "{options.outputFile}"
-            ],
-            "options": {
-              "lintFilePatterns": [
-                "libs/posts-srv/core/**/*.ts"
-              ]
-            },
-            "configurations": {}
-          },
-          "test": {
-            "inputs": [
-              "default",
-              "^production",
-              "{workspaceRoot}/jest.preset.js"
-            ],
-            "executor": "@nx/jest:jest",
-            "outputs": [
-              "{workspaceRoot}/coverage/{projectRoot}"
-            ],
-            "options": {
-              "jestConfig": "libs/posts-srv/core/jest.config.ts",
-              "passWithNoTests": true
-            },
-            "configurations": {
-              "ci": {
-                "ci": true,
-                "codeCoverage": true
-              }
-            }
-          }
-        },
-        "tags": [],
-        "root": "libs/posts-srv/core",
-        "implicitDependencies": []
-      }
-    },
-    "users-srv-user": {
-      "name": "users-srv-user",
-      "type": "lib",
-      "data": {
-        "name": "users-srv-user",
-        "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-        "sourceRoot": "libs/users-srv/user/src",
-        "projectType": "library",
-        "targets": {
-          "lint": {
-            "inputs": [
-              "default",
-              "{workspaceRoot}/.eslintrc.json",
-              "{workspaceRoot}/.eslintignore"
-            ],
-            "executor": "@nx/linter:eslint",
-            "outputs": [
-              "{options.outputFile}"
-            ],
-            "options": {
-              "lintFilePatterns": [
-                "libs/users-srv/user/**/*.ts"
-              ]
-            },
-            "configurations": {}
-          },
-          "test": {
-            "inputs": [
-              "default",
-              "^production",
-              "{workspaceRoot}/jest.preset.js"
-            ],
-            "executor": "@nx/jest:jest",
-            "outputs": [
-              "{workspaceRoot}/coverage/{projectRoot}"
-            ],
-            "options": {
-              "jestConfig": "libs/users-srv/user/jest.config.ts",
-              "passWithNoTests": true
-            },
-            "configurations": {
-              "ci": {
-                "ci": true,
-                "codeCoverage": true
-              }
-            }
-          }
-        },
-        "tags": [],
-        "root": "libs/users-srv/user",
         "implicitDependencies": []
       }
     },
@@ -2866,6 +2664,132 @@
         "implicitDependencies": []
       }
     },
+    "common-typings": {
+      "name": "common-typings",
+      "type": "lib",
+      "data": {
+        "name": "common-typings",
+        "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "libs/common/typings/src",
+        "projectType": "library",
+        "targets": {
+          "build": {
+            "dependsOn": [
+              "^build"
+            ],
+            "inputs": [
+              "production",
+              "^production"
+            ],
+            "executor": "@nx/js:tsc",
+            "outputs": [
+              "{options.outputPath}"
+            ],
+            "options": {
+              "outputPath": "dist/libs/common/typings",
+              "main": "libs/common/typings/src/index.ts",
+              "tsConfig": "libs/common/typings/tsconfig.lib.json",
+              "assets": []
+            },
+            "configurations": {}
+          },
+          "lint": {
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore"
+            ],
+            "executor": "@nx/linter:eslint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {
+              "lintFilePatterns": [
+                "libs/common/typings/**/*.ts"
+              ]
+            },
+            "configurations": {}
+          },
+          "test": {
+            "inputs": [
+              "default",
+              "^production",
+              "{workspaceRoot}/jest.preset.js"
+            ],
+            "executor": "@nx/jest:jest",
+            "outputs": [
+              "{workspaceRoot}/coverage/{projectRoot}"
+            ],
+            "options": {
+              "jestConfig": "libs/common/typings/jest.config.ts",
+              "passWithNoTests": true
+            },
+            "configurations": {
+              "ci": {
+                "ci": true,
+                "codeCoverage": true
+              }
+            }
+          }
+        },
+        "tags": [],
+        "root": "libs/common/typings",
+        "implicitDependencies": []
+      }
+    },
+    "users-srv-user": {
+      "name": "users-srv-user",
+      "type": "lib",
+      "data": {
+        "name": "users-srv-user",
+        "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "libs/users-srv/user/src",
+        "projectType": "library",
+        "targets": {
+          "lint": {
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore"
+            ],
+            "executor": "@nx/linter:eslint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {
+              "lintFilePatterns": [
+                "libs/users-srv/user/**/*.ts"
+              ]
+            },
+            "configurations": {}
+          },
+          "test": {
+            "inputs": [
+              "default",
+              "^production",
+              "{workspaceRoot}/jest.preset.js"
+            ],
+            "executor": "@nx/jest:jest",
+            "outputs": [
+              "{workspaceRoot}/coverage/{projectRoot}"
+            ],
+            "options": {
+              "jestConfig": "libs/users-srv/user/jest.config.ts",
+              "passWithNoTests": true
+            },
+            "configurations": {
+              "ci": {
+                "ci": true,
+                "codeCoverage": true
+              }
+            }
+          }
+        },
+        "tags": [],
+        "root": "libs/users-srv/user",
+        "implicitDependencies": []
+      }
+    },
     "posts-srv--post": {
       "name": "posts-srv--post",
       "type": "lib",
@@ -2919,28 +2843,35 @@
         "implicitDependencies": []
       }
     },
-    "users-srv-e2e": {
-      "name": "users-srv-e2e",
+    "posts-srv-core": {
+      "name": "posts-srv-core",
       "type": "lib",
       "data": {
-        "name": "users-srv-e2e",
-        "$schema": "../../node_modules/nx/schemas/project-schema.json",
-        "implicitDependencies": [
-          "users-srv"
-        ],
+        "name": "posts-srv-core",
+        "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "libs/posts-srv/core/src",
+        "projectType": "library",
         "targets": {
-          "e2e": {
+          "build": {
+            "dependsOn": [
+              "^build"
+            ],
             "inputs": [
-              "default",
+              "production",
               "^production"
             ],
-            "executor": "@nx/jest:jest",
+            "executor": "@nx/js:tsc",
             "outputs": [
-              "{workspaceRoot}/coverage/{e2eProjectRoot}"
+              "{options.outputPath}"
             ],
             "options": {
-              "jestConfig": "apps/users-srv-e2e/jest.config.ts",
-              "passWithNoTests": true
+              "outputPath": "dist/libs/posts-srv/core",
+              "tsConfig": "libs/posts-srv/core/tsconfig.lib.json",
+              "packageJson": "libs/posts-srv/core/package.json",
+              "main": "libs/posts-srv/core/src/index.ts",
+              "assets": [
+                "libs/posts-srv/core/*.md"
+              ]
             },
             "configurations": {}
           },
@@ -2956,14 +2887,36 @@
             ],
             "options": {
               "lintFilePatterns": [
-                "apps/users-srv-e2e/**/*.{js,ts}"
+                "libs/posts-srv/core/**/*.ts"
               ]
             },
             "configurations": {}
+          },
+          "test": {
+            "inputs": [
+              "default",
+              "^production",
+              "{workspaceRoot}/jest.preset.js"
+            ],
+            "executor": "@nx/jest:jest",
+            "outputs": [
+              "{workspaceRoot}/coverage/{projectRoot}"
+            ],
+            "options": {
+              "jestConfig": "libs/posts-srv/core/jest.config.ts",
+              "passWithNoTests": true
+            },
+            "configurations": {
+              "ci": {
+                "ci": true,
+                "codeCoverage": true
+              }
+            }
           }
         },
-        "root": "apps/users-srv-e2e",
-        "tags": []
+        "tags": [],
+        "root": "libs/posts-srv/core",
+        "implicitDependencies": []
       }
     },
     "common-errors": {
@@ -3039,32 +2992,28 @@
         "implicitDependencies": []
       }
     },
-    "common-logger": {
-      "name": "common-logger",
+    "users-srv-e2e": {
+      "name": "users-srv-e2e",
       "type": "lib",
       "data": {
-        "name": "common-logger",
-        "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-        "sourceRoot": "libs/common/logger/src",
-        "projectType": "library",
+        "name": "users-srv-e2e",
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "implicitDependencies": [
+          "users-srv"
+        ],
         "targets": {
-          "build": {
-            "dependsOn": [
-              "^build"
-            ],
+          "e2e": {
             "inputs": [
-              "production",
+              "default",
               "^production"
             ],
-            "executor": "@nx/js:tsc",
+            "executor": "@nx/jest:jest",
             "outputs": [
-              "{options.outputPath}"
+              "{workspaceRoot}/coverage/{e2eProjectRoot}"
             ],
             "options": {
-              "outputPath": "dist/libs/common/logger",
-              "main": "libs/common/logger/src/index.ts",
-              "tsConfig": "libs/common/logger/tsconfig.lib.json",
-              "assets": []
+              "jestConfig": "apps/users-srv-e2e/jest.config.ts",
+              "passWithNoTests": true
             },
             "configurations": {}
           },
@@ -3080,36 +3029,14 @@
             ],
             "options": {
               "lintFilePatterns": [
-                "libs/common/logger/**/*.ts"
+                "apps/users-srv-e2e/**/*.{js,ts}"
               ]
             },
             "configurations": {}
-          },
-          "test": {
-            "inputs": [
-              "default",
-              "^production",
-              "{workspaceRoot}/jest.preset.js"
-            ],
-            "executor": "@nx/jest:jest",
-            "outputs": [
-              "{workspaceRoot}/coverage/{projectRoot}"
-            ],
-            "options": {
-              "jestConfig": "libs/common/logger/jest.config.ts",
-              "passWithNoTests": true
-            },
-            "configurations": {
-              "ci": {
-                "ci": true,
-                "codeCoverage": true
-              }
-            }
           }
         },
-        "tags": [],
-        "root": "libs/common/logger",
-        "implicitDependencies": []
+        "root": "apps/users-srv-e2e",
+        "tags": []
       }
     },
     "posts-srv-e2e": {
@@ -3209,6 +3136,132 @@
         },
         "tags": [],
         "root": "libs/common/events",
+        "implicitDependencies": []
+      }
+    },
+    "common-logger": {
+      "name": "common-logger",
+      "type": "lib",
+      "data": {
+        "name": "common-logger",
+        "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "libs/common/logger/src",
+        "projectType": "library",
+        "targets": {
+          "build": {
+            "dependsOn": [
+              "^build"
+            ],
+            "inputs": [
+              "production",
+              "^production"
+            ],
+            "executor": "@nx/js:tsc",
+            "outputs": [
+              "{options.outputPath}"
+            ],
+            "options": {
+              "outputPath": "dist/libs/common/logger",
+              "main": "libs/common/logger/src/index.ts",
+              "tsConfig": "libs/common/logger/tsconfig.lib.json",
+              "assets": []
+            },
+            "configurations": {}
+          },
+          "lint": {
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore"
+            ],
+            "executor": "@nx/linter:eslint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {
+              "lintFilePatterns": [
+                "libs/common/logger/**/*.ts"
+              ]
+            },
+            "configurations": {}
+          },
+          "test": {
+            "inputs": [
+              "default",
+              "^production",
+              "{workspaceRoot}/jest.preset.js"
+            ],
+            "executor": "@nx/jest:jest",
+            "outputs": [
+              "{workspaceRoot}/coverage/{projectRoot}"
+            ],
+            "options": {
+              "jestConfig": "libs/common/logger/jest.config.ts",
+              "passWithNoTests": true
+            },
+            "configurations": {
+              "ci": {
+                "ci": true,
+                "codeCoverage": true
+              }
+            }
+          }
+        },
+        "tags": [],
+        "root": "libs/common/logger",
+        "implicitDependencies": []
+      }
+    },
+    "common-kafka": {
+      "name": "common-kafka",
+      "type": "lib",
+      "data": {
+        "name": "common-kafka",
+        "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "libs/common/kafka/src",
+        "projectType": "library",
+        "targets": {
+          "lint": {
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore"
+            ],
+            "executor": "@nx/linter:eslint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {
+              "lintFilePatterns": [
+                "libs/common/kafka/**/*.ts"
+              ]
+            },
+            "configurations": {}
+          },
+          "test": {
+            "inputs": [
+              "default",
+              "^production",
+              "{workspaceRoot}/jest.preset.js"
+            ],
+            "executor": "@nx/jest:jest",
+            "outputs": [
+              "{workspaceRoot}/coverage/{projectRoot}"
+            ],
+            "options": {
+              "jestConfig": "libs/common/kafka/jest.config.ts",
+              "passWithNoTests": true
+            },
+            "configurations": {
+              "ci": {
+                "ci": true,
+                "codeCoverage": true
+              }
+            }
+          }
+        },
+        "tags": [],
+        "root": "libs/common/kafka",
         "implicitDependencies": []
       }
     },
@@ -3428,132 +3481,6 @@
         "implicitDependencies": []
       }
     },
-    "common-kafka": {
-      "name": "common-kafka",
-      "type": "lib",
-      "data": {
-        "name": "common-kafka",
-        "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-        "sourceRoot": "libs/common/kafka/src",
-        "projectType": "library",
-        "targets": {
-          "lint": {
-            "inputs": [
-              "default",
-              "{workspaceRoot}/.eslintrc.json",
-              "{workspaceRoot}/.eslintignore"
-            ],
-            "executor": "@nx/linter:eslint",
-            "outputs": [
-              "{options.outputFile}"
-            ],
-            "options": {
-              "lintFilePatterns": [
-                "libs/common/kafka/**/*.ts"
-              ]
-            },
-            "configurations": {}
-          },
-          "test": {
-            "inputs": [
-              "default",
-              "^production",
-              "{workspaceRoot}/jest.preset.js"
-            ],
-            "executor": "@nx/jest:jest",
-            "outputs": [
-              "{workspaceRoot}/coverage/{projectRoot}"
-            ],
-            "options": {
-              "jestConfig": "libs/common/kafka/jest.config.ts",
-              "passWithNoTests": true
-            },
-            "configurations": {
-              "ci": {
-                "ci": true,
-                "codeCoverage": true
-              }
-            }
-          }
-        },
-        "tags": [],
-        "root": "libs/common/kafka",
-        "implicitDependencies": []
-      }
-    },
-    "common-grpc": {
-      "name": "common-grpc",
-      "type": "lib",
-      "data": {
-        "name": "common-grpc",
-        "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-        "sourceRoot": "libs/common/grpc/src",
-        "projectType": "library",
-        "targets": {
-          "build": {
-            "dependsOn": [
-              "^build"
-            ],
-            "inputs": [
-              "production",
-              "^production"
-            ],
-            "executor": "@nx/js:tsc",
-            "outputs": [
-              "{options.outputPath}"
-            ],
-            "options": {
-              "outputPath": "dist/libs/common/grpc",
-              "main": "libs/common/grpc/src/index.ts",
-              "tsConfig": "libs/common/grpc/tsconfig.lib.json",
-              "assets": []
-            },
-            "configurations": {}
-          },
-          "lint": {
-            "inputs": [
-              "default",
-              "{workspaceRoot}/.eslintrc.json",
-              "{workspaceRoot}/.eslintignore"
-            ],
-            "executor": "@nx/linter:eslint",
-            "outputs": [
-              "{options.outputFile}"
-            ],
-            "options": {
-              "lintFilePatterns": [
-                "libs/common/grpc/**/*.ts"
-              ]
-            },
-            "configurations": {}
-          },
-          "test": {
-            "inputs": [
-              "default",
-              "^production",
-              "{workspaceRoot}/jest.preset.js"
-            ],
-            "executor": "@nx/jest:jest",
-            "outputs": [
-              "{workspaceRoot}/coverage/{projectRoot}"
-            ],
-            "options": {
-              "jestConfig": "libs/common/grpc/jest.config.ts",
-              "passWithNoTests": true
-            },
-            "configurations": {
-              "ci": {
-                "ci": true,
-                "codeCoverage": true
-              }
-            }
-          }
-        },
-        "tags": [],
-        "root": "libs/common/grpc",
-        "implicitDependencies": []
-      }
-    },
     "api-gateway": {
       "name": "api-gateway",
       "type": "app",
@@ -3659,6 +3586,79 @@
         },
         "tags": [],
         "root": "apps/api-gateway",
+        "implicitDependencies": []
+      }
+    },
+    "common-grpc": {
+      "name": "common-grpc",
+      "type": "lib",
+      "data": {
+        "name": "common-grpc",
+        "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "libs/common/grpc/src",
+        "projectType": "library",
+        "targets": {
+          "build": {
+            "dependsOn": [
+              "^build"
+            ],
+            "inputs": [
+              "production",
+              "^production"
+            ],
+            "executor": "@nx/js:tsc",
+            "outputs": [
+              "{options.outputPath}"
+            ],
+            "options": {
+              "outputPath": "dist/libs/common/grpc",
+              "main": "libs/common/grpc/src/index.ts",
+              "tsConfig": "libs/common/grpc/tsconfig.lib.json",
+              "assets": []
+            },
+            "configurations": {}
+          },
+          "lint": {
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore"
+            ],
+            "executor": "@nx/linter:eslint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {
+              "lintFilePatterns": [
+                "libs/common/grpc/**/*.ts"
+              ]
+            },
+            "configurations": {}
+          },
+          "test": {
+            "inputs": [
+              "default",
+              "^production",
+              "{workspaceRoot}/jest.preset.js"
+            ],
+            "executor": "@nx/jest:jest",
+            "outputs": [
+              "{workspaceRoot}/coverage/{projectRoot}"
+            ],
+            "options": {
+              "jestConfig": "libs/common/grpc/jest.config.ts",
+              "passWithNoTests": true
+            },
+            "configurations": {
+              "ci": {
+                "ci": true,
+                "codeCoverage": true
+              }
+            }
+          }
+        },
+        "tags": [],
+        "root": "libs/common/grpc",
         "implicitDependencies": []
       }
     },
@@ -19203,33 +19203,6 @@
         "type": "static"
       }
     ],
-    "users-client-shared-ui-confirm-dialog": [
-      {
-        "source": "users-client-shared-ui-confirm-dialog",
-        "target": "npm:@angular/core",
-        "type": "static"
-      },
-      {
-        "source": "users-client-shared-ui-confirm-dialog",
-        "target": "npm:@angular/material",
-        "type": "static"
-      },
-      {
-        "source": "users-client-shared-ui-confirm-dialog",
-        "target": "npm:@angular/common",
-        "type": "static"
-      },
-      {
-        "source": "users-client-shared-ui-confirm-dialog",
-        "target": "npm:rxjs",
-        "type": "static"
-      },
-      {
-        "source": "users-client-shared-ui-confirm-dialog",
-        "target": "npm:jest-preset-angular",
-        "type": "static"
-      }
-    ],
     "users-client-post-feature-create-post": [
       {
         "source": "users-client-post-feature-create-post",
@@ -19298,6 +19271,33 @@
       },
       {
         "source": "users-client-post-feature-create-post",
+        "target": "npm:jest-preset-angular",
+        "type": "static"
+      }
+    ],
+    "users-client-shared-ui-confirm-dialog": [
+      {
+        "source": "users-client-shared-ui-confirm-dialog",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "users-client-shared-ui-confirm-dialog",
+        "target": "npm:@angular/material",
+        "type": "static"
+      },
+      {
+        "source": "users-client-shared-ui-confirm-dialog",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "users-client-shared-ui-confirm-dialog",
+        "target": "npm:rxjs",
+        "type": "static"
+      },
+      {
+        "source": "users-client-shared-ui-confirm-dialog",
         "target": "npm:jest-preset-angular",
         "type": "static"
       }
@@ -19453,6 +19453,23 @@
         "type": "static"
       }
     ],
+    "users-client-profile-ui-highlights": [
+      {
+        "source": "users-client-profile-ui-highlights",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "users-client-profile-ui-highlights",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "users-client-profile-ui-highlights",
+        "target": "npm:jest-preset-angular",
+        "type": "static"
+      }
+    ],
     "auth-register": [
       {
         "source": "auth-register",
@@ -19510,23 +19527,6 @@
         "type": "static"
       }
     ],
-    "users-client-profile-ui-highlights": [
-      {
-        "source": "users-client-profile-ui-highlights",
-        "target": "npm:@angular/core",
-        "type": "static"
-      },
-      {
-        "source": "users-client-profile-ui-highlights",
-        "target": "npm:@angular/common",
-        "type": "static"
-      },
-      {
-        "source": "users-client-profile-ui-highlights",
-        "target": "npm:jest-preset-angular",
-        "type": "static"
-      }
-    ],
     "users-client-profile-data-access": [
       {
         "source": "users-client-profile-data-access",
@@ -19574,62 +19574,6 @@
         "type": "static"
       }
     ],
-    "users-client-shared-data-access": [
-      {
-        "source": "users-client-shared-data-access",
-        "target": "npm:@angular/common",
-        "type": "static"
-      },
-      {
-        "source": "users-client-shared-data-access",
-        "target": "npm:@angular/core",
-        "type": "static"
-      },
-      {
-        "source": "users-client-shared-data-access",
-        "target": "common-typings",
-        "type": "static"
-      },
-      {
-        "source": "users-client-shared-data-access",
-        "target": "users-client-shared-config",
-        "type": "static"
-      },
-      {
-        "source": "users-client-shared-data-access",
-        "target": "npm:rxjs",
-        "type": "static"
-      }
-    ],
-    "users-client-auth-ui-dialog-box": [
-      {
-        "source": "users-client-auth-ui-dialog-box",
-        "target": "npm:@angular/core",
-        "type": "static"
-      },
-      {
-        "source": "users-client-auth-ui-dialog-box",
-        "target": "npm:@angular/material",
-        "type": "static"
-      },
-      {
-        "source": "users-client-auth-ui-dialog-box",
-        "target": "npm:jest-preset-angular",
-        "type": "static"
-      }
-    ],
-    "api-gateway-core-firebase-admin": [
-      {
-        "source": "api-gateway-core-firebase-admin",
-        "target": "npm:@nestjs/common",
-        "type": "static"
-      },
-      {
-        "source": "api-gateway-core-firebase-admin",
-        "target": "npm:firebase-admin",
-        "type": "static"
-      }
-    ],
     "users-client-post-ui-posts-grid": [
       {
         "source": "users-client-post-ui-posts-grid",
@@ -19663,43 +19607,6 @@
       },
       {
         "source": "users-client-post-ui-posts-grid",
-        "target": "npm:jest-preset-angular",
-        "type": "static"
-      }
-    ],
-    "auth-shell": [
-      {
-        "source": "auth-shell",
-        "target": "npm:@angular/core",
-        "type": "static"
-      },
-      {
-        "source": "auth-shell",
-        "target": "npm:@angular/common",
-        "type": "static"
-      },
-      {
-        "source": "auth-shell",
-        "target": "auth-login",
-        "type": "static"
-      },
-      {
-        "source": "auth-shell",
-        "target": "npm:@angular/router",
-        "type": "static"
-      },
-      {
-        "source": "auth-shell",
-        "target": "auth-register",
-        "type": "static"
-      },
-      {
-        "source": "auth-shell",
-        "target": "users-client-auth-ui-layout",
-        "type": "static"
-      },
-      {
-        "source": "auth-shell",
         "target": "npm:jest-preset-angular",
         "type": "static"
       }
@@ -19751,30 +19658,96 @@
         "type": "static"
       }
     ],
-    "users-client-post-data-access": [
+    "users-client-shared-data-access": [
       {
-        "source": "users-client-post-data-access",
+        "source": "users-client-shared-data-access",
         "target": "npm:@angular/common",
         "type": "static"
       },
       {
-        "source": "users-client-post-data-access",
+        "source": "users-client-shared-data-access",
         "target": "npm:@angular/core",
         "type": "static"
       },
       {
-        "source": "users-client-post-data-access",
+        "source": "users-client-shared-data-access",
         "target": "common-typings",
         "type": "static"
       },
       {
-        "source": "users-client-post-data-access",
+        "source": "users-client-shared-data-access",
         "target": "users-client-shared-config",
         "type": "static"
       },
       {
-        "source": "users-client-post-data-access",
+        "source": "users-client-shared-data-access",
+        "target": "npm:rxjs",
+        "type": "static"
+      }
+    ],
+    "auth-shell": [
+      {
+        "source": "auth-shell",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "auth-shell",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "auth-shell",
+        "target": "auth-login",
+        "type": "static"
+      },
+      {
+        "source": "auth-shell",
+        "target": "npm:@angular/router",
+        "type": "static"
+      },
+      {
+        "source": "auth-shell",
+        "target": "auth-register",
+        "type": "static"
+      },
+      {
+        "source": "auth-shell",
+        "target": "users-client-auth-ui-layout",
+        "type": "static"
+      },
+      {
+        "source": "auth-shell",
         "target": "npm:jest-preset-angular",
+        "type": "static"
+      }
+    ],
+    "users-client-auth-ui-dialog-box": [
+      {
+        "source": "users-client-auth-ui-dialog-box",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "users-client-auth-ui-dialog-box",
+        "target": "npm:@angular/material",
+        "type": "static"
+      },
+      {
+        "source": "users-client-auth-ui-dialog-box",
+        "target": "npm:jest-preset-angular",
+        "type": "static"
+      }
+    ],
+    "api-gateway-core-firebase-admin": [
+      {
+        "source": "api-gateway-core-firebase-admin",
+        "target": "npm:@nestjs/common",
+        "type": "static"
+      },
+      {
+        "source": "api-gateway-core-firebase-admin",
+        "target": "npm:firebase-admin",
         "type": "static"
       }
     ],
@@ -19852,20 +19825,67 @@
         "type": "static"
       }
     ],
-    "users-client-feed-ui-stories": [
+    "users-client-post-data-access": [
       {
-        "source": "users-client-feed-ui-stories",
-        "target": "npm:@angular/core",
-        "type": "static"
-      },
-      {
-        "source": "users-client-feed-ui-stories",
+        "source": "users-client-post-data-access",
         "target": "npm:@angular/common",
         "type": "static"
       },
       {
-        "source": "users-client-feed-ui-stories",
+        "source": "users-client-post-data-access",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "users-client-post-data-access",
+        "target": "common-typings",
+        "type": "static"
+      },
+      {
+        "source": "users-client-post-data-access",
+        "target": "users-client-shared-config",
+        "type": "static"
+      },
+      {
+        "source": "users-client-post-data-access",
         "target": "npm:jest-preset-angular",
+        "type": "static"
+      }
+    ],
+    "users-client-shared-app-init": [
+      {
+        "source": "users-client-shared-app-init",
+        "target": "npm:@angular/fire",
+        "type": "static"
+      },
+      {
+        "source": "users-client-shared-app-init",
+        "target": "npm:@ngrx/store",
+        "type": "static"
+      },
+      {
+        "source": "users-client-shared-app-init",
+        "target": "common-typings",
+        "type": "static"
+      },
+      {
+        "source": "users-client-shared-app-init",
+        "target": "npm:@ngrx/effects",
+        "type": "static"
+      },
+      {
+        "source": "users-client-shared-app-init",
+        "target": "npm:rxjs",
+        "type": "static"
+      },
+      {
+        "source": "users-client-shared-app-init",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "users-client-shared-app-init",
+        "target": "users-client-shared-data-access",
         "type": "static"
       }
     ],
@@ -19941,61 +19961,19 @@
         "type": "static"
       }
     ],
-    "users-client-shared-app-init": [
+    "users-client-feed-ui-stories": [
       {
-        "source": "users-client-shared-app-init",
-        "target": "npm:@angular/fire",
-        "type": "static"
-      },
-      {
-        "source": "users-client-shared-app-init",
-        "target": "npm:@ngrx/store",
-        "type": "static"
-      },
-      {
-        "source": "users-client-shared-app-init",
-        "target": "common-typings",
-        "type": "static"
-      },
-      {
-        "source": "users-client-shared-app-init",
-        "target": "npm:@ngrx/effects",
-        "type": "static"
-      },
-      {
-        "source": "users-client-shared-app-init",
-        "target": "npm:rxjs",
-        "type": "static"
-      },
-      {
-        "source": "users-client-shared-app-init",
+        "source": "users-client-feed-ui-stories",
         "target": "npm:@angular/core",
         "type": "static"
       },
       {
-        "source": "users-client-shared-app-init",
-        "target": "users-client-shared-data-access",
-        "type": "static"
-      }
-    ],
-    "users-client-auth-ui-layout": [
-      {
-        "source": "users-client-auth-ui-layout",
-        "target": "npm:@angular/core",
-        "type": "static"
-      },
-      {
-        "source": "users-client-auth-ui-layout",
+        "source": "users-client-feed-ui-stories",
         "target": "npm:@angular/common",
         "type": "static"
       },
       {
-        "source": "users-client-auth-ui-layout",
-        "target": "npm:@angular/router",
-        "type": "static"
-      },
-      {
-        "source": "users-client-auth-ui-layout",
+        "source": "users-client-feed-ui-stories",
         "target": "npm:jest-preset-angular",
         "type": "static"
       }
@@ -20037,6 +20015,51 @@
         "type": "static"
       }
     ],
+    "users-client-auth-ui-layout": [
+      {
+        "source": "users-client-auth-ui-layout",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "users-client-auth-ui-layout",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "users-client-auth-ui-layout",
+        "target": "npm:@angular/router",
+        "type": "static"
+      },
+      {
+        "source": "users-client-auth-ui-layout",
+        "target": "npm:jest-preset-angular",
+        "type": "static"
+      }
+    ],
+    "users-client-shared-config": [],
+    "users-client-feed-ui-feeds": [
+      {
+        "source": "users-client-feed-ui-feeds",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "users-client-feed-ui-feeds",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "users-client-feed-ui-feeds",
+        "target": "npm:@angular/material",
+        "type": "static"
+      },
+      {
+        "source": "users-client-feed-ui-feeds",
+        "target": "npm:jest-preset-angular",
+        "type": "static"
+      }
+    ],
     "api-gateway-social-network": [
       {
         "source": "api-gateway-social-network",
@@ -20064,25 +20087,51 @@
         "type": "static"
       }
     ],
-    "users-client-shared-config": [],
-    "users-client-feed-ui-feeds": [
+    "users-client-shared-icons": [
       {
-        "source": "users-client-feed-ui-feeds",
+        "source": "users-client-shared-icons",
         "target": "npm:@angular/core",
         "type": "static"
       },
       {
-        "source": "users-client-feed-ui-feeds",
+        "source": "users-client-shared-icons",
         "target": "npm:@angular/common",
         "type": "static"
       },
       {
-        "source": "users-client-feed-ui-feeds",
+        "source": "users-client-shared-icons",
         "target": "npm:@angular/material",
         "type": "static"
       },
       {
-        "source": "users-client-feed-ui-feeds",
+        "source": "users-client-shared-icons",
+        "target": "npm:@angular/platform-browser",
+        "type": "static"
+      },
+      {
+        "source": "users-client-shared-icons",
+        "target": "npm:jest-preset-angular",
+        "type": "static"
+      }
+    ],
+    "users-client-shared-utils": [
+      {
+        "source": "users-client-shared-utils",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "users-client-shared-utils",
+        "target": "npm:@angular/forms",
+        "type": "static"
+      },
+      {
+        "source": "users-client-shared-utils",
+        "target": "npm:@angular/material",
+        "type": "static"
+      },
+      {
+        "source": "users-client-shared-utils",
         "target": "npm:jest-preset-angular",
         "type": "static"
       }
@@ -20129,64 +20178,15 @@
         "type": "static"
       }
     ],
-    "users-client-shared-utils": [
-      {
-        "source": "users-client-shared-utils",
-        "target": "npm:@angular/core",
-        "type": "static"
-      },
-      {
-        "source": "users-client-shared-utils",
-        "target": "npm:@angular/forms",
-        "type": "static"
-      },
-      {
-        "source": "users-client-shared-utils",
-        "target": "npm:@angular/material",
-        "type": "static"
-      },
-      {
-        "source": "users-client-shared-utils",
-        "target": "npm:jest-preset-angular",
-        "type": "static"
-      }
-    ],
-    "users-client-shared-icons": [
-      {
-        "source": "users-client-shared-icons",
-        "target": "npm:@angular/core",
-        "type": "static"
-      },
-      {
-        "source": "users-client-shared-icons",
-        "target": "npm:@angular/common",
-        "type": "static"
-      },
-      {
-        "source": "users-client-shared-icons",
-        "target": "npm:@angular/material",
-        "type": "static"
-      },
-      {
-        "source": "users-client-shared-icons",
-        "target": "npm:@angular/platform-browser",
-        "type": "static"
-      },
-      {
-        "source": "users-client-shared-icons",
-        "target": "npm:jest-preset-angular",
-        "type": "static"
-      }
-    ],
     "users-srv-social-network": [
       {
         "source": "users-srv-social-network",
-        "target": "common-logger",
+        "target": "npm:neo4j-driver",
         "type": "static"
       },
       {
         "source": "users-srv-social-network",
-        "target": "npm:neo4j-driver",
+        "target": "common-logger",
         "type": "static"
       },
       {
@@ -20196,12 +20196,12 @@
       },
       {
         "source": "users-srv-social-network",
-        "target": "common-events",
+        "target": "common-typings",
         "type": "static"
       },
       {
         "source": "users-srv-social-network",
-        "target": "common-typings",
+        "target": "common-events",
         "type": "static"
       }
     ],
@@ -20392,6 +20392,35 @@
         "type": "static"
       }
     ],
+    "api-gateway-auth": [
+      {
+        "source": "api-gateway-auth",
+        "target": "npm:@nestjs/common",
+        "type": "static"
+      },
+      {
+        "source": "api-gateway-auth",
+        "target": "npm:@nestjs/microservices",
+        "type": "static"
+      }
+    ],
+    "users-client-e2e": [
+      {
+        "source": "users-client-e2e",
+        "target": "users-client",
+        "type": "implicit"
+      },
+      {
+        "source": "users-client-e2e",
+        "target": "npm:cypress",
+        "type": "static"
+      },
+      {
+        "source": "users-client-e2e",
+        "target": "npm:@nx/cypress",
+        "type": "static"
+      }
+    ],
     "api-gateway-like": [
       {
         "source": "api-gateway-like",
@@ -20424,35 +20453,6 @@
         "type": "static"
       }
     ],
-    "api-gateway-auth": [
-      {
-        "source": "api-gateway-auth",
-        "target": "npm:@nestjs/common",
-        "type": "static"
-      },
-      {
-        "source": "api-gateway-auth",
-        "target": "npm:@nestjs/microservices",
-        "type": "static"
-      }
-    ],
-    "users-client-e2e": [
-      {
-        "source": "users-client-e2e",
-        "target": "users-client",
-        "type": "implicit"
-      },
-      {
-        "source": "users-client-e2e",
-        "target": "npm:cypress",
-        "type": "static"
-      },
-      {
-        "source": "users-client-e2e",
-        "target": "npm:@nx/cypress",
-        "type": "static"
-      }
-    ],
     "api-gateway-e2e": [
       {
         "source": "api-gateway-e2e",
@@ -20472,6 +20472,45 @@
         "type": "static"
       }
     ],
+    "users-srv-core": [
+      {
+        "source": "users-srv-core",
+        "target": "common-logger",
+        "type": "static"
+      }
+    ],
+    "posts-srv-like": [
+      {
+        "source": "posts-srv-like",
+        "target": "common-errors",
+        "type": "static"
+      },
+      {
+        "source": "posts-srv-like",
+        "target": "common-logger",
+        "type": "static"
+      },
+      {
+        "source": "posts-srv-like",
+        "target": "common-typings",
+        "type": "static"
+      },
+      {
+        "source": "posts-srv-like",
+        "target": "npm:uuid",
+        "type": "static"
+      },
+      {
+        "source": "posts-srv-like",
+        "target": "common-handlers",
+        "type": "static"
+      },
+      {
+        "source": "posts-srv-like",
+        "target": "npm:mongoose",
+        "type": "static"
+      }
+    ],
     "common-typings": [
       {
         "source": "common-typings",
@@ -20481,13 +20520,6 @@
       {
         "source": "common-typings",
         "target": "npm:@grpc/grpc-js",
-        "type": "static"
-      }
-    ],
-    "posts-srv-core": [
-      {
-        "source": "posts-srv-core",
-        "target": "common-logger",
         "type": "static"
       }
     ],
@@ -20538,45 +20570,6 @@
         "type": "static"
       }
     ],
-    "users-srv-core": [
-      {
-        "source": "users-srv-core",
-        "target": "common-logger",
-        "type": "static"
-      }
-    ],
-    "posts-srv-like": [
-      {
-        "source": "posts-srv-like",
-        "target": "common-errors",
-        "type": "static"
-      },
-      {
-        "source": "posts-srv-like",
-        "target": "common-logger",
-        "type": "static"
-      },
-      {
-        "source": "posts-srv-like",
-        "target": "common-typings",
-        "type": "static"
-      },
-      {
-        "source": "posts-srv-like",
-        "target": "npm:uuid",
-        "type": "static"
-      },
-      {
-        "source": "posts-srv-like",
-        "target": "common-handlers",
-        "type": "static"
-      },
-      {
-        "source": "posts-srv-like",
-        "target": "npm:mongoose",
-        "type": "static"
-      }
-    ],
     "posts-srv--post": [
       {
         "source": "posts-srv--post",
@@ -20614,6 +20607,20 @@
         "type": "static"
       }
     ],
+    "posts-srv-core": [
+      {
+        "source": "posts-srv-core",
+        "target": "common-logger",
+        "type": "static"
+      }
+    ],
+    "common-errors": [
+      {
+        "source": "common-errors",
+        "target": "common-logger",
+        "type": "static"
+      }
+    ],
     "users-srv-e2e": [
       {
         "source": "users-srv-e2e",
@@ -20626,20 +20633,6 @@
         "type": "static"
       }
     ],
-    "common-errors": [
-      {
-        "source": "common-errors",
-        "target": "common-logger",
-        "type": "static"
-      }
-    ],
-    "common-logger": [
-      {
-        "source": "common-logger",
-        "target": "npm:winston",
-        "type": "static"
-      }
-    ],
     "posts-srv-e2e": [
       {
         "source": "posts-srv-e2e",
@@ -20648,6 +20641,35 @@
       }
     ],
     "common-events": [],
+    "common-logger": [
+      {
+        "source": "common-logger",
+        "target": "npm:winston",
+        "type": "static"
+      }
+    ],
+    "common-kafka": [
+      {
+        "source": "common-kafka",
+        "target": "common-logger",
+        "type": "static"
+      },
+      {
+        "source": "common-kafka",
+        "target": "npm:kafkajs",
+        "type": "static"
+      },
+      {
+        "source": "common-kafka",
+        "target": "common-handlers",
+        "type": "static"
+      },
+      {
+        "source": "common-kafka",
+        "target": "common-utils",
+        "type": "static"
+      }
+    ],
     "common-utils": [
       {
         "source": "common-utils",
@@ -20782,55 +20804,6 @@
         "type": "static"
       }
     ],
-    "common-kafka": [
-      {
-        "source": "common-kafka",
-        "target": "common-logger",
-        "type": "static"
-      },
-      {
-        "source": "common-kafka",
-        "target": "npm:kafkajs",
-        "type": "static"
-      },
-      {
-        "source": "common-kafka",
-        "target": "common-handlers",
-        "type": "static"
-      },
-      {
-        "source": "common-kafka",
-        "target": "common-utils",
-        "type": "static"
-      }
-    ],
-    "common-grpc": [
-      {
-        "source": "common-grpc",
-        "target": "npm:@grpc/proto-loader",
-        "type": "static"
-      },
-      {
-        "source": "common-grpc",
-        "target": "npm:@grpc/grpc-js",
-        "type": "static"
-      },
-      {
-        "source": "common-grpc",
-        "target": "common-handlers",
-        "type": "static"
-      },
-      {
-        "source": "common-grpc",
-        "target": "common-logger",
-        "type": "static"
-      },
-      {
-        "source": "common-grpc",
-        "target": "common-utils",
-        "type": "static"
-      }
-    ],
     "api-gateway": [
       {
         "source": "api-gateway",
@@ -20895,6 +20868,33 @@
       {
         "source": "api-gateway",
         "target": "npm:@nx/webpack",
+        "type": "static"
+      }
+    ],
+    "common-grpc": [
+      {
+        "source": "common-grpc",
+        "target": "npm:@grpc/proto-loader",
+        "type": "static"
+      },
+      {
+        "source": "common-grpc",
+        "target": "npm:@grpc/grpc-js",
+        "type": "static"
+      },
+      {
+        "source": "common-grpc",
+        "target": "common-handlers",
+        "type": "static"
+      },
+      {
+        "source": "common-grpc",
+        "target": "common-logger",
+        "type": "static"
+      },
+      {
+        "source": "common-grpc",
+        "target": "common-utils",
         "type": "static"
       }
     ],

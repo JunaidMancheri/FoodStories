@@ -15,11 +15,13 @@ export class UnfollowAUserHandler extends BaseHandler {
   async execute(
     request: RequestPayload<FollowOrUnollowAUserRequest>
   ): Promise<ResponsePayload<void>> {
-    const session = this.driver.session();
+    const session = this.driver.session({
+      database: 'foodstories.social.networks',
+    });
     await session.run(
       `
-       MATCH (:User {userId: $followerId}) -[r:FOLLOWS]-> (:User {userId: $followeeId})
-       DELETE r
+       MATCH (n:User {userId: $followerId}) -[r:FOLLOWS]-> (j:User {userId: $followeeId})
+       DELETE r;
        `,
       {
         followerId: request.data.followerId,
