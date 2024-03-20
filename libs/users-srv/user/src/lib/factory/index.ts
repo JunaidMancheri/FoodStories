@@ -1,4 +1,4 @@
-import { BaseHandler, RequestPayload, ResponsePayload, respondSuccess } from '@food-stories/common/handlers';
+import { BaseHandler, BaseSubscriber, RequestPayload, ResponsePayload, respondSuccess } from '@food-stories/common/handlers';
 import { IMakeAccountPrivateRequest, ISearchUserRequest, ISearchUserResponse } from '@food-stories/common/typings';
 import { userModel } from '../interface/db/mongodb/models/user.model';
 import { Producer } from 'kafkajs';
@@ -9,6 +9,25 @@ export * from './isRegisteredUser.factory';
 export * from './getCurrentUserData.factory';
 export * from './getUserData.factory';
 export * from './udpateUserProfile.factory';
+
+
+export class FollowedAUserEventSubscriber extends BaseSubscriber  {
+  override event = 'User.Followed';
+  async execute(payload: {followerId: string, followeeId: string}): Promise<void> {
+      await userModel.findByIdAndUpdate(payload.followerId, {$inc: {followingsCount: 1}})
+      await userModel.findByIdAndUpdate(payload.followeeId, {$inc: {followersCount: 1}})
+  }
+
+}
+
+export class UnFollowedAUserEventSubscriber extends BaseSubscriber  {
+  override event = 'User.UnFollowed';
+  async execute(payload: {followerId: string, followeeId: string}): Promise<void> {
+      await userModel.findByIdAndUpdate(payload.followerId, {$inc: {followingsCount: -1}})
+      await userModel.findByIdAndUpdate(payload.followeeId, {$inc: {followersCount: -1}})
+  }
+
+}
 
  
 class SearchUsersHandler  extends BaseHandler {
