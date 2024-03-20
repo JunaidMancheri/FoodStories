@@ -5,7 +5,7 @@
       <!-- <fs-highlights></fs-highlights> -->
     </div>
 
-      <div class="post-sections w-full flex justify-evenly " >
+      <div *ngIf="(currUser$ | async)?.isPrivate === false ||(isOwnProfile$ | async) === true || (isFollowing$ | async) === true" class="post-sections w-full flex justify-evenly " >
         <mat-tab-group  class="w-full md:px-10">
           <mat-tab>
             <ng-template mat-tab-label>

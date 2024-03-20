@@ -11,6 +11,8 @@ import { EditProfileData } from '../dto/editProfileData.dto';
     getUserData(request: IgetUserDataRequest, metadata?: Metadata) : Observable<IUser>
     updateUserProfile(request: EditProfileData, metadata?: Metadata) : Observable<IUser>;
     searchUsers(request: ISearchUserRequest): Observable<ISearchUserResponse>;
+    makeAccountPrivate(request:IMakeAccountPrivateRequest) : Observable<void>
+    makeAccountPublic(request: IMakeAccountPrivateRequest) : Observable<void>
   }
 
   export interface IUsersServiceServer {
@@ -21,8 +23,15 @@ import { EditProfileData } from '../dto/editProfileData.dto';
     getUserData: handleUnaryCall<IgetUserDataRequest, IUser>;
     updateUserProfile: handleUnaryCall<EditProfileData, IUser>;
     searchUsers: handleUnaryCall<ISearchUserRequest, ISearchUserResponse>;
+    makeAccountPrivate: handleUnaryCall<IMakeAccountPrivateRequest, void>;
+    makeAccountPublic: handleUnaryCall<IMakeAccountPrivateRequest, void>;
+    
   }
 
+
+  export interface  IMakeAccountPrivateRequest {
+    userId: string;
+  }
 
   export interface ISearchUserRequest  {
     query: string;

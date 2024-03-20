@@ -11,6 +11,8 @@ import {
   makeIsUsernameAvailableHandler,
   makeUpdateUserProfileHandler,
   makeSearchUsersHanlder,
+  makeAccountPRivateHandler,
+  makeAccountpubliceHandler,
 } from '@food-stories/users-srv/user';
 import { Logger, logger } from '@food-stories/users-srv/core';
 import { kafkaClient } from '../config/kafka.config';
@@ -29,6 +31,8 @@ export const UsersServiceImpl: IUsersServiceServer = {
   getUserData: wrapHandler(makeGetUserDataHandler),
   updateUserProfile: wrapHandler(makeUpdateUserProfileHandler),
   searchUsers: wrapHandler(makeSearchUsersHanlder),
+  makeAccountPrivate : makeUnaryCallHandler(makeAccountPRivateHandler(createProducer(kafkaClient)), logger),
+  makeAccountPublic: makeUnaryCallHandler(makeAccountpubliceHandler(createProducer(kafkaClient)), logger)
 };
 
 export const SocialNetworkServiceImpl: ISocialNetworkServiceServer = {

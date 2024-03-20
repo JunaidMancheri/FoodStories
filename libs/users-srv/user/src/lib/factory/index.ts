@@ -1,6 +1,7 @@
 import { BaseHandler, RequestPayload, ResponsePayload, respondSuccess } from '@food-stories/common/handlers';
-import { ISearchUserRequest, ISearchUserResponse } from '@food-stories/common/typings';
+import { IMakeAccountPrivateRequest, ISearchUserRequest, ISearchUserResponse } from '@food-stories/common/typings';
 import { userModel } from '../interface/db/mongodb/models/user.model';
+import { Producer } from 'kafkajs';
 
 export * from './createUser.factory';
 export * from './isUsernameAvailable.factory';
@@ -29,4 +30,47 @@ class SearchUsersHandler  extends BaseHandler {
 
 export function makeSearchUsersHanlder() {
   return new SearchUsersHandler();
+}
+
+export function makeAccountPRivateHandler(producer: Producer) {
+  return new MakeAccountPrivateHandler(producer);
+}
+
+export function makeAccountpubliceHandler(producer: Producer) {
+  return new MakeAccountPublicHandler(producer);
+}
+
+
+
+class MakeAccountPrivateHandler extends BaseHandler {
+  constructor(private producer: Producer) {
+   super();
+  }
+
+
+  async execute(request: RequestPayload<IMakeAccountPrivateRequest>): Promise<ResponsePayload<void>> {
+       await userModel.findByIdAndUpdate(request.data.userId, {isPrivate: true});
+       await this.producer.send({
+        topic: 'User.Updated.Privacy',
+        messages: [{value: JSON.stringify({userId: request.data.userId, isPrivate :  true})}]
+       });
+      return respondSuccess(void 0);
+  }
+}
+
+
+class MakeAccountPublicHandler extends BaseHandler {
+  constructor(private producer: Producer) {
+   super();
+  }
+
+
+  async execute(request: RequestPayload<IMakeAccountPrivateRequest>): Promise<ResponsePayload<void>> {
+       await userModel.findByIdAndUpdate(request.data.userId, {isPrivate: false});
+       await this.producer.send({
+        topic: 'User.Updated.Privacy',
+        messages: [{value: JSON.stringify({userId: request.data.userId, isPrivate :  false})}]
+       });
+      return respondSuccess(void 0);
+  }
 }

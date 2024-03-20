@@ -11,7 +11,7 @@ export const kafkaClient = createKafkaClient(
   new Logger('KAFKA')
 );
 
-export const topicsNeeded = [EVENTS.User.Created.v1];
+export const topicsNeeded = [EVENTS.User.Created.v1, 'User.Updated.Privacy'];
 
 // consumers
 makeConsumerAdapter(
