@@ -57,3 +57,11 @@ mat-icon {
 .animate-icon-click {
   animation: scaleAnimation 0.5s ease-in; 
 }
+
+
+
+.mat-mdc-snack-bar-container.noti{
+  --mdc-snackbar-container-color: #ffffff;
+  --mat-mdc-snack-bar-button-color: #141414;
+  --mdc-snackbar-supporting-text-color: #141313;
+}

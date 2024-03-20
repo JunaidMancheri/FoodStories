@@ -26,6 +26,9 @@
         "libs/api-gateway/core/firebase-admin/src/index.ts"
       ],
       "@food-stories/api-gateway/like": ["libs/api-gateway/like/src/index.ts"],
+      "@food-stories/api-gateway/notifications": [
+        "libs/api-gateway/notifications/src/index.ts"
+      ],
       "@food-stories/api-gateway/post": ["libs/api-gateway/post/src/index.ts"],
       "@food-stories/api-gateway/social-network": [
         "libs/api-gateway/social-network/src/index.ts"

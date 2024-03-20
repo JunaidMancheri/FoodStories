@@ -6,6 +6,7 @@ import { ConfigModule } from '@nestjs/config'
 import { FirebaseAdminModule } from '@food-stories/api-gateway/core/firebase-admin';
 import { ApiGatewayCommentModule } from '@food-stories/api-gateway/comment';
 import { ApiGatewaySocialNetworkModule } from '@food-stories/api-gateway/social-network';
+import { ApiGatewayNotificationsModule } from '@food-stories/api-gateway/notifications';
 
 
 @Module({
@@ -15,6 +16,7 @@ import { ApiGatewaySocialNetworkModule } from '@food-stories/api-gateway/social-
     ApiGatewayLikeModule,
     FirebaseAdminModule,
     ApiGatewayCommentModule,
+    ApiGatewayNotificationsModule,
     ApiGatewaySocialNetworkModule,
     ConfigModule.forRoot({isGlobal: true}),
 ],
