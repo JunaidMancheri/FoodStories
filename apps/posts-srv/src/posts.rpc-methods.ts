@@ -30,7 +30,7 @@ export const CommentsServiceImpl: ICommentsServiceServer = {
   ),
 };
 
-const likesModuleMethods = LikeModule.initialize(LikesLogger).getRpcHandlers();
+const likesModuleMethods = LikeModule.initialize(LikesLogger, createProducer(kafkaClientForPosts)).getRpcHandlers();
 
 export const LikesServiceImpl: ILikesServiceServer = {
   isPostLiked: wrapModuleHandler(likesModuleMethods.isPostLikedHandler),
@@ -44,12 +44,12 @@ function wrapModuleHandler(handleFn: any) {
 }
 
 export const PostsServiceImpl: IPostsServiceServer = {
-  createPost: wrapHandler(makeCreatePostHandler),
+  createPost: makeUnaryCallHandler(makeCreatePostHandler(Logger, createProducer(kafkaClientForPosts)), logger),
   updatePostMediaUrls: wrapHandler(makeUpdateMediaUrlsHandler),
   getUsersPosts: wrapHandler(makeGetUsersPostsHandler),
 };
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function wrapHandler(handlerFactory: any) {
-  return makeUnaryCallHandler(handlerFactory(Logger, createProducer(kafkaClientForPosts)), logger);
+  return makeUnaryCallHandler(handlerFactory(Logger), logger);
 }

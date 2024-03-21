@@ -1,9 +1,11 @@
 import { ILogger } from '@food-stories/common/logger';
 import { Kafka } from 'kafkajs';
+import { ConsumerAdapter } from './makeConsumer.adapter';
 
 export async function bootstrapKafka(
   kafkaClient: Kafka,
   topicsNeeded: string[],
+  consumers: ConsumerAdapter[],
   logger: ILogger
 ) {
   const admin = kafkaClient.admin();
@@ -28,4 +30,6 @@ export async function bootstrapKafka(
 
   await admin.disconnect();
   logger.info('kafka bootstrap finished successfully');
+  logger.info('Starting consumers...');
+  consumers.forEach((consumer) =>consumer())
 }
