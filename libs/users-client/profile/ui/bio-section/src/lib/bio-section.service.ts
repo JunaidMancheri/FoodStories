@@ -26,7 +26,6 @@ export class BioSectionService {
 
 
   deleteDP(id: string) {
-    console.log('deleteing');
     deleteObject(ref(this.storage, REF_PATHS.getThumbDpPath(id))).catch(() => '')
   }
 

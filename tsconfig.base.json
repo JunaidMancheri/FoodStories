@@ -26,6 +26,9 @@
         "libs/api-gateway/core/firebase-admin/src/index.ts"
       ],
       "@food-stories/api-gateway/like": ["libs/api-gateway/like/src/index.ts"],
+      "@food-stories/api-gateway/notifications": [
+        "libs/api-gateway/notifications/src/index.ts"
+      ],
       "@food-stories/api-gateway/post": ["libs/api-gateway/post/src/index.ts"],
       "@food-stories/api-gateway/social-network": [
         "libs/api-gateway/social-network/src/index.ts"
@@ -34,8 +37,10 @@
         "libs/api-gateway/users/src/index.ts"
       ],
       "@food-stories/common/errors": ["libs/common/errors/src/index.ts"],
+      "@food-stories/common/events": ["libs/common/events/src/index.ts"],
       "@food-stories/common/grpc": ["libs/common/grpc/src/index.ts"],
       "@food-stories/common/handlers": ["libs/common/handlers/src/index.ts"],
+      "@food-stories/common/kafka": ["libs/common/kafka/src/index.ts"],
       "@food-stories/common/logger": ["libs/common/logger/src/index.ts"],
       "@food-stories/common/typings": ["libs/common/typings/src/index.ts"],
       "@food-stories/common/utils": ["libs/common/utils/src/index.ts"],

@@ -5,6 +5,11 @@ package social_networks_service.v1;
 service SocialNetworksService {
  rpc followAUser (followOrUnfollowAUserRequest) returns (EMPTY) {};
  rpc unfollowAUser (followOrUnfollowAUserRequest) returns (EMPTY) {};
+ rpc isFollowing (followOrUnfollowAUserRequest) returns (IsFollowingResponse) {};
+}
+
+message IsFollowingResponse {
+  bool isFollowing = 0;
 }
 
 message RelationshipEntity {

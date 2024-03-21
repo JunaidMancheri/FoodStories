@@ -19,6 +19,9 @@ import { Store } from '@ngrx/store';
 import { ProfileHttpService } from '@food-stories/users-client/shared/data-access';
 import { AppEffects, appInitFactory, appReducer } from '@food-stories/users-client/shared/app-init';
 import { authInterceptorProvider } from '@food-stories/users-client/auth/utils';
+import { NotificationsWebsocket } from './websocket.service';
+import { SocketIoModule } from 'ngx-socket-io';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 
 @NgModule({
@@ -28,6 +31,7 @@ import { authInterceptorProvider } from '@food-stories/users-client/auth/utils';
     RouterModule.forRoot(appRoutes, {scrollPositionRestoration: 'enabled'}),
     MatProgressBarModule,
     HttpClientModule,
+    MatSnackBarModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
     provideStorage(() => getStorage()),
@@ -43,6 +47,7 @@ import { authInterceptorProvider } from '@food-stories/users-client/auth/utils';
     !environment.production ? StoreDevtoolsModule.instrument(): [],
     EffectsModule.forRoot([AppEffects]),
     StoreRouterConnectingModule.forRoot({stateKey: 'router'}),
+    SocketIoModule.forRoot({url: 'ws://localhost:3000',  options: {}})
   ],
   declarations: [AppComponent],
   providers: [
@@ -53,7 +58,8 @@ import { authInterceptorProvider } from '@food-stories/users-client/auth/utils';
       deps: [Auth, Store]
     },
     authInterceptorProvider,
-    ProfileHttpService
+    ProfileHttpService,
+    NotificationsWebsocket
   ],
   bootstrap: [AppComponent],
 })

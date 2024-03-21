@@ -3,6 +3,7 @@ import {
   Controller,
   Get,
   Param,
+  Patch,
   Post,
   Put,
   Query,
@@ -26,6 +27,18 @@ export class ApiGatewayUsersController {
     });
     return response;
   }
+
+
+  @Patch('privacy/:userId/:mode')
+  changeAccountPrivacy(@Param() params: {userId:  string, mode: string}) {
+    console.log(params)
+    if (params.mode === 'private') {
+      return this.apiGatewayUsersService.makeAccountPrivate({userId: params.userId});
+    } else {
+      return this.apiGatewayUsersService.makeAccountPublic({userId: params.userId});
+    }
+  }
+
 
   
   @Get('/search')

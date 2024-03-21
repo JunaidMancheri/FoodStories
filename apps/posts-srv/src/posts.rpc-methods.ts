@@ -17,6 +17,8 @@ import {
 import { ILikesServiceServer } from '@food-stories/common/typings';
 import { LikeModule } from '@food-stories/posts-srv/like';
 import { CommentsModule } from '@food-stories/posts-srv/comment';
+import { createProducer } from '@food-stories/common/kafka';
+import { kafkaClientForPosts } from './config/kafka.config';
 
 const commentsModuleMethods =
   CommentsModule.initialize(CommentsLogger).getRpcHanlders();
@@ -28,7 +30,7 @@ export const CommentsServiceImpl: ICommentsServiceServer = {
   ),
 };
 
-const likesModuleMethods = LikeModule.initialize(LikesLogger).getRpcHandlers();
+const likesModuleMethods = LikeModule.initialize(LikesLogger, createProducer(kafkaClientForPosts)).getRpcHandlers();
 
 export const LikesServiceImpl: ILikesServiceServer = {
   isPostLiked: wrapModuleHandler(likesModuleMethods.isPostLikedHandler),
@@ -42,7 +44,7 @@ function wrapModuleHandler(handleFn: any) {
 }
 
 export const PostsServiceImpl: IPostsServiceServer = {
-  createPost: wrapHandler(makeCreatePostHandler),
+  createPost: makeUnaryCallHandler(makeCreatePostHandler(Logger, createProducer(kafkaClientForPosts)), logger),
   updatePostMediaUrls: wrapHandler(makeUpdateMediaUrlsHandler),
   getUsersPosts: wrapHandler(makeGetUsersPostsHandler),
 };

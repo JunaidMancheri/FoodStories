@@ -16,6 +16,8 @@ import { AuthHttpService } from './http.service';
 import { map, firstValueFrom } from 'rxjs';
 import { NotificationService } from '@food-stories/users-client/auth/ui/services';
 import { environment } from '@food-stories/users-client/shared/config';
+import { Store } from '@ngrx/store';
+import { AppActions } from '@food-stories/users-client/shared/app-init';
 
 interface UserData {
   email: string;
@@ -33,6 +35,7 @@ export class AuthService {
     private router: Router,
     private httpService: AuthHttpService,
     private notificiationService: NotificationService,
+    private store: Store
   ) {}
 
   isUsernameAvailable(username: string) {
@@ -43,8 +46,10 @@ export class AuthService {
 
   sendPasswordResetMail(email: string) {
     sendPasswordResetEmail(this.firebaseAuth, email).then(() => {
-      this.notificiationService.openDialog('A password reset email has been sent, You can change your password from there!')
-    })
+      this.notificiationService.openDialog(
+        'A password reset email has been sent, You can change your password from there!'
+      );
+    });
   }
 
   async registerWithEmailAndPassword(userData: UserData) {
@@ -60,7 +65,7 @@ export class AuthService {
     this.callBackendCreateUserEndPoint(userData);
   }
 
- isEmailUsed(email: string) {
+  isEmailUsed(email: string) {
     return this.httpService.isRegisteredUser(email).pipe(
       map((registered) => {
         if (registered) {
@@ -75,26 +80,30 @@ export class AuthService {
       this.firebaseAuth,
       new GoogleAuthProvider()
     );
-    if (!user.user.email){
+    if (!user.user.email) {
       return this.notificiationService.showSomethingWentWrong();
     }
     try {
-      (await firstValueFrom(this.isEmailUsed(user.user.email)))
+      await firstValueFrom(this.isEmailUsed(user.user.email));
 
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (error: any) {
       this.firebaseAuth.signOut();
-      this.notificiationService.openDialog(error.message)
+      this.notificiationService.openDialog(error.message);
       return;
     }
-    
+
     const userData: createUserDto = {
       email: user.user.email,
       DPURL: user.user.photoURL,
       username,
     };
+    // bug: because  the siginWithGoogle emit the auth changed event,
+    // causing api for fetching user details at the time there is not record of such user
     this.callBackendCreateUserEndPoint(userData);
     this.router.navigateByUrl('/');
+    // this shouldn't be here;
+    this.store.dispatch(AppActions.loadUserDetails({email: user.user.email}));
   }
 
   async registerWithTwitter(username: string) {
@@ -102,16 +111,16 @@ export class AuthService {
       this.firebaseAuth,
       new TwitterAuthProvider()
     );
-    if (!user.user.email){
+    if (!user.user.email) {
       return this.notificiationService.showSomethingWentWrong();
     }
     try {
-      (await firstValueFrom(this.isEmailUsed(user.user.email)))
+      await firstValueFrom(this.isEmailUsed(user.user.email));
 
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (error: any) {
       this.firebaseAuth.signOut();
-      this.notificiationService.openDialog(error.message)
+      this.notificiationService.openDialog(error.message);
       return;
     }
     const userData: createUserDto = {
@@ -125,7 +134,9 @@ export class AuthService {
       !this.firebaseAuth.currentUser.emailVerified
     ) {
       await this.sendEmailVerification();
-      this.notificiationService.openDialog('An email verification link has been sent to your email. Please verify your email to continue')
+      this.notificiationService.openDialog(
+        'An email verification link has been sent to your email. Please verify your email to continue'
+      );
     } else {
       this.router.navigateByUrl('/');
     }
@@ -137,16 +148,16 @@ export class AuthService {
       new FacebookAuthProvider()
     );
 
-    if (!user.user.email){
+    if (!user.user.email) {
       return this.notificiationService.showSomethingWentWrong();
     }
     try {
-      (await firstValueFrom(this.isEmailUsed(user.user.email)))
+      await firstValueFrom(this.isEmailUsed(user.user.email));
 
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (error: any) {
       this.firebaseAuth.signOut();
-      this.notificiationService.openDialog(error.message)
+      this.notificiationService.openDialog(error.message);
       return;
     }
     const userData: createUserDto = {
@@ -160,7 +171,9 @@ export class AuthService {
       !this.firebaseAuth.currentUser.emailVerified
     ) {
       await this.sendEmailVerification();
-      this.notificiationService.openDialog('An email verification link has been sent to your email. Please verify your email to continue')
+      this.notificiationService.openDialog(
+        'An email verification link has been sent to your email. Please verify your email to continue'
+      );
     } else {
       this.router.navigateByUrl('/');
     }
@@ -172,17 +185,16 @@ export class AuthService {
         url: environment.homeUrl,
       });
     } else {
-      this.notificiationService.openDialog('There was a error sending the email now. Please try again later');
+      this.notificiationService.openDialog(
+        'There was a error sending the email now. Please try again later'
+      );
     }
   }
 
   callBackendCreateUserEndPoint(userData: createUserDto) {
-    this.httpService
-      .createUser(userData)
-      .subscribe();
+    this.httpService.createUser(userData).subscribe();
   }
 
-  
   loginUser(email: string, password: string) {
     signInWithEmailAndPassword(this.firebaseAuth, email, password)
       .then(async (user) => {
@@ -191,7 +203,9 @@ export class AuthService {
             "Your email hasn't been verified yet. Please verify your email to continue. We have sent a verification link to your email"
           );
           await this.sendEmailVerification();
-          this.notificiationService.openSnackBar('Verification email has been sent');
+          this.notificiationService.openSnackBar(
+            'Verification email has been sent'
+          );
         } else {
           this.router.navigate(['/']);
         }
@@ -199,7 +213,9 @@ export class AuthService {
       .catch((error) => {
         console.log(error);
         if (error.code == 'auth/user-not-found') {
-          this.notificiationService.openSnackBar('No user found with this email');
+          this.notificiationService.openSnackBar(
+            'No user found with this email'
+          );
         } else if (error.code == 'auth/wrong-password') {
           this.notificiationService.openSnackBar('Wrong password or email');
         } else if (error.code == 'auth/too-many-requests') {
@@ -207,74 +223,100 @@ export class AuthService {
             'Your account has been  temporarily disabled due to too many attempts with wrong password. Either reset your  password or try again later ;)'
           );
         } else {
-          this.notificiationService.openSnackBar('Something went wrong. Please try again later');
+          this.notificiationService.openSnackBar(
+            'Something went wrong. Please try again later'
+          );
         }
       });
   }
 
   async loginWithGoogle() {
-    const userCredential = await  signInWithPopup(this.firebaseAuth, new GoogleAuthProvider());
+    const userCredential = await signInWithPopup(
+      this.firebaseAuth,
+      new GoogleAuthProvider()
+    );
     if (!userCredential.user.email) {
-      return this.notificiationService.openSnackBar('Something went wrong. Please try again later');
+      return this.notificiationService.openSnackBar(
+        'Something went wrong. Please try again later'
+      );
     }
-    this.httpService.isRegisteredUser(userCredential.user.email).subscribe((registered) => {
-       if (registered) {
-        this.router.navigateByUrl('/');
-       } else {
-        if (this.firebaseAuth.currentUser) {
-           deleteUser(this.firebaseAuth.currentUser);
+    this.httpService
+      .isRegisteredUser(userCredential.user.email)
+      .subscribe((registered) => {
+        if (registered) {
+          this.router.navigateByUrl('/');
+        } else {
+          if (this.firebaseAuth.currentUser) {
+            deleteUser(this.firebaseAuth.currentUser);
+          }
+          this.notificiationService.openSnackBar(
+            'Please register before login'
+          );
         }
-        this.notificiationService.openSnackBar('Please register before login');
-       }
-    })
-  
+      });
   }
 
   async loginWithFacebook() {
-      const userCredential = await signInWithPopup(this.firebaseAuth, new FacebookAuthProvider());
+    const userCredential = await signInWithPopup(
+      this.firebaseAuth,
+      new FacebookAuthProvider()
+    );
 
-      if (!userCredential.user.email) {
-        return this.notificiationService.showSomethingWentWrong();
-      }
-      this.httpService.isRegisteredUser(userCredential.user.email).subscribe((registered) => {
-         if (registered) {
+    if (!userCredential.user.email) {
+      return this.notificiationService.showSomethingWentWrong();
+    }
+    this.httpService
+      .isRegisteredUser(userCredential.user.email)
+      .subscribe((registered) => {
+        if (registered) {
           if (!this.firebaseAuth.currentUser?.emailVerified) {
-            this.notificiationService.openDialog('This email is not yet verified. Please verify to continue. We have sent a verification link to your mail');
+            this.notificiationService.openDialog(
+              'This email is not yet verified. Please verify to continue. We have sent a verification link to your mail'
+            );
           } else {
             this.router.navigateByUrl('/');
           }
-         } else {
+        } else {
           if (this.firebaseAuth.currentUser) {
-             deleteUser(this.firebaseAuth.currentUser);
+            deleteUser(this.firebaseAuth.currentUser);
           }
-          this.notificiationService.openSnackBar('Please register before login');
-         }
-      })
+          this.notificiationService.openSnackBar(
+            'Please register before login'
+          );
+        }
+      });
+  }
+
+  async loginWithTwitter() {
+    const userCredential = await signInWithPopup(
+      this.firebaseAuth,
+      new TwitterAuthProvider()
+    );
+
+    if (!userCredential.user.email) {
+      return this.notificiationService.showSomethingWentWrong();
     }
-
-
-
-    async loginWithTwitter() {
-      const userCredential = await signInWithPopup(this.firebaseAuth, new TwitterAuthProvider());
-
-      if (!userCredential.user.email) {
-        return this.notificiationService.showSomethingWentWrong();
-      }
-      this.httpService.isRegisteredUser(userCredential.user.email).subscribe((registered) => {
-         if (registered) {
+    this.httpService
+      .isRegisteredUser(userCredential.user.email)
+      .subscribe((registered) => {
+        if (registered) {
           if (!this.firebaseAuth.currentUser?.emailVerified) {
-            this.notificiationService.openDialog('This email is not yet verified. Please verify to continue. We have sent a verification link to your mail');
+            this.notificiationService.openDialog(
+              'This email is not yet verified. Please verify to continue. We have sent a verification link to your mail'
+            );
           } else {
             this.router.navigateByUrl('/');
           }
-         } else {
+        } else {
           if (this.firebaseAuth.currentUser) {
-             deleteUser(this.firebaseAuth.currentUser);
+            deleteUser(this.firebaseAuth.currentUser);
           }
-          this.notificiationService.openSnackBar('Please register before login');
-         }
-      })
-    }
+          this.notificiationService.openSnackBar(
+            'Please register before login'
+          );
+        }
+      });
+  }
 }
 
 export interface createUserDto {

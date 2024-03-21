@@ -12,6 +12,7 @@ export class ProfileComponent implements OnInit, OnDestroy {
   currUser$ = this.profileStore.user$;
   isOwnProfile$ = this.profileService.isOwnProfile$;
   posts$ = this.profileStore.posts$;
+  isFollowing$ = this.profileService.isFollowing$;
 
   routeSub!: Subscription;
 

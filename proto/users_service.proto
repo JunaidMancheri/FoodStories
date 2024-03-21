@@ -10,6 +10,14 @@ service UsersService {
   rpc getUserData(getUserDataRequest) returns (UserEntity) {}
   rpc updateUserProfile(EditProfileData) returns (UserEntity) {}
   rpc searchUsers(SearchUserRequest) returns (SearchUserResponse) {}
+  rpc makeAccountPrivate(MakeAccountPrivateOrPublicRequest) returns (EMPTY) {}
+  rpc makeAccountPublic(MakeAccountPrivateOrPublicRequest) returns (EMPTY) {}
+}
+
+message EMPTY {}
+
+message MakeAccountPrivateOrPublicRequest {
+  string userId = 0;
 }
 
 message EditProfileData {
