@@ -95,7 +95,6 @@ export class CreatePostDialogComponent implements OnInit {
     sharePost() {
       this.stepper.next();
 
-    // const fileUploadPromises: Promise<UploadResult>[] = [];
     const refPaths: StorageReference[] = [];
     
     this.createPostService
@@ -105,18 +104,12 @@ export class CreatePostDialogComponent implements OnInit {
         this.progressCaption = 'Uploading  medias...'
         for (let i = 0; i < this.files.length; i++) {
           const refPath = ref(this.storage, REF_PATHS.getOriginalPostPath(res.id, res.userId, i));
-          // fileUploadPromises.push(uploadBytes(refPath, this.files[i]));
           const upload = uploadBytesResumable(refPath, this.files[i]);
           this.sha.push(upload)
           this.calcuateUploadProgress(upload);
           this.onUploadFinish(upload, refPaths, res.id, res.userId)
           refPaths.push(refPath);
         }
-
-
-        // Promise.all(fileUploadPromises).then(() => {
-     
-        // })
       });
 
   
