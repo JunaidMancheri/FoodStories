@@ -16,15 +16,14 @@ import { MatProgressBarModule } from '@angular/material/progress-bar'
 import {
   Storage,
   StorageReference,
-  // UploadResult,
   UploadTask,
   getDownloadURL,
   ref,
-  // uploadBytes,
   uploadBytesResumable,
 } from '@angular/fire/storage';
 import { Auth } from '@angular/fire/auth';
 import { REF_PATHS } from '@food-stories/users-client/shared/config';
+import {  NewPostEventsService } from '@food-stories/users-client/profile/feature';
 import { from, zip } from 'rxjs';
 @Component({
   selector: 'fs-create-post',
@@ -52,6 +51,7 @@ export class CreatePostDialogComponent implements OnInit {
   store = inject(Store);
   storage = inject(Storage);
   auth = inject(Auth);
+  newPostEventService = inject(NewPostEventsService);
   mediaUrls: string[] = [];
 
 
@@ -125,7 +125,10 @@ export class CreatePostDialogComponent implements OnInit {
         this.progressCaption = 'Syncing your changes...';
         this.fileUploadProgress = 98;
       this.createPostService.updatePostMediaUrls(id, mediaUrls, thumbnailUrl)
-      .subscribe(() => this.dialogRef.close());
+      .subscribe((res) => {
+        this.newPostEventService.setNewPost(res)
+        this.dialogRef.close();
+      });
     })
   }
 

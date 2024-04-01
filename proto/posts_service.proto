@@ -4,7 +4,7 @@ package posts_service.v1;
 
 service PostsService {
   rpc createPost(CreatePostRequest) returns (PostEntity) {}
-  rpc updatePostMediaUrls(UpdatePostMediaUrlsRequest)returns (EMPTY) {}
+  rpc updatePostMediaUrls(UpdatePostMediaUrlsRequest)returns (PostEntity) {}
   rpc getUsersPosts(GetUsersPostsRequest) returns(GetUserPostsResponse) {}
 }
 
