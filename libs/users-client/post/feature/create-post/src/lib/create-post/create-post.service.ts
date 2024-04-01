@@ -17,7 +17,7 @@ export class CreatePostService {
   }
 
   updatePostMediaUrls(postId: string, mediaUrls: string[], thumbnailUrl: string) {
-    return this.http.put(API_ENDPOINTS.UPDATE_MEDIA_URLS + postId, {mediaUrls, thumbnailUrl})
+    return this.http.put<IPost>(API_ENDPOINTS.UPDATE_MEDIA_URLS + postId, {mediaUrls, thumbnailUrl})
   }
 
 

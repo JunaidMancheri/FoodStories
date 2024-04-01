@@ -5,7 +5,7 @@ import { IPostDoc, postModel } from "./post.model";
 import { IUpdateMediaUrlsRepo } from "../../application/interfaces/repository/updateMediaUrls.interface";
 import { IUpdatePostMediaUrlsRequest } from "@food-stories/common/typings";
 import { IGetPostsByUserIdRepo } from "../../application/interfaces/repository/getPostsByUserId.interface";
-import { mapDocumentsToArrayOfPostEntities } from "./mapper.helper";
+import { mapDocumentToPostEntity, mapDocumentsToArrayOfPostEntities } from "./mapper.helper";
 
 export class PostRepository 
 implements ICreatePostRepo, IUpdateMediaUrlsRepo, IGetPostsByUserIdRepo {
@@ -19,8 +19,9 @@ implements ICreatePostRepo, IUpdateMediaUrlsRepo, IGetPostsByUserIdRepo {
       await this.postModel.create(postDto);
   }
 
-   async updateMediaUrls(data: IUpdatePostMediaUrlsRequest): Promise<void> {
-      await this.postModel.findByIdAndUpdate(data.postId, { mediaUrls: data.mediaUrls, thumbnailUrl: data.thumbnailUrl});
+   async updateMediaUrls(data: IUpdatePostMediaUrlsRequest): Promise<IPost> {
+      const postDoc = await this.postModel.findByIdAndUpdate(data.postId, { mediaUrls: data.mediaUrls, thumbnailUrl: data.thumbnailUrl}, {new: true});
+      return mapDocumentToPostEntity(postDoc);
   }
 }
 

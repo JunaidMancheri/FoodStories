@@ -88,6 +88,15 @@ export class ProfileStore extends ComponentStore<ProfileState> {
     posts,
   }));
 
+  readonly addNewPost = this.updater((state, post: IPost) => ({
+    ...state,
+    user: {
+      ...state.user,
+      postsCount: state.user.postsCount + 1,
+    },
+    posts: [post, ...state.posts]
+  }))
+
   readonly loadUser = this.updater(
     (state, user: IUser) => (
       this.fetchUsersPosts(user.id),
