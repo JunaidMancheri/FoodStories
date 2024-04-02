@@ -145,6 +145,9 @@ dependencies:
   socket.io:
     specifier: ^4.7.5
     version: 4.7.5
+  swiper:
+    specifier: ^11.1.0
+    version: 11.1.0
   tslib:
     specifier: ^2.3.0
     version: 2.5.3
@@ -14498,6 +14501,11 @@ packages:
 
   /swagger-ui-dist@5.11.2:
     resolution: {integrity: sha512-jQG0cRgJNMZ7aCoiFofnoojeSaa/+KgWaDlfgs8QN+BXoGMpxeMVY5OEnjq4OlNvF3yjftO8c9GRAgcHlO+u7A==}
+    dev: false
+
+  /swiper@11.1.0:
+    resolution: {integrity: sha512-Pm78CgU7Wvg+w/MgIL/1NwMSLgx0XqFof25EnVyX8iZFCYJv5CppH7LHkBj43qW2k5Cp3Iz7FcdBxrox7XX2AQ==}
+    engines: {node: '>= 4.7.0'}
     dev: false
 
   /symbol-observable@4.0.0:

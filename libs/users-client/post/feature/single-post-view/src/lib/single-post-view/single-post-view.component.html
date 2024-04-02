@@ -1,9 +1,19 @@
-<div class="w-[65vw] h-[95vh] flex">
-  <div class="post-image w-1/2 h-full ">
-    <img [src]="data.post.mediaUrls[0]" class="h-full w-full" alt="">
+<div class="w-[75vw] h-[95vh] flex">
+  <div class="post-image w-7/12 h-full flex items-center justify-center">
+    <div class="overflow-auto">
+      <swiper-container navigation="true" pagination="true">
+        <ng-container *ngFor="let url of data.post.mediaUrls" >
+          <swiper-slide  lazy="true">
+            <img height="100" width="160" [ngSrc]="url" loading="lazy" class="h-[95vh] w-full" alt="">
+          </swiper-slide>
+  
+        </ng-container>
+      </swiper-container>
+
+    </div>
 
   </div>
-  <div class="details w-1/2 h-full flex flex-col">
+  <div class="details w-5/12 h-full flex flex-col">
     <div class="usernames  h-14 flex gap-1 ">
       <div class="dpp  w-10 flex items-center justify-center">
         <div class="bg-gradient-to-tr h-8 w-8 rounded-full p-1">

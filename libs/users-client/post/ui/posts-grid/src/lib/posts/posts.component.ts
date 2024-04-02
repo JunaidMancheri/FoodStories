@@ -42,7 +42,7 @@ export class PostsComponent implements OnChanges {
 
   openPostSingleView(post: IPost) {
     this.matDialog.open(SinglePostViewComponent, {
-      panelClass: ['w-[65vw]', 'h-[95vh]'],
+      panelClass: ['w-[75vw]', 'h-[95vh]'],
       data: {
         post,
         postedUser: { username: this.currUser?.username, DPURL: this.currUser?.DPURL },
