@@ -83,6 +83,22 @@ export class ProfileStore extends ComponentStore<ProfileState> {
     );
   });
 
+  readonly addNewFollower = this.updater((state) => ({
+    ...state,
+    user: {
+      ...state.user,
+      followersCount: ++state.user.followersCount,
+    }
+  }))
+
+  readonly removeFollower = this.updater((state) => ({
+    ...state,
+    user: {
+      ...state.user,
+      followersCount: --state.user.followersCount,
+    }
+  }))
+
   readonly loadPosts = this.updater((state, posts: IPost[]) => ({
     ...state,
     posts,
