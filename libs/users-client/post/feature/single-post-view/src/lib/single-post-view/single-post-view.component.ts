@@ -1,5 +1,5 @@
-import { Component, OnInit, inject } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CUSTOM_ELEMENTS_SCHEMA, Component, OnInit, inject } from '@angular/core';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { MAT_DIALOG_DATA, MatDialogModule } from '@angular/material/dialog';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
@@ -31,10 +31,12 @@ interface DialogData {
     MatFormFieldModule,
     MatInputModule,
     ReactiveFormsModule,
-    RelativePipeModule
+    RelativePipeModule,
+    NgOptimizedImage
   ],
   templateUrl: './single-post-view.component.html',
   styleUrls: ['./single-post-view.component.css'],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class SinglePostViewComponent implements OnInit {
   store = inject(Store);
