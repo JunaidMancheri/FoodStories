@@ -6,8 +6,9 @@ import { NotificationsGateway } from './websocket.gateway';
 export class ApiGatewayNotificationsService implements OnModuleInit {
 
   async onModuleInit() {
+    if (!process.env['KAFKA_URL']) throw new Error('kafka url is required');
     const kafkaClient = new Kafka({
-       brokers: ['localhost:9092'],
+       brokers: [process.env['KAFKA_URL']],
        clientId: 'api-gateway',
     })
 

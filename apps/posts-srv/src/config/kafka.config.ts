@@ -8,14 +8,24 @@ import {
   PostUnLikedHandler,
 } from '@food-stories/posts-srv//post';
 import { Logger, logger } from '@food-stories/posts-srv/core';
+import { appConfig } from './app.config';
 
 export const kafkaClientForPosts = createKafkaClient(
   {
-    hostUrl: 'localhost:9092',
+    hostUrl: appConfig.KAFKA_URL,
     clientId: 'posts-srv',
   },
   new Logger('Kafa')
 );
+
+
+export const kafkaClientForComments = createKafkaClient(
+  {
+    hostUrl: appConfig.KAFKA_URL,
+    clientId: 'comments-srv',
+  },
+  new Logger('kafka')
+)
 
 export const topicsNeeded = ['Post.Created', 'Post.Liked', 'Post.UnLiked'];
 export const consumers = [

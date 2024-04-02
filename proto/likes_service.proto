@@ -26,6 +26,8 @@ message EMPTY {}
 message LikeOrUnlikeAPostRequest {
   string userId = 0;
   string postId = 1;
+  string postOwnerId = 2;
+  string likedUserUsername = 3;
 }
 
 message IsPostLikedResponse {

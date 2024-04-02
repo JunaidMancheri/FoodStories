@@ -13987,6 +13987,15 @@
         "hash": "sha512-jQG0cRgJNMZ7aCoiFofnoojeSaa/+KgWaDlfgs8QN+BXoGMpxeMVY5OEnjq4OlNvF3yjftO8c9GRAgcHlO+u7A=="
       }
     },
+    "npm:swiper": {
+      "type": "npm",
+      "name": "npm:swiper",
+      "data": {
+        "version": "11.1.0",
+        "packageName": "swiper",
+        "hash": "sha512-Pm78CgU7Wvg+w/MgIL/1NwMSLgx0XqFof25EnVyX8iZFCYJv5CppH7LHkBj43qW2k5Cp3Iz7FcdBxrox7XX2AQ=="
+      }
+    },
     "npm:symbol-observable": {
       "type": "npm",
       "name": "npm:symbol-observable",

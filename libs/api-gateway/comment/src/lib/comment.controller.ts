@@ -25,6 +25,8 @@ export class ApiGatewayCommentController {
       postId,
       comment: body.comment,
       userId: body.userId,
+      commentedUserUsername: body.commentedUserUsername,
+      postOwnerId: body.postOwnerId
     });
   }
 }

@@ -22,4 +22,5 @@ message EMPTY {}
 message followOrUnfollowAUserRequest {
    string followerId = 0;
    string followeeId = 1;
+   string followerUsername = 2;
 }

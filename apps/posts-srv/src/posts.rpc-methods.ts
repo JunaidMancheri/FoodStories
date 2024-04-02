@@ -18,10 +18,10 @@ import { ILikesServiceServer } from '@food-stories/common/typings';
 import { LikeModule } from '@food-stories/posts-srv/like';
 import { CommentsModule } from '@food-stories/posts-srv/comment';
 import { createProducer } from '@food-stories/common/kafka';
-import { kafkaClientForPosts } from './config/kafka.config';
+import { kafkaClientForComments, kafkaClientForPosts } from './config/kafka.config';
 
 const commentsModuleMethods =
-  CommentsModule.initialize(CommentsLogger).getRpcHanlders();
+  CommentsModule.initialize(CommentsLogger, createProducer(kafkaClientForComments)).getRpcHanlders();
 
 export const CommentsServiceImpl: ICommentsServiceServer = {
   addComment: wrapModuleHandler(commentsModuleMethods.addComment),

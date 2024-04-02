@@ -46,12 +46,14 @@ export class SinglePostViewComponent implements OnInit {
   commentInput = new FormControl('');
 
   userId = '';
+  username = '';
   isLiked = false;
   comments: IComment[] = [];
 
   ngOnInit(): void {
     this.store.select(selectCurrentUserIdOrUsername).subscribe((data) => {
       this.userId = data.id;
+      this.username = data.username;
       this.likesService
         .isPostLiked(this.data.post.id, this.userId)
         .subscribe((response) => {
@@ -70,6 +72,8 @@ export class SinglePostViewComponent implements OnInit {
           postId: this.data.post.id,
           userId: this.userId,
           comment: this.commentInput.value,
+          commentedUserUsername: this.username,
+          postOwnerId: this.data.post.userId
         })
         .subscribe((comment) => {
           this.commentInput.setValue('')
@@ -86,7 +90,12 @@ export class SinglePostViewComponent implements OnInit {
 
     if (!this.isLiked) {
       this.likesService
-        .likeAPost(this.data.post.id, this.userId)
+        .likeAPost({
+          userId: this.userId,
+          likedUserUsername: this.username,
+          postId: this.data.post.id,
+          postOwnerId: this.data.post.userId
+        })
         .subscribe(() => (this.isLiked = true, this.data.post.likesCount++));
     }
   }

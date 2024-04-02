@@ -39,4 +39,6 @@ message AddCommentRequest {
   string rootCommentId = 3;
   string parentCommentId = 4;
   string repliedToUserId = 5;
+  string commentedUserUsername = 6;
+  string postOwnerId = 7;
 }
