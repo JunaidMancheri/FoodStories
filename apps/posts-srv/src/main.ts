@@ -15,7 +15,6 @@ import {
 
 async function bootstrap() {
   try {
-    await loadAppConfig(envKeys, appConfig, logger);
     await bootstrapKafka(kafkaClientForPosts, topicsNeeded, consumers, logger);
     await connectToMongoDB(appConfig.MONGODB_URI, logger);
     const grpcServer = await startGRPCServer(appConfig.GRPC_PORT, logger);

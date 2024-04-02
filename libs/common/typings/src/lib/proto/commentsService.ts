@@ -24,4 +24,7 @@ export  interface IGetCommentsForAPostResponse {
 }
 
 
-export interface IAddCommentRequest extends Omit<IComment, 'id' | 'likesCount' | 'repliesCount' | 'createdAt'> {}
+export interface IAddCommentRequest extends Omit<IComment, 'id' | 'likesCount' | 'repliesCount' | 'createdAt'> {
+  commentedUserUsername: string;
+  postOwnerId: string;
+}

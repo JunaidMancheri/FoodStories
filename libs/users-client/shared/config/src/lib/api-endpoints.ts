@@ -26,6 +26,11 @@ export const API_ENDPOINTS = {
     likeAPost: (postId: string) => `${BASE_URL}/likes/${postId}`,
   },
 
+  Comments: {
+    addComment: (postId: string) => `${BASE_URL}/comments/${postId}`,
+    getComments: (postId: string) => `${BASE_URL}/comments/${postId}/`,
+  },
+
   SocialNetworks: {
     followAUser: (userId: string) => `${BASE_URL}/social-networks/${userId}`,
     unFollowAUser: (userId: string) => `${BASE_URL}/social-networks/${userId}`
