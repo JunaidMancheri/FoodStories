@@ -7,8 +7,8 @@ export class ApiGatewayLikeController {
 
   constructor(private likesService: ApiGatewayLikeService) {}
   @Post('/:postId')
-  likeAPost(@Param('postId') postId: string, @Body() body: {userId: string}) {
-    return  this.likesService.likeAPost({ postId, userId:  body.userId})
+  likeAPost(@Param('postId') postId: string, @Body() body: {userId: string, postOwnerId: string, likedUserUsername: string}) {
+    return  this.likesService.likeAPost({ postId, userId:  body.userId, postOwnerId: body.postOwnerId, likedUserUsername: body.likedUserUsername})
   }
 
   @Delete('/:postId')

@@ -14,8 +14,17 @@ export class LikesService {
     );
   }
 
-  likeAPost(postId: string, userId: string) {
-    return this.http.post(API_ENDPOINTS.Likes.likeAPost(postId), { userId });
+  likeAPost(data: {
+    postId: string;
+    userId: string;
+    postOwnerId: string;
+    likedUserUsername: string;
+  }) {
+    return this.http.post(API_ENDPOINTS.Likes.likeAPost(data.postId), {
+      userId: data.userId,
+      postOwnerId: data.postOwnerId,
+      likedUserUsername: data.likedUserUsername,
+    });
   }
 
   unlikeAPost(postId: string, userId: string) {

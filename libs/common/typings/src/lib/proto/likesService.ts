@@ -26,4 +26,6 @@ export  interface IIsPostLikedResponse {
 export interface ILikeOrUnlikeAPostRequest {
   userId: string
   postId: string
+  postOwnerId?: string
+  likedUserUsername?: string;
 }

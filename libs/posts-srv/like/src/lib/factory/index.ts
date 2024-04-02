@@ -14,7 +14,6 @@ import { LoggerClass } from '@food-stories/common/logger';
 import { PostLike, makePostLikeEntity } from '../entities/PostLike.entity';
 import { Producer } from 'kafkajs';
 
-
 export function initialize(Logger: LoggerClass, producer: Producer) {
   // const CommentLike = makeCommentLikeEntity(new Logger('Entity: CommentLike'));
   const PostLike = makePostLikeEntity(new Logger('Entity: PostLike'));
@@ -25,9 +24,9 @@ export function initialize(Logger: LoggerClass, producer: Producer) {
       likeAPostHandler: makeLikeAPostHandler(PostLike, producer),
       unLikeAPostHandler: makeUnLikeAPostHandler(producer),
     };
-  };
+  }
 
-  return {getRpcHandlers}
+  return { getRpcHandlers };
 }
 
 function makeLikeAPostHandler(PostLike: PostLike, producer: Producer) {
@@ -57,8 +56,20 @@ class LikeAPostHandler extends BaseHandler {
     await PostLikeModel.create(like);
     await this.producer.send({
       topic: 'Post.Liked',
-      messages: [{value: JSON.stringify({postId: request.data.postId})}]
-    })
+      messages: [{ value: JSON.stringify({ postId: request.data.postId }) }],
+    });
+
+    await this.producer.send({
+      topic: 'notifications',
+      messages: [
+        {
+          value: JSON.stringify({
+            message: `${request.data.likedUserUsername} liked your post`,
+            userId: request.data.postOwnerId,
+          }),
+        },
+      ],
+    });
 
     return respondSuccess(null);
   }
@@ -66,7 +77,7 @@ class LikeAPostHandler extends BaseHandler {
 
 class UnLikeAPostHandler extends BaseHandler {
   constructor(private producer: Producer) {
-    super()
+    super();
   }
   async execute(
     request: RequestPayload<ILikeOrUnlikeAPostRequest>
@@ -77,8 +88,8 @@ class UnLikeAPostHandler extends BaseHandler {
     });
     await this.producer.send({
       topic: 'Post.UnLiked',
-      messages: [{value: JSON.stringify({postId: request.data.postId})}]
-    })
+      messages: [{ value: JSON.stringify({ postId: request.data.postId }) }],
+    });
     return respondSuccess(null);
   }
 }

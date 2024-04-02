@@ -1,10 +1,9 @@
 import { logger } from '@food-stories/posts-srv/core';
-import { appConfig, envKeys } from './config/app.config';
+import { appConfig } from './config/app.config';
 import { startGRPCServer } from './config/grpc.config';
 import {
   connectToMongoDB,
   doTerminationCleanup,
-  loadAppConfig,
 } from '@food-stories/common/utils';
 import { bootstrapKafka } from '@food-stories/common/kafka';
 import {

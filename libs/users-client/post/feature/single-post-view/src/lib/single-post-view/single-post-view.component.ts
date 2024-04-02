@@ -90,7 +90,12 @@ export class SinglePostViewComponent implements OnInit {
 
     if (!this.isLiked) {
       this.likesService
-        .likeAPost(this.data.post.id, this.userId)
+        .likeAPost({
+          userId: this.userId,
+          likedUserUsername: this.username,
+          postId: this.data.post.id,
+          postOwnerId: this.data.post.userId
+        })
         .subscribe(() => (this.isLiked = true, this.data.post.likesCount++));
     }
   }
