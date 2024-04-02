@@ -1,4 +1,12 @@
-import { Body, Controller, Delete, Get, Param, Post, Query } from '@nestjs/common';
+import {
+  Body,
+  Controller,
+  Delete,
+  Get,
+  Param,
+  Post,
+  Query,
+} from '@nestjs/common';
 import { ApiGatewaySocialNetworkService } from './social-network.service';
 
 @Controller('social-networks')
@@ -7,19 +15,37 @@ export class ApiGatewaySocialNetworkController {
     private apiGatewaySocialNetworkService: ApiGatewaySocialNetworkService
   ) {}
 
-
   @Post(':followeeId')
-  followAAUser(@Param('followeeId') followeeId: string, @Body() body: {followerId: string}) {
-    return this.apiGatewaySocialNetworkService.followAUser({followeeId, followerId: body.followerId});
+  followAUser(
+    @Param('followeeId') followeeId: string,
+    @Body() body: { followerId: string; followerUsername: string }
+  ) {
+    return this.apiGatewaySocialNetworkService.followAUser({
+      followeeId,
+      followerId: body.followerId,
+      followerUsername: body.followerUsername,
+    });
   }
 
   @Delete(':followeeId')
-  unfollowAUser(@Param('followeeId') followeeId: string, @Body() Body:  {followerId: string}) {
-    return this.apiGatewaySocialNetworkService.unfollowAUser({followeeId, followerId: Body.followerId});
+  unfollowAUser(
+    @Param('followeeId') followeeId: string,
+    @Body() Body: { followerId: string }
+  ) {
+    return this.apiGatewaySocialNetworkService.unfollowAUser({
+      followeeId,
+      followerId: Body.followerId,
+    });
   }
 
   @Get(':followeeId')
-  isFollowing(@Query('followerId') followerId: string, @Param('followeeId') followeeId: string) {
-    return this.apiGatewaySocialNetworkService.isFollowing({followeeId, followerId })
+  isFollowing(
+    @Query('followerId') followerId: string,
+    @Param('followeeId') followeeId: string
+  ) {
+    return this.apiGatewaySocialNetworkService.isFollowing({
+      followeeId,
+      followerId,
+    });
   }
 }

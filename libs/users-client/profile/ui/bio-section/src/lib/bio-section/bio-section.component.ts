@@ -115,7 +115,7 @@ export class BioSectionComponent implements OnChanges, OnInit {
           this.http
             .post(
               API_ENDPOINTS.SocialNetworks.followAUser(this.currentUser.id),
-              { followerId: idOrusername.id }
+              { followerId: idOrusername.id, followerUsername: idOrusername.username }
             )
             .subscribe(() => {
               this.profileStore.addNewFollower();

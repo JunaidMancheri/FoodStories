@@ -22,6 +22,7 @@ export interface IisFollowingResponse {
 export interface FollowOrUnollowAUserRequest {
   followerId: string;
   followeeId: string;
+  followerUsername?: string;
 }
 
 
