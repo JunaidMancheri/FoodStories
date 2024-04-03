@@ -34,6 +34,7 @@ import { HttpClient } from '@angular/common/http';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { FormsModule } from '@angular/forms';
+import { ProfileService } from '@food-stories/users-client/profile/feature';
 
 @Component({
   selector: 'fs-bio-section',
@@ -60,7 +61,8 @@ export class BioSectionComponent implements OnChanges, OnInit {
     private bioSectionService: BioSectionService,
     private profileStore: ProfileStore,
     private store: Store,
-    private http: HttpClient
+    private http: HttpClient,
+    private service: ProfileService
   ) {}
 
   ngOnChanges(changes: SimpleChanges): void {
@@ -78,12 +80,26 @@ export class BioSectionComponent implements OnChanges, OnInit {
   @Input({ required: true }) currentUser!: IUser | null;
   @Input({ required: true }) isOwnProfile!: boolean | null;
   @Input({ required: true }) isFollowing: boolean | null = false;
+  @Input({ required: true }) isBlocked: boolean | null = false;
   DPURL!: string;
+  activeUserid!: string;
 
   ngOnInit(): void {
     this.store.select(selectCurrentUser).subscribe((user) => {
+      this.activeUserid = user.id;
       this.isPrivate = user.isPrivate;
     });
+  }
+
+  blockUser() {
+    if (this.currentUser && this.currentUser.id)
+      this.http
+        .post(API_ENDPOINTS.SocialNetworks.blockUser(this.currentUser.id), {
+          blockerId: this.activeUserid,
+        })
+        .subscribe(() => {
+          this.service.blockUser();
+        });
   }
 
   changeAccountPrivacey() {
@@ -115,9 +131,13 @@ export class BioSectionComponent implements OnChanges, OnInit {
           this.http
             .post(
               API_ENDPOINTS.SocialNetworks.followAUser(this.currentUser.id),
-              { followerId: idOrusername.id, followerUsername: idOrusername.username }
+              {
+                followerId: idOrusername.id,
+                followerUsername: idOrusername.username,
+              }
             )
             .subscribe(() => {
+              console.log(idOrusername, this.currentUser);
               this.profileStore.addNewFollower();
               this.isFollowing = true;
             });

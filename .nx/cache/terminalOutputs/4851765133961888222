@@ -1,0 +1,52 @@
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.7 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (f343602e6eddffc6)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31m[Nest] 14832  - [39m[31m03/04/2024, 11:53:18 pm [31m  ERROR[39m[31m [31m2 UNKNOWN: Invalid input '-': expected[39m[22m
+[1m[31m  "("[39m[22m
+[1m[31m  ","[39m[22m
+[1m[31m  "CALL"[39m[22m
+[1m[31m  "CREATE"[39m[22m
+[1m[31m  "DELETE"[39m[22m
+[1m[31m  "DETACH"[39m[22m
+[1m[31m  "FOREACH"[39m[22m
+[1m[31m  "LOAD"[39m[22m
+[1m[31m  "MATCH"[39m[22m
+[1m[31m  "MERGE"[39m[22m
+[1m[31m  "NODETACH"[39m[22m
+[1m[31m  "OPTIONAL"[39m[22m
+[1m[31m  "REMOVE"[39m[22m
+[1m[31m  "RETURN"[39m[22m
+[1m[31m  "SET"[39m[22m
+[1m[31m  "UNION"[39m[22m
+[1m[31m  "UNWIND"[39m[22m
+[1m[31m  "USE"[39m[22m
+[1m[31m  "USING"[39m[22m
+[1m[31m  "WHERE"[39m[22m
+[1m[31m  "WITH"[39m[22m
+[1m[31m  <EOF> (line 2, column 116 (offset: 120))[39m[22m
+[1m[31m"    MATCH (blocker:User {userId: $blockerId}) -[blockerFollows:FOLLOWS] ->(target: User {userId: $targetId}), (target) -> [targetFollows:FOLLOWS]-> (blocker)"[39m[22m
+[1m[31m                                                                                                                        ^[39m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31m[Nest] 14832  - [39m[31m03/04/2024, 11:54:28 pm [31m  ERROR[39m[31m [31m14 UNAVAILABLE: No connection established[39m[31m[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.7 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (f343602e6eddffc6)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.7 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (f343602e6eddffc6)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.7 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (f343602e6eddffc6)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.7 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (6104b25dc03d4b73)
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.7 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (6104b25dc03d4b73)
+[1m[31mDebugger listening on ws://localhost:9229/e3d80390-85fc-48d6-9ba5-eaeece7d635a[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/e3d80390-85fc-48d6-9ba5-eaeece7d635a[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m

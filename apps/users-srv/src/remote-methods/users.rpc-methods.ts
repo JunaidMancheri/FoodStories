@@ -17,7 +17,7 @@ import {
 import { Logger, logger } from '@food-stories/users-srv/core';
 import { kafkaClient, kafkaClient2 } from '../config/kafka.config';
 import { createProducer } from '@food-stories/common/kafka';
-import { makeFollowAUserHandler, makeIsFollowingHandler, makeUnfollowAUserHandler } from '@food-stories/users-srv/social-network';
+import { makeBlockUserHandler, makeFollowAUserHandler, makeIsFollowingHandler, makeUnfollowAUserHandler } from '@food-stories/users-srv/social-network';
 import { neo4jDriver } from '../config/neo4j.config';
 
 export const UsersServiceImpl: IUsersServiceServer = {
@@ -38,7 +38,9 @@ export const UsersServiceImpl: IUsersServiceServer = {
 export const SocialNetworkServiceImpl: ISocialNetworkServiceServer = {
   followAUser: makeUnaryCallHandler(makeFollowAUserHandler(neo4jDriver, createProducer(kafkaClient)), logger),
   unfollowAUser: makeUnaryCallHandler(makeUnfollowAUserHandler(neo4jDriver, createProducer(kafkaClient)), logger),
-  isFollowing: makeUnaryCallHandler(makeIsFollowingHandler(neo4jDriver), logger)
+  isFollowing: makeUnaryCallHandler(makeIsFollowingHandler(neo4jDriver), logger),
+  BlockUser: makeUnaryCallHandler(makeBlockUserHandler(neo4jDriver, createProducer(kafkaClient)), logger)
+
 }
 
 

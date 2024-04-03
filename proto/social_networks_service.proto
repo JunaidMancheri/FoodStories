@@ -6,10 +6,17 @@ service SocialNetworksService {
  rpc followAUser (followOrUnfollowAUserRequest) returns (EMPTY) {};
  rpc unfollowAUser (followOrUnfollowAUserRequest) returns (EMPTY) {};
  rpc isFollowing (followOrUnfollowAUserRequest) returns (IsFollowingResponse) {};
+ rpc BlockUser (BlockUserRequest) returns (EMPTY) {};
+}
+
+message BlockUserRequest {
+  string blockerId = 0;
+  string targetId = 1;
 }
 
 message IsFollowingResponse {
   bool isFollowing = 0;
+  bool isBlocked = 1;
 }
 
 message RelationshipEntity {

@@ -27,6 +27,17 @@ export class ApiGatewaySocialNetworkController {
     });
   }
 
+  @Post('block/:targetId')
+  blockUser(
+    @Param('targetId') targetId: string,
+    @Body() body: { blockerId: string }
+  ) {
+    return this.apiGatewaySocialNetworkService.blockUser({
+      blockerId: body.blockerId,
+      targetId,
+    });
+  }
+
   @Delete(':followeeId')
   unfollowAUser(
     @Param('followeeId') followeeId: string,

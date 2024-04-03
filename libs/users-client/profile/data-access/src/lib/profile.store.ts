@@ -99,6 +99,7 @@ export class ProfileStore extends ComponentStore<ProfileState> {
     }
   }))
 
+
   readonly loadPosts = this.updater((state, posts: IPost[]) => ({
     ...state,
     posts,

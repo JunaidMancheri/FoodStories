@@ -1,11 +1,11 @@
 <div class="w-screen min-h-screen md:pl-56">
   <div class="md:px-4">
     <div class="nonposts flex items-center  md:px-16  w-full  h-[60vh] ">
-      <fs-bio-section [isFollowing]="isFollowing$ | async" [isOwnProfile]="isOwnProfile$ | async"  [currentUser]="currUser$ | async"></fs-bio-section>
+      <fs-bio-section [isFollowing]="isFollowing$ | async" [isBlocked]="isBlocked$ | async" [isOwnProfile]="isOwnProfile$ | async"  [currentUser]="currUser$ | async"></fs-bio-section>
       <!-- <fs-highlights></fs-highlights> -->
     </div>
 
-      <div *ngIf="(currUser$ | async)?.isPrivate === false ||(isOwnProfile$ | async) === true || (isFollowing$ | async) === true" class="post-sections w-full flex justify-evenly " >
+      <div *ngIf="(isBlocked$ | async) === false && ((currUser$ | async)?.isPrivate === false ||(isOwnProfile$ | async) === true || (isFollowing$ | async) === true)" class="post-sections w-full flex justify-evenly " >
         <mat-tab-group  class="w-full md:px-10">
           <mat-tab>
             <ng-template mat-tab-label>

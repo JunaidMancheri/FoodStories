@@ -14,6 +14,7 @@ export class ProfileComponent implements OnInit, OnDestroy {
   isOwnProfile$ = this.profileService.isOwnProfile$;
   posts$ = this.profileStore.posts$;
   isFollowing$ = this.profileService.isFollowing$;
+  isBlocked$ = this.profileService.isBlocked$;
 
 
 
