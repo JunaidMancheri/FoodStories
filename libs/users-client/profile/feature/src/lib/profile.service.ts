@@ -37,7 +37,7 @@ export class ProfileService {
       .subscribe((user) => {
         const currentUserUsername = user.username;
         if (currentUserUsername !== routeUsername) {
-          this.profileStore.fetchUserDetails(routeUsername);
+          this.profileStore.fetchUserDetails({userId: user.id, username: routeUsername});
           this.profileStore.user$.subscribe((viewUser) => {
             if (viewUser.id) {
               this.isFollowing(user.id, viewUser.id).subscribe((res) => {

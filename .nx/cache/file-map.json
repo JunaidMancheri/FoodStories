@@ -351,7 +351,7 @@
       },
       {
         "file": "libs/users-client/shared/data-access/src/lib/http-api/users-api.ts",
-        "hash": "12930654243456890241",
+        "hash": "7801251305650580379",
         "deps": [
           "npm:@angular/common",
           "npm:@angular/core",
@@ -392,7 +392,7 @@
       },
       {
         "file": "libs/api-gateway/users/src/index.ts",
-        "hash": "9735104116257078850"
+        "hash": "6739067483639408468"
       },
       {
         "file": "libs/api-gateway/users/src/lib/CreateUser.dto.ts",
@@ -408,21 +408,23 @@
       },
       {
         "file": "libs/api-gateway/users/src/lib/users.controller.ts",
-        "hash": "10124210278511408875",
+        "hash": "15089606602312511356",
         "deps": [
           "npm:@nestjs/common",
           "common-typings",
           "api-gateway--common",
-          "npm:rxjs"
+          "npm:rxjs",
+          "api-gateway-social-network"
         ]
       },
       {
         "file": "libs/api-gateway/users/src/lib/users.module.ts",
-        "hash": "2528924980252520898",
+        "hash": "4805857429212353494",
         "deps": [
           "npm:@nestjs/common",
           "npm:@nestjs/microservices",
-          "npm:path"
+          "npm:path",
+          "api-gateway-social-network"
         ]
       },
       {
@@ -446,6 +448,14 @@
       {
         "file": "libs/api-gateway/users/tsconfig.spec.json",
         "hash": "9110660443763673899"
+      },
+      {
+        "file": "libs/api-gateway/users/src/lib/hasBlocked.middleware.ts",
+        "hash": "7648363297961576516",
+        "deps": [
+          "npm:@nestjs/common",
+          "npm:express"
+        ]
       }
     ],
     "auth-login": [
@@ -1465,7 +1475,7 @@
       },
       {
         "file": "libs/users-client/profile/data-access/src/lib/profile.store.ts",
-        "hash": "3300130129668576367",
+        "hash": "16865642058856628787",
         "deps": [
           "common-typings",
           "npm:@ngrx/component-store",
@@ -1782,7 +1792,7 @@
       },
       {
         "file": "libs/users-client/profile/feature/src/lib/profile.service.ts",
-        "hash": "14738288897603395386",
+        "hash": "6858143653236771064",
         "deps": [
           "npm:@angular/common",
           "npm:@angular/core",
@@ -2538,7 +2548,7 @@
       },
       {
         "file": "apps/users-srv/src/remote-methods/users.rpc-methods.ts",
-        "hash": "17255743058901637454",
+        "hash": "15711622460418328710",
         "deps": [
           "common-typings",
           "common-grpc",
@@ -4035,14 +4045,14 @@
       },
       {
         "file": "libs/api-gateway/social-network/src/lib/social-network.controller.ts",
-        "hash": "6218046274275619637",
+        "hash": "4005771321870412361",
         "deps": [
           "npm:@nestjs/common"
         ]
       },
       {
         "file": "libs/api-gateway/social-network/src/lib/social-network.module.ts",
-        "hash": "9250480318941332330",
+        "hash": "4833324802945114080",
         "deps": [
           "npm:@nestjs/common"
         ]
@@ -4056,7 +4066,7 @@
       },
       {
         "file": "libs/api-gateway/social-network/src/lib/social-network.service.ts",
-        "hash": "15235502280580493935",
+        "hash": "13124915302027874992",
         "deps": [
           "api-gateway--common",
           "common-typings",
@@ -4071,7 +4081,7 @@
       },
       {
         "file": "libs/api-gateway/social-network/tsconfig.lib.json",
-        "hash": "4990739628208881605"
+        "hash": "6281972206214062725"
       },
       {
         "file": "libs/api-gateway/social-network/tsconfig.spec.json",
@@ -4487,7 +4497,7 @@
       },
       {
         "file": "libs/users-srv/social-network/src/lib/factory/handlers/index.ts",
-        "hash": "1237889240573885859",
+        "hash": "14835543945044444022",
         "deps": [
           "npm:neo4j-driver",
           "npm:kafkajs"
@@ -4570,6 +4580,15 @@
       {
         "file": "libs/users-srv/social-network/src/lib/interface/handlers/unblockUser.handler.ts",
         "hash": "13892132765188519893",
+        "deps": [
+          "common-handlers",
+          "common-typings",
+          "npm:neo4j-driver"
+        ]
+      },
+      {
+        "file": "libs/users-srv/social-network/src/lib/interface/handlers/HasBlocked.handler.ts",
+        "hash": "12952257524573659872",
         "deps": [
           "common-handlers",
           "common-typings",
@@ -4858,7 +4877,7 @@
       },
       {
         "file": "libs/common/typings/src/lib/proto/social-networkService.ts",
-        "hash": "1536805584316999090",
+        "hash": "7714265523434940937",
         "deps": [
           "npm:@grpc/grpc-js",
           "npm:rxjs"

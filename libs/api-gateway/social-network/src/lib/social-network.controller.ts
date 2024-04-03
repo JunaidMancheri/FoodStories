@@ -65,7 +65,7 @@ export class ApiGatewaySocialNetworkController {
     @Query('followerId') followerId: string,
     @Param('followeeId') followeeId: string
   ) {
-    return this.apiGatewaySocialNetworkService.isFollowing({
+    return this.apiGatewaySocialNetworkService.getRelationships({
       followeeId,
       followerId,
     });

@@ -20614,7 +20614,17 @@
       },
       {
         "source": "api-gateway-users",
+        "target": "api-gateway-social-network",
+        "type": "static"
+      },
+      {
+        "source": "api-gateway-users",
         "target": "npm:@nestjs/microservices",
+        "type": "static"
+      },
+      {
+        "source": "api-gateway-users",
+        "target": "npm:express",
         "type": "static"
       }
     ],

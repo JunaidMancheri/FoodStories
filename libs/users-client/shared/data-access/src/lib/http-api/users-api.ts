@@ -8,8 +8,10 @@ import { map } from 'rxjs';
 export class ProfileHttpService {
   constructor(private http: HttpClient) {}
 
-  getUserData(username: string) {
-    return this.http.get<IUser>(API_ENDPOINTS.GET_USER_DATA + username);
+  getUserData(data: { username: string; userId: string }) {
+    return this.http.get<IUser>(API_ENDPOINTS.GET_USER_DATA + data.username, {
+      params: { userId: data.userId },
+    });
   }
 
   getCurrentUserData(email: string) {
@@ -25,6 +27,6 @@ export class ProfileHttpService {
   }
 
   updateUserProfile(updates: EditProfileData) {
-    return this.http.put<IUser>(API_ENDPOINTS.UPDATE_USER_PROFILE, updates)
+    return this.http.put<IUser>(API_ENDPOINTS.UPDATE_USER_PROFILE, updates);
   }
 }
