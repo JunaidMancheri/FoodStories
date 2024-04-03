@@ -26,7 +26,7 @@
         <span class="text-lg">{{currentUser?.username}}</span>
 
         <div *ngIf="!isOwnProfile" class="flex space-x-2">
-          <button mat-raised-button color="primary" *ngIf="isBlocked" (click)="unfollowUser()">Unblock</button>
+          <button mat-raised-button color="primary" *ngIf="isBlocked" (click)="unblockUser()">Unblock</button>
 
           <ng-container  *ngIf="!isBlocked">
             <button mat-raised-button *ngIf="!isFollowing" color="primary" (click)="followUser()">Follow</button>

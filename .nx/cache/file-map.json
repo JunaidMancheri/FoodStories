@@ -850,7 +850,7 @@
       },
       {
         "file": "libs/users-client/profile/ui/bio-section/src/lib/bio-section/bio-section.component.html",
-        "hash": "3083525347041871574"
+        "hash": "17341899686439514200"
       },
       {
         "file": "libs/users-client/profile/ui/bio-section/src/lib/bio-section/bio-section.component.spec.ts",
@@ -861,7 +861,7 @@
       },
       {
         "file": "libs/users-client/profile/ui/bio-section/src/lib/bio-section/bio-section.component.ts",
-        "hash": "17327971489304333410",
+        "hash": "14315566343977750232",
         "deps": [
           "npm:@angular/core",
           "npm:@angular/common",
@@ -1782,7 +1782,7 @@
       },
       {
         "file": "libs/users-client/profile/feature/src/lib/profile.service.ts",
-        "hash": "7870827589501937155",
+        "hash": "14738288897603395386",
         "deps": [
           "npm:@angular/common",
           "npm:@angular/core",
@@ -2538,7 +2538,7 @@
       },
       {
         "file": "apps/users-srv/src/remote-methods/users.rpc-methods.ts",
-        "hash": "14637776321839129863",
+        "hash": "17255743058901637454",
         "deps": [
           "common-typings",
           "common-grpc",
@@ -2951,7 +2951,7 @@
       },
       {
         "file": "libs/users-client/shared/config/src/lib/api-endpoints.ts",
-        "hash": "218855979865419072"
+        "hash": "11414107697770635918"
       },
       {
         "file": "libs/users-client/shared/config/src/lib/environment.ts",
@@ -4035,7 +4035,7 @@
       },
       {
         "file": "libs/api-gateway/social-network/src/lib/social-network.controller.ts",
-        "hash": "9904208795880413835",
+        "hash": "6218046274275619637",
         "deps": [
           "npm:@nestjs/common"
         ]
@@ -4056,7 +4056,7 @@
       },
       {
         "file": "libs/api-gateway/social-network/src/lib/social-network.service.ts",
-        "hash": "9173824853032641690",
+        "hash": "15235502280580493935",
         "deps": [
           "api-gateway--common",
           "common-typings",
@@ -4487,7 +4487,7 @@
       },
       {
         "file": "libs/users-srv/social-network/src/lib/factory/handlers/index.ts",
-        "hash": "15277036871414716340",
+        "hash": "1237889240573885859",
         "deps": [
           "npm:neo4j-driver",
           "npm:kafkajs"
@@ -4566,6 +4566,15 @@
       {
         "file": "libs/users-srv/social-network/tsconfig.spec.json",
         "hash": "2924590645906076043"
+      },
+      {
+        "file": "libs/users-srv/social-network/src/lib/interface/handlers/unblockUser.handler.ts",
+        "hash": "13892132765188519893",
+        "deps": [
+          "common-handlers",
+          "common-typings",
+          "npm:neo4j-driver"
+        ]
       }
     ],
     "users-client-shared-ui-confirm-dialog": [
@@ -4849,7 +4858,7 @@
       },
       {
         "file": "libs/common/typings/src/lib/proto/social-networkService.ts",
-        "hash": "4947494447596731127",
+        "hash": "1536805584316999090",
         "deps": [
           "npm:@grpc/grpc-js",
           "npm:rxjs"

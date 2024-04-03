@@ -15,7 +15,7 @@ export class ApiGatewaySocialNetworkController {
     private apiGatewaySocialNetworkService: ApiGatewaySocialNetworkService
   ) {}
 
-  @Post(':followeeId')
+  @Post('follow/:followeeId')
   followAUser(
     @Param('followeeId') followeeId: string,
     @Body() body: { followerId: string; followerUsername: string }
@@ -38,7 +38,18 @@ export class ApiGatewaySocialNetworkController {
     });
   }
 
-  @Delete(':followeeId')
+  @Delete('block/:targetId')
+  unblockUser(
+    @Param('targetId') targetId: string,
+    @Body() body: { blockerId: string }
+  ) {
+    return this.apiGatewaySocialNetworkService.unblockUser({
+      blockerId: body.blockerId,
+      targetId,
+    });
+  }
+
+  @Delete('follow/:followeeId')
   unfollowAUser(
     @Param('followeeId') followeeId: string,
     @Body() Body: { followerId: string }
@@ -49,7 +60,7 @@ export class ApiGatewaySocialNetworkController {
     });
   }
 
-  @Get(':followeeId')
+  @Get('relationships/:followeeId')
   isFollowing(
     @Query('followerId') followerId: string,
     @Param('followeeId') followeeId: string

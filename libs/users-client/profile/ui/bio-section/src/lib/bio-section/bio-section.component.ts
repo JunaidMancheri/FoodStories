@@ -91,6 +91,17 @@ export class BioSectionComponent implements OnChanges, OnInit {
     });
   }
 
+  unblockUser() {
+    if (this.currentUser && this.currentUser.id)
+      this.http
+        .delete(API_ENDPOINTS.SocialNetworks.unblockUser(this.currentUser.id), {
+          body: { blockerId: this.activeUserid },
+        })
+        .subscribe(() => {
+          this.service.unblockUser();
+        });
+  }
+
   blockUser() {
     if (this.currentUser && this.currentUser.id)
       this.http

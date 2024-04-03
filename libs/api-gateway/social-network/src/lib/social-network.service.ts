@@ -40,4 +40,8 @@ export class ApiGatewaySocialNetworkService implements OnModuleInit {
     return handleGrpcError(this.socialNetworksService.BlockUser(data));
   }
 
+  unblockUser(data: IBlockUserRequest) {
+    return handleGrpcError(this.socialNetworksService.unblockUser(data));
+  }
+
 }

@@ -7,6 +7,7 @@ service SocialNetworksService {
  rpc unfollowAUser (followOrUnfollowAUserRequest) returns (EMPTY) {};
  rpc isFollowing (followOrUnfollowAUserRequest) returns (IsFollowingResponse) {};
  rpc BlockUser (BlockUserRequest) returns (EMPTY) {};
+ rpc unblockUser(BlockUserRequest) returns (EMPTY) {};
 }
 
 message BlockUserRequest {

@@ -1,0 +1,841 @@
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.7 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (ce91819b0a742918)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.7 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./libs/api-gateway/social-network/src/lib/social-network.service.ts:[32m[1m2:39[22m[39m[1m[39m[22m
+[90mTS2724: [39m'"@food-stories/common/typings"' has no exported member named 'IBlockUserRequest'. Did you mean 'IBlockOrUserRequest'?
+  [0m [90m 1 |[39m [36mimport[39m { handleGrpcError } [36mfrom[39m [32m'@food-stories/api-gateway/common'[39m[33m;[39m[0m
+  [0m[31m[1m>[22m[39m[90m 2 |[39m [36mimport[39m { [33mFollowOrUnollowAUserRequest[39m[33m,[39m [33mIBlockUserRequest[39m[33m,[39m [33mISocialNetworkServiceClient[39m } [36mfrom[39m [32m'@food-stories/common/typings'[39m[33m;[39m[0m
+  [0m [90m   |[39m                                       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 3 |[39m [36mimport[39m { [33mInjectable[39m[33m,[39m [33mOnModuleInit[39m } [36mfrom[39m [32m'@nestjs/common'[39m[33m;[39m[0m
+  [0m [90m 4 |[39m [36mimport[39m { [33mClient[39m[33m,[39m [33mClientGrpc[39m[33m,[39m [33mTransport[39m } [36mfrom[39m [32m'@nestjs/microservices'[39m[33m;[39m[0m
+  [0m [90m 5 |[39m [36mimport[39m { join } [36mfrom[39m [32m'path'[39m[33m;[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./libs/common/typings/src/lib/proto/social-networkService.ts:[32m[1m8:31[22m[39m[1m[39m[22m
+[90mTS2552: [39mCannot find name 'IBlockUserRequest'. Did you mean 'IBlockOrUserRequest'?
+  [0m [90m  6 |[39m    unfollowAUser[33m:[39m handleUnaryCall[33m<[39m[33mFollowOrUnollowAUserRequest[39m[33m,[39m [36mvoid[39m[33m>[39m[0m
+  [0m [90m  7 |[39m    isFollowing[33m:[39m handleUnaryCall[33m<[39m[33mFollowOrUnollowAUserRequest[39m[33m,[39m [36mvoid[39m[33m>[39m[0m
+  [0m[31m[1m>[22m[39m[90m  8 |[39m    [33mBlockUser[39m[33m:[39m handleUnaryCall[33m<[39m[33mIBlockUserRequest[39m[33m,[39m [36mvoid[39m[33m>[39m[33m;[39m[0m
+  [0m [90m    |[39m                               [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m  9 |[39m }[0m
+  [0m [90m 10 |[39m[0m
+  [0m [90m 11 |[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./libs/common/typings/src/lib/proto/social-networkService.ts:[32m[1m16:22[22m[39m[1m[39m[22m
+[90mTS2552: [39mCannot find name 'IBlockUserRequest'. Did you mean 'IBlockOrUserRequest'?
+  [0m [90m 14 |[39m   unfollowAUser(request[33m:[39m [33mFollowOrUnollowAUserRequest[39m)[33m:[39m [33mObservable[39m[33m<[39m[36mvoid[39m[33m>[39m[33m;[39m[0m
+  [0m [90m 15 |[39m   isFollowing(request[33m:[39m [33mFollowOrUnollowAUserRequest[39m)[33m:[39m [33mObservable[39m[33m<[39m[36mvoid[39m[33m>[39m[33m;[39m[0m
+  [0m[31m[1m>[22m[39m[90m 16 |[39m   [33mBlockUser[39m(request[33m:[39m [33mIBlockUserRequest[39m)[33m:[39m [33mObservable[39m[33m<[39m[36mvoid[39m[33m>[39m[33m;[39m[0m
+  [0m [90m    |[39m                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 17 |[39m }[0m
+  [0m [90m 18 |[39m[0m
+  [0m [90m 19 |[39m [36mexport[39m [36minterface[39m  [33mIBlockOrUnblockUserRequest[39m {[0m
+
+webpack compiled with [1m[31m3 errors[39m[22m (e496d2a9780911ce)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.7 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./libs/api-gateway/social-network/src/lib/social-network.service.ts:[32m[1m2:39[22m[39m[1m[39m[22m
+[90mTS2305: [39mModule '"@food-stories/common/typings"' has no exported member 'IBlockUserRequest'.
+  [0m [90m 1 |[39m [36mimport[39m { handleGrpcError } [36mfrom[39m [32m'@food-stories/api-gateway/common'[39m[33m;[39m[0m
+  [0m[31m[1m>[22m[39m[90m 2 |[39m [36mimport[39m { [33mFollowOrUnollowAUserRequest[39m[33m,[39m [33mIBlockUserRequest[39m[33m,[39m [33mISocialNetworkServiceClient[39m } [36mfrom[39m [32m'@food-stories/common/typings'[39m[33m;[39m[0m
+  [0m [90m   |[39m                                       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 3 |[39m [36mimport[39m { [33mInjectable[39m[33m,[39m [33mOnModuleInit[39m } [36mfrom[39m [32m'@nestjs/common'[39m[33m;[39m[0m
+  [0m [90m 4 |[39m [36mimport[39m { [33mClient[39m[33m,[39m [33mClientGrpc[39m[33m,[39m [33mTransport[39m } [36mfrom[39m [32m'@nestjs/microservices'[39m[33m;[39m[0m
+  [0m [90m 5 |[39m [36mimport[39m { join } [36mfrom[39m [32m'path'[39m[33m;[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./libs/common/typings/src/lib/proto/social-networkService.ts:[32m[1m8:31[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'IBlockUserRequest'.
+  [0m [90m  6 |[39m    unfollowAUser[33m:[39m handleUnaryCall[33m<[39m[33mFollowOrUnollowAUserRequest[39m[33m,[39m [36mvoid[39m[33m>[39m[0m
+  [0m [90m  7 |[39m    isFollowing[33m:[39m handleUnaryCall[33m<[39m[33mFollowOrUnollowAUserRequest[39m[33m,[39m [36mvoid[39m[33m>[39m[0m
+  [0m[31m[1m>[22m[39m[90m  8 |[39m    [33mBlockUser[39m[33m:[39m handleUnaryCall[33m<[39m[33mIBlockUserRequest[39m[33m,[39m [36mvoid[39m[33m>[39m[33m;[39m[0m
+  [0m [90m    |[39m                               [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m  9 |[39m }[0m
+  [0m [90m 10 |[39m[0m
+  [0m [90m 11 |[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./libs/common/typings/src/lib/proto/social-networkService.ts:[32m[1m16:22[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'IBlockUserRequest'.
+  [0m [90m 14 |[39m   unfollowAUser(request[33m:[39m [33mFollowOrUnollowAUserRequest[39m)[33m:[39m [33mObservable[39m[33m<[39m[36mvoid[39m[33m>[39m[33m;[39m[0m
+  [0m [90m 15 |[39m   isFollowing(request[33m:[39m [33mFollowOrUnollowAUserRequest[39m)[33m:[39m [33mObservable[39m[33m<[39m[36mvoid[39m[33m>[39m[33m;[39m[0m
+  [0m[31m[1m>[22m[39m[90m 16 |[39m   [33mBlockUser[39m(request[33m:[39m [33mIBlockUserRequest[39m)[33m:[39m [33mObservable[39m[33m<[39m[36mvoid[39m[33m>[39m[33m;[39m[0m
+  [0m [90m    |[39m                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 17 |[39m }[0m
+  [0m [90m 18 |[39m[0m
+  [0m [90m 19 |[39m [36mexport[39m [36minterface[39m  [33mIBlockUserRequest[39m {[0m
+
+webpack compiled with [1m[31m3 errors[39m[22m (1015229c167fc7b6)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.7 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (eace4e2c37147db8)
+[1m[31mDebugger listening on ws://localhost:9229/c0613e0a-7f8a-4125-837b-65d83a625232[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/c0613e0a-7f8a-4125-837b-65d83a625232[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.7 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (822047f8a4a033aa)
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.7 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (72598dcc07edc593)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.7 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (a986e132b0824f30)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.7 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\common\typings\src\lib\proto\social-networkService.ts[39m[22m
+[1m../../libs/common/typings/src/lib/proto/social-networkService.ts[39m[22m [1m[32m18:0-1[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\common\typings\src\lib\proto\social-networkService.ts(18,1)[39m[22m
+[1m[31m      TS1005: '>' expected.[39m[22m
+
+webpack compiled with [1m[31m1 error[39m[22m (80e40ca2cfb244bb)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.7 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (25c10da82d7a091a)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.7 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (b0567229e9d6a22c)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.7 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (b0567229e9d6a22c)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.7 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (b0567229e9d6a22c)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.7 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (b0567229e9d6a22c)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31m[Nest] 4084  - [39m[31m04/04/2024, 2:24:20 am [31m  ERROR[39m[31m [38;5;3m[ClientProxy] [39m[31m[31millegal token '}', '(' expected (line 11)[39m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31mError: The invalid .proto definition (file at "undefined" not found)[39m[22m
+[1m[31m    at ClientGrpcProxy.loadProto (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\@nestjs+microservices@10.1.2_@grpc+grpc-js@1.8.20_@nestjs+common@10.0.2_@nestjs+core@10.0.2_@_2epagpv2s53px47g2lghikzsiq\node_modules\@nestjs\microservices\client\client-grpc.js:237:39)[39m[22m
+[1m[31m    at ClientGrpcProxy.createClients (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\@nestjs+microservices@10.1.2_@grpc+grpc-js@1.8.20_@nestjs+common@10.0.2_@nestjs+core@10.0.2_@_2epagpv2s53px47g2lghikzsiq\node_modules\@nestjs\microservices\client\client-grpc.js:210:34)[39m[22m
+[1m[31m    at new ClientGrpcProxy (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\@nestjs+microservices@10.1.2_@grpc+grpc-js@1.8.20_@nestjs+common@10.0.2_@nestjs+core@10.0.2_@_2epagpv2s53px47g2lghikzsiq\node_modules\@nestjs\microservices\client\client-grpc.js:32:33)[39m[22m
+[1m[31m    at Function.create (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\@nestjs+microservices@10.1.2_@grpc+grpc-js@1.8.20_@nestjs+common@10.0.2_@nestjs+core@10.0.2_@_2epagpv2s53px47g2lghikzsiq\node_modules\@nestjs\microservices\client\client-proxy-factory.js:30:24)[39m[22m
+[1m[31m    at ListenersController.assignClientsToProperties (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\@nestjs+microservices@10.1.2_@grpc+grpc-js@1.8.20_@nestjs+common@10.0.2_@nestjs+core@10.0.2_@_2epagpv2s53px47g2lghikzsiq\node_modules\@nestjs\microservices\listeners-controller.js:98:47)[39m[22m
+[1m[31m    at C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\@nestjs+microservices@10.1.2_@grpc+grpc-js@1.8.20_@nestjs+common@10.0.2_@nestjs+core@10.0.2_@_2epagpv2s53px47g2lghikzsiq\node_modules\@nestjs\microservices\microservices-module.js:52:42[39m[22m
+[1m[31m    at Map.forEach (<anonymous>)[39m[22m
+[1m[31m    at MicroservicesModule.bindClients (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\@nestjs+microservices@10.1.2_@grpc+grpc-js@1.8.20_@nestjs+common@10.0.2_@nestjs+core@10.0.2_@_2epagpv2s53px47g2lghikzsiq\node_modules\@nestjs\microservices\microservices-module.js:50:15)[39m[22m
+[1m[31m    at C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\@nestjs+microservices@10.1.2_@grpc+grpc-js@1.8.20_@nestjs+common@10.0.2_@nestjs+core@10.0.2_@_2epagpv2s53px47g2lghikzsiq\node_modules\@nestjs\microservices\microservices-module.js:43:18[39m[22m
+[1m[31m    at ModulesContainer.forEach (<anonymous>)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\@nestjs+microservices@10.1.2_@grpc+grpc-js@1.8.20_@nestjs+common@10.0.2_@nestjs+core@10.0.2_@_2epagpv2s53px47g2lghikzsiq\node_modules\@nestjs\microservices\client\client-grpc.js:237[39m[22m
+[1m[31m            const invalidProtoError = new invalid_proto_definition_exception_1.InvalidProtoDefinitionException(err.path);[39m[22m
+[1m[31m                                      ^[39m[22m
+[1m[31m[39m[22m
+[1m[31mError: The invalid .proto definition (file at "undefined" not found)[39m[22m
+[1m[31m    at ClientGrpcProxy.loadProto (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\@nestjs+microservices@10.1.2_@grpc+grpc-js@1.8.20_@nestjs+common@10.0.2_@nestjs+core@10.0.2_@_2epagpv2s53px47g2lghikzsiq\node_modules\@nestjs\microservices\client\client-grpc.js:237:39)[39m[22m
+[1m[31m    at ClientGrpcProxy.createClients (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\@nestjs+microservices@10.1.2_@grpc+grpc-js@1.8.20_@nestjs+common@10.0.2_@nestjs+core@10.0.2_@_2epagpv2s53px47g2lghikzsiq\node_modules\@nestjs\microservices\client\client-grpc.js:210:34)[39m[22m
+[1m[31m    at new ClientGrpcProxy (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\@nestjs+microservices@10.1.2_@grpc+grpc-js@1.8.20_@nestjs+common@10.0.2_@nestjs+core@10.0.2_@_2epagpv2s53px47g2lghikzsiq\node_modules\@nestjs\microservices\client\client-grpc.js:32:33)[39m[22m
+[1m[31m    at Function.create (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\@nestjs+microservices@10.1.2_@grpc+grpc-js@1.8.20_@nestjs+common@10.0.2_@nestjs+core@10.0.2_@_2epagpv2s53px47g2lghikzsiq\node_modules\@nestjs\microservices\client\client-proxy-factory.js:30:24)[39m[22m
+[1m[31m    at ListenersController.assignClientsToProperties (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\@nestjs+microservices@10.1.2_@grpc+grpc-js@1.8.20_@nestjs+common@10.0.2_@nestjs+core@10.0.2_@_2epagpv2s53px47g2lghikzsiq\node_modules\@nestjs\microservices\listeners-controller.js:98:47)[39m[22m
+[1m[31m    at C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\@nestjs+microservices@10.1.2_@grpc+grpc-js@1.8.20_@nestjs+common@10.0.2_@nestjs+core@10.0.2_@_2epagpv2s53px47g2lghikzsiq\node_modules\@nestjs\microservices\microservices-module.js:52:42[39m[22m
+[1m[31m    at Map.forEach (<anonymous>)[39m[22m
+[1m[31m    at MicroservicesModule.bindClients (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\@nestjs+microservices@10.1.2_@grpc+grpc-js@1.8.20_@nestjs+common@10.0.2_@nestjs+core@10.0.2_@_2epagpv2s53px47g2lghikzsiq\node_modules\@nestjs\microservices\microservices-module.js:50:15)[39m[22m
+[1m[31m    at C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\@nestjs+microservices@10.1.2_@grpc+grpc-js@1.8.20_@nestjs+common@10.0.2_@nestjs+core@10.0.2_@_2epagpv2s53px47g2lghikzsiq\node_modules\@nestjs\microservices\microservices-module.js:43:18[39m[22m
+[1m[31m    at ModulesContainer.forEach (<anonymous>)[39m[22m
+[1m[31m[39m[22m
+
+[36m>[39m [7m[1m[36m NX [39m[22m[27m [1mProcess exited with code 1, waiting for changes to restart...[22m
+
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.7 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (b0567229e9d6a22c)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.7 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (b0567229e9d6a22c)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.7 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (b0567229e9d6a22c)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.7 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (b0567229e9d6a22c)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.7 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (b0567229e9d6a22c)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.7 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (b0567229e9d6a22c)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.7 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (3c8ec1782c784af9)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.7 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (a09a953c853e511c)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.7 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (51fe4c664feddccb)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+[1m[31m{"level":"ERROR","timestamp":"2024-04-03T21:05:09.198Z","logger":"kafkajs","message":"[Connection] Response SyncGroup(key: 14, version: 3)","broker":"localhost:9092","clientId":"api-gateway","error":"The group is rebalancing, so a rejoin is needed","correlationId":5,"size":14}[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.7 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (d6b0d82be8337583)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.7 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (9171fa9dd0ddc295)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.7 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (361f1a191b540b2a)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.7 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (92c2c8cc9382fab0)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.7 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\api-gateway\social-network\src\lib\social-network.service.ts[39m[22m
+[1m../../libs/api-gateway/social-network/src/lib/social-network.service.ts[39m[22m [1m[32m45:0[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\api-gateway\social-network\src\lib\social-network.service.ts(45,1)[39m[22m
+[1m[31m      TS1005: '}' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./libs/api-gateway/social-network/src/lib/social-network.service.ts:[32m[1m43:3[22m[39m[1m[39m[22m
+[90mTS2391: [39mFunction implementation is missing or not immediately following the declaration.
+  [0m [90m 41 |[39m   }[0m
+  [0m [90m 42 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 43 |[39m   unblockUser(data)[0m
+  [0m [90m    |[39m   [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 44 |[39m[0m
+  [0m [90m 45 |[39m }[0m
+
+webpack compiled with [1m[31m2 errors[39m[22m (774ea0be1e25b9a4)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.7 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\api-gateway\social-network\src\lib\social-network.service.ts[39m[22m
+[1m../../libs/api-gateway/social-network/src/lib/social-network.service.ts[39m[22m [1m[32m45:0[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\api-gateway\social-network\src\lib\social-network.service.ts(45,1)[39m[22m
+[1m[31m      TS1005: '}' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./libs/api-gateway/social-network/src/lib/social-network.service.ts:[32m[1m43:3[22m[39m[1m[39m[22m
+[90mTS2391: [39mFunction implementation is missing or not immediately following the declaration.
+  [0m [90m 41 |[39m   }[0m
+  [0m [90m 42 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 43 |[39m   unblockUser(data[33m:[39m [33mIB[39m)[0m
+  [0m [90m    |[39m   [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 44 |[39m[0m
+  [0m [90m 45 |[39m }[0m
+
+[1m[31mERROR[39m[22m in [1m./libs/api-gateway/social-network/src/lib/social-network.service.ts:[32m[1m43:21[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'I'.
+  [0m [90m 41 |[39m   }[0m
+  [0m [90m 42 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 43 |[39m   unblockUser(data[33m:[39m [33mIB[39m)[0m
+  [0m [90m    |[39m                     [31m[1m^[22m[39m[0m
+  [0m [90m 44 |[39m[0m
+  [0m [90m 45 |[39m }[0m
+
+webpack compiled with [1m[31m3 errors[39m[22m (91c389363c2b12b8)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.7 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\api-gateway\social-network\src\lib\social-network.service.ts[39m[22m
+[1m../../libs/api-gateway/social-network/src/lib/social-network.service.ts[39m[22m [1m[32m45:0[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\api-gateway\social-network\src\lib\social-network.service.ts(45,1)[39m[22m
+[1m[31m      TS1005: '}' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./libs/api-gateway/social-network/src/lib/social-network.service.ts:[32m[1m43:3[22m[39m[1m[39m[22m
+[90mTS2391: [39mFunction implementation is missing or not immediately following the declaration.
+  [0m [90m 41 |[39m   }[0m
+  [0m [90m 42 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 43 |[39m   unblockUser(data[33m:[39m [33mIBlockUserRequest[39m )[0m
+  [0m [90m    |[39m   [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 44 |[39m[0m
+  [0m [90m 45 |[39m }[0m
+
+webpack compiled with [1m[31m2 errors[39m[22m (37bd6adb880607eb)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.8 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./libs/api-gateway/social-network/src/lib/social-network.service.ts:[32m[1m43:3[22m[39m[1m[39m[22m
+[90mTS2391: [39mFunction implementation is missing or not immediately following the declaration.
+  [0m [90m 41 |[39m   }[0m
+  [0m [90m 42 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 43 |[39m   unblockUser(data[33m:[39m [33mIBlockUserRequest[39m) {[0m
+  [0m [90m    |[39m   [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 44 |[39m     [36mreturn[39m handleGrpcError()[0m
+  [0m [90m 45 |[39m   }[0m
+  [0m [90m 46 |[39m[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (a93b07e867ec5af7)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.8 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\api-gateway\social-network\src\lib\social-network.service.ts[39m[22m
+[1m../../libs/api-gateway/social-network/src/lib/social-network.service.ts[39m[22m [1m[32m44:48[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\api-gateway\social-network\src\lib\social-network.service.ts(44,49)[39m[22m
+[1m[31m      TS1005: ')' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./libs/api-gateway/social-network/src/lib/social-network.service.ts:[32m[1m44:28[22m[39m[1m[39m[22m
+[90mTS2345: [39mArgument of type 'this' is not assignable to parameter of type 'Observable<unknown>'.
+  Type 'ApiGatewaySocialNetworkService' is missing the following properties from type 'Observable<unknown>': source, operator, lift, subscribe, and 3 more.
+  [0m [90m 42 |[39m[0m
+  [0m [90m 43 |[39m   unblockUser(data[33m:[39m [33mIBlockUserRequest[39m) {[0m
+  [0m[31m[1m>[22m[39m[90m 44 |[39m     [36mreturn[39m handleGrpcError([36mthis[39m[33m.[39msocialNetworksService[33m.[39m)[0m
+  [0m [90m    |[39m                            [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 45 |[39m   }[0m
+  [0m [90m 46 |[39m[0m
+  [0m [90m 47 |[39m }[0m
+
+webpack compiled with [1m[31m2 errors[39m[22m (0abf174a5413052a)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.8 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./libs/api-gateway/social-network/src/lib/social-network.service.ts:[32m[1m44:28[22m[39m[1m[39m[22m
+[90mTS2345: [39mArgument of type '(request: IBlockUserRequest) => Observable<void>' is not assignable to parameter of type 'Observable<unknown>'.
+  [0m [90m 42 |[39m[0m
+  [0m [90m 43 |[39m   unblockUser(data[33m:[39m [33mIBlockUserRequest[39m) {[0m
+  [0m[31m[1m>[22m[39m[90m 44 |[39m     [36mreturn[39m handleGrpcError([36mthis[39m[33m.[39msocialNetworksService[33m.[39munblockUser)[0m
+  [0m [90m    |[39m                            [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 45 |[39m   }[0m
+  [0m [90m 46 |[39m[0m
+  [0m [90m 47 |[39m }[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (a7843040d57a7de5)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (68401499d0bcce7c)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (68401499d0bcce7c)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (7182c86088b23f8b)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./libs/api-gateway/social-network/src/lib/social-network.controller.ts:[32m[1m41:3[22m[39m[1m[39m[22m
+[90mTS1329: [39m'Delete' accepts too few arguments to be used as a decorator here. Did you mean to call it first and write '@Delete()'?
+  [0m [90m 39 |[39m   }[0m
+  [0m [90m 40 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 41 |[39m   [33m@[39m[33mDelete[39m([32m''[39m)[0m
+  [0m [90m    |[39m   [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 42 |[39m[0m
+  [0m [90m 43 |[39m   [33m@[39m[33mDelete[39m([32m'follow/:followeeId'[39m)[0m
+  [0m [90m 44 |[39m   unfollowAUser([0m
+
+webpack compiled with [1m[31m1 error[39m[22m (f245dab28f5074f8)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (f245dab28f5074f8)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (550fb6e3537dd7ba)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (550fb6e3537dd7ba)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (28304a5518db6d03)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (91be7ab06f2a4291)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (91be7ab06f2a4291)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 49 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (d8a4a5f2a785e5c5)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 49 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./libs/api-gateway/social-network/src/lib/social-network.controller.ts:[32m[1m41:3[22m[39m[1m[39m[22m
+[90mTS1240: [39mUnable to resolve signature of property decorator when called as an expression.
+  The runtime will invoke the decorator with 2 arguments, but the decorator expects 3.
+  [0m [90m 39 |[39m   }[0m
+  [0m [90m 40 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 41 |[39m   [33m@[39m[33mDelete[39m([32m'block/:targetId'[39m)[0m
+  [0m [90m    |[39m   [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 42 |[39m   unblockUser[0m
+  [0m [90m 43 |[39m[0m
+  [0m [90m 44 |[39m   [33m@[39m[33mDelete[39m([32m'follow/:followeeId'[39m)[0m
+
+[1m[31mERROR[39m[22m in [1m./libs/api-gateway/social-network/src/lib/social-network.controller.ts:[32m[1m41:4[22m[39m[1m[39m[22m
+[90mTS1271: [39mDecorator function return type is 'void | TypedPropertyDescriptor<unknown>' but is expected to be 'void' or 'any'.
+  Type 'TypedPropertyDescriptor<unknown>' is not assignable to type 'void'.
+  [0m [90m 39 |[39m   }[0m
+  [0m [90m 40 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 41 |[39m   [33m@[39m[33mDelete[39m([32m'block/:targetId'[39m)[0m
+  [0m [90m    |[39m    [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 42 |[39m   unblockUser[0m
+  [0m [90m 43 |[39m[0m
+  [0m [90m 44 |[39m   [33m@[39m[33mDelete[39m([32m'follow/:followeeId'[39m)[0m
+
+webpack compiled with [1m[31m2 errors[39m[22m (dee6eca089076812)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./libs/api-gateway/social-network/src/lib/social-network.controller.ts:[32m[1m41:3[22m[39m[1m[39m[22m
+[90mTS1249: [39mA decorator can only decorate a method implementation, not an overload.
+  [0m [90m 39 |[39m   }[0m
+  [0m [90m 40 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 41 |[39m   [33m@[39m[33mDelete[39m([32m'block/:targetId'[39m)[0m
+  [0m [90m    |[39m   [31m[1m^[22m[39m[0m
+  [0m [90m 42 |[39m   unblockUser()[0m
+  [0m [90m 43 |[39m[0m
+  [0m [90m 44 |[39m   [33m@[39m[33mDelete[39m([32m'follow/:followeeId'[39m)[0m
+
+[1m[31mERROR[39m[22m in [1m./libs/api-gateway/social-network/src/lib/social-network.controller.ts:[32m[1m45:3[22m[39m[1m[39m[22m
+[90mTS2389: [39mFunction implementation name must be 'unblockUser'.
+  [0m [90m 43 |[39m[0m
+  [0m [90m 44 |[39m   [33m@[39m[33mDelete[39m([32m'follow/:followeeId'[39m)[0m
+  [0m[31m[1m>[22m[39m[90m 45 |[39m   unfollowAUser([0m
+  [0m [90m    |[39m   [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 46 |[39m     [33m@[39m[33mParam[39m([32m'followeeId'[39m) followeeId[33m:[39m string[33m,[39m[0m
+  [0m [90m 47 |[39m     [33m@[39m[33mBody[39m() [33mBody[39m[33m:[39m { followerId[33m:[39m string }[0m
+  [0m [90m 48 |[39m   ) {[0m
+
+webpack compiled with [1m[31m2 errors[39m[22m (0aaf2296369ef542)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\api-gateway\social-network\src\lib\social-network.controller.ts[39m[22m
+[1m../../libs/api-gateway/social-network/src/lib/social-network.controller.ts[39m[22m [1m[32m42:20-21[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\api-gateway\social-network\src\lib\social-network.controller.ts(42,21)[39m[22m
+[1m[31m      TS1003: Identifier expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\api-gateway\social-network\src\lib\social-network.controller.ts[39m[22m
+[1m../../libs/api-gateway/social-network/src/lib/social-network.controller.ts[39m[22m [1m[32m65:0[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\api-gateway\social-network\src\lib\social-network.controller.ts(65,1)[39m[22m
+[1m[31m      TS1005: '}' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./libs/api-gateway/social-network/src/lib/social-network.controller.ts:[32m[1m45:3[22m[39m[1m[39m[22m
+[90mTS2389: [39mFunction implementation name must be 'unblockUser'.
+  [0m [90m 43 |[39m[0m
+  [0m [90m 44 |[39m   [33m@[39m[33mDelete[39m([32m'follow/:followeeId'[39m)[0m
+  [0m[31m[1m>[22m[39m[90m 45 |[39m   unfollowAUser([0m
+  [0m [90m    |[39m   [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 46 |[39m     [33m@[39m[33mParam[39m([32m'followeeId'[39m) followeeId[33m:[39m string[33m,[39m[0m
+  [0m [90m 47 |[39m     [33m@[39m[33mBody[39m() [33mBody[39m[33m:[39m { followerId[33m:[39m string }[0m
+  [0m [90m 48 |[39m   ) {[0m
+
+webpack compiled with [1m[31m3 errors[39m[22m (4b0e0f1927872d06)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\api-gateway\social-network\src\lib\social-network.controller.ts[39m[22m
+[1m../../libs/api-gateway/social-network/src/lib/social-network.controller.ts[39m[22m [1m[32m42:23-24[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\api-gateway\social-network\src\lib\social-network.controller.ts(42,24)[39m[22m
+[1m[31m      TS1003: Identifier expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./libs/api-gateway/social-network/src/index.ts:[32m[1m1:15[22m[39m[1m[39m[22m
+[90mTS2306: [39mFile 'C:/Users/JUNAID/OneDrive/Desktop/FoodStories/food-stories/libs/api-gateway/social-network/src/lib/social-network.controller.ts' is not a module.
+  [0m[31m[1m>[22m[39m[90m 1 |[39m [36mexport[39m [33m*[39m [36mfrom[39m [32m'./lib/social-network.controller'[39m[33m;[39m[0m
+  [0m [90m   |[39m               [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 2 |[39m [36mexport[39m [33m*[39m [36mfrom[39m [32m'./lib/social-network.service'[39m[33m;[39m[0m
+  [0m [90m 3 |[39m [36mexport[39m [33m*[39m [36mfrom[39m [32m'./lib/social-network.module'[39m[33m;[39m[0m
+  [0m [90m 4 |[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./libs/api-gateway/social-network/src/lib/social-network.module.ts:[32m[1m2:51[22m[39m[1m[39m[22m
+[90mTS2306: [39mFile 'C:/Users/JUNAID/OneDrive/Desktop/FoodStories/food-stories/libs/api-gateway/social-network/src/lib/social-network.controller.ts' is not a module.
+  [0m [90m 1 |[39m [36mimport[39m { [33mModule[39m } [36mfrom[39m [32m'@nestjs/common'[39m[33m;[39m[0m
+  [0m[31m[1m>[22m[39m[90m 2 |[39m [36mimport[39m { [33mApiGatewaySocialNetworkController[39m } [36mfrom[39m [32m'./social-network.controller'[39m[33m;[39m[0m
+  [0m [90m   |[39m                                                   [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 3 |[39m [36mimport[39m { [33mApiGatewaySocialNetworkService[39m } [36mfrom[39m [32m'./social-network.service'[39m[33m;[39m[0m
+  [0m [90m 4 |[39m[0m
+  [0m [90m 5 |[39m [33m@[39m[33mModule[39m({[0m
+
+webpack compiled with [1m[31m3 errors[39m[22m (016bd687d4002e4e)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\api-gateway\social-network\src\lib\social-network.controller.ts[39m[22m
+[1m../../libs/api-gateway/social-network/src/lib/social-network.controller.ts[39m[22m [1m[32m42:32-33[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\api-gateway\social-network\src\lib\social-network.controller.ts(42,33)[39m[22m
+[1m[31m      TS1003: Identifier expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./libs/api-gateway/social-network/src/lib/social-network.controller.ts:[32m[1m45:3[22m[39m[1m[39m[22m
+[90mTS2389: [39mFunction implementation name must be 'unblockUser'.
+  [0m [90m 43 |[39m[0m
+  [0m [90m 44 |[39m   [33m@[39m[33mDelete[39m([32m'follow/:followeeId'[39m)[0m
+  [0m[31m[1m>[22m[39m[90m 45 |[39m   unfollowAUser([0m
+  [0m [90m    |[39m   [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 46 |[39m     [33m@[39m[33mParam[39m([32m'followeeId'[39m) followeeId[33m:[39m string[33m,[39m[0m
+  [0m [90m 47 |[39m     [33m@[39m[33mBody[39m() [33mBody[39m[33m:[39m { followerId[33m:[39m string }[0m
+  [0m [90m 48 |[39m   ) {[0m
+
+webpack compiled with [1m[31m2 errors[39m[22m (19f6e98b588ae45a)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./libs/api-gateway/social-network/src/lib/social-network.controller.ts:[32m[1m42:3[22m[39m[1m[39m[22m
+[90mTS1249: [39mA decorator can only decorate a method implementation, not an overload.
+  [0m [90m 40 |[39m[0m
+  [0m [90m 41 |[39m   [33m@[39m[33mDelete[39m([32m'block/:targetId'[39m)[0m
+  [0m[31m[1m>[22m[39m[90m 42 |[39m   unblockUser([33m@[39m[33mParam[39m([32m'targetId'[39m) trace)[0m
+  [0m [90m    |[39m   [31m[1m^[22m[39m[0m
+  [0m [90m 43 |[39m[0m
+  [0m [90m 44 |[39m   [33m@[39m[33mDelete[39m([32m'follow/:followeeId'[39m)[0m
+  [0m [90m 45 |[39m   unfollowAUser([0m
+
+[1m[31mERROR[39m[22m in [1m./libs/api-gateway/social-network/src/lib/social-network.controller.ts:[32m[1m43:15[22m[39m[1m[39m[22m
+[90mTS1206: [39mDecorators are not valid here.
+  [0m [90m 41 |[39m   [33m@[39m[33mDelete[39m([32m'block/:targetId'[39m)[0m
+  [0m [90m 42 |[39m   unblockUser([33m@[39m[33mParam[39m([32m'targetId'[39m) trace)[0m
+  [0m[31m[1m>[22m[39m[90m 43 |[39m[0m
+  [0m [90m    |[39m [31m[1m^[22m[39m[0m
+  [0m [90m 44 |[39m   [33m@[39m[33mDelete[39m([32m'follow/:followeeId'[39m)[0m
+  [0m [90m 45 |[39m   unfollowAUser([0m
+  [0m [90m 46 |[39m     [33m@[39m[33mParam[39m([32m'followeeId'[39m) followeeId[33m:[39m string[33m,[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./libs/api-gateway/social-network/src/lib/social-network.controller.ts:[32m[1m46:3[22m[39m[1m[39m[22m
+[90mTS2389: [39mFunction implementation name must be 'unblockUser'.
+  [0m [90m 44 |[39m   [33m@[39m[33mDelete[39m([32m'follow/:followeeId'[39m)[0m
+  [0m [90m 45 |[39m   unfollowAUser([0m
+  [0m[31m[1m>[22m[39m[90m 46 |[39m     [33m@[39m[33mParam[39m([32m'followeeId'[39m) followeeId[33m:[39m string[33m,[39m[0m
+  [0m [90m    |[39m   [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 47 |[39m     [33m@[39m[33mBody[39m() [33mBody[39m[33m:[39m { followerId[33m:[39m string }[0m
+  [0m [90m 48 |[39m   ) {[0m
+  [0m [90m 49 |[39m     [36mreturn[39m [36mthis[39m[33m.[39mapiGatewaySocialNetworkService[33m.[39munfollowAUser({[0m
+
+webpack compiled with [1m[31m3 errors[39m[22m (6a59067623b8393a)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./libs/api-gateway/social-network/src/lib/social-network.controller.ts:[32m[1m41:3[22m[39m[1m[39m[22m
+[90mTS1249: [39mA decorator can only decorate a method implementation, not an overload.
+  [0m [90m 39 |[39m   }[0m
+  [0m [90m 40 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 41 |[39m   [33m@[39m[33mDelete[39m([32m'block/:targetId'[39m)[0m
+  [0m [90m    |[39m   [31m[1m^[22m[39m[0m
+  [0m [90m 42 |[39m   unblockUser([33m@[39m[33mParam[39m([32m'targetId'[39m) target)[0m
+  [0m [90m 43 |[39m[0m
+  [0m [90m 44 |[39m   [33m@[39m[33mDelete[39m([32m'follow/:followeeId'[39m)[0m
+
+[1m[31mERROR[39m[22m in [1m./libs/api-gateway/social-network/src/lib/social-network.controller.ts:[32m[1m42:15[22m[39m[1m[39m[22m
+[90mTS1206: [39mDecorators are not valid here.
+  [0m [90m 40 |[39m[0m
+  [0m [90m 41 |[39m   [33m@[39m[33mDelete[39m([32m'block/:targetId'[39m)[0m
+  [0m[31m[1m>[22m[39m[90m 42 |[39m   unblockUser([33m@[39m[33mParam[39m([32m'targetId'[39m) target)[0m
+  [0m [90m    |[39m               [31m[1m^[22m[39m[0m
+  [0m [90m 43 |[39m[0m
+  [0m [90m 44 |[39m   [33m@[39m[33mDelete[39m([32m'follow/:followeeId'[39m)[0m
+  [0m [90m 45 |[39m   unfollowAUser([0m
+
+[1m[31mERROR[39m[22m in [1m./libs/api-gateway/social-network/src/lib/social-network.controller.ts:[32m[1m45:3[22m[39m[1m[39m[22m
+[90mTS2389: [39mFunction implementation name must be 'unblockUser'.
+  [0m [90m 43 |[39m[0m
+  [0m [90m 44 |[39m   [33m@[39m[33mDelete[39m([32m'follow/:followeeId'[39m)[0m
+  [0m[31m[1m>[22m[39m[90m 45 |[39m   unfollowAUser([0m
+  [0m [90m    |[39m   [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 46 |[39m     [33m@[39m[33mParam[39m([32m'followeeId'[39m) followeeId[33m:[39m string[33m,[39m[0m
+  [0m [90m 47 |[39m     [33m@[39m[33mBody[39m() [33mBody[39m[33m:[39m { followerId[33m:[39m string }[0m
+  [0m [90m 48 |[39m   ) {[0m
+
+webpack compiled with [1m[31m3 errors[39m[22m (f8d5e9d85a4da76c)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./libs/api-gateway/social-network/src/lib/social-network.controller.ts:[32m[1m45:3[22m[39m[1m[39m[22m
+[90mTS2389: [39mFunction implementation name must be 'unblockUser'.
+  [0m [90m 43 |[39m[0m
+  [0m [90m 44 |[39m   [33m@[39m[33mDelete[39m([32m'follow/:followeeId'[39m)[0m
+  [0m[31m[1m>[22m[39m[90m 45 |[39m   unfollowAUser([0m
+  [0m [90m    |[39m   [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 46 |[39m     [33m@[39m[33mParam[39m([32m'followeeId'[39m) followeeId[33m:[39m string[33m,[39m[0m
+  [0m [90m 47 |[39m     [33m@[39m[33mBody[39m() [33mBody[39m[33m:[39m { followerId[33m:[39m string }[0m
+  [0m [90m 48 |[39m   ) {[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (4b9eb095d5ee06a2)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\api-gateway\social-network\src\lib\social-network.controller.ts[39m[22m
+[1m../../libs/api-gateway/social-network/src/lib/social-network.controller.ts[39m[22m [1m[32m42:59-60[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\api-gateway\social-network\src\lib\social-network.controller.ts(42,60)[39m[22m
+[1m[31m      TS1003: Identifier expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./libs/api-gateway/social-network/src/lib/social-network.controller.ts:[32m[1m45:3[22m[39m[1m[39m[22m
+[90mTS2389: [39mFunction implementation name must be 'unblockUser'.
+  [0m [90m 43 |[39m[0m
+  [0m [90m 44 |[39m   [33m@[39m[33mDelete[39m([32m'follow/:followeeId'[39m)[0m
+  [0m[31m[1m>[22m[39m[90m 45 |[39m   unfollowAUser([0m
+  [0m [90m    |[39m   [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 46 |[39m     [33m@[39m[33mParam[39m([32m'followeeId'[39m) followeeId[33m:[39m string[33m,[39m[0m
+  [0m [90m 47 |[39m     [33m@[39m[33mBody[39m() [33mBody[39m[33m:[39m { followerId[33m:[39m string }[0m
+  [0m [90m 48 |[39m   ) {[0m
+
+webpack compiled with [1m[31m2 errors[39m[22m (6a700000251d645c)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./libs/api-gateway/social-network/src/lib/social-network.controller.ts:[32m[1m41:3[22m[39m[1m[39m[22m
+[90mTS1249: [39mA decorator can only decorate a method implementation, not an overload.
+  [0m [90m 39 |[39m   }[0m
+  [0m [90m 40 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 41 |[39m   [33m@[39m[33mDelete[39m([32m'block/:targetId'[39m)[0m
+  [0m [90m    |[39m   [31m[1m^[22m[39m[0m
+  [0m [90m 42 |[39m   unblockUser([33m@[39m[33mParam[39m([32m'targetId'[39m) targetId[33m:[39m string [33m,[39m [33m@[39m[33mBody[39m() body[33m:[39m {})[0m
+  [0m [90m 43 |[39m[0m
+  [0m [90m 44 |[39m   [33m@[39m[33mDelete[39m([32m'follow/:followeeId'[39m)[0m
+
+[1m[31mERROR[39m[22m in [1m./libs/api-gateway/social-network/src/lib/social-network.controller.ts:[32m[1m42:15[22m[39m[1m[39m[22m
+[90mTS1206: [39mDecorators are not valid here.
+  [0m [90m 40 |[39m[0m
+  [0m [90m 41 |[39m   [33m@[39m[33mDelete[39m([32m'block/:targetId'[39m)[0m
+  [0m[31m[1m>[22m[39m[90m 42 |[39m   unblockUser([33m@[39m[33mParam[39m([32m'targetId'[39m) targetId[33m:[39m string [33m,[39m [33m@[39m[33mBody[39m() body[33m:[39m {})[0m
+  [0m [90m    |[39m               [31m[1m^[22m[39m[0m
+  [0m [90m 43 |[39m[0m
+  [0m [90m 44 |[39m   [33m@[39m[33mDelete[39m([32m'follow/:followeeId'[39m)[0m
+  [0m [90m 45 |[39m   unfollowAUser([0m
+
+[1m[31mERROR[39m[22m in [1m./libs/api-gateway/social-network/src/lib/social-network.controller.ts:[32m[1m42:53[22m[39m[1m[39m[22m
+[90mTS1206: [39mDecorators are not valid here.
+  [0m [90m 40 |[39m[0m
+  [0m [90m 41 |[39m   [33m@[39m[33mDelete[39m([32m'block/:targetId'[39m)[0m
+  [0m[31m[1m>[22m[39m[90m 42 |[39m   unblockUser([33m@[39m[33mParam[39m([32m'targetId'[39m) targetId[33m:[39m string [33m,[39m [33m@[39m[33mBody[39m() body[33m:[39m {})[0m
+  [0m [90m    |[39m                                                     [31m[1m^[22m[39m[0m
+  [0m [90m 43 |[39m[0m
+  [0m [90m 44 |[39m   [33m@[39m[33mDelete[39m([32m'follow/:followeeId'[39m)[0m
+  [0m [90m 45 |[39m   unfollowAUser([0m
+
+[1m[31mERROR[39m[22m in [1m./libs/api-gateway/social-network/src/lib/social-network.controller.ts:[32m[1m45:3[22m[39m[1m[39m[22m
+[90mTS2389: [39mFunction implementation name must be 'unblockUser'.
+  [0m [90m 43 |[39m[0m
+  [0m [90m 44 |[39m   [33m@[39m[33mDelete[39m([32m'follow/:followeeId'[39m)[0m
+  [0m[31m[1m>[22m[39m[90m 45 |[39m   unfollowAUser([0m
+  [0m [90m    |[39m   [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 46 |[39m     [33m@[39m[33mParam[39m([32m'followeeId'[39m) followeeId[33m:[39m string[33m,[39m[0m
+  [0m [90m 47 |[39m     [33m@[39m[33mBody[39m() [33mBody[39m[33m:[39m { followerId[33m:[39m string }[0m
+  [0m [90m 48 |[39m   ) {[0m
+
+webpack compiled with [1m[31m4 errors[39m[22m (9b6c34085a992fd6)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./libs/api-gateway/social-network/src/lib/social-network.controller.ts:[32m[1m41:3[22m[39m[1m[39m[22m
+[90mTS1249: [39mA decorator can only decorate a method implementation, not an overload.
+  [0m [90m 39 |[39m   }[0m
+  [0m [90m 40 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 41 |[39m   [33m@[39m[33mDelete[39m([32m'block/:targetId'[39m)[0m
+  [0m [90m    |[39m   [31m[1m^[22m[39m[0m
+  [0m [90m 42 |[39m   unblockUser([33m@[39m[33mParam[39m([32m'targetId'[39m) targetId[33m:[39m string [33m,[39m [33m@[39m[33mBody[39m() body[33m:[39m {blocker})[0m
+  [0m [90m 43 |[39m[0m
+  [0m [90m 44 |[39m   [33m@[39m[33mDelete[39m([32m'follow/:followeeId'[39m)[0m
+
+[1m[31mERROR[39m[22m in [1m./libs/api-gateway/social-network/src/lib/social-network.controller.ts:[32m[1m42:15[22m[39m[1m[39m[22m
+[90mTS1206: [39mDecorators are not valid here.
+  [0m [90m 40 |[39m[0m
+  [0m [90m 41 |[39m   [33m@[39m[33mDelete[39m([32m'block/:targetId'[39m)[0m
+  [0m[31m[1m>[22m[39m[90m 42 |[39m   unblockUser([33m@[39m[33mParam[39m([32m'targetId'[39m) targetId[33m:[39m string [33m,[39m [33m@[39m[33mBody[39m() body[33m:[39m {blockerI})[0m
+  [0m [90m    |[39m               [31m[1m^[22m[39m[0m
+  [0m [90m 43 |[39m[0m
+  [0m [90m 44 |[39m   [33m@[39m[33mDelete[39m([32m'follow/:followeeId'[39m)[0m
+  [0m [90m 45 |[39m   unfollowAUser([0m
+
+[1m[31mERROR[39m[22m in [1m./libs/api-gateway/social-network/src/lib/social-network.controller.ts:[32m[1m42:53[22m[39m[1m[39m[22m
+[90mTS1206: [39mDecorators are not valid here.
+  [0m [90m 40 |[39m[0m
+  [0m [90m 41 |[39m   [33m@[39m[33mDelete[39m([32m'block/:targetId'[39m)[0m
+  [0m[31m[1m>[22m[39m[90m 42 |[39m   unblockUser([33m@[39m[33mParam[39m([32m'targetId'[39m) targetId[33m:[39m string [33m,[39m [33m@[39m[33mBody[39m() body[33m:[39m {blockerI})[0m
+  [0m [90m    |[39m                                                     [31m[1m^[22m[39m[0m
+  [0m [90m 43 |[39m[0m
+  [0m [90m 44 |[39m   [33m@[39m[33mDelete[39m([32m'follow/:followeeId'[39m)[0m
+  [0m [90m 45 |[39m   unfollowAUser([0m
+
+[1m[31mERROR[39m[22m in [1m./libs/api-gateway/social-network/src/lib/social-network.controller.ts:[32m[1m45:3[22m[39m[1m[39m[22m
+[90mTS2389: [39mFunction implementation name must be 'unblockUser'.
+  [0m [90m 43 |[39m[0m
+  [0m [90m 44 |[39m   [33m@[39m[33mDelete[39m([32m'follow/:followeeId'[39m)[0m
+  [0m[31m[1m>[22m[39m[90m 45 |[39m   unfollowAUser([0m
+  [0m [90m    |[39m   [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 46 |[39m     [33m@[39m[33mParam[39m([32m'followeeId'[39m) followeeId[33m:[39m string[33m,[39m[0m
+  [0m [90m 47 |[39m     [33m@[39m[33mBody[39m() [33mBody[39m[33m:[39m { followerId[33m:[39m string }[0m
+  [0m [90m 48 |[39m   ) {[0m
+
+webpack compiled with [1m[31m4 errors[39m[22m (5a6d3eae32274913)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 48.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./libs/api-gateway/social-network/src/lib/social-network.controller.ts:[32m[1m45:3[22m[39m[1m[39m[22m
+[90mTS2389: [39mFunction implementation name must be 'unblockUser'.
+  [0m [90m 43 |[39m[0m
+  [0m [90m 44 |[39m   [33m@[39m[33mDelete[39m([32m'follow/:followeeId'[39m)[0m
+  [0m[31m[1m>[22m[39m[90m 45 |[39m   unfollowAUser([0m
+  [0m [90m    |[39m   [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 46 |[39m     [33m@[39m[33mParam[39m([32m'followeeId'[39m) followeeId[33m:[39m string[33m,[39m[0m
+  [0m [90m 47 |[39m     [33m@[39m[33mBody[39m() [33mBody[39m[33m:[39m { followerId[33m:[39m string }[0m
+  [0m [90m 48 |[39m   ) {[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (fcbdfb1233dae72e)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 49.3 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./libs/api-gateway/social-network/src/lib/social-network.controller.ts:[32m[1m41:3[22m[39m[1m[39m[22m
+[90mTS1249: [39mA decorator can only decorate a method implementation, not an overload.
+  [0m [90m 39 |[39m   }[0m
+  [0m [90m 40 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 41 |[39m   [33m@[39m[33mDelete[39m([32m'block/:targetId'[39m)[0m
+  [0m [90m    |[39m   [31m[1m^[22m[39m[0m
+  [0m [90m 42 |[39m   unblockUser([33m@[39m[33mParam[39m([32m'targetId'[39m) targetId[33m:[39m string [33m,[39m [33m@[39m[33mBody[39m() body[33m:[39m {blockerId[33m:[39m string}) {[0m
+  [0m [90m 43 |[39m     retu[0m
+  [0m [90m 44 |[39m   }[0m
+
+[1m[31mERROR[39m[22m in [1m./libs/api-gateway/social-network/src/lib/social-network.controller.ts:[32m[1m42:15[22m[39m[1m[39m[22m
+[90mTS1206: [39mDecorators are not valid here.
+  [0m [90m 40 |[39m[0m
+  [0m [90m 41 |[39m   [33m@[39m[33mDelete[39m([32m'block/:targetId'[39m)[0m
+  [0m[31m[1m>[22m[39m[90m 42 |[39m   unblockUser([33m@[39m[33mParam[39m([32m'targetId'[39m) targetId[33m:[39m string [33m,[39m [33m@[39m[33mBody[39m() body[33m:[39m {blockerId[33m:[39m string}) {[0m
+  [0m [90m    |[39m               [31m[1m^[22m[39m[0m
+  [0m [90m 43 |[39m     retutn [0m
+  [0m [90m 44 |[39m   }[0m
+  [0m [90m 45 |[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./libs/api-gateway/social-network/src/lib/social-network.controller.ts:[32m[1m42:53[22m[39m[1m[39m[22m
+[90mTS1206: [39mDecorators are not valid here.
+  [0m [90m 40 |[39m[0m
+  [0m [90m 41 |[39m   [33m@[39m[33mDelete[39m([32m'block/:targetId'[39m)[0m
+  [0m[31m[1m>[22m[39m[90m 42 |[39m   unblockUser([33m@[39m[33mParam[39m([32m'targetId'[39m) targetId[33m:[39m string [33m,[39m [33m@[39m[33mBody[39m() body[33m:[39m {blockerId[33m:[39m string}) {[0m
+  [0m [90m    |[39m                                                     [31m[1m^[22m[39m[0m
+  [0m [90m 43 |[39m     retutn [0m
+  [0m [90m 44 |[39m   }[0m
+  [0m [90m 45 |[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./libs/api-gateway/social-network/src/lib/social-network.controller.ts:[32m[1m45:3[22m[39m[1m[39m[22m
+[90mTS2389: [39mFunction implementation name must be 'unblockUser'.
+  [0m [90m 43 |[39m     retutn [0m
+  [0m [90m 44 |[39m   }[0m
+  [0m[31m[1m>[22m[39m[90m 45 |[39m[0m
+  [0m [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 46 |[39m   [33m@[39m[33mDelete[39m([32m'follow/:followeeId'[39m)[0m
+  [0m [90m 47 |[39m   unfollowAUser([0m
+  [0m [90m 48 |[39m     [33m@[39m[33mParam[39m([32m'followeeId'[39m) followeeId[33m:[39m string[33m,[39m[0m
+
+webpack compiled with [1m[31m4 errors[39m[22m (fa05d37badf78725)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 49.3 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m../../libs/api-gateway/social-network/src/lib/social-network.controller.ts[39m[22m [1m[32m27:8[39m[22m
+[1mModule parse [1m[31mfailed[39m[22m[1m: [1m[31mUnexpected[39m[22m[1m token (27:8)
+File was processed with these loaders:
+ * ../../node_modules/.pnpm/ts-loader@9.4.4_typescript@5.1.3_webpack@5.88.2/node_modules/ts-loader/index.js
+You may need an additional loader to handle the result of these loaders.
+|     unblockUser(targetId, body) {
+|         return this.
+>         ;
+|     }
+|     unfollowAUser(followeeId, Body) {[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\api-gateway\social-network\src\lib\social-network.controller.ts[39m[22m
+[1m../../libs/api-gateway/social-network/src/lib/social-network.controller.ts[39m[22m [1m[32m44:2-3[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\api-gateway\social-network\src\lib\social-network.controller.ts(44,3)[39m[22m
+[1m[31m      TS1003: Identifier expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\api-gateway\social-network\src\lib\social-network.controller.ts[39m[22m
+[1m../../libs/api-gateway/social-network/src/lib/social-network.controller.ts[39m[22m [1m[32m67:0[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\api-gateway\social-network\src\lib\social-network.controller.ts(67,1)[39m[22m
+[1m[31m      TS1005: '}' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./libs/api-gateway/social-network/src/index.ts:[32m[1m1:15[22m[39m[1m[39m[22m
+[90mTS2306: [39mFile 'C:/Users/JUNAID/OneDrive/Desktop/FoodStories/food-stories/libs/api-gateway/social-network/src/lib/social-network.controller.ts' is not a module.
+  [0m[31m[1m>[22m[39m[90m 1 |[39m [36mexport[39m [33m*[39m [36mfrom[39m [32m'./lib/social-network.controller'[39m[33m;[39m[0m
+  [0m [90m   |[39m               [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 2 |[39m [36mexport[39m [33m*[39m [36mfrom[39m [32m'./lib/social-network.service'[39m[33m;[39m[0m
+  [0m [90m 3 |[39m [36mexport[39m [33m*[39m [36mfrom[39m [32m'./lib/social-network.module'[39m[33m;[39m[0m
+  [0m [90m 4 |[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./libs/api-gateway/social-network/src/lib/social-network.module.ts:[32m[1m2:51[22m[39m[1m[39m[22m
+[90mTS2306: [39mFile 'C:/Users/JUNAID/OneDrive/Desktop/FoodStories/food-stories/libs/api-gateway/social-network/src/lib/social-network.controller.ts' is not a module.
+  [0m [90m 1 |[39m [36mimport[39m { [33mModule[39m } [36mfrom[39m [32m'@nestjs/common'[39m[33m;[39m[0m
+  [0m[31m[1m>[22m[39m[90m 2 |[39m [36mimport[39m { [33mApiGatewaySocialNetworkController[39m } [36mfrom[39m [32m'./social-network.controller'[39m[33m;[39m[0m
+  [0m [90m   |[39m                                                   [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 3 |[39m [36mimport[39m { [33mApiGatewaySocialNetworkService[39m } [36mfrom[39m [32m'./social-network.service'[39m[33m;[39m[0m
+  [0m [90m 4 |[39m[0m
+  [0m [90m 5 |[39m [33m@[39m[33mModule[39m({[0m
+
+webpack compiled with [1m[31m5 errors[39m[22m (7dfddfea114ab871)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 49.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (5d15bace07036889)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 49.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m../../libs/api-gateway/social-network/src/lib/social-network.controller.ts[39m[22m [1m[32m28:8[39m[22m
+[1mModule parse [1m[31mfailed[39m[22m[1m: [1m[31mUnexpected[39m[22m[1m token (28:8)
+File was processed with these loaders:
+ * ../../node_modules/.pnpm/ts-loader@9.4.4_typescript@5.1.3_webpack@5.88.2/node_modules/ts-loader/index.js
+You may need an additional loader to handle the result of these loaders.
+|         return this.apiGatewaySocialNetworkService.unblockUser({
+|             blockerId: 
+>         });
+|     }
+|     unfollowAUser(followeeId, Body) {[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\api-gateway\social-network\src\lib\social-network.controller.ts[39m[22m
+[1m../../libs/api-gateway/social-network/src/lib/social-network.controller.ts[39m[22m [1m[32m45:4-5[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\api-gateway\social-network\src\lib\social-network.controller.ts(45,5)[39m[22m
+[1m[31m      TS1109: Expression expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./libs/api-gateway/social-network/src/lib/social-network.controller.ts:[32m[1m43:60[22m[39m[1m[39m[22m
+[90mTS2345: [39mArgument of type '{}' is not assignable to parameter of type 'IBlockUserRequest'.
+  Type '{}' is missing the following properties from type 'IBlockUserRequest': blockerId, targetId
+
+webpack compiled with [1m[31m3 errors[39m[22m (915a06ed8dc0b805)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 49.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\api-gateway\social-network\src\lib\social-network.controller.ts[39m[22m
+[1m../../libs/api-gateway/social-network/src/lib/social-network.controller.ts[39m[22m [1m[32m69:2[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\api-gateway\social-network\src\lib\social-network.controller.ts(69,3)[39m[22m
+[1m[31m      TS1005: '}' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./libs/api-gateway/social-network/src/lib/social-network.controller.ts:[32m[1m43:60[22m[39m[1m[39m[22m
+[90mTS2345: [39mArgument of type '{ blockerId: string; }' is not assignable to parameter of type 'IBlockUserRequest'.
+  Property 'targetId' is missing in type '{ blockerId: string; }' but required in type 'IBlockUserRequest'.
+  [0m [90m 41 |[39m   [33m@[39m[33mDelete[39m([32m'block/:targetId'[39m)[0m
+  [0m [90m 42 |[39m   unblockUser([33m@[39m[33mParam[39m([32m'targetId'[39m) targetId[33m:[39m string [33m,[39m [33m@[39m[33mBody[39m() body[33m:[39m {blockerId[33m:[39m string}) {[0m
+  [0m[31m[1m>[22m[39m[90m 43 |[39m     [36mreturn[39m [36mthis[39m[33m.[39mapiGatewaySocialNetworkService[33m.[39munblockUser({[0m
+  [0m [90m    |[39m                                                            [31m[1m^[22m[39m[0m
+  [0m[31m[1m>[22m[39m[90m 44 |[39m       blockerId[33m:[39m body[33m.[39mblockerId[33m,[39m[0m
+  [0m [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m[31m[1m>[22m[39m[90m 45 |[39m       targetId[33m,[39m[0m
+  [0m [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m[31m[1m>[22m[39m[90m 46 |[39m     })[0m
+  [0m [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 47 |[39m   }[0m
+  [0m [90m 48 |[39m[0m
+  [0m [90m 49 |[39m   [33m@[39m[33mDelete[39m([32m'follow/:followeeId'[39m)[0m
+
+webpack compiled with [1m[31m2 errors[39m[22m (814f3a44a3c38384)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 49.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (c75028d50ce594b5)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 49.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (ff2d37a90038f0a3)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+[1m[31m[31m[Nest] 10708  - [39m[31m04/04/2024, 2:48:39 am [31m  ERROR[39m[31m [31m5 NOT_FOUND: User not found with the username jithu_jamshedlkkadf[39m[31m[39m[22m
+[1m[31m[39m[22m

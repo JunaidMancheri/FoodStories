@@ -1,0 +1,1493 @@
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+[36m⠋[39m Generating browser application bundles (phase: setup)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: setup)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: setup)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: setup)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: setup)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: emitting)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m                                 [2m | [22m[1mNames[22m                                       [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mvendor.js[39m[37m                                           [2m | [22mvendor                                      [2m | [22m  [96m6.38 MB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mstyles.css, styles.js[39m[37m                               [2m | [22mstyles                                      [2m | [22m[96m359.31 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mpolyfills.js[39m[37m                                        [2m | [22mpolyfills                                   [2m | [22m[96m336.97 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mmain.js[39m[37m                                             [2m | [22mmain                                        [2m | [22m[96m263.54 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m                                          [2m | [22mruntime                                     [2m | [22m [96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1m [22m                                                   [2m | [22m[1mInitial Total[22m                               [2m | [22m  [1m7.33 MB[22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy Chunk Files[22m                                    [2m | [22m[1mNames[22m                                       [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mlibs_users-client_auth_feature_shell_src_index_ts.js[39m[37m[2m | [22mfood-stories-users-client-auth-feature-shell[2m | [22m[96m107.45 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mlibs_users-client_feed_feature_src_index_ts.js[39m[37m      [2m | [22mfood-stories-users-client-feed-feature      [2m | [22m [96m42.10 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T20:50:09.667Z[39m[37m[22m - Hash: [1m[37ma70692a1ed9494c7[39m[37m[22m - Time: [1m[37m46352[39m[37m[22mms[0m[39m
+[37m[39m
+[37m** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **[39m
+[37m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m[96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T20:52:51.447Z[39m[37m[22m - Hash: [1m[37m97bf1b0c27464209[39m[37m[22m - Time: [1m[37m22547[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/common/typings/src/lib/proto/social-networkService.ts[0m:[93m8[0m:[93m31[0m - [91merror[0m[90m TS2552: [0mCannot find name 'IBlockUserRequest'. Did you mean 'IBlockOrUserRequest'?[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m8[0m    BlockUser: handleUnaryCall<IBlockUserRequest, void>;[39m[22m
+[1m[31m[7m [0m [91m                              ~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/common/typings/src/lib/proto/social-networkService.ts[0m:[93m16[0m:[93m22[0m - [91merror[0m[90m TS2552: [0mCannot find name 'IBlockUserRequest'. Did you mean 'IBlockOrUserRequest'?[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m16[0m   BlockUser(request: IBlockUserRequest): Observable<void>;[39m[22m
+[1m[31m[7m  [0m [91m                     ~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m[96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T20:53:05.183Z[39m[37m[22m - Hash: [1m[37m37cc966af197d556[39m[37m[22m - Time: [1m[37m12375[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/common/typings/src/lib/proto/social-networkService.ts[0m:[93m17[0m:[93m3[0m - [91merror[0m[90m TS7010: [0m'unblockUser', which lacks return-type annotation, implicitly has an 'any' return type.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m17[0m   unblockUser()[39m[22m
+[1m[31m[7m  [0m [91m  ~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m[96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T20:53:18.699Z[39m[37m[22m - Hash: [1m[37mbf7ec729e27e2ad9[39m[37m[22m - Time: [1m[37m12012[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/common/typings/src/lib/proto/social-networkService.ts[0m:[93m17[0m:[93m44[0m - [91merror[0m[90m TS2314: [0mGeneric type 'Observable<T>' requires 1 type argument(s).[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m17[0m   unblockUser(request: IBlockUserRequest): Observable[39m[22m
+[1m[31m[7m  [0m [91m                                           ~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m[96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T20:53:25.374Z[39m[37m[22m - Hash: [1m[37ma70692a1ed9494c7[39m[37m[22m - Time: [1m[37m6091[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m7 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T20:53:32.143Z[39m[37m[22m - Hash: [1m[37ma70692a1ed9494c7[39m[37m[22m - Time: [1m[37m6232[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m263.54 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m [96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T20:54:02.411Z[39m[37m[22m - Hash: [1m[37m9d097a570d2e4472[39m[37m[22m - Time: [1m[37m20974[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m263.55 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m [96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T20:54:04.218Z[39m[37m[22m - Hash: [1m[37mc2dfa067e94bc6af[39m[37m[22m - Time: [1m[37m1732[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m263.55 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m [96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T21:01:50.277Z[39m[37m[22m - Hash: [1m[37m619a8ed802e9e052[39m[37m[22m - Time: [1m[37m1915[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m263.56 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m [96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T21:01:52.164Z[39m[37m[22m - Hash: [1m[37m259abaf4f6800dfe[39m[37m[22m - Time: [1m[37m1742[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/shared/config/src/lib/api-endpoints.ts[0m:[93m39[0m:[93m5[0m - [91merror[0m[90m TS18004: [0mNo value exists in scope for the shorthand property 'un'. Either declare one or provide an initializer.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m39[0m     un[39m[22m
+[1m[31m[7m  [0m [91m    ~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m263.56 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m [96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T21:01:53.957Z[39m[37m[22m - Hash: [1m[37ma0c2b25549800843[39m[37m[22m - Time: [1m[37m1705[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/shared/config/src/lib/api-endpoints.ts[0m:[93m39[0m:[93m5[0m - [91merror[0m[90m TS18004: [0mNo value exists in scope for the shorthand property 'unblock'. Either declare one or provide an initializer.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m39[0m     unblock[39m[22m
+[1m[31m[7m  [0m [91m    ~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m263.55 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m [96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T21:01:55.709Z[39m[37m[22m - Hash: [1m[37m52dc447cb5fa4552[39m[37m[22m - Time: [1m[37m1650[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/shared/config/src/lib/api-endpoints.ts[0m:[93m39[0m:[93m17[0m - [91merror[0m[90m TS1005: [0m'{' expected.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m39[0m     unblockUser()[39m[22m
+[1m[31m[7m  [0m [91m                ~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m263.57 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m [96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T21:02:00.822Z[39m[37m[22m - Hash: [1m[37m78f0ff462588b582[39m[37m[22m - Time: [1m[37m4795[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/shared/config/src/lib/api-endpoints.ts[0m:[93m39[0m:[93m5[0m - [91merror[0m[90m TS18004: [0mNo value exists in scope for the shorthand property 'unblockUser'. Either declare one or provide an initializer.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m39[0m     unblockUser[39m[22m
+[1m[31m[7m  [0m [91m    ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m263.57 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m [96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T21:02:03.097Z[39m[37m[22m - Hash: [1m[37me95889cb7a17f1d9[39m[37m[22m - Time: [1m[37m2038[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/shared/config/src/lib/api-endpoints.ts[0m:[93m39[0m:[93m19[0m - [91merror[0m[90m TS2304: [0mCannot find name 'trace'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m39[0m     unblockUser: (trace)[39m[22m
+[1m[31m[7m  [0m [91m                  ~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m263.57 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m [96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T21:02:07.267Z[39m[37m[22m - Hash: [1m[37ma5396563ac107d2a[39m[37m[22m - Time: [1m[37m3987[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/shared/config/src/lib/api-endpoints.ts[0m:[93m39[0m:[93m19[0m - [91merror[0m[90m TS2304: [0mCannot find name 'target'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m39[0m     unblockUser: (target)[39m[22m
+[1m[31m[7m  [0m [91m                  ~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m                                 [2m | [22m[1mNames[22m                                       [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m                                             [2m | [22mmain                                        [2m | [22m[96m273.16 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m                                          [2m | [22mruntime                                     [2m | [22m [96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy Chunk Files[22m                                    [2m | [22m[1mNames[22m                                       [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mlibs_users-client_auth_feature_shell_src_index_ts.js[39m[37m[2m | [22mfood-stories-users-client-auth-feature-shell[2m | [22m[96m107.45 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m4 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T21:02:10.871Z[39m[37m[22m - Hash: [1m[37m2aa229aa4c23ed0b[39m[37m[22m - Time: [1m[37m3386[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/auth/data-access/src/http.service.ts[39m[31m[0m:[0m[93m11:32-57[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/auth/data-access/src/http.service.ts[39m[31m[0m:[0m[93m18:31-66[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/auth/data-access/src/http.service.ts[39m[31m[0m:[0m[93m21:31-63[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/post/data-access/src/lib/like.service.ts[39m[31m[0m:[0m[93m10:25-56[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/post/data-access/src/lib/like.service.ts[39m[31m[0m:[0m[93m17:26-55[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/post/data-access/src/lib/like.service.ts[39m[31m[0m:[0m[93m24:28-59[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/post/data-access/src/lib/like.service.ts[39m[31m[0m:[0m[93m31:25-59[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PA[39m[22m[1m[31mTHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/post/data-access/src/lib/like.service.ts[39m[31m[0m:[0m[93m34:26-59[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/post/feature/create-post/src/lib/create-post/create-post.service.ts[39m[31m[0m:[0m[93m13:26-51[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/post/feature/create-post/src/lib/create-post/create-post.service.ts[39m[31m[0m:[0m[93m19:25-56[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/data-access/src/lib/profile-store.service.ts[39m[31m[0m:[0m[93m10:25-58[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/feature/src/lib/profile.service.ts[39m[31m[0m:[0m[93m56:25-70[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/ui/bio-section/src/lib/bio-section/bio-section.component.ts[39m[31m[0m:[0m[93m285:64-102[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/ui/bio-section/src/lib/bio-section/bio-section.component.ts[39m[31m[0m:[0m[93m293:44-81[39m[31m[0m - [0m[91[39m[22m[1m[31mmError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/ui/bio-section/src/lib/bio-section/bio-section.component.ts[39m[31m[0m:[0m[93m297:44-82[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/ui/bio-section/src/lib/bio-section/bio-section.component.ts[39m[31m[0m:[0m[93m304:66-106[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/ui/bio-section/src/lib/bio-section/bio-section.component.ts[39m[31m[0m:[0m[93m316:68-110[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/shared/config/src/lib/api-endpoints.ts[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/.pnpm/@angular-devkit+build-angular@16.1.4_@angular+compiler-cli@16.1.6_@types+node@18.7.1_jest-env_nmtcbqdivgvoqrukffgi6rgb2q/node_modules/@angular-devkit/build-angular/src/tools/babel/webpack-loader.js):[39m[22m
+[1m[31mSyntaxError: C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\users-client\shared\config\src\lib\api-endpoints.ts: Unexpected token (35:4)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m [90m 33 |[39m[31m         getRelationships[33m:[39m[31m (userId) [33m=>[39m[31m [32m`${BASE_URL}/social-networks/${userId}`[39m[31m[33m,[39m[31m[0m[39m[22m
+[1m[31m[0m [90m 34 |[39m[31m         unblockUser[33m:[39m[31m (targetId) [33m=>[39m[31m [0m[39m[22m
+[1m[31m[0m[31m[1m>[22m[1m[39m[31m[90m 35 |[39m[31m     }[0m[39m[22m
+[1m[31m[0m [90m    |[39m[31m     [31m[1m^[22m[1m[39m[31m[0m[39m[22m
+[1m[31m[0m [90m 36 |[39m[31m }[33m;[39m[31m[0m[39m[22m
+[1m[31m[[39m[22m[1m[31m0m [90m 37 |[39m[31m[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/shared/data-access/src/lib/http-api/users-api.ts[39m[31m[0m:[0m[93m11:25-52[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/shared/data-access/src/lib/http-api/users-api.ts[39m[31m[0m:[0m[93m14:25-60[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/shared/data-access/src/lib/http-api/users-api.ts[39m[31m[0m:[0m[93m17:25-60[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/shared/data-access/src/lib/http-api/users-api.ts[39m[31m[0m:[0m[93m20:25-58[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/shared/config/src/lib/api-endpoints.ts[0m:[93m39[0m:[93m37[0m - [91merror[0m[90m TS1005: [0m'=>' expected.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m39[0m     unblockUser: (targetId: string) =?[39m[22m
+[1m[31m[7m  [0m [91m                                    ~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/shared/config/src/lib/api-endpoints.ts[0m:[93m39[0m:[93m38[0m - [91merror[0m[90m TS1136: [0mProperty assignment expected.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m39[0m     unblockUser: (targetId: string) =?[39m[22m
+[1m[31m[7m  [0m [91m                                     ~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m7 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T21:02:12.259Z[39m[37m[22m - Hash: [1m[37m2aa229aa4c23ed0b[39m[37m[22m - Time: [1m[37m1262[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/auth/data-access/src/http.service.ts[39m[31m[0m:[0m[93m11:32-57[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/auth/data-access/src/http.service.ts[39m[31m[0m:[0m[93m18:31-66[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/auth/data-access/src/http.service.ts[39m[31m[0m:[0m[93m21:31-63[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/post/data-access/src/lib/like.service.ts[39m[31m[0m:[0m[93m10:25-56[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/post/data-access/src/lib/like.service.ts[39m[31m[0m:[0m[93m17:26-55[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/post/data-access/src/lib/like.service.ts[39m[31m[0m:[0m[93m24:28-59[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/post/data-access/src/lib/like.service.ts[39m[31m[0m:[0m[93m31:25-59[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PA[39m[22m[1m[31mTHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/post/data-access/src/lib/like.service.ts[39m[31m[0m:[0m[93m34:26-59[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/post/feature/create-post/src/lib/create-post/create-post.service.ts[39m[31m[0m:[0m[93m13:26-51[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/post/feature/create-post/src/lib/create-post/create-post.service.ts[39m[31m[0m:[0m[93m19:25-56[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/data-access/src/lib/profile-store.service.ts[39m[31m[0m:[0m[93m10:25-58[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/feature/src/lib/profile.service.ts[39m[31m[0m:[0m[93m56:25-70[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/ui/bio-section/src/lib/bio-section/bio-section.component.ts[39m[31m[0m:[0m[93m285:64-102[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/ui/bio-section/src/lib/bio-section/bio-section.component.ts[39m[31m[0m:[0m[93m293:44-81[39m[31m[0m - [0m[91[39m[22m[1m[31mmError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/ui/bio-section/src/lib/bio-section/bio-section.component.ts[39m[31m[0m:[0m[93m297:44-82[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/ui/bio-section/src/lib/bio-section/bio-section.component.ts[39m[31m[0m:[0m[93m304:66-106[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/ui/bio-section/src/lib/bio-section/bio-section.component.ts[39m[31m[0m:[0m[93m316:68-110[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/shared/config/src/lib/api-endpoints.ts[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/.pnpm/@angular-devkit+build-angular@16.1.4_@angular+compiler-cli@16.1.6_@types+node@18.7.1_jest-env_nmtcbqdivgvoqrukffgi6rgb2q/node_modules/@angular-devkit/build-angular/src/tools/babel/webpack-loader.js):[39m[22m
+[1m[31mSyntaxError: C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\users-client\shared\config\src\lib\api-endpoints.ts: Unexpected token (35:4)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m [90m 33 |[39m[31m         getRelationships[33m:[39m[31m (userId) [33m=>[39m[31m [32m`${BASE_URL}/social-networks/${userId}`[39m[31m[33m,[39m[31m[0m[39m[22m
+[1m[31m[0m [90m 34 |[39m[31m         unblockUser[33m:[39m[31m (targetId) [33m=>[39m[31m [0m[39m[22m
+[1m[31m[0m[31m[1m>[22m[1m[39m[31m[90m 35 |[39m[31m     }[0m[39m[22m
+[1m[31m[0m [90m    |[39m[31m     [31m[1m^[22m[1m[39m[31m[0m[39m[22m
+[1m[31m[0m [90m 36 |[39m[31m }[33m;[39m[31m[0m[39m[22m
+[1m[31m[[39m[22m[1m[31m0m [90m 37 |[39m[31m[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/shared/data-access/src/lib/http-api/users-api.ts[39m[31m[0m:[0m[93m11:25-52[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/shared/data-access/src/lib/http-api/users-api.ts[39m[31m[0m:[0m[93m14:25-60[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/shared/data-access/src/lib/http-api/users-api.ts[39m[31m[0m:[0m[93m17:25-60[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/shared/data-access/src/lib/http-api/users-api.ts[39m[31m[0m:[0m[93m20:25-58[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/shared/config/src/lib/api-endpoints.ts[0m:[93m39[0m:[93m37[0m - [91merror[0m[90m TS1005: [0m'=>' expected.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m39[0m     unblockUser: (targetId: string) =?[39m[22m
+[1m[31m[7m  [0m [91m                                    ~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/shared/config/src/lib/api-endpoints.ts[0m:[93m39[0m:[93m38[0m - [91merror[0m[90m TS1136: [0mProperty assignment expected.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m39[0m     unblockUser: (targetId: string) =?[39m[22m
+[1m[31m[7m  [0m [91m                                     ~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m[96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T21:02:13.959Z[39m[37m[22m - Hash: [1m[37m4a1f8914340093b1[39m[37m[22m - Time: [1m[37m1594[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/auth/data-access/src/http.service.ts[39m[31m[0m:[0m[93m11:32-57[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/auth/data-access/src/http.service.ts[39m[31m[0m:[0m[93m18:31-66[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/auth/data-access/src/http.service.ts[39m[31m[0m:[0m[93m21:31-63[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/post/data-access/src/lib/like.service.ts[39m[31m[0m:[0m[93m10:25-56[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/post/data-access/src/lib/like.service.ts[39m[31m[0m:[0m[93m17:26-55[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/post/data-access/src/lib/like.service.ts[39m[31m[0m:[0m[93m24:28-59[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/post/data-access/src/lib/like.service.ts[39m[31m[0m:[0m[93m31:25-59[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PA[39m[22m[1m[31mTHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/post/data-access/src/lib/like.service.ts[39m[31m[0m:[0m[93m34:26-59[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/post/feature/create-post/src/lib/create-post/create-post.service.ts[39m[31m[0m:[0m[93m13:26-51[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/post/feature/create-post/src/lib/create-post/create-post.service.ts[39m[31m[0m:[0m[93m19:25-56[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/data-access/src/lib/profile-store.service.ts[39m[31m[0m:[0m[93m10:25-58[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/feature/src/lib/profile.service.ts[39m[31m[0m:[0m[93m56:25-70[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/ui/bio-section/src/lib/bio-section/bio-section.component.ts[39m[31m[0m:[0m[93m285:64-102[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/ui/bio-section/src/lib/bio-section/bio-section.component.ts[39m[31m[0m:[0m[93m293:44-81[39m[31m[0m - [0m[91[39m[22m[1m[31mmError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/ui/bio-section/src/lib/bio-section/bio-section.component.ts[39m[31m[0m:[0m[93m297:44-82[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/ui/bio-section/src/lib/bio-section/bio-section.component.ts[39m[31m[0m:[0m[93m304:66-106[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/ui/bio-section/src/lib/bio-section/bio-section.component.ts[39m[31m[0m:[0m[93m316:68-110[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/shared/config/src/lib/api-endpoints.ts[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/.pnpm/@angular-devkit+build-angular@16.1.4_@angular+compiler-cli@16.1.6_@types+node@18.7.1_jest-env_nmtcbqdivgvoqrukffgi6rgb2q/node_modules/@angular-devkit/build-angular/src/tools/babel/webpack-loader.js):[39m[22m
+[1m[31mSyntaxError: C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\users-client\shared\config\src\lib\api-endpoints.ts: Unexpected token (35:4)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m [90m 33 |[39m[31m         getRelationships[33m:[39m[31m (userId) [33m=>[39m[31m [32m`${BASE_URL}/social-networks/${userId}`[39m[31m[33m,[39m[31m[0m[39m[22m
+[1m[31m[0m [90m 34 |[39m[31m         unblockUser[33m:[39m[31m (targetId) [33m=>[39m[31m [0m[39m[22m
+[1m[31m[0m[31m[1m>[22m[1m[39m[31m[90m 35 |[39m[31m     }[0m[39m[22m
+[1m[31m[0m [90m    |[39m[31m     [31m[1m^[22m[1m[39m[31m[0m[39m[22m
+[1m[31m[0m [90m 36 |[39m[31m }[33m;[39m[31m[0m[39m[22m
+[1m[31m[[39m[22m[1m[31m0m [90m 37 |[39m[31m[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/shared/data-access/src/lib/http-api/users-api.ts[39m[31m[0m:[0m[93m11:25-52[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/shared/data-access/src/lib/http-api/users-api.ts[39m[31m[0m:[0m[93m14:25-60[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/shared/data-access/src/lib/http-api/users-api.ts[39m[31m[0m:[0m[93m17:25-60[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/shared/data-access/src/lib/http-api/users-api.ts[39m[31m[0m:[0m[93m20:25-58[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/shared/config/src/lib/api-endpoints.ts[0m:[93m39[0m:[93m37[0m - [91merror[0m[90m TS1005: [0m'=>' expected.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m39[0m     unblockUser: (targetId: string) =[39m[22m
+[1m[31m[7m  [0m [91m                                    ~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m[96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T21:02:17.064Z[39m[37m[22m - Hash: [1m[37m8ee87a25310dde5c[39m[37m[22m - Time: [1m[37m2981[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/auth/data-access/src/http.service.ts[39m[31m[0m:[0m[93m11:32-57[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/auth/data-access/src/http.service.ts[39m[31m[0m:[0m[93m18:31-66[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/auth/data-access/src/http.service.ts[39m[31m[0m:[0m[93m21:31-63[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/post/data-access/src/lib/like.service.ts[39m[31m[0m:[0m[93m10:25-56[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/post/data-access/src/lib/like.service.ts[39m[31m[0m:[0m[93m17:26-55[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/post/data-access/src/lib/like.service.ts[39m[31m[0m:[0m[93m24:28-59[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/post/data-access/src/lib/like.service.ts[39m[31m[0m:[0m[93m31:25-59[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PA[39m[22m[1m[31mTHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/post/data-access/src/lib/like.service.ts[39m[31m[0m:[0m[93m34:26-59[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/post/feature/create-post/src/lib/create-post/create-post.service.ts[39m[31m[0m:[0m[93m13:26-51[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/post/feature/create-post/src/lib/create-post/create-post.service.ts[39m[31m[0m:[0m[93m19:25-56[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/data-access/src/lib/profile-store.service.ts[39m[31m[0m:[0m[93m10:25-58[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/feature/src/lib/profile.service.ts[39m[31m[0m:[0m[93m56:25-70[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/ui/bio-section/src/lib/bio-section/bio-section.component.ts[39m[31m[0m:[0m[93m285:64-102[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/ui/bio-section/src/lib/bio-section/bio-section.component.ts[39m[31m[0m:[0m[93m293:44-81[39m[31m[0m - [0m[91[39m[22m[1m[31mmError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/ui/bio-section/src/lib/bio-section/bio-section.component.ts[39m[31m[0m:[0m[93m297:44-82[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/ui/bio-section/src/lib/bio-section/bio-section.component.ts[39m[31m[0m:[0m[93m304:66-106[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/ui/bio-section/src/lib/bio-section/bio-section.component.ts[39m[31m[0m:[0m[93m316:68-110[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/shared/config/src/lib/api-endpoints.ts[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/.pnpm/@angular-devkit+build-angular@16.1.4_@angular+compiler-cli@16.1.6_@types+node@18.7.1_jest-env_nmtcbqdivgvoqrukffgi6rgb2q/node_modules/@angular-devkit/build-angular/src/tools/babel/webpack-loader.js):[39m[22m
+[1m[31mSyntaxError: C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\users-client\shared\config\src\lib\api-endpoints.ts: Unterminated template. (34:73)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m [90m 32 |[39m[31m         blockUser[33m:[39m[31m (targetId) [33m=>[39m[31m [32m`${BASE_URL}/social-networks/block/${targetId}`[39m[31m[33m,[39m[31m[0m[39m[22m
+[1m[31m[0m [90m 33 |[39m[31m         getRelationships[33m:[39m[31m (userId) [33m=>[39m[31m [32m`${BASE_URL}/social-networks/${userId}`[39m[31m[33m,[39m[31m[0m[39m[22m
+[1m[31m[0m[31m[1m>[22m[1m[39m[31m[90m 34 |[39m[31m         unblockUser[33m:[[39m[22m[1m[31m39m (targetId) [33m=>[39m[31m [32m`${BASE_URL}/social-networks/${target}[39m[31m[0m[39m[22m
+[1m[31m[0m [90m    |[39m[31m                                                                          [31m[1m^[22m[1m[39m[31m[0m[39m[22m
+[1m[31m[0m [90m 35 |[39m[31m[0m[39m[22m
+[1m[31m[0m [90m 36 |[39m[31m [32m}[39m[31m[0m[39m[22m
+[1m[31m[0m [90m 37 |[39m[31m [32m    }[39m[31m[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/shared/data-access/src/lib/http-api/users-api.ts[39m[31m[0m:[0m[93m11:25-52[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/shared/data-access/src/lib/http-api/users-api.ts[39m[31m[0m:[0m[93m14:25-60[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/shared/data-access/src/lib/http-api/users-api.ts[39m[31m[0m:[0m[93m17:25-60[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/shared/data-access/src/lib/http-api/users-api.ts[39m[31m[0m:[0m[93m20:25-58[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/shared/config/src/lib/api-endpoints.ts[0m:[93m39[0m:[93m71[0m - [91merror[0m[90m TS2552: [0mCannot find name 'target'. Did you mean 'targetId'?[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m39[0m     unblockUser: (targetId: string) => `${BASE_URL}/social-networks/${target[39m[22m
+[1m[31m[7m  [0m [91m                                                                      ~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/users-client/shared/config/src/lib/api-endpoints.ts[0m:[93m39[0m:[93m19[0m[39m[22m
+[1m[31m    [7m39[0m    [39m[22m[1m[31m unblockUser: (targetId: string) => `${BASE_URL}/social-networks/${target[39m[22m
+[1m[31m    [7m  [0m [96m                  ~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    'targetId' is declared here.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/shared/config/src/lib/api-endpoints.ts[0m:[93m42[0m:[93m2[0m - [91merror[0m[90m TS1160: [0mUnterminated template literal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m42[0m }[39m[22m
+[1m[31m[7m  [0m [91m [0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m[96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T21:02:18.612Z[39m[37m[22m - Hash: [1m[37m2369f13d4364e237[39m[37m[22m - Time: [1m[37m1441[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/auth/data-access/src/http.service.ts[39m[31m[0m:[0m[93m11:32-57[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/auth/data-access/src/http.service.ts[39m[31m[0m:[0m[93m18:31-66[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/auth/data-access/src/http.service.ts[39m[31m[0m:[0m[93m21:31-63[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/post/data-access/src/lib/like.service.ts[39m[31m[0m:[0m[93m10:25-56[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/post/data-access/src/lib/like.service.ts[39m[31m[0m:[0m[93m17:26-55[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/post/data-access/src/lib/like.service.ts[39m[31m[0m:[0m[93m24:28-59[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/post/data-access/src/lib/like.service.ts[39m[31m[0m:[0m[93m31:25-59[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PA[39m[22m[1m[31mTHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/post/data-access/src/lib/like.service.ts[39m[31m[0m:[0m[93m34:26-59[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/post/feature/create-post/src/lib/create-post/create-post.service.ts[39m[31m[0m:[0m[93m13:26-51[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/post/feature/create-post/src/lib/create-post/create-post.service.ts[39m[31m[0m:[0m[93m19:25-56[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/data-access/src/lib/profile-store.service.ts[39m[31m[0m:[0m[93m10:25-58[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/feature/src/lib/profile.service.ts[39m[31m[0m:[0m[93m56:25-70[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/ui/bio-section/src/lib/bio-section/bio-section.component.ts[39m[31m[0m:[0m[93m285:64-102[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/ui/bio-section/src/lib/bio-section/bio-section.component.ts[39m[31m[0m:[0m[93m293:44-81[39m[31m[0m - [0m[91[39m[22m[1m[31mmError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/ui/bio-section/src/lib/bio-section/bio-section.component.ts[39m[31m[0m:[0m[93m297:44-82[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/ui/bio-section/src/lib/bio-section/bio-section.component.ts[39m[31m[0m:[0m[93m304:66-106[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/ui/bio-section/src/lib/bio-section/bio-section.component.ts[39m[31m[0m:[0m[93m316:68-110[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/shared/config/src/lib/api-endpoints.ts[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/.pnpm/@angular-devkit+build-angular@16.1.4_@angular+compiler-cli@16.1.6_@types+node@18.7.1_jest-env_nmtcbqdivgvoqrukffgi6rgb2q/node_modules/@angular-devkit/build-angular/src/tools/babel/webpack-loader.js):[39m[22m
+[1m[31mSyntaxError: C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\users-client\shared\config\src\lib\api-endpoints.ts: Unterminated template. (34:47)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m [90m 32 |[39m[31m         blockUser[33m:[39m[31m (targetId) [33m=>[39m[31m [32m`${BASE_URL}/social-networks/block/${targetId}`[39m[31m[33m,[39m[31m[0m[39m[22m
+[1m[31m[0m [90m 33 |[39m[31m         getRelationships[33m:[39m[31m (userId) [33m=>[39m[31m [32m`${BASE_URL}/social-networks/${userId}`[39m[31m[33m,[39m[31m[0m[39m[22m
+[1m[31m[0m[31m[1m>[22m[1m[39m[31m[90m 34 |[39m[31m         unblockUser[33m:[[39m[22m[1m[31m39m (targetId) [33m=>[39m[31m [32m`${BASE_URL}/social-networks/[39m[31m[0m[39m[22m
+[1m[31m[0m [90m    |[39m[31m                                                [31m[1m^[22m[1m[39m[31m[0m[39m[22m
+[1m[31m[0m [90m 35 |[39m[31m [32m  }[39m[31m[0m[39m[22m
+[1m[31m[0m [90m 36 |[39m[31m[0m[39m[22m
+[1m[31m[0m [90m 37 |[39m[31m [32m}[39m[31m[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/shared/data-access/src/lib/http-api/users-api.ts[39m[31m[0m:[0m[93m11:25-52[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/shared/data-access/src/lib/http-api/users-api.ts[39m[31m[0m:[0m[93m14:25-60[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/shared/data-access/src/lib/http-api/users-api.ts[39m[31m[0m:[0m[93m17:25-60[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/shared/data-access/src/lib/http-api/users-api.ts[39m[31m[0m:[0m[93m20:25-58[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'API_ENDPOINTS' (imported as 'API_ENDPOINTS') was not found in '@food-stories/users-client/shared/config' (possible exports: REF_PATHS, environment)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/shared/config/src/lib/api-endpoints.ts[0m:[93m42[0m:[93m2[0m - [91merror[0m[90m TS1160: [0mUnterminated template literal.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m42[0m }[39m[22m
+[1m[31m[7m  [0m [91m [0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m                                 [2m | [22m[1mNames[22m                                       [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m                                             [2m | [22mmain                                        [2m | [22m[96m263.61 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m                                          [2m | [22mruntime                                     [2m | [22m [96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m[1mLazy Chunk Files[22m                                    [2m | [22m[1mNames[22m                                       [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mlibs_users-client_auth_feature_shell_src_index_ts.js[39m[37m[2m | [22mfood-stories-users-client-auth-feature-shell[2m | [22m[96m107.45 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m4 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T21:02:20.509Z[39m[37m[22m - Hash: [1m[37m0bcb68ea05d69f0e[39m[37m[22m - Time: [1m[37m1736[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m263.61 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m [96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T21:02:25.508Z[39m[37m[22m - Hash: [1m[37m61ea76f2f6b4d8eb[39m[37m[22m - Time: [1m[37m3636[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m263.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m [96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T21:02:27.346Z[39m[37m[22m - Hash: [1m[37m2aaf1460cfd20f7d[39m[37m[22m - Time: [1m[37m1674[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/shared/config/src/lib/api-endpoints.ts[0m:[93m42[0m:[93m1[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m42[0m }[39m[22m
+[1m[31m[7m  [0m [91m~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m263.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m [96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T21:02:28.716Z[39m[37m[22m - Hash: [1m[37m9c8deff3b0c9bc01[39m[37m[22m - Time: [1m[37m1287[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m263.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m [96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T21:04:47.277Z[39m[37m[22m - Hash: [1m[37m98928a5f39ce4a2a[39m[37m[22m - Time: [1m[37m1414[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m263.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m [96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T21:04:48.443Z[39m[37m[22m - Hash: [1m[37m7253e2b5d09d7569[39m[37m[22m - Time: [1m[37m1043[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m263.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m [96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T21:04:49.625Z[39m[37m[22m - Hash: [1m[37mcbb5abdd63d070a9[39m[37m[22m - Time: [1m[37m1138[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m263.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m [96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T21:05:03.315Z[39m[37m[22m - Hash: [1m[37m46ad93e0bfe07f0d[39m[37m[22m - Time: [1m[37m1102[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m263.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m [96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T21:05:04.577Z[39m[37m[22m - Hash: [1m[37mbc003c95b16154db[39m[37m[22m - Time: [1m[37m1146[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m263.64 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m [96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T21:05:05.522Z[39m[37m[22m - Hash: [1m[37m0c9d964748731d0c[39m[37m[22m - Time: [1m[37m882[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m263.64 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m [96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T21:05:06.634Z[39m[37m[22m - Hash: [1m[37mab2c379e2025f2dc[39m[37m[22m - Time: [1m[37m1063[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m263.64 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m [96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T21:08:38.503Z[39m[37m[22m - Hash: [1m[37m1cdca7d8971f59eb[39m[37m[22m - Time: [1m[37m11397[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m263.71 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m [96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T21:08:46.025Z[39m[37m[22m - Hash: [1m[37mcebaca6acfe00566[39m[37m[22m - Time: [1m[37m7033[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/profile/ui/bio-section/src/lib/bio-section/bio-section.component.ts[0m:[93m96[0m:[93m3[0m - [91merror[0m[90m TS1109: [0mExpression expected.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m96[0m   }[39m[22m
+[1m[31m[7m  [0m [91m  ~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m263.73 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m [96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T21:08:50.484Z[39m[37m[22m - Hash: [1m[37m275eae9058fd25a7[39m[37m[22m - Time: [1m[37m4262[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/profile/ui/bio-section/src/lib/bio-section/bio-section.component.ts[0m:[93m96[0m:[93m15[0m - [91merror[0m[90m TS2554: [0mExpected 1-2 arguments, but got 0.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m96[0m     this.http.delete()[39m[22m
+[1m[31m[7m  [0m [91m              ~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mnode_modules/.pnpm/@angular+common@16.1.0_@angular+core@16.1.0_rxjs@7.8.1/node_modules/@angular/common/http/index.d.ts[0m:[93m829[0m:[93m12[0m[39m[22m
+[1m[31m    [7m829[0m     delete(url: string, options?: {[39m[22m
+[1m[31m    [7m   [0m [96m           ~~~~~~~~~~~[0m[39m[22m
+[1m[31m    An argument for 'url' was not provided.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mvendor.js[39m[37m          [2m | [22mvendor [2m | [22m  [96m6.34 MB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m220.74 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m [96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m4 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T21:09:01.293Z[39m[37m[22m - Hash: [1m[37m4a56b89356525599[39m[37m[22m - Time: [1m[37m10432[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/profile/feature/src/lib/profile.component.html[0m:[93m4[0m:[93m7[0m - [91merror[0m[90m NG8001: [0m'fs-bio-section' is not a known element:[39m[22m
+[1m[31m1. If 'fs-bio-section' is an Angular component, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'fs-bio-section' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m4[0m       <fs-bio-section [isFollowing]="isFollowing$ | async" [isBlocked]="isBlocked$ | async" [isOwnProfile]="isOwnProfile$ | async"  [currentUser]="currUser$ | async"></fs-bio-section>[39m[22m
+[1m[31m[7m [0m [91m      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/users-client/profile/feature/src/lib/profile.component.ts[0m:[93m10[0m:[93m16[0m[39m[22m
+[1m[31m    [7m10[0m   templateUrl: './profile.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ProfileComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/profile/feature/src/lib/profile.component.html[0m:[93m4[0m:[93m23[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'isFollowing' since it isn't a known property of 'fs-bio-section'.[39m[22m
+[1m[31m1. If 'fs-bio-section' is an Angular component and it has 'isFollowing' input, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'fs-bio-section' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m4[0m       <fs-bio-section [isFollowing]="isFollowing$ | async" [isBlocked]="isBlocked$ | async" [isOwnProfile]="isOwnProfile$ | async"  [currentUser]="currUser$ | async"></fs-bio-section>[39m[22m
+[1m[31m[7m [0m [91m                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [9[39m[22m[1m[31m6mlibs/users-client/profile/feature/src/lib/profile.component.ts[0m:[93m10[0m:[93m16[0m[39m[22m
+[1m[31m    [7m10[0m   templateUrl: './profile.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ProfileComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/profile/feature/src/lib/profile.component.html[0m:[93m4[0m:[93m53[0m - [91merror[0m[90m NG8004: [0mNo pipe found with name 'async'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m4[0m       <fs-bio-section [isFollowing]="isFollowing$ | async" [isBlocked]="isBlocked$ | async" [isOwnProfile]="isOwnProfile$ | async"  [currentUser]="currUser$ | async"></fs-bio-section>[39m[22m
+[1m[31m[7m [0m [91m                                                    ~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/users-client/profile/feature/src/lib/profile.component.ts[0m:[93m10[0m:[93m16[0m[39m[22m
+[1m[31m    [7m10[0m   templateUrl: './profile.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ProfileComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/profile/feature/src/lib/profile.component.html[0m:[93m4[0m:[93m60[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'isBlocked' since it isn't a known property of 'fs-bio-section'.[39m[22m
+[1m[31m1. If 'fs-bio-section' is an Angular component and it has 'isBlocked' input, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'fs-bio-section' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m4[0m       <fs-bio-section [isFollowing]="isFollowing$ | async" [isBlocked]="isBlocked$ | async" [isOwnProfile]="isOwnProfile$ | async"  [currentUser]="currUser$ | async"></fs-bio-section>[39m[22m
+[1m[31m[7m [0m [91m                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/users-client/profile/feature/src/[39m[22m[1m[31mlib/profile.component.ts[0m:[93m10[0m:[93m16[0m[39m[22m
+[1m[31m    [7m10[0m   templateUrl: './profile.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ProfileComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/profile/feature/src/lib/profile.component.html[0m:[93m4[0m:[93m86[0m - [91merror[0m[90m NG8004: [0mNo pipe found with name 'async'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m4[0m       <fs-bio-section [isFollowing]="isFollowing$ | async" [isBlocked]="isBlocked$ | async" [isOwnProfile]="isOwnProfile$ | async"  [currentUser]="currUser$ | async"></fs-bio-section>[39m[22m
+[1m[31m[7m [0m [91m                                                                                     ~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/users-client/profile/feature/src/lib/profile.component.ts[0m:[93m10[0m:[93m16[0m[39m[22m
+[1m[31m    [7m10[0m   templateUrl: './profile.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ProfileComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/profile/feature/src/lib/profile.component.html[0m:[93m4[0m:[93m93[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'isOwnProfile' since it isn't a known property of 'fs-bio-section'.[39m[22m
+[1m[31m1. If 'fs-bio-section' is an Angular component and it has 'isOwnProfile' input, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'fs-bio-section' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m4[0m       <fs-bio-section [isFollowing]="isFollowing$ | async" [isBlocked]="isBlocked$ | async" [isOwnProfile]="isOwnProfile$ | async"  [currentUser]="currUser$ | async"></fs-bio-section>[39m[22m
+[1m[31m[7m [0m [91m                                                                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96m[39m[22m[1m[31mlibs/users-client/profile/feature/src/lib/profile.component.ts[0m:[93m10[0m:[93m16[0m[39m[22m
+[1m[31m    [7m10[0m   templateUrl: './profile.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ProfileComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/profile/feature/src/lib/profile.component.html[0m:[93m4[0m:[93m125[0m - [91merror[0m[90m NG8004: [0mNo pipe found with name 'async'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m4[0m       <fs-bio-section [isFollowing]="isFollowing$ | async" [isBlocked]="isBlocked$ | async" [isOwnProfile]="isOwnProfile$ | async"  [currentUser]="currUser$ | async"></fs-bio-section>[39m[22m
+[1m[31m[7m [0m [91m                                                                                                                            ~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/users-client/profile/feature/src/lib/profile.component.ts[0m:[93m10[0m:[93m16[0m[39m[22m
+[1m[31m    [7m10[0m   templateUrl: './profile.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ProfileComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/profile/feature/src/lib/profile.component.html[0m:[93m4[0m:[93m133[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'currentUser' since it isn't a known property of 'fs-bio-section'.[39m[22m
+[1m[31m1. If 'fs-bio-section' is an Angular component and it has 'currentUser' input, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'fs-bio-section' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m4[0m       <fs-bio-section [isFollowing]="isFollowing$ | async" [isBlocked]="isBlocked$ | async" [isOwnProfile]="isOwnProfile$ | async"  [currentUser]="currUser$ | async"></fs-bio-section>[39m[22m
+[1m[31m[7m [0m [91m                                                                    [39m[22m[1m[31m                                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/users-client/profile/feature/src/lib/profile.component.ts[0m:[93m10[0m:[93m16[0m[39m[22m
+[1m[31m    [7m10[0m   templateUrl: './profile.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ProfileComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/profile/feature/src/lib/profile.component.html[0m:[93m4[0m:[93m160[0m - [91merror[0m[90m NG8004: [0mNo pipe found with name 'async'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m4[0m       <fs-bio-section [isFollowing]="isFollowing$ | async" [isBlocked]="isBlocked$ | async" [isOwnProfile]="isOwnProfile$ | async"  [currentUser]="currUser$ | async"></fs-bio-section>[39m[22m
+[1m[31m[7m [0m [91m                                                                                                                                                               ~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/users-client/profile/feature/src/lib/profile.component.ts[0m:[93m10[0m:[93m16[0m[39m[22m
+[1m[31m    [7m10[0m   templateUrl: './profile.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ProfileComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/profile/feature/src/lib/profile.component.html[0m:[93m9[0m:[93m9[0m - [91merror[0m[90m NG8001: [0m'mat-tab-group' is not a known element:[39m[22m
+[1m[31m1. If 'mat-tab-group' is an Angular component, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'mat-tab-group' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m9[0m         <mat-tab-group  class="w-full md:px-10">[39m[22m
+[1m[31m[7m [0m [91m        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/users-client/profile/feature/src/lib/profile.component.ts[0m:[93m10[0m:[93m16[0m[39m[22m
+[1m[31m    [7m10[0m   templateUrl: './profile.component.html',[39m[22m
+[1m[31m    [7m  [[39m[22m[1m[31m0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ProfileComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/profile/feature/src/lib/profile.component.html[0m:[93m10[0m:[93m11[0m - [91merror[0m[90m NG8001: [0m'mat-tab' is not a known element:[39m[22m
+[1m[31m1. If 'mat-tab' is an Angular component, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'mat-tab' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m10[0m           <mat-tab>[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/users-client/profile/feature/src/lib/profile.component.ts[0m:[93m10[0m:[93m16[0m[39m[22m
+[1m[31m    [7m10[0m   templateUrl: './profile.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ProfileComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/profile/feature/src/lib/profile.component.html[0m:[93m12[0m:[93m15[0m - [91merror[0m[90m NG8001: [0m'mat-icon' is not a known element:[39m[22m
+[1m[31m1. If 'mat-icon' is an Angular component, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m12[0m               <mat-icon class="example-tab-icon">grid_view</mat-icon>[39m[22m
+[1m[31m[7m  [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/users-client/profile/feature/src/lib/profile.component.ts[0m:[93m10[0m:[93m16[0m[39m[22m
+[1m[31m    [7m10[0m   templateUrl: './profile.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ProfileComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/profile/feature/src/lib/profile.component.html[0m:[93m15[0m:[93m15[0m - [91merror[0m[90m NG8001: [0m'fs-posts-grid' is not a known element:[39m[22m
+[1m[31m1. If 'fs-posts-grid' is a[39m[22m[1m[31mn Angular component, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'fs-posts-grid' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m15[0m               <fs-posts-grid [currUser]="currUser$ | async" [posts]="(posts$ | async) || []"></fs-posts-grid>[39m[22m
+[1m[31m[7m  [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/users-client/profile/feature/src/lib/profile.component.ts[0m:[93m10[0m:[93m16[0m[39m[22m
+[1m[31m    [7m10[0m   templateUrl: './profile.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ProfileComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/profile/feature/src/lib/profile.component.html[0m:[93m15[0m:[93m30[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'currUser' since it isn't a known property of 'fs-posts-grid'.[39m[22m
+[1m[31m1. If 'fs-posts-grid' is an Angular component and it has 'currUser' input, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'fs-posts-grid' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m15[0m               <fs-posts-grid [currUser]="currUser$ | async" [posts]="(posts$ | async) || []"></fs-posts-grid>[39m[22m
+[1m[31m[7m  [0m [91m                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/users-client/profile/feature/src/lib/profile.component.ts[0m:[93m10[0m:[93m16[0m[39m[22m
+[1m[31m    [7m10[0m   templateUrl: './profile.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ProfileComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/profile/feature/src/lib/profile.component.html[0m:[93m15[0m:[93m54[0m - [91merror[0m[90m NG8004: [0mNo pi[39m[22m[1m[31mpe found with name 'async'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m15[0m               <fs-posts-grid [currUser]="currUser$ | async" [posts]="(posts$ | async) || []"></fs-posts-grid>[39m[22m
+[1m[31m[7m  [0m [91m                                                     ~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/users-client/profile/feature/src/lib/profile.component.ts[0m:[93m10[0m:[93m16[0m[39m[22m
+[1m[31m    [7m10[0m   templateUrl: './profile.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ProfileComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/profile/feature/src/lib/profile.component.html[0m:[93m15[0m:[93m61[0m - [91merror[0m[90m NG8002: [0mCan't bind to 'posts' since it isn't a known property of 'fs-posts-grid'.[39m[22m
+[1m[31m1. If 'fs-posts-grid' is an Angular component and it has 'posts' input, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'fs-posts-grid' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m15[0m               <fs-posts-grid [currUser]="currUser$ | async" [posts]="(posts$ | async) || []"></fs-posts-grid>[39m[22m
+[1m[31m[7m  [0m [91m                                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/users-client/profile/feature/src/lib/profile.component.ts[0m:[93m10[0m:[93m16[0m[39m[22m
+[1m[31m    [7m10[0m   templateUrl: './profile.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ProfileComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/profile/feature/src/lib/profile.component.html[0m:[93m15[0m:[93m80[0m - [91merror[0m[90m NG8004: [0mNo pipe found with name 'async'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m15[0m               <fs-posts-grid [currUser]="currUser$ | async" [posts]="(posts$ | async) || []"></fs-posts-grid>[39m[22m
+[1m[31m[7m  [0m [91m                      [39m[22m[1m[31m                                                         ~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/users-client/profile/feature/src/lib/profile.component.ts[0m:[93m10[0m:[93m16[0m[39m[22m
+[1m[31m    [7m10[0m   templateUrl: './profile.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ProfileComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/profile/feature/src/lib/profile.component.html[0m:[93m19[0m:[93m11[0m - [91merror[0m[90m NG8001: [0m'mat-tab' is not a known element:[39m[22m
+[1m[31m1. If 'mat-tab' is an Angular component, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'mat-tab' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m19[0m           <mat-tab>[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/users-client/profile/feature/src/lib/profile.component.ts[0m:[93m10[0m:[93m16[0m[39m[22m
+[1m[31m    [7m10[0m   templateUrl: './profile.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ProfileComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/profile/feature/src/lib/profile.component.html[0m:[93m21[0m:[93m15[0m - [91merror[0m[90m NG8001: [0m'mat-icon' is not a known element:[39m[22m
+[1m[31m1. If 'mat-icon' is an Angular component, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m21[0m               <mat-icon class="example-tab-icon">menu_book</mat-icon>[39m[22m
+[1m[31m[7m  [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/users-client/profile/feature/src/lib/profile.component.ts[0m:[93m10[0m:[93m16[0m[39m[22m
+[1m[31m    [7m10[0m   templateUrl: './profile.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component Prof[39m[22m[1m[31mileComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/profile/feature/src/lib/profile.component.html[0m:[93m26[0m:[93m11[0m - [91merror[0m[90m NG8001: [0m'mat-tab' is not a known element:[39m[22m
+[1m[31m1. If 'mat-tab' is an Angular component, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'mat-tab' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m26[0m           <mat-tab>[39m[22m
+[1m[31m[7m  [0m [91m          ~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/users-client/profile/feature/src/lib/profile.component.ts[0m:[93m10[0m:[93m16[0m[39m[22m
+[1m[31m    [7m10[0m   templateUrl: './profile.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ProfileComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/profile/feature/src/lib/profile.component.html[0m:[93m28[0m:[93m15[0m - [91merror[0m[90m NG8001: [0m'mat-icon' is not a known element:[39m[22m
+[1m[31m1. If 'mat-icon' is an Angular component, then verify that it is part of this module.[39m[22m
+[1m[31m2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m28[0m               <mat-icon class="example-tab-icon">sell</mat-icon>[39m[22m
+[1m[31m[7m  [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m  [96mlibs/users-client/profile/feature/src/lib/profile.component.ts[0m:[93m10[0m:[93m16[0m[39m[22m
+[1m[31m    [7m10[0m   templateUrl: './profile.component.html',[39m[22m
+[1m[31m    [7m  [0m [96m               ~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m    Error occurs in the template of component ProfileComponent.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/profile/feature/src/lib/profile.module.ts[0m:[93m6[0m:[93m10[0m - [91merror[0m[90m TS2305: [0mModule '"@food-stories/users-client/profile/ui/bio-section"' has no exported member 'BioSectionComponent'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m6[0m import { BioSectionComponent } from '@food-stories/users-clien[39m[22m[1m[31mt/profile/ui/bio-section';[39m[22m
+[1m[31m[7m [0m [91m         ~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/profile/feature/src/lib/profile.module.ts[0m:[93m16[0m:[93m12[0m - [91merror[0m[90m NG1010: [0mValue[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/profile/ui/bio-section/src/index.ts[0m:[93m1[0m:[93m15[0m - [91merror[0m[90m TS2306: [0mFile 'C:/Users/JUNAID/OneDrive/Desktop/FoodStories/food-stories/libs/users-client/profile/ui/bio-section/src/lib/bio-section/bio-section.component.ts' is not a module.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m1[0m export * from './lib/bio-section/bio-section.component';[39m[22m
+[1m[31m[7m [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: emitting)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mvendor.js[39m[37m          [2m | [22mvendor [2m | [22m  [96m6.38 MB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m263.86 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m [96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m4 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T21:09:15.118Z[39m[37m[22m - Hash: [1m[37mffe3c1553b691b47[39m[37m[22m - Time: [1m[37m13411[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m263.92 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m [96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T21:09:19.120Z[39m[37m[22m - Hash: [1m[37mb5e0c243e9b72e34[39m[37m[22m - Time: [1m[37m3916[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m263.93 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m [96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T21:09:25.465Z[39m[37m[22m - Hash: [1m[37m8cd6d2bf8a15274e[39m[37m[22m - Time: [1m[37m6122[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m263.94 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m [96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T21:09:29.411Z[39m[37m[22m - Hash: [1m[37m4b6f02ac066dd5f6[39m[37m[22m - Time: [1m[37m3842[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mvendor.js[39m[37m          [2m | [22mvendor [2m | [22m  [96m6.32 MB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m233.93 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m [96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m4 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T21:09:36.070Z[39m[37m[22m - Hash: [1m[37m12249a219c88607b[39m[37m[22m - Time: [1m[37m6475[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/feature/src/lib/profile.module.ts[39m[31m[0m:[0m[93m32:22-41[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'BioSectionComponent' (imported as 'BioSectionComponent') was not found in '@food-stories/users-client/profile/ui/bio-section' (module has no exports)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/feature/src/lib/profile.module.ts[39m[31m[0m:[0m[93m37:60-79[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'BioSectionComponent' (imported as 'BioSectionComponent') was not found in '@food-stories/users-client/profile/ui/bio-section' (module has no exports)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/ui/bio-section/src/lib/bio-section/bio-section.component.ts[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/.pnpm/@angular-devkit+build-angular@16.1.4_@angular+compiler-cli@16.1.6_@types+node@18.7.1_jest-env_nmtcbqdivgvoqrukffgi6rgb2q/node_modules/@angular-devkit/build-angular/src/tools/babel/webpack-loader.js):[39m[22m
+[1m[31mSyntaxError: C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\users-client\profile\ui\bio-section\src\lib\bio-section\bio-section.component.ts: Unexpected token (218:16)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m [90m 216 |[39m[31m             [36mthis[39m[31m[33m.[39m[31mhttp[33m.[39m[31m[36mdelete[39m[31m([33mAPI_ENDPOINTS[39m[31m[33m.[39m[31m[33mSocialNetworks[39m[31m[33m.[39m[31munblockUser([36mthis[39m[31m[33m.[39m[31mcurrentUser[33m.[39m[31mid)[33m,[39m[31m { body[33m:[39m[31m { blockerId[33m:[39m[31m [36mthis[39m[31m[33m.[39m[31mactiveUserid } })[33m.[39m[31msubscribe(() [33m=>[39m[31m {[0m[39m[22m
+[1m[31m[0m [90m 217 |[39m[31m                 [36mthis[39m[31m[33m.[39m[31m[0m[39m[22m
+[1m[31m[0m[31m[1m>[22m[1m[39m[31m[90m 218 |[39m[31m                 [33m;[39m[31m[0m[39m[22m
+[1m[31m[0m [90m     |[39m[31m                 [31m[1m^[22m[1m[39m[31m[0m[39m[22m
+[1m[31m[0m [90m 219 |[39m[31m             })[33m;[39m[31m[0m[39m[22m
+[1m[31m[0m [90m 220 |[39m[31m     }[0m[39m[22m
+[1m[31m[0m [90m 221 |[39m[31m     blockUser() {[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/profile/ui/bio-section/src/lib/bio-section/bio-section.component.ts[0m:[93m98[0m:[93m3[0m - [91merror[39m[22m[1m[31m[0m[90m TS1003: [0mIdentifier expected.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m98[0m   })[39m[22m
+[1m[31m[7m  [0m [91m  ~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m[1mRaw Size[22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m[96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m6 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T21:09:38.601Z[39m[37m[22m - Hash: [1m[37mf0bc2f8201a7d0e6[39m[37m[22m - Time: [1m[37m2454[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/feature/src/lib/profile.module.ts[39m[31m[0m:[0m[93m32:22-41[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'BioSectionComponent' (imported as 'BioSectionComponent') was not found in '@food-stories/users-client/profile/ui/bio-section' (module has no exports)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/feature/src/lib/profile.module.ts[39m[31m[0m:[0m[93m37:60-79[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'BioSectionComponent' (imported as 'BioSectionComponent') was not found in '@food-stories/users-client/profile/ui/bio-section' (module has no exports)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/ui/bio-section/src/lib/bio-section/bio-section.component.ts[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/.pnpm/@angular-devkit+build-angular@16.1.4_@angular+compiler-cli@16.1.6_@types+node@18.7.1_jest-env_nmtcbqdivgvoqrukffgi6rgb2q/node_modules/@angular-devkit/build-angular/src/tools/babel/webpack-loader.js):[39m[22m
+[1m[31mSyntaxError: C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\users-client\profile\ui\bio-section\src\lib\bio-section\bio-section.component.ts: Unexpected token (218:16)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m [90m 216 |[39m[31m             [36mthis[39m[31m[33m.[39m[31mhttp[33m.[39m[31m[36mdelete[39m[31m([33mAPI_ENDPOINTS[39m[31m[33m.[39m[31m[33mSocialNetworks[39m[31m[33m.[39m[31munblockUser([36mthis[39m[31m[33m.[39m[31mcurrentUser[33m.[39m[31mid)[33m,[39m[31m { body[33m:[39m[31m { blockerId[33m:[39m[31m [36mthis[39m[31m[33m.[39m[31mactiveUserid } })[33m.[39m[31msubscribe(() [33m=>[39m[31m {[0m[39m[22m
+[1m[31m[0m [90m 217 |[39m[31m                 [36mthis[39m[31m[33m.[39m[31mservice[33m.[39m[31m[0m[39m[22m
+[1m[31m[0m[31m[1m>[22m[1m[39m[31m[90m 218 |[39m[31m                 [33m;[39m[31m[0m[39m[22m
+[1m[31m[0m [90m     |[39m[31m                 [31m[1m^[22m[1m[39m[31m[0m[39m[22m
+[1m[31m[0m [90m 219 |[39m[31m             })[33m;[39m[31m[0m[39m[22m
+[1m[31m[0m [90m 220 |[39m[31m     }[0m[39m[22m
+[1m[31m[0m [90m 221 |[39m[31m     blockUser() {[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/profile/ui/bio-section/src/lib/bio-section/bio-section.component.ts[0m:[93m98[0m:[93m[39m[22m[1m[31m3[0m - [91merror[0m[90m TS1003: [0mIdentifier expected.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m98[0m   })[39m[22m
+[1m[31m[7m  [0m [91m  ~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m233.93 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m [96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T21:09:48.373Z[39m[37m[22m - Hash: [1m[37m6d34ca28d8de2a18[39m[37m[22m - Time: [1m[37m7000[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/feature/src/lib/profile.module.ts[39m[31m[0m:[0m[93m32:22-41[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'BioSectionComponent' (imported as 'BioSectionComponent') was not found in '@food-stories/users-client/profile/ui/bio-section' (module has no exports)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/feature/src/lib/profile.module.ts[39m[31m[0m:[0m[93m37:60-79[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'BioSectionComponent' (imported as 'BioSectionComponent') was not found in '@food-stories/users-client/profile/ui/bio-section' (module has no exports)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/ui/bio-section/src/lib/bio-section/bio-section.component.ts[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/.pnpm/@angular-devkit+build-angular@16.1.4_@angular+compiler-cli@16.1.6_@types+node@18.7.1_jest-env_nmtcbqdivgvoqrukffgi6rgb2q/node_modules/@angular-devkit/build-angular/src/tools/babel/webpack-loader.js):[39m[22m
+[1m[31mSyntaxError: C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\users-client\profile\ui\bio-section\src\lib\bio-section\bio-section.component.ts: Unexpected token (218:16)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m [90m 216 |[39m[31m             [36mthis[39m[31m[33m.[39m[31mhttp[33m.[39m[31m[36mdelete[39m[31m([33mAPI_ENDPOINTS[39m[31m[33m.[39m[31m[33mSocialNetworks[39m[31m[33m.[39m[31munblockUser([36mthis[39m[31m[33m.[39m[31mcurrentUser[33m.[39m[31mid)[33m,[39m[31m { body[33m:[39m[31m { blockerId[33m:[39m[31m [36mthis[39m[31m[33m.[39m[31mactiveUserid } })[33m.[39m[31msubscribe(() [33m=>[39m[31m {[0m[39m[22m
+[1m[31m[0m [90m 217 |[39m[31m                 [36mthis[39m[31m[33m.[39m[31mservice[33m.[39m[31m[0m[39m[22m
+[1m[31m[0m[31m[1m>[22m[1m[39m[31m[90m 218 |[39m[31m                 [33m;[39m[31m[0m[39m[22m
+[1m[31m[0m [90m     |[39m[31m                 [31m[1m^[22m[1m[39m[31m[0m[39m[22m
+[1m[31m[0m [90m 219 |[39m[31m             })[33m;[39m[31m[0m[39m[22m
+[1m[31m[0m [90m 220 |[39m[31m     }[0m[39m[22m
+[1m[31m[0m [90m 221 |[39m[31m     blockUser() {[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/profile/feature/src/lib/profile.service.ts[0m:[93m72[0m:[93m3[0m - [91merror[0m[9[39m[22m[1m[31m0m TS7008: [0mMember 'u' implicitly has an 'any' type.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m72[0m   u[39m[22m
+[1m[31m[7m  [0m [91m  ~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/profile/ui/bio-section/src/lib/bio-section/bio-section.component.ts[0m:[93m98[0m:[93m3[0m - [91merror[0m[90m TS1003: [0mIdentifier expected.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m98[0m   })[39m[22m
+[1m[31m[7m  [0m [91m  ~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m233.96 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m [96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T21:09:53.057Z[39m[37m[22m - Hash: [1m[37m7c0110610cfc6fe7[39m[37m[22m - Time: [1m[37m4458[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/feature/src/lib/profile.module.ts[39m[31m[0m:[0m[93m32:22-41[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'BioSectionComponent' (imported as 'BioSectionComponent') was not found in '@food-stories/users-client/profile/ui/bio-section' (module has no exports)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/feature/src/lib/profile.module.ts[39m[31m[0m:[0m[93m37:60-79[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'BioSectionComponent' (imported as 'BioSectionComponent') was not found in '@food-stories/users-client/profile/ui/bio-section' (module has no exports)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/ui/bio-section/src/lib/bio-section/bio-section.component.ts[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/.pnpm/@angular-devkit+build-angular@16.1.4_@angular+compiler-cli@16.1.6_@types+node@18.7.1_jest-env_nmtcbqdivgvoqrukffgi6rgb2q/node_modules/@angular-devkit/build-angular/src/tools/babel/webpack-loader.js):[39m[22m
+[1m[31mSyntaxError: C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\users-client\profile\ui\bio-section\src\lib\bio-section\bio-section.component.ts: Unexpected token (218:16)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m [90m 216 |[39m[31m             [36mthis[39m[31m[33m.[39m[31mhttp[33m.[39m[31m[36mdelete[39m[31m([33mAPI_ENDPOINTS[39m[31m[33m.[39m[31m[33mSocialNetworks[39m[31m[33m.[39m[31munblockUser([36mthis[39m[31m[33m.[39m[31mcurrentUser[33m.[39m[31mid)[33m,[39m[31m { body[33m:[39m[31m { blockerId[33m:[39m[31m [36mthis[39m[31m[33m.[39m[31mactiveUserid } })[33m.[39m[31msubscribe(() [33m=>[39m[31m {[0m[39m[22m
+[1m[31m[0m [90m 217 |[39m[31m                 [36mthis[39m[31m[33m.[39m[31mservice[33m.[39m[31m[0m[39m[22m
+[1m[31m[0m[31m[1m>[22m[1m[39m[31m[90m 218 |[39m[31m                 [33m;[39m[31m[0m[39m[22m
+[1m[31m[0m [90m     |[39m[31m                 [31m[1m^[22m[1m[39m[31m[0m[39m[22m
+[1m[31m[0m [90m 219 |[39m[31m             })[33m;[39m[31m[0m[39m[22m
+[1m[31m[0m [90m 220 |[39m[31m     }[0m[39m[22m
+[1m[31m[0m [90m 221 |[39m[31m     blockUser() {[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/profile/feature/src/lib/profile.service.ts[0m:[93m73[0m:[93m10[0m - [91merror[0m[[39m[22m[1m[31m90m TS2339: [0mProperty 'is' does not exist on type 'ProfileService'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m73[0m     this.is[39m[22m
+[1m[31m[7m  [0m [91m         ~~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/profile/ui/bio-section/src/lib/bio-section/bio-section.component.ts[0m:[93m98[0m:[93m3[0m - [91merror[0m[90m TS1003: [0mIdentifier expected.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m98[0m   })[39m[22m
+[1m[31m[7m  [0m [91m  ~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m233.99 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m [96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T21:09:56.454Z[39m[37m[22m - Hash: [1m[37m744712c50105496e[39m[37m[22m - Time: [1m[37m3274[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/feature/src/lib/profile.module.ts[39m[31m[0m:[0m[93m32:22-41[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'BioSectionComponent' (imported as 'BioSectionComponent') was not found in '@food-stories/users-client/profile/ui/bio-section' (module has no exports)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/feature/src/lib/profile.module.ts[39m[31m[0m:[0m[93m37:60-79[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'BioSectionComponent' (imported as 'BioSectionComponent') was not found in '@food-stories/users-client/profile/ui/bio-section' (module has no exports)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/ui/bio-section/src/lib/bio-section/bio-section.component.ts[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/.pnpm/@angular-devkit+build-angular@16.1.4_@angular+compiler-cli@16.1.6_@types+node@18.7.1_jest-env_nmtcbqdivgvoqrukffgi6rgb2q/node_modules/@angular-devkit/build-angular/src/tools/babel/webpack-loader.js):[39m[22m
+[1m[31mSyntaxError: C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\users-client\profile\ui\bio-section\src\lib\bio-section\bio-section.component.ts: Unexpected token (218:16)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m [90m 216 |[39m[31m             [36mthis[39m[31m[33m.[39m[31mhttp[33m.[39m[31m[36mdelete[39m[31m([33mAPI_ENDPOINTS[39m[31m[33m.[39m[31m[33mSocialNetworks[39m[31m[33m.[39m[31munblockUser([36mthis[39m[31m[33m.[39m[31mcurrentUser[33m.[39m[31mid)[33m,[39m[31m { body[33m:[39m[31m { blockerId[33m:[39m[31m [36mthis[39m[31m[33m.[39m[31mactiveUserid } })[33m.[39m[31msubscribe(() [33m=>[39m[31m {[0m[39m[22m
+[1m[31m[0m [90m 217 |[39m[31m                 [36mthis[39m[31m[33m.[39m[31mservice[33m.[39m[31m[0m[39m[22m
+[1m[31m[0m[31m[1m>[22m[1m[39m[31m[90m 218 |[39m[31m                 [33m;[39m[31m[0m[39m[22m
+[1m[31m[0m [90m     |[39m[31m                 [31m[1m^[22m[1m[39m[31m[0m[39m[22m
+[1m[31m[0m [90m 219 |[39m[31m             })[33m;[39m[31m[0m[39m[22m
+[1m[31m[0m [90m 220 |[39m[31m     }[0m[39m[22m
+[1m[31m[0m [90m 221 |[39m[31m     blockUser() {[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/profile/ui/bio-section/src/lib/bio-section/bio-section.component.ts[0m:[93m98[0m:[93m[39m[22m[1m[31m3[0m - [91merror[0m[90m TS1003: [0mIdentifier expected.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m98[0m   })[39m[22m
+[1m[31m[7m  [0m [91m  ~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m234.00 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m [96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T21:09:59.582Z[39m[37m[22m - Hash: [1m[37mfb29e0b45e333104[39m[37m[22m - Time: [1m[37m2955[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/feature/src/lib/profile.module.ts[39m[31m[0m:[0m[93m32:22-41[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'BioSectionComponent' (imported as 'BioSectionComponent') was not found in '@food-stories/users-client/profile/ui/bio-section' (module has no exports)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/feature/src/lib/profile.module.ts[39m[31m[0m:[0m[93m37:60-79[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'BioSectionComponent' (imported as 'BioSectionComponent') was not found in '@food-stories/users-client/profile/ui/bio-section' (module has no exports)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/ui/bio-section/src/lib/bio-section/bio-section.component.ts[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/.pnpm/@angular-devkit+build-angular@16.1.4_@angular+compiler-cli@16.1.6_@types+node@18.7.1_jest-env_nmtcbqdivgvoqrukffgi6rgb2q/node_modules/@angular-devkit/build-angular/src/tools/babel/webpack-loader.js):[39m[22m
+[1m[31mSyntaxError: C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\users-client\profile\ui\bio-section\src\lib\bio-section\bio-section.component.ts: Unexpected token (218:16)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m [90m 216 |[39m[31m             [36mthis[39m[31m[33m.[39m[31mhttp[33m.[39m[31m[36mdelete[39m[31m([33mAPI_ENDPOINTS[39m[31m[33m.[39m[31m[33mSocialNetworks[39m[31m[33m.[39m[31munblockUser([36mthis[39m[31m[33m.[39m[31mcurrentUser[33m.[39m[31mid)[33m,[39m[31m { body[33m:[39m[31m { blockerId[33m:[39m[31m [36mthis[39m[31m[33m.[39m[31mactiveUserid } })[33m.[39m[31msubscribe(() [33m=>[39m[31m {[0m[39m[22m
+[1m[31m[0m [90m 217 |[39m[31m                 [36mthis[39m[31m[33m.[39m[31mservice[33m.[39m[31m[0m[39m[22m
+[1m[31m[0m[31m[1m>[22m[1m[39m[31m[90m 218 |[39m[31m                 [33m;[39m[31m[0m[39m[22m
+[1m[31m[0m [90m     |[39m[31m                 [31m[1m^[22m[1m[39m[31m[0m[39m[22m
+[1m[31m[0m [90m 219 |[39m[31m             })[33m;[39m[31m[0m[39m[22m
+[1m[31m[0m [90m 220 |[39m[31m     }[0m[39m[22m
+[1m[31m[0m [90m 221 |[39m[31m     blockUser() {[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/profile/feature/src/lib/profile.service.ts[0m:[93m74[0m:[93m10[0m - [91merror[0m[[39m[22m[1m[31m90m TS2339: [0mProperty 'i' does not exist on type 'ProfileService'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m74[0m     this.i[39m[22m
+[1m[31m[7m  [0m [91m         ~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/profile/ui/bio-section/src/lib/bio-section/bio-section.component.ts[0m:[93m98[0m:[93m3[0m - [91merror[0m[90m TS1003: [0mIdentifier expected.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m98[0m   })[39m[22m
+[1m[31m[7m  [0m [91m  ~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m233.99 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m [96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T21:10:02.356Z[39m[37m[22m - Hash: [1m[37m104748cb1fc99e6e[39m[37m[22m - Time: [1m[37m2559[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/feature/src/lib/profile.module.ts[39m[31m[0m:[0m[93m32:22-41[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'BioSectionComponent' (imported as 'BioSectionComponent') was not found in '@food-stories/users-client/profile/ui/bio-section' (module has no exports)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/feature/src/lib/profile.module.ts[39m[31m[0m:[0m[93m37:60-79[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'BioSectionComponent' (imported as 'BioSectionComponent') was not found in '@food-stories/users-client/profile/ui/bio-section' (module has no exports)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/ui/bio-section/src/lib/bio-section/bio-section.component.ts[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/.pnpm/@angular-devkit+build-angular@16.1.4_@angular+compiler-cli@16.1.6_@types+node@18.7.1_jest-env_nmtcbqdivgvoqrukffgi6rgb2q/node_modules/@angular-devkit/build-angular/src/tools/babel/webpack-loader.js):[39m[22m
+[1m[31mSyntaxError: C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\users-client\profile\ui\bio-section\src\lib\bio-section\bio-section.component.ts: Unexpected token (218:16)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m [90m 216 |[39m[31m             [36mthis[39m[31m[33m.[39m[31mhttp[33m.[39m[31m[36mdelete[39m[31m([33mAPI_ENDPOINTS[39m[31m[33m.[39m[31m[33mSocialNetworks[39m[31m[33m.[39m[31munblockUser([36mthis[39m[31m[33m.[39m[31mcurrentUser[33m.[39m[31mid)[33m,[39m[31m { body[33m:[39m[31m { blockerId[33m:[39m[31m [36mthis[39m[31m[33m.[39m[31mactiveUserid } })[33m.[39m[31msubscribe(() [33m=>[39m[31m {[0m[39m[22m
+[1m[31m[0m [90m 217 |[39m[31m                 [36mthis[39m[31m[33m.[39m[31mservice[33m.[39m[31m[0m[39m[22m
+[1m[31m[0m[31m[1m>[22m[1m[39m[31m[90m 218 |[39m[31m                 [33m;[39m[31m[0m[39m[22m
+[1m[31m[0m [90m     |[39m[31m                 [31m[1m^[22m[1m[39m[31m[0m[39m[22m
+[1m[31m[0m [90m 219 |[39m[31m             })[33m;[39m[31m[0m[39m[22m
+[1m[31m[0m [90m 220 |[39m[31m     }[0m[39m[22m
+[1m[31m[0m [90m 221 |[39m[31m     blockUser() {[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/profile/ui/bio-section/src/lib/bio-section/bio-section.component.ts[0m:[93m98[0m:[93m[39m[22m[1m[31m3[0m - [91merror[0m[90m TS1003: [0mIdentifier expected.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m98[0m   })[39m[22m
+[1m[31m[7m  [0m [91m  ~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m233.99 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m [96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T21:10:03.884Z[39m[37m[22m - Hash: [1m[37m76d550660e4f8ad3[39m[37m[22m - Time: [1m[37m1454[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/feature/src/lib/profile.module.ts[39m[31m[0m:[0m[93m32:22-41[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'BioSectionComponent' (imported as 'BioSectionComponent') was not found in '@food-stories/users-client/profile/ui/bio-section' (module has no exports)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/feature/src/lib/profile.module.ts[39m[31m[0m:[0m[93m37:60-79[39m[31m[0m - [0m[91mError: [39m[31m[0mexport 'BioSectionComponent' (imported as 'BioSectionComponent') was not found in '@food-stories/users-client/profile/ui/bio-section' (module has no exports)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[36m./libs/users-client/profile/ui/bio-section/src/lib/bio-section/bio-section.component.ts[39m[31m[0m - [0m[91mError: [39m[31m[0mModule build failed (from ./node_modules/.pnpm/@angular-devkit+build-angular@16.1.4_@angular+compiler-cli@16.1.6_@types+node@18.7.1_jest-env_nmtcbqdivgvoqrukffgi6rgb2q/node_modules/@angular-devkit/build-angular/src/tools/babel/webpack-loader.js):[39m[22m
+[1m[31mSyntaxError: C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\users-client\profile\ui\bio-section\src\lib\bio-section\bio-section.component.ts: Unexpected token (218:16)[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m [90m 216 |[39m[31m             [36mthis[39m[31m[33m.[39m[31mhttp[33m.[39m[31m[36mdelete[39m[31m([33mAPI_ENDPOINTS[39m[31m[33m.[39m[31m[33mSocialNetworks[39m[31m[33m.[39m[31munblockUser([36mthis[39m[31m[33m.[39m[31mcurrentUser[33m.[39m[31mid)[33m,[39m[31m { body[33m:[39m[31m { blockerId[33m:[39m[31m [36mthis[39m[31m[33m.[39m[31mactiveUserid } })[33m.[39m[31msubscribe(() [33m=>[39m[31m {[0m[39m[22m
+[1m[31m[0m [90m 217 |[39m[31m                 [36mthis[39m[31m[33m.[39m[31mservice[33m.[39m[31m[0m[39m[22m
+[1m[31m[0m[31m[1m>[22m[1m[39m[31m[90m 218 |[39m[31m                 [33m;[39m[31m[0m[39m[22m
+[1m[31m[0m [90m     |[39m[31m                 [31m[1m^[22m[1m[39m[31m[0m[39m[22m
+[1m[31m[0m [90m 219 |[39m[31m             })[33m;[39m[31m[0m[39m[22m
+[1m[31m[0m [90m 220 |[39m[31m     }[0m[39m[22m
+[1m[31m[0m [90m 221 |[39m[31m     blockUser() {[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/profile/ui/bio-section/src/lib/bio-section/bio-section.component.ts[0m:[93m98[0m:[93m[39m[22m[1m[31m3[0m - [91merror[0m[90m TS1003: [0mIdentifier expected.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m98[0m   })[39m[22m
+[1m[31m[7m  [0m [91m  ~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠏[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠋[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠙[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: sealing)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mvendor.js[39m[37m          [2m | [22mvendor [2m | [22m  [96m6.38 MB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m264.03 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m [96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m4 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T21:10:20.594Z[39m[37m[22m - Hash: [1m[37m43171a6d795e994e[39m[37m[22m - Time: [1m[37m6072[39m[37m[22mms[0m[39m
+[1m[31m[39m[22m
+[1m[31m[0m[91mError: [39m[31m[0m[96mlibs/users-client/profile/ui/bio-section/src/lib/bio-section/bio-section.component.ts[0m:[93m97[0m:[93m16[0m - [91merror[0m[90m TS2339: [0mProperty 'u' does not exist on type 'ProfileService'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m97[0m   this.service.u[39m[22m
+[1m[31m[7m  [0m [91m               ~[0m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[37m[39m
+[37m[91m×[39m[37m Failed to compile.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m264.04 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m [96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T21:10:22.317Z[39m[37m[22m - Hash: [1m[37mb778aa02b0bcda90[39m[37m[22m - Time: [1m[37m1643[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠇[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m264.04 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m [96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T21:10:25.639Z[39m[37m[22m - Hash: [1m[37m3b2d7e1dc7af25d8[39m[37m[22m - Time: [1m[37m3025[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m
+[36m⠋[39m Generating browser application bundles...[2K[1G[36m⠙[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠹[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠸[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠼[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠴[39m Generating browser application bundles (phase: building)...[2K[1G[36m⠦[39m Generating browser application bundles (phase: sealing)...[2K[1G[36m⠧[39m Generating browser application bundles (phase: emitting)...[2K[1G[32m✔[39m Browser application bundle generation complete.
+[37m[39m
+[37m[0m[1mInitial Chunk Files[22m[2m | [22m[1mNames[22m  [2m | [22m [1mRaw Size[22m[0m[39m
+[37m[0m[92mmain.js[39m[37m            [2m | [22mmain   [2m | [22m[96m264.04 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[92mruntime.js[39m[37m         [2m | [22mruntime[2m | [22m [96m12.63 kB[39m[37m[2m | [22m[0m[39m
+[37m[0m[0m[39m
+[37m[0m5 unchanged chunks[0m[39m
+[37m[0m[0m[39m
+[37m[0mBuild at: [1m[37m2024-04-03T21:11:50.720Z[39m[37m[22m - Hash: [1m[37m07edfa7c83514450[39m[37m[22m - Time: [1m[37m1841[39m[37m[22mms[0m[39m
+[37m[39m
+[37m[92m√[39m[37m Compiled successfully.[39m

@@ -69,6 +69,10 @@ export class ProfileService {
     this.isFollowingSubject$.next(false);
   }
 
+  unblockUser() {
+    this.isBlockedSubject$.next(false);
+  }
+
   isFollowing(followerId: string, followweeId: string) {
     return this.http.get<IisFollowingResponse>(
       API_ENDPOINTS.SocialNetworks.getRelationships(followweeId),

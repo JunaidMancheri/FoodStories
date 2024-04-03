@@ -6,6 +6,8 @@ export  interface ISocialNetworkServiceServer {
    unfollowAUser: handleUnaryCall<FollowOrUnollowAUserRequest, void>
    isFollowing: handleUnaryCall<FollowOrUnollowAUserRequest, void>
    BlockUser: handleUnaryCall<IBlockUserRequest, void>;
+   unblockUser: handleUnaryCall<IBlockUserRequest, void>;
+
 }
 
 
@@ -14,6 +16,7 @@ export interface ISocialNetworkServiceClient {
   unfollowAUser(request: FollowOrUnollowAUserRequest): Observable<void>;
   isFollowing(request: FollowOrUnollowAUserRequest): Observable<void>;
   BlockUser(request: IBlockUserRequest): Observable<void>;
+  unblockUser(request: IBlockUserRequest): Observable<void>;
 }
 
 export interface  IBlockUserRequest {

@@ -4,6 +4,7 @@ import { UnfollowAUserHandler } from "../../interface/handlers/UnfollowAUser.han
 import { IsFollowingHandler } from "../../interface/handlers/IsFollowing.handler";
 import { Producer } from "kafkajs";
 import { BlockUserHandler } from "../../interface/handlers/BlockUser.handler";
+import { UnblockUserHandler } from "../../interface/handlers/unblockUser.handler";
 
 export function makeFollowAUserHandler(driver: Driver, producer: Producer) {
   return new FollowAUserHandler(driver, producer);
@@ -20,4 +21,8 @@ export function  makeIsFollowingHandler(driver: Driver) {
 
 export function makeBlockUserHandler(driver: Driver, producer: Producer) {
   return new BlockUserHandler(driver, producer);
+}
+
+export  function makeUnblockUserHandler(driver: Driver) {
+  return new UnblockUserHandler(driver);
 }
