@@ -1,0 +1,1123 @@
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 65 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (0d97f7252262ecb1)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 65 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./libs/common/typings/src/lib/proto/social-networkService.ts:[32m[1m8:31[22m[39m[1m[39m[22m
+[90mTS2552: [39mCannot find name 'IBlockUserRequest'. Did you mean 'IBlockOrUserRequest'?
+  [0m [90m  6 |[39m    unfollowAUser[33m:[39m handleUnaryCall[33m<[39m[33mFollowOrUnollowAUserRequest[39m[33m,[39m [36mvoid[39m[33m>[39m[0m
+  [0m [90m  7 |[39m    isFollowing[33m:[39m handleUnaryCall[33m<[39m[33mFollowOrUnollowAUserRequest[39m[33m,[39m [36mvoid[39m[33m>[39m[0m
+  [0m[31m[1m>[22m[39m[90m  8 |[39m    [33mBlockUser[39m[33m:[39m handleUnaryCall[33m<[39m[33mIBlockUserRequest[39m[33m,[39m [36mvoid[39m[33m>[39m[33m;[39m[0m
+  [0m [90m    |[39m                               [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m  9 |[39m }[0m
+  [0m [90m 10 |[39m[0m
+  [0m [90m 11 |[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./libs/common/typings/src/lib/proto/social-networkService.ts:[32m[1m16:22[22m[39m[1m[39m[22m
+[90mTS2552: [39mCannot find name 'IBlockUserRequest'. Did you mean 'IBlockOrUserRequest'?
+  [0m [90m 14 |[39m   unfollowAUser(request[33m:[39m [33mFollowOrUnollowAUserRequest[39m)[33m:[39m [33mObservable[39m[33m<[39m[36mvoid[39m[33m>[39m[33m;[39m[0m
+  [0m [90m 15 |[39m   isFollowing(request[33m:[39m [33mFollowOrUnollowAUserRequest[39m)[33m:[39m [33mObservable[39m[33m<[39m[36mvoid[39m[33m>[39m[33m;[39m[0m
+  [0m[31m[1m>[22m[39m[90m 16 |[39m   [33mBlockUser[39m(request[33m:[39m [33mIBlockUserRequest[39m)[33m:[39m [33mObservable[39m[33m<[39m[36mvoid[39m[33m>[39m[33m;[39m[0m
+  [0m [90m    |[39m                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 17 |[39m }[0m
+  [0m [90m 18 |[39m[0m
+  [0m [90m 19 |[39m [36mexport[39m [36minterface[39m  [33mIBlockOrUnblockUserRequest[39m {[0m
+
+[1m[31mERROR[39m[22m in [1m./libs/users-srv/social-network/src/lib/interface/handlers/BlockUser.handler.ts:[32m[1m7:10[22m[39m[1m[39m[22m
+[90mTS2724: [39m'"@food-stories/common/typings"' has no exported member named 'IBlockUserRequest'. Did you mean 'IBlockOrUserRequest'?
+  [0m [90m  5 |[39m   respondSuccess[33m,[39m[0m
+  [0m [90m  6 |[39m } [36mfrom[39m [32m'@food-stories/common/handlers'[39m[33m;[39m[0m
+  [0m[31m[1m>[22m[39m[90m  7 |[39m [36mimport[39m { [33mIBlockUserRequest[39m } [36mfrom[39m [32m'@food-stories/common/typings'[39m[33m;[39m[0m
+  [0m [90m    |[39m          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m  8 |[39m [36mimport[39m { [33mProducer[39m } [36mfrom[39m [32m'kafkajs'[39m[33m;[39m[0m
+  [0m [90m  9 |[39m [36mimport[39m { [33mDriver[39m } [36mfrom[39m [32m'neo4j-driver'[39m[33m;[39m[0m
+  [0m [90m 10 |[39m[0m
+
+webpack compiled with [1m[31m3 errors[39m[22m (27f0fc7ced8bdc36)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 65 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./libs/common/typings/src/lib/proto/social-networkService.ts:[32m[1m8:31[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'IBlockUserRequest'.
+  [0m [90m  6 |[39m    unfollowAUser[33m:[39m handleUnaryCall[33m<[39m[33mFollowOrUnollowAUserRequest[39m[33m,[39m [36mvoid[39m[33m>[39m[0m
+  [0m [90m  7 |[39m    isFollowing[33m:[39m handleUnaryCall[33m<[39m[33mFollowOrUnollowAUserRequest[39m[33m,[39m [36mvoid[39m[33m>[39m[0m
+  [0m[31m[1m>[22m[39m[90m  8 |[39m    [33mBlockUser[39m[33m:[39m handleUnaryCall[33m<[39m[33mIBlockUserRequest[39m[33m,[39m [36mvoid[39m[33m>[39m[33m;[39m[0m
+  [0m [90m    |[39m                               [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m  9 |[39m }[0m
+  [0m [90m 10 |[39m[0m
+  [0m [90m 11 |[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./libs/common/typings/src/lib/proto/social-networkService.ts:[32m[1m16:22[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'IBlockUserRequest'.
+  [0m [90m 14 |[39m   unfollowAUser(request[33m:[39m [33mFollowOrUnollowAUserRequest[39m)[33m:[39m [33mObservable[39m[33m<[39m[36mvoid[39m[33m>[39m[33m;[39m[0m
+  [0m [90m 15 |[39m   isFollowing(request[33m:[39m [33mFollowOrUnollowAUserRequest[39m)[33m:[39m [33mObservable[39m[33m<[39m[36mvoid[39m[33m>[39m[33m;[39m[0m
+  [0m[31m[1m>[22m[39m[90m 16 |[39m   [33mBlockUser[39m(request[33m:[39m [33mIBlockUserRequest[39m)[33m:[39m [33mObservable[39m[33m<[39m[36mvoid[39m[33m>[39m[33m;[39m[0m
+  [0m [90m    |[39m                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 17 |[39m   [0m
+  [0m [90m 18 |[39m }[0m
+  [0m [90m 19 |[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./libs/users-srv/social-network/src/lib/interface/handlers/BlockUser.handler.ts:[32m[1m7:10[22m[39m[1m[39m[22m
+[90mTS2305: [39mModule '"@food-stories/common/typings"' has no exported member 'IBlockUserRequest'.
+  [0m [90m  5 |[39m   respondSuccess[33m,[39m[0m
+  [0m [90m  6 |[39m } [36mfrom[39m [32m'@food-stories/common/handlers'[39m[33m;[39m[0m
+  [0m[31m[1m>[22m[39m[90m  7 |[39m [36mimport[39m { [33mIBlockUserRequest[39m } [36mfrom[39m [32m'@food-stories/common/typings'[39m[33m;[39m[0m
+  [0m [90m    |[39m          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m  8 |[39m [36mimport[39m { [33mProducer[39m } [36mfrom[39m [32m'kafkajs'[39m[33m;[39m[0m
+  [0m [90m  9 |[39m [36mimport[39m { [33mDriver[39m } [36mfrom[39m [32m'neo4j-driver'[39m[33m;[39m[0m
+  [0m [90m 10 |[39m[0m
+
+webpack compiled with [1m[31m3 errors[39m[22m (74b6b1c0e5d8b30f)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 65 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (1b07604ba1e544ee)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 65 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/users-srv/src/remote-methods/users.rpc-methods.ts:[32m[1m38:14[22m[39m[1m[39m[22m
+[90mTS2741: [39mProperty 'unblockUser' is missing in type '{ followAUser: handleUnaryCall<any, any>; unfollowAUser: handleUnaryCall<any, any>; isFollowing: handleUnaryCall<any, any>; BlockUser: handleUnaryCall<...>; }' but required in type 'ISocialNetworkServiceServer'.
+  [0m [90m 36 |[39m }[33m;[39m[0m
+  [0m [90m 37 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 38 |[39m [36mexport[39m [36mconst[39m [33mSocialNetworkServiceImpl[39m[33m:[39m [33mISocialNetworkServiceServer[39m [33m=[39m {[0m
+  [0m [90m    |[39m              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 39 |[39m   followAUser[33m:[39m makeUnaryCallHandler(makeFollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 40 |[39m   unfollowAUser[33m:[39m makeUnaryCallHandler(makeUnfollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 41 |[39m   isFollowing[33m:[39m makeUnaryCallHandler(makeIsFollowingHandler(neo4jDriver)[33m,[39m logger)[33m,[39m[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (61ea9c6aaca204f8)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 65 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/users-srv/src/remote-methods/users.rpc-methods.ts:[32m[1m38:14[22m[39m[1m[39m[22m
+[90mTS2741: [39mProperty 'unblockUser' is missing in type '{ followAUser: handleUnaryCall<any, any>; unfollowAUser: handleUnaryCall<any, any>; isFollowing: handleUnaryCall<any, any>; BlockUser: handleUnaryCall<...>; }' but required in type 'ISocialNetworkServiceServer'.
+  [0m [90m 36 |[39m }[33m;[39m[0m
+  [0m [90m 37 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 38 |[39m [36mexport[39m [36mconst[39m [33mSocialNetworkServiceImpl[39m[33m:[39m [33mISocialNetworkServiceServer[39m [33m=[39m {[0m
+  [0m [90m    |[39m              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 39 |[39m   followAUser[33m:[39m makeUnaryCallHandler(makeFollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 40 |[39m   unfollowAUser[33m:[39m makeUnaryCallHandler(makeUnfollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 41 |[39m   isFollowing[33m:[39m makeUnaryCallHandler(makeIsFollowingHandler(neo4jDriver)[33m,[39m logger)[33m,[39m[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (61ea9c6aaca204f8)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 65 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/users-srv/src/remote-methods/users.rpc-methods.ts:[32m[1m38:14[22m[39m[1m[39m[22m
+[90mTS2741: [39mProperty 'unblockUser' is missing in type '{ followAUser: handleUnaryCall<any, any>; unfollowAUser: handleUnaryCall<any, any>; isFollowing: handleUnaryCall<any, any>; BlockUser: handleUnaryCall<...>; }' but required in type 'ISocialNetworkServiceServer'.
+  [0m [90m 36 |[39m }[33m;[39m[0m
+  [0m [90m 37 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 38 |[39m [36mexport[39m [36mconst[39m [33mSocialNetworkServiceImpl[39m[33m:[39m [33mISocialNetworkServiceServer[39m [33m=[39m {[0m
+  [0m [90m    |[39m              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 39 |[39m   followAUser[33m:[39m makeUnaryCallHandler(makeFollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 40 |[39m   unfollowAUser[33m:[39m makeUnaryCallHandler(makeUnfollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 41 |[39m   isFollowing[33m:[39m makeUnaryCallHandler(makeIsFollowingHandler(neo4jDriver)[33m,[39m logger)[33m,[39m[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (61ea9c6aaca204f8)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 65 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/users-srv/src/remote-methods/users.rpc-methods.ts:[32m[1m38:14[22m[39m[1m[39m[22m
+[90mTS2741: [39mProperty 'unblockUser' is missing in type '{ followAUser: handleUnaryCall<any, any>; unfollowAUser: handleUnaryCall<any, any>; isFollowing: handleUnaryCall<any, any>; BlockUser: handleUnaryCall<...>; }' but required in type 'ISocialNetworkServiceServer'.
+  [0m [90m 36 |[39m }[33m;[39m[0m
+  [0m [90m 37 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 38 |[39m [36mexport[39m [36mconst[39m [33mSocialNetworkServiceImpl[39m[33m:[39m [33mISocialNetworkServiceServer[39m [33m=[39m {[0m
+  [0m [90m    |[39m              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 39 |[39m   followAUser[33m:[39m makeUnaryCallHandler(makeFollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 40 |[39m   unfollowAUser[33m:[39m makeUnaryCallHandler(makeUnfollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 41 |[39m   isFollowing[33m:[39m makeUnaryCallHandler(makeIsFollowingHandler(neo4jDriver)[33m,[39m logger)[33m,[39m[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (61ea9c6aaca204f8)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 65 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/users-srv/src/remote-methods/users.rpc-methods.ts:[32m[1m38:14[22m[39m[1m[39m[22m
+[90mTS2741: [39mProperty 'unblockUser' is missing in type '{ followAUser: handleUnaryCall<any, any>; unfollowAUser: handleUnaryCall<any, any>; isFollowing: handleUnaryCall<any, any>; BlockUser: handleUnaryCall<...>; }' but required in type 'ISocialNetworkServiceServer'.
+  [0m [90m 36 |[39m }[33m;[39m[0m
+  [0m [90m 37 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 38 |[39m [36mexport[39m [36mconst[39m [33mSocialNetworkServiceImpl[39m[33m:[39m [33mISocialNetworkServiceServer[39m [33m=[39m {[0m
+  [0m [90m    |[39m              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 39 |[39m   followAUser[33m:[39m makeUnaryCallHandler(makeFollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 40 |[39m   unfollowAUser[33m:[39m makeUnaryCallHandler(makeUnfollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 41 |[39m   isFollowing[33m:[39m makeUnaryCallHandler(makeIsFollowingHandler(neo4jDriver)[33m,[39m logger)[33m,[39m[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (61ea9c6aaca204f8)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 65 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/users-srv/src/remote-methods/users.rpc-methods.ts:[32m[1m38:14[22m[39m[1m[39m[22m
+[90mTS2741: [39mProperty 'unblockUser' is missing in type '{ followAUser: handleUnaryCall<any, any>; unfollowAUser: handleUnaryCall<any, any>; isFollowing: handleUnaryCall<any, any>; BlockUser: handleUnaryCall<...>; }' but required in type 'ISocialNetworkServiceServer'.
+  [0m [90m 36 |[39m }[33m;[39m[0m
+  [0m [90m 37 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 38 |[39m [36mexport[39m [36mconst[39m [33mSocialNetworkServiceImpl[39m[33m:[39m [33mISocialNetworkServiceServer[39m [33m=[39m {[0m
+  [0m [90m    |[39m              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 39 |[39m   followAUser[33m:[39m makeUnaryCallHandler(makeFollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 40 |[39m   unfollowAUser[33m:[39m makeUnaryCallHandler(makeUnfollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 41 |[39m   isFollowing[33m:[39m makeUnaryCallHandler(makeIsFollowingHandler(neo4jDriver)[33m,[39m logger)[33m,[39m[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (61ea9c6aaca204f8)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 65 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/users-srv/src/remote-methods/users.rpc-methods.ts:[32m[1m38:14[22m[39m[1m[39m[22m
+[90mTS2741: [39mProperty 'unblockUser' is missing in type '{ followAUser: handleUnaryCall<any, any>; unfollowAUser: handleUnaryCall<any, any>; isFollowing: handleUnaryCall<any, any>; BlockUser: handleUnaryCall<...>; }' but required in type 'ISocialNetworkServiceServer'.
+  [0m [90m 36 |[39m }[33m;[39m[0m
+  [0m [90m 37 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 38 |[39m [36mexport[39m [36mconst[39m [33mSocialNetworkServiceImpl[39m[33m:[39m [33mISocialNetworkServiceServer[39m [33m=[39m {[0m
+  [0m [90m    |[39m              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 39 |[39m   followAUser[33m:[39m makeUnaryCallHandler(makeFollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 40 |[39m   unfollowAUser[33m:[39m makeUnaryCallHandler(makeUnfollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 41 |[39m   isFollowing[33m:[39m makeUnaryCallHandler(makeIsFollowingHandler(neo4jDriver)[33m,[39m logger)[33m,[39m[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (61ea9c6aaca204f8)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 65 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/users-srv/src/remote-methods/users.rpc-methods.ts:[32m[1m38:14[22m[39m[1m[39m[22m
+[90mTS2741: [39mProperty 'unblockUser' is missing in type '{ followAUser: handleUnaryCall<any, any>; unfollowAUser: handleUnaryCall<any, any>; isFollowing: handleUnaryCall<any, any>; BlockUser: handleUnaryCall<...>; }' but required in type 'ISocialNetworkServiceServer'.
+  [0m [90m 36 |[39m }[33m;[39m[0m
+  [0m [90m 37 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 38 |[39m [36mexport[39m [36mconst[39m [33mSocialNetworkServiceImpl[39m[33m:[39m [33mISocialNetworkServiceServer[39m [33m=[39m {[0m
+  [0m [90m    |[39m              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 39 |[39m   followAUser[33m:[39m makeUnaryCallHandler(makeFollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 40 |[39m   unfollowAUser[33m:[39m makeUnaryCallHandler(makeUnfollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 41 |[39m   isFollowing[33m:[39m makeUnaryCallHandler(makeIsFollowingHandler(neo4jDriver)[33m,[39m logger)[33m,[39m[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (61ea9c6aaca204f8)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 65 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/users-srv/src/remote-methods/users.rpc-methods.ts:[32m[1m38:14[22m[39m[1m[39m[22m
+[90mTS2741: [39mProperty 'unblockUser' is missing in type '{ followAUser: handleUnaryCall<any, any>; unfollowAUser: handleUnaryCall<any, any>; isFollowing: handleUnaryCall<any, any>; BlockUser: handleUnaryCall<...>; }' but required in type 'ISocialNetworkServiceServer'.
+  [0m [90m 36 |[39m }[33m;[39m[0m
+  [0m [90m 37 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 38 |[39m [36mexport[39m [36mconst[39m [33mSocialNetworkServiceImpl[39m[33m:[39m [33mISocialNetworkServiceServer[39m [33m=[39m {[0m
+  [0m [90m    |[39m              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 39 |[39m   followAUser[33m:[39m makeUnaryCallHandler(makeFollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 40 |[39m   unfollowAUser[33m:[39m makeUnaryCallHandler(makeUnfollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 41 |[39m   isFollowing[33m:[39m makeUnaryCallHandler(makeIsFollowingHandler(neo4jDriver)[33m,[39m logger)[33m,[39m[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (61ea9c6aaca204f8)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 65.1 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/users-srv/src/remote-methods/users.rpc-methods.ts:[32m[1m38:14[22m[39m[1m[39m[22m
+[90mTS2741: [39mProperty 'unblockUser' is missing in type '{ followAUser: handleUnaryCall<any, any>; unfollowAUser: handleUnaryCall<any, any>; isFollowing: handleUnaryCall<any, any>; BlockUser: handleUnaryCall<...>; }' but required in type 'ISocialNetworkServiceServer'.
+  [0m [90m 36 |[39m }[33m;[39m[0m
+  [0m [90m 37 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 38 |[39m [36mexport[39m [36mconst[39m [33mSocialNetworkServiceImpl[39m[33m:[39m [33mISocialNetworkServiceServer[39m [33m=[39m {[0m
+  [0m [90m    |[39m              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 39 |[39m   followAUser[33m:[39m makeUnaryCallHandler(makeFollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 40 |[39m   unfollowAUser[33m:[39m makeUnaryCallHandler(makeUnfollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 41 |[39m   isFollowing[33m:[39m makeUnaryCallHandler(makeIsFollowingHandler(neo4jDriver)[33m,[39m logger)[33m,[39m[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (e45dc0f56f4db7c1)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 65 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\users-srv\social-network\src\lib\factory\handlers\index.ts[39m[22m
+[1m../../libs/users-srv/social-network/src/lib/factory/handlers/index.ts[39m[22m [1m[32m25:16[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\users-srv\social-network\src\lib\factory\handlers\index.ts(25,17)[39m[22m
+[1m[31m      TS1003: Identifier expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\users-srv\social-network\src\lib\factory\handlers\index.ts[39m[22m
+[1m../../libs/users-srv/social-network/src/lib/factory/handlers/index.ts[39m[22m [1m[32m25:17[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\users-srv\social-network\src\lib\factory\handlers\index.ts(25,18)[39m[22m
+[1m[31m      TS1005: '(' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/users-srv/src/remote-methods/users.rpc-methods.ts:[32m[1m38:14[22m[39m[1m[39m[22m
+[90mTS2741: [39mProperty 'unblockUser' is missing in type '{ followAUser: handleUnaryCall<any, any>; unfollowAUser: handleUnaryCall<any, any>; isFollowing: handleUnaryCall<any, any>; BlockUser: handleUnaryCall<...>; }' but required in type 'ISocialNetworkServiceServer'.
+  [0m [90m 36 |[39m }[33m;[39m[0m
+  [0m [90m 37 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 38 |[39m [36mexport[39m [36mconst[39m [33mSocialNetworkServiceImpl[39m[33m:[39m [33mISocialNetworkServiceServer[39m [33m=[39m {[0m
+  [0m [90m    |[39m              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 39 |[39m   followAUser[33m:[39m makeUnaryCallHandler(makeFollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 40 |[39m   unfollowAUser[33m:[39m makeUnaryCallHandler(makeUnfollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 41 |[39m   isFollowing[33m:[39m makeUnaryCallHandler(makeIsFollowingHandler(neo4jDriver)[33m,[39m logger)[33m,[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./libs/users-srv/social-network/src/lib/factory/handlers/index.ts:[32m[1m25:9[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'funct'.
+  [0m [90m 23 |[39m }[0m
+  [0m [90m 24 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 25 |[39m [36mexport[39m  [36mfunction[39m make[0m
+  [0m [90m    |[39m         [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+
+webpack compiled with [1m[31m4 errors[39m[22m (f18acd08c126f92c)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 65 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\users-srv\social-network\src\lib\factory\handlers\index.ts[39m[22m
+[1m../../libs/users-srv/social-network/src/lib/factory/handlers/index.ts[39m[22m [1m[32m25:23[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\users-srv\social-network\src\lib\factory\handlers\index.ts(25,24)[39m[22m
+[1m[31m      TS1005: '(' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/users-srv/src/remote-methods/users.rpc-methods.ts:[32m[1m38:14[22m[39m[1m[39m[22m
+[90mTS2741: [39mProperty 'unblockUser' is missing in type '{ followAUser: handleUnaryCall<any, any>; unfollowAUser: handleUnaryCall<any, any>; isFollowing: handleUnaryCall<any, any>; BlockUser: handleUnaryCall<...>; }' but required in type 'ISocialNetworkServiceServer'.
+  [0m [90m 36 |[39m }[33m;[39m[0m
+  [0m [90m 37 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 38 |[39m [36mexport[39m [36mconst[39m [33mSocialNetworkServiceImpl[39m[33m:[39m [33mISocialNetworkServiceServer[39m [33m=[39m {[0m
+  [0m [90m    |[39m              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 39 |[39m   followAUser[33m:[39m makeUnaryCallHandler(makeFollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 40 |[39m   unfollowAUser[33m:[39m makeUnaryCallHandler(makeUnfollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 41 |[39m   isFollowing[33m:[39m makeUnaryCallHandler(makeIsFollowingHandler(neo4jDriver)[33m,[39m logger)[33m,[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./libs/users-srv/social-network/src/lib/factory/handlers/index.ts:[32m[1m25:18[22m[39m[1m[39m[22m
+[90mTS2391: [39mFunction implementation is missing or not immediately following the declaration.
+  [0m [90m 23 |[39m }[0m
+  [0m [90m 24 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 25 |[39m [36mexport[39m  [36mfunction[39m makeUnb[0m
+  [0m [90m    |[39m                  [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+
+webpack compiled with [1m[31m3 errors[39m[22m (2f93aa7fc21798e4)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 65 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\users-srv\social-network\src\lib\factory\handlers\index.ts[39m[22m
+[1m../../libs/users-srv/social-network/src/lib/factory/handlers/index.ts[39m[22m [1m[32m25:39[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\users-srv\social-network\src\lib\factory\handlers\index.ts(25,40)[39m[22m
+[1m[31m      TS1005: '(' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/users-srv/src/remote-methods/users.rpc-methods.ts:[32m[1m38:14[22m[39m[1m[39m[22m
+[90mTS2741: [39mProperty 'unblockUser' is missing in type '{ followAUser: handleUnaryCall<any, any>; unfollowAUser: handleUnaryCall<any, any>; isFollowing: handleUnaryCall<any, any>; BlockUser: handleUnaryCall<...>; }' but required in type 'ISocialNetworkServiceServer'.
+  [0m [90m 36 |[39m }[33m;[39m[0m
+  [0m [90m 37 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 38 |[39m [36mexport[39m [36mconst[39m [33mSocialNetworkServiceImpl[39m[33m:[39m [33mISocialNetworkServiceServer[39m [33m=[39m {[0m
+  [0m [90m    |[39m              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 39 |[39m   followAUser[33m:[39m makeUnaryCallHandler(makeFollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 40 |[39m   unfollowAUser[33m:[39m makeUnaryCallHandler(makeUnfollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 41 |[39m   isFollowing[33m:[39m makeUnaryCallHandler(makeIsFollowingHandler(neo4jDriver)[33m,[39m logger)[33m,[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./libs/users-srv/social-network/src/lib/factory/handlers/index.ts:[32m[1m25:18[22m[39m[1m[39m[22m
+[90mTS2391: [39mFunction implementation is missing or not immediately following the declaration.
+  [0m [90m 23 |[39m }[0m
+  [0m [90m 24 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 25 |[39m [36mexport[39m  [36mfunction[39m makeUnblockUserHandler(rd)[0m
+  [0m [90m    |[39m                  [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+
+webpack compiled with [1m[31m3 errors[39m[22m (49cb437982ea1e9d)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 65 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/users-srv/src/remote-methods/users.rpc-methods.ts:[32m[1m38:14[22m[39m[1m[39m[22m
+[90mTS2741: [39mProperty 'unblockUser' is missing in type '{ followAUser: handleUnaryCall<any, any>; unfollowAUser: handleUnaryCall<any, any>; isFollowing: handleUnaryCall<any, any>; BlockUser: handleUnaryCall<...>; }' but required in type 'ISocialNetworkServiceServer'.
+  [0m [90m 36 |[39m }[33m;[39m[0m
+  [0m [90m 37 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 38 |[39m [36mexport[39m [36mconst[39m [33mSocialNetworkServiceImpl[39m[33m:[39m [33mISocialNetworkServiceServer[39m [33m=[39m {[0m
+  [0m [90m    |[39m              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 39 |[39m   followAUser[33m:[39m makeUnaryCallHandler(makeFollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 40 |[39m   unfollowAUser[33m:[39m makeUnaryCallHandler(makeUnfollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 41 |[39m   isFollowing[33m:[39m makeUnaryCallHandler(makeIsFollowingHandler(neo4jDriver)[33m,[39m logger)[33m,[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./libs/users-srv/social-network/src/lib/factory/handlers/index.ts:[32m[1m25:18[22m[39m[1m[39m[22m
+[90mTS2391: [39mFunction implementation is missing or not immediately following the declaration.
+  [0m [90m 23 |[39m }[0m
+  [0m [90m 24 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 25 |[39m [36mexport[39m  [36mfunction[39m makeUnblockUserHandler(driver[33m:[39m [33mDriver[39m) {[0m
+  [0m [90m    |[39m                  [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 26 |[39m   r[0m
+  [0m [90m 27 |[39m }[0m
+
+webpack compiled with [1m[31m2 errors[39m[22m (a3b9fc0b43fe7ed8)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 65.2 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/users-srv/src/remote-methods/users.rpc-methods.ts:[32m[1m38:14[22m[39m[1m[39m[22m
+[90mTS2741: [39mProperty 'unblockUser' is missing in type '{ followAUser: handleUnaryCall<any, any>; unfollowAUser: handleUnaryCall<any, any>; isFollowing: handleUnaryCall<any, any>; BlockUser: handleUnaryCall<...>; }' but required in type 'ISocialNetworkServiceServer'.
+  [0m [90m 36 |[39m }[33m;[39m[0m
+  [0m [90m 37 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 38 |[39m [36mexport[39m [36mconst[39m [33mSocialNetworkServiceImpl[39m[33m:[39m [33mISocialNetworkServiceServer[39m [33m=[39m {[0m
+  [0m [90m    |[39m              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 39 |[39m   followAUser[33m:[39m makeUnaryCallHandler(makeFollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 40 |[39m   unfollowAUser[33m:[39m makeUnaryCallHandler(makeUnfollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 41 |[39m   isFollowing[33m:[39m makeUnaryCallHandler(makeIsFollowingHandler(neo4jDriver)[33m,[39m logger)[33m,[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./libs/users-srv/social-network/src/lib/factory/handlers/index.ts:[32m[1m26:10[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'n'.
+  [0m [90m 24 |[39m[0m
+  [0m [90m 25 |[39m [36mexport[39m  [36mfunction[39m makeUnblockUserHandler(driver[33m:[39m [33mDriver[39m) {[0m
+  [0m[31m[1m>[22m[39m[90m 26 |[39m   [36mreturn[39m [36mnew[39m [33mU[39m[0m
+  [0m [90m    |[39m          [31m[1m^[22m[39m[0m
+  [0m [90m 27 |[39m }[0m
+
+webpack compiled with [1m[31m2 errors[39m[22m (d4b307874df15b81)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 65.2 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/users-srv/src/remote-methods/users.rpc-methods.ts:[32m[1m38:14[22m[39m[1m[39m[22m
+[90mTS2741: [39mProperty 'unblockUser' is missing in type '{ followAUser: handleUnaryCall<any, any>; unfollowAUser: handleUnaryCall<any, any>; isFollowing: handleUnaryCall<any, any>; BlockUser: handleUnaryCall<...>; }' but required in type 'ISocialNetworkServiceServer'.
+  [0m [90m 36 |[39m }[33m;[39m[0m
+  [0m [90m 37 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 38 |[39m [36mexport[39m [36mconst[39m [33mSocialNetworkServiceImpl[39m[33m:[39m [33mISocialNetworkServiceServer[39m [33m=[39m {[0m
+  [0m [90m    |[39m              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 39 |[39m   followAUser[33m:[39m makeUnaryCallHandler(makeFollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 40 |[39m   unfollowAUser[33m:[39m makeUnaryCallHandler(makeUnfollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 41 |[39m   isFollowing[33m:[39m makeUnaryCallHandler(makeIsFollowingHandler(neo4jDriver)[33m,[39m logger)[33m,[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./libs/users-srv/social-network/src/lib/factory/handlers/index.ts:[32m[1m26:14[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'U'.
+  [0m [90m 24 |[39m[0m
+  [0m [90m 25 |[39m [36mexport[39m  [36mfunction[39m makeUnblockUserHandler(driver[33m:[39m [33mDriver[39m) {[0m
+  [0m[31m[1m>[22m[39m[90m 26 |[39m   [36mreturn[39m [36mnew[39m [33mUn[39m[0m
+  [0m [90m    |[39m              [31m[1m^[22m[39m[0m
+  [0m [90m 27 |[39m }[0m
+
+webpack compiled with [1m[31m2 errors[39m[22m (43410df199374927)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.2 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\users-srv\social-network\src\lib\factory\handlers\index.ts[39m[22m
+[1m../../libs/users-srv/social-network/src/lib/factory/handlers/index.ts[39m[22m [1m[32m28:0[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\users-srv\social-network\src\lib\factory\handlers\index.ts(28,1)[39m[22m
+[1m[31m      TS1005: '}' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/users-srv/src/remote-methods/users.rpc-methods.ts:[32m[1m38:14[22m[39m[1m[39m[22m
+[90mTS2741: [39mProperty 'unblockUser' is missing in type '{ followAUser: handleUnaryCall<any, any>; unfollowAUser: handleUnaryCall<any, any>; isFollowing: handleUnaryCall<any, any>; BlockUser: handleUnaryCall<...>; }' but required in type 'ISocialNetworkServiceServer'.
+  [0m [90m 36 |[39m }[33m;[39m[0m
+  [0m [90m 37 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 38 |[39m [36mexport[39m [36mconst[39m [33mSocialNetworkServiceImpl[39m[33m:[39m [33mISocialNetworkServiceServer[39m [33m=[39m {[0m
+  [0m [90m    |[39m              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 39 |[39m   followAUser[33m:[39m makeUnaryCallHandler(makeFollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 40 |[39m   unfollowAUser[33m:[39m makeUnaryCallHandler(makeUnfollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 41 |[39m   isFollowing[33m:[39m makeUnaryCallHandler(makeIsFollowingHandler(neo4jDriver)[33m,[39m logger)[33m,[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./libs/users-srv/social-network/src/lib/factory/handlers/index.ts:[32m[1m26:14[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'Un'.
+  [0m [90m 24 |[39m }[0m
+  [0m [90m 25 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 26 |[39m [36mexport[39m  [36mfunction[39m makeUnblockUserHandler(driver[33m:[39m [33mDriver[39m) {[0m
+  [0m [90m    |[39m              [31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 27 |[39m   [36mreturn[39m [36mnew[39m [33mUnblockUserHandler[39m()[0m
+  [0m [90m 28 |[39m }[0m
+
+webpack compiled with [1m[31m3 errors[39m[22m (3e7c0bdf326b7bd5)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.2 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/users-srv/src/remote-methods/users.rpc-methods.ts:[32m[1m38:14[22m[39m[1m[39m[22m
+[90mTS2741: [39mProperty 'unblockUser' is missing in type '{ followAUser: handleUnaryCall<any, any>; unfollowAUser: handleUnaryCall<any, any>; isFollowing: handleUnaryCall<any, any>; BlockUser: handleUnaryCall<...>; }' but required in type 'ISocialNetworkServiceServer'.
+  [0m [90m 36 |[39m }[33m;[39m[0m
+  [0m [90m 37 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 38 |[39m [36mexport[39m [36mconst[39m [33mSocialNetworkServiceImpl[39m[33m:[39m [33mISocialNetworkServiceServer[39m [33m=[39m {[0m
+  [0m [90m    |[39m              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 39 |[39m   followAUser[33m:[39m makeUnaryCallHandler(makeFollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 40 |[39m   unfollowAUser[33m:[39m makeUnaryCallHandler(makeUnfollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 41 |[39m   isFollowing[33m:[39m makeUnaryCallHandler(makeIsFollowingHandler(neo4jDriver)[33m,[39m logger)[33m,[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./libs/users-srv/social-network/src/lib/factory/handlers/index.ts:[32m[1m27:33[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'd'.
+  [0m [90m 25 |[39m[0m
+  [0m [90m 26 |[39m [36mexport[39m  [36mfunction[39m makeUnblockUserHandler(driver[33m:[39m [33mDriver[39m) {[0m
+  [0m[31m[1m>[22m[39m[90m 27 |[39m   [36mreturn[39m [36mnew[39m [33mUnblockUserHandler[39m(driver)[33m;[39m[0m
+  [0m [90m    |[39m                                 [31m[1m^[22m[39m[0m
+  [0m [90m 28 |[39m }[0m
+
+webpack compiled with [1m[31m2 errors[39m[22m (27011dde7962a8d5)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.2 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/users-srv/src/remote-methods/users.rpc-methods.ts:[32m[1m38:14[22m[39m[1m[39m[22m
+[90mTS2741: [39mProperty 'unblockUser' is missing in type '{ followAUser: handleUnaryCall<any, any>; unfollowAUser: handleUnaryCall<any, any>; isFollowing: handleUnaryCall<any, any>; BlockUser: handleUnaryCall<...>; }' but required in type 'ISocialNetworkServiceServer'.
+  [0m [90m 36 |[39m }[33m;[39m[0m
+  [0m [90m 37 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 38 |[39m [36mexport[39m [36mconst[39m [33mSocialNetworkServiceImpl[39m[33m:[39m [33mISocialNetworkServiceServer[39m [33m=[39m {[0m
+  [0m [90m    |[39m              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 39 |[39m   followAUser[33m:[39m makeUnaryCallHandler(makeFollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 40 |[39m   unfollowAUser[33m:[39m makeUnaryCallHandler(makeUnfollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 41 |[39m   isFollowing[33m:[39m makeUnaryCallHandler(makeIsFollowingHandler(neo4jDriver)[33m,[39m logger)[33m,[39m[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (27011dde7962a8d5)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.2 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/users-srv/src/remote-methods/users.rpc-methods.ts:[32m[1m38:14[22m[39m[1m[39m[22m
+[90mTS2741: [39mProperty 'unblockUser' is missing in type '{ followAUser: handleUnaryCall<any, any>; unfollowAUser: handleUnaryCall<any, any>; isFollowing: handleUnaryCall<any, any>; BlockUser: handleUnaryCall<...>; }' but required in type 'ISocialNetworkServiceServer'.
+  [0m [90m 36 |[39m }[33m;[39m[0m
+  [0m [90m 37 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 38 |[39m [36mexport[39m [36mconst[39m [33mSocialNetworkServiceImpl[39m[33m:[39m [33mISocialNetworkServiceServer[39m [33m=[39m {[0m
+  [0m [90m    |[39m              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 39 |[39m   followAUser[33m:[39m makeUnaryCallHandler(makeFollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 40 |[39m   unfollowAUser[33m:[39m makeUnaryCallHandler(makeUnfollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 41 |[39m   isFollowing[33m:[39m makeUnaryCallHandler(makeIsFollowingHandler(neo4jDriver)[33m,[39m logger)[33m,[39m[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (0022738ec77eec96)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.2 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\users-srv\src\remote-methods\users.rpc-methods.ts[39m[22m
+[1m./src/remote-methods/users.rpc-methods.ts[39m[22m [1m[32m43:2-3[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\apps\users-srv\src\remote-methods\users.rpc-methods.ts(43,3)[39m[22m
+[1m[31m      TS1005: ',' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/users-srv/src/remote-methods/users.rpc-methods.ts:[32m[1m43:3[22m[39m[1m[39m[22m
+[90mTS18004: [39mNo value exists in scope for the shorthand property 'u'. Either declare one or provide an initializer.
+  [0m [90m 41 |[39m   isFollowing[33m:[39m makeUnaryCallHandler(makeIsFollowingHandler(neo4jDriver)[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 42 |[39m   [33mBlockUser[39m[33m:[39m makeUnaryCallHandler(makeBlockUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[0m
+  [0m[31m[1m>[22m[39m[90m 43 |[39m   u[0m
+  [0m [90m    |[39m   [31m[1m^[22m[39m[0m
+  [0m [90m 44 |[39m[0m
+  [0m [90m 45 |[39m }[0m
+  [0m [90m 46 |[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./apps/users-srv/src/remote-methods/users.rpc-methods.ts:[32m[1m43:3[22m[39m[1m[39m[22m
+[90mTS2322: [39mType '{ followAUser: handleUnaryCall<any, any>; unfollowAUser: handleUnaryCall<any, any>; isFollowing: handleUnaryCall<any, any>; BlockUser: handleUnaryCall<...>; u: any; }' is not assignable to type 'ISocialNetworkServiceServer'.
+  Object literal may only specify known properties, and 'u' does not exist in type 'ISocialNetworkServiceServer'.
+  [0m [90m 41 |[39m   isFollowing[33m:[39m makeUnaryCallHandler(makeIsFollowingHandler(neo4jDriver)[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 42 |[39m   [33mBlockUser[39m[33m:[39m makeUnaryCallHandler(makeBlockUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[0m
+  [0m[31m[1m>[22m[39m[90m 43 |[39m   u[0m
+  [0m [90m    |[39m   [31m[1m^[22m[39m[0m
+  [0m [90m 44 |[39m[0m
+  [0m [90m 45 |[39m }[0m
+  [0m [90m 46 |[39m[0m
+
+webpack compiled with [1m[31m3 errors[39m[22m (01beea644616392d)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.2 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/users-srv/src/remote-methods/users.rpc-methods.ts:[32m[1m43:3[22m[39m[1m[39m[22m
+[90mTS18004: [39mNo value exists in scope for the shorthand property 'unblockUser'. Either declare one or provide an initializer.
+  [0m [90m 41 |[39m   isFollowing[33m:[39m makeUnaryCallHandler(makeIsFollowingHandler(neo4jDriver)[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 42 |[39m   [33mBlockUser[39m[33m:[39m makeUnaryCallHandler(makeBlockUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 43 |[39m   unblockUser[33m:[39m make[0m
+  [0m [90m    |[39m   [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 44 |[39m[0m
+  [0m [90m 45 |[39m }[0m
+  [0m [90m 46 |[39m[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (07e1ae8f40679260)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.2 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/users-srv/src/remote-methods/users.rpc-methods.ts:[32m[1m43:16[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'make'.
+  [0m [90m 41 |[39m   isFollowing[33m:[39m makeUnaryCallHandler(makeIsFollowingHandler(neo4jDriver)[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 42 |[39m   [33mBlockUser[39m[33m:[39m makeUnaryCallHandler(makeBlockUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 43 |[39m   unblockUser[33m:[39m makeUnaryCallHandler(makeUnbl)[0m
+  [0m [90m    |[39m                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 44 |[39m[0m
+  [0m [90m 45 |[39m }[0m
+  [0m [90m 46 |[39m[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (c9e6acd340ac6026)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.3 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/users-srv/src/remote-methods/users.rpc-methods.ts:[32m[1m43:16[22m[39m[1m[39m[22m
+[90mTS2554: [39mExpected 2 arguments, but got 1.
+  [0m [90m 41 |[39m   isFollowing[33m:[39m makeUnaryCallHandler(makeIsFollowingHandler(neo4jDriver)[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 42 |[39m   [33mBlockUser[39m[33m:[39m makeUnaryCallHandler(makeBlockUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 43 |[39m   unblockUser[33m:[39m makeUnaryCallHandler(makeUnblockUserHandler(ne))[0m
+  [0m [90m    |[39m                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 44 |[39m[0m
+  [0m [90m 45 |[39m }[0m
+  [0m [90m 46 |[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./apps/users-srv/src/remote-methods/users.rpc-methods.ts:[32m[1m43:37[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'makeUnbloc'.
+  [0m [90m 41 |[39m   isFollowing[33m:[39m makeUnaryCallHandler(makeIsFollowingHandler(neo4jDriver)[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 42 |[39m   [33mBlockUser[39m[33m:[39m makeUnaryCallHandler(makeBlockUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 43 |[39m   unblockUser[33m:[39m makeUnaryCallHandler(makeUnblockUserHandler(ne))[0m
+  [0m [90m    |[39m                                     [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 44 |[39m[0m
+  [0m [90m 45 |[39m }[0m
+  [0m [90m 46 |[39m[0m
+
+webpack compiled with [1m[31m2 errors[39m[22m (3d26ee045f54715e)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.3 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/users-srv/src/remote-methods/users.rpc-methods.ts:[32m[1m43:16[22m[39m[1m[39m[22m
+[90mTS2554: [39mExpected 2 arguments, but got 1.
+  [0m [90m 41 |[39m   isFollowing[33m:[39m makeUnaryCallHandler(makeIsFollowingHandler(neo4jDriver)[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 42 |[39m   [33mBlockUser[39m[33m:[39m makeUnaryCallHandler(makeBlockUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 43 |[39m   unblockUser[33m:[39m makeUnaryCallHandler(makeUnblockUserHandler(neo4jDriver))[0m
+  [0m [90m    |[39m                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 44 |[39m[0m
+  [0m [90m 45 |[39m }[0m
+  [0m [90m 46 |[39m[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (851029ee2371bd02)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.3 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/users-srv/src/remote-methods/users.rpc-methods.ts:[32m[1m43:16[22m[39m[1m[39m[22m
+[90mTS2554: [39mExpected 2 arguments, but got 1.
+  [0m [90m 41 |[39m   isFollowing[33m:[39m makeUnaryCallHandler(makeIsFollowingHandler(neo4jDriver)[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 42 |[39m   [33mBlockUser[39m[33m:[39m makeUnaryCallHandler(makeBlockUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 43 |[39m   unblockUser[33m:[39m makeUnaryCallHandler(makeUnblockUserHandler(neo4jDriver)[33m,[39m logger)[0m
+  [0m [90m    |[39m                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 44 |[39m[0m
+  [0m [90m 45 |[39m }[0m
+  [0m [90m 46 |[39m[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (6835f7d27a2cebae)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.3 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (f5784d7e6679a21c)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.3 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (bf25106585c1a2bc)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.3 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (0546d919ddc85530)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.3 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (a1b291298e353512)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.3 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (ebe945ac76bf1cf4)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m../../libs/users-srv/social-network/src/lib/interface/handlers/unblockUser.handler.ts[39m[22m [1m[32m22:12[39m[22m
+[1mModule parse [1m[31mfailed[39m[22m[1m: [1m[31mUnexpected[39m[22m[1m token (22:12)
+File was processed with these loaders:
+ * ../../node_modules/.pnpm/ts-loader@9.4.4_typescript@5.1.3_webpack@5.88.2/node_modules/ts-loader/index.js
+You may need an additional loader to handle the result of these loaders.
+|             });
+|             session.
+>             ;
+|             return (0, handlers_1.respondSuccess)(null);
+|         });[39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\users-srv\social-network\src\lib\interface\handlers\unblockUser.handler.ts[39m[22m
+[1m../../libs/users-srv/social-network/src/lib/interface/handlers/unblockUser.handler.ts[39m[22m [1m[32m29:12[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\users-srv\social-network\src\lib\interface\handlers\unblockUser.handler.ts(29,13)[39m[22m
+[1m[31m      TS1003: Identifier expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./libs/users-srv/social-network/src/lib/interface/handlers/unblockUser.handler.ts:[32m[1m29:5[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 's'.
+  [0m [90m 27 |[39m       }[0m
+  [0m [90m 28 |[39m     )[33m;[39m[0m
+  [0m[31m[1m>[22m[39m[90m 29 |[39m     session[33m.[39mcl[0m
+  [0m [90m    |[39m     [31m[1m^[22m[39m[0m
+  [0m [90m 30 |[39m     [36mreturn[39m respondSuccess([36mnull[39m)[33m;[39m[0m
+  [0m [90m 31 |[39m   }[0m
+  [0m [90m 32 |[39m }[0m
+
+webpack compiled with [1m[31m3 errors[39m[22m (10aee5095f7ab2a5)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./libs/users-srv/social-network/src/lib/interface/handlers/unblockUser.handler.ts:[32m[1m29:13[22m[39m[1m[39m[22m
+[90mTS2339: [39mProperty 'cl' does not exist on type 'Session'.
+  [0m [90m 27 |[39m       }[0m
+  [0m [90m 28 |[39m     )[33m;[39m[0m
+  [0m[31m[1m>[22m[39m[90m 29 |[39m     session[33m.[39mclose()[0m
+  [0m [90m    |[39m             [31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 30 |[39m     [36mreturn[39m respondSuccess([36mnull[39m)[33m;[39m[0m
+  [0m [90m 31 |[39m   }[0m
+  [0m [90m 32 |[39m }[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (9b3d368761a1c0bc)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (9b3d368761a1c0bc)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (0bd8c7ac3d3ca3c7)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\users-srv\social-network\src\lib\interface\handlers\unblockUser.handler.ts[39m[22m
+[1m../../libs/users-srv/social-network/src/lib/interface/handlers/unblockUser.handler.ts[39m[22m [1m[32m31:2[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\users-srv\social-network\src\lib\interface\handlers\unblockUser.handler.ts(31,3)[39m[22m
+[1m[31m      TS1005: '}' expected.[39m[22m
+
+webpack compiled with [1m[31m1 error[39m[22m (8fe316fb499ed70c)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m../../libs/users-srv/social-network/src/lib/interface/handlers/unblockUser.handler.ts[39m[22m [1m[32m13:61[39m[22m
+[1mModule parse [1m[31mfailed[39m[22m[1m: [1m[31mUnexpected[39m[22m[1m token (13:61)
+File was processed with these loaders:
+ * ../../node_modules/.pnpm/ts-loader@9.4.4_typescript@5.1.3_webpack@5.88.2/node_modules/ts-loader/index.js
+You may need an additional loader to handle the result of these loaders.
+|     execute(request) {
+|         return tslib_1.__awaiter(this, void 0, void 0, function* () {
+>             const session = this.driver.session({ database:  });
+|             yield session.run(`
+|       MATCH (:User {userId: $blockerId}) -[blocks:BLOCKS] ->(:User {userId: $targetId}) [39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\users-srv\social-network\src\lib\interface\handlers\unblockUser.handler.ts[39m[22m
+[1m../../libs/users-srv/social-network/src/lib/interface/handlers/unblockUser.handler.ts[39m[22m [1m[32m18:51-52[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\users-srv\social-network\src\lib\interface\handlers\unblockUser.handler.ts(18,52)[39m[22m
+[1m[31m      TS1109: Expression expected.[39m[22m
+
+webpack compiled with [1m[31m2 errors[39m[22m (80b49fa188ebe1db)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (7c6504befb9df799)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (960a3568af9083d4)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 65.5 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (50133ec643266ff2)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (184ae7ee071e4e71)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (184ae7ee071e4e71)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (184ae7ee071e4e71)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (184ae7ee071e4e71)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (184ae7ee071e4e71)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (184ae7ee071e4e71)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (184ae7ee071e4e71)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (184ae7ee071e4e71)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (184ae7ee071e4e71)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (184ae7ee071e4e71)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (184ae7ee071e4e71)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31m[39m[22m
+[1m[31mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\protobufjs@7.2.4\node_modules\protobufjs\src\tokenize.js:121[39m[22m
+[1m[31m        return Error("illegal " + subject + " (line " + line + ")");[39m[22m
+[1m[31m               ^[39m[22m
+[1m[31mError: illegal token '}', '=' expected (line 18)[39m[22m
+[1m[31m    at illegal (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\protobufjs@7.2.4\node_modules\protobufjs\src\tokenize.js:121:16)[39m[22m
+[1m[31m    at skip (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\protobufjs@7.2.4\node_modules\protobufjs\src\tokenize.js:375:19)[39m[22m
+[1m[31m    at parseField (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\protobufjs@7.2.4\node_modules\protobufjs\src\parse.js:385:9)[39m[22m
+[1m[31m    at parseType_block (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\protobufjs@7.2.4\node_modules\protobufjs\src\parse.js:350:21)[39m[22m
+[1m[31m    at ifBlock (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\protobufjs@7.2.4\node_modules\protobufjs\src\parse.js:290:17)[39m[22m
+[1m[31m    at parseType (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\protobufjs@7.2.4\node_modules\protobufjs\src\parse.js:308:9)[39m[22m
+[1m[31m    at parseCommon (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\protobufjs@7.2.4\node_modules\protobufjs\src\parse.js:261:17)[39m[22m
+[1m[31m    at parse (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\protobufjs@7.2.4\node_modules\protobufjs\src\parse.js:839:21)[39m[22m
+[1m[31m    at process (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\protobufjs@7.2.4\node_modules\protobufjs\src\root.js:127:30)[39m[22m
+[1m[31m    at fetch (C:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\node_modules\.pnpm\protobufjs@7.2.4\node_modules\protobufjs\src\root.js:179:13)[39m[22m
+[1m[31m[39m[22m
+
+[36m>[39m [7m[1m[36m NX [39m[22m[27m [1mProcess exited with code 1, waiting for changes to restart...[22m
+
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (184ae7ee071e4e71)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (184ae7ee071e4e71)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (184ae7ee071e4e71)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (184ae7ee071e4e71)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (184ae7ee071e4e71)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (184ae7ee071e4e71)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (184ae7ee071e4e71)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (184ae7ee071e4e71)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (184ae7ee071e4e71)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (184ae7ee071e4e71)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (184ae7ee071e4e71)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (184ae7ee071e4e71)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (184ae7ee071e4e71)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (184ae7ee071e4e71)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (184ae7ee071e4e71)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (184ae7ee071e4e71)
+
+[36m>[39m [7m[1m[36m NX [39m[22m[27m [1mProcess exited with code 0, waiting for changes to restart...[22m
+
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (184ae7ee071e4e71)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (b1c2be852a2babac)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\common\typings\src\lib\proto\social-networkService.ts[39m[22m
+[1m../../libs/common/typings/src/lib/proto/social-networkService.ts[39m[22m [1m[32m23:0-6[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\common\typings\src\lib\proto\social-networkService.ts(23,1)[39m[22m
+[1m[31m      TS1128: Declaration or statement expected.[39m[22m
+
+webpack compiled with [1m[31m1 error[39m[22m (4950220b724e14ae)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\common\typings\src\lib\proto\social-networkService.ts[39m[22m
+[1m../../libs/common/typings/src/lib/proto/social-networkService.ts[39m[22m [1m[32m25:0-6[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\common\typings\src\lib\proto\social-networkService.ts(25,1)[39m[22m
+[1m[31m      TS1005: '{' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./libs/common/typings/src/lib/proto/social-networkService.ts:[32m[1m23:8[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'inte'.
+  [0m [90m 21 |[39m[0m
+  [0m [90m 22 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 23 |[39m [36mexport[39m [36minterface[39m [33mIHasB[39m[0m
+  [0m [90m    |[39m        [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 24 |[39m[0m
+  [0m [90m 25 |[39m [36mexport[39m [36minterface[39m  [33mIBlockUserRequest[39m {[0m
+  [0m [90m 26 |[39m   blockerId[33m:[39m string[33m;[39m[0m
+
+webpack compiled with [1m[31m2 errors[39m[22m (110a332d5a389bfc)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (da907db94b293968)
+[1m[31mDebugger listening on ws://localhost:9229/9c239809-b20e-4252-851e-9d7aefb09d3b[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/9c239809-b20e-4252-851e-9d7aefb09d3b[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+
+[36m>[39m [7m[1m[36m NX [39m[22m[27m [1mProcess exited with code 0, waiting for changes to restart...[22m
+
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\common\typings\src\lib\proto\social-networkService.ts[39m[22m
+[1m../../libs/common/typings/src/lib/proto/social-networkService.ts[39m[22m [1m[32m25:0-6[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\common\typings\src\lib\proto\social-networkService.ts(25,1)[39m[22m
+[1m[31m      TS1005: '{' expected.[39m[22m
+
+webpack compiled with [1m[31m1 error[39m[22m (3d6277226f42d510)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./libs/common/typings/src/lib/proto/social-networkService.ts:[32m[1m20:56[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'IHasre'.
+  [0m [90m 18 |[39m   isFollowing(request[33m:[39m [33mFollowOrUnollowAUserRequest[39m)[33m:[39m [33mObservable[39m[33m<[39m[36mvoid[39m[33m>[39m[33m;[39m[0m
+  [0m [90m 19 |[39m   [33mBlockUser[39m(request[33m:[39m [33mIBlockUserRequest[39m)[33m:[39m [33mObservable[39m[33m<[39m[36mvoid[39m[33m>[39m[33m;[39m[0m
+  [0m[31m[1m>[22m[39m[90m 20 |[39m   unblockUser(request[33m:[39m [33mIBlockUserRequest[39m)[33m:[39m [33mObservable[39m[33m<[39m[36mvoid[39m[33m>[39m[33m;[39m[0m
+  [0m [90m    |[39m                                                        [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 21 |[39m   hasBlocked(request[33m:[39m [33mIHasBlockedRequest[39m) [33m:[39m [33mObservable[39m[33m<[39m[33mIHasBlockedResponse[39m[33m>[39m[33m;[39m[0m
+  [0m [90m 22 |[39m }[0m
+  [0m [90m 23 |[39m[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (20cde716c4d85881)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/users-srv/src/remote-methods/users.rpc-methods.ts:[32m[1m38:14[22m[39m[1m[39m[22m
+[90mTS2741: [39mProperty 'hasBlocked' is missing in type '{ followAUser: handleUnaryCall<any, any>; unfollowAUser: handleUnaryCall<any, any>; isFollowing: handleUnaryCall<any, any>; BlockUser: handleUnaryCall<...>; unblockUser: handleUnaryCall<...>; }' but required in type 'ISocialNetworkServiceServer'.
+  [0m [90m 36 |[39m }[33m;[39m[0m
+  [0m [90m 37 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 38 |[39m [36mexport[39m [36mconst[39m [33mSocialNetworkServiceImpl[39m[33m:[39m [33mISocialNetworkServiceServer[39m [33m=[39m {[0m
+  [0m [90m    |[39m              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 39 |[39m   followAUser[33m:[39m makeUnaryCallHandler(makeFollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 40 |[39m   unfollowAUser[33m:[39m makeUnaryCallHandler(makeUnfollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 41 |[39m   isFollowing[33m:[39m makeUnaryCallHandler(makeIsFollowingHandler(neo4jDriver)[33m,[39m logger)[33m,[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./libs/common/typings/src/lib/proto/social-networkService.ts:[32m[1m10:16[22m[39m[1m[39m[22m
+[90mTS2552: [39mCannot find name 'handledUnaryCall'. Did you mean 'handleUnaryCall'?
+  [0m [90m  8 |[39m    [33mBlockUser[39m[33m:[39m handleUnaryCall[33m<[39m[33mIBlockUserRequest[39m[33m,[39m [36mvoid[39m[33m>[39m[33m;[39m[0m
+  [0m [90m  9 |[39m    unblockUser[33m:[39m handleUnaryCall[33m<[39m[33mIBlockUserRequest[39m[33m,[39m [36mvoid[39m[33m>[39m[33m;[39m[0m
+  [0m[31m[1m>[22m[39m[90m 10 |[39m    hasBlocked[33m:[39m handledUnaryCall[33m<[39m[33mIHasBlockedRequest[39m[33m,[39m [33mIHasBlockedResponse[39m[33m>[39m[33m;[39m[0m
+  [0m [90m    |[39m                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 11 |[39m[0m
+  [0m [90m 12 |[39m }[0m
+  [0m [90m 13 |[39m[0m
+
+webpack compiled with [1m[31m2 errors[39m[22m (87bc02057a44a105)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/users-srv/src/remote-methods/users.rpc-methods.ts:[32m[1m38:14[22m[39m[1m[39m[22m
+[90mTS2741: [39mProperty 'hasBlocked' is missing in type '{ followAUser: handleUnaryCall<any, any>; unfollowAUser: handleUnaryCall<any, any>; isFollowing: handleUnaryCall<any, any>; BlockUser: handleUnaryCall<...>; unblockUser: handleUnaryCall<...>; }' but required in type 'ISocialNetworkServiceServer'.
+  [0m [90m 36 |[39m }[33m;[39m[0m
+  [0m [90m 37 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 38 |[39m [36mexport[39m [36mconst[39m [33mSocialNetworkServiceImpl[39m[33m:[39m [33mISocialNetworkServiceServer[39m [33m=[39m {[0m
+  [0m [90m    |[39m              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 39 |[39m   followAUser[33m:[39m makeUnaryCallHandler(makeFollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 40 |[39m   unfollowAUser[33m:[39m makeUnaryCallHandler(makeUnfollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 41 |[39m   isFollowing[33m:[39m makeUnaryCallHandler(makeIsFollowingHandler(neo4jDriver)[33m,[39m logger)[33m,[39m[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (3e748f3f4abb7600)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\users-srv\social-network\src\lib\factory\handlers\index.ts[39m[22m
+[1m../../libs/users-srv/social-network/src/lib/factory/handlers/index.ts[39m[22m [1m[32m30:0-6[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\users-srv\social-network\src\lib\factory\handlers\index.ts(30,1)[39m[22m
+[1m[31m      TS1128: Declaration or statement expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/users-srv/src/remote-methods/users.rpc-methods.ts:[32m[1m38:14[22m[39m[1m[39m[22m
+[90mTS2741: [39mProperty 'hasBlocked' is missing in type '{ followAUser: handleUnaryCall<any, any>; unfollowAUser: handleUnaryCall<any, any>; isFollowing: handleUnaryCall<any, any>; BlockUser: handleUnaryCall<...>; unblockUser: handleUnaryCall<...>; }' but required in type 'ISocialNetworkServiceServer'.
+  [0m [90m 36 |[39m }[33m;[39m[0m
+  [0m [90m 37 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 38 |[39m [36mexport[39m [36mconst[39m [33mSocialNetworkServiceImpl[39m[33m:[39m [33mISocialNetworkServiceServer[39m [33m=[39m {[0m
+  [0m [90m    |[39m              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 39 |[39m   followAUser[33m:[39m makeUnaryCallHandler(makeFollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 40 |[39m   unfollowAUser[33m:[39m makeUnaryCallHandler(makeUnfollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 41 |[39m   isFollowing[33m:[39m makeUnaryCallHandler(makeIsFollowingHandler(neo4jDriver)[33m,[39m logger)[33m,[39m[0m
+
+webpack compiled with [1m[31m2 errors[39m[22m (a8fb3663140792a6)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\users-srv\social-network\src\lib\factory\handlers\index.ts[39m[22m
+[1m../../libs/users-srv/social-network/src/lib/factory/handlers/index.ts[39m[22m [1m[32m30:22[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\users-srv\social-network\src\lib\factory\handlers\index.ts(30,23)[39m[22m
+[1m[31m      TS1005: '(' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/users-srv/src/remote-methods/users.rpc-methods.ts:[32m[1m38:14[22m[39m[1m[39m[22m
+[90mTS2741: [39mProperty 'hasBlocked' is missing in type '{ followAUser: handleUnaryCall<any, any>; unfollowAUser: handleUnaryCall<any, any>; isFollowing: handleUnaryCall<any, any>; BlockUser: handleUnaryCall<...>; unblockUser: handleUnaryCall<...>; }' but required in type 'ISocialNetworkServiceServer'.
+  [0m [90m 36 |[39m }[33m;[39m[0m
+  [0m [90m 37 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 38 |[39m [36mexport[39m [36mconst[39m [33mSocialNetworkServiceImpl[39m[33m:[39m [33mISocialNetworkServiceServer[39m [33m=[39m {[0m
+  [0m [90m    |[39m              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 39 |[39m   followAUser[33m:[39m makeUnaryCallHandler(makeFollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 40 |[39m   unfollowAUser[33m:[39m makeUnaryCallHandler(makeUnfollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 41 |[39m   isFollowing[33m:[39m makeUnaryCallHandler(makeIsFollowingHandler(neo4jDriver)[33m,[39m logger)[33m,[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./libs/users-srv/social-network/src/lib/factory/handlers/index.ts:[32m[1m30:17[22m[39m[1m[39m[22m
+[90mTS2391: [39mFunction implementation is missing or not immediately following the declaration.
+  [0m [90m 28 |[39m }[0m
+  [0m [90m 29 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 30 |[39m [36mexport[39m [36mfunction[39m makeHasBlockd[0m
+  [0m [90m    |[39m                 [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+
+webpack compiled with [1m[31m3 errors[39m[22m (1192689d2101cb48)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.4 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\users-srv\social-network\src\lib\factory\handlers\index.ts[39m[22m
+[1m../../libs/users-srv/social-network/src/lib/factory/handlers/index.ts[39m[22m [1m[32m30:37[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\users-srv\social-network\src\lib\factory\handlers\index.ts(30,38)[39m[22m
+[1m[31m      TS1005: '(' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/users-srv/src/remote-methods/users.rpc-methods.ts:[32m[1m38:14[22m[39m[1m[39m[22m
+[90mTS2741: [39mProperty 'hasBlocked' is missing in type '{ followAUser: handleUnaryCall<any, any>; unfollowAUser: handleUnaryCall<any, any>; isFollowing: handleUnaryCall<any, any>; BlockUser: handleUnaryCall<...>; unblockUser: handleUnaryCall<...>; }' but required in type 'ISocialNetworkServiceServer'.
+  [0m [90m 36 |[39m }[33m;[39m[0m
+  [0m [90m 37 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 38 |[39m [36mexport[39m [36mconst[39m [33mSocialNetworkServiceImpl[39m[33m:[39m [33mISocialNetworkServiceServer[39m [33m=[39m {[0m
+  [0m [90m    |[39m              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 39 |[39m   followAUser[33m:[39m makeUnaryCallHandler(makeFollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 40 |[39m   unfollowAUser[33m:[39m makeUnaryCallHandler(makeUnfollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 41 |[39m   isFollowing[33m:[39m makeUnaryCallHandler(makeIsFollowingHandler(neo4jDriver)[33m,[39m logger)[33m,[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./libs/users-srv/social-network/src/lib/factory/handlers/index.ts:[32m[1m30:17[22m[39m[1m[39m[22m
+[90mTS2391: [39mFunction implementation is missing or not immediately following the declaration.
+  [0m [90m 28 |[39m }[0m
+  [0m [90m 29 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 30 |[39m [36mexport[39m [36mfunction[39m makeHasBlockedHandler(driver)[0m
+  [0m [90m    |[39m                 [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+
+webpack compiled with [1m[31m3 errors[39m[22m (a09429be70979bd0)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.5 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\users-srv\social-network\src\lib\factory\handlers\index.ts[39m[22m
+[1m../../libs/users-srv/social-network/src/lib/factory/handlers/index.ts[39m[22m [1m[32m31:5[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\users-srv\social-network\src\lib\factory\handlers\index.ts(31,6)[39m[22m
+[1m[31m      TS1005: '}' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/users-srv/src/remote-methods/users.rpc-methods.ts:[32m[1m38:14[22m[39m[1m[39m[22m
+[90mTS2741: [39mProperty 'hasBlocked' is missing in type '{ followAUser: handleUnaryCall<any, any>; unfollowAUser: handleUnaryCall<any, any>; isFollowing: handleUnaryCall<any, any>; BlockUser: handleUnaryCall<...>; unblockUser: handleUnaryCall<...>; }' but required in type 'ISocialNetworkServiceServer'.
+  [0m [90m 36 |[39m }[33m;[39m[0m
+  [0m [90m 37 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 38 |[39m [36mexport[39m [36mconst[39m [33mSocialNetworkServiceImpl[39m[33m:[39m [33mISocialNetworkServiceServer[39m [33m=[39m {[0m
+  [0m [90m    |[39m              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 39 |[39m   followAUser[33m:[39m makeUnaryCallHandler(makeFollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 40 |[39m   unfollowAUser[33m:[39m makeUnaryCallHandler(makeUnfollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 41 |[39m   isFollowing[33m:[39m makeUnaryCallHandler(makeIsFollowingHandler(neo4jDriver)[33m,[39m logger)[33m,[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./libs/users-srv/social-network/src/lib/factory/handlers/index.ts:[32m[1m30:17[22m[39m[1m[39m[22m
+[90mTS2391: [39mFunction implementation is missing or not immediately following the declaration.
+  [0m [90m 28 |[39m }[0m
+  [0m [90m 29 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 30 |[39m [36mexport[39m [36mfunction[39m makeHasBlockedHandler(driver[33m:[39m [33mDriver[39m) {[0m
+  [0m [90m    |[39m                 [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 31 |[39m   [36mreturn[39m [36mnew[39m [0m
+  [0m [90m 32 |[39m }[0m
+
+webpack compiled with [1m[31m3 errors[39m[22m (1e7d8a22de07d8cd)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 66.5 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/users-srv/src/remote-methods/users.rpc-methods.ts:[32m[1m38:14[22m[39m[1m[39m[22m
+[90mTS2741: [39mProperty 'hasBlocked' is missing in type '{ followAUser: handleUnaryCall<any, any>; unfollowAUser: handleUnaryCall<any, any>; isFollowing: handleUnaryCall<any, any>; BlockUser: handleUnaryCall<...>; unblockUser: handleUnaryCall<...>; }' but required in type 'ISocialNetworkServiceServer'.
+  [0m [90m 36 |[39m }[33m;[39m[0m
+  [0m [90m 37 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 38 |[39m [36mexport[39m [36mconst[39m [33mSocialNetworkServiceImpl[39m[33m:[39m [33mISocialNetworkServiceServer[39m [33m=[39m {[0m
+  [0m [90m    |[39m              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 39 |[39m   followAUser[33m:[39m makeUnaryCallHandler(makeFollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 40 |[39m   unfollowAUser[33m:[39m makeUnaryCallHandler(makeUnfollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 41 |[39m   isFollowing[33m:[39m makeUnaryCallHandler(makeIsFollowingHandler(neo4jDriver)[33m,[39m logger)[33m,[39m[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (2cdc9d06e8f27b95)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 67.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/users-srv/src/remote-methods/users.rpc-methods.ts:[32m[1m38:14[22m[39m[1m[39m[22m
+[90mTS2741: [39mProperty 'hasBlocked' is missing in type '{ followAUser: handleUnaryCall<any, any>; unfollowAUser: handleUnaryCall<any, any>; isFollowing: handleUnaryCall<any, any>; BlockUser: handleUnaryCall<...>; unblockUser: handleUnaryCall<...>; }' but required in type 'ISocialNetworkServiceServer'.
+  [0m [90m 36 |[39m }[33m;[39m[0m
+  [0m [90m 37 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 38 |[39m [36mexport[39m [36mconst[39m [33mSocialNetworkServiceImpl[39m[33m:[39m [33mISocialNetworkServiceServer[39m [33m=[39m {[0m
+  [0m [90m    |[39m              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 39 |[39m   followAUser[33m:[39m makeUnaryCallHandler(makeFollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 40 |[39m   unfollowAUser[33m:[39m makeUnaryCallHandler(makeUnfollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 41 |[39m   isFollowing[33m:[39m makeUnaryCallHandler(makeIsFollowingHandler(neo4jDriver)[33m,[39m logger)[33m,[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./libs/users-srv/social-network/src/lib/factory/handlers/index.ts:[32m[1m32:10[22m[39m[1m[39m[22m
+[90mTS2554: [39mExpected 1 arguments, but got 0.
+  [0m [90m 30 |[39m[0m
+  [0m [90m 31 |[39m [36mexport[39m [36mfunction[39m makeHasBlockedHandler(driver[33m:[39m [33mDriver[39m) {[0m
+  [0m[31m[1m>[22m[39m[90m 32 |[39m   [36mreturn[39m [36mnew[39m [33mHasBlockedHandler[39m(driver)[33m;[39m[0m
+  [0m [90m    |[39m          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 33 |[39m }[0m
+
+webpack compiled with [1m[31m2 errors[39m[22m (550d5820785e1366)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 67.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/users-srv/src/remote-methods/users.rpc-methods.ts:[32m[1m38:14[22m[39m[1m[39m[22m
+[90mTS2741: [39mProperty 'hasBlocked' is missing in type '{ followAUser: handleUnaryCall<any, any>; unfollowAUser: handleUnaryCall<any, any>; isFollowing: handleUnaryCall<any, any>; BlockUser: handleUnaryCall<...>; unblockUser: handleUnaryCall<...>; }' but required in type 'ISocialNetworkServiceServer'.
+  [0m [90m 36 |[39m }[33m;[39m[0m
+  [0m [90m 37 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 38 |[39m [36mexport[39m [36mconst[39m [33mSocialNetworkServiceImpl[39m[33m:[39m [33mISocialNetworkServiceServer[39m [33m=[39m {[0m
+  [0m [90m    |[39m              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 39 |[39m   followAUser[33m:[39m makeUnaryCallHandler(makeFollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 40 |[39m   unfollowAUser[33m:[39m makeUnaryCallHandler(makeUnfollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 41 |[39m   isFollowing[33m:[39m makeUnaryCallHandler(makeIsFollowingHandler(neo4jDriver)[33m,[39m logger)[33m,[39m[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (550d5820785e1366)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 67.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/users-srv/src/remote-methods/users.rpc-methods.ts:[32m[1m38:14[22m[39m[1m[39m[22m
+[90mTS2741: [39mProperty 'hasBlocked' is missing in type '{ followAUser: handleUnaryCall<any, any>; unfollowAUser: handleUnaryCall<any, any>; isFollowing: handleUnaryCall<any, any>; BlockUser: handleUnaryCall<...>; unblockUser: handleUnaryCall<...>; }' but required in type 'ISocialNetworkServiceServer'.
+  [0m [90m 36 |[39m }[33m;[39m[0m
+  [0m [90m 37 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 38 |[39m [36mexport[39m [36mconst[39m [33mSocialNetworkServiceImpl[39m[33m:[39m [33mISocialNetworkServiceServer[39m [33m=[39m {[0m
+  [0m [90m    |[39m              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 39 |[39m   followAUser[33m:[39m makeUnaryCallHandler(makeFollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 40 |[39m   unfollowAUser[33m:[39m makeUnaryCallHandler(makeUnfollowAUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 41 |[39m   isFollowing[33m:[39m makeUnaryCallHandler(makeIsFollowingHandler(neo4jDriver)[33m,[39m logger)[33m,[39m[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (bf5348e5a9fba291)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 67.9 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/users-srv/src/remote-methods/users.rpc-methods.ts:[32m[1m44:15[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'mae'.
+  [0m [90m 42 |[39m   [33mBlockUser[39m[33m:[39m makeUnaryCallHandler(makeBlockUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 43 |[39m   unblockUser[33m:[39m makeUnaryCallHandler(makeUnblockUserHandler(neo4jDriver)[33m,[39m logger)[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 44 |[39m   hasBlocked[33m:[39m makeUnaryCallHandler(makeh)[0m
+  [0m [90m    |[39m               [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 45 |[39m }[0m
+  [0m [90m 46 |[39m[0m
+  [0m [90m 47 |[39m[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (3f3370a62751c471)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 68 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/users-srv/src/remote-methods/users.rpc-methods.ts:[32m[1m44:15[22m[39m[1m[39m[22m
+[90mTS2554: [39mExpected 2 arguments, but got 1.
+  [0m [90m 42 |[39m   [33mBlockUser[39m[33m:[39m makeUnaryCallHandler(makeBlockUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 43 |[39m   unblockUser[33m:[39m makeUnaryCallHandler(makeUnblockUserHandler(neo4jDriver)[33m,[39m logger)[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 44 |[39m   hasBlocked[33m:[39m makeUnaryCallHandler(makeHasBlockedHandler(neo4jDriver)[33m,[39m)[0m
+  [0m [90m    |[39m               [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 45 |[39m }[0m
+  [0m [90m 46 |[39m[0m
+  [0m [90m 47 |[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./apps/users-srv/src/remote-methods/users.rpc-methods.ts:[32m[1m44:36[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'makeh'.
+  [0m [90m 42 |[39m   [33mBlockUser[39m[33m:[39m makeUnaryCallHandler(makeBlockUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 43 |[39m   unblockUser[33m:[39m makeUnaryCallHandler(makeUnblockUserHandler(neo4jDriver)[33m,[39m logger)[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 44 |[39m   hasBlocked[33m:[39m makeUnaryCallHandler(makeHasBlockedHandler(neo4jDriver)[33m,[39m)[0m
+  [0m [90m    |[39m                                    [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 45 |[39m }[0m
+  [0m [90m 46 |[39m[0m
+  [0m [90m 47 |[39m[0m
+
+webpack compiled with [1m[31m2 errors[39m[22m (30877eecbc3837da)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 68 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./apps/users-srv/src/remote-methods/users.rpc-methods.ts:[32m[1m44:15[22m[39m[1m[39m[22m
+[90mTS2554: [39mExpected 2 arguments, but got 1.
+  [0m [90m 42 |[39m   [33mBlockUser[39m[33m:[39m makeUnaryCallHandler(makeBlockUserHandler(neo4jDriver[33m,[39m createProducer(kafkaClient))[33m,[39m logger)[33m,[39m[0m
+  [0m [90m 43 |[39m   unblockUser[33m:[39m makeUnaryCallHandler(makeUnblockUserHandler(neo4jDriver)[33m,[39m logger)[33m,[39m[0m
+  [0m[31m[1m>[22m[39m[90m 44 |[39m   hasBlocked[33m:[39m makeUnaryCallHandler(makeHasBlockedHandler(neo4jDriver)[33m,[39m logger)[33m,[39m[0m
+  [0m [90m    |[39m               [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 45 |[39m }[0m
+  [0m [90m 46 |[39m[0m
+  [0m [90m 47 |[39m[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (addc26626608c267)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 68 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (31875085b1033f9c)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m

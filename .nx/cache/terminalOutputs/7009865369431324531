@@ -1,0 +1,269 @@
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 51 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (0c98134e8b89a509)
+[1m[31mDebugger listening on ws://localhost:9229/4d055f62-5564-4706-9fc8-8d36e7150d79[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/4d055f62-5564-4706-9fc8-8d36e7150d79[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 51 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./libs/common/typings/src/lib/proto/social-networkService.ts:[32m[1m8:31[22m[39m[1m[39m[22m
+[90mTS2552: [39mCannot find name 'IBlockUserRequest'. Did you mean 'IBlockOrUserRequest'?
+  [0m [90m  6 |[39m    unfollowAUser[33m:[39m handleUnaryCall[33m<[39m[33mFollowOrUnollowAUserRequest[39m[33m,[39m [36mvoid[39m[33m>[39m[0m
+  [0m [90m  7 |[39m    isFollowing[33m:[39m handleUnaryCall[33m<[39m[33mFollowOrUnollowAUserRequest[39m[33m,[39m [36mvoid[39m[33m>[39m[0m
+  [0m[31m[1m>[22m[39m[90m  8 |[39m    [33mBlockUser[39m[33m:[39m handleUnaryCall[33m<[39m[33mIBlockUserRequest[39m[33m,[39m [36mvoid[39m[33m>[39m[33m;[39m[0m
+  [0m [90m    |[39m                               [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m  9 |[39m }[0m
+  [0m [90m 10 |[39m[0m
+  [0m [90m 11 |[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./libs/common/typings/src/lib/proto/social-networkService.ts:[32m[1m16:22[22m[39m[1m[39m[22m
+[90mTS2552: [39mCannot find name 'IBlockUserRequest'. Did you mean 'IBlockOrUserRequest'?
+  [0m [90m 14 |[39m   unfollowAUser(request[33m:[39m [33mFollowOrUnollowAUserRequest[39m)[33m:[39m [33mObservable[39m[33m<[39m[36mvoid[39m[33m>[39m[33m;[39m[0m
+  [0m [90m 15 |[39m   isFollowing(request[33m:[39m [33mFollowOrUnollowAUserRequest[39m)[33m:[39m [33mObservable[39m[33m<[39m[36mvoid[39m[33m>[39m[33m;[39m[0m
+  [0m[31m[1m>[22m[39m[90m 16 |[39m   [33mBlockUser[39m(request[33m:[39m [33mIBlockUserRequest[39m)[33m:[39m [33mObservable[39m[33m<[39m[36mvoid[39m[33m>[39m[33m;[39m[0m
+  [0m [90m    |[39m                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 17 |[39m }[0m
+  [0m [90m 18 |[39m[0m
+  [0m [90m 19 |[39m [36mexport[39m [36minterface[39m  [33mIBlockOrUnblockUserRequest[39m {[0m
+
+webpack compiled with [1m[31m2 errors[39m[22m (f477acd427b2ce34)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 51 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./libs/common/typings/src/lib/proto/social-networkService.ts:[32m[1m8:31[22m[39m[1m[39m[22m
+[90mTS2552: [39mCannot find name 'IBlockUserRequest'. Did you mean 'IBlockOUserRequest'?
+  [0m [90m  6 |[39m    unfollowAUser[33m:[39m handleUnaryCall[33m<[39m[33mFollowOrUnollowAUserRequest[39m[33m,[39m [36mvoid[39m[33m>[39m[0m
+  [0m [90m  7 |[39m    isFollowing[33m:[39m handleUnaryCall[33m<[39m[33mFollowOrUnollowAUserRequest[39m[33m,[39m [36mvoid[39m[33m>[39m[0m
+  [0m[31m[1m>[22m[39m[90m  8 |[39m    [33mBlockUser[39m[33m:[39m handleUnaryCall[33m<[39m[33mIBlockUserRequest[39m[33m,[39m [36mvoid[39m[33m>[39m[33m;[39m[0m
+  [0m [90m    |[39m                               [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m  9 |[39m }[0m
+  [0m [90m 10 |[39m[0m
+  [0m [90m 11 |[39m[0m
+
+[1m[31mERROR[39m[22m in [1m./libs/common/typings/src/lib/proto/social-networkService.ts:[32m[1m16:22[22m[39m[1m[39m[22m
+[90mTS2552: [39mCannot find name 'IBlockUserRequest'. Did you mean 'IBlockOUserRequest'?
+  [0m [90m 14 |[39m   unfollowAUser(request[33m:[39m [33mFollowOrUnollowAUserRequest[39m)[33m:[39m [33mObservable[39m[33m<[39m[36mvoid[39m[33m>[39m[33m;[39m[0m
+  [0m [90m 15 |[39m   isFollowing(request[33m:[39m [33mFollowOrUnollowAUserRequest[39m)[33m:[39m [33mObservable[39m[33m<[39m[36mvoid[39m[33m>[39m[33m;[39m[0m
+  [0m[31m[1m>[22m[39m[90m 16 |[39m   [33mBlockUser[39m(request[33m:[39m [33mIBlockUserRequest[39m)[33m:[39m [33mObservable[39m[33m<[39m[36mvoid[39m[33m>[39m[33m;[39m[0m
+  [0m [90m    |[39m                      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 17 |[39m   unblockUser()[0m
+  [0m [90m 18 |[39m }[0m
+  [0m [90m 19 |[39m[0m
+
+webpack compiled with [1m[31m2 errors[39m[22m (04546af398388f5e)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 51 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (87cdf9bd17f64ab0)
+[1m[31mDebugger listening on ws://localhost:9229/44ed85db-d0d1-415e-ad77-f99d5534f03d[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/44ed85db-d0d1-415e-ad77-f99d5534f03d[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 51 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (1cd64ab4f5987631)
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 51 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./libs/common/typings/src/lib/proto/social-networkService.ts:[32m[1m17:44[22m[39m[1m[39m[22m
+[90mTS2314: [39mGeneric type 'Observable<T>' requires 1 type argument(s).
+  [0m [90m 15 |[39m   followAUser(request[33m:[39m[33mFollowOrUnollowAUserRequest[39m) [33m:[39m[33mObservable[39m[33m<[39m[36mvoid[39m[33m>[39m[33m;[39m[0m
+  [0m [90m 16 |[39m   unfollowAUser(request[33m:[39m [33mFollowOrUnollowAUserRequest[39m)[33m:[39m [33mObservable[39m[33m<[39m[36mvoid[39m[33m>[39m[33m;[39m[0m
+  [0m[31m[1m>[22m[39m[90m 17 |[39m   isFollowing(request[33m:[39m [33mFollowOrUnollowAUserRequest[39m)[33m:[39m [33mObservable[39m[33m<[39m[36mvoid[39m[33m>[39m[33m;[39m[0m
+  [0m [90m    |[39m                                            [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 18 |[39m   [33mBlockUser[39m(request[33m:[39m [33mIBlockUserRequest[39m)[33m:[39m [33mObservable[39m[33m<[39m[36mvoid[39m[33m>[39m[33m;[39m[0m
+  [0m [90m 19 |[39m   unblockUser(request[33m:[39m [33mIBlockUserRequest[39m)[33m:[39m [33mObservable[39m[33m<[39m[36mvoid[39m[33m>[39m[33m;[39m[0m
+  [0m [90m 20 |[39m }[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (4593f2680634f895)
+[1m[31mDebugger listening on ws://localhost:9229/ba804321-ebcd-4bc5-9493-b8201685775a[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/ba804321-ebcd-4bc5-9493-b8201685775a[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 51 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./libs/common/typings/src/lib/proto/social-networkService.ts:[32m[1m8:4[22m[39m[1m[39m[22m
+[90mTS2300: [39mDuplicate identifier 'BlockUser'.
+  [0m [90m  6 |[39m    unfollowAUser[33m:[39m handleUnaryCall[33m<[39m[33mFollowOrUnollowAUserRequest[39m[33m,[39m [36mvoid[39m[33m>[39m[0m
+  [0m [90m  7 |[39m    isFollowing[33m:[39m handleUnaryCall[33m<[39m[33mFollowOrUnollowAUserRequest[39m[33m,[39m [36mvoid[39m[33m>[39m[0m
+  [0m[31m[1m>[22m[39m[90m  8 |[39m    [33mBlockUser[39m[33m:[39m handleUnaryCall[33m<[39m[33mIBlockUserRequest[39m[33m,[39m [36mvoid[39m[33m>[39m[33m;[39m[0m
+  [0m [90m    |[39m    [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m  9 |[39m    unb[33m:[39m handleUnaryCall[33m<[39m[33mIBlockUserRequest[39m[33m,[39m [36mvoid[39m[33m>[39m[33m;[39m[0m
+  [0m [90m 10 |[39m[0m
+  [0m [90m 11 |[39m }[0m
+
+[1m[31mERROR[39m[22m in [1m./libs/common/typings/src/lib/proto/social-networkService.ts:[32m[1m9:4[22m[39m[1m[39m[22m
+[90mTS2300: [39mDuplicate identifier 'BlockUser'.
+  [0m [90m  7 |[39m    isFollowing[33m:[39m handleUnaryCall[33m<[39m[33mFollowOrUnollowAUserRequest[39m[33m,[39m [36mvoid[39m[33m>[39m[0m
+  [0m [90m  8 |[39m    [33mBlockUser[39m[33m:[39m handleUnaryCall[33m<[39m[33mIBlockUserRequest[39m[33m,[39m [36mvoid[39m[33m>[39m[33m;[39m[0m
+  [0m[31m[1m>[22m[39m[90m  9 |[39m    unb[33m:[39m handleUnaryCall[33m<[39m[33mIBlockUserRequest[39m[33m,[39m [36mvoid[39m[33m>[39m[33m;[39m[0m
+  [0m [90m    |[39m    [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 10 |[39m[0m
+  [0m [90m 11 |[39m }[0m
+  [0m [90m 12 |[39m[0m
+
+webpack compiled with [1m[31m2 errors[39m[22m (6cb8e0ed096fe88b)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 51 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (1e7641ca8b07f7bb)
+[1m[31mDebugger listening on ws://localhost:9229/d8590cff-de81-4b73-bb57-cb505735c00c[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/d8590cff-de81-4b73-bb57-cb505735c00c[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 51 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (1e7641ca8b07f7bb)
+[1m[31mDebugger listening on ws://localhost:9229/b6b9e455-0fa7-4c8d-bb15-13fedcea6869[39m[22m
+[1m[31m[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/b6b9e455-0fa7-4c8d-bb15-13fedcea6869[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 51 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\common\typings\src\lib\proto\social-networkService.ts[39m[22m
+[1m../../libs/common/typings/src/lib/proto/social-networkService.ts[39m[22m [1m[32m23:0-6[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\common\typings\src\lib\proto\social-networkService.ts(23,1)[39m[22m
+[1m[31m      TS1128: Declaration or statement expected.[39m[22m
+
+webpack compiled with [1m[31m1 error[39m[22m (94f5e4d23c7c00dc)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 51 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\common\typings\src\lib\proto\social-networkService.ts[39m[22m
+[1m../../libs/common/typings/src/lib/proto/social-networkService.ts[39m[22m [1m[32m25:0-6[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\common\typings\src\lib\proto\social-networkService.ts(25,1)[39m[22m
+[1m[31m      TS1005: '{' expected.[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./libs/common/typings/src/lib/proto/social-networkService.ts:[32m[1m23:8[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'h'.
+  [0m [90m 21 |[39m[0m
+  [0m [90m 22 |[39m[0m
+  [0m[31m[1m>[22m[39m[90m 23 |[39m [36mexport[39m [36minterface[39m [33mIHas[39m[0m
+  [0m [90m    |[39m        [31m[1m^[22m[39m[0m
+  [0m [90m 24 |[39m[0m
+  [0m [90m 25 |[39m [36mexport[39m [36minterface[39m  [33mIBlockUserRequest[39m {[0m
+  [0m [90m 26 |[39m   blockerId[33m:[39m string[33m;[39m[0m
+
+webpack compiled with [1m[31m2 errors[39m[22m (fce6dbbf9b71df21)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 51 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (1ab8a03ec2628f52)
+[1m[31mDebugger listening on ws://localhost:9229/138837a1-4659-4031-be34-2bc1026f2e1e[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/138837a1-4659-4031-be34-2bc1026f2e1e[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 51 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (111d3a10339a7cf2)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 51 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\common\typings\src\lib\proto\social-networkService.ts[39m[22m
+[1m../../libs/common/typings/src/lib/proto/social-networkService.ts[39m[22m [1m[32m25:0-6[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\common\typings\src\lib\proto\social-networkService.ts(25,1)[39m[22m
+[1m[31m      TS1005: '{' expected.[39m[22m
+
+webpack compiled with [1m[31m1 error[39m[22m (3a095093224581ae)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 51 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./libs/common/typings/src/index.ts:[32m[1m16:15[22m[39m[1m[39m[22m
+[90mTS2306: [39mFile 'C:/Users/JUNAID/OneDrive/Desktop/FoodStories/food-stories/libs/common/typings/src/lib/proto/social-networkService.ts' is not a module.
+  [0m [90m 14 |[39m[0m
+  [0m [90m 15 |[39m [36mexport[39m [33m*[39m [36mfrom[39m [32m'./lib/interfaces/IRelationship.interface'[39m[33m;[39m[0m
+  [0m[31m[1m>[22m[39m[90m 16 |[39m [36mexport[39m [33m*[39m [36mfrom[39m [32m'./lib/proto/social-networkService'[39m[33m;[39m[0m
+  [0m [90m    |[39m               [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (504ada153f9a8354)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 51 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (312439e2f85deae4)
+[1m[31mDebugger listening on ws://localhost:9229/bb8a05a8-b111-4c3c-a711-e9c0b34037b7[39m[22m
+[1m[31mDebugger listening on ws://localhost:9229/bb8a05a8-b111-4c3c-a711-e9c0b34037b7[39m[22m
+[1m[31mFor help, see: https://nodejs.org/en/docs/inspector[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 51 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (02b2865dcf19cdd7)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 51 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\common\typings\src\lib\proto\social-networkService.ts[39m[22m
+[1m../../libs/common/typings/src/lib/proto/social-networkService.ts[39m[22m [1m[32m21:0-1[39m[22m
+[90m[tsl] [39m[1m[31mERROR[39m[22m[1m[31m in [39m[22m[1m[36mC:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories\libs\common\typings\src\lib\proto\social-networkService.ts(21,1)[39m[22m
+[1m[31m      TS1110: Type expected.[39m[22m
+
+webpack compiled with [1m[31m1 error[39m[22m (fc9a798547222a3f)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 51 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./libs/common/typings/src/lib/proto/social-networkService.ts:[32m[1m20:45[22m[39m[1m[39m[22m
+[90mTS2304: [39mCannot find name 'Obsserva'.
+  [0m [90m 18 |[39m   [33mBlockUser[39m(request[33m:[39m [33mIBlockUserRequest[39m)[33m:[39m [33mObservable[39m[33m<[39m[36mvoid[39m[33m>[39m[33m;[39m[0m
+  [0m [90m 19 |[39m   unblockUser(request[33m:[39m [33mIBlockUserRequest[39m)[33m:[39m [33mObservable[39m[33m<[39m[36mvoid[39m[33m>[39m[33m;[39m[0m
+  [0m[31m[1m>[22m[39m[90m 20 |[39m   hasBlocked(request[33m:[39m [33mIHasBlockedRequest[39m) [33m:[39m [33mObservable[39m[33m<[39m[0m
+  [0m [90m    |[39m                                             [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 21 |[39m }[0m
+  [0m [90m 22 |[39m[0m
+  [0m [90m 23 |[39m [36mexport[39m [36minterface[39m [33mIHasBlockedResponse[39m {[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (03b0ef019b3e7d24)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 51 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./libs/common/typings/src/lib/proto/social-networkService.ts:[32m[1m20:45[22m[39m[1m[39m[22m
+[90mTS2314: [39mGeneric type 'Observable<T>' requires 1 type argument(s).
+  [0m [90m 18 |[39m   [33mBlockUser[39m(request[33m:[39m [33mIBlockUserRequest[39m)[33m:[39m [33mObservable[39m[33m<[39m[36mvoid[39m[33m>[39m[33m;[39m[0m
+  [0m [90m 19 |[39m   unblockUser(request[33m:[39m [33mIBlockUserRequest[39m)[33m:[39m [33mObservable[39m[33m<[39m[36mvoid[39m[33m>[39m[33m;[39m[0m
+  [0m[31m[1m>[22m[39m[90m 20 |[39m   hasBlocked(request[33m:[39m [33mIHasBlockedRequest[39m) [33m:[39m [33mObservable[39m[33m<[39m[33mIHasBlockedResponse[39m[33m>[39m[0m
+  [0m [90m    |[39m                                             [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 21 |[39m }[0m
+  [0m [90m 22 |[39m[0m
+  [0m [90m 23 |[39m [36mexport[39m [36minterface[39m [33mIHasBlockedResponse[39m {[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (9f0df2bc52e51b85)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 51 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (98a8cabd3757e52b)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 51 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./libs/common/typings/src/index.ts:[32m[1m16:15[22m[39m[1m[39m[22m
+[90mTS2306: [39mFile 'C:/Users/JUNAID/OneDrive/Desktop/FoodStories/food-stories/libs/common/typings/src/lib/proto/social-networkService.ts' is not a module.
+  [0m [90m 14 |[39m[0m
+  [0m [90m 15 |[39m [36mexport[39m [33m*[39m [36mfrom[39m [32m'./lib/interfaces/IRelationship.interface'[39m[33m;[39m[0m
+  [0m[31m[1m>[22m[39m[90m 16 |[39m [36mexport[39m [33m*[39m [36mfrom[39m [32m'./lib/proto/social-networkService'[39m[33m;[39m[0m
+  [0m [90m    |[39m               [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (7a31c8c0c4b032ff)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 51 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./libs/common/typings/src/lib/proto/social-networkService.ts:[32m[1m10:16[22m[39m[1m[39m[22m
+[90mTS2552: [39mCannot find name 'handledUnaryCall'. Did you mean 'handleUnaryCall'?
+  [0m [90m  8 |[39m    [33mBlockUser[39m[33m:[39m handleUnaryCall[33m<[39m[33mIBlockUserRequest[39m[33m,[39m [36mvoid[39m[33m>[39m[33m;[39m[0m
+  [0m [90m  9 |[39m    unblockUser[33m:[39m handleUnaryCall[33m<[39m[33mIBlockUserRequest[39m[33m,[39m [36mvoid[39m[33m>[39m[33m;[39m[0m
+  [0m[31m[1m>[22m[39m[90m 10 |[39m    hasBlocked[33m:[39m handledUnaryCall[33m<[39m[33mIHasBlockedRequest[39m[33m,[39m [33mIHasBlockedResponse[39m[33m>[39m[33m;[39m[0m
+  [0m [90m    |[39m                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 11 |[39m[0m
+  [0m [90m 12 |[39m }[0m
+  [0m [90m 13 |[39m[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (77fd0e185c45c14a)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 51 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./libs/common/typings/src/lib/proto/social-networkService.ts:[32m[1m10:16[22m[39m[1m[39m[22m
+[90mTS2552: [39mCannot find name 'handledUnaryCall'. Did you mean 'handleUnaryCall'?
+  [0m [90m  8 |[39m    [33mBlockUser[39m[33m:[39m handleUnaryCall[33m<[39m[33mIBlockUserRequest[39m[33m,[39m [36mvoid[39m[33m>[39m[33m;[39m[0m
+  [0m [90m  9 |[39m    unblockUser[33m:[39m handleUnaryCall[33m<[39m[33mIBlockUserRequest[39m[33m,[39m [36mvoid[39m[33m>[39m[33m;[39m[0m
+  [0m[31m[1m>[22m[39m[90m 10 |[39m    hasBlocked[33m:[39m handledUnaryCall[33m<[39m[33mIHasBlockedRequest[39m[33m,[39m [33mIHasBlockedResponse[39m[33m>[39m[33m;[39m[0m
+  [0m [90m    |[39m                [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+  [0m [90m 11 |[39m[0m
+  [0m [90m 12 |[39m }[0m
+  [0m [90m 13 |[39m[0m
+
+webpack compiled with [1m[31m1 error[39m[22m (77fd0e185c45c14a)
+[1m[31mBuild failed, waiting for changes to restart...[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 51 KiB [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (34557f760ae60e2f)
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m

@@ -1,10 +1,12 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { IisFollowingResponse } from '@food-stories/common/typings';
 import { ProfileStore } from '@food-stories/users-client/profile/data-access';
 import {
   AppState,
   selectCurrentUser,
 } from '@food-stories/users-client/shared/app-init';
+import { API_ENDPOINTS } from '@food-stories/users-client/shared/config';
 import { Store } from '@ngrx/store';
 import { BehaviorSubject, skipWhile, take } from 'rxjs';
 
@@ -22,6 +24,9 @@ export class ProfileService {
   private isFollowingSubject$ = new BehaviorSubject<boolean>(false);
   readonly isFollowing$ = this.isFollowingSubject$.asObservable();
 
+  private isBlockedSubject$ = new BehaviorSubject<boolean>(false);
+  readonly isBlocked$ = this.isBlockedSubject$.asObservable();
+
   loadUserDetails(routeUsername: string) {
     this.store
       .select(selectCurrentUser)
@@ -32,10 +37,16 @@ export class ProfileService {
       .subscribe((user) => {
         const currentUserUsername = user.username;
         if (currentUserUsername !== routeUsername) {
-          this.profileStore.fetchUserDetails(routeUsername);
+          this.profileStore.fetchUserDetails({userId: user.id, username: routeUsername});
           this.profileStore.user$.subscribe((viewUser) => {
             if (viewUser.id) {
               this.isFollowing(user.id, viewUser.id).subscribe((res) => {
+                if (res.isBlocked) {
+                  this.isBlockedSubject$.next(true)
+                } else {
+                  this.isBlockedSubject$.next(false);
+                }
+
                 if(res.isFollowing) {
                   this.isFollowingSubject$.next(true);
                 }
@@ -53,9 +64,18 @@ export class ProfileService {
       });
   }
 
+  blockUser() {
+    this.isBlockedSubject$.next(true);
+    this.isFollowingSubject$.next(false);
+  }
+
+  unblockUser() {
+    this.isBlockedSubject$.next(false);
+  }
+
   isFollowing(followerId: string, followweeId: string) {
-    return this.http.get<{isFollowing: boolean}>(
-      'http://localhost:3000/api/v1/social-networks/' + followweeId,
+    return this.http.get<IisFollowingResponse>(
+      API_ENDPOINTS.SocialNetworks.getRelationships(followweeId),
       { params: { followerId } }
     );
   }

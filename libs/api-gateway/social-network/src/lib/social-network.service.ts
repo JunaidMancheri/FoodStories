@@ -1,5 +1,5 @@
 import { handleGrpcError } from '@food-stories/api-gateway/common';
-import { FollowOrUnollowAUserRequest, ISocialNetworkServiceClient } from '@food-stories/common/typings';
+import { FollowOrUnollowAUserRequest, IBlockUserRequest, IHasBlockedRequest, ISocialNetworkServiceClient } from '@food-stories/common/typings';
 import { Injectable, OnModuleInit } from '@nestjs/common';
 import { Client, ClientGrpc, Transport } from '@nestjs/microservices';
 import { join } from 'path';
@@ -32,8 +32,20 @@ export class ApiGatewaySocialNetworkService implements OnModuleInit {
     return handleGrpcError(this.socialNetworksService.unfollowAUser(data));
   }
 
-  isFollowing(data: FollowOrUnollowAUserRequest) {
+  getRelationships(data: FollowOrUnollowAUserRequest) {
     return handleGrpcError(this.socialNetworksService.isFollowing(data));
+  }
+
+  blockUser(data: IBlockUserRequest) {
+    return handleGrpcError(this.socialNetworksService.BlockUser(data));
+  }
+
+  unblockUser(data: IBlockUserRequest) {
+    return handleGrpcError(this.socialNetworksService.unblockUser(data));
+  }
+
+  hasBlocked(data: IHasBlockedRequest) {
+    return handleGrpcError(this.socialNetworksService.hasBlocked(data));
   }
 
 }

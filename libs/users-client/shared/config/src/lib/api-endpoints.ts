@@ -32,8 +32,11 @@ export const API_ENDPOINTS = {
   },
 
   SocialNetworks: {
-    followAUser: (userId: string) => `${BASE_URL}/social-networks/${userId}`,
-    unFollowAUser: (userId: string) => `${BASE_URL}/social-networks/${userId}`
+    followAUser: (userId: string) => `${BASE_URL}/social-networks/follow/${userId}`,
+    unFollowAUser: (userId: string) => `${BASE_URL}/social-networks/follow/${userId}`,
+    blockUser: (targetId: string) => `${BASE_URL}/social-networks/block/${targetId}`,
+    getRelationships: (userId: string) => `${BASE_URL}/social-networks/relationships/${userId}`,
+    unblockUser: (targetId: string) => `${BASE_URL}/social-networks/block/${targetId}`
   }
 
 }
