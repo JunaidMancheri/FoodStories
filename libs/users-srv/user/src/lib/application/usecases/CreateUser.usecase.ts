@@ -27,7 +27,7 @@ export class CreateUserUseCase implements ICreateUserUseCase {
       throw error;
     }
 
-    await this.pubisher.publish({ id: newUser.id, username: newUser.username });
+    await this.pubisher.publish({ id: newUser.id, username: newUser.username, DPURL: newUser.DPURL });
 
     this.logger.info('new  user registered', {
       username: newUser.username,

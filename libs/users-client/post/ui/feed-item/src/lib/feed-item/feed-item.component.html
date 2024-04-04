@@ -5,10 +5,12 @@
       <div class="bg-gradient-to-tr h-10 w-10  rounded-full p-1">
         <a class="block w-full h-full bg-white  rounded-full transform transition hover:-rotate-12 duration-300"
           href="#">
-          <img class=" w-full h-full rounded-full" src="https://i.ibb.co/yhh0Ljy/profile.jpg" alt="image">
+          <img class=" w-full h-full rounded-full" 
+          [src]="user.DPURL"
+          alt="image">
         </a>
       </div>
-      <span>wordporm</span>
+      <span>{{user.username}}</span>
     </div>
 
     <mat-icon>more_vert</mat-icon>

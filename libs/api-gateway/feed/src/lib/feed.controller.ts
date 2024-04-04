@@ -1,17 +1,12 @@
-import { ApiGatewayLikeService } from '@food-stories/api-gateway/like';
 import { ApiGatewayPostService } from '@food-stories/api-gateway/post';
 import { ApiGatewaySocialNetworkService } from '@food-stories/api-gateway/social-network';
 import { Controller, Get, Param } from '@nestjs/common';
-import {
-  exhaustMap,
-  take,
-} from 'rxjs';
+import { exhaustMap, map, take } from 'rxjs';
 
 @Controller('feeds')
 export class ApiGatewayFeedController {
   constructor(
     private followService: ApiGatewaySocialNetworkService,
-    private likeService: ApiGatewayLikeService,
     private postService: ApiGatewayPostService
   ) {}
 
@@ -20,9 +15,13 @@ export class ApiGatewayFeedController {
     return this.followService.getFollowings({ userId }).pipe(
       take(1),
       exhaustMap((res) =>
-        this.postService.getFeedsPosts({
-          userIds: Array.isArray(res.followingIds) ? [...res.followingIds, userId]: [userId],
-        })
+        this.postService
+          .getFeedsPosts({
+            userIds: Array.isArray(res.users)
+              ? [...res.users.map((user) => user.id), userId]
+              : [userId],
+          })
+          .pipe(map((postRes) => ({ posts: postRes.posts, users: res.users })))
       )
     );
   }

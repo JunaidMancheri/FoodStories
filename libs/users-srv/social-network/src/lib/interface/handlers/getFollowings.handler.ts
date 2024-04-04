@@ -30,8 +30,15 @@ export class GetFollowingsHandler extends BaseHandler {
       }
     );
     return respondSuccess({
-      followingIds: result.records.map(
-        (record) => record.get('n').properties.userId
+      users: result.records.map(
+        (record) => {
+          const prop = record.get('n').properties
+          return { 
+            id: prop.userId,
+            DPURL: prop.DPURL,
+            username: prop.username
+          }
+        }
       ),
     });
   }

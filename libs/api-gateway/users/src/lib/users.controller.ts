@@ -71,7 +71,6 @@ export class ApiGatewayUsersController {
           targetUserId: userId,
         })
       );
-      console.log(result);
 
       if (result.hasBlocked) {
         throw new NotFoundException();

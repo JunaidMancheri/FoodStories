@@ -12,8 +12,14 @@ service SocialNetworksService {
  rpc getFollowings(GetFollowingsRequest) returns (GetFollowingsResponse) {};
 }
 
+message userDetails {
+  string id = 0;
+  string username = 1;
+  string DPURL = 2;
+}
+
 message GetFollowingsResponse {
-  repeated string followingIds = 0;
+  repeated userDetails users = 0;
 }
 
 message GetFollowingsRequest {

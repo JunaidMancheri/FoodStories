@@ -1,7 +1,7 @@
 import { Component , Input, OnInit, inject} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
-import { IPost } from '@food-stories/common/typings';
+import { IPost, IUser } from '@food-stories/common/typings';
 import { RelativePipeModule } from '@food-stories/users-client/shared/utils';
 import { LikesService } from '@food-stories/users-client/post/data-access';
 import { MatDialog, MatDialogModule} from '@angular/material/dialog';
@@ -15,6 +15,7 @@ import { SinglePostViewComponent } from '@food-stories/users-client/post/feature
 })
 export class FeedItemComponent implements OnInit {
   @Input({required: true}) post!: IPost
+  @Input({required: true}) user!: Pick<IUser, 'username' | 'DPURL' | 'id'>
   @Input({required: true}) userId!: string;
   @Input({required: true}) username!: string;
   isLiked!: boolean
@@ -55,7 +56,7 @@ export class FeedItemComponent implements OnInit {
       panelClass: ['w-[75vw]', 'h-[95vh]'],
       data: {
         post: this.post,
-        postedUser: { username: 'jithux', DPURL: 'jithuz nne' },
+        postedUser: { username: this.user.username, DPURL: this.user.DPURL },
       },
     });
   }
