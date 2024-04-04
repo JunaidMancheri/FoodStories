@@ -1,7 +1,4 @@
 export const environment = {
-  homeUrl: 'http://localhost:4200/',
-  socketUrl: 'ws://localhost:3000',
-  production: false,
   firebase: {
     projectId: 'foodstories-35dfd',
     appId: '1:843205065840:web:131a2143226d7f2026c8b5',
@@ -11,4 +8,4 @@ export const environment = {
     messagingSenderId: '843205065840',
     measurementId: 'G-B1EFW7B9Z2',
   }
-}
+};

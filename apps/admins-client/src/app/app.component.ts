@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
-
+import { RouterModule } from '@angular/router';
 
 @Component({
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   selector: 'fs-root',
   templateUrl: './app.component.html',
 })
-export class AppComponent {
-  title = 'admins-client';
-}
+export class AppComponent {}
