@@ -1,13 +1,9 @@
 import { ApiGatewayLikeService } from '@food-stories/api-gateway/like';
 import { ApiGatewayPostService } from '@food-stories/api-gateway/post';
 import { ApiGatewaySocialNetworkService } from '@food-stories/api-gateway/social-network';
-import { Controller, Get, NotFoundException, Param } from '@nestjs/common';
+import { Controller, Get, Param } from '@nestjs/common';
 import {
-  catchError,
   exhaustMap,
-  firstValueFrom,
-  flatMap,
-  map,
   take,
 } from 'rxjs';
 
@@ -25,7 +21,7 @@ export class ApiGatewayFeedController {
       take(1),
       exhaustMap((res) =>
         this.postService.getFeedsPosts({
-          userIds: [...res.followingIds, userId],
+          userIds: Array.isArray(res.followingIds) ? [...res.followingIds, userId]: [userId],
         })
       )
     );

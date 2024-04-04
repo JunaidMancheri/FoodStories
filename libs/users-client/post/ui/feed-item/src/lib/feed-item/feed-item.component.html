@@ -1,0 +1,58 @@
+<div class="post h-auto w-full my-1 md:w-[80%]">
+  <div class="post-header h-12 flex justify-between items-center px-2">
+
+    <div class="lable flex gap-2 font-semibold items-center">
+      <div class="bg-gradient-to-tr h-10 w-10  rounded-full p-1">
+        <a class="block w-full h-full bg-white  rounded-full transform transition hover:-rotate-12 duration-300"
+          href="#">
+          <img class=" w-full h-full rounded-full" src="https://i.ibb.co/yhh0Ljy/profile.jpg" alt="image">
+        </a>
+      </div>
+      <span>wordporm</span>
+    </div>
+
+    <mat-icon>more_vert</mat-icon>
+
+  </div>
+
+  <div class="content w-full h-auto">
+    <img class="w-full h-full"
+    [src]="post.mediaUrls[0]"
+      alt="">
+  </div>
+
+  <div class="post-actions flex justify-between px-2 items-center h-12">
+
+    <div class="like-share-comment flex gap-2 text-xl ">
+
+      <mat-icon (click)="toggleLike()"  class="icon" [color]="isLiked ? 'warn': ''" [ngClass]="{'material-symbols-outlined': !isLiked}">favorite</mat-icon>
+      <mat-icon class="material-symbols-outlined">add_comment</mat-icon>
+
+
+
+    </div>
+
+
+    <div class="text-xl">
+      <mat-icon>bookmark_outlined</mat-icon>
+    </div>
+
+
+  </div>
+
+  <div class="post-likes font-semibold px-2 h-6">
+    {{post.likesCount}} Likes
+
+  </div>
+
+  <div class="post-caption px-2 h-auto">
+
+    <span class="font-semibold">wordporm</span> {{post.caption}}
+  </div>
+
+  <div class="post-date text-sm font-extralight px-2 mt-2 h-6">
+
+    {{post.createdAt | RelativeTime}}
+
+  </div>
+</div>
