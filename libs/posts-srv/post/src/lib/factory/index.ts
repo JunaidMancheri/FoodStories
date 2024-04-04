@@ -1,9 +1,14 @@
 import { BaseSubscriber } from '@food-stories/common/handlers';
 import { postModel } from '../interface/db/post.model';
+import { GetFeedsPostsHandler } from '../interface/handlers/GetFeedsPosts.handler';
 
 export * from './CreatePost.factory';
 export * from './UpdateMediaUrls.factory';
 export * from './GetUsersPosts.factory';
+
+export function makeGetFeedsPostHandler() {
+  return new GetFeedsPostsHandler();
+}
 
 
 export class PostLikedHandler extends BaseSubscriber {
