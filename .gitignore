@@ -52,7 +52,5 @@ Thumbs.db
 .runtimeconfig.json
 
 
-# # nx
-# .nx\
-# cache/
-# .nx\cache
+#nx
+.nx/cache
