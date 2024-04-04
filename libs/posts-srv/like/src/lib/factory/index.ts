@@ -59,17 +59,21 @@ class LikeAPostHandler extends BaseHandler {
       messages: [{ value: JSON.stringify({ postId: request.data.postId }) }],
     });
 
-    await this.producer.send({
-      topic: 'notifications',
-      messages: [
-        {
-          value: JSON.stringify({
-            message: `${request.data.likedUserUsername} liked your post`,
-            userId: request.data.postOwnerId,
-          }),
-        },
-      ],
-    });
+    if (like.userId !== request.data.postOwnerId) {
+      await this.producer.send({
+        topic: 'notifications',
+        messages: [
+          {
+            value: JSON.stringify({
+              message: `${request.data.likedUserUsername} liked your post`,
+              userId: request.data.postOwnerId,
+            }),
+          },
+        ],
+      });
+    }
+
+
 
     return respondSuccess(null);
   }

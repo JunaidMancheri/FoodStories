@@ -43,12 +43,13 @@ export class FollowAUserHandler extends BaseHandler {
       ],
     });
 
+
     await this.producer.send({
       topic: 'notifications',
       messages: [
         {
           value: JSON.stringify({
-            message: `$${request.data.followerUsername} started following you`,
+            message: `${request.data.followerUsername} started following you`,
             userId: request.data.followeeId,
           }),
         },
