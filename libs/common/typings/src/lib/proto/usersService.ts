@@ -13,6 +13,8 @@ import { EditProfileData } from '../dto/editProfileData.dto';
     searchUsers(request: ISearchUserRequest): Observable<ISearchUserResponse>;
     makeAccountPrivate(request:IMakeAccountPrivateRequest) : Observable<void>
     makeAccountPublic(request: IMakeAccountPrivateRequest) : Observable<void>
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    getUsers(request: any): Observable<GetUsersResponse>;
   }
 
   export interface IUsersServiceServer {
@@ -25,7 +27,12 @@ import { EditProfileData } from '../dto/editProfileData.dto';
     searchUsers: handleUnaryCall<ISearchUserRequest, ISearchUserResponse>;
     makeAccountPrivate: handleUnaryCall<IMakeAccountPrivateRequest, void>;
     makeAccountPublic: handleUnaryCall<IMakeAccountPrivateRequest, void>;
+    getUsers: handleUnaryCall<void, GetUsersResponse>;
     
+  }
+
+  export interface GetUsersResponse {
+    users: IUser[];
   }
 
 

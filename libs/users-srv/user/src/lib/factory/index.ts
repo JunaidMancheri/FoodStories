@@ -1,7 +1,10 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { BaseHandler, BaseSubscriber, RequestPayload, ResponsePayload, respondSuccess } from '@food-stories/common/handlers';
-import { IMakeAccountPrivateRequest, ISearchUserRequest, ISearchUserResponse } from '@food-stories/common/typings';
+import { GetUsersResponse, IMakeAccountPrivateRequest, ISearchUserRequest, ISearchUserResponse } from '@food-stories/common/typings';
 import { userModel } from '../interface/db/mongodb/models/user.model';
 import { Producer } from 'kafkajs';
+import { mapDocumentsToUserEntities } from '../interface/db/mongodb/mapper.helper';
 
 export * from './createUser.factory';
 export * from './isUsernameAvailable.factory';
@@ -9,6 +12,19 @@ export * from './isRegisteredUser.factory';
 export * from './getCurrentUserData.factory';
 export * from './getUserData.factory';
 export * from './udpateUserProfile.factory';
+
+
+export function makeGetUsersHandler() {
+  return new GetUsersHandler();
+}
+
+
+export  class GetUsersHandler extends BaseHandler {
+ async execute(request: RequestPayload<void>): Promise<ResponsePayload<GetUsersResponse>> {
+    const usersDocs = await userModel.find();
+    return respondSuccess({users: mapDocumentsToUserEntities(usersDocs)})
+  }
+}
 
 export class PostCreatedHandler extends BaseSubscriber {
   override event = 'Post.Created';
@@ -101,3 +117,4 @@ class MakeAccountPublicHandler extends BaseHandler {
       return respondSuccess(void 0);
   }
 }
+

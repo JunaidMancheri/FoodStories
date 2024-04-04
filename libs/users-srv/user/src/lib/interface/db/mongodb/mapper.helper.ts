@@ -18,3 +18,7 @@ export function mapDocumentToUserEntity(document: IUserDoc | null): IUser | null
   }
   return new User(userProps);
 }
+
+export function mapDocumentsToUserEntities(docs: IUserDoc[]): IUser[] {
+  return docs.map(doc => mapDocumentToUserEntity(doc)) as IUser[];
+}
