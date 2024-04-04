@@ -58,6 +58,11 @@ export class ApiGatewayUsersService implements OnModuleInit {
     return  handleGrpcError(this.usersService.makeAccountPublic(data));
   }
 
+
+  getUsers() {
+    return handleGrpcError(this.usersService.getUsers({}));
+  }
+
 }
 
 

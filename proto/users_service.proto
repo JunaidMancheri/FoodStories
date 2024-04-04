@@ -12,9 +12,14 @@ service UsersService {
   rpc searchUsers(SearchUserRequest) returns (SearchUserResponse) {}
   rpc makeAccountPrivate(MakeAccountPrivateOrPublicRequest) returns (EMPTY) {}
   rpc makeAccountPublic(MakeAccountPrivateOrPublicRequest) returns (EMPTY) {}
+  rpc getUsers(EMPTY) returns(GetUsersResponse) {}
 }
 
 message EMPTY {}
+
+message GetUsersResponse {
+  repeated UserEntity users = 0;
+}
 
 message MakeAccountPrivateOrPublicRequest {
   string userId = 0;

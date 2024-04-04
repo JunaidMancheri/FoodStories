@@ -25,6 +25,12 @@ export class ApiGatewayUsersController {
     private socialNetworkService: ApiGatewaySocialNetworkService
   ) {}
 
+
+   @Get()
+   getUesrs() {
+    return this.apiGatewayUsersService.getUsers();
+   }
+
   @Get('username/:username')
   checkUsername(@Param() params: { username: string }) {
     const response = this.apiGatewayUsersService.isUsernameAvailable({
