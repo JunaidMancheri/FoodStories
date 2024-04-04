@@ -1,4 +1,5 @@
 import { Route } from "@angular/router";
+import { LayoutComponent } from '@food-stories/admins-client/layout';
 
 export const appRoutes : Route[] = [
   {
@@ -7,9 +8,27 @@ export const appRoutes : Route[] = [
       {
         path: 'login',
         loadComponent: () => import('@food-stories/admins-client/auth').then((comp) => comp.AuthComponent)
+      },
+      {
+        path: '',
+        redirectTo: 'login',
+        pathMatch: 'full',
       }
     ],
   },
+
+  {
+    path: '',
+    component: LayoutComponent,
+    children: [
+      {
+        path: 'dashboard',
+        loadComponent: () => import('@food-stories/admins-client/dashboard').then((comp) => comp.DashboardComponent)
+    
+      },
+    ]
+  }
+,
   {
     path: '',
     redirectTo: 'auth',
