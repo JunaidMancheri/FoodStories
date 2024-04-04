@@ -56,8 +56,7 @@ export class ApiGatewayUsersController {
   @Get('/search')
   searchUsers(@Query('query') query: string) {
     return this.apiGatewayUsersService.searchUsers({ query }).pipe(
-      map((results) => (results.results ? results : { results: [] })),
-      tap((val) => console.log(val))
+      map((results) => (results.results ? results : { results: [] }))
     );
   }
 
@@ -72,7 +71,6 @@ export class ApiGatewayUsersController {
           targetUserId: userId,
         })
       );
-      console.log(result);
 
       if (result.hasBlocked) {
         throw new NotFoundException();

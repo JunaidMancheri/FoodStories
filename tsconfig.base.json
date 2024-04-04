@@ -37,6 +37,7 @@
       "@food-stories/api-gateway/core/firebase-admin": [
         "libs/api-gateway/core/firebase-admin/src/index.ts"
       ],
+      "@food-stories/api-gateway/feed": ["libs/api-gateway/feed/src/index.ts"],
       "@food-stories/api-gateway/like": ["libs/api-gateway/like/src/index.ts"],
       "@food-stories/api-gateway/notifications": [
         "libs/api-gateway/notifications/src/index.ts"
@@ -115,6 +116,9 @@
       ],
       "@food-stories/users-client/post/ui/create-post-stepper": [
         "libs/users-client/post/ui/create-post-stepper/src/index.ts"
+      ],
+      "@food-stories/users-client/post/ui/feed-item": [
+        "libs/users-client/post/ui/feed-item/src/index.ts"
       ],
       "@food-stories/users-client/post/ui/posts-grid": [
         "libs/users-client/post/ui/posts-grid/src/index.ts"

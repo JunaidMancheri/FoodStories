@@ -11,10 +11,10 @@ export class UserCreatedEventSubscriber extends BaseSubscriber {
     super();
   }
 
-  async execute(payload: Pick<IUser, 'id' | 'username'>): Promise<void> {
+  async execute(payload: Pick<IUser, 'id' | 'username' | 'DPURL'>): Promise<void> {
     const session = this.driver.session({database: 'foodstories.social.networks'})
     await session.run('CREATE (u:User $userProps)', {
-      userProps: { username: payload.username, userId: payload.id },
+      userProps: { username: payload.username, userId: payload.id, DPURL: payload.DPURL },
     });
     session.close();
     this.logger.info('New user created successfully', {

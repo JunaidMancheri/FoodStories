@@ -112,7 +112,7 @@ export class ProfileStore extends ComponentStore<ProfileState> {
       ...state.user,
       postsCount: state.user.postsCount + 1,
     },
-    posts: [post, ...state.posts]
+    posts: state.posts?.length > 0 ?  [post, ...state.posts] : [post]
   }))
 
   readonly loadUser = this.updater(

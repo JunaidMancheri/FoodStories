@@ -1,8 +1,10 @@
 import {
   Component,
+  EventEmitter,
   Input,
   OnChanges,
   OnInit,
+  Output,
   SimpleChanges,
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -34,7 +36,6 @@ import { HttpClient } from '@angular/common/http';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { FormsModule } from '@angular/forms';
-import { ProfileService } from '@food-stories/users-client/profile/feature';
 
 @Component({
   selector: 'fs-bio-section',
@@ -62,7 +63,6 @@ export class BioSectionComponent implements OnChanges, OnInit {
     private profileStore: ProfileStore,
     private store: Store,
     private http: HttpClient,
-    private service: ProfileService
   ) {}
 
   ngOnChanges(changes: SimpleChanges): void {
@@ -76,6 +76,9 @@ export class BioSectionComponent implements OnChanges, OnInit {
   }
 
   isPrivate: boolean | undefined;
+
+  @Output() blockUserEvent = new EventEmitter();
+  @Output() unblockUserEvent = new EventEmitter();
 
   @Input({ required: true }) currentUser!: IUser | null;
   @Input({ required: true }) isOwnProfile!: boolean | null;
@@ -98,7 +101,7 @@ export class BioSectionComponent implements OnChanges, OnInit {
           body: { blockerId: this.activeUserid },
         })
         .subscribe(() => {
-          this.service.unblockUser();
+          this.unblockUserEvent.emit();
         });
   }
 
@@ -109,7 +112,7 @@ export class BioSectionComponent implements OnChanges, OnInit {
           blockerId: this.activeUserid,
         })
         .subscribe(() => {
-          this.service.blockUser();
+          this.blockUserEvent.emit();
         });
   }
 

@@ -37,6 +37,11 @@ export const API_ENDPOINTS = {
     blockUser: (targetId: string) => `${BASE_URL}/social-networks/block/${targetId}`,
     getRelationships: (userId: string) => `${BASE_URL}/social-networks/relationships/${userId}`,
     unblockUser: (targetId: string) => `${BASE_URL}/social-networks/block/${targetId}`
+  },
+
+
+  Feeds: {
+    getFeed: (userId: string) => `${BASE_URL}/feeds/${userId}`
   }
 
 }
