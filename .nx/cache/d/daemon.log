@@ -178,3 +178,550 @@ node:internal/process/promises:288
 }
 
 Node.js v18.17.1
+[NX Daemon Server] - 2024-04-04T00:27:43.995Z - Started listening on: \\.\pipe\nx\C:\Users\JUNAID\AppData\Local\Temp\5a3bc21e52a91d492dde\d.sock
+[NX Daemon Server] - 2024-04-04T00:27:43.998Z - [WATCHER]: Subscribed to changes within: c:\Users\JUNAID\OneDrive\Desktop\FoodStories\food-stories (native)
+[NX Daemon Server] - 2024-04-04T00:27:44.009Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-04-04T00:27:44.013Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-04-04T00:27:44.013Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-04-04T00:27:44.016Z - [REQUEST]: Client Request for Project Graph Received
+fatal: no path specified
+[NX Daemon Server] - 2024-04-04T00:27:44.222Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-04-04T00:27:44.222Z - [REQUEST]: 
+[NX Daemon Server] - 2024-04-04T00:27:44.222Z - [REQUEST]: 
+[NX Daemon Server] - 2024-04-04T00:27:44.455Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-04-04T00:27:44.460Z - Time taken for 'total for creating and serializing project graph' 439.0716998577118ms
+[NX Daemon Server] - 2024-04-04T00:27:44.461Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:44.462Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:44.462Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-04-04T00:27:44.462Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 439. Response time: 7.
+[NX Daemon Server] - 2024-04-04T00:27:44.493Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:44.547Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:44.618Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:44.622Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:44.682Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:44.683Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:44.913Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-04-04T00:27:44.913Z - [REQUEST]: 190559163265851095
+[NX Daemon Server] - 2024-04-04T00:27:44.913Z - [REQUEST]: 
+[NX Daemon Server] - 2024-04-04T00:27:45.011Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-04-04T00:27:45.011Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-04-04T00:27:45.014Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:45.015Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:45.018Z - Time taken for 'hash changed files from watcher' 117.89010000228882ms
+[NX Daemon Server] - 2024-04-04T00:27:45.019Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-04-04T00:27:45.019Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 8.
+[NX Daemon Server] - 2024-04-04T00:27:45.029Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-04-04T00:27:45.225Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-04-04T00:27:45.225Z - [REQUEST]: 7191611556914164547
+[NX Daemon Server] - 2024-04-04T00:27:45.226Z - [REQUEST]: 
+[NX Daemon Server] - 2024-04-04T00:27:45.379Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-04-04T00:27:45.385Z - Time taken for 'total for creating and serializing project graph' 350.8342001438141ms
+[NX Daemon Server] - 2024-04-04T00:27:45.385Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:45.386Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:45.387Z - [WATCHER]: 2 file(s) created or restored, 1 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-04-04T00:27:45.389Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:45.393Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-04-04T00:27:45.393Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 351. Response time: 14.
+[NX Daemon Server] - 2024-04-04T00:27:45.417Z - [WATCHER]: 2 file(s) created or restored, 1 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-04-04T00:27:45.418Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:45.429Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-04-04T00:27:45.480Z - [WATCHER]: 0 file(s) created or restored, 3 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2024-04-04T00:27:45.481Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:45.494Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-04-04T00:27:45.494Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-04-04T00:27:45.708Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-04-04T00:27:45.708Z - [REQUEST]: 16376836368659092795,5761726681525319790,17036869540637447991
+[NX Daemon Server] - 2024-04-04T00:27:45.708Z - [REQUEST]: .nx/cache/file-map.json,.nx/cache/project-graph.json
+[NX Daemon Server] - 2024-04-04T00:27:45.813Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-04-04T00:27:45.814Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:45.815Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:45.816Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:45.816Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:45.816Z - Time taken for 'hash changed files from watcher' 130.34540009498596ms
+[NX Daemon Server] - 2024-04-04T00:27:45.817Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-04-04T00:27:45.937Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-04-04T00:27:45.937Z - [REQUEST]: 4052657225285853732
+[NX Daemon Server] - 2024-04-04T00:27:45.937Z - [REQUEST]: 
+[NX Daemon Server] - 2024-04-04T00:27:46.006Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-04-04T00:27:46.009Z - Time taken for 'total for creating and serializing project graph' 188.87720012664795ms
+[NX Daemon Server] - 2024-04-04T00:27:46.010Z - [WATCHER]: 2 file(s) created or restored, 1 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-04-04T00:27:46.012Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:46.012Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:46.013Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:46.013Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-04-04T00:27:46.013Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 189. Response time: 7.
+[NX Daemon Server] - 2024-04-04T00:27:46.026Z - [REQUEST]: Responding to the client. handleRequestFileData
+[NX Daemon Server] - 2024-04-04T00:27:46.026Z - Done responding to the client handleRequestFileData
+[NX Daemon Server] - 2024-04-04T00:27:46.026Z - Handled REQUEST_FILE_DATA. Handling time: 5. Response time: 1.
+[NX Daemon Server] - 2024-04-04T00:27:46.028Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-04-04T00:27:46.043Z - [WATCHER]: 2 file(s) created or restored, 1 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-04-04T00:27:46.044Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:46.104Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:46.106Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:46.303Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-04-04T00:27:46.303Z - [REQUEST]: 17463790476862708248
+[NX Daemon Server] - 2024-04-04T00:27:46.304Z - [REQUEST]: .nx/cache/file-map.json,.nx/cache/project-graph.json
+[NX Daemon Server] - 2024-04-04T00:27:46.426Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:46.426Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:46.427Z - Time taken for 'hash changed files from watcher' 121.1528000831604ms
+[NX Daemon Server] - 2024-04-04T00:27:46.449Z - [WATCHER]: 2 file(s) created or restored, 1 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-04-04T00:27:46.450Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:46.510Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:46.511Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:46.573Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:46.574Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:46.778Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-04-04T00:27:46.778Z - [REQUEST]: 9965888792555956345
+[NX Daemon Server] - 2024-04-04T00:27:46.778Z - [REQUEST]: .nx/cache/project-graph.json,.nx/cache/file-map.json
+[NX Daemon Server] - 2024-04-04T00:27:46.864Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:46.866Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:46.866Z - Time taken for 'hash changed files from watcher' 73.49850010871887ms
+[NX Daemon Server] - 2024-04-04T00:27:46.917Z - [WATCHER]: 2 file(s) created or restored, 1 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-04-04T00:27:46.918Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:46.979Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:46.980Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:47.042Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:47.043Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:47.105Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:47.107Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:47.166Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:47.167Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:47.229Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:47.230Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:47.411Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-04-04T00:27:47.411Z - [REQUEST]: 13068429115500631483
+[NX Daemon Server] - 2024-04-04T00:27:47.412Z - [REQUEST]: .nx/cache/project-graph.json,.nx/cache/file-map.json
+[NX Daemon Server] - 2024-04-04T00:27:47.525Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:47.527Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:47.528Z - Time taken for 'hash changed files from watcher' 84.4598000049591ms
+[NX Daemon Server] - 2024-04-04T00:27:47.560Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:47.562Z - [WATCHER]: 2 file(s) created or restored, 1 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-04-04T00:27:47.623Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:47.624Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:47.688Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:47.689Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:47.749Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:47.751Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:47.811Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:47.813Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:47.876Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:47.876Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:47.940Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:47.941Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:48.001Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:48.003Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:48.064Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:48.064Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:48.125Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:48.127Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:48.190Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:48.191Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:48.215Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-04-04T00:27:48.217Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-04-04T00:27:48.219Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-04-04T00:27:48.226Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-04-04T00:27:48.436Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-04-04T00:27:48.437Z - [REQUEST]: 3174060127920478874
+[NX Daemon Server] - 2024-04-04T00:27:48.437Z - [REQUEST]: .nx/cache/file-map.json,.nx/cache/project-graph.json
+[NX Daemon Server] - 2024-04-04T00:27:48.582Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-04-04T00:27:48.590Z - Time taken for 'total for creating and serializing project graph' 355.82879996299744ms
+[NX Daemon Server] - 2024-04-04T00:27:48.593Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:48.595Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:48.595Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:48.596Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:48.596Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-04-04T00:27:48.596Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 356. Response time: 14.
+[NX Daemon Server] - 2024-04-04T00:27:48.612Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:48.614Z - [WATCHER]: 2 file(s) created or restored, 1 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-04-04T00:27:48.910Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-04-04T00:27:48.910Z - [REQUEST]: 6335818754060154894
+[NX Daemon Server] - 2024-04-04T00:27:48.910Z - [REQUEST]: .nx/cache/file-map.json,.nx/cache/project-graph.json
+[NX Daemon Server] - 2024-04-04T00:27:49.009Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:49.010Z - [WATCHER]: 0 file(s) created or restored, 1 file(s) modified, 8 file(s) deleted
+[NX Daemon Server] - 2024-04-04T00:27:49.012Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-04-04T00:27:49.210Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-04-04T00:27:49.210Z - [REQUEST]: 4097986673425710125
+[NX Daemon Server] - 2024-04-04T00:27:49.210Z - [REQUEST]: .nx/cache/nx-console-project-graph/static/styles.js,.nx/cache/nx-console-project-graph/static/polyfills.js,.nx/cache/nx-console-project-graph/static/styles.css,.nx/cache/nx-console-project-graph/static/3rdpartylicenses.txt,.nx/cache/nx-console-project-graph/static/main.js,.nx/cache/nx-console-project-graph/static/favicon.ico,.nx/cache/nx-console-project-graph/static/environment.js,.nx/cache/nx-console-project-graph/static/runtime.js
+[NX Daemon Server] - 2024-04-04T00:27:49.345Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-04-04T00:27:49.349Z - Time taken for 'hash changed files from watcher' 80.20840001106262ms
+[NX Daemon Server] - 2024-04-04T00:27:49.349Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:49.349Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:49.351Z - [WATCHER]: 2 file(s) created or restored, 1 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-04-04T00:27:49.352Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:49.352Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-04-04T00:27:49.353Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 334. Response time: 8.
+[NX Daemon Server] - 2024-04-04T00:27:49.366Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-04-04T00:27:49.549Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-04-04T00:27:49.549Z - [REQUEST]: 13751406588589333775
+[NX Daemon Server] - 2024-04-04T00:27:49.549Z - [REQUEST]: .nx/cache/project-graph.json,.nx/cache/file-map.json
+[NX Daemon Server] - 2024-04-04T00:27:49.659Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-04-04T00:27:49.663Z - Time taken for 'total for creating and serializing project graph' 292.46069979667664ms
+[NX Daemon Server] - 2024-04-04T00:27:49.665Z - [WATCHER]: 2 file(s) created or restored, 1 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-04-04T00:27:49.667Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:49.667Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:49.668Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:49.668Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-04-04T00:27:49.668Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 293. Response time: 9.
+[NX Daemon Server] - 2024-04-04T00:27:49.698Z - [WATCHER]: 2 file(s) created or restored, 2 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-04-04T00:27:49.699Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:49.704Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-04-04T00:27:49.750Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-04-04T00:27:49.751Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-04-04T00:27:49.751Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-04-04T00:27:49.752Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-04-04T00:27:49.913Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-04-04T00:27:49.913Z - [REQUEST]: 13313348602881478748,17036869540637447991
+[NX Daemon Server] - 2024-04-04T00:27:49.913Z - [REQUEST]: .nx/cache/project-graph.json,.nx/cache/file-map.json
+[NX Daemon Server] - 2024-04-04T00:27:50.011Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-04-04T00:27:50.015Z - Time taken for 'total for creating and serializing project graph' 258.8798999786377ms
+[NX Daemon Server] - 2024-04-04T00:27:50.016Z - [WATCHER]: 0 file(s) created or restored, 3 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2024-04-04T00:27:50.017Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:50.018Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:50.018Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:50.018Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-04-04T00:27:50.018Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 259. Response time: 7.
+[NX Daemon Server] - 2024-04-04T00:27:50.026Z - [REQUEST]: Responding to the client. handleRequestFileData
+[NX Daemon Server] - 2024-04-04T00:27:50.027Z - Done responding to the client handleRequestFileData
+[NX Daemon Server] - 2024-04-04T00:27:50.027Z - Handled REQUEST_FILE_DATA. Handling time: 2. Response time: 1.
+[NX Daemon Server] - 2024-04-04T00:27:50.030Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-04-04T00:27:50.061Z - [WATCHER]: 2 file(s) created or restored, 1 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-04-04T00:27:50.062Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:50.281Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-04-04T00:27:50.281Z - [REQUEST]: 17036869540637447991,15657800339584466976,5761726681525319790
+[NX Daemon Server] - 2024-04-04T00:27:50.281Z - [REQUEST]: .nx/cache/project-graph.json,.nx/cache/file-map.json
+[NX Daemon Server] - 2024-04-04T00:27:50.391Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:50.392Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:50.393Z - Time taken for 'hash changed files from watcher' 106.9987998008728ms
+[NX Daemon Server] - 2024-04-04T00:27:50.454Z - [WATCHER]: 2 file(s) created or restored, 1 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-04-04T00:27:50.455Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:50.511Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:50.511Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:50.574Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:50.575Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:50.752Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-04-04T00:27:50.752Z - [REQUEST]: 13976113623640863271
+[NX Daemon Server] - 2024-04-04T00:27:50.752Z - [REQUEST]: .nx/cache/file-map.json,.nx/cache/project-graph.json
+[NX Daemon Server] - 2024-04-04T00:27:50.830Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:50.831Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:50.831Z - Time taken for 'hash changed files from watcher' 91.2525999546051ms
+[NX Daemon Server] - 2024-04-04T00:27:50.872Z - [WATCHER]: 2 file(s) created or restored, 1 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-04-04T00:27:50.873Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:50.933Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:50.934Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:50.994Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:50.996Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:51.059Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:51.060Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:51.123Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:51.123Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:51.185Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:51.185Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:51.417Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-04-04T00:27:51.418Z - [REQUEST]: 5469130425612770251
+[NX Daemon Server] - 2024-04-04T00:27:51.418Z - [REQUEST]: .nx/cache/project-graph.json,.nx/cache/file-map.json
+[NX Daemon Server] - 2024-04-04T00:27:51.569Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:51.571Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:51.572Z - Time taken for 'hash changed files from watcher' 99.82389998435974ms
+[NX Daemon Server] - 2024-04-04T00:27:51.593Z - [WATCHER]: 2 file(s) created or restored, 1 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-04-04T00:27:51.595Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:51.655Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:51.658Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:51.717Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:51.719Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:51.781Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:51.782Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:51.843Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:51.844Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:51.907Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:51.908Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:51.971Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:51.972Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:52.035Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:52.035Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:52.098Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:52.099Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:52.161Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:52.162Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:52.224Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:52.225Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:52.288Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:52.289Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:52.361Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:52.361Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:52.380Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-04-04T00:27:52.517Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-04-04T00:27:52.517Z - [REQUEST]: 1901370582213654746
+[NX Daemon Server] - 2024-04-04T00:27:52.517Z - [REQUEST]: .nx/cache/project-graph.json,.nx/cache/file-map.json
+[NX Daemon Server] - 2024-04-04T00:27:52.609Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-04-04T00:27:52.611Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:52.612Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:52.613Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:52.613Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:52.613Z - Time taken for 'hash changed files from watcher' 77.46720004081726ms
+[NX Daemon Server] - 2024-04-04T00:27:52.613Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-04-04T00:27:52.615Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-04-04T00:27:52.817Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-04-04T00:27:52.817Z - [REQUEST]: 1682011448332646131
+[NX Daemon Server] - 2024-04-04T00:27:52.817Z - [REQUEST]: 
+[NX Daemon Server] - 2024-04-04T00:27:52.946Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-04-04T00:27:52.950Z - Time taken for 'total for creating and serializing project graph' 331.64230012893677ms
+[NX Daemon Server] - 2024-04-04T00:27:52.951Z - [WATCHER]: 2 file(s) created or restored, 1 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-04-04T00:27:52.953Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:52.953Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:52.954Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:52.954Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-04-04T00:27:52.954Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 331. Response time: 8.
+[NX Daemon Server] - 2024-04-04T00:27:52.978Z - [WATCHER]: 2 file(s) created or restored, 1 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-04-04T00:27:52.979Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:53.041Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:53.042Z - [WATCHER]: 0 file(s) created or restored, 1 file(s) modified, 8 file(s) deleted
+[NX Daemon Server] - 2024-04-04T00:27:53.203Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-04-04T00:27:53.203Z - [REQUEST]: 13238843667401695772
+[NX Daemon Server] - 2024-04-04T00:27:53.203Z - [REQUEST]: .nx/cache/file-map.json,.nx/cache/project-graph.json,.nx/cache/nx-console-project-graph/static/main.js,.nx/cache/nx-console-project-graph/static/styles.css,.nx/cache/nx-console-project-graph/static/3rdpartylicenses.txt,.nx/cache/nx-console-project-graph/static/favicon.ico,.nx/cache/nx-console-project-graph/static/environment.js,.nx/cache/nx-console-project-graph/static/polyfills.js,.nx/cache/nx-console-project-graph/static/runtime.js,.nx/cache/nx-console-project-graph/static/styles.js
+[NX Daemon Server] - 2024-04-04T00:27:53.296Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:53.297Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:53.298Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-04-04T00:27:53.423Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-04-04T00:27:53.424Z - [REQUEST]: 13594578771677465431
+[NX Daemon Server] - 2024-04-04T00:27:53.424Z - [REQUEST]: 
+[NX Daemon Server] - 2024-04-04T00:27:53.497Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-04-04T00:27:53.501Z - Time taken for 'hash changed files from watcher' 85.53250002861023ms
+[NX Daemon Server] - 2024-04-04T00:27:53.503Z - [WATCHER]: 2 file(s) created or restored, 1 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-04-04T00:27:53.505Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:53.506Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:53.507Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:53.507Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-04-04T00:27:53.507Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 199. Response time: 10.
+[NX Daemon Server] - 2024-04-04T00:27:53.525Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-04-04T00:27:53.710Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-04-04T00:27:53.710Z - [REQUEST]: 6306187853667433143
+[NX Daemon Server] - 2024-04-04T00:27:53.710Z - [REQUEST]: .nx/cache/project-graph.json,.nx/cache/file-map.json
+[NX Daemon Server] - 2024-04-04T00:27:53.858Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-04-04T00:27:53.863Z - Time taken for 'total for creating and serializing project graph' 332.9054000377655ms
+[NX Daemon Server] - 2024-04-04T00:27:53.864Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:53.864Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:53.866Z - [WATCHER]: 2 file(s) created or restored, 1 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-04-04T00:27:53.878Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:53.879Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-04-04T00:27:53.879Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 333. Response time: 21.
+[NX Daemon Server] - 2024-04-04T00:27:53.886Z - [WATCHER]: 2 file(s) created or restored, 1 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-04-04T00:27:53.887Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:53.929Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-04-04T00:27:53.949Z - [WATCHER]: 0 file(s) created or restored, 3 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2024-04-04T00:27:53.950Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:54.180Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-04-04T00:27:54.180Z - [REQUEST]: 9072979821350713989,17036869540637447991,5761726681525319790
+[NX Daemon Server] - 2024-04-04T00:27:54.180Z - [REQUEST]: .nx/cache/project-graph.json,.nx/cache/file-map.json
+[NX Daemon Server] - 2024-04-04T00:27:54.284Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-04-04T00:27:54.285Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-04-04T00:27:54.285Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:54.287Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:54.288Z - Time taken for 'hash changed files from watcher' 128.39629983901978ms
+[NX Daemon Server] - 2024-04-04T00:27:54.288Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-04-04T00:27:54.289Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-04-04T00:27:54.479Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-04-04T00:27:54.479Z - [REQUEST]: 15431179836299539600
+[NX Daemon Server] - 2024-04-04T00:27:54.479Z - [REQUEST]: 
+[NX Daemon Server] - 2024-04-04T00:27:54.596Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-04-04T00:27:54.601Z - Time taken for 'total for creating and serializing project graph' 306.2992000579834ms
+[NX Daemon Server] - 2024-04-04T00:27:54.603Z - [WATCHER]: 2 file(s) created or restored, 1 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-04-04T00:27:54.605Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:54.607Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:54.607Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:54.607Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-04-04T00:27:54.607Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 307. Response time: 11.
+[NX Daemon Server] - 2024-04-04T00:27:54.621Z - [REQUEST]: Responding to the client. handleRequestFileData
+[NX Daemon Server] - 2024-04-04T00:27:54.621Z - Done responding to the client handleRequestFileData
+[NX Daemon Server] - 2024-04-04T00:27:54.621Z - Handled REQUEST_FILE_DATA. Handling time: 3. Response time: 0.
+[NX Daemon Server] - 2024-04-04T00:27:54.624Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-04-04T00:27:54.637Z - [WATCHER]: 2 file(s) created or restored, 1 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-04-04T00:27:54.639Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:54.697Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:54.701Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:54.861Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-04-04T00:27:54.861Z - [REQUEST]: 17934533971183760426
+[NX Daemon Server] - 2024-04-04T00:27:54.861Z - [REQUEST]: .nx/cache/project-graph.json,.nx/cache/file-map.json
+[NX Daemon Server] - 2024-04-04T00:27:54.943Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:54.944Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:54.944Z - Time taken for 'hash changed files from watcher' 90.22040009498596ms
+[NX Daemon Server] - 2024-04-04T00:27:54.987Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:54.989Z - [WATCHER]: 2 file(s) created or restored, 1 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-04-04T00:27:55.044Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:55.044Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:55.102Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:55.104Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:55.296Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-04-04T00:27:55.296Z - [REQUEST]: 18245360272973526817
+[NX Daemon Server] - 2024-04-04T00:27:55.296Z - [REQUEST]: .nx/cache/file-map.json,.nx/cache/project-graph.json
+[NX Daemon Server] - 2024-04-04T00:27:55.409Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:55.410Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:55.411Z - Time taken for 'hash changed files from watcher' 95.85989999771118ms
+[NX Daemon Server] - 2024-04-04T00:27:55.458Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:55.459Z - [WATCHER]: 2 file(s) created or restored, 1 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-04-04T00:27:55.522Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:55.523Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:55.603Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:55.605Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:55.649Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:55.666Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:55.729Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:55.730Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:55.791Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:55.792Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:55.977Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-04-04T00:27:55.977Z - [REQUEST]: 9551991352742709390
+[NX Daemon Server] - 2024-04-04T00:27:55.977Z - [REQUEST]: .nx/cache/project-graph.json,.nx/cache/file-map.json
+[NX Daemon Server] - 2024-04-04T00:27:56.067Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:56.067Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:56.068Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:56.068Z - Time taken for 'hash changed files from watcher' 98.04489994049072ms
+[NX Daemon Server] - 2024-04-04T00:27:56.105Z - [WATCHER]: 2 file(s) created or restored, 1 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-04-04T00:27:56.106Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:56.167Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:56.168Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:56.229Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:56.231Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:56.292Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:56.293Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:56.356Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:56.356Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:56.419Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:56.421Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:56.480Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:56.482Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:56.543Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:56.544Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:56.607Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:56.609Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:56.671Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:56.672Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:56.735Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:56.736Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:56.739Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-04-04T00:27:56.740Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-04-04T00:27:56.742Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-04-04T00:27:56.748Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-04-04T00:27:56.935Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-04-04T00:27:56.935Z - [REQUEST]: 1148542009252467587
+[NX Daemon Server] - 2024-04-04T00:27:56.935Z - [REQUEST]: .nx/cache/project-graph.json,.nx/cache/file-map.json
+[NX Daemon Server] - 2024-04-04T00:27:57.011Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-04-04T00:27:57.014Z - Time taken for 'total for creating and serializing project graph' 263.0555000305176ms
+[NX Daemon Server] - 2024-04-04T00:27:57.015Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:57.016Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:57.017Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:57.017Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:57.017Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-04-04T00:27:57.017Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 263. Response time: 6.
+[NX Daemon Server] - 2024-04-04T00:27:57.048Z - [WATCHER]: 2 file(s) created or restored, 1 file(s) modified, 3 file(s) deleted
+[NX Daemon Server] - 2024-04-04T00:27:57.050Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:57.111Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:57.112Z - [WATCHER]: 1 file(s) created or restored, 1 file(s) modified, 7 file(s) deleted
+[NX Daemon Server] - 2024-04-04T00:27:57.344Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-04-04T00:27:57.345Z - [REQUEST]: 11512087887436969861,5667550289807473445
+[NX Daemon Server] - 2024-04-04T00:27:57.345Z - [REQUEST]: .nx/cache/project-graph.json,.nx/cache/file-map.json,.nx/cache/nx-console-project-graph/static/main.js,.nx/cache/nx-console-project-graph/static/runtime.js,.nx/cache/nx-console-project-graph/static/environment.js,.nx/cache/nx-console-project-graph/static/styles.css,.nx/cache/nx-console-project-graph/static/polyfills.js,.nx/cache/nx-console-project-graph/static/styles.js,.nx/cache/nx-console-project-graph/static/favicon.ico
+[NX Daemon Server] - 2024-04-04T00:27:57.456Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:57.458Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:57.459Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-04-04T00:27:57.656Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-04-04T00:27:57.656Z - [REQUEST]: 4256404929415596386
+[NX Daemon Server] - 2024-04-04T00:27:57.656Z - [REQUEST]: 
+[NX Daemon Server] - 2024-04-04T00:27:57.801Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-04-04T00:27:57.807Z - Time taken for 'hash changed files from watcher' 106.40230011940002ms
+[NX Daemon Server] - 2024-04-04T00:27:57.809Z - [WATCHER]: 2 file(s) created or restored, 1 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-04-04T00:27:57.812Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:57.812Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:57.812Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:57.813Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-04-04T00:27:57.813Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 342. Response time: 12.
+[NX Daemon Server] - 2024-04-04T00:27:57.830Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:57.832Z - [WATCHER]: 2 file(s) created or restored, 1 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-04-04T00:27:57.836Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-04-04T00:27:58.033Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-04-04T00:27:58.033Z - [REQUEST]: 15631688645045565619
+[NX Daemon Server] - 2024-04-04T00:27:58.033Z - [REQUEST]: .nx/cache/file-map.json,.nx/cache/project-graph.json
+[NX Daemon Server] - 2024-04-04T00:27:58.160Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-04-04T00:27:58.163Z - Time taken for 'total for creating and serializing project graph' 323.4205000400543ms
+[NX Daemon Server] - 2024-04-04T00:27:58.164Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:58.166Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:58.166Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:58.166Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:58.166Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-04-04T00:27:58.166Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 324. Response time: 6.
+[NX Daemon Server] - 2024-04-04T00:27:58.200Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:58.201Z - [WATCHER]: 2 file(s) created or restored, 2 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-04-04T00:27:58.208Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-04-04T00:27:58.257Z - [WATCHER]: 0 file(s) created or restored, 3 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2024-04-04T00:27:58.258Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:58.455Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-04-04T00:27:58.455Z - [REQUEST]: 10968578909422411343,17036869540637447991,5761726681525319790
+[NX Daemon Server] - 2024-04-04T00:27:58.455Z - [REQUEST]: .nx/cache/file-map.json,.nx/cache/project-graph.json
+[NX Daemon Server] - 2024-04-04T00:27:58.573Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-04-04T00:27:58.574Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-04-04T00:27:58.575Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:58.575Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:58.576Z - Time taken for 'hash changed files from watcher' 125.84770011901855ms
+[NX Daemon Server] - 2024-04-04T00:27:58.576Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-04-04T00:27:58.577Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-04-04T00:27:58.718Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-04-04T00:27:58.718Z - [REQUEST]: 9894764153177850648
+[NX Daemon Server] - 2024-04-04T00:27:58.718Z - [REQUEST]: 
+[NX Daemon Server] - 2024-04-04T00:27:58.794Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-04-04T00:27:58.797Z - Time taken for 'total for creating and serializing project graph' 216.60800004005432ms
+[NX Daemon Server] - 2024-04-04T00:27:58.799Z - [WATCHER]: 2 file(s) created or restored, 1 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-04-04T00:27:58.800Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:58.800Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:58.800Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:58.801Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-04-04T00:27:58.801Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 217. Response time: 7.
+[NX Daemon Server] - 2024-04-04T00:27:58.809Z - [REQUEST]: Responding to the client. handleRequestFileData
+[NX Daemon Server] - 2024-04-04T00:27:58.809Z - Done responding to the client handleRequestFileData
+[NX Daemon Server] - 2024-04-04T00:27:58.809Z - Handled REQUEST_FILE_DATA. Handling time: 3. Response time: 0.
+[NX Daemon Server] - 2024-04-04T00:27:58.811Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-04-04T00:27:58.847Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:58.849Z - [WATCHER]: 2 file(s) created or restored, 1 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-04-04T00:27:59.110Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-04-04T00:27:59.110Z - [REQUEST]: 4526326409171354637
+[NX Daemon Server] - 2024-04-04T00:27:59.110Z - [REQUEST]: .nx/cache/project-graph.json,.nx/cache/file-map.json
+[NX Daemon Server] - 2024-04-04T00:27:59.210Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:59.211Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:59.212Z - Time taken for 'hash changed files from watcher' 123.76749992370605ms
+[NX Daemon Server] - 2024-04-04T00:27:59.253Z - [WATCHER]: 2 file(s) created or restored, 1 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-04-04T00:27:59.254Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:59.316Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:59.318Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:59.378Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:59.379Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:59.611Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-04-04T00:27:59.611Z - [REQUEST]: 16641049125230789141
+[NX Daemon Server] - 2024-04-04T00:27:59.611Z - [REQUEST]: .nx/cache/file-map.json,.nx/cache/project-graph.json
+[NX Daemon Server] - 2024-04-04T00:27:59.740Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:59.741Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:59.741Z - Time taken for 'hash changed files from watcher' 129.0861999988556ms
+[NX Daemon Server] - 2024-04-04T00:27:59.771Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:59.773Z - [WATCHER]: 2 file(s) created or restored, 1 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-04-04T00:27:59.835Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:59.836Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:59.898Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:27:59.899Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:59.961Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:27:59.962Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:28:00.023Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:28:00.024Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:28:00.086Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:28:00.086Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:28:00.297Z - [REQUEST]: Updated file-hasher based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-04-04T00:28:00.297Z - [REQUEST]: 16154256165173961059
+[NX Daemon Server] - 2024-04-04T00:28:00.297Z - [REQUEST]: .nx/cache/file-map.json,.nx/cache/project-graph.json
+[NX Daemon Server] - 2024-04-04T00:28:00.404Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:28:00.406Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:28:00.407Z - Time taken for 'hash changed files from watcher' 90.7795000076294ms
+[NX Daemon Server] - 2024-04-04T00:28:00.430Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:28:00.432Z - [WATCHER]: 2 file(s) created or restored, 1 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-04-04T00:28:00.493Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:28:00.494Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:28:00.556Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:28:00.556Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:28:00.619Z - [WATCHER]: .nx/cache/d/daemon.log was modified
+[NX Daemon Server] - 2024-04-04T00:28:00.620Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:28:00.682Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-04-04T00:28:00.684Z - [WATCHER]: .nx/cache/d/daemon.log was modified
