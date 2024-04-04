@@ -9,6 +9,8 @@ service PostsService {
 }
 
 
+// message 
+
 message PostEntity {
   string id = 0;
   string userId = 1;

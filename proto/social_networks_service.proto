@@ -9,9 +9,16 @@ service SocialNetworksService {
  rpc BlockUser (BlockUserRequest) returns (EMPTY) {};
  rpc unblockUser(BlockUserRequest) returns (EMPTY) {};
  rpc hasBlocked(HasBlockedRequest) returns (HasBlockedResponse) {};
-
+ rpc getFollowings(GetFollowingsRequest) returns (GetFollowingsResponse) {};
 }
 
+message GetFollowingsResponse {
+  repeated string followingIds = 0;
+}
+
+message GetFollowingsRequest {
+  string userId = 0;
+}
 
 message HasBlockedResponse {
   bool hasBlocked = 0;

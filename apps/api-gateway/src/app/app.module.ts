@@ -7,6 +7,7 @@ import { FirebaseAdminModule } from '@food-stories/api-gateway/core/firebase-adm
 import { ApiGatewayCommentModule } from '@food-stories/api-gateway/comment';
 import { ApiGatewaySocialNetworkModule } from '@food-stories/api-gateway/social-network';
 import { ApiGatewayNotificationsModule } from '@food-stories/api-gateway/notifications';
+import { ApiGatewayFeedModule } from '@food-stories/api-gateway/feed';
 
 
 @Module({
@@ -18,10 +19,11 @@ import { ApiGatewayNotificationsModule } from '@food-stories/api-gateway/notific
     ApiGatewayCommentModule,
     ApiGatewayNotificationsModule,
     ApiGatewaySocialNetworkModule,
+    ApiGatewayFeedModule,
     ConfigModule.forRoot({isGlobal: true}),
 ],
   controllers: [],
-  providers: [  ],
+  providers: [],
   exports: []
 })
 export class AppModule {}

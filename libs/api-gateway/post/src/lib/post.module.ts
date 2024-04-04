@@ -9,7 +9,7 @@ import { join } from 'path';
 @Module({
   controllers: [ApiGatewayPostController],
   providers: [ApiGatewayPostService],
-  exports: [],
+  exports: [ApiGatewayPostService],
   imports: [
     ClientsModule.register([
       {

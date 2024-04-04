@@ -35,6 +35,14 @@ export class ProfileComponent implements OnInit, OnDestroy {
 
   }
 
+  onBlockUser() {
+    this.profileService.blockUser();
+  }
+
+  onUnblockUser() {
+    this.profileService.unblockUser();
+  }
+
   ngOnDestroy(): void {
     this.routeSub.unsubscribe();
   }

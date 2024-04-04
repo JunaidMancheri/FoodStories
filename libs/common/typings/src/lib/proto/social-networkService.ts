@@ -8,7 +8,7 @@ export  interface ISocialNetworkServiceServer {
    BlockUser: handleUnaryCall<IBlockUserRequest, void>;
    unblockUser: handleUnaryCall<IBlockUserRequest, void>;
    hasBlocked: handleUnaryCall<IHasBlockedRequest, IHasBlockedResponse>;
-
+   getFollowings: handleUnaryCall<GetFollowingsRequest, GetFollowingsResponse>;
 }
 
 
@@ -19,6 +19,18 @@ export interface ISocialNetworkServiceClient {
   BlockUser(request: IBlockUserRequest): Observable<void>;
   unblockUser(request: IBlockUserRequest): Observable<void>;
   hasBlocked(request: IHasBlockedRequest) : Observable<IHasBlockedResponse>;
+  getFollowings(request: GetFollowingsRequest): Observable<GetFollowingsResponse>;
+}
+
+
+
+export  interface GetFollowingsResponse {
+  followingIds: string[];
+}
+
+
+export interface GetFollowingsRequest {
+  userId: string;
 }
 
 export interface IHasBlockedResponse {
