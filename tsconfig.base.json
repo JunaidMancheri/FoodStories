@@ -18,6 +18,12 @@
       "@food-stories/admins-client/auth": [
         "libs/admins-client/auth/src/index.ts"
       ],
+      "@food-stories/admins-client/dashboard": [
+        "libs/admins-client/dashboard/src/index.ts"
+      ],
+      "@food-stories/admins-client/layout": [
+        "libs/admins-client/layout/src/index.ts"
+      ],
       "@food-stories/api-gateway/auth": ["libs/api-gateway/auth/src/index.ts"],
       "@food-stories/api-gateway/comment": [
         "libs/api-gateway/comment/src/index.ts"
