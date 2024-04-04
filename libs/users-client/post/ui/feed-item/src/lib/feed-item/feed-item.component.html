@@ -15,7 +15,8 @@
 
   </div>
 
-  <div class="content w-full h-auto">
+  <div class="content w-full h-auto cursor-pointer relative" (click)="openPostSingleView()">
+    <mat-icon *ngIf="post.mediaUrls && post.mediaUrls.length > 1" class="absolute top-2 right-2 icon">perm_media</mat-icon>
     <img class="w-full h-full"
     [src]="post.mediaUrls[0]"
       alt="">
@@ -25,8 +26,8 @@
 
     <div class="like-share-comment flex gap-2 text-xl ">
 
-      <mat-icon (click)="toggleLike()"  class="icon" [color]="isLiked ? 'warn': ''" [ngClass]="{'material-symbols-outlined': !isLiked}">favorite</mat-icon>
-      <mat-icon class="material-symbols-outlined">add_comment</mat-icon>
+      <mat-icon (click)="toggleLike()"  class=" cursor-pointer" [color]="isLiked ? 'warn': ''" [ngClass]="{'material-symbols-outlined': !isLiked}">favorite</mat-icon>
+      <mat-icon (click)="openPostSingleView()" class="material-symbols-outlined cursor-pointer">add_comment</mat-icon>
 
 
 
