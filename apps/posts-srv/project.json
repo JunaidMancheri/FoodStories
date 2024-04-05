@@ -30,7 +30,6 @@
             "glob": "comments_service.proto",
             "output": "proto"
           }
-
         ],
         "isolatedConfig": true,
         "webpackConfig": "apps/posts-srv/webpack.config.js"
@@ -75,6 +74,10 @@
           "codeCoverage": true
         }
       }
+    },
+    "docker-build": {
+      "dependsOn": ["build"],
+      "command": "docker build -f apps/posts-srv/Dockerfile . -t posts-srv"
     }
   },
   "tags": []

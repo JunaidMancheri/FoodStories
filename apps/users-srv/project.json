@@ -69,6 +69,10 @@
           "codeCoverage": true
         }
       }
+    },
+    "docker-build": {
+      "dependsOn": ["build"],
+      "command": "docker build -f apps/users-srv/Dockerfile . -t users-srv"
     }
   },
   "tags": []
