@@ -27,13 +27,15 @@
           class=" h-20 w-20 md:h-12 md:w-12 rounded-full">
           <a class="block w-full h-full bg-white custom-p rounded-full transform transition hover:-rotate-12 duration-300"
             href="#">
-            <img class=" w-full h-full rounded-full" src="https://i.ibb.co/yhh0Ljy/profile.jpg" alt="image">
+            <img class=" w-full h-full rounded-full" 
+            [src]="user.DPURL"
+             alt="image">
           </a>
         </div>
       </div>
       <div class="flex flex-col justify-center ">
-        <span class=" font-semibold">jithu_jamshed</span>
-        <span class="text-sm">Junaid</span>
+        <span class=" font-semibold">{{user.username}}</span>
+        <span class="text-sm">{{user.name}}</span>
 
       </div>
 
