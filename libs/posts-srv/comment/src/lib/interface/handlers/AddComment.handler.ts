@@ -30,17 +30,19 @@ export class AddCommentHandler extends BaseHandler {
     const newComment = new this.Comment(commentProps);
 
     await commentsModel.create(newComment);
-    await this.producer.send({
-      topic: 'notifications',
-      messages: [
-        {
-          value: JSON.stringify({
-            message: `${request.data.commentedUserUsername} commented ${newComment.comment} on your post`,
-            userId: request.data.postOwnerId,
-          }),
-        },
-      ],
-    });
+    if (newComment.userId !== request.data.postOwnerId) {
+      await this.producer.send({
+        topic: 'notifications',
+        messages: [
+          {
+            value: JSON.stringify({
+              message: `${request.data.commentedUserUsername} commented ${newComment.comment} on your post`,
+              userId: request.data.postOwnerId,
+            }),
+          },
+        ],
+      });
+    }
     this.logger.info('New Comment added on the post ' + request.data.postId);
 
     return respondSuccess(newComment);
