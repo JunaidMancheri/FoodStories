@@ -22,6 +22,8 @@ spec:
               name: mongodb-secrets
           - secretRef:
               name: kafka-secrets
+          - secretRef:
+              name: neo4j-secrets
 ---
 apiVersion: v1
 kind: Service
