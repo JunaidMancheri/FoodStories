@@ -15,12 +15,22 @@ import {
 } from '@food-stories/users-srv/user';
 
 export const kafkaClient = createKafkaClient(
-  { clientId: 'social-networks-srv', hostUrl: appConfig.KAFKA_URI },
+  {
+    clientId: 'social-networks-srv',
+    hostUrl: appConfig.KAFKA_URI,
+    username: appConfig.KAFKA_USERNAME,
+    password: appConfig.KAFKA_PASSWORD,
+  },
   new Logger('KAFKA')
 );
 
 export const kafkaClient2 = createKafkaClient(
-  { clientId: 'users-srv', hostUrl: appConfig.KAFKA_URI },
+  {
+    clientId: 'users-srv',
+    hostUrl: appConfig.KAFKA_URI,
+    username: appConfig.KAFKA_USERNAME,
+    password: appConfig.KAFKA_PASSWORD,
+  },
   new Logger('KAFKA2')
 );
 

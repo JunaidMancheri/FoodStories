@@ -15,14 +15,19 @@ export async function bootstrapKafka(
   for (const topic of topicsNeeded) {
     if (!topics.includes(topic)) {
       logger.warn('cannot find topic ' + topic +  ' creating topic...');
-    await admin.createTopics({
-      topics: [
-        {
-          topic: topic,
-          numPartitions: 4,
-        },
-      ],
-    });
+      try {
+        await admin.createTopics({
+          topics: [
+            {
+              topic: topic,
+              numPartitions: 4,
+            },
+          ],
+        });
+      } catch (error) {
+        throw new Error('Can\'t create topics, do create manually')
+      }
+
     logger.info('created topic with 4 partitions ' + topic);
     }
 

@@ -10,8 +10,8 @@ export function makeConsumerAdapter(
   consumer: Consumer,
   logger: ILogger
 ) : ConsumerAdapter{
-  return () => {
-    consumer.subscribe({ topic: subscriber.event, fromBeginning: true });
+  return async () => {
+    await consumer.subscribe({ topic: subscriber.event, fromBeginning: true });
     logger.info('Consuming from topic ' + subscriber.event);
     consumer.run({
       autoCommit: false,

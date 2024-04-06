@@ -12,8 +12,10 @@ import { appConfig } from './app.config';
 
 export const kafkaClientForPosts = createKafkaClient(
   {
-    hostUrl: appConfig.KAFKA_URL,
+    hostUrl: appConfig.KAFKA_URI,
     clientId: 'posts-srv',
+    username: appConfig.KAFKA_USERNAME,
+    password:  appConfig.KAFKA_PASSWORD
   },
   new Logger('Kafa')
 );
@@ -21,8 +23,10 @@ export const kafkaClientForPosts = createKafkaClient(
 
 export const kafkaClientForComments = createKafkaClient(
   {
-    hostUrl: appConfig.KAFKA_URL,
+    hostUrl: appConfig.KAFKA_URI,
     clientId: 'comments-srv',
+    username: appConfig.KAFKA_USERNAME,
+    password: appConfig.KAFKA_PASSWORD
   },
   new Logger('kafka')
 )

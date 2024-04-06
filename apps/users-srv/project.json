@@ -27,7 +27,8 @@
           }
         ],
         "isolatedConfig": true,
-        "webpackConfig": "apps/users-srv/webpack.config.js"
+        "webpackConfig": "apps/users-srv/webpack.config.js",
+        "generatePackageJson": true
       },
       "configurations": {
         "development": {},

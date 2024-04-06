@@ -28,7 +28,8 @@
           }
         ],
         "isolatedConfig": true,
-        "webpackConfig": "apps/api-gateway/webpack.config.js"
+        "webpackConfig": "apps/api-gateway/webpack.config.js",
+        "generatePackageJson": true
       },
       "configurations": {
         "development": {},

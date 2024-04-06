@@ -32,7 +32,8 @@
           }
         ],
         "isolatedConfig": true,
-        "webpackConfig": "apps/posts-srv/webpack.config.js"
+        "webpackConfig": "apps/posts-srv/webpack.config.js",
+        "generatePackageJson": true
       },
       "configurations": {
         "development": {},
