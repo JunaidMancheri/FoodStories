@@ -19,10 +19,16 @@ spec:
           - configMapRef:
               name: shared-config-map
           - secretRef:
-              name: mongodb-secrets
-          - secretRef:
               name: kafka-secrets
-                
+          env:
+            - name: USERS_SERVICE_URI
+              value: users-srv-srv:4000
+            - name: POSTS_SERVICE_URI
+              value: posts-srv-srv:4000
+            - name: LIKES_SERVICE_URI
+              value: posts-srv-srv:4000
+            - name: COMMENTS_SERVICE_URI
+              value: posts-srv-srv:4000               
 ---
 apiVersion: v1
 kind: Service
