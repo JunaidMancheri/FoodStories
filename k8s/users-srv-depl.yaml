@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: users-srv-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: users-srv
+  template:
+    metadata:
+      labels:
+        app: users-srv
+    spec:
+      containers:
+        - name: users-srv
+          image: junaidofficialnow/users-srv
+          env:
+            - name: KAFKA_URI
+              value: pkc-7xoy1.eu-central-1.aws.confluent.cloud:9092
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: users-srv-srv
+spec:
+  selector:
+    app: users-srv
+  ports:
+    - name: users-srv
+      protocol: TCP
+      port: 4000
+      targetPort: 4000
