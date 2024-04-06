@@ -8,13 +8,13 @@ import {
   Post,
   Put,
   Query,
-  UseGuards,
+  // UseGuards,
 } from '@nestjs/common';
 import { ApiGatewayUsersService } from './users.service';
 import { CreateUserDTO } from './CreateUser.dto';
 import { EditProfileData } from '@food-stories/common/typings';
-import { AuthGuard } from '@food-stories/api-gateway/common';
-import { firstValueFrom, map, tap } from 'rxjs';
+// import { AuthGuard } from '@food-stories/api-gateway/common';
+import { firstValueFrom, map} from 'rxjs';
 import { ApiGatewaySocialNetworkService } from '@food-stories/api-gateway/social-network';
 
 @Controller('users')

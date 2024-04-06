@@ -18,9 +18,7 @@ export class IsFollowingHandler extends BaseHandler {
   async execute(
     request: RequestPayload<FollowOrUnollowAUserRequest>
   ): Promise<ResponsePayload<IisFollowingResponse>> {
-    const session = this.driver.session({
-      database: 'foodstories.social.networks',
-    });
+    const session = this.driver.session();
     const { records } = await session.run(
       `
     MATCH (:User {userId: $followerId}) -[r]-> (:User {userId: $followeeId})

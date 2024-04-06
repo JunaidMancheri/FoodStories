@@ -8,7 +8,7 @@ export class HasBlockedHandler extends BaseHandler {
     super();
   }
   async execute(request: RequestPayload<IHasBlockedRequest>): Promise<ResponsePayload<IHasBlockedResponse>> {
-    const session = this.driver.session({database: 'foodstories.social.networks'});
+    const session = this.driver.session();
     const { records } = await session.run(
       `
     MATCH (:User {username: $blockerUsername}) -[r]-> (:User {userId: $targetUserId})

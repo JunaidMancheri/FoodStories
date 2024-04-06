@@ -18,9 +18,7 @@ export class GetFollowingsHandler extends BaseHandler {
   async execute(
     request: RequestPayload<GetFollowingsRequest>
   ): Promise<ResponsePayload<GetFollowingsResponse>> {
-    const session = this.driver.session({
-      database: 'foodstories.social.networks',
-    });
+    const session = this.driver.session();
     const result = await session.run(
       `
     MATCH (:User {userId: $userId}) - [:FOLLOWS] -> (n) RETURN n;

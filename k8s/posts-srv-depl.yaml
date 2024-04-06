@@ -15,9 +15,13 @@ spec:
       containers:
         - name: posts-srv
           image: junaidofficialnow/posts-srv
-          env:
-            - name: KAFKA_URI
-              value: pkc-7xoy1.eu-central-1.aws.confluent.cloud:9092
+          envFrom:
+          - configMapRef:
+              name: shared-config-map
+          - secretRef:
+              name: mongodb-secrets
+          - secretRef:
+              name: kafka-secrets
 ---
 apiVersion: v1
 kind: Service
@@ -30,4 +34,4 @@ spec:
     - name: posts-srv
       protocol: TCP
       port: 4001
-      targetPort: 4001
+      targetPort: 4000

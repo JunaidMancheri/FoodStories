@@ -7,6 +7,10 @@ interface IAppConfig {
   KAFKA_URI: string;
   KAFKA_USERNAME: string;
   KAFKA_PASSWORD: string;
+  NEO4J_URI: string;
+  NEO4J_USERNAME: string;
+  NEO4J_PASSWORD: string;
+
 }
 
 export const envKeys: string[] = [
@@ -15,6 +19,9 @@ export const envKeys: string[] = [
   'KAFKA_URI',
   'KAFKA_USERNAME',
   'KAFKA_PASSWORD',
+  'NEO4J_PASSWORD',
+  'NEO4J_USERNAME',
+  'NEO4J_URI'
 ];
 
 export const appConfig: Partial<IAppConfig> = {};

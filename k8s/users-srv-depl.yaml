@@ -15,9 +15,13 @@ spec:
       containers:
         - name: users-srv
           image: junaidofficialnow/users-srv
-          env:
-            - name: KAFKA_URI
-              value: pkc-7xoy1.eu-central-1.aws.confluent.cloud:9092
+          envFrom:
+          - configMapRef:
+              name: shared-config-map
+          - secretRef:
+              name: mongodb-secrets
+          - secretRef:
+              name: kafka-secrets
 ---
 apiVersion: v1
 kind: Service

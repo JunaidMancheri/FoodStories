@@ -12,7 +12,7 @@ export class UserCreatedEventSubscriber extends BaseSubscriber {
   }
 
   async execute(payload: Pick<IUser, 'id' | 'username' | 'DPURL'>): Promise<void> {
-    const session = this.driver.session({database: 'foodstories.social.networks'})
+    const session = this.driver.session()
     await session.run('CREATE (u:User $userProps)', {
       userProps: { username: payload.username, userId: payload.id, DPURL: payload.DPURL },
     });

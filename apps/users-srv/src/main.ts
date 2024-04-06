@@ -7,9 +7,11 @@ import {
 } from '@food-stories/common/utils';
 import { bootstrapKafka } from '@food-stories/common/kafka';
 import { consumers, kafkaClient, topicsNeeded } from './config/kafka.config';
+import { connectToNeo4j } from './config/neo4j.config';
 
 async function bootstrap() {
   try {
+    await  connectToNeo4j();
     await connectToMongoDB(appConfig.MONGODB_URI, logger);
     await bootstrapKafka(kafkaClient, topicsNeeded, consumers, logger);
     const grpcServer = await startGRPCServer(appConfig.GRPC_PORT, logger);

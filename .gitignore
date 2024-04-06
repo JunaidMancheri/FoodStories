@@ -2,7 +2,8 @@
 
 service-accounts/
 
-
+k8s/secrets
+k8s/config-maps
 # env
 .env
 

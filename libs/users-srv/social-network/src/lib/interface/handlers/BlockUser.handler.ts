@@ -16,9 +16,7 @@ export class BlockUserHandler extends BaseHandler {
   async execute(
     request: RequestPayload<IBlockUserRequest>
   ): Promise<ResponsePayload<void>> {
-    const session = this.driver.session({
-      database: 'foodstories.social.networks',
-    });
+    const session = this.driver.session();
 
     const blockerFollowsResult = await session.run(
       `

@@ -15,6 +15,14 @@ spec:
       containers:
         - name: api-gateway
           image: junaidofficialnow/api-gateway
+          envFrom:
+          - configMapRef:
+              name: shared-config-map
+          - secretRef:
+              name: mongodb-secrets
+          - secretRef:
+              name: kafka-secrets
+                
 ---
 apiVersion: v1
 kind: Service

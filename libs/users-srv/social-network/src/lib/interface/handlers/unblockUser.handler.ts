@@ -15,7 +15,7 @@ export class UnblockUserHandler extends BaseHandler {
   async execute(
     request: RequestPayload<IBlockUserRequest>
   ): Promise<ResponsePayload<void>> {
-    const session = this.driver.session({database: 'foodstories.social.networks'});
+    const session = this.driver.session();
     await session.run(
       `
       MATCH (:User {userId: $blockerId}) -[blocks:BLOCKS] ->(:User {userId: $targetId}) 

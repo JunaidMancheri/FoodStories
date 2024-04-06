@@ -14,6 +14,7 @@ import { FIREBASE_ADMIN } from './token';
             './service-accounts/firebaseServiceAccount.json'
           ),
         });
+        console.log(admin)
         return admin;
       },
     },
