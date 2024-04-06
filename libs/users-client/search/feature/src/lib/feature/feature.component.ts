@@ -6,6 +6,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { debounceTime, distinctUntilChanged, filter, switchMap} from 'rxjs';
 import { HttpClient } from '@angular/common/http';
+import { API_ENDPOINTS } from '@food-stories/users-client/shared/config';
 
 @Component({
   selector: 'fs-search-box',
@@ -40,7 +41,7 @@ export class SearchBoxComponent implements OnInit {
   }
 
   private searchUser(query: string) {
-    return  this.http.get<{results:{username:string, name: string, DPURL:  string}[]}>('http://localhost:3000/api/v1/users/search', {params: {query}});
+    return  this.http.get<{results:{username:string, name: string, DPURL:  string}[]}>(API_ENDPOINTS.Users.searchUsers(), {params: {query}});
   }
 
   onResultClick(username: string) {

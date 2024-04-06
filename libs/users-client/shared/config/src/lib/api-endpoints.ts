@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:3000/api/v1';
+const BASE_URL = 'http://mini.ecom/api/v1';
 
 export const API_ENDPOINTS = {
   // users;
@@ -10,7 +10,8 @@ export const API_ENDPOINTS = {
   UPDATE_USER_PROFILE: `${BASE_URL}/users/profile`,
   Users: {
     makeAccountPublic: (userId: string) => `${BASE_URL}/users/privacy/${userId}/public`,
-    makeAccountPrivate: (userId: string) => `${BASE_URL}/users/privacy/${userId}/private`
+    makeAccountPrivate: (userId: string) => `${BASE_URL}/users/privacy/${userId}/private`,
+    searchUsers: () => `${BASE_URL}/users/search`,
   },
 
   // Posts

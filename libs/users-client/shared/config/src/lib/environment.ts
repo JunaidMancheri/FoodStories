@@ -1,6 +1,6 @@
 export const environment = {
   homeUrl: 'http://localhost:4200/',
-  socketUrl: 'ws://localhost:3000',
+  socketUrl: 'ws://mini.ecom',
   production: false,
   firebase: {
     projectId: 'foodstories-35dfd',
