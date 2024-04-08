@@ -1,4 +1,4 @@
-const BASE_URL = 'http://mini.ecom/api/v1';
+const BASE_URL = 'http://app.foodstories.fun';
 
 export const API_ENDPOINTS = {
   // users;

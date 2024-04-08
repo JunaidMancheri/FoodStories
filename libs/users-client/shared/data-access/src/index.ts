@@ -1,1 +1,1 @@
-export * from './lib/http-api/users-api';
+export * from './lib/users-api';

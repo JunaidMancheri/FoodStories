@@ -1,45 +1,15 @@
-apiVersion: networking.k8s.io/v1
-kind: Ingress
+apiVersion: "networking.k8s.io/v1"
+kind: "Ingress"
 metadata:
-  name: ingress-service
+  name: "foodstories-ingress"
+  namespace: "default"
   annotations:
-    # cert-manager.io/cluster-issuer: "letsencrypt-prod"
-    kubernetes.io/ingress.class: gce
-    # nginx.ingress.kubernetes.io/use-regex: "true"
-    kubernetes.io/ingress.allow-http: "true"
-    # nginx.ingress.kubernetes.io/websocket-services: "api-gateway-srv"
-    kubernetes.io/ingress.global-static-ip-name: foodstories-ip
+    networking.gke.io/managed-certificates: "foodstories-tls-cert"
 spec:
-  # defaultBackend:
-  #   service:
-  #     name: api-gateway-srv
-  #     port:
-  #       number: 3000
-  rules:
-    - host: app.foodstories.fun
-      http:
-        paths:
-          - path: /
-            pathType: Prefix
-            backend:
-              service:
-                name: api-gateway-srv
-                port:
-                  number: 3000                  
----
-
-# apiVersion: v1
-# kind: Service
-# metadata:
-#   name: foodstories-service
-# spec:
-#   selector:
-#     app: foodstories 
-#   ports:
-#   - protocol: TCP
-#     port: 80
-#     targetPort: 3000
-#   type: LoadBalancer  
-#   externalTrafficPolicy: Local 
-#   externalIPs:
-#   - 35.216.118.187
+  defaultBackend:
+    service:
+      name: "api-gateway-depl-nr6fj"
+      port:
+        number: 80
+status:
+  loadBalancer: {}

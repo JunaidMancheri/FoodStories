@@ -1,5 +1,18 @@
 {
   "projects": {
     "default": "foodstories-35dfd"
-  }
+  },
+  "targets": {
+    "foodstories-35dfd": {
+      "hosting": {
+        "users": [
+          "foodstories-35dfd"
+        ],
+        "admin": [
+          "admin-foodstories-fun"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
