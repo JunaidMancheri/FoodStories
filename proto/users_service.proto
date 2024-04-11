@@ -13,9 +13,24 @@ service UsersService {
   rpc makeAccountPrivate(MakeAccountPrivateOrPublicRequest) returns (EMPTY) {}
   rpc makeAccountPublic(MakeAccountPrivateOrPublicRequest) returns (EMPTY) {}
   rpc getUsers(EMPTY) returns(GetUsersResponse) {}
+  rpc getNotifications(GetNotificationRequest) returns (GetNotificationResponse) {}
+
 }
 
 message EMPTY {}
+
+message Notification {
+  string userId = 0;
+  string message = 1;
+}
+
+message GetNotificationRequest {
+  string userId = 0;
+}
+
+message GetNotificationResponse {
+  repeated Notification notifications = 0;
+}
 
 message GetUsersResponse {
   repeated UserEntity users = 0;

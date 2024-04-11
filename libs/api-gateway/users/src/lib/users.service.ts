@@ -63,6 +63,11 @@ export class ApiGatewayUsersService implements OnModuleInit {
     return handleGrpcError(this.usersService.getUsers({}));
   }
 
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  getNotifications(data: any) {
+    return handleGrpcError(this.usersService.getNotifications(data));
+  }
 }
 
 

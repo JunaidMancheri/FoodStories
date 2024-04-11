@@ -20,6 +20,7 @@ import { kafkaClient, kafkaClient2 } from '../config/kafka.config';
 import { createProducer } from '@food-stories/common/kafka';
 import { makeBlockUserHandler, makeFollowAUserHandler, makeGetFollowingsHandler, makeHasBlockedHandler, makeIsFollowingHandler, makeUnblockUserHandler, makeUnfollowAUserHandler } from '@food-stories/users-srv/social-network';
 import { neo4jDriver } from '../config/neo4j.config';
+import { GetNotificationsHandler } from '@food-stories/notifications-srv/notifications';
 
 export const UsersServiceImpl: IUsersServiceServer = {
   createUser: makeUnaryCallHandler(
@@ -35,6 +36,7 @@ export const UsersServiceImpl: IUsersServiceServer = {
   makeAccountPrivate : makeUnaryCallHandler(makeAccountPRivateHandler(createProducer(kafkaClient2)), logger),
   makeAccountPublic: makeUnaryCallHandler(makeAccountpubliceHandler(createProducer(kafkaClient2)), logger),
   getUsers: makeUnaryCallHandler(makeGetUsersHandler(), logger),
+  getNotifications: makeUnaryCallHandler(new GetNotificationsHandler(), logger)
 };
 
 export const SocialNetworkServiceImpl: ISocialNetworkServiceServer = {

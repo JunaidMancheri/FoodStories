@@ -30,7 +30,12 @@ export class ApiGatewayUsersController {
    getUesrs() {
     return this.apiGatewayUsersService.getUsers();
    }
-
+   
+   @Get('notifications/:userId')
+    getNotifications(@Param('userId') userId: string) {
+      return this.apiGatewayUsersService.getNotifications({userId})
+    }
+  
   @Get('username/:username')
   checkUsername(@Param() params: { username: string }) {
     const response = this.apiGatewayUsersService.isUsernameAvailable({

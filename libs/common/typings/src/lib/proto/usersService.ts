@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
   import {  Metadata, handleUnaryCall } from '@grpc/grpc-js';
   import { Observable } from 'rxjs';
 import { IUser } from '../interfaces/IUser.interface';
@@ -15,6 +16,7 @@ import { EditProfileData } from '../dto/editProfileData.dto';
     makeAccountPublic(request: IMakeAccountPrivateRequest) : Observable<void>
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     getUsers(request: any): Observable<GetUsersResponse>;
+    getNotifications(request: any): Observable<any>;
   }
 
   export interface IUsersServiceServer {
@@ -28,6 +30,7 @@ import { EditProfileData } from '../dto/editProfileData.dto';
     makeAccountPrivate: handleUnaryCall<IMakeAccountPrivateRequest, void>;
     makeAccountPublic: handleUnaryCall<IMakeAccountPrivateRequest, void>;
     getUsers: handleUnaryCall<void, GetUsersResponse>;
+    getNotifications: handleUnaryCall<any, any>;
     
   }
 
