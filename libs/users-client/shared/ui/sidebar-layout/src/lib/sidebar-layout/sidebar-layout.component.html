@@ -4,6 +4,9 @@
   <mat-drawer #drawer>
     <fs-search-box (closeDrawer)="drawer.close()"></fs-search-box>
   </mat-drawer>
+  <mat-drawer #notificationsDrawer position="end">
+    <fs-notifications></fs-notifications>
+  </mat-drawer>
   <mat-drawer-content>
 
     <div class="sidebar fixed left-0 z-10  hidden w-56 md:block h-screen border-r-2 px-4" style="font-family: Robot Mono, monospace;">
@@ -40,11 +43,14 @@
         <span class="text-lg">Messages</span>
       </div> -->
     
-<!--     
-       <div class="home flex items-center h-8 space-x-3">
-         <mat-icon class="material-symbols-outlined">favorite</mat-icon>
-         <span class="text-lg">Notification</span>
-       </div> -->
+        <button (click)="notificationsDrawer.toggle()">
+          <div class="home flex items-center h-8 space-x-3">
+            <mat-icon class="material-symbols-outlined">favorite</mat-icon>
+            <span class="text-lg">Notification</span>
+          </div>
+
+        </button>
+
        
     
        <button (click)="openCreateNewPostDialogBox()">
