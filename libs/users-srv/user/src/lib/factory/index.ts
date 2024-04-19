@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { BaseHandler, BaseSubscriber, RequestPayload, ResponsePayload, respondSuccess } from '@food-stories/common/handlers';
-import { GetUsersResponse, IMakeAccountPrivateRequest, ISearchUserRequest, ISearchUserResponse } from '@food-stories/common/typings';
+import { GetUsersRequest, GetUsersResponse, IMakeAccountPrivateRequest, ISearchUserRequest, ISearchUserResponse } from '@food-stories/common/typings';
 import { userModel } from '../interface/db/mongodb/models/user.model';
 import { Producer } from 'kafkajs';
 import { mapDocumentsToUserEntities } from '../interface/db/mongodb/mapper.helper';
@@ -20,9 +20,10 @@ export function makeGetUsersHandler() {
 
 
 export  class GetUsersHandler extends BaseHandler {
- async execute(request: RequestPayload<void>): Promise<ResponsePayload<GetUsersResponse>> {
-    const usersDocs = await userModel.find();
-    return respondSuccess({users: mapDocumentsToUserEntities(usersDocs)})
+ async execute(request: RequestPayload<GetUsersRequest>): Promise<ResponsePayload<GetUsersResponse>> {
+    const usersDocs = await userModel.find().skip(request.data.page * request.data.size).limit(request.data.size);
+    const count = await userModel.count();
+    return respondSuccess({users: mapDocumentsToUserEntities(usersDocs), count})
   }
 }
 

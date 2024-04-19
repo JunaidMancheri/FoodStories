@@ -15,7 +15,7 @@ import { EditProfileData } from '../dto/editProfileData.dto';
     makeAccountPrivate(request:IMakeAccountPrivateRequest) : Observable<void>
     makeAccountPublic(request: IMakeAccountPrivateRequest) : Observable<void>
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    getUsers(request: any): Observable<GetUsersResponse>;
+    getUsers(request: GetUsersRequest): Observable<GetUsersResponse>;
     getNotifications(request: any): Observable<any>;
   }
 
@@ -29,13 +29,19 @@ import { EditProfileData } from '../dto/editProfileData.dto';
     searchUsers: handleUnaryCall<ISearchUserRequest, ISearchUserResponse>;
     makeAccountPrivate: handleUnaryCall<IMakeAccountPrivateRequest, void>;
     makeAccountPublic: handleUnaryCall<IMakeAccountPrivateRequest, void>;
-    getUsers: handleUnaryCall<void, GetUsersResponse>;
+    getUsers: handleUnaryCall<GetUsersRequest, GetUsersResponse>;
     getNotifications: handleUnaryCall<any, any>;
     
   }
 
+
+  export interface GetUsersRequest {
+    size: number;
+    page: number;
+  }
   export interface GetUsersResponse {
     users: IUser[];
+    count: number;
   }
 
 
