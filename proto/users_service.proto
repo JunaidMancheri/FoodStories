@@ -12,12 +12,17 @@ service UsersService {
   rpc searchUsers(SearchUserRequest) returns (SearchUserResponse) {}
   rpc makeAccountPrivate(MakeAccountPrivateOrPublicRequest) returns (EMPTY) {}
   rpc makeAccountPublic(MakeAccountPrivateOrPublicRequest) returns (EMPTY) {}
-  rpc getUsers(EMPTY) returns(GetUsersResponse) {}
+  rpc getUsers(GetUsersRequest) returns(GetUsersResponse) {}
   rpc getNotifications(GetNotificationRequest) returns (GetNotificationResponse) {}
 
 }
 
 message EMPTY {}
+
+message GetUsersRequest {
+  int32 size = 0;
+  int32 page = 1;
+}
 
 message Notification {
   string userId = 0;
@@ -34,6 +39,7 @@ message GetNotificationResponse {
 
 message GetUsersResponse {
   repeated UserEntity users = 0;
+  int32 count = 1;
 }
 
 message MakeAccountPrivateOrPublicRequest {
