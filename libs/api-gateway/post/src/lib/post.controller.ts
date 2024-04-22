@@ -17,7 +17,10 @@ export class CreatePostDto {
 export class ApiGatewayPostController {
   constructor(private apiGatewayPostService: ApiGatewayPostService) {}
 
-
+   @Get('chart')
+   getChartValues() {
+    return this.apiGatewayPostService.getChartValues();
+   }
 
   @Get('/user/:userId')
   getUsersPosts(@Param('userId', ParseUUIDPipe) userId: string) {

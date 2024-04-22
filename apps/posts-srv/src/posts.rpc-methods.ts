@@ -10,6 +10,7 @@ import {
   CommentsLogger,
 } from '@food-stories/posts-srv/core';
 import {
+  GetChartValuesHandler,
   makeCreatePostHandler,
   makeGetFeedsPostHandler,
   makeGetUsersPostsHandler,
@@ -49,6 +50,7 @@ export const PostsServiceImpl: IPostsServiceServer = {
   updatePostMediaUrls: wrapHandler(makeUpdateMediaUrlsHandler),
   getUsersPosts: wrapHandler(makeGetUsersPostsHandler),
   getFeedsPosts: wrapHandler(makeGetFeedsPostHandler),
+  getChartValues: makeUnaryCallHandler(new GetChartValuesHandler(), logger)
 };
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any

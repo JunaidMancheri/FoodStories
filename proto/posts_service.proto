@@ -7,8 +7,14 @@ service PostsService {
   rpc updatePostMediaUrls(UpdatePostMediaUrlsRequest)returns (PostEntity) {}
   rpc getUsersPosts(GetUsersPostsRequest) returns(GetUserPostsResponse) {}
   rpc getFeedsPosts(getFeedsPostsRequest) returns(GetUserPostsResponse) {}
+  rpc getChartValues(EMPTY) returns(GetChartValuesResponse) {}
+
 }
 
+
+message GetChartValuesResponse {
+  repeated int32 counts = 0;
+}
 
 message getFeedsPostsRequest {
   repeated string  userIds = 0;

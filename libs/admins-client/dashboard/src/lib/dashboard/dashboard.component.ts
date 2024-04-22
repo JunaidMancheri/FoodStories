@@ -42,6 +42,22 @@ export class DashboardComponent implements OnInit {
           ]
         };
     })
+
+    this.http.get<{counts: number[]}>('http://localhost:3000/api/v1/posts/chart').subscribe((res) => {
+      this.postData = {
+        labels: this.generateMonthNames(),
+        datasets: [
+          {
+            data: res.counts,
+            label: 'Series A',
+            fill: true,
+            tension: 0.5,
+            borderColor: 'black',
+            backgroundColor: 'rgba(255,0,0,0.3)'
+          }
+        ]
+      };
+  })
   }
 
   http = inject(HttpClient);
@@ -49,6 +65,7 @@ export class DashboardComponent implements OnInit {
 
  
   public lineChartData: ChartConfiguration<'line'>['data'] = {} as ChartConfiguration<'line'>['data'];
+  public postData: ChartConfiguration<'line'>['data'] = {} as ChartConfiguration<'line'>['data'];
 
   generateMonthNames(): string[] {
     const currentDate = new Date();

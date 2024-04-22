@@ -30,4 +30,8 @@ export class ApiGatewayPostService implements OnModuleInit {
   getFeedsPosts(data: GetFeedsPostsRequest) {
     return handleGrpcError(this.postsService.getFeedsPosts(data));
   }
+
+  getChartValues() {
+    return handleGrpcError(this.postsService.getChartValues({}));
+  }
 }
