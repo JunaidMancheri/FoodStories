@@ -17,6 +17,7 @@ import { EditProfileData } from '../dto/editProfileData.dto';
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     getUsers(request: GetUsersRequest): Observable<GetUsersResponse>;
     getNotifications(request: any): Observable<any>;
+    getChartValues(request: any): Observable<GetChartValuesResponse>
   }
 
   export interface IUsersServiceServer {
@@ -31,7 +32,12 @@ import { EditProfileData } from '../dto/editProfileData.dto';
     makeAccountPublic: handleUnaryCall<IMakeAccountPrivateRequest, void>;
     getUsers: handleUnaryCall<GetUsersRequest, GetUsersResponse>;
     getNotifications: handleUnaryCall<any, any>;
+    getChartValues: handleUnaryCall<void, GetChartValuesResponse>;
     
+  }
+
+  export interface GetChartValuesResponse {
+    counts: number[];
   }
 
 

@@ -14,10 +14,16 @@ service UsersService {
   rpc makeAccountPublic(MakeAccountPrivateOrPublicRequest) returns (EMPTY) {}
   rpc getUsers(GetUsersRequest) returns(GetUsersResponse) {}
   rpc getNotifications(GetNotificationRequest) returns (GetNotificationResponse) {}
+  rpc getChartValues(EMPTY) returns(GetChartsValuesResponse) {};
 
 }
 
 message EMPTY {}
+
+
+message GetChartsValuesResponse {
+  repeated int32 counts = 0;
+}
 
 message GetUsersRequest {
   int32 size = 0;

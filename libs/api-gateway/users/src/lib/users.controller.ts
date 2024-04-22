@@ -25,6 +25,14 @@ export class ApiGatewayUsersController {
     private socialNetworkService: ApiGatewaySocialNetworkService
   ) {}
 
+
+  @Get('chart')
+  getChartValues() {
+    return  this.apiGatewayUsersService.getChartValues();
+  }
+
+
+
   @Get()
   getUesrs(@Query() query: { size: string; page: string }) {
     return this.apiGatewayUsersService.getUsers({

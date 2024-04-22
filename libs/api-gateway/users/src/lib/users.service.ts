@@ -68,6 +68,10 @@ export class ApiGatewayUsersService implements OnModuleInit {
   getNotifications(data: any) {
     return handleGrpcError(this.usersService.getNotifications(data));
   }
+
+  getChartValues() {
+    return handleGrpcError(this.usersService.getChartValues({}));
+  }
 }
 
 
