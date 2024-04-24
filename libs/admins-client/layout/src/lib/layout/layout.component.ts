@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
+import { Auth } from '@angular/fire/auth';
 
 @Component({
   selector: 'fs-layout',
@@ -10,4 +11,11 @@ import { RouterModule } from '@angular/router';
   templateUrl: './layout.component.html',
   styleUrls: ['./layout.component.css'],
 })
-export class LayoutComponent {}
+export class LayoutComponent {
+  auth = inject(Auth)
+  router = inject(Router)
+  logout() {
+   this.auth.signOut();
+   this.router.navigateByUrl('/auth');
+  }
+}
