@@ -53,7 +53,7 @@ export class DashboardComponent implements OnInit {
             fill: true,
             tension: 0.5,
             borderColor: 'black',
-            backgroundColor: 'rgba(255,0,0,0.3)'
+            backgroundColor: 'rgba(122,234,34,0.3)'
           }
         ]
       };
