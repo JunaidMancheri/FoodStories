@@ -6,11 +6,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      run: api-gateway
+      app: api-gateway
   template:
     metadata:
       labels:
-        run: api-gateway
+        app: api-gateway
     spec:
       containers:
         - name: api-gateway
@@ -21,96 +21,25 @@ spec:
           - secretRef:
               name: kafka-secrets
           env:
-            - name: USERS_SERVICE_URI
-              value: users-srv-srv:4000
-            - name: POSTS_SERVICE_URI
-              value: posts-srv-srv:4000
-            - name: LIKES_SERVICE_URI
-              value: posts-srv-srv:4000
-            - name: COMMENTS_SERVICE_URI
-              value: posts-srv-srv:4000               
+          - name: USERS_SERVICE_URI
+            value: users-srv-srv:4000
+          - name: POSTS_SERVICE_URI
+            value: posts-srv-srv:4000
+          - name: LIKES_SERVICE_URI
+            value: posts-srv-srv:4000
+          - name: COMMENTS_SERVICE_URI
+            value: posts-srv-srv:4000
+
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  annotations:
-    cloud.google.com/neg: '{"ingress":true}'
-    cloud.google.com/neg-status: '{"network_endpoint_groups":{"80":"k8s1-e1347f7e-default-api-gateway-depl-nr6fj-80-616a28bb"},"zones":["asia-southeast1-a","asia-southeast1-c"]}'
-  creationTimestamp: "2024-04-07T21:35:42Z"
-  finalizers:
-  - service.kubernetes.io/load-balancer-cleanup
-  generateName: api-gateway-depl-
-  managedFields:
-  - apiVersion: v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:metadata:
-        f:generateName: {}
-      f:spec:
-        f:allocateLoadBalancerNodePorts: {}
-        f:externalTrafficPolicy: {}
-        f:internalTrafficPolicy: {}
-        f:ports:
-          .: {}
-          k:{"port":80,"protocol":"TCP"}:
-            .: {}
-            f:port: {}
-            f:protocol: {}
-            f:targetPort: {}
-        f:selector: {}
-        f:sessionAffinity: {}
-        f:type: {}
-    manager: GoogleCloudConsole
-    operation: Update
-    time: "2024-04-07T21:35:42Z"
-  - apiVersion: v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:metadata:
-        f:finalizers:
-          .: {}
-          v:"service.kubernetes.io/load-balancer-cleanup": {}
-      f:status:
-        f:loadBalancer:
-          f:ingress: {}
-    manager: cloud-controller-manager
-    operation: Update
-    subresource: status
-    time: "2024-04-07T21:36:29Z"
-  - apiVersion: v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:metadata:
-        f:annotations:
-          f:cloud.google.com/neg-status: {}
-    manager: glbc
-    operation: Update
-    subresource: status
-    time: "2024-04-07T21:45:06Z"
-  name: api-gateway-depl-nr6fj
-  namespace: default
-  resourceVersion: "70450"
-  uid: ead40962-a23d-49b9-a057-7961c9fc78cd
+  name: api-gateway-srv
 spec:
-  allocateLoadBalancerNodePorts: true
-  clusterIP: 34.118.233.115
-  clusterIPs:
-  - 34.118.233.115
-  externalTrafficPolicy: Cluster
-  internalTrafficPolicy: Cluster
-  ipFamilies:
-  - IPv4
-  ipFamilyPolicy: SingleStack
-  ports:
-  - nodePort: 30536
-    port: 80
-    protocol: TCP
-    targetPort: 3000
   selector:
-    run: api-gateway
-  sessionAffinity: None
-  type: LoadBalancer
-status:
-  loadBalancer:
-    ingress:
-    - ip: 35.240.218.147
+    app: api-gateway
+  ports:
+    - name: api-gateway
+      protocol: TCP
+      port: 3000
+      targetPort: 3000

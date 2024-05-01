@@ -8,16 +8,12 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": [
-        "{options.outputPath}"
-      ],
+      "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/apps/admins-client",
         "index": "apps/admins-client/src/index.html",
         "main": "apps/admins-client/src/main.ts",
-        "polyfills": [
-          "zone.js"
-        ],
+        "polyfills": ["zone.js"],
         "tsConfig": "apps/admins-client/tsconfig.app.json",
         "assets": [
           "apps/admins-client/src/favicon.ico",
@@ -66,10 +62,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "browserTarget": "admins-client:build:production"
+          "buildTarget": "admins-client:build:production"
         },
         "development": {
-          "browserTarget": "admins-client:build:development"
+          "buildTarget": "admins-client:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -77,35 +73,18 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "browserTarget": "admins-client:build"
+        "buildTarget": "admins-client:build"
       }
     },
     "lint": {
-      "executor": "@nx/linter:eslint",
-      "outputs": [
-        "{options.outputFile}"
-      ],
-      "options": {
-        "lintFilePatterns": [
-          "apps/admins-client/**/*.ts",
-          "apps/admins-client/**/*.html"
-        ]
-      }
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
     },
     "test": {
       "executor": "@nx/jest:jest",
-      "outputs": [
-        "{workspaceRoot}/coverage/{projectRoot}"
-      ],
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/admins-client/jest.config.ts",
-        "passWithNoTests": true
-      },
-      "configurations": {
-        "ci": {
-          "ci": true,
-          "codeCoverage": true
-        }
+        "jestConfig": "apps/admins-client/jest.config.ts"
       }
     },
     "serve-static": {

@@ -44,7 +44,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
         },
       }
     ),
-    !environment.production ? StoreDevtoolsModule.instrument(): [],
+    !environment.production ? StoreDevtoolsModule.instrument({connectInZone: true, connectInZone: true}): [],
     EffectsModule.forRoot([AppEffects]),
     StoreRouterConnectingModule.forRoot({stateKey: 'router'}),
     SocketIoModule.forRoot({url: environment.socketUrl,  options: {}})
