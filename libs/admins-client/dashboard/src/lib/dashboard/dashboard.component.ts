@@ -27,7 +27,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 })
 export class DashboardComponent implements OnInit {
   ngOnInit(): void {
-    this.http.get<{counts: number[]}>('http://localhost:3000/api/v1/users/chart').subscribe((res) => {
+    this.http.get<{counts: number[]}>('https://app.foodstories.fun/api/v1/users/chart').subscribe((res) => {
         this.lineChartData = {
           labels: this.generateMonthNames(),
           datasets: [
@@ -43,7 +43,7 @@ export class DashboardComponent implements OnInit {
         };
     })
 
-    this.http.get<{counts: number[]}>('http://localhost:3000/api/v1/posts/chart').subscribe((res) => {
+    this.http.get<{counts: number[]}>('https://app.foodstories.fun/api/v1/posts/chart').subscribe((res) => {
       this.postData = {
         labels: this.generateMonthNames(),
         datasets: [

@@ -1,7 +1,7 @@
 export const environment = {
-  homeUrl: 'http://localhsot:4200',
-  socketUrl: 'ws://localhost:3000',
-  production: false,
+  homeUrl: 'http://foodstories.fun',
+  socketUrl: 'wss://app.foodstories.fun',
+  production: true,
   firebase: {
     projectId: 'foodstories-35dfd',
     appId: '1:843205065840:web:131a2143226d7f2026c8b5',

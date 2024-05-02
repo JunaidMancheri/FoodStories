@@ -30,6 +30,11 @@
             "input": "proto/",
             "glob": "comments_service.proto",
             "output": "proto"
+          },
+          {
+            "input": "apps/api-gateway/",
+            "glob": ".env",
+            "output": "/"
           }
         ],
         "isolatedConfig": true,

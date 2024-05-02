@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:4200/api/v1';
+const BASE_URL = 'https://app.foodstories.fun/api/v1';
 
 export const API_ENDPOINTS = {
   // users;

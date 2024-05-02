@@ -15,9 +15,7 @@ import { IUser } from '@food-stories/common/typings';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatPaginatorModule, PageEvent } from '@angular/material/paginator';
 
-/**
- * @title Table with expandable rows
- */
+
 @Component({
   selector: 'fs-admin-users',
   styleUrls: ['users.component.css'],
@@ -58,7 +56,7 @@ export class UsersComponent implements OnInit {
 
   ngOnInit(): void {
     this.http
-      .get<{ users: IUser[] , count: number}>('http://localhost:3000/api/v1/users', {params: {page: 0, size: 25}})
+      .get<{ users: IUser[] , count: number}>('https://app.foodstories.fun/api/v1/users', {params: {page: 0, size: 25}})
       .subscribe((results) => {
         this.count =  results.count
         this.dataSource = results.users;
@@ -67,7 +65,7 @@ export class UsersComponent implements OnInit {
 
   handlePageEvent(e: PageEvent) {
     this.http
-    .get<{ users: IUser[] }>('http://localhost:3000/api/v1/users', {params: {page: e.pageIndex, size: e.pageSize}})
+    .get<{ users: IUser[] }>('https://app.foodstories.fun/api/v1/users', {params: {page: e.pageIndex, size: e.pageSize}})
     .subscribe((results) => {
       this.dataSource = results.users;
     });

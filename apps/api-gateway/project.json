@@ -26,6 +26,11 @@
             "input": "service-accounts/",
             "glob": "**/*.json",
             "output": "service-accounts"
+          },
+          {
+            "input": "apps/api-gateway/",
+            "glob": ".env",
+            "output": "/"
           }
         ],
         "isolatedConfig": true,

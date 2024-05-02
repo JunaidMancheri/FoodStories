@@ -12,6 +12,8 @@ dist
 tmp
 /out-tsc
 
+pm2.config.js
+
 # dependencies
 node_modules
 
