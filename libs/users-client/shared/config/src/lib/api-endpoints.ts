@@ -1,5 +1,7 @@
 const BASE_URL = 'https://app.foodstories.fun/api/v1';
 
+// csomc comands
+
 export const API_ENDPOINTS = {
   // users;
   CREATE_USER: `${BASE_URL}/users/`,

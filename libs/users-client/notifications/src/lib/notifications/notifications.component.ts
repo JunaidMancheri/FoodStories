@@ -15,7 +15,7 @@ export class NotificationsComponent implements OnInit {
   ngOnInit(): void {
     this.store.select(selectCurrentUserIdOrUsername).subscribe((id) => {
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      this.http.get<{notifications: any[]}>('http://localhost:3000/api/v1/users/notifications/' + id.id).subscribe((res) => {
+      this.http.get<{notifications: any[]}>('https://app.foodstories.fun/api/v1/users/notifications/' + id.id).subscribe((res) => {
        this.notifications = res.notifications
       })
 
