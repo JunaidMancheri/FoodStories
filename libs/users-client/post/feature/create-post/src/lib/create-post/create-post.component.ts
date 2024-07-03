@@ -119,12 +119,12 @@ export class CreatePostDialogComponent implements OnInit {
     this.fileUploadProgress = 95;
     this.progressCaption = 'Getting ready your medias...';
     zip(
-      from(Promise.all(refPaths.map(refs => getDownloadURL(refs)))), 
-      this.createPostService.getDownloadURLWithRetry(id, userId))
-      .subscribe(([mediaUrls, thumbnailUrl]) => {
+      from(Promise.all(refPaths.map(refs => getDownloadURL(refs)))))
+      // this.createPostService.getDownloadURLWithRetry(id, userId))
+      .subscribe(([mediaUrls]) => {
         this.progressCaption = 'Syncing your changes...';
         this.fileUploadProgress = 98;
-      this.createPostService.updatePostMediaUrls(id, mediaUrls, thumbnailUrl)
+      this.createPostService.updatePostMediaUrls(id, mediaUrls, mediaUrls[0])
       .subscribe((res) => {
         this.newPostEventService.setNewPost(res)
         this.dialogRef.close();
