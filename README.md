@@ -20,7 +20,7 @@ FoodStories is built with a **scalable and modular architecture**, leveraging in
 ### **Cloud & Infrastructure**
 - **Google Kubernetes Engine (GKE)** for container orchestration and scalable deployments.
 - **Google Cloud Storage** for secure and efficient media storage.
-- **Firebase** for authentication and real-time updates.
+- **Firebase** for authentication.
 - **Google Cloud Functions** for efficient media compression and serverless operations.
 
 ### **Technology Stack**
