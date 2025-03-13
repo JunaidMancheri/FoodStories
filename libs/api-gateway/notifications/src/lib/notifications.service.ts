@@ -6,9 +6,9 @@ import { NotificationsGateway } from './websocket.gateway';
 export class ApiGatewayNotificationsService implements OnModuleInit {
 
   async onModuleInit() {
-    if (!process.env['KAFKA_URI']) throw new Error('kafka url is required');
-    if (!process.env['KAFKA_USERNAME']) throw new Error('kafka username is required');
-    if (!process.env['KAFKA_PASSWORD']) throw new Error('kafka password is required');
+    if (!process.env['KAFKA_URI']) throw new Error('KAFKA_URI is required');
+    if (!process.env['KAFKA_USERNAME']) throw new Error('KAFKA_USERNAME is required');
+  if (!process.env['KAFKA_PASSWORD']) throw new Error('KAFKA_PASSWORD is required');
     const kafkaClient = new Kafka({
        brokers: [process.env['KAFKA_URI']],
        clientId: 'api-gateway',
