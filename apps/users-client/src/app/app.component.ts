@@ -11,7 +11,6 @@ import { NotificationsWebsocket } from './websocket.service';
 export class AppComponent implements OnInit {
   isInitialLoading = false;
   constructor(
-    private auth: Auth,
     private store: Store,
     private ws: NotificationsWebsocket
   ) {}

@@ -3,12 +3,11 @@ export const environment = {
   socketUrl: 'wss://app.foodstories.fun',
   production: true,
   firebase: {
-    projectId: 'foodstories-35dfd',
-    appId: '1:843205065840:web:131a2143226d7f2026c8b5',
-    storageBucket: 'foodstories-35dfd.appspot.com',
-    apiKey: 'AIzaSyDeA3-I5t5lZBr3AbvV-usVU9njrVEQrkk',
-    authDomain: 'foodstories-35dfd.firebaseapp.com',
-    messagingSenderId: '843205065840',
-    measurementId: 'G-B1EFW7B9Z2',
-  }
+    apiKey: "AIzaSyCw682VAW62uPKwDzxM9Dx6AZC9S7UWFr0",
+    authDomain: "foodstories-37c1f.firebaseapp.com",
+    projectId: "foodstories-37c1f",
+    storageBucket: "foodstories-37c1f.firebasestorage.app",
+    messagingSenderId: "615290004483",
+    appId: "1:615290004483:web:e5d1b86f5d5d5cdacbda36"
+  },
 }

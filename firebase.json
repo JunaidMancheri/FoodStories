@@ -1,15 +1,4 @@
 {
-  "hosting": [
-    {
-      "target": "users",
-      "public": "dist/apps/users-client"
-    },
-    {
-      "target": "admin",
-      "public": "dist/apps/admins-client"
-    }
-
-  ],
   "functions": [
     {
       "source": "functions",
@@ -18,9 +7,29 @@
         "node_modules",
         ".git",
         "firebase-debug.log",
-        "firebase-debug.*.log"
+        "firebase-debug.*.log",
+        "*.local"
       ],
-      "predeploy": ["npm --prefix \"$RESOURCE_DIR\" run lint"]
+      "predeploy": [
+        "npm --prefix \"$RESOURCE_DIR\" run lint"
+      ]
     }
-  ]
+  ],
+  "hosting": {
+    "public": "dist/apps/users-client",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "storage": {
+    "rules": "storage.rules"
+  }
 }
