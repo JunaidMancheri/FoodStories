@@ -13,7 +13,9 @@ export class ApiGatewayNotificationsService implements OnModuleInit {
        brokers: [process.env['KAFKA_URI']],
        clientId: 'api-gateway',
        connectionTimeout: 3000,
-       ssl: true,
+       ssl: {
+        rejectUnauthorized: false
+       },
        sasl: {
         mechanism: 'plain',
         username: process.env['KAFKA_USERNAME'],

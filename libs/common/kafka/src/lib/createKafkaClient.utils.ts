@@ -13,7 +13,9 @@ export function createKafkaClient(
   return new Kafka({
     brokers: [config.hostUrl],
     clientId: config.clientId,
-    ssl: true,
+    ssl: {
+      rejectUnauthorized: false,
+    },
     connectionTimeout: 3000,
     sasl: {
       mechanism: 'plain',
